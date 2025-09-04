@@ -1,5 +1,7 @@
 "use client";
 
+import JogoCard from "./components/JogoCard";
+
 export default function Home() {
   const jogos = [
     { id: 1, campeonato: "Brasileirão Série A", time1: "Flamengo", time2: "Palmeiras", hora: "20:00", canal: "Globo / Premiere" },
@@ -11,11 +13,14 @@ export default function Home() {
       <h2 className="text-2xl font-bold mb-4">Jogos de Hoje</h2>
       <div className="grid gap-4">
         {jogos.map((jogo) => (
-          <div key={jogo.id} className="bg-white p-4 rounded-xl shadow">
-            <h3 className="font-semibold">{jogo.campeonato}</h3>
-            <p>{jogo.time1} x {jogo.time2}</p>
-            <p>⏰ {jogo.hora} | 📺 {jogo.canal}</p>
-          </div>
+          <JogoCard
+            key={jogo.id}
+            campeonato={jogo.campeonato}
+            time1={jogo.time1}
+            time2={jogo.time2}
+            hora={jogo.hora}
+            canal={jogo.canal}
+          />
         ))}
       </div>
     </div>
