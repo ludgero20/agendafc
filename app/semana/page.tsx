@@ -14,7 +14,7 @@ export default function Semana() {
       </div>
       
       <div className="bg-gray-100 rounded-xl p-8 text-center">
-        <CalendarDaysIcon className="w-8 h-8 mx-auto text-blue-600 mb-4" />
+        <CalendarDaysIcon className="w-5 h-5 mx-auto text-blue-600 mb-4" />
         <h3 className="text-2xl font-semibold text-gray-800 mb-2">Em breve!</h3>
         <p className="text-gray-600">A programação semanal será adicionada em breve.</p>
       </div>
