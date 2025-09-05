@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import JogoCard from '../components/JogoCard'
+import CampeonatoDropdown from '../components/CampeonatoDropdown'
 import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from '../utils/prioridades'
 
 type JogoSemana = {
@@ -18,6 +19,8 @@ export default function Semana() {
   const [jogos, setJogos] = useState<JogoSemana[]>([]);
   const [loading, setLoading] = useState(true);
   const [prioridades, setPrioridades] = useState<any>(null);
+  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
+  const [campeonatosSelecionados, setCampeonatosSelecionados] = useState<string[]>([]);
 
   useEffect(() => {
     const carregarJogos = async () => {
@@ -39,6 +42,12 @@ export default function Semana() {
         const jogosFiltrados = data.jogosSemana.filter((jogo: JogoSemana) => {
           return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
         });
+        
+        // Extrair campeonatos únicos para o dropdown
+        const campeonatosUnicos = [...new Set(jogosFiltrados.map((jogo: JogoSemana) => jogo.campeonato))].sort();
+        
+        setCampeonatosDisponiveis(campeonatosUnicos as string[]);
+        setCampeonatosSelecionados(campeonatosUnicos as string[]); // Por padrão, todos selecionados
         
         setJogos(jogosFiltrados);
       } catch (error) {
@@ -65,8 +74,11 @@ export default function Semana() {
     );
   }
 
+  // Filtrar jogos baseado nos campeonatos selecionados
+  const jogosFiltrados = jogos.filter(jogo => campeonatosSelecionados.includes(jogo.campeonato));
+  
   // Organizar jogos por data, depois por campeonato
-  const jogosPorData = jogos.reduce((acc, jogo) => {
+  const jogosPorData = jogosFiltrados.reduce((acc, jogo) => {
     const data = jogo.data;
     if (!acc[data]) {
       acc[data] = {};
@@ -115,6 +127,15 @@ export default function Semana() {
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Veja todos os jogos programados para esta semana com horários e canais
         </p>
+      </div>
+      
+      {/* Dropdown de Filtro de Campeonatos */}
+      <div className="flex justify-center">
+        <CampeonatoDropdown
+          campeonatos={campeonatosDisponiveis}
+          campeonatosSelecionados={campeonatosSelecionados}
+          onSelecaoChange={setCampeonatosSelecionados}
+        />
       </div>
       
       {Object.keys(jogosPorData).length === 0 ? (

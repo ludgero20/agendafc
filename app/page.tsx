@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import JogoCard from "./components/JogoCard";
+import CampeonatoDropdown from "./components/CampeonatoDropdown";
 import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from './utils/prioridades';
 
 type JogoSemana = {
@@ -19,6 +20,8 @@ export default function Home() {
   const [jogosAmanha, setJogosAmanha] = useState<Record<string, JogoSemana[]>>({});
   const [loading, setLoading] = useState(true);
   const [prioridades, setPrioridades] = useState<any>(null);
+  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
+  const [campeonatosSelecionados, setCampeonatosSelecionados] = useState<string[]>([]);
 
   useEffect(() => {
     const carregarJogos = async () => {
@@ -93,6 +96,13 @@ export default function Home() {
           jogosAmanhaPorCampeonato[campeonato].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
         });
         
+        // Extrair campeonatos únicos para o dropdown
+        const todosOsJogos = [...jogosDeHoje, ...jogosDeAmanha];
+        const campeonatosUnicos = [...new Set(todosOsJogos.map(jogo => jogo.campeonato))].sort();
+        
+        setCampeonatosDisponiveis(campeonatosUnicos);
+        setCampeonatosSelecionados(campeonatosUnicos); // Por padrão, todos selecionados
+        
         setJogosHoje(jogosHojePorCampeonato);
         setJogosAmanha(jogosAmanhaPorCampeonato);
         
@@ -142,6 +152,21 @@ export default function Home() {
   const hoje = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
   const amanha = new Date(hoje);
   amanha.setDate(hoje.getDate() + 1);
+  
+  // Filtrar jogos baseado nos campeonatos selecionados
+  const jogosHojeFiltrados = Object.keys(jogosHoje)
+    .filter(campeonato => campeonatosSelecionados.includes(campeonato))
+    .reduce((acc, campeonato) => {
+      acc[campeonato] = jogosHoje[campeonato];
+      return acc;
+    }, {} as Record<string, JogoSemana[]>);
+    
+  const jogosAmanhaFiltrados = Object.keys(jogosAmanha)
+    .filter(campeonato => campeonatosSelecionados.includes(campeonato))
+    .reduce((acc, campeonato) => {
+      acc[campeonato] = jogosAmanha[campeonato];
+      return acc;
+    }, {} as Record<string, JogoSemana[]>);
 
   return (
     <div className="space-y-8">
@@ -154,6 +179,15 @@ export default function Home() {
           Acompanhe todos os jogos de futebol de hoje e amanhã com horários e canais de transmissão
         </p>
       </div>
+      
+      {/* Dropdown de Filtro de Campeonatos */}
+      <div className="flex justify-center">
+        <CampeonatoDropdown
+          campeonatos={campeonatosDisponiveis}
+          campeonatosSelecionados={campeonatosSelecionados}
+          onSelecaoChange={setCampeonatosSelecionados}
+        />
+      </div>
 
       {/* Jogos de Hoje */}
       <div className="">
@@ -162,13 +196,13 @@ export default function Home() {
             📅 Hoje - {formatarData(hoje)}
           </h2>
         </div>
-        {Object.keys(jogosHoje).length === 0 ? (
+        {Object.keys(jogosHojeFiltrados).length === 0 ? (
           <div className="bg-gray-100 rounded-xl p-6 text-center">
             <p className="text-gray-600">Nenhum jogo programado para hoje</p>
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosHoje).sort((a, b) => {
+            {Object.keys(jogosHojeFiltrados).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
               const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
               const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
@@ -183,13 +217,13 @@ export default function Home() {
                     <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
                     {campeonato}
                     <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosHoje[campeonato].length} {jogosHoje[campeonato].length === 1 ? 'jogo' : 'jogos'}
+                      {jogosHojeFiltrados[campeonato].length} {jogosHojeFiltrados[campeonato].length === 1 ? 'jogo' : 'jogos'}
                     </span>
                   </h3>
                 </div>
                 <div className="p-4">
                   <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                    {jogosHoje[campeonato].map((jogo) => (
+                    {jogosHojeFiltrados[campeonato].map((jogo) => (
                       <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
                         <div className="flex items-center justify-center mb-3">
                           <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
@@ -225,13 +259,13 @@ export default function Home() {
             📅 Amanhã - {formatarData(amanha)}
           </h2>
         </div>
-        {Object.keys(jogosAmanha).length === 0 ? (
+        {Object.keys(jogosAmanhaFiltrados).length === 0 ? (
           <div className="bg-gray-100 rounded-xl p-6 text-center">
             <p className="text-gray-600">Nenhum jogo programado para amanhã</p>
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosAmanha).sort((a, b) => {
+            {Object.keys(jogosAmanhaFiltrados).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
               const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
               const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
@@ -246,13 +280,13 @@ export default function Home() {
                     <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
                     {campeonato}
                     <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosAmanha[campeonato].length} {jogosAmanha[campeonato].length === 1 ? 'jogo' : 'jogos'}
+                      {jogosAmanhaFiltrados[campeonato].length} {jogosAmanhaFiltrados[campeonato].length === 1 ? 'jogo' : 'jogos'}
                     </span>
                   </h3>
                 </div>
                 <div className="p-4">
                   <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                    {jogosAmanha[campeonato].map((jogo) => (
+                    {jogosAmanhaFiltrados[campeonato].map((jogo) => (
                       <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
                         <div className="flex items-center justify-center mb-3">
                           <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
