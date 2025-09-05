@@ -37,6 +37,12 @@ export default function Header() {
                 Competições
               </Link>
               <Link 
+                href="/canais" 
+                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+              >
+                Canais
+              </Link>
+              <Link 
                 href="/sobre" 
                 className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
               >
