@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import JogoCard from "./components/JogoCard";
+import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from './utils/prioridades';
 
 type JogoSemana = {
   id: number;
@@ -17,10 +18,14 @@ export default function Home() {
   const [jogosHoje, setJogosHoje] = useState<Record<string, JogoSemana[]>>({});
   const [jogosAmanha, setJogosAmanha] = useState<Record<string, JogoSemana[]>>({});
   const [loading, setLoading] = useState(true);
+  const [prioridades, setPrioridades] = useState<any>(null);
 
   useEffect(() => {
     const carregarJogos = async () => {
       try {
+        const prioridadesData = await carregarPrioridades();
+        setPrioridades(prioridadesData);
+        
         const response = await fetch('/jogos.json');
         const data = await response.json();
         
@@ -90,6 +95,12 @@ export default function Home() {
         
         setJogosHoje(jogosHojePorCampeonato);
         setJogosAmanha(jogosAmanhaPorCampeonato);
+        
+        // Verificar campeonatos sem prioridade
+        const campeonatosSemPrioridade = getCampeonatosSemPrioridade(data.jogosSemana, prioridadesData);
+        if (campeonatosSemPrioridade.length > 0) {
+          console.warn('🚨 CAMPEONATOS SEM PRIORIDADE DETECTADOS:', campeonatosSemPrioridade);
+        }
         
       } catch (error) {
         console.error('Erro ao carregar jogos:', error);
@@ -255,8 +266,9 @@ export default function Home() {
         ) : (
           <div className="space-y-6">
             {Object.keys(jogosHoje).sort((a, b) => {
-              const prioridadeA = getPrioridadeCampeonato(a);
-              const prioridadeB = getPrioridadeCampeonato(b);
+              if (!prioridades) return a.localeCompare(b);
+              const prioridadeA = getPrioridadeCampeonato(a, prioridades);
+              const prioridadeB = getPrioridadeCampeonato(b, prioridades);
               if (prioridadeA !== prioridadeB) {
                 return prioridadeA - prioridadeB;
               }
@@ -317,8 +329,9 @@ export default function Home() {
         ) : (
           <div className="space-y-6">
             {Object.keys(jogosAmanha).sort((a, b) => {
-              const prioridadeA = getPrioridadeCampeonato(a);
-              const prioridadeB = getPrioridadeCampeonato(b);
+              if (!prioridades) return a.localeCompare(b);
+              const prioridadeA = getPrioridadeCampeonato(a, prioridades);
+              const prioridadeB = getPrioridadeCampeonato(b, prioridades);
               if (prioridadeA !== prioridadeB) {
                 return prioridadeA - prioridadeB;
               }
