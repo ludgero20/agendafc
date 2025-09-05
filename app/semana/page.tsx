@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import JogoCard from '../components/JogoCard'
-import CampeonatoDropdown from '../components/CampeonatoDropdown'
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from '../utils/prioridades'
 
 type JogoSemana = {
@@ -19,8 +19,7 @@ export default function Semana() {
   const [jogos, setJogos] = useState<JogoSemana[]>([]);
   const [loading, setLoading] = useState(true);
   const [prioridades, setPrioridades] = useState<any>(null);
-  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
-  const [campeonatosSelecionados, setCampeonatosSelecionados] = useState<string[]>([]);
+  const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
 
   useEffect(() => {
     const carregarJogos = async () => {
@@ -42,12 +41,6 @@ export default function Semana() {
         const jogosFiltrados = data.jogosSemana.filter((jogo: JogoSemana) => {
           return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
         });
-        
-        // Extrair campeonatos únicos para o dropdown
-        const campeonatosUnicos = [...new Set(jogosFiltrados.map((jogo: JogoSemana) => jogo.campeonato))].sort();
-        
-        setCampeonatosDisponiveis(campeonatosUnicos as string[]);
-        setCampeonatosSelecionados(campeonatosUnicos as string[]); // Por padrão, todos selecionados
         
         setJogos(jogosFiltrados);
       } catch (error) {
@@ -74,11 +67,8 @@ export default function Semana() {
     );
   }
 
-  // Filtrar jogos baseado nos campeonatos selecionados
-  const jogosFiltrados = jogos.filter(jogo => campeonatosSelecionados.includes(jogo.campeonato));
-  
   // Organizar jogos por data, depois por campeonato
-  const jogosPorData = jogosFiltrados.reduce((acc, jogo) => {
+  const jogosPorData = jogos.reduce((acc, jogo) => {
     const data = jogo.data;
     if (!acc[data]) {
       acc[data] = {};
@@ -117,6 +107,16 @@ export default function Semana() {
     });
   };
 
+  // Função para alternar expansão do campeonato
+  const toggleCampeonato = (data: string, campeonato: string) => {
+    setCampeonatosExpandidos(prev => ({
+      ...prev,
+      [data]: {
+        ...prev[data],
+        [campeonato]: !prev[data]?.[campeonato]
+      }
+    }));
+  };
 
   return (
     <div className="space-y-8">
@@ -127,15 +127,6 @@ export default function Semana() {
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Veja todos os jogos programados para esta semana com horários e canais
         </p>
-      </div>
-      
-      {/* Dropdown de Filtro de Campeonatos */}
-      <div className="flex justify-center">
-        <CampeonatoDropdown
-          campeonatos={campeonatosDisponiveis}
-          campeonatosSelecionados={campeonatosSelecionados}
-          onSelecaoChange={setCampeonatosSelecionados}
-        />
       </div>
       
       {Object.keys(jogosPorData).length === 0 ? (
@@ -162,40 +153,55 @@ export default function Semana() {
                   return a.localeCompare(b);
                 }).map((campeonato) => (
                   <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                    <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
-                      <h3 className="text-xl font-bold text-gray-800 flex items-center">
+                    <button
+                      onClick={() => toggleCampeonato(data, campeonato)}
+                      className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <div className="flex items-center">
                         <span className="mr-3 text-2xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                        {campeonato}
-                        <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                        <h3 className="text-xl font-bold text-gray-800">{campeonato}</h3>
+                        <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
                           {jogosPorData[data][campeonato].length} {jogosPorData[data][campeonato].length === 1 ? 'jogo' : 'jogos'}
                         </span>
-                      </h3>
-                    </div>
-                    <div className="p-6">
-                      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                        {jogosPorData[data][campeonato].map((jogo) => (
-                          <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                            <div className="flex items-center justify-between mb-3">
-                              <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                                🕒 {jogo.hora}
-                              </span>
-                            </div>
-                            <div className="text-center mb-3">
-                              <div className="flex items-center justify-center">
-                                <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                                <span className="mx-3 text-gray-400 font-bold">VS</span>
-                                <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-sm text-gray-500 mr-2">
+                          {campeonatosExpandidos[data]?.[campeonato] ? 'Recolher' : 'Ver jogos'}
+                        </span>
+                        {campeonatosExpandidos[data]?.[campeonato] ? (
+                          <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                        ) : (
+                          <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                        )}
+                      </div>
+                    </button>
+                    {campeonatosExpandidos[data]?.[campeonato] && (
+                      <div className="p-6">
+                        <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                          {jogosPorData[data][campeonato].map((jogo) => (
+                            <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                              <div className="flex items-center justify-between mb-3">
+                                <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                  🕒 {jogo.hora}
+                                </span>
+                              </div>
+                              <div className="text-center mb-3">
+                                <div className="flex items-center justify-center">
+                                  <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                                  <span className="mx-3 text-gray-400 font-bold">VS</span>
+                                  <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                                </div>
+                              </div>
+                              <div className="text-center">
+                                <span className="text-sm text-gray-600">
+                                  📺 {jogo.canal}
+                                </span>
                               </div>
                             </div>
-                            <div className="text-center">
-                              <span className="text-sm text-gray-600">
-                                📺 {jogo.canal}
-                              </span>
-                            </div>
-                          </div>
-                        ))}
+                          ))}
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 ))}
               </div>

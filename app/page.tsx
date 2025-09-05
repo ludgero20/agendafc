@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import JogoCard from "./components/JogoCard";
-import CampeonatoDropdown from "./components/CampeonatoDropdown";
+import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from './utils/prioridades';
 
 type JogoSemana = {
@@ -20,8 +20,8 @@ export default function Home() {
   const [jogosAmanha, setJogosAmanha] = useState<Record<string, JogoSemana[]>>({});
   const [loading, setLoading] = useState(true);
   const [prioridades, setPrioridades] = useState<any>(null);
-  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
-  const [campeonatosSelecionados, setCampeonatosSelecionados] = useState<string[]>([]);
+  const [campeonatosExpandidosHoje, setCampeonatosExpandidosHoje] = useState<Record<string, boolean>>({});
+  const [campeonatosExpandidosAmanha, setCampeonatosExpandidosAmanha] = useState<Record<string, boolean>>({});
 
   useEffect(() => {
     const carregarJogos = async () => {
@@ -96,13 +96,6 @@ export default function Home() {
           jogosAmanhaPorCampeonato[campeonato].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
         });
         
-        // Extrair campeonatos únicos para o dropdown
-        const todosOsJogos = [...jogosDeHoje, ...jogosDeAmanha];
-        const campeonatosUnicos = [...new Set(todosOsJogos.map(jogo => jogo.campeonato))].sort();
-        
-        setCampeonatosDisponiveis(campeonatosUnicos);
-        setCampeonatosSelecionados(campeonatosUnicos); // Por padrão, todos selecionados
-        
         setJogosHoje(jogosHojePorCampeonato);
         setJogosAmanha(jogosAmanhaPorCampeonato);
         
@@ -146,27 +139,25 @@ export default function Home() {
     });
   };
 
-
-
   const agora = new Date();
   const hoje = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
   const amanha = new Date(hoje);
   amanha.setDate(hoje.getDate() + 1);
   
-  // Filtrar jogos baseado nos campeonatos selecionados
-  const jogosHojeFiltrados = Object.keys(jogosHoje)
-    .filter(campeonato => campeonatosSelecionados.includes(campeonato))
-    .reduce((acc, campeonato) => {
-      acc[campeonato] = jogosHoje[campeonato];
-      return acc;
-    }, {} as Record<string, JogoSemana[]>);
-    
-  const jogosAmanhaFiltrados = Object.keys(jogosAmanha)
-    .filter(campeonato => campeonatosSelecionados.includes(campeonato))
-    .reduce((acc, campeonato) => {
-      acc[campeonato] = jogosAmanha[campeonato];
-      return acc;
-    }, {} as Record<string, JogoSemana[]>);
+  // Função para alternar expansão do campeonato
+  const toggleCampeonatoHoje = (campeonato: string) => {
+    setCampeonatosExpandidosHoje(prev => ({
+      ...prev,
+      [campeonato]: !prev[campeonato]
+    }));
+  };
+  
+  const toggleCampeonatoAmanha = (campeonato: string) => {
+    setCampeonatosExpandidosAmanha(prev => ({
+      ...prev,
+      [campeonato]: !prev[campeonato]
+    }));
+  };
 
   return (
     <div className="space-y-8">
@@ -179,15 +170,6 @@ export default function Home() {
           Acompanhe todos os jogos de futebol de hoje e amanhã com horários e canais de transmissão
         </p>
       </div>
-      
-      {/* Dropdown de Filtro de Campeonatos */}
-      <div className="flex justify-center">
-        <CampeonatoDropdown
-          campeonatos={campeonatosDisponiveis}
-          campeonatosSelecionados={campeonatosSelecionados}
-          onSelecaoChange={setCampeonatosSelecionados}
-        />
-      </div>
 
       {/* Jogos de Hoje */}
       <div className="">
@@ -196,13 +178,13 @@ export default function Home() {
             📅 Hoje - {formatarData(hoje)}
           </h2>
         </div>
-        {Object.keys(jogosHojeFiltrados).length === 0 ? (
+        {Object.keys(jogosHoje).length === 0 ? (
           <div className="bg-gray-100 rounded-xl p-6 text-center">
             <p className="text-gray-600">Nenhum jogo programado para hoje</p>
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosHojeFiltrados).sort((a, b) => {
+            {Object.keys(jogosHoje).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
               const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
               const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
@@ -212,40 +194,55 @@ export default function Home() {
               return a.localeCompare(b);
             }).map((campeonato) => (
               <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
-                  <h3 className="text-lg font-bold text-gray-800 flex items-center">
+                <button
+                  onClick={() => toggleCampeonatoHoje(campeonato)}
+                  className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                >
+                  <div className="flex items-center">
                     <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                    {campeonato}
-                    <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosHojeFiltrados[campeonato].length} {jogosHojeFiltrados[campeonato].length === 1 ? 'jogo' : 'jogos'}
+                    <h3 className="text-lg font-bold text-gray-800">{campeonato}</h3>
+                    <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                      {jogosHoje[campeonato].length} {jogosHoje[campeonato].length === 1 ? 'jogo' : 'jogos'}
                     </span>
-                  </h3>
-                </div>
-                <div className="p-4">
-                  <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                    {jogosHojeFiltrados[campeonato].map((jogo) => (
-                      <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                        <div className="flex items-center justify-center mb-3">
-                          <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                            🕒 {jogo.hora}
-                          </span>
-                        </div>
-                        <div className="text-center mb-3">
-                          <div className="flex items-center justify-center">
-                            <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                            <span className="mx-3 text-gray-400 font-bold">VS</span>
-                            <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-sm text-gray-500 mr-2">
+                      {campeonatosExpandidosHoje[campeonato] ? 'Recolher' : 'Ver jogos'}
+                    </span>
+                    {campeonatosExpandidosHoje[campeonato] ? (
+                      <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                    ) : (
+                      <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                    )}
+                  </div>
+                </button>
+                {campeonatosExpandidosHoje[campeonato] && (
+                  <div className="p-4">
+                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                      {jogosHoje[campeonato].map((jogo) => (
+                        <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                          <div className="flex items-center justify-center mb-3">
+                            <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                              🕒 {jogo.hora}
+                            </span>
+                          </div>
+                          <div className="text-center mb-3">
+                            <div className="flex items-center justify-center">
+                              <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                              <span className="mx-3 text-gray-400 font-bold">VS</span>
+                              <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                            </div>
+                          </div>
+                          <div className="text-center">
+                            <span className="text-sm text-gray-600">
+                              📺 {jogo.canal}
+                            </span>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <span className="text-sm text-gray-600">
-                            📺 {jogo.canal}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             ))}
           </div>
@@ -259,13 +256,13 @@ export default function Home() {
             📅 Amanhã - {formatarData(amanha)}
           </h2>
         </div>
-        {Object.keys(jogosAmanhaFiltrados).length === 0 ? (
+        {Object.keys(jogosAmanha).length === 0 ? (
           <div className="bg-gray-100 rounded-xl p-6 text-center">
             <p className="text-gray-600">Nenhum jogo programado para amanhã</p>
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosAmanhaFiltrados).sort((a, b) => {
+            {Object.keys(jogosAmanha).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
               const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
               const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
@@ -275,40 +272,55 @@ export default function Home() {
               return a.localeCompare(b);
             }).map((campeonato) => (
               <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
-                  <h3 className="text-lg font-bold text-gray-800 flex items-center">
+                <button
+                  onClick={() => toggleCampeonatoAmanha(campeonato)}
+                  className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                >
+                  <div className="flex items-center">
                     <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                    {campeonato}
-                    <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosAmanhaFiltrados[campeonato].length} {jogosAmanhaFiltrados[campeonato].length === 1 ? 'jogo' : 'jogos'}
+                    <h3 className="text-lg font-bold text-gray-800">{campeonato}</h3>
+                    <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                      {jogosAmanha[campeonato].length} {jogosAmanha[campeonato].length === 1 ? 'jogo' : 'jogos'}
                     </span>
-                  </h3>
-                </div>
-                <div className="p-4">
-                  <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                    {jogosAmanhaFiltrados[campeonato].map((jogo) => (
-                      <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                        <div className="flex items-center justify-center mb-3">
-                          <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                            🕒 {jogo.hora}
-                          </span>
-                        </div>
-                        <div className="text-center mb-3">
-                          <div className="flex items-center justify-center">
-                            <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                            <span className="mx-3 text-gray-400 font-bold">VS</span>
-                            <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                  </div>
+                  <div className="flex items-center">
+                    <span className="text-sm text-gray-500 mr-2">
+                      {campeonatosExpandidosAmanha[campeonato] ? 'Recolher' : 'Ver jogos'}
+                    </span>
+                    {campeonatosExpandidosAmanha[campeonato] ? (
+                      <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                    ) : (
+                      <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                    )}
+                  </div>
+                </button>
+                {campeonatosExpandidosAmanha[campeonato] && (
+                  <div className="p-4">
+                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                      {jogosAmanha[campeonato].map((jogo) => (
+                        <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                          <div className="flex items-center justify-center mb-3">
+                            <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                              🕒 {jogo.hora}
+                            </span>
+                          </div>
+                          <div className="text-center mb-3">
+                            <div className="flex items-center justify-center">
+                              <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                              <span className="mx-3 text-gray-400 font-bold">VS</span>
+                              <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                            </div>
+                          </div>
+                          <div className="text-center">
+                            <span className="text-sm text-gray-600">
+                              📺 {jogo.canal}
+                            </span>
                           </div>
                         </div>
-                        <div className="text-center">
-                          <span className="text-sm text-gray-600">
-                            📺 {jogo.canal}
-                          </span>
-                        </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             ))}
           </div>
