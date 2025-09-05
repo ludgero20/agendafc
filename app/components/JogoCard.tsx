@@ -47,6 +47,8 @@ export default function JogoCard({ campeonato, time1, time2, hora, canal }: Jogo
         return '🇪🇺';
       case 'Eliminatórias Africanas':
         return '🌍';
+      case 'Eliminatórias Sul-Americanas':
+        return '🌎';
       case 'Eliminatórias da Concacaf':
         return '🇺🇸';
       case 'Amistoso Internacional':

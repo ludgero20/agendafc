@@ -116,6 +116,8 @@ export default function Semana() {
         return '🌍';
       case 'Eliminatórias Europeias':
         return '🇪🇺';
+      case 'Eliminatórias Sul-Americanas':
+        return '🌎';
       case 'Eliminatórias da Concacaf':
         return '🇺🇸';
       case 'Campeonato Inglês (Quarta Divisão)':

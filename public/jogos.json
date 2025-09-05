@@ -1070,6 +1070,258 @@
       "time2": "Guatemala",
       "hora": "22:30",
       "canal": "Canal GOAT"
+    },
+    {
+      "id": 319,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Namíbia",
+      "time2": "São Tomé e Príncipe",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 320,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Quênia",
+      "time2": "Seicheles",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 321,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Serra Leoa",
+      "time2": "Etiópia",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 322,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Tanzânia",
+      "time2": "Níger",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 323,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Zimbábue",
+      "time2": "Ruanda",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 324,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "África do Sul",
+      "time2": "Nigéria",
+      "hora": "13:00",
+      "canal": "CazéTV, FIFA+"
+    },
+    {
+      "id": 325,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Cabo Verde",
+      "time2": "Camarões",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 326,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Burkina Faso",
+      "time2": "Egito",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 327,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "República Democrática do Congo",
+      "time2": "Senegal",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 328,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Togo",
+      "time2": "Sudão",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 329,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Azerbaijão",
+      "time2": "Ucrânia",
+      "hora": "13:00",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 330,
+      "data": "2025-09-09",
+      "campeonato": "Amistoso Internacional",
+      "time1": "Estônia",
+      "time2": "Andorra",
+      "hora": "13:00",
+      "canal": "Sportv 3"
+    },
+    {
+      "id": 331,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Hungria",
+      "time2": "Portugal",
+      "hora": "15:45",
+      "canal": "Sportv"
+    },
+    {
+      "id": 332,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "França",
+      "time2": "Islândia",
+      "hora": "15:45",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 333,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Gabão",
+      "time2": "Costa do Marfim",
+      "hora": "16:00",
+      "canal": "CazéTV, FIFA+"
+    },
+    {
+      "id": 334,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Angola",
+      "time2": "Ilhas Maurício",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 335,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Benin",
+      "time2": "Lesoto",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 336,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Gâmbia",
+      "time2": "Burundi",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 337,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Mauritânia",
+      "time2": "Sudão do Sul",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 338,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Sul-Americanas",
+      "time1": "Equador",
+      "time2": "Argentina",
+      "hora": "20:00",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 339,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Sul-Americanas",
+      "time1": "Bolívia",
+      "time2": "Brasil",
+      "hora": "20:30",
+      "canal": "Globo, ge tv, Sportv"
+    },
+    {
+      "id": 340,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Sul-Americanas",
+      "time1": "Chile",
+      "time2": "Uruguai",
+      "hora": "20:30",
+      "canal": "Sportv 4"
+    },
+    {
+      "id": 341,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Sul-Americanas",
+      "time1": "Venezuela",
+      "time2": "Colômbia",
+      "hora": "20:30",
+      "canal": "Sportv 5"
+    },
+    {
+      "id": 342,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias Sul-Americanas",
+      "time1": "Peru",
+      "time2": "Paraguai",
+      "hora": "20:30",
+      "canal": "Sportv 6"
+    },
+    {
+      "id": 343,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Jamaica",
+      "time2": "Trinidad e Tobago",
+      "hora": "21:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 344,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Curaçao",
+      "time2": "Bermudas",
+      "hora": "21:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 345,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Costa Rica",
+      "time2": "Haiti",
+      "hora": "23:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 346,
+      "data": "2025-09-09",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Honduras",
+      "time2": "Nicarágua",
+      "hora": "23:00",
+      "canal": "Canal GOAT"
     }
   ],
   "competicoes": [
