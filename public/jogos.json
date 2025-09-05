@@ -10,6 +10,366 @@
       "canal": "Globo / SporTV"
     },
     {
+      "id": 200,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Somália",
+      "time2": "Guiné",
+      "hora": "09:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 201,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Sudão do Sul",
+      "time2": "República Democrática do Congo",
+      "hora": "09:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 202,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Namíbia",
+      "time2": "Malawi",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 203,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Quênia",
+      "time2": "Gâmbia",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 204,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Benin",
+      "time2": "Zimbábue",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 205,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Congo",
+      "time2": "Tanzânia",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 206,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Djibuti",
+      "time2": "Burkina Faso",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 207,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Lesoto",
+      "time2": "África do Sul",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 208,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Uganda",
+      "time2": "Moçambique",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 209,
+      "data": "2025-09-05",
+      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
+      "time1": "Albacete",
+      "time2": "Mirandés",
+      "hora": "14:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 210,
+      "data": "2025-09-05",
+      "campeonato": "Copa do Nordeste sub-20 (semifinal)",
+      "time1": "Bahia sub-20",
+      "time2": "Vitória sub-20",
+      "hora": "15:00",
+      "canal": "Lance! (YouTube)"
+    },
+    {
+      "id": 211,
+      "data": "2025-09-05",
+      "campeonato": "Amistoso Internacional",
+      "time1": "Romênia",
+      "time2": "Canadá",
+      "hora": "15:00",
+      "canal": "Sportv 4"
+    },
+    {
+      "id": 212,
+      "data": "2025-09-05",
+      "campeonato": "Campeonato Inglês Feminino",
+      "time1": "Chelsea (F)",
+      "time2": "Manchester City (F)",
+      "hora": "15:30",
+      "canal": "Xsports, Canal GOAT"
+    },
+    {
+      "id": 213,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Ucrânia",
+      "time2": "França",
+      "hora": "15:45",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 214,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Eslovênia",
+      "time2": "Suécia",
+      "hora": "15:45",
+      "canal": "ESPN 4, Disney+"
+    },
+    {
+      "id": 215,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Itália",
+      "time2": "Estônia",
+      "hora": "15:45",
+      "canal": "Sportv"
+    },
+    {
+      "id": 216,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Dinamarca",
+      "time2": "Escócia",
+      "hora": "15:45",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 217,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Ilhas Faroe",
+      "time2": "Croácia",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 218,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Grécia",
+      "time2": "Belarus",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 219,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Suíça",
+      "time2": "Kosovo",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 220,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Montenegro",
+      "time2": "República Tcheca",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 221,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Islândia",
+      "time2": "Azerbaijão",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 222,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Moldávia",
+      "time2": "Israel",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 223,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Egito",
+      "time2": "Etiópia",
+      "hora": "16:00",
+      "canal": "CazéTV, FIFA+"
+    },
+    {
+      "id": 224,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Senegal",
+      "time2": "Sudão",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 225,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Costa do Marfim",
+      "time2": "Burundi",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 226,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Marrocos",
+      "time2": "Níger",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 227,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Mauritânia",
+      "time2": "Togo",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 228,
+      "data": "2025-09-05",
+      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
+      "time1": "Córdoba",
+      "time2": "Castellón",
+      "hora": "16:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 229,
+      "data": "2025-09-05",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Amazonas",
+      "time2": "Remo",
+      "hora": "17:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 230,
+      "data": "2025-09-05",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Paysandu",
+      "time2": "Volta Redonda",
+      "hora": "19:00",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 231,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Bermudas",
+      "time2": "Jamaica",
+      "hora": "19:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 232,
+      "data": "2025-09-05",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Defensor",
+      "time2": "Juventud",
+      "hora": "20:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 233,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Trinidad e Tobago",
+      "time2": "Curaçao",
+      "hora": "21:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 234,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Haiti",
+      "time2": "Honduras",
+      "hora": "21:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 235,
+      "data": "2025-09-05",
+      "campeonato": "Liga Feminina dos EUA",
+      "time1": "Racing Louisville (F)",
+      "time2": "Portland Thorns (F)",
+      "hora": "21:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 236,
+      "data": "2025-09-05",
+      "campeonato": "NFL",
+      "time1": "Los Angeles Chargers",
+      "time2": "Kansas City Chiefs",
+      "hora": "21:00",
+      "canal": "CazéTV, ge tv, Sportv, ESPN, Disney+, DAZN"
+    },
+    {
+      "id": 237,
+      "data": "2025-09-05",
+      "campeonato": "Copa da Argentina",
+      "time1": "Tigre",
+      "time2": "Independiente Rivadavia",
+      "hora": "21:10",
+      "canal": "Xsports"
+    },
+    {
+      "id": 238,
+      "data": "2025-09-05",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Coritiba",
+      "time2": "Ferroviária",
+      "hora": "21:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 239,
+      "data": "2025-09-05",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Nicarágua",
+      "time2": "Costa Rica",
+      "hora": "23:00",
+      "canal": "Canal GOAT"
+    },
+    {
       "id": 1,
       "data": "2025-09-05",
       "campeonato": "Brasileirão Série A",

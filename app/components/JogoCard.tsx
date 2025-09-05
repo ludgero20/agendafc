@@ -14,14 +14,18 @@ export default function JogoCard({ campeonato, time1, time2, hora, canal }: Jogo
   const getBandeiraPorCompeticao = (comp: string) => {
     switch (comp) {
       case 'Brasileirão Série A':
+      case 'Brasileirão Série B':
       case 'Copa do Brasil':
+      case 'Copa do Nordeste sub-20 (semifinal)':
         return '🇧🇷';
       case 'Libertadores da América':
       case 'Copa Sul-Americana':
         return '🌎';
       case 'Premier League':
+      case 'Campeonato Inglês Feminino':
         return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
       case 'La Liga':
+      case 'Campeonato Espanhol (Segunda Divisão)':
         return '🇪🇸';
       case 'Serie A':
         return '🇮🇹';
@@ -31,7 +35,22 @@ export default function JogoCard({ campeonato, time1, time2, hora, canal }: Jogo
         return '🇸🇦';
       case 'Champions League':
       case 'Europa League':
+      case 'Eliminatórias Europeias':
         return '🇪🇺';
+      case 'Eliminatórias Africanas':
+        return '🌍';
+      case 'Eliminatórias da Concacaf':
+        return '🇺🇸';
+      case 'Amistoso Internacional':
+        return '🌐';
+      case 'Campeonato Uruguaio':
+        return '🇺🇾';
+      case 'Copa da Argentina':
+        return '🇦🇷';
+      case 'Liga Feminina dos EUA':
+        return '🇺🇸';
+      case 'NFL':
+        return '🏈';
       default:
         return '⚽';
     }
