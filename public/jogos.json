@@ -82,24 +82,6 @@
       "canal": "FIFA+"
     },
     {
-      "id": 209,
-      "data": "2025-09-05",
-      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
-      "time1": "Albacete",
-      "time2": "Mirandés",
-      "hora": "14:30",
-      "canal": "Disney+"
-    },
-    {
-      "id": 210,
-      "data": "2025-09-05",
-      "campeonato": "Copa do Nordeste sub-20 (semifinal)",
-      "time1": "Bahia sub-20",
-      "time2": "Vitória sub-20",
-      "hora": "15:00",
-      "canal": "Lance! (YouTube)"
-    },
-    {
       "id": 211,
       "data": "2025-09-05",
       "campeonato": "Amistoso Internacional",
@@ -107,15 +89,6 @@
       "time2": "Canadá",
       "hora": "15:00",
       "canal": "Sportv 4"
-    },
-    {
-      "id": 212,
-      "data": "2025-09-05",
-      "campeonato": "Campeonato Inglês Feminino",
-      "time1": "Chelsea (F)",
-      "time2": "Manchester City (F)",
-      "hora": "15:30",
-      "canal": "Xsports, Canal GOAT"
     },
     {
       "id": 213,
@@ -253,15 +226,6 @@
       "canal": "FIFA+"
     },
     {
-      "id": 228,
-      "data": "2025-09-05",
-      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
-      "time1": "Córdoba",
-      "time2": "Castellón",
-      "hora": "16:30",
-      "canal": "Disney+"
-    },
-    {
       "id": 229,
       "data": "2025-09-05",
       "campeonato": "Brasileirão Série B",
@@ -316,15 +280,6 @@
       "canal": "Canal GOAT"
     },
     {
-      "id": 235,
-      "data": "2025-09-05",
-      "campeonato": "Liga Feminina dos EUA",
-      "time1": "Racing Louisville (F)",
-      "time2": "Portland Thorns (F)",
-      "hora": "21:00",
-      "canal": "Canal GOAT"
-    },
-    {
       "id": 236,
       "data": "2025-09-05",
       "campeonato": "NFL",
@@ -361,24 +316,6 @@
       "canal": "Canal GOAT"
     },
     {
-      "id": 240,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Inglês (Quarta Divisão)",
-      "time1": "Newport County",
-      "time2": "Bristol Rovers",
-      "hora": "08:30",
-      "canal": "Disney+"
-    },
-    {
-      "id": 241,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Inglês Feminino",
-      "time1": "Arsenal (F)",
-      "time2": "London City Lionesses (F)",
-      "hora": "09:30",
-      "canal": "Canal GOAT"
-    },
-    {
       "id": 242,
       "data": "2025-09-06",
       "campeonato": "Eliminatórias Europeias",
@@ -386,42 +323,6 @@
       "time2": "Sérvia",
       "hora": "10:00",
       "canal": "Sportv"
-    },
-    {
-      "id": 243,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Norte-Irlandês",
-      "time1": "Linfield",
-      "time2": "Portadown",
-      "hora": "11:00",
-      "canal": "OneFootball"
-    },
-    {
-      "id": 244,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Norte-Irlandês",
-      "time1": "Ballymena United",
-      "time2": "Glentoran",
-      "hora": "11:00",
-      "canal": "OneFootball"
-    },
-    {
-      "id": 245,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Norte-Irlandês",
-      "time1": "Crusaders",
-      "time2": "Coleraine",
-      "hora": "11:00",
-      "canal": "OneFootball"
-    },
-    {
-      "id": 246,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Norte-Irlandês",
-      "time1": "Carrick Rangers",
-      "time2": "Cliftonville",
-      "hora": "11:00",
-      "canal": "OneFootball"
     },
     {
       "id": 247,
@@ -451,15 +352,6 @@
       "canal": "CazéTV, FIFA+"
     },
     {
-      "id": 250,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Inglês (Quarta Divisão)",
-      "time1": "Bromley",
-      "time2": "Gillingham",
-      "hora": "13:30",
-      "canal": "Disney+"
-    },
-    {
       "id": 251,
       "data": "2025-09-06",
       "campeonato": "Supercopa da Argentina",
@@ -467,15 +359,6 @@
       "time2": "Central Córdoba",
       "hora": "15:00",
       "canal": "Disney+"
-    },
-    {
-      "id": 252,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Holandês (Segunda Divisão)",
-      "time1": "Cambuur",
-      "time2": "Willem II",
-      "hora": "15:00",
-      "canal": "Canal CaloSalvador (YouTube)"
     },
     {
       "id": 253,
@@ -530,15 +413,6 @@
       "time2": "Goiatuba",
       "hora": "16:00",
       "canal": "Metrópoles (YouTube)"
-    },
-    {
-      "id": 259,
-      "data": "2025-09-06",
-      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
-      "time1": "Málaga",
-      "time2": "Granada",
-      "hora": "16:00",
-      "canal": "Disney+"
     },
     {
       "id": 260,
@@ -638,15 +512,6 @@
       "time2": "Dallas",
       "hora": "21:30",
       "canal": "Apple TV"
-    },
-    {
-      "id": 271,
-      "data": "2025-09-06",
-      "campeonato": "Liga Feminina dos EUA",
-      "time1": "Bay FC (F)",
-      "time2": "Kansas City Current (F)",
-      "hora": "23:00",
-      "canal": "Xsports"
     },
     {
       "id": 272,
@@ -793,15 +658,6 @@
       "canal": "Disney+"
     },
     {
-      "id": 288,
-      "data": "2025-09-07",
-      "campeonato": "Liga Feminina dos EUA",
-      "time1": "Chicago Stars",
-      "time2": "Orlando Pride",
-      "hora": "16:00",
-      "canal": "Xsports, Canal GOAT"
-    },
-    {
       "id": 289,
       "data": "2025-09-07",
       "campeonato": "Brasileirão Série C",
@@ -816,15 +672,6 @@
       "campeonato": "Campeonato Uruguaio",
       "time1": "Nacional",
       "time2": "Racing",
-      "hora": "18:00",
-      "canal": "Disney+"
-    },
-    {
-      "id": 291,
-      "data": "2025-09-07",
-      "campeonato": "Liga Feminina dos EUA",
-      "time1": "NJ/NY Gotham (F)",
-      "time2": "Angel City (F)",
       "hora": "18:00",
       "canal": "Disney+"
     },
@@ -881,15 +728,6 @@
       "time2": "Liverpool",
       "hora": "20:30",
       "canal": "Disney+"
-    },
-    {
-      "id": 298,
-      "data": "2025-09-07",
-      "campeonato": "Liga Feminina dos EUA",
-      "time1": "San Diego Wave (F)",
-      "time2": "Houston Dash (F)",
-      "hora": "21:30",
-      "canal": "ESPN 4, Disney+"
     },
     {
       "id": 299,
@@ -964,15 +802,6 @@
       "canal": "FIFA+"
     },
     {
-      "id": 307,
-      "data": "2025-09-08",
-      "campeonato": "Campeonato Alemão Feminino",
-      "time1": "Carl Zeiss Jena (F)",
-      "time2": "Hoffenheim (F)",
-      "hora": "13:00",
-      "canal": "DAZN"
-    },
-    {
       "id": 308,
       "data": "2025-09-08",
       "campeonato": "Amistoso Internacional",
@@ -1034,15 +863,6 @@
       "time2": "CRB",
       "hora": "20:00",
       "canal": "Disney+"
-    },
-    {
-      "id": 315,
-      "data": "2025-09-08",
-      "campeonato": "Brasileirão Feminino sub-20",
-      "time1": "Flamengo sub-20 (F)",
-      "time2": "Botafogo sub-20 (F)",
-      "hora": "21:00",
-      "canal": "Sportv"
     },
     {
       "id": 316,
@@ -1335,7 +1155,7 @@
     {
       "id": 2,
       "nome": "Copa do Brasil",
-      "pais": "Brasil", 
+      "pais": "Brasil",
       "tipo": "Copa Nacional",
       "descricao": "Copa eliminatória mais importante do Brasil"
     },
@@ -1350,7 +1170,7 @@
       "id": 4,
       "nome": "Copa Sul-Americana",
       "pais": "América do Sul",
-      "tipo": "Continental", 
+      "tipo": "Continental",
       "descricao": "Segunda principal competição da América do Sul"
     },
     {
