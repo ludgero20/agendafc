@@ -890,6 +890,186 @@
       "time2": "Houston Dash (F)",
       "hora": "21:30",
       "canal": "ESPN 4, Disney+"
+    },
+    {
+      "id": 299,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Zâmbia",
+      "time2": "Marrocos",
+      "hora": "10:00",
+      "canal": "CazéTV, FIFA+"
+    },
+    {
+      "id": 300,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Guiné Equatorial",
+      "time2": "Tunísia",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 301,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Moçambique",
+      "time2": "Botsuana",
+      "hora": "10:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 302,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Guiné",
+      "time2": "Argélia",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 303,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Guiné-Bissau",
+      "time2": "Djibuti",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 304,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Madagascar",
+      "time2": "Chade",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 305,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Malawi",
+      "time2": "Libéria",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 306,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Uganda",
+      "time2": "Somália",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 307,
+      "data": "2025-09-08",
+      "campeonato": "Campeonato Alemão Feminino",
+      "time1": "Carl Zeiss Jena (F)",
+      "time2": "Hoffenheim (F)",
+      "hora": "13:00",
+      "canal": "DAZN"
+    },
+    {
+      "id": 308,
+      "data": "2025-09-08",
+      "campeonato": "Amistoso Internacional",
+      "time1": "República Tcheca",
+      "time2": "Arábia Saudita",
+      "hora": "14:15",
+      "canal": "Sportv 4"
+    },
+    {
+      "id": 309,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Croácia",
+      "time2": "Montenegro",
+      "hora": "15:45",
+      "canal": "Sportv"
+    },
+    {
+      "id": 310,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Grécia",
+      "time2": "Dinamarca",
+      "hora": "15:45",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 311,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Gana",
+      "time2": "Mali",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 312,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Líbia",
+      "time2": "Essuatíni",
+      "hora": "16:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 313,
+      "data": "2025-09-08",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Novorizontino",
+      "time2": "Atlético-GO",
+      "hora": "19:30",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 314,
+      "data": "2025-09-08",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Cuiabá",
+      "time2": "CRB",
+      "hora": "20:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 315,
+      "data": "2025-09-08",
+      "campeonato": "Brasileirão Feminino sub-20",
+      "time1": "Flamengo sub-20 (F)",
+      "time2": "Botafogo sub-20 (F)",
+      "hora": "21:00",
+      "canal": "Sportv"
+    },
+    {
+      "id": 316,
+      "data": "2025-09-08",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Vila Nova",
+      "time2": "Athletic",
+      "hora": "21:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 317,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "El Salvador",
+      "time2": "Suriname",
+      "hora": "21:30",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 318,
+      "data": "2025-09-08",
+      "campeonato": "Eliminatórias da Concacaf",
+      "time1": "Panamá",
+      "time2": "Guatemala",
+      "hora": "22:30",
+      "canal": "Canal GOAT"
     }
   ],
   "competicoes": [
