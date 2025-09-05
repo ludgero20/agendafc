@@ -267,8 +267,8 @@ export default function Home() {
           <div className="space-y-6">
             {Object.keys(jogosHoje).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
-              const prioridadeA = getPrioridadeCampeonato(a, prioridades);
-              const prioridadeB = getPrioridadeCampeonato(b, prioridades);
+              const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
+              const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
               if (prioridadeA !== prioridadeB) {
                 return prioridadeA - prioridadeB;
               }
@@ -330,8 +330,8 @@ export default function Home() {
           <div className="space-y-6">
             {Object.keys(jogosAmanha).sort((a, b) => {
               if (!prioridades) return a.localeCompare(b);
-              const prioridadeA = getPrioridadeCampeonato(a, prioridades);
-              const prioridadeB = getPrioridadeCampeonato(b, prioridades);
+              const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
+              const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
               if (prioridadeA !== prioridadeB) {
                 return prioridadeA - prioridadeB;
               }
