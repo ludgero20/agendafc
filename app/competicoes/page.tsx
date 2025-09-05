@@ -62,6 +62,20 @@ export default function Competicoes() {
     }
   };
 
+  const getBandeira = (pais: string) => {
+    switch (pais) {
+      case 'Brasil': return '🇧🇷';
+      case 'Inglaterra': return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+      case 'Espanha': return '🇪🇸';
+      case 'Itália': return '🇮🇹';
+      case 'França': return '🇫🇷';
+      case 'Arábia Saudita': return '🇸🇦';
+      case 'Europa': return '🇪🇺';
+      case 'América do Sul': return '🌎';
+      default: return '🌍';
+    }
+  };
+
   return (
     <div className="space-y-8">
       <div className="text-center py-8">
@@ -98,7 +112,7 @@ export default function Competicoes() {
                     </div>
                     <p className="text-gray-600 text-sm mb-3">{comp.descricao}</p>
                     <div className="flex items-center text-sm text-gray-500">
-                      <span className="mr-2">🌍</span>
+                      <span className="mr-2">{getBandeira(comp.pais)}</span>
                       <span>{comp.pais}</span>
                     </div>
                   </div>

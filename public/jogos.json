@@ -170,7 +170,7 @@
     {
       "id": 114,
       "data": "2024-09-12",
-      "campeonato": "Campeonato Italiano",
+      "campeonato": "Serie A",
       "time1": "Juventus",
       "time2": "AC Milan",
       "hora": "15:45",
@@ -179,7 +179,7 @@
     {
       "id": 115,
       "data": "2024-09-12",
-      "campeonato": "Campeonato Italiano",
+      "campeonato": "Serie A",
       "time1": "Inter de Milão",
       "time2": "Napoli",
       "hora": "13:00",
@@ -188,7 +188,7 @@
     {
       "id": 116,
       "data": "2024-09-12",
-      "campeonato": "Campeonato Italiano",
+      "campeonato": "Serie A",
       "time1": "AS Roma",
       "time2": "Lazio",
       "hora": "10:00",
@@ -197,7 +197,7 @@
     {
       "id": 117,
       "data": "2024-09-13",
-      "campeonato": "Campeonato Francês",
+      "campeonato": "Ligue 1",
       "time1": "PSG",
       "time2": "Olympique de Marseille",
       "hora": "16:00",
@@ -206,7 +206,7 @@
     {
       "id": 118,
       "data": "2024-09-13",
-      "campeonato": "Campeonato Francês",
+      "campeonato": "Ligue 1",
       "time1": "Lyon",
       "time2": "Monaco",
       "hora": "14:00",
@@ -215,7 +215,7 @@
     {
       "id": 119,
       "data": "2024-09-13",
-      "campeonato": "Campeonato Francês",
+      "campeonato": "Ligue 1",
       "time1": "Nice",
       "time2": "Lille",
       "hora": "11:00",
@@ -224,7 +224,7 @@
     {
       "id": 120,
       "data": "2024-09-14",
-      "campeonato": "Campeonato Saudita",
+      "campeonato": "Saudi Pro League",
       "time1": "Al-Nassr",
       "time2": "Al-Hilal",
       "hora": "14:00",
@@ -233,7 +233,7 @@
     {
       "id": 121,
       "data": "2024-09-14",
-      "campeonato": "Campeonato Saudita",
+      "campeonato": "Saudi Pro League",
       "time1": "Al-Ittihad",
       "time2": "Al-Ahli",
       "hora": "11:30",
@@ -242,7 +242,7 @@
     {
       "id": 122,
       "data": "2024-09-14",
-      "campeonato": "Campeonato Saudita",
+      "campeonato": "Saudi Pro League",
       "time1": "Al-Fateh",
       "time2": "Al-Shabab",
       "hora": "09:00",
@@ -339,24 +339,24 @@
     },
     {
       "id": 7,
-      "nome": "Campeonato Italiano",
+      "nome": "Serie A",
       "pais": "Itália",
       "tipo": "Nacional",
-      "descricao": "Liga italiana de futebol (Serie A)"
+      "descricao": "Principal liga de futebol da Itália"
     },
     {
       "id": 8,
-      "nome": "Campeonato Francês",
+      "nome": "Ligue 1",
       "pais": "França",
       "tipo": "Nacional",
-      "descricao": "Liga francesa de futebol (Ligue 1)"
+      "descricao": "Principal liga de futebol da França"
     },
     {
       "id": 9,
-      "nome": "Campeonato Saudita",
+      "nome": "Saudi Pro League",
       "pais": "Arábia Saudita",
       "tipo": "Nacional",
-      "descricao": "Liga saudita de futebol (Saudi Pro League)"
+      "descricao": "Principal liga de futebol da Arábia Saudita"
     },
     {
       "id": 10,
