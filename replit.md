@@ -29,8 +29,9 @@ Preferred communication style: Simple, everyday language.
 ### Routing Structure
 - **Pages**:
   - Home (`/`) - Today's games display
-  - Semana (`/semana`) - Weekly games view (placeholder)
-  - Competições (`/competicoes`) - Competitions listing (placeholder)
+  - Semana (`/semana`) - Weekly games view with date-organized schedule
+  - Competições (`/competicoes`) - Competitions listing with categorized tournaments
+  - Canais (`/canais`) - Streaming services and TV channels directory for affiliate marketing
   - Sobre (`/sobre`) - About page (placeholder)
 
 ### Development Setup
