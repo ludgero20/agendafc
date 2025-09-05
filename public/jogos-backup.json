@@ -228,22 +228,20 @@
     {
       "id": 229,
       "data": "2025-09-05",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Amazonas",
       "time2": "Remo",
       "hora": "17:00",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 230,
       "data": "2025-09-05",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Paysandu",
       "time2": "Volta Redonda",
       "hora": "19:00",
-      "canal": "ESPN, Disney+",
-      "divisao": "Série B"
+      "canal": "ESPN, Disney+"
     },
     {
       "id": 231,
@@ -302,12 +300,11 @@
     {
       "id": 238,
       "data": "2025-09-05",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Coritiba",
       "time2": "Ferroviária",
       "hora": "21:30",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 239,
@@ -393,34 +390,29 @@
     {
       "id": 256,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Botafogo-SP",
       "time2": "Athletico-PR",
       "hora": "16:00",
-      "canal": "RedeTV!, SportyNet, ESPN, Disney+, Desimpedidos",
-      "divisao": "Série B"
+      "canal": "RedeTV!, SportyNet, ESPN, Disney+, Desimpedidos"
     },
     {
       "id": 257,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série D (quartas)",
       "time1": "Barra",
       "time2": "Cianorte",
       "hora": "16:00",
-      "canal": "Metrópoles (YouTube)",
-      "divisao": "Série D",
-      "fase": "quartas"
+      "canal": "Metrópoles (YouTube)"
     },
     {
       "id": 258,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série D (quartas)",
       "time1": "Inter de Limeira",
       "time2": "Goiatuba",
       "hora": "16:00",
-      "canal": "Metrópoles (YouTube)",
-      "divisao": "Série D",
-      "fase": "quartas"
+      "canal": "Metrópoles (YouTube)"
     },
     {
       "id": 260,
@@ -434,33 +426,29 @@
     {
       "id": 261,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série C",
       "time1": "Guarani",
       "time2": "Ponte Preta",
       "hora": "17:00",
-      "canal": "SportyNet (TV e YouTube)",
-      "divisao": "Série C"
+      "canal": "SportyNet (TV e YouTube)"
     },
     {
       "id": 262,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série D (quartas)",
       "time1": "ASA",
       "time2": "Maranhão",
       "hora": "17:00",
-      "canal": "Metrópoles (YouTube)",
-      "divisao": "Série D",
-      "fase": "quartas"
+      "canal": "Metrópoles (YouTube)"
     },
     {
       "id": 263,
       "data": "2025-09-06",
-      "campeonato": "Copa do Nordeste",
+      "campeonato": "Copa do Nordeste (final)",
       "time1": "Bahia",
       "time2": "Confiança",
       "hora": "17:30",
-      "canal": "ESPN 4, Disney+, Premiere",
-      "fase": "final"
+      "canal": "ESPN 4, Disney+, Premiere"
     },
     {
       "id": 264,
@@ -483,12 +471,11 @@
     {
       "id": 266,
       "data": "2025-09-06",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série C",
       "time1": "São Bernardo",
       "time2": "Londrina",
       "hora": "19:30",
-      "canal": "SportyNet (TV e YouTube)",
-      "divisao": "Série C"
+      "canal": "SportyNet (TV e YouTube)"
     },
     {
       "id": 267,
@@ -538,12 +525,11 @@
     {
       "id": 277,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão Feminino",
+      "campeonato": "Brasileirão Feminino (final)",
       "time1": "Cruzeiro (F)",
       "time2": "Corinthians (F)",
       "hora": "10:30",
-      "canal": "Globo, Sportv, TV Brasil",
-      "fase": "final"
+      "canal": "Globo, Sportv, TV Brasil"
     },
     {
       "id": 278,
@@ -629,22 +615,20 @@
     {
       "id": 287,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Criciúma",
       "time2": "Chapecoense",
       "hora": "16:00",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 289,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série C",
       "time1": "Floresta",
       "time2": "Caxias",
       "hora": "16:30",
-      "canal": "SportyNet+",
-      "divisao": "Série C"
+      "canal": "SportyNet+"
     },
     {
       "id": 290,
@@ -658,33 +642,29 @@
     {
       "id": 292,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "América-MG",
       "time2": "Operário-PR",
       "hora": "18:30",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 293,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série C",
       "time1": "Brusque",
       "time2": "Náutico",
       "hora": "19:00",
-      "canal": "SportyNet+",
-      "divisao": "Série C"
+      "canal": "SportyNet+"
     },
     {
       "id": 294,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série D (quartas)",
       "time1": "América-RN",
       "time2": "Santa Cruz",
       "hora": "19:00",
-      "canal": "Metrópoles (YouTube)",
-      "divisao": "Série D",
-      "fase": "quartas"
+      "canal": "Metrópoles (YouTube)"
     },
     {
       "id": 295,
@@ -698,12 +678,11 @@
     {
       "id": 296,
       "data": "2025-09-07",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Avaí",
       "time2": "Goiás",
       "hora": "20:30",
-      "canal": "RedeTV!, Desimpedidos, ESPN, Disney+",
-      "divisao": "Série B"
+      "canal": "RedeTV!, Desimpedidos, ESPN, Disney+"
     },
     {
       "id": 297,
@@ -834,32 +813,29 @@
     {
       "id": 313,
       "data": "2025-09-08",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Novorizontino",
       "time2": "Atlético-GO",
       "hora": "19:30",
-      "canal": "ESPN, Disney+",
-      "divisao": "Série B"
+      "canal": "ESPN, Disney+"
     },
     {
       "id": 314,
       "data": "2025-09-08",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Cuiabá",
       "time2": "CRB",
       "hora": "20:00",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 316,
       "data": "2025-09-08",
-      "campeonato": "Brasileirão",
+      "campeonato": "Brasileirão Série B",
       "time1": "Vila Nova",
       "time2": "Athletic",
       "hora": "21:30",
-      "canal": "Disney+",
-      "divisao": "Série B"
+      "canal": "Disney+"
     },
     {
       "id": 317,

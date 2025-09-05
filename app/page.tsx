@@ -13,6 +13,8 @@ type JogoSemana = {
   time2: string;
   hora: string;
   canal: string;
+  divisao?: string;
+  fase?: string;
 };
 
 export default function Home() {
@@ -22,6 +24,26 @@ export default function Home() {
   const [prioridades, setPrioridades] = useState<any>(null);
   const [campeonatosExpandidosHoje, setCampeonatosExpandidosHoje] = useState<Record<string, boolean>>({});
   const [campeonatosExpandidosAmanha, setCampeonatosExpandidosAmanha] = useState<Record<string, boolean>>({});
+
+  // Função para criar nome de exibição do campeonato
+  const criarNomeExibicao = (jogo: JogoSemana) => {
+    let nome = jogo.campeonato;
+    if (jogo.divisao) nome += ` ${jogo.divisao}`;
+    if (jogo.fase) nome += ` (${jogo.fase})`;
+    return nome;
+  };
+
+  // Função para agrupar jogos por campeonato+divisão
+  const agruparJogos = (jogos: JogoSemana[]) => {
+    return jogos.reduce((acc: Record<string, JogoSemana[]>, jogo: JogoSemana) => {
+      const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
+      if (!acc[chave]) {
+        acc[chave] = [];
+      }
+      acc[chave].push(jogo);
+      return acc;
+    }, {} as Record<string, JogoSemana[]>);
+  };
 
   useEffect(() => {
     const carregarJogos = async () => {
@@ -70,30 +92,16 @@ export default function Home() {
           return dataJogo === amanhaStr;
         });
         
-        // Organizar jogos de hoje por campeonato e horário
-        const jogosHojePorCampeonato = jogosDeHoje.reduce((acc: Record<string, JogoSemana[]>, jogo: JogoSemana) => {
-          if (!acc[jogo.campeonato]) {
-            acc[jogo.campeonato] = [];
-          }
-          acc[jogo.campeonato].push(jogo);
-          return acc;
-        }, {} as Record<string, JogoSemana[]>);
-        
-        // Organizar jogos de amanhã por campeonato e horário
-        const jogosAmanhaPorCampeonato = jogosDeAmanha.reduce((acc: Record<string, JogoSemana[]>, jogo: JogoSemana) => {
-          if (!acc[jogo.campeonato]) {
-            acc[jogo.campeonato] = [];
-          }
-          acc[jogo.campeonato].push(jogo);
-          return acc;
-        }, {} as Record<string, JogoSemana[]>);
+        // Organizar jogos por campeonato+divisão
+        const jogosHojePorCampeonato = agruparJogos(jogosDeHoje);
+        const jogosAmanhaPorCampeonato = agruparJogos(jogosDeAmanha);
         
         // Ordenar jogos por horário dentro de cada campeonato
-        Object.keys(jogosHojePorCampeonato).forEach(campeonato => {
-          jogosHojePorCampeonato[campeonato].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
+        Object.keys(jogosHojePorCampeonato).forEach(chave => {
+          jogosHojePorCampeonato[chave].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
         });
-        Object.keys(jogosAmanhaPorCampeonato).forEach(campeonato => {
-          jogosAmanhaPorCampeonato[campeonato].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
+        Object.keys(jogosAmanhaPorCampeonato).forEach(chave => {
+          jogosAmanhaPorCampeonato[chave].sort((a: JogoSemana, b: JogoSemana) => a.hora.localeCompare(b.hora));
         });
         
         setJogosHoje(jogosHojePorCampeonato);
@@ -145,18 +153,36 @@ export default function Home() {
   amanha.setDate(hoje.getDate() + 1);
   
   // Função para alternar expansão do campeonato
-  const toggleCampeonatoHoje = (campeonato: string) => {
+  const toggleCampeonatoHoje = (chave: string) => {
     setCampeonatosExpandidosHoje(prev => ({
       ...prev,
-      [campeonato]: !prev[campeonato]
+      [chave]: !prev[chave]
     }));
   };
   
-  const toggleCampeonatoAmanha = (campeonato: string) => {
+  const toggleCampeonatoAmanha = (chave: string) => {
     setCampeonatosExpandidosAmanha(prev => ({
       ...prev,
-      [campeonato]: !prev[campeonato]
+      [chave]: !prev[chave]
     }));
+  };
+
+  // Função para ordenar campeonatos por prioridade
+  const ordenarCampeonatos = (chaves: string[], jogosGrupo: Record<string, JogoSemana[]>) => {
+    return chaves.sort((a, b) => {
+      if (!prioridades) return a.localeCompare(b);
+      
+      const jogoA = jogosGrupo[a][0];
+      const jogoB = jogosGrupo[b][0];
+      
+      const prioridadeA = getPrioridadeCampeonato(jogoA.campeonato, prioridades, '', '');
+      const prioridadeB = getPrioridadeCampeonato(jogoB.campeonato, prioridades, '', '');
+      
+      if (prioridadeA !== prioridadeB) {
+        return prioridadeA - prioridadeB;
+      }
+      return a.localeCompare(b);
+    });
   };
 
   return (
@@ -184,67 +210,70 @@ export default function Home() {
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosHoje).sort((a, b) => {
-              if (!prioridades) return a.localeCompare(b);
-              const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
-              const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
-              if (prioridadeA !== prioridadeB) {
-                return prioridadeA - prioridadeB;
-              }
-              return a.localeCompare(b);
-            }).map((campeonato) => (
-              <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                <button
-                  onClick={() => toggleCampeonatoHoje(campeonato)}
-                  className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                    <h3 className="text-lg font-bold text-gray-800">{campeonato}</h3>
-                    <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosHoje[campeonato].length} {jogosHoje[campeonato].length === 1 ? 'jogo' : 'jogos'}
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">
-                      {campeonatosExpandidosHoje[campeonato] ? 'Recolher' : 'Ver jogos'}
-                    </span>
-                    {campeonatosExpandidosHoje[campeonato] ? (
-                      <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-                    ) : (
-                      <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-                    )}
-                  </div>
-                </button>
-                {campeonatosExpandidosHoje[campeonato] && (
-                  <div className="p-4">
-                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                      {jogosHoje[campeonato].map((jogo) => (
-                        <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                          <div className="flex items-center justify-center mb-3">
-                            <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                              🕒 {jogo.hora}
-                            </span>
-                          </div>
-                          <div className="text-center mb-3">
-                            <div className="flex items-center justify-center">
-                              <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                              <span className="mx-3 text-gray-400 font-bold">VS</span>
-                              <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+            {ordenarCampeonatos(Object.keys(jogosHoje), jogosHoje).map((chave) => {
+              const jogosDoGrupo = jogosHoje[chave];
+              const jogoExemplo = jogosDoGrupo[0];
+              const nomeExibicao = criarNomeExibicao(jogoExemplo);
+              
+              return (
+                <div key={chave} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button
+                    onClick={() => toggleCampeonatoHoje(chave)}
+                    className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                  >
+                    <div className="flex items-center">
+                      <span className="mr-3 text-xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
+                      <h3 className="text-lg font-bold text-gray-800">{nomeExibicao}</h3>
+                      <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                        {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'jogo' : 'jogos'}
+                      </span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-sm text-gray-500 mr-2">
+                        {campeonatosExpandidosHoje[chave] ? 'Recolher' : 'Ver jogos'}
+                      </span>
+                      {campeonatosExpandidosHoje[chave] ? (
+                        <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                      ) : (
+                        <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+                  {campeonatosExpandidosHoje[chave] && (
+                    <div className="p-4">
+                      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                        {jogosDoGrupo.map((jogo) => (
+                          <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                            <div className="flex items-center justify-center mb-3">
+                              <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                🕒 {jogo.hora}
+                              </span>
+                              {jogo.fase && (
+                                <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
+                                  🏆 {jogo.fase}
+                                </span>
+                              )}
+                            </div>
+                            <div className="text-center mb-3">
+                              <div className="flex items-center justify-center">
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                                <span className="mx-3 text-gray-400 font-bold">VS</span>
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <span className="text-sm text-gray-600">
+                                📺 {jogo.canal}
+                              </span>
                             </div>
                           </div>
-                          <div className="text-center">
-                            <span className="text-sm text-gray-600">
-                              📺 {jogo.canal}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
@@ -262,67 +291,70 @@ export default function Home() {
           </div>
         ) : (
           <div className="space-y-6">
-            {Object.keys(jogosAmanha).sort((a, b) => {
-              if (!prioridades) return a.localeCompare(b);
-              const prioridadeA = getPrioridadeCampeonato(a, prioridades, '', '');
-              const prioridadeB = getPrioridadeCampeonato(b, prioridades, '', '');
-              if (prioridadeA !== prioridadeB) {
-                return prioridadeA - prioridadeB;
-              }
-              return a.localeCompare(b);
-            }).map((campeonato) => (
-              <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                <button
-                  onClick={() => toggleCampeonatoAmanha(campeonato)}
-                  className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3 text-xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                    <h3 className="text-lg font-bold text-gray-800">{campeonato}</h3>
-                    <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                      {jogosAmanha[campeonato].length} {jogosAmanha[campeonato].length === 1 ? 'jogo' : 'jogos'}
-                    </span>
-                  </div>
-                  <div className="flex items-center">
-                    <span className="text-sm text-gray-500 mr-2">
-                      {campeonatosExpandidosAmanha[campeonato] ? 'Recolher' : 'Ver jogos'}
-                    </span>
-                    {campeonatosExpandidosAmanha[campeonato] ? (
-                      <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-                    ) : (
-                      <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-                    )}
-                  </div>
-                </button>
-                {campeonatosExpandidosAmanha[campeonato] && (
-                  <div className="p-4">
-                    <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                      {jogosAmanha[campeonato].map((jogo) => (
-                        <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                          <div className="flex items-center justify-center mb-3">
-                            <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                              🕒 {jogo.hora}
-                            </span>
-                          </div>
-                          <div className="text-center mb-3">
-                            <div className="flex items-center justify-center">
-                              <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                              <span className="mx-3 text-gray-400 font-bold">VS</span>
-                              <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+            {ordenarCampeonatos(Object.keys(jogosAmanha), jogosAmanha).map((chave) => {
+              const jogosDoGrupo = jogosAmanha[chave];
+              const jogoExemplo = jogosDoGrupo[0];
+              const nomeExibicao = criarNomeExibicao(jogoExemplo);
+              
+              return (
+                <div key={chave} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                  <button
+                    onClick={() => toggleCampeonatoAmanha(chave)}
+                    className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                  >
+                    <div className="flex items-center">
+                      <span className="mr-3 text-xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
+                      <h3 className="text-lg font-bold text-gray-800">{nomeExibicao}</h3>
+                      <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                        {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'jogo' : 'jogos'}
+                      </span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-sm text-gray-500 mr-2">
+                        {campeonatosExpandidosAmanha[chave] ? 'Recolher' : 'Ver jogos'}
+                      </span>
+                      {campeonatosExpandidosAmanha[chave] ? (
+                        <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                      ) : (
+                        <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+                  {campeonatosExpandidosAmanha[chave] && (
+                    <div className="p-4">
+                      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                        {jogosDoGrupo.map((jogo) => (
+                          <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                            <div className="flex items-center justify-center mb-3">
+                              <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                🕒 {jogo.hora}
+                              </span>
+                              {jogo.fase && (
+                                <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
+                                  🏆 {jogo.fase}
+                                </span>
+                              )}
+                            </div>
+                            <div className="text-center mb-3">
+                              <div className="flex items-center justify-center">
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                                <span className="mx-3 text-gray-400 font-bold">VS</span>
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <span className="text-sm text-gray-600">
+                                📺 {jogo.canal}
+                              </span>
                             </div>
                           </div>
-                          <div className="text-center">
-                            <span className="text-sm text-gray-600">
-                              📺 {jogo.canal}
-                            </span>
-                          </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
