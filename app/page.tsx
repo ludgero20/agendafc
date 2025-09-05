@@ -24,14 +24,19 @@ export default function Home() {
         const response = await fetch('/jogos.json');
         const data = await response.json();
         
-        // Obter data de hoje e amanhã
+        // Obter data de hoje e amanhã (usando timezone local)
         const hoje = new Date();
         const amanha = new Date(hoje);
         amanha.setDate(hoje.getDate() + 1);
         
-        // Formatar datas para comparar (YYYY-MM-DD)
-        const hojeStr = hoje.toISOString().split('T')[0];
-        const amanhaStr = amanha.toISOString().split('T')[0];
+        // Formatar datas para comparar (YYYY-MM-DD) usando timezone local
+        const hojeStr = hoje.getFullYear() + '-' + 
+                       String(hoje.getMonth() + 1).padStart(2, '0') + '-' + 
+                       String(hoje.getDate()).padStart(2, '0');
+        const amanhaStr = amanha.getFullYear() + '-' + 
+                         String(amanha.getMonth() + 1).padStart(2, '0') + '-' + 
+                         String(amanha.getDate()).padStart(2, '0');
+        
         
         // Filtrar jogos por data
         const jogosDaSemanа = data.jogosSemana || [];
