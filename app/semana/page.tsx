@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import JogoCard from '../components/JogoCard'
+import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from '../utils/prioridades'
 
 type JogoSemana = {
   id: number;
@@ -16,10 +17,14 @@ type JogoSemana = {
 export default function Semana() {
   const [jogos, setJogos] = useState<JogoSemana[]>([]);
   const [loading, setLoading] = useState(true);
+  const [prioridades, setPrioridades] = useState<any>(null);
 
   useEffect(() => {
     const carregarJogos = async () => {
       try {
+        const prioridadesData = await carregarPrioridades();
+        setPrioridades(prioridadesData);
+        
         const response = await fetch('/jogos.json');
         const data = await response.json();
         
@@ -100,104 +105,6 @@ export default function Semana() {
     });
   };
 
-  const getPrioridadeCampeonato = (comp: string): number => {
-    // GRUPO 1 - MÁXIMA PRIORIDADE (Futebol Brasileiro)
-    if (['Brasileirão Série A', 'Brasileirão Série B', 'Brasileirão Série C', 'Brasileirão Série D (quartas)', 'Brasileirão Feminino (final)', 'Copa do Brasil', 'Copa do Nordeste (final)'].includes(comp)) {
-      return 1;
-    }
-    // GRUPO 2 - ALTA PRIORIDADE (Sul-América)
-    if (['Eliminatórias Sul-Americanas', 'Copa Libertadores da América', 'Copa Sul-Americana', 'Copa da Argentina', 'Supercopa da Argentina', 'Campeonato Uruguaio'].includes(comp)) {
-      return 2;
-    }
-    // GRUPO 3 - PRIORIDADE MÉDIA (Europa Top)
-    if (['Champions League', 'Europa League', 'Premier League', 'La Liga', 'Serie A', 'Bundesliga', 'Ligue 1', 'Campeonato Português', 'Eliminatórias Europeias'].includes(comp)) {
-      return 3;
-    }
-    // GRUPO 4 - PRIORIDADE BAIXA (Outras Competições)
-    if (['Copa da Inglaterra', 'Copa da França', 'Copa da Alemanha', 'Copa de Portugal', 'Copa da Itália', 'Copa da Espanha', 'MLS', 'Eliminatórias Africanas', 'Copa da Liga Japonesa (quartas)'].includes(comp)) {
-      return 4;
-    }
-    // GRUPO 5 - PRIORIDADE MÍNIMA
-    return 5;
-  };
-
-  const getBandeiraPorCompeticao = (comp: string) => {
-    switch (comp) {
-      case 'Brasileirão Série A':
-      case 'Brasileirão Série B':
-      case 'Brasileirão Série C':
-      case 'Brasileirão Série D (quartas)':
-      case 'Brasileirão Feminino (final)':
-      case 'Brasileirão Feminino sub-20':
-      case 'Copa do Brasil':
-      case 'Copa do Nordeste (final)':
-      case 'Copa do Brasil':
-        return '🇧🇷';
-      case 'Eliminatórias Africanas':
-        return '🌍';
-      case 'Eliminatórias Europeias':
-        return '🇪🇺';
-      case 'Eliminatórias Sul-Americanas':
-        return '🌎';
-      case 'Eliminatórias da Concacaf':
-        return '🇺🇸';
-      case 'Campeonato Inglês (Quarta Divisão)':
-      case 'Campeonato Inglês Feminino':
-        return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
-      case 'Campeonato Norte-Irlandês':
-        return '🏴󠁧󠁢󠁮󠁩󠁲󠁿';
-      case 'Campeonato Espanhol (Segunda Divisão)':
-        return '🇪🇸';
-      case 'Campeonato Uruguaio':
-        return '🇺🇾';
-      case 'Supercopa da Argentina':
-      case 'Copa da Argentina':
-        return '🇦🇷';
-      case 'Liga Feminina dos EUA':
-      case 'MLS':
-        return '🇺🇸';
-      case 'Campeonato Holandês (Segunda Divisão)':
-        return '🇳🇱';
-      case 'Campeonato Português':
-        return '🇵🇹';
-      case 'Copa da Liga Japonesa (quartas)':
-        return '🇯🇵';
-      case 'Champions League':
-      case 'Europa League':
-        return '🇪🇺';
-      case 'Premier League':
-        return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
-      case 'La Liga':
-        return '🇪🇸';
-      case 'Serie A':
-        return '🇮🇹';
-      case 'Bundesliga':
-        return '🇩🇪';
-      case 'Ligue 1':
-        return '🇫🇷';
-      case 'Copa Libertadores da América':
-      case 'Copa Sul-Americana':
-        return '🌎';
-      case 'Copa da Inglaterra':
-        return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
-      case 'Copa da França':
-        return '🇫🇷';
-      case 'Copa da Alemanha':
-        return '🇩🇪';
-      case 'Copa de Portugal':
-        return '🇵🇹';
-      case 'Copa da Itália':
-        return '🇮🇹';
-      case 'Copa da Espanha':
-        return '🇪🇸';
-      case 'Campeonato Alemão Feminino':
-        return '🇩🇪';
-      case 'Amistoso Internacional':
-        return '🌐';
-      default:
-        return '⚽';
-    }
-  };
 
   return (
     <div className="space-y-8">
@@ -225,8 +132,9 @@ export default function Semana() {
               
               <div className="space-y-6">
                 {Object.keys(jogosPorData[data]).sort((a, b) => {
-                  const prioridadeA = getPrioridadeCampeonato(a);
-                  const prioridadeB = getPrioridadeCampeonato(b);
+                  if (!prioridades) return a.localeCompare(b);
+                  const prioridadeA = getPrioridadeCampeonato(a, prioridades);
+                  const prioridadeB = getPrioridadeCampeonato(b, prioridades);
                   if (prioridadeA !== prioridadeB) {
                     return prioridadeA - prioridadeB;
                   }
