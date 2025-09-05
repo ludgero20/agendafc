@@ -77,65 +77,81 @@ export function getCampeonatosSemPrioridade(jogos: any[], prioridades: Prioridad
 
 export function getBandeiraPorCompeticao(comp: string): string {
   switch (comp) {
-    case 'Brasileirão Série A':
-    case 'Brasileirão Série B':
-    case 'Brasileirão Série C':
-    case 'Brasileirão Série D (quartas)':
-    case 'Brasileirão Feminino (final)':
+    // 🇧🇷 Campeonatos Brasileiros
+    case 'Brasileirão':
+    case 'Brasileirão Feminino':
     case 'Copa do Brasil':
-    case 'Copa do Nordeste (final)':
+    case 'Copa do Nordeste':
       return '🇧🇷';
+    
+    // 🌎 Sul-América
     case 'Libertadores da América':
     case 'Copa Sul-Americana':
     case 'Copa Libertadores da América':
     case 'Eliminatórias Sul-Americanas':
+    case 'Copa da Argentina':
+    case 'Supercopa da Argentina':
+    case 'Campeonato Uruguaio':
       return '🌎';
+    
+    // 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra
     case 'Premier League':
-    case 'Campeonato Inglês Feminino':
-    case 'Campeonato Inglês (Quarta Divisão)':
     case 'Copa da Inglaterra':
       return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+    
+    // 🇪🇸 Espanha
     case 'La Liga':
-    case 'Campeonato Espanhol (Segunda Divisão)':
     case 'Copa da Espanha':
       return '🇪🇸';
+    
+    // 🇮🇹 Itália
     case 'Serie A':
     case 'Copa da Itália':
       return '🇮🇹';
+    
+    // 🇫🇷 França
     case 'Ligue 1':
     case 'Copa da França':
       return '🇫🇷';
+    
+    // 🇩🇪 Alemanha
     case 'Bundesliga':
     case 'Copa da Alemanha':
       return '🇩🇪';
+    
+    // 🇵🇹 Portugal
+    case 'Campeonato Português':
+    case 'Copa de Portugal':
+      return '🇵🇹';
+    
+    // 🇸🇦 Arábia Saudita
     case 'Saudi Pro League':
       return '🇸🇦';
+    
+    // 🇪🇺 Europa/UEFA
     case 'Champions League':
     case 'Europa League':
     case 'Eliminatórias Europeias':
       return '🇪🇺';
-    case 'Eliminatórias Africanas':
-      return '🌍';
+    
+    // 🇺🇸 América do Norte
     case 'Eliminatórias da Concacaf':
-    case 'Liga Feminina dos EUA':
     case 'MLS':
       return '🇺🇸';
+    
+    // 🌍 África
+    case 'Eliminatórias Africanas':
+      return '🌍';
+    
+    // 🌐 Internacional/Amistosos
     case 'Amistoso Internacional':
       return '🌐';
-    case 'Campeonato Uruguaio':
-      return '🇺🇾';
-    case 'Copa da Argentina':
-    case 'Supercopa da Argentina':
-      return '🇦🇷';
-    case 'Campeonato Holandês (Segunda Divisão)':
-      return '🇳🇱';
-    case 'Campeonato Português':
-    case 'Copa de Portugal':
-      return '🇵🇹';
-    case 'Copa da Liga Japonesa (quartas)':
-      return '🇯🇵';
+    
+    // 🏈 NFL
     case 'NFL':
       return '🏈';
+    
+    // ⚽ Padrão
     default:
       return '⚽';
   }
