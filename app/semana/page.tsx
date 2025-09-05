@@ -60,26 +60,37 @@ export default function Semana() {
     );
   }
 
-  const jogosPorCampeonato = jogos.reduce((acc, jogo) => {
-    const campeonato = jogo.campeonato;
-    if (!acc[campeonato]) {
-      acc[campeonato] = [];
+  // Organizar jogos por data, depois por campeonato
+  const jogosPorData = jogos.reduce((acc, jogo) => {
+    const data = jogo.data;
+    if (!acc[data]) {
+      acc[data] = {};
     }
-    acc[campeonato].push(jogo);
+    if (!acc[data][jogo.campeonato]) {
+      acc[data][jogo.campeonato] = [];
+    }
+    acc[data][jogo.campeonato].push(jogo);
     return acc;
-  }, {} as Record<string, JogoSemana[]>);
+  }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-  // Ordenar jogos dentro de cada campeonato por data e hora
-  Object.keys(jogosPorCampeonato).forEach(campeonato => {
-    jogosPorCampeonato[campeonato].sort((a, b) => {
-      if (a.data !== b.data) {
-        return a.data.localeCompare(b.data);
-      }
-      return a.hora.localeCompare(b.hora);
+  // Ordenar jogos dentro de cada campeonato por horário
+  Object.keys(jogosPorData).forEach(data => {
+    Object.keys(jogosPorData[data]).forEach(campeonato => {
+      jogosPorData[data][campeonato].sort((a, b) => a.hora.localeCompare(b.hora));
     });
   });
 
   const formatarData = (data: string) => {
+    const [ano, mes, dia] = data.split('-');
+    const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia));
+    return dataObj.toLocaleDateString('pt-BR', { 
+      weekday: 'long', 
+      day: 'numeric', 
+      month: 'long' 
+    });
+  };
+
+  const formatarDataCurta = (data: string) => {
     const [ano, mes, dia] = data.split('-');
     const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia));
     return dataObj.toLocaleDateString('pt-BR', { 
@@ -145,51 +156,58 @@ export default function Semana() {
         </p>
       </div>
       
-      {Object.keys(jogosPorCampeonato).length === 0 ? (
+      {Object.keys(jogosPorData).length === 0 ? (
         <div className="bg-gray-100 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-semibold text-gray-800 mb-2">Nenhum jogo encontrado!</h3>
           <p className="text-gray-600">Não há jogos programados para esta semana.</p>
         </div>
       ) : (
         <div className="space-y-10">
-          {Object.keys(jogosPorCampeonato).sort().map((campeonato) => (
-            <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-              <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
-                <h2 className="text-xl font-bold text-gray-800 flex items-center">
-                  <span className="mr-3 text-2xl">{getBandeiraPorCompeticao(campeonato)}</span>
-                  {campeonato}
-                  <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                    {jogosPorCampeonato[campeonato].length} {jogosPorCampeonato[campeonato].length === 1 ? 'jogo' : 'jogos'}
-                  </span>
-                </h2>
-              </div>
-              <div className="p-6">
-                <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                  {jogosPorCampeonato[campeonato].map((jogo) => (
-                    <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-sm font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">
-                          {formatarData(jogo.data)}
+          {Object.keys(jogosPorData).sort().map((data) => (
+            <div key={data} className="">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                📅 {formatarData(data)}
+              </h2>
+              
+              <div className="space-y-6">
+                {Object.keys(jogosPorData[data]).sort().map((campeonato) => (
+                  <div key={campeonato} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                      <h3 className="text-xl font-bold text-gray-800 flex items-center">
+                        <span className="mr-3 text-2xl">{getBandeiraPorCompeticao(campeonato)}</span>
+                        {campeonato}
+                        <span className="ml-auto bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                          {jogosPorData[data][campeonato].length} {jogosPorData[data][campeonato].length === 1 ? 'jogo' : 'jogos'}
                         </span>
-                        <span className="text-sm text-gray-500">
-                          🕒 {jogo.hora}
-                        </span>
-                      </div>
-                      <div className="text-center mb-3">
-                        <div className="flex items-center justify-center">
-                          <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                          <span className="mx-3 text-gray-400 font-bold">VS</span>
-                          <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
-                        </div>
-                      </div>
-                      <div className="text-center">
-                        <span className="text-sm text-gray-600">
-                          📺 {jogo.canal}
-                        </span>
+                      </h3>
+                    </div>
+                    <div className="p-6">
+                      <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                        {jogosPorData[data][campeonato].map((jogo) => (
+                          <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
+                            <div className="flex items-center justify-between mb-3">
+                              <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                🕒 {jogo.hora}
+                              </span>
+                            </div>
+                            <div className="text-center mb-3">
+                              <div className="flex items-center justify-center">
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
+                                <span className="mx-3 text-gray-400 font-bold">VS</span>
+                                <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
+                              </div>
+                            </div>
+                            <div className="text-center">
+                              <span className="text-sm text-gray-600">
+                                📺 {jogo.canal}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
