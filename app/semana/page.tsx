@@ -22,7 +22,20 @@ export default function Semana() {
       try {
         const response = await fetch('/jogos.json');
         const data = await response.json();
-        setJogos(data.jogosSemana);
+        
+        // Obter data de hoje usando timezone de São Paulo
+        const agora = new Date();
+        const hojeDate = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+        const hojeStr = hojeDate.getFullYear() + '-' + 
+                       String(hojeDate.getMonth() + 1).padStart(2, '0') + '-' + 
+                       String(hojeDate.getDate()).padStart(2, '0');
+        
+        // Filtrar jogos para mostrar apenas de hoje em diante
+        const jogosFiltrados = data.jogosSemana.filter((jogo: JogoSemana) => {
+          return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
+        });
+        
+        setJogos(jogosFiltrados);
       } catch (error) {
         console.error('Erro ao carregar jogos da semana:', error);
         setJogos([]);
@@ -39,7 +52,7 @@ export default function Semana() {
       <div className="space-y-8">
         <div className="text-center py-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            📅 Jogos da Semana
+            📅 Agenda da Semana
           </h1>
           <p className="text-xl text-gray-600">Carregando jogos...</p>
         </div>
@@ -70,7 +83,7 @@ export default function Semana() {
     <div className="space-y-8">
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          📅 Jogos da Semana
+          📅 Agenda da Semana
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Veja todos os jogos programados para esta semana com horários e canais
