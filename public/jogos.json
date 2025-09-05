@@ -359,6 +359,294 @@
       "time2": "Costa Rica",
       "hora": "23:00",
       "canal": "Canal GOAT"
+    },
+    {
+      "id": 240,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Inglês (Quarta Divisão)",
+      "time1": "Newport County",
+      "time2": "Bristol Rovers",
+      "hora": "08:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 241,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Inglês Feminino",
+      "time1": "Arsenal (F)",
+      "time2": "London City Lionesses (F)",
+      "hora": "09:30",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 242,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Letônia",
+      "time2": "Sérvia",
+      "hora": "10:00",
+      "canal": "Sportv"
+    },
+    {
+      "id": 243,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Norte-Irlandês",
+      "time1": "Linfield",
+      "time2": "Portadown",
+      "hora": "11:00",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 244,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Norte-Irlandês",
+      "time1": "Ballymena United",
+      "time2": "Glentoran",
+      "hora": "11:00",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 245,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Norte-Irlandês",
+      "time1": "Crusaders",
+      "time2": "Coleraine",
+      "hora": "11:00",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 246,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Norte-Irlandês",
+      "time1": "Carrick Rangers",
+      "time2": "Cliftonville",
+      "hora": "11:00",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 247,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Inglaterra",
+      "time2": "Andorra",
+      "hora": "13:00",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 248,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Armênia",
+      "time2": "Portugal",
+      "hora": "13:00",
+      "canal": "Sportv"
+    },
+    {
+      "id": 249,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "Nigéria",
+      "time2": "Ruanda",
+      "hora": "13:00",
+      "canal": "CazéTV, FIFA+"
+    },
+    {
+      "id": 250,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Inglês (Quarta Divisão)",
+      "time1": "Bromley",
+      "time2": "Gillingham",
+      "hora": "13:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 251,
+      "data": "2025-09-06",
+      "campeonato": "Supercopa da Argentina",
+      "time1": "Vélez Sarsfield",
+      "time2": "Central Córdoba",
+      "hora": "15:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 252,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Holandês (Segunda Divisão)",
+      "time1": "Cambuur",
+      "time2": "Willem II",
+      "hora": "15:00",
+      "canal": "Canal CaloSalvador (YouTube)"
+    },
+    {
+      "id": 253,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Montevideo Wanderers",
+      "time2": "Danubio",
+      "hora": "15:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 254,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Áustria",
+      "time2": "Chipre",
+      "hora": "15:45",
+      "canal": "ESPN 3, Disney+"
+    },
+    {
+      "id": 255,
+      "data": "2025-09-06",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Irlanda",
+      "time2": "Hungria",
+      "hora": "15:45",
+      "canal": "Sportv 4"
+    },
+    {
+      "id": 256,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Botafogo-SP",
+      "time2": "Athletico-PR",
+      "hora": "16:00",
+      "canal": "RedeTV!, SportyNet, ESPN, Disney+, Desimpedidos"
+    },
+    {
+      "id": 257,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série D (quartas)",
+      "time1": "Barra",
+      "time2": "Cianorte",
+      "hora": "16:00",
+      "canal": "Metrópoles (YouTube)"
+    },
+    {
+      "id": 258,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série D (quartas)",
+      "time1": "Inter de Limeira",
+      "time2": "Goiatuba",
+      "hora": "16:00",
+      "canal": "Metrópoles (YouTube)"
+    },
+    {
+      "id": 259,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Espanhol (Segunda Divisão)",
+      "time1": "Málaga",
+      "time2": "Granada",
+      "hora": "16:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 260,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Português",
+      "time1": "Estoril",
+      "time2": "Santa Clara",
+      "hora": "16:30",
+      "canal": "Xsports"
+    },
+    {
+      "id": 261,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série C",
+      "time1": "Guarani",
+      "time2": "Ponte Preta",
+      "hora": "17:00",
+      "canal": "SportyNet (TV e YouTube)"
+    },
+    {
+      "id": 262,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série D (quartas)",
+      "time1": "ASA",
+      "time2": "Maranhão",
+      "hora": "17:00",
+      "canal": "Metrópoles (YouTube)"
+    },
+    {
+      "id": 263,
+      "data": "2025-09-06",
+      "campeonato": "Copa do Nordeste (final)",
+      "time1": "Bahia",
+      "time2": "Confiança",
+      "hora": "17:30",
+      "canal": "ESPN 4, Disney+, Premiere"
+    },
+    {
+      "id": 264,
+      "data": "2025-09-06",
+      "campeonato": "Amistoso Internacional",
+      "time1": "Estados Unidos",
+      "time2": "Coreia do Sul",
+      "hora": "18:00",
+      "canal": "Xsports"
+    },
+    {
+      "id": 265,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Peñarol",
+      "time2": "Plaza Colonia",
+      "hora": "18:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 266,
+      "data": "2025-09-06",
+      "campeonato": "Brasileirão Série C",
+      "time1": "São Bernardo",
+      "time2": "Londrina",
+      "hora": "19:30",
+      "canal": "SportyNet (TV e YouTube)"
+    },
+    {
+      "id": 267,
+      "data": "2025-09-06",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Boston River",
+      "time2": "River Plate",
+      "hora": "20:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 268,
+      "data": "2025-09-06",
+      "campeonato": "MLS",
+      "time1": "Chicago Fire",
+      "time2": "New England Revolution",
+      "hora": "21:30",
+      "canal": "Apple TV"
+    },
+    {
+      "id": 269,
+      "data": "2025-09-06",
+      "campeonato": "MLS",
+      "time1": "Houston Dynamo",
+      "time2": "Los Angeles Galaxy",
+      "hora": "21:30",
+      "canal": "Apple TV"
+    },
+    {
+      "id": 270,
+      "data": "2025-09-06",
+      "campeonato": "MLS",
+      "time1": "St. Louis",
+      "time2": "Dallas",
+      "hora": "21:30",
+      "canal": "Apple TV"
+    },
+    {
+      "id": 271,
+      "data": "2025-09-06",
+      "campeonato": "Liga Feminina dos EUA",
+      "time1": "Bay FC (F)",
+      "time2": "Kansas City Current (F)",
+      "hora": "23:00",
+      "canal": "Xsports"
     }
   ],
   "competicoes": [
