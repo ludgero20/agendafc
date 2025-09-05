@@ -12,14 +12,21 @@ type JogoProps = {
 
 export default function JogoCard({ campeonato, time1, time2, hora, canal }: JogoProps) {
   return (
-    <div className="bg-white shadow p-4 rounded-xl">
-      <h3 className="font-semibold text-lg mb-2">{campeonato}</h3>
-      <p className="text-gray-700">
-        {time1} x {time2}
-      </p>
-      <p className="text-sm text-gray-500 mt-1">
-        🕒 {hora} | 📺 {canal}
-      </p>
+    <div className="bg-gray-100 hover:bg-gray-200 shadow-sm hover:shadow-md p-6 rounded-xl transition-all duration-200 border border-gray-200">
+      <h3 className="font-bold text-lg mb-3 text-gray-800">{campeonato}</h3>
+      <div className="flex items-center justify-center mb-4">
+        <span className="text-xl font-semibold text-blue-600">{time1}</span>
+        <span className="mx-4 text-gray-400 font-bold">VS</span>
+        <span className="text-xl font-semibold text-blue-600">{time2}</span>
+      </div>
+      <div className="flex justify-between items-center text-sm text-gray-600">
+        <span className="flex items-center">
+          🕒 {hora}
+        </span>
+        <span className="flex items-center">
+          📺 {canal}
+        </span>
+      </div>
     </div>
   );
 }

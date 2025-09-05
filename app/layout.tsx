@@ -1,36 +1,30 @@
-import "./globals.css";
-import Link from "next/link";
+import React from 'react'
+import type { Metadata } from 'next'
+import './globals.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
-export const metadata = {
-  title: "Futebol na TV",
-  description: "Jogos de hoje e da semana com horários e canais de transmissão",
-};
+export const metadata: Metadata = {
+  title: 'FutbolApp - Jogos e Competições',
+  description: 'Acompanhe jogos de futebol, competições e muito mais!',
+}
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="pt-BR">
-      <body className="bg-gray-100 text-gray-900">
-        {/* Header */}
-        <header className="bg-green-700 text-white p-4 shadow-md">
-          <nav className="flex justify-between items-center max-w-5xl mx-auto">
-            <h1 className="text-xl font-bold">Futebol na TV</h1>
-            <ul className="flex gap-4">
-              <li><Link href="/">Jogos de Hoje</Link></li>
-              <li><Link href="/semana">Jogos da Semana</Link></li>
-              <li><Link href="/competicoes">Competições</Link></li>
-              <li><Link href="/sobre">Sobre</Link></li>
-            </ul>
-          </nav>
-        </header>
-
-        {/* Main */}
-        <main className="max-w-5xl mx-auto p-6">{children}</main>
-
-        {/* Footer */}
-        <footer className="bg-gray-900 text-white text-center p-4 text-sm mt-6">
-          © {new Date().getFullYear()} Futebol na TV – Todos os direitos reservados
-        </footer>
+      <body className="min-h-screen bg-gray-50 flex flex-col">
+        <Header />
+        <main className="flex-grow pt-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {children}
+          </div>
+        </main>
+        <Footer />
       </body>
     </html>
-  );
+  )
 }
