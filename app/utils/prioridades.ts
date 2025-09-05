@@ -35,7 +35,22 @@ export async function carregarPrioridades(): Promise<PrioridadeData> {
   }
 }
 
-export function getPrioridadeCampeonato(campeonato: string, prioridades: PrioridadeData): number {
+export function getPrioridadeCampeonato(campeonato: string, prioridades: PrioridadeData, time1?: string, time2?: string): number {
+  // Regra especial: Seleção Brasileira sempre no Grupo 1
+  if (time1 || time2) {
+    const times = [time1, time2].filter(Boolean).map(t => t?.toLowerCase());
+    const temSelecaoBrasileira = times.some(time => 
+      time?.includes('brasil') || 
+      time?.includes('brazil') || 
+      time === 'seleção brasileira' ||
+      time === 'selecao brasileira'
+    );
+    
+    if (temSelecaoBrasileira) {
+      return 1; // Seleção brasileira sempre no grupo 1
+    }
+  }
+
   for (const [grupo, dados] of Object.entries(prioridades.grupos)) {
     if (dados.campeonatos.includes(campeonato)) {
       return parseInt(grupo);
@@ -52,7 +67,7 @@ export function getCampeonatosSemPrioridade(jogos: any[], prioridades: Prioridad
   const campeonatosSemPrioridade: string[] = [];
   
   for (const campeonato of campeonatosUnicos) {
-    if (getPrioridadeCampeonato(campeonato, prioridades) === 6) {
+    if (getPrioridadeCampeonato(campeonato, prioridades, '', '') === 6) {
       campeonatosSemPrioridade.push(campeonato);
     }
   }
