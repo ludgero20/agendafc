@@ -647,6 +647,249 @@
       "time2": "Kansas City Current (F)",
       "hora": "23:00",
       "canal": "Xsports"
+    },
+    {
+      "id": 272,
+      "data": "2025-09-07",
+      "campeonato": "Copa da Liga Japonesa (quartas)",
+      "time1": "Sanfrecce Hiroshima",
+      "time2": "Shonam Bellmare",
+      "hora": "06:30",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 273,
+      "data": "2025-09-07",
+      "campeonato": "Copa da Liga Japonesa (quartas)",
+      "time1": "Kawasaki Frontale",
+      "time2": "Urawa Reds",
+      "hora": "07:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 274,
+      "data": "2025-09-07",
+      "campeonato": "Copa da Liga Japonesa (quartas)",
+      "time1": "Kashiwa Reysol",
+      "time2": "Yokohama F. Marinos",
+      "hora": "07:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 275,
+      "data": "2025-09-07",
+      "campeonato": "Copa da Liga Japonesa (quartas)",
+      "time1": "Vissel Kobe",
+      "time2": "Yokohama FC",
+      "hora": "07:00",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 276,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Geórgia",
+      "time2": "Bulgária",
+      "hora": "10:00",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 277,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Feminino (final)",
+      "time1": "Cruzeiro (F)",
+      "time2": "Corinthians (F)",
+      "hora": "10:30",
+      "canal": "Globo, Sportv, TV Brasil"
+    },
+    {
+      "id": 278,
+      "data": "2025-09-07",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Cerro",
+      "time2": "Cerro Largo",
+      "hora": "11:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 279,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Lituânia",
+      "time2": "Holanda",
+      "hora": "13:00",
+      "canal": "Sportv"
+    },
+    {
+      "id": 280,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Macedônia do Norte",
+      "time2": "Liechtenstein",
+      "hora": "13:00",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 281,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Africanas",
+      "time1": "República Centro-Africana",
+      "time2": "Comores",
+      "hora": "13:00",
+      "canal": "FIFA+"
+    },
+    {
+      "id": 282,
+      "data": "2025-09-07",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Progreso",
+      "time2": "Miramar Misiones",
+      "hora": "15:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 283,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Alemanha",
+      "time2": "Irlanda do Norte",
+      "hora": "15:45",
+      "canal": "Sportv"
+    },
+    {
+      "id": 284,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Turquia",
+      "time2": "Espanha",
+      "hora": "15:45",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 285,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Bélgica",
+      "time2": "Cazaquistão",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 286,
+      "data": "2025-09-07",
+      "campeonato": "Eliminatórias Europeias",
+      "time1": "Polônia",
+      "time2": "Finlândia",
+      "hora": "15:45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 287,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Criciúma",
+      "time2": "Chapecoense",
+      "hora": "16:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 288,
+      "data": "2025-09-07",
+      "campeonato": "Liga Feminina dos EUA",
+      "time1": "Chicago Stars",
+      "time2": "Orlando Pride",
+      "hora": "16:00",
+      "canal": "Xsports, Canal GOAT"
+    },
+    {
+      "id": 289,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série C",
+      "time1": "Floresta",
+      "time2": "Caxias",
+      "hora": "16:30",
+      "canal": "SportyNet+"
+    },
+    {
+      "id": 290,
+      "data": "2025-09-07",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Nacional",
+      "time2": "Racing",
+      "hora": "18:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 291,
+      "data": "2025-09-07",
+      "campeonato": "Liga Feminina dos EUA",
+      "time1": "NJ/NY Gotham (F)",
+      "time2": "Angel City (F)",
+      "hora": "18:00",
+      "canal": "Disney+"
+    },
+    {
+      "id": 292,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série B",
+      "time1": "América-MG",
+      "time2": "Operário-PR",
+      "hora": "18:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 293,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série C",
+      "time1": "Brusque",
+      "time2": "Náutico",
+      "hora": "19:00",
+      "canal": "SportyNet+"
+    },
+    {
+      "id": 294,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série D (quartas)",
+      "time1": "América-RN",
+      "time2": "Santa Cruz",
+      "hora": "19:00",
+      "canal": "Metrópoles (YouTube)"
+    },
+    {
+      "id": 295,
+      "data": "2025-09-07",
+      "campeonato": "MLS",
+      "time1": "Sporting Kansas City",
+      "time2": "Austin",
+      "hora": "20:00",
+      "canal": "Space, HBO Max, Apple TV"
+    },
+    {
+      "id": 296,
+      "data": "2025-09-07",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Avaí",
+      "time2": "Goiás",
+      "hora": "20:30",
+      "canal": "RedeTV!, Desimpedidos, ESPN, Disney+"
+    },
+    {
+      "id": 297,
+      "data": "2025-09-07",
+      "campeonato": "Campeonato Uruguaio",
+      "time1": "Montevideo City Torque",
+      "time2": "Liverpool",
+      "hora": "20:30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 298,
+      "data": "2025-09-07",
+      "campeonato": "Liga Feminina dos EUA",
+      "time1": "San Diego Wave (F)",
+      "time2": "Houston Dash (F)",
+      "hora": "21:30",
+      "canal": "ESPN 4, Disney+"
     }
   ],
   "competicoes": [

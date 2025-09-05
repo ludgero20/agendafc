@@ -17,6 +17,7 @@ export default function JogoCard({ campeonato, time1, time2, hora, canal }: Jogo
       case 'Brasileirão Série B':
       case 'Brasileirão Série C':
       case 'Brasileirão Série D (quartas)':
+      case 'Brasileirão Feminino (final)':
       case 'Copa do Brasil':
       case 'Copa do Nordeste sub-20 (semifinal)':
       case 'Copa do Nordeste (final)':
@@ -61,6 +62,8 @@ export default function JogoCard({ campeonato, time1, time2, hora, canal }: Jogo
         return '🇳🇱';
       case 'Campeonato Português':
         return '🇵🇹';
+      case 'Copa da Liga Japonesa (quartas)':
+        return '🇯🇵';
       case 'NFL':
         return '🏈';
       default:
