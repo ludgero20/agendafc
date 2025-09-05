@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50 border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-[60] border-b border-gray-200">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
@@ -83,7 +83,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div className={`
-        fixed top-16 left-0 right-0 bg-white shadow-lg z-45 md:hidden border-b border-gray-200
+        fixed top-16 left-0 right-0 bg-white shadow-lg z-50 md:hidden border-b border-gray-200
         transform transition-all duration-300 ease-in-out
         ${mobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}
       `}>
