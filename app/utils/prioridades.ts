@@ -84,15 +84,21 @@ export function getBandeiraPorCompeticao(comp: string): string {
     case 'Copa do Nordeste':
       return '🇧🇷';
     
-    // 🌎 Sul-América
+    // 🌎 Sul-América (Continental)
     case 'Libertadores da América':
     case 'Copa Sul-Americana':
     case 'Copa Libertadores da América':
     case 'Eliminatórias Sul-Americanas':
+      return '🌎';
+    
+    // 🇦🇷 Argentina
     case 'Copa da Argentina':
     case 'Supercopa da Argentina':
+      return '🇦🇷';
+    
+    // 🇺🇾 Uruguai
     case 'Campeonato Uruguaio':
-      return '🌎';
+      return '🇺🇾';
     
     // 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra
     case 'Premier League':
