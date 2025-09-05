@@ -1142,6 +1142,60 @@
       "time2": "Nicarágua",
       "hora": "23:00",
       "canal": "Canal GOAT"
+    },
+    {
+      "id": 347,
+      "data": "2025-09-07",
+      "campeonato": "NFL",
+      "time1": "Pittsburgh Steelers",
+      "time2": "New York Jets",
+      "hora": "14:00",
+      "canal": "ESPN3, Disney+"
+    },
+    {
+      "id": 348,
+      "data": "2025-09-07",
+      "campeonato": "NFL",
+      "time1": "New York Giants",
+      "time2": "Washington Commanders",
+      "hora": "14:00",
+      "canal": "GE TV"
+    },
+    {
+      "id": 349,
+      "data": "2025-09-07",
+      "campeonato": "NFL",
+      "time1": "San Francisco 49ers",
+      "time2": "Seattle Seahawks",
+      "hora": "17:05",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 350,
+      "data": "2025-09-07",
+      "campeonato": "NFL",
+      "time1": "Detroit Lions",
+      "time2": "Green Bay Packers",
+      "hora": "17:25",
+      "canal": "ESPN3, Disney+"
+    },
+    {
+      "id": 351,
+      "data": "2025-09-07",
+      "campeonato": "NFL",
+      "time1": "Baltimore Ravens",
+      "time2": "Buffalo Bills",
+      "hora": "21:20",
+      "canal": "Sportv 2"
+    },
+    {
+      "id": 352,
+      "data": "2025-09-08",
+      "campeonato": "NFL",
+      "time1": "Minnesota Vikings",
+      "time2": "Chicago Bears",
+      "hora": "21:15",
+      "canal": "ESPN2, Disney+"
     }
   ],
   "competicoes": [
