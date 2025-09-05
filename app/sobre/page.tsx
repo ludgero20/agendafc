@@ -1,5 +1,4 @@
 import React from 'react'
-import { InformationCircleIcon } from '@heroicons/react/24/outline'
 
 export default function Sobre() {
   return (
@@ -15,7 +14,6 @@ export default function Sobre() {
       
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-gray-100 rounded-xl p-6">
-          <InformationCircleIcon className="w-5 h-5 text-blue-600 mb-4" />
           <h3 className="text-xl font-semibold text-gray-800 mb-3">Nossa Missão</h3>
           <p className="text-gray-600">
             Facilitar o acesso à informação sobre jogos de futebol, oferecendo horários e canais de transmissão de forma prática e organizada.

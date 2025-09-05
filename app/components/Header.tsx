@@ -2,12 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { 
-  HomeIcon, 
-  CalendarDaysIcon, 
-  TrophyIcon, 
-  InformationCircleIcon 
-} from '@heroicons/react/24/outline';
 
 export default function Header() {
   return (
@@ -26,30 +20,26 @@ export default function Header() {
             <div className="ml-10 flex items-baseline space-x-4">
               <Link 
                 href="/" 
-                className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
               >
-                <HomeIcon className="w-4 h-4 mr-2" />
                 Início
               </Link>
               <Link 
                 href="/semana" 
-                className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
               >
-                <CalendarDaysIcon className="w-4 h-4 mr-2" />
                 Semana
               </Link>
               <Link 
                 href="/competicoes" 
-                className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
               >
-                <TrophyIcon className="w-4 h-4 mr-2" />
                 Competições
               </Link>
               <Link 
                 href="/sobre" 
-                className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
+                className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors"
               >
-                <InformationCircleIcon className="w-4 h-4 mr-2" />
                 Sobre
               </Link>
             </div>

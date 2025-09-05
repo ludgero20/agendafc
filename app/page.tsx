@@ -2,7 +2,6 @@
 
 import React from 'react';
 import JogoCard from "./components/JogoCard";
-import { CalendarIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 export default function Home() {
   const jogos = [
@@ -24,8 +23,7 @@ export default function Home() {
 
       {/* Games Section */}
       <div className="">
-        <div className="flex items-center mb-6">
-          <ClockIcon className="w-6 h-6 mr-2 text-blue-600" />
+        <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-800">Jogos Agendados</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
