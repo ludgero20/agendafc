@@ -24,18 +24,19 @@ export default function Home() {
         const response = await fetch('/jogos.json');
         const data = await response.json();
         
-        // Obter data de hoje e amanhã (usando timezone local)
-        const hoje = new Date();
-        const amanha = new Date(hoje);
-        amanha.setDate(hoje.getDate() + 1);
+        // Obter data de hoje e amanhã (usando timezone de São Paulo)
+        const agora = new Date();
+        const hojeDate = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+        const amanhaDate = new Date(hojeDate);
+        amanhaDate.setDate(hojeDate.getDate() + 1);
         
-        // Formatar datas para comparar (YYYY-MM-DD) usando timezone local
-        const hojeStr = hoje.getFullYear() + '-' + 
-                       String(hoje.getMonth() + 1).padStart(2, '0') + '-' + 
-                       String(hoje.getDate()).padStart(2, '0');
-        const amanhaStr = amanha.getFullYear() + '-' + 
-                         String(amanha.getMonth() + 1).padStart(2, '0') + '-' + 
-                         String(amanha.getDate()).padStart(2, '0');
+        // Formatar datas para comparar (YYYY-MM-DD) usando timezone de São Paulo
+        const hojeStr = hojeDate.getFullYear() + '-' + 
+                       String(hojeDate.getMonth() + 1).padStart(2, '0') + '-' + 
+                       String(hojeDate.getDate()).padStart(2, '0');
+        const amanhaStr = amanhaDate.getFullYear() + '-' + 
+                         String(amanhaDate.getMonth() + 1).padStart(2, '0') + '-' + 
+                         String(amanhaDate.getDate()).padStart(2, '0');
         
         
         // Filtrar jogos por data
@@ -45,7 +46,7 @@ export default function Home() {
           let dataJogo = jogo.data;
           if (dataJogo.includes('/')) {
             const [dia, mes] = dataJogo.split('/');
-            const ano = hoje.getFullYear();
+            const ano = hojeDate.getFullYear();
             dataJogo = `${ano}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}`;
           }
           return dataJogo === hojeStr;
@@ -55,7 +56,7 @@ export default function Home() {
           let dataJogo = jogo.data;
           if (dataJogo.includes('/')) {
             const [dia, mes] = dataJogo.split('/');
-            const ano = hoje.getFullYear();
+            const ano = hojeDate.getFullYear();
             dataJogo = `${ano}-${mes.padStart(2, '0')}-${dia.padStart(2, '0')}`;
           }
           return dataJogo === amanhaStr;
@@ -98,7 +99,8 @@ export default function Home() {
     });
   };
 
-  const hoje = new Date();
+  const agora = new Date();
+  const hoje = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
   const amanha = new Date(hoje);
   amanha.setDate(hoje.getDate() + 1);
 

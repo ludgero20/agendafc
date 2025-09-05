@@ -1,6 +1,15 @@
 {
   "jogosSemana": [
     {
+      "id": 0,
+      "data": "2025-09-04",
+      "campeonato": "Copa do Brasil",
+      "time1": "Vasco da Gama",
+      "time2": "Atlético-MG",
+      "hora": "19:00",
+      "canal": "Globo / SporTV"
+    },
+    {
       "id": 1,
       "data": "2025-09-05",
       "campeonato": "Brasileirão Série A",
