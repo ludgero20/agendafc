@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Copyright */}
           <div className="flex items-center text-sm text-gray-600">
-            <span>© 2024 FutbolApp</span>
+            <span>© 2025 Agenda FC</span>
             <span className="mx-2">•</span>
             <span className="flex items-center">
               Feito com <HeartIcon className="w-4 h-4 mx-1 text-red-500" /> para os amantes do futebol
