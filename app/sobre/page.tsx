@@ -5,7 +5,7 @@ export default function Sobre() {
     <div className="space-y-8">
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          ℹ️ Sobre o FutbolApp
+          ℹ️ Sobre o Agenda FC
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Conheça mais sobre nossa plataforma de jogos de futebol
