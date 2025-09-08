@@ -1184,6 +1184,46 @@
       "time2": "Chicago Bears",
       "hora": "21:15",
       "canal": "ESPN2, Disney+"
+    },
+    {
+      "id": 353,
+      "data": "2025-09-10",
+      "campeonato": "Copa do Brasil",
+      "fase": "quartas de final",
+      "time1": "Fluminense",
+      "time2": "Bahia",
+      "hora": "19:00",
+      "canal": "SporTV, Premiere"
+    },
+    {
+      "id": 354,
+      "data": "2025-09-10",
+      "campeonato": "Copa do Brasil",
+      "fase": "quartas de final",
+      "time1": "Corinthians",
+      "time2": "Athletico-PR",
+      "hora": "21:30",
+      "canal": "Globo, SporTV, Premiere, Prime Video"
+    },
+    {
+      "id": 355,
+      "data": "2025-09-11",
+      "campeonato": "Copa do Brasil",
+      "fase": "quartas de final",
+      "time1": "Cruzeiro",
+      "time2": "Atlético-MG",
+      "hora": "19:30",
+      "canal": "Prime Video"
+    },
+    {
+      "id": 356,
+      "data": "2025-09-11",
+      "campeonato": "Copa do Brasil",
+      "fase": "quartas de final",
+      "time1": "Botafogo",
+      "time2": "Vasco",
+      "hora": "21:30",
+      "canal": "Ge TV, Globo, Globoplay, SporTV, Premiere, Prime Video"
     }
   ],
   "competicoes": [
