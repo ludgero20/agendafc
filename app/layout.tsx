@@ -5,8 +5,8 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 export const metadata: Metadata = {
-  title: 'FutbolApp - Jogos e Competições',
-  description: 'Acompanhe jogos de futebol, competições e muito mais!',
+  title: 'Agenda FC - Programação de Jogos',
+  description: 'Acompanhe a programação completa dos jogos de futebol com horários e canais!',
 }
 
 export default function RootLayout({

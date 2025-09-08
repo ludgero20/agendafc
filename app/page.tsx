@@ -190,8 +190,11 @@ export default function Home() {
       {/* Hero Section */}
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          ⚽ Jogos de Hoje e Amanhã
+          ⚽ Agenda FC
         </h1>
+        <h2 className="text-2xl text-gray-700 mb-2">
+          Jogos de Hoje e Amanhã
+        </h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Acompanhe todos os jogos de futebol de hoje e amanhã com horários e canais de transmissão
         </p>

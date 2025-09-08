@@ -17,8 +17,6 @@ export default function Header() {
   const menuItems = [
     { href: '/', label: 'Início' },
     { href: '/semana', label: 'Agenda da semana' },
-    { href: '/competicoes', label: 'Campeonatos' },
-    { href: '/canais', label: 'Canais' },
     { href: '/sobre', label: 'Sobre' }
   ];
 
@@ -30,7 +28,7 @@ export default function Header() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="text-2xl font-bold text-blue-600" onClick={closeMobileMenu}>
-                ⚽ FutbolApp
+                ⚽ Agenda FC
               </Link>
             </div>
 

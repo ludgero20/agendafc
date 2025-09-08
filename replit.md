@@ -1,8 +1,8 @@
-# FutbolApp
+# Agenda FC
 
 ## Overview
 
-FutbolApp is a Brazilian football (soccer) application built with Next.js that allows users to track football matches, competitions, and schedules. The app focuses on providing match information including teams, times, and broadcast channels. It features a clean, responsive design with Portuguese language support and displays today's games prominently on the homepage.
+Agenda FC is a Brazilian football (soccer) application built with Next.js that allows users to track football matches and schedules. The app focuses on providing match information including teams, times, and broadcast channels. It features a clean, responsive design with Portuguese language support and displays today's games prominently on the homepage.
 
 ## User Preferences
 
