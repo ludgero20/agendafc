@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'Agenda FC - Programação de Jogos',
@@ -24,6 +25,7 @@ export default function RootLayout({
           </div>
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
