@@ -1224,6 +1224,15 @@
       "time2": "Vasco",
       "hora": "21:30",
       "canal": "Ge TV, Globo, Globoplay, SporTV, Premiere, Prime Video"
+    },
+    {
+      "id": 357,
+      "data": "2025-09-12",
+      "campeonato": "NFL",
+      "time1": "Buffalo Bills",
+      "time2": "Miami Dolphins",
+      "hora": "21:15",
+      "canal": "ESPN 2, Disney+"
     }
   ],
   "competicoes": [

@@ -196,7 +196,7 @@ export default function Home() {
           Jogos de Hoje e Amanhã
         </h2>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Onde assistir os principais jogos de futebol!
+          Onde assistir os principais jogos de futebol e da NFL!
         </p>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
           Horários e canais de transmissão!
