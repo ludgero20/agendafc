@@ -7,7 +7,57 @@ import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'Agenda FC - Programação de Jogos',
-  description: 'Acompanhe a programação completa dos jogos de futebol com horários e canais!',
+  description: 'Acompanhe a programação completa dos jogos de futebol com horários e canais de transmissão. Jogos de hoje, agenda da semana e muito mais!',
+  keywords: 'futebol, jogos, agenda, programação, horários, canais, transmissão, brasileirão, champions league',
+  authors: [{ name: 'Agenda FC' }],
+  creator: 'Agenda FC',
+  publisher: 'Agenda FC',
+
+  // Open Graph (Facebook, WhatsApp, LinkedIn)
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: 'https://agendafc.vercel.app/',
+    siteName: 'Agenda FC',
+    title: 'Agenda FC - Programação Completa dos Jogos de Futebol',
+    description: 'Nunca mais perca um jogo! Veja horários, canais e a programação completa dos principais campeonatos de futebol.',
+    images: [
+      {
+        url: '/og-image.jpg', // Você precisa criar essa imagem (1200x630px)
+        width: 1200,
+        height: 630,
+        alt: 'Agenda FC - Programação de Jogos de Futebol',
+      }
+    ],
+  },
+
+  // Twitter Cards
+  twitter: {
+    card: 'summary_large_image',
+    site: '@AgendaFC', // Se você tiver Twitter
+    creator: '@AgendaFC',
+    title: 'Agenda FC - Programação dos Jogos',
+    description: 'Programação completa dos jogos de futebol com horários e canais!',
+    images: ['/twitter-image.jpg'], // Imagem otimizada para Twitter (1200x675px)
+  },
+
+  // Outras configurações importantes
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+
+  // Verificação de propriedade (quando necessário)
+  verification: {
+    google: 'seu-codigo-google-search-console',
+  },
 }
 
 export default function RootLayout({
