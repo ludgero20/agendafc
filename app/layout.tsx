@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://agendafc.vercel.app'),
-  
+
   title: "Agenda FC - Programação de Jogos",
   description:
     "Acompanhe a programação completa dos jogos de futebol com horários e canais de transmissão. Jogos de hoje, agenda da semana e muito mais!",
