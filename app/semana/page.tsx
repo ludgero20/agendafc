@@ -154,7 +154,7 @@ export default function Semana() {
     <div className="space-y-8">
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          ⚽ Agenda FC
+          ⚽ Agenda FC 🏈
         </h1>
         <h2 className="text-2xl text-gray-700 mb-4">
           📅 Programação da Semana

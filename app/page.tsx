@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Head from 'next/head';
 import JogoCard from "./components/JogoCard";
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { carregarPrioridades, getPrioridadeCampeonato, getCampeonatosSemPrioridade, getBandeiraPorCompeticao } from './utils/prioridades';
@@ -131,7 +132,7 @@ export default function Home() {
       <div className="space-y-8">
         <div className="text-center py-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            ⚽ Jogos de Hoje e Amanhã
+            Jogos de Hoje e Amanhã
           </h1>
           <p className="text-xl text-gray-600">Carregando jogos...</p>
         </div>
@@ -185,23 +186,57 @@ export default function Home() {
     });
   };
 
-  return (
-    <div className="space-y-8">
-      {/* Hero Section */}
-      <div className="text-center py-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          ⚽ Agenda FC
-        </h1>
-        <h2 className="text-2xl text-gray-700 mb-2">
-          Jogos de Hoje e Amanhã
-        </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Onde assistir os principais jogos de futebol e da NFL!
-        </p>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Horários e canais de transmissão!
-        </p>
-      </div>
+      return (
+        <>
+          <Head>
+            {/* SEO Básico */}
+            <title>Agenda FC - Jogos de Futebol e NFL ao Vivo | Onde Assistir Hoje</title>
+            <meta
+              name="description"
+              content="Confira a Agenda FC: horários e canais para assistir aos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo."
+            />
+            <meta
+              name="keywords"
+              content="agenda de jogos, futebol ao vivo, onde assistir futebol, jogos de hoje, transmissão futebol, NFL ao vivo, Brasileirão, Champions League, Premier League"
+            />
+            <meta name="author" content="Agenda FC" />
+
+            {/* Open Graph (Facebook, WhatsApp, etc.) */}
+            <meta property="og:title" content="Agenda FC - Jogos de Futebol e NFL ao Vivo" />
+            <meta
+              property="og:description"
+              content="Horários e canais dos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo. Não perca nenhum lance!"
+            />
+            <meta property="og:url" content="https://agendafc.vercel.app/" />
+            <meta property="og:type" content="website" />
+            <meta property="og:image" content="https://agendafc.vercel.app/og-image.jpg" />
+
+            {/* Twitter Cards */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Agenda FC - Jogos de Futebol e NFL ao Vivo" />
+            <meta
+              name="twitter:description"
+              content="Agenda FC mostra onde assistir os jogos de futebol e NFL hoje e amanhã, com horários e canais atualizados."
+            />
+            <meta name="twitter:image" content="https://agendafc.vercel.app/og-image.jpg" />
+          </Head>
+
+          <div className="space-y-8">
+            {/* Hero Section */}
+            <div className="text-center py-8">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                ⚽ Agenda FC 🏈
+              </h1>
+              <h2 className="text-2xl text-gray-700 mb-2">
+                Jogos de Hoje e Amanhã
+              </h2>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Onde assistir os principais jogos de futebol e da NFL!
+              </p>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Horários e canais de transmissão!
+              </p>
+            </div>
 
       {/* Jogos de Hoje */}
       <div className="">
@@ -364,6 +399,7 @@ export default function Home() {
           </div>
         )}
       </div>
-    </div>
-  );
-}
+          </div>
+              </>
+            );
+          }
