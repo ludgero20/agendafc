@@ -1233,6 +1233,60 @@
       "time2": "Miami Dolphins",
       "hora": "21:15",
       "canal": "ESPN 2, Disney+"
+    },
+    {
+      "id": 358,
+      "data": "2025-09-12",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Ettifaq",
+      "time2": "Al Ahli",
+      "hora": "12:25",
+      "canal": "BandSports, Canal GOAT"
+    },
+    {
+      "id": 359,
+      "data": "2025-09-12",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Ittihad",
+      "time2": "Al Fateh",
+      "hora": "15:00",
+      "canal": "BandSports, Canal GOAT"
+    },
+    {
+      "id": 360,
+      "data": "2025-09-12",
+      "campeonato": "Budesliga",
+      "time1": "Bayer Leverkusen",
+      "time2": "Eintracht Frankfurt",
+      "hora": "15:30",
+      "canal": "Xsports, Sportv, CazéTV, OneFootball",
+    },
+    {
+      "id": 361,
+      "data": "2025-09-12",
+      "campeonato": "La Liga",
+      "time1": "Sevilla",
+      "time2": "Elche",
+      "hora": "16:00",
+      "canal": "ESPN 3, Disney+"
+    },
+    {
+      "id": 362,
+      "data": "2025-09-12",
+      "campeonato": "Campeonato Português",
+      "time1": "Benfica",
+      "time2": "Santa Clara",
+      "hora": "16:15",
+      "canal": "ESPN 4, Disney+"
+    },
+    {
+      "id": 363,
+      "data": "2025-09-12",
+      "campeonato": "Brasileirão Série B",
+      "time1": "Coritiba",
+      "time2": "Goiás",
+      "hora": "21:30",
+      "canal": "Disney+"
     }
   ],
   "competicoes": [
