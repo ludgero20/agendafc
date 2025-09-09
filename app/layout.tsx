@@ -6,8 +6,6 @@ import Footer from './components/Footer'
 import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://agendafc.vercel.app'),
-  
   title: 'Agenda FC - Programação de Jogos',
   description: 'Acompanhe a programação completa dos jogos de futebol com horários e canais de transmissão. Jogos de hoje, agenda da semana e muito mais!',
   keywords: 'futebol, jogos, agenda, programação, horários, canais, transmissão, brasileirão, champions league',
@@ -19,23 +17,31 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: '/',
+    url: 'https://agendafc.vercel.app/',
     siteName: 'Agenda FC',
     title: 'Agenda FC - Programação Completa dos Jogos de Futebol',
     description: 'Nunca mais perca um jogo! Veja horários, canais e a programação completa dos principais campeonatos de futebol.',
-    // images serão adicionadas quando você criar as imagens
+    images: [
+      {
+        url: '/og-image.jpg', // Você precisa criar essa imagem (1200x630px)
+        width: 1200,
+        height: 630,
+        alt: 'Agenda FC - Programação de Jogos de Futebol',
+      }
+    ],
   },
 
-  // Twitter Cards - configuração básica (sem imagens ainda)
+  // Twitter Cards
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
+    site: '@AgendaFC', // Se você tiver Twitter
+    creator: '@AgendaFC',
     title: 'Agenda FC - Programação dos Jogos',
     description: 'Programação completa dos jogos de futebol com horários e canais!',
-    // site e creator serão adicionados quando você criar o Twitter
-    // images serão adicionadas quando você criar as imagens
+    images: ['/twitter-image.jpg'], // Imagem otimizada para Twitter (1200x675px)
   },
 
-  // Configurações de indexação
+  // Outras configurações importantes
   robots: {
     index: true,
     follow: true,
@@ -48,7 +54,10 @@ export const metadata: Metadata = {
     },
   },
 
-  // Verificação será adicionada quando você configurar o Search Console
+  // Verificação de propriedade (quando necessário)
+  verification: {
+    google: 'seu-codigo-google-search-console',
+  },
 }
 
 export default function RootLayout({
