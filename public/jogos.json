@@ -1255,11 +1255,11 @@
     {
       "id": 360,
       "data": "2025-09-12",
-      "campeonato": "Budesliga",
+      "campeonato": "Bundesliga",
       "time1": "Bayer Leverkusen",
       "time2": "Eintracht Frankfurt",
       "hora": "15:30",
-      "canal": "Xsports, Sportv, CazéTV, OneFootball",
+      "canal": "Xsports, Sportv, CazéTV, OneFootball"
     },
     {
       "id": 361,
@@ -1282,11 +1282,12 @@
     {
       "id": 363,
       "data": "2025-09-12",
-      "campeonato": "Brasileirão Série B",
+      "campeonato": "Brasileirão",
       "time1": "Coritiba",
       "time2": "Goiás",
       "hora": "21:30",
-      "canal": "Disney+"
+      "canal": "Disney+",
+      "divisao": "Série B"
     }
   ],
   "competicoes": [
@@ -1366,6 +1367,13 @@
       "pais": "Europa",
       "tipo": "Continental",
       "descricao": "Segunda principal competição europeia"
+    },
+    {
+      "id": 12,
+      "nome": "Bundesliga",
+      "pais": "Alemanha",
+      "tipo": "Nacional",
+      "descricao": "Principal liga de clubes da Alemanha"
     }
   ]
 }

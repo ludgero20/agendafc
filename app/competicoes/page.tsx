@@ -69,6 +69,7 @@ export default function Competicoes() {
       case 'Espanha': return '🇪🇸';
       case 'Itália': return '🇮🇹';
       case 'França': return '🇫🇷';
+      case 'Alemanha': return '🇩🇪';
       case 'Arábia Saudita': return '🇸🇦';
       case 'Europa': return '🇪🇺';
       case 'América do Sul': return '🌎';
