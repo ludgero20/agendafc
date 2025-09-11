@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Nunca mais perca um jogo! Veja horários, canais e a programação completa dos principais campeonatos de futebol.",
     images: [
       {
-        url: "/logo.png", // se está na pasta public
+        url: "https://agendafc.vercel.app/logo.png",
         width: 1200,
         height: 630,
         alt: "Agenda FC - Programação de Jogos",
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
     
   },
 
-  // Twitter Cards - configuração básica (sem imagens ainda)
+  // Twitter Cards
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Agenda FC - Programação dos Jogos",
     description:
       "Programação completa dos jogos de futebol com horários e canais!",
-    images: ["/logo.png"],
+    images: ["https://agendafc.vercel.app/logo.png"],
     // site e creator serão adicionados quando você criar o Twitter
   },
 
