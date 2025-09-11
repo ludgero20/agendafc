@@ -21,12 +21,20 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "/",
+    url: "https://agendafc.vercel.app",
     siteName: "Agenda FC",
     title: "Agenda FC - Programação Completa dos Jogos de Futebol",
     description:
       "Nunca mais perca um jogo! Veja horários, canais e a programação completa dos principais campeonatos de futebol.",
-    // images serão adicionadas quando você criar as imagens
+    images: [
+      {
+        url: "/logo.png", // se está na pasta public
+        width: 1200,
+        height: 630,
+        alt: "Agenda FC - Programação de Jogos",
+      },
+    ],
+    
   },
 
   // Twitter Cards - configuração básica (sem imagens ainda)
@@ -35,8 +43,8 @@ export const metadata: Metadata = {
     title: "Agenda FC - Programação dos Jogos",
     description:
       "Programação completa dos jogos de futebol com horários e canais!",
+    images: ["/logo.png"],
     // site e creator serão adicionados quando você criar o Twitter
-    // images serão adicionadas quando você criar as imagens
   },
 
   // Configurações de indexação
