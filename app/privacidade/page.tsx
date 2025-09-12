@@ -59,7 +59,7 @@ export default function PoliticaDePrivacidade() {
               O Agenda FC é um portal de informações independentes e **não é afiliado ou endossado** por nenhuma liga, clube de futebol, emissora de TV ou plataforma de streaming mencionada. As informações aqui contidas são compiladas a partir de fontes públicas e podem sofrer alterações.
             </p>
             <p className="text-gray-600">
-              Ao utilizar nosso site, você concorda com os termos desta política. Caso tenha dúvidas, entre em contato através do e-mail **agenda.fc@gmail.com**.
+              Ao utilizar nosso site, você concorda com os termos desta política. Caso tenha dúvidas, entre em contato através do e-mail **agendafc.brasil@gmail.com**.
             </p>
           </div>
         </div>
