@@ -1,0 +1,88 @@
+{
+  "competicoes": [
+    {
+      "id": 1,
+      "nome": "Brasileirão Série A",
+      "pais": "Brasil",
+      "tipo": "Nacional",
+      "descricao": "Principal campeonato do futebol brasileiro"
+    },
+    {
+      "id": 2,
+      "nome": "Copa do Brasil",
+      "pais": "Brasil",
+      "tipo": "Copa Nacional",
+      "descricao": "Copa eliminatória mais importante do Brasil"
+    },
+    {
+      "id": 3,
+      "nome": "Libertadores da América",
+      "pais": "América do Sul",
+      "tipo": "Continental",
+      "descricao": "Principal competição de clubes da América do Sul"
+    },
+    {
+      "id": 4,
+      "nome": "Copa Sul-Americana",
+      "pais": "América do Sul",
+      "tipo": "Continental",
+      "descricao": "Segunda principal competição da América do Sul"
+    },
+    {
+      "id": 5,
+      "nome": "Premier League",
+      "pais": "Inglaterra",
+      "tipo": "Nacional",
+      "descricao": "Liga inglesa de futebol"
+    },
+    {
+      "id": 6,
+      "nome": "La Liga",
+      "pais": "Espanha",
+      "tipo": "Nacional",
+      "descricao": "Liga espanhola de futebol"
+    },
+    {
+      "id": 7,
+      "nome": "Serie A",
+      "pais": "Itália",
+      "tipo": "Nacional",
+      "descricao": "Principal liga de futebol da Itália"
+    },
+    {
+      "id": 8,
+      "nome": "Ligue 1",
+      "pais": "França",
+      "tipo": "Nacional",
+      "descricao": "Principal liga de futebol da França"
+    },
+    {
+      "id": 9,
+      "nome": "Saudi Pro League",
+      "pais": "Arábia Saudita",
+      "tipo": "Nacional",
+      "descricao": "Principal liga de futebol da Arábia Saudita"
+    },
+    {
+      "id": 10,
+      "nome": "Champions League",
+      "pais": "Europa",
+      "tipo": "Continental",
+      "descricao": "Principal competição de clubes da Europa"
+    },
+    {
+      "id": 11,
+      "nome": "Europa League",
+      "pais": "Europa",
+      "tipo": "Continental",
+      "descricao": "Segunda principal competição europeia"
+    },
+    {
+      "id": 12,
+      "nome": "Bundesliga",
+      "pais": "Alemanha",
+      "tipo": "Nacional",
+      "descricao": "Principal liga de clubes da Alemanha"
+    }
+  ]
+}

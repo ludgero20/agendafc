@@ -103,7 +103,7 @@ export function getBandeiraPorCompeticao(comp: string): string {
     // 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Inglaterra
     case 'Premier League':
     case 'Copa da Inglaterra':
-    case 'Copa da Liga Inglesa':  
+    case 'Copa da Liga Inglesa':
       return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
     
     // 🇪🇸 Espanha

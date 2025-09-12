@@ -17,7 +17,7 @@ export default function Competicoes() {
   useEffect(() => {
     const carregarCompeticoes = async () => {
       try {
-        const response = await fetch('/jogos.json');
+        const response = await fetch('/competicoes.json');
         const data = await response.json();
         setCompeticoes(data.competicoes);
       } catch (error) {
