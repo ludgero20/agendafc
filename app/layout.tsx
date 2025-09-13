@@ -85,6 +85,13 @@ export default function RootLayout({
             gtag('config', 'G-QB7BSD411W');
           `}
         </Script>
+
+        {/* Google AdSense */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830084677363341"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         
         <Header />
         <main className="flex-grow pt-16">
