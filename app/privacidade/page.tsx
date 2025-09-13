@@ -26,7 +26,7 @@ export default function PoliticaDePrivacidade() {
           <div className="bg-gray-100 rounded-xl p-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-3">1. Informações que Coletamos</h2>
             <p className="text-gray-600 mb-4">
-              Coletamos dados de navegação de forma anônima para entender como os usuários interagem com nosso site e para melhorar sua experiência. Utilizamos o **Vercel Analytics** e, futuramente, o **Google Analytics** para isso. Essas ferramentas coletam dados como:
+              Coletamos dados de navegação de forma anônima para entender como os usuários interagem com nosso site e para melhorar sua experiência. Utilizamos o Vercel Analytics e, futuramente, o Google Analytics para isso. Essas ferramentas coletam dados como:
             </p>
             <ul className="list-disc list-inside text-gray-600 space-y-2">
               <li>Páginas que você visitou.</li>
@@ -56,10 +56,10 @@ export default function PoliticaDePrivacidade() {
           <div className="bg-gray-100 rounded-xl p-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-3">4. Aviso Legal e Contato</h2>
             <p className="text-gray-600 mb-4">
-              O Agenda FC é um portal de informações independentes e **não é afiliado ou endossado** por nenhuma liga, clube de futebol, emissora de TV ou plataforma de streaming mencionada. As informações aqui contidas são compiladas a partir de fontes públicas e podem sofrer alterações.
+              O Agenda FC é um portal de informações independentes e <strong>não é afiliado ou endossado</strong> por nenhuma liga, clube de futebol, emissora de TV ou plataforma de streaming mencionada. As informações aqui contidas são compiladas a partir de fontes públicas e podem sofrer alterações.
             </p>
             <p className="text-gray-600">
-              Ao utilizar nosso site, você concorda com os termos desta política. Caso tenha dúvidas, entre em contato através do e-mail **agendafc.brasil@gmail.com**.
+              Ao utilizar nosso site, você concorda com os termos desta política. Caso tenha dúvidas, entre em contato através do e-mail <strong>agendafc.brasil@gmail.com</strong>.
             </p>
           </div>
         </div>
