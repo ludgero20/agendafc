@@ -2121,6 +2121,94 @@
       "canal": "Paramount+",
       "divisao": "",
       "fase": "quartas de final"
-}
+},
+    {
+        "id": 452,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Browns",
+        "time2": "Ravens",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 453,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Bengals",
+        "time2": "Jaguars",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 454,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Giants",
+        "time2": "Cowboys",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 455,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Bears",
+        "time2": "Lions",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 456,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Patriots",
+        "time2": "Dolphins",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 457,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "49ers",
+        "time2": "Saints",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 458,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Rams",
+        "time2": "Titans",
+        "hora": "14h00",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    },
+    {
+        "id": 459,
+        "data": "2025-09-14",
+        "campeonato": "NFL",
+        "time1": "Panthers",
+        "time2": "Cardinals",
+        "hora": "17h05",
+        "canal": "DAZN",
+        "divisao": "",
+        "fase": ""
+    }
   ]
 }
