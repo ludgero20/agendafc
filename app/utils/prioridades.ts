@@ -84,12 +84,12 @@ export function getBandeiraPorCompeticao(comp: string): string {
     case 'Copa do Nordeste':
       return '🇧🇷';
     
-    // 🌎 Sul-América (Continental)
+    // ⚽ Sul-América (Continental)
     case 'Libertadores da América':
     case 'Copa Sul-Americana':
     case 'Copa Libertadores da América':
     case 'Eliminatórias Sul-Americanas':
-      return '🌎';
+      return '⚽';
     
     // 🇦🇷 Argentina
     case 'Copa da Argentina':
@@ -146,9 +146,9 @@ export function getBandeiraPorCompeticao(comp: string): string {
     case 'MLS':
       return '🇺🇸';
     
-    // 🌍 África
+    // ⚽ África
     case 'Eliminatórias Africanas':
-      return '🌍';
+      return '⚽';
     
     // 🌐 Internacional/Amistosos
     case 'Amistoso Internacional':
@@ -158,8 +158,8 @@ export function getBandeiraPorCompeticao(comp: string): string {
     case 'NFL':
       return '🏈';
     
-    // ⚽ Padrão
+    // 🌎 Padrão
     default:
-      return '⚽';
+      return '🌎';
   }
 }
