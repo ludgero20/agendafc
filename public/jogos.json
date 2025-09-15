@@ -2352,6 +2352,127 @@
       "canal": "Globo, ge tv, ESPN e Disney+",
       "divisao": "",
       "fase": "quartas"
+    },
+    {
+      "id": 473,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Club Brugge",
+      "time2": "Monaco",
+      "hora": "13h45",
+      "canal": "Space e Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 474,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Copenhagem",
+      "time2": "Bayer Leverkusen",
+      "hora": "13h45",
+      "canal": "TNT e Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 475,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Manchester City",
+      "time2": "Napoli",
+      "hora": "16h",
+      "canal": "Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 476,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Eintracht Frankfurt",
+      "time2": "Galatasaray",
+      "hora": "16h",
+      "canal": "Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 477,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Sporting",
+      "time2": "Kairat Almaty",
+      "hora": "16h",
+      "canal": "Space e Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 478,
+      "data": "2025-09-18",
+      "campeonato": "Champions League",
+      "time1": "Newcastle",
+      "time2": "Barcelona",
+      "hora": "16h",
+      "canal": "TNT e Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+        "id": 479,
+        "data": "2025-09-18",
+        "campeonato": "Copa Sul-Americana",
+        "time1": "Alianza Lima",
+        "time2": "Universidad de Chile",
+        "hora": "21h30",
+        "canal": "Paramount+",
+        "divisao": "",
+        "fase": "quartas"
+    },
+    {
+      "id": 480,
+      "data": "2025-09-18",
+      "campeonato": "Copa Libertadores da América",
+      "time1": "LDU",
+      "time2": "São Paulo",
+      "hora": "19h",
+      "canal": "Paramount+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 481,
+      "data": "2025-09-18",
+      "campeonato": "Copa Libertadores da América",
+      "time1": "Flamengo",
+      "time2": "Estudiantes",
+      "hora": "21h30",
+      "canal": "ESPN e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+        "id": 482,
+        "data": "2025-09-18",
+        "campeonato": "Copa Sul-Americana",
+        "time1": "Alianza Lima",
+        "time2": "Club Universidad de Chile",
+        "hora": "21h30",
+        "canal": "Paramount+",
+        "divisao": "",
+        "fase": "quartas"
+    },
+    {
+        "id": 483,
+        "data": "2025-09-18",
+        "campeonato": "NFL",
+        "time1": "Buffalo Bills",
+        "time2": "Miami Dolphins",
+        "hora": "21h",
+        "canal": "Sportv 2",
+        "divisao": "",
+        "fase": ""
     }
   ]
 }
