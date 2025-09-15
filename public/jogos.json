@@ -1299,568 +1299,568 @@
       "canal": "ESPN 4, Disney+",
       "divisao": "Série B"
     },
-        {
-            "id": 365,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Arsenal",
-            "time2": "Nottingham Forest",
-            "hora": "08h30",
-            "canal": "ESPN, Disney+"
-        },
-        {
-            "id": 366,
-            "data": "2025-09-13",
-            "campeonato": "La Liga",
-            "time1": "Getafe",
-            "time2": "Real Oviedo",
-            "hora": "09h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 367,
-            "data": "2025-09-13",
-            "campeonato": "Serie A",
-            "time1": "Cagliari",
-            "time2": "Parma",
-            "hora": "10h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 368,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "FC Heidenheim",
-            "time2": "Borussia Dortmund",
-            "hora": "10h30",
-            "canal": "Sportv, CazéTV, OneFootball"
-        },
-        {
-            "id": 369,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "Freiburg",
-            "time2": "Stuttgart",
-            "hora": "10h30",
-            "canal": "Canal GOAT, OneFootball"
-        },
-        {
-            "id": 370,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "Mainz 05",
-            "time2": "RB Leipzig",
-            "hora": "10h30",
-            "canal": "OneFootball"
-        },
-        {
-            "id": 371,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "Union Berlin",
-            "time2": "Hoffenheim",
-            "hora": "10h30",
-            "canal": "OneFootball"
-        },
-        {
-            "id": 372,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "Wolfsburg",
-            "time2": "FC Koln",
-            "hora": "10h30",
-            "canal": "OneFootball"
-        },
-        {
-            "id": 373,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Bournemouth",
-            "time2": "Brighton",
-            "hora": "11h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 374,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Crystal Palace",
-            "time2": "Sunderland",
-            "hora": "11h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 375,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Everton",
-            "time2": "Aston Villa",
-            "hora": "11h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 376,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Fulham",
-            "time2": "Leeds United",
-            "hora": "11h",
-            "canal": "ESPN 2, Disney+"
-        },
-        {
-            "id": 377,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Newcastle",
-            "time2": "Wolves",
-            "hora": "11h",
-            "canal": "ESPN, Disney+"
-        },
-        {
-            "id": 378,
-            "data": "2025-09-13",
-            "campeonato": "La Liga",
-            "time1": "Real Sociedad",
-            "time2": "Real Madrid",
-            "hora": "11h15",
-            "canal": "Disney+"
-        },
-        {
-            "id": 379,
-            "data": "2025-09-13",
-            "campeonato": "Saudi Pro League",
-            "time1": "Al Okhdood",
-            "time2": "Al Taawoun",
-            "hora": "12h45",
-            "canal": "BandSports, Canal GOAT"
-        },
-        {
-            "id": 380,
-            "data": "2025-09-13",
-            "campeonato": "Serie A",
-            "time1": "Juventus",
-            "time2": "Inter de Milão",
-            "hora": "13h",
-            "canal": "ESPN, Disney+"
-        },
-        {
-            "id": 381,
-            "data": "2025-09-13",
-            "campeonato": "Bundesliga",
-            "time1": "Bayern de Munique",
-            "time2": "Hamburgo",
-            "hora": "13h30",
-            "canal": "Canal GOAT, OneFootball"
-        },
-        {
-            "id": 382,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "West Ham",
-            "time2": "Tottenham",
-            "hora": "13h30",
-            "canal": "Disney+"
-        },
-        {
-            "id": 383,
-            "data": "2025-09-13",
-            "campeonato": "La Liga",
-            "time1": "Athletic Bilbao",
-            "time2": "Alavés",
-            "hora": "13h30",
-            "canal": "Disney+"
-        },
-        {
-            "id": 384,
-            "data": "2025-09-13",
-            "campeonato": "Saudi Pro League",
-            "time1": "Al Hilal",
-            "time2": "Al Qadisiya",
-            "hora": "15h",
-            "canal": "Sportv, Canal GOAT"
-        },
-        {
-            "id": 385,
-            "data": "2025-09-13",
-            "campeonato": "Serie A",
-            "time1": "Fiorentina",
-            "time2": "Napoli",
-            "hora": "15h45",
-            "canal": "Disney+"
-        },
-        {
-            "id": 386,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Fortaleza",
-            "time2": "Vitória",
-            "hora": "16h",
-            "canal": "Premiere"
-        },
-        {
-            "id": 387,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Grêmio",
-            "time2": "Mirassol",
-            "hora": "16h",
-            "canal": "Premiere"
-        },
-        {
-            "id": 388,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Paysandu",
-            "time2": "América-MG",
-            "hora": "16h",
-            "canal": "RedeTV!, Desimpedidos, ESPN, Disney+",
-          "divisao": "Série B"
-        },
-        {
-            "id": 389,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Barra",
-            "time2": "Inter de Limeira",
-            "hora": "16h",
-            "canal": "Metrópoles (YouTube)",
-          "divisao": "Série D",
-          "fase": "semifinal"
-        },
-        {
-            "id": 390,
-            "data": "2025-09-13",
-            "campeonato": "Premier League",
-            "time1": "Brentford",
-            "time2": "Chelsea",
-            "hora": "16h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 391,
-            "data": "2025-09-13",
-            "campeonato": "La Liga",
-            "time1": "Atlético de Madrid",
-            "time2": "Villarreal",
-            "hora": "16h",
-            "canal": "ESPN 4, Disney+"
-        },
-        {
-            "id": 392,
-            "data": "2025-09-13",
-            "campeonato": "Ligue 1",
-            "time1": "Auxerre",
-            "time2": "Monaco",
-            "hora": "16h05",
-            "canal": "CazéTV"
-        },
-        {
-            "id": 393,
-            "data": "2025-09-13",
-            "campeonato": "Campeonato Português",
-            "time1": "Famalicão",
-            "time2": "Sporting",
-            "hora": "16h30",
-            "canal": "ESPN 2, Disney+"
-        },
-        {
-            "id": 394,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Náutico",
-            "time2": "Guarani",
-            "hora": "17h",
-            "canal": "DAZN, SportyNet",
-          "divisao": "Série C"
-        },
-        {
-            "id": 395,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Palmeiras",
-            "time2": "Internacional",
-            "hora": "18h30",
-            "canal": "Sportv, Premiere"
-        },
-        {
-            "id": 396,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Vila Nova",
-            "time2": "Remo",
-            "hora": "18h30",
-            "canal": "Disney+",
-          "divisao": "Série B"
-        },
-        {
-            "id": 397,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Caxias",
-            "time2": "São Bernardo",
-            "hora": "19h30",
-            "canal": "SportyNet",
-          "divisao": "Série C"
-        },
-        {
-            "id": 398,
-            "data": "2025-09-13",
-            "campeonato": "Brasileirão",
-            "time1": "Fluminense",
-            "time2": "Corinthians",
-            "hora": "21h",
-            "canal": "Record, CazéTV, Premiere"
-        },
-        {
-            "id": 399,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "RB Bragantino",
-            "time2": "Sport",
-            "hora": "11h",
-            "canal": "Premiere"
-        },
-        {
-            "id": 400,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Atlético-MG",
-            "time2": "Santos",
-            "hora": "16h",
-            "canal": "Premiere"
-        },
-        {
-            "id": 401,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Juventude",
-            "time2": "Flamengo",
-            "hora": "16h",
-            "canal": "Prime Video"
-        },
-        {
-            "id": 402,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "São Paulo",
-            "time2": "Botafogo",
-            "hora": "17h30",
-            "canal": "Globo, ge tv e Premiere"
-        },
-        {
-            "id": 403,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Vasco",
-            "time2": "Ceará",
-            "hora": "20h30",
-            "canal": "Sportv e Premiere"
-        },
-        {
-            "id": 404,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Operário-PR",
-            "time2": "Cuiabá",
-            "hora": "16h",
-            "canal": "Disney+",
-          "divisao": "Série B"
-        },
-        {
-            "id": 405,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Athletic",
-            "time2": "Botafogo-SP",
-            "hora": "18h30",
-            "canal": "Disney+",
-          "divisao": "Série B"
-        },
-        {
-            "id": 406,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Londrina",
-            "time2": "Floresta",
-            "hora": "16h30",
-            "canal": "DAZN e SportyNet+",
-          "divisao": "Série C"
-        },
-        {
-            "id": 407,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Ponte Preta",
-            "time2": "Brusque",
-            "hora": "19h",
-            "canal": "DAZN e SportyNet+",
-          "divisao": "Série C"
-        },
-        {
-            "id": 408,
-            "data": "2025-09-14",
-            "campeonato": "Brasileirão",
-            "time1": "Maranhão",
-            "time2": "Santa Cruz",
-            "hora": "16h",
-            "canal": "Metrópoles (YouTube)",
-          "divisao": "Série D",
-          "fase": "semifinal"
-        },
-        {
-            "id": 409,
-            "data": "2025-09-14",
-            "campeonato": "Bundesliga",
-            "time1": "St. Pauli",
-            "time2": "Augsburg",
-            "hora": "10h30",
-            "canal": "Canal GOAT e OneFootball"
-        },
-        {
-            "id": 410,
-            "data": "2025-09-14",
-            "campeonato": "Bundesliga",
-            "time1": "Borussia Monchengladbach",
-            "time2": "Werder Bremen",
-            "hora": "12h30",
-            "canal": "RedeTV! e OneFootball"
-        },
-        
-        {
-            "id": 411,
-            "data": "2025-09-14",
-            "campeonato": "La Liga",
-            "time1": "Celta de Vigo",
-            "time2": "Girona",
-            "hora": "09h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 412,
-            "data": "2025-09-14",
-            "campeonato": "La Liga",
-            "time1": "Levante",
-            "time2": "Real Bétis",
-            "hora": "11h15",
-            "canal": "Disney+"
-        },
-        {
-            "id": 413,
-            "data": "2025-09-14",
-            "campeonato": "La Liga",
-            "time1": "Osasuna",
-            "time2": "Rayo Vallecano",
-            "hora": "13h30",
-            "canal": "Disney+"
-        },
-        {
-            "id": 414,
-            "data": "2025-09-14",
-            "campeonato": "La Liga",
-            "time1": "Barcelona",
-            "time2": "Valencia",
-            "hora": "16h",
-            "canal": "ESPN e Disney+"
-        },
-        {
-            "id": 415,
-            "data": "2025-09-14",
-            "campeonato": "Ligue 1",
-            "time1": "Lille",
-            "time2": "Toulouse",
-            "hora": "10h",
-            "canal": "CazéTV"
-        },
-        {
-            "id": 416,
-            "data": "2025-09-14",
-            "campeonato": "Ligue 1",
-            "time1": "PSG",
-            "time2": "Lens",
-            "hora": "12h15",
-            "canal": "CazéTV"
-        },
-        {
-            "id": 417,
-            "data": "2025-09-14",
-            "campeonato": "Premier League",
-            "time1": "Burnley",
-            "time2": "Liverpool",
-            "hora": "10h",
-            "canal": "ESPN e Disney+"
-        },
-        {
-            "id": 418,
-            "data": "2025-09-14",
-            "campeonato": "Premier League",
-            "time1": "Manchester City",
-            "time2": "Manchester United",
-            "hora": "12h30",
-            "canal": "ESPN e Disney+"
-        },
-        {
-            "id": 419,
-            "data": "2025-09-14",
-            "campeonato": "Serie A",
-            "time1": "Roma",
-            "time2": "Torino",
-            "hora": "07h30",
-            "canal": "Disney+"
-        },
-        {
-            "id": 420,
-            "data": "2025-09-14",
-            "campeonato": "Serie A",
-            "time1": "Atalanta",
-            "time2": "Lecce",
-            "hora": "10h",
-            "canal": "Disney+"
-        },
-        {
-            "id": 421,
-            "data": "2025-09-14",
-            "campeonato": "Serie A",
-            "time1": "Sassuolo",
-            "time2": "Lazio",
-            "hora": "13h",
-            "canal": "ESPN 4 e Disney+"
-        },
-        {
-            "id": 422,
-            "data": "2025-09-14",
-            "campeonato": "Serie A",
-            "time1": "Milan",
-            "time2": "Bologna",
-            "hora": "15h45",
-            "canal": "CazéTV e Disney+"
-        },
-        {
-            "id": 423,
-            "data": "2025-09-14",
-            "campeonato": "Campeonato Português",
-            "time1": "Braga",
-            "time2": "Gil Vicente",
-            "hora": "16h30",
-            "canal": "Disney+"
-        },
-        {
-            "id": 424,
-            "data": "2025-09-14",
-            "campeonato": "Saudi Pro League",
-            "time1": "Damac",
-            "time2": "NEOM",
-            "hora": "12h50",
-            "canal": "Canal GOAT"
-        },
-        {
-            "id": 425,
-            "data": "2025-09-14",
-            "campeonato": "Saudi Pro League",
-            "time1": "Al Nassr",
-            "time2": "Al Kholood",
-            "hora": "15h",
-            "canal": "Sportv e Canal GOAT"
-        },
+    {
+      "id": 365,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Arsenal",
+      "time2": "Nottingham Forest",
+      "hora": "08h30",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 366,
+      "data": "2025-09-13",
+      "campeonato": "La Liga",
+      "time1": "Getafe",
+      "time2": "Real Oviedo",
+      "hora": "09h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 367,
+      "data": "2025-09-13",
+      "campeonato": "Serie A",
+      "time1": "Cagliari",
+      "time2": "Parma",
+      "hora": "10h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 368,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "FC Heidenheim",
+      "time2": "Borussia Dortmund",
+      "hora": "10h30",
+      "canal": "Sportv, CazéTV, OneFootball"
+    },
+    {
+      "id": 369,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "Freiburg",
+      "time2": "Stuttgart",
+      "hora": "10h30",
+      "canal": "Canal GOAT, OneFootball"
+    },
+    {
+      "id": 370,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "Mainz 05",
+      "time2": "RB Leipzig",
+      "hora": "10h30",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 371,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "Union Berlin",
+      "time2": "Hoffenheim",
+      "hora": "10h30",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 372,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "Wolfsburg",
+      "time2": "FC Koln",
+      "hora": "10h30",
+      "canal": "OneFootball"
+    },
+    {
+      "id": 373,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Bournemouth",
+      "time2": "Brighton",
+      "hora": "11h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 374,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Crystal Palace",
+      "time2": "Sunderland",
+      "hora": "11h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 375,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Everton",
+      "time2": "Aston Villa",
+      "hora": "11h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 376,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Fulham",
+      "time2": "Leeds United",
+      "hora": "11h",
+      "canal": "ESPN 2, Disney+"
+    },
+    {
+      "id": 377,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Newcastle",
+      "time2": "Wolves",
+      "hora": "11h",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 378,
+      "data": "2025-09-13",
+      "campeonato": "La Liga",
+      "time1": "Real Sociedad",
+      "time2": "Real Madrid",
+      "hora": "11h15",
+      "canal": "Disney+"
+    },
+    {
+      "id": 379,
+      "data": "2025-09-13",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Okhdood",
+      "time2": "Al Taawoun",
+      "hora": "12h45",
+      "canal": "BandSports, Canal GOAT"
+    },
+    {
+      "id": 380,
+      "data": "2025-09-13",
+      "campeonato": "Serie A",
+      "time1": "Juventus",
+      "time2": "Inter de Milão",
+      "hora": "13h",
+      "canal": "ESPN, Disney+"
+    },
+    {
+      "id": 381,
+      "data": "2025-09-13",
+      "campeonato": "Bundesliga",
+      "time1": "Bayern de Munique",
+      "time2": "Hamburgo",
+      "hora": "13h30",
+      "canal": "Canal GOAT, OneFootball"
+    },
+    {
+      "id": 382,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "West Ham",
+      "time2": "Tottenham",
+      "hora": "13h30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 383,
+      "data": "2025-09-13",
+      "campeonato": "La Liga",
+      "time1": "Athletic Bilbao",
+      "time2": "Alavés",
+      "hora": "13h30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 384,
+      "data": "2025-09-13",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Hilal",
+      "time2": "Al Qadisiya",
+      "hora": "15h",
+      "canal": "Sportv, Canal GOAT"
+    },
+    {
+      "id": 385,
+      "data": "2025-09-13",
+      "campeonato": "Serie A",
+      "time1": "Fiorentina",
+      "time2": "Napoli",
+      "hora": "15h45",
+      "canal": "Disney+"
+    },
+    {
+      "id": 386,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Fortaleza",
+      "time2": "Vitória",
+      "hora": "16h",
+      "canal": "Premiere"
+    },
+    {
+      "id": 387,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Grêmio",
+      "time2": "Mirassol",
+      "hora": "16h",
+      "canal": "Premiere"
+    },
+    {
+      "id": 388,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Paysandu",
+      "time2": "América-MG",
+      "hora": "16h",
+      "canal": "RedeTV!, Desimpedidos, ESPN, Disney+",
+      "divisao": "Série B"
+    },
+    {
+      "id": 389,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Barra",
+      "time2": "Inter de Limeira",
+      "hora": "16h",
+      "canal": "Metrópoles (YouTube)",
+      "divisao": "Série D",
+      "fase": "semifinal"
+    },
+    {
+      "id": 390,
+      "data": "2025-09-13",
+      "campeonato": "Premier League",
+      "time1": "Brentford",
+      "time2": "Chelsea",
+      "hora": "16h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 391,
+      "data": "2025-09-13",
+      "campeonato": "La Liga",
+      "time1": "Atlético de Madrid",
+      "time2": "Villarreal",
+      "hora": "16h",
+      "canal": "ESPN 4, Disney+"
+    },
+    {
+      "id": 392,
+      "data": "2025-09-13",
+      "campeonato": "Ligue 1",
+      "time1": "Auxerre",
+      "time2": "Monaco",
+      "hora": "16h05",
+      "canal": "CazéTV"
+    },
+    {
+      "id": 393,
+      "data": "2025-09-13",
+      "campeonato": "Campeonato Português",
+      "time1": "Famalicão",
+      "time2": "Sporting",
+      "hora": "16h30",
+      "canal": "ESPN 2, Disney+"
+    },
+    {
+      "id": 394,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Náutico",
+      "time2": "Guarani",
+      "hora": "17h",
+      "canal": "DAZN, SportyNet",
+      "divisao": "Série C"
+    },
+    {
+      "id": 395,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Palmeiras",
+      "time2": "Internacional",
+      "hora": "18h30",
+      "canal": "Sportv, Premiere"
+    },
+    {
+      "id": 396,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Vila Nova",
+      "time2": "Remo",
+      "hora": "18h30",
+      "canal": "Disney+",
+      "divisao": "Série B"
+    },
+    {
+      "id": 397,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Caxias",
+      "time2": "São Bernardo",
+      "hora": "19h30",
+      "canal": "SportyNet",
+      "divisao": "Série C"
+    },
+    {
+      "id": 398,
+      "data": "2025-09-13",
+      "campeonato": "Brasileirão",
+      "time1": "Fluminense",
+      "time2": "Corinthians",
+      "hora": "21h",
+      "canal": "Record, CazéTV, Premiere"
+    },
+    {
+      "id": 399,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "RB Bragantino",
+      "time2": "Sport",
+      "hora": "11h",
+      "canal": "Premiere"
+    },
+    {
+      "id": 400,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Atlético-MG",
+      "time2": "Santos",
+      "hora": "16h",
+      "canal": "Premiere"
+    },
+    {
+      "id": 401,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Juventude",
+      "time2": "Flamengo",
+      "hora": "16h",
+      "canal": "Prime Video"
+    },
+    {
+      "id": 402,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "São Paulo",
+      "time2": "Botafogo",
+      "hora": "17h30",
+      "canal": "Globo, ge tv e Premiere"
+    },
+    {
+      "id": 403,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Vasco",
+      "time2": "Ceará",
+      "hora": "20h30",
+      "canal": "Sportv e Premiere"
+    },
+    {
+      "id": 404,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Operário-PR",
+      "time2": "Cuiabá",
+      "hora": "16h",
+      "canal": "Disney+",
+      "divisao": "Série B"
+    },
+    {
+      "id": 405,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Athletic",
+      "time2": "Botafogo-SP",
+      "hora": "18h30",
+      "canal": "Disney+",
+      "divisao": "Série B"
+    },
+    {
+      "id": 406,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Londrina",
+      "time2": "Floresta",
+      "hora": "16h30",
+      "canal": "DAZN e SportyNet+",
+      "divisao": "Série C"
+    },
+    {
+      "id": 407,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Ponte Preta",
+      "time2": "Brusque",
+      "hora": "19h",
+      "canal": "DAZN e SportyNet+",
+      "divisao": "Série C"
+    },
+    {
+      "id": 408,
+      "data": "2025-09-14",
+      "campeonato": "Brasileirão",
+      "time1": "Maranhão",
+      "time2": "Santa Cruz",
+      "hora": "16h",
+      "canal": "Metrópoles (YouTube)",
+      "divisao": "Série D",
+      "fase": "semifinal"
+    },
+    {
+      "id": 409,
+      "data": "2025-09-14",
+      "campeonato": "Bundesliga",
+      "time1": "St. Pauli",
+      "time2": "Augsburg",
+      "hora": "10h30",
+      "canal": "Canal GOAT e OneFootball"
+    },
+    {
+      "id": 410,
+      "data": "2025-09-14",
+      "campeonato": "Bundesliga",
+      "time1": "Borussia Monchengladbach",
+      "time2": "Werder Bremen",
+      "hora": "12h30",
+      "canal": "RedeTV! e OneFootball"
+    },
+
+    {
+      "id": 411,
+      "data": "2025-09-14",
+      "campeonato": "La Liga",
+      "time1": "Celta de Vigo",
+      "time2": "Girona",
+      "hora": "09h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 412,
+      "data": "2025-09-14",
+      "campeonato": "La Liga",
+      "time1": "Levante",
+      "time2": "Real Bétis",
+      "hora": "11h15",
+      "canal": "Disney+"
+    },
+    {
+      "id": 413,
+      "data": "2025-09-14",
+      "campeonato": "La Liga",
+      "time1": "Osasuna",
+      "time2": "Rayo Vallecano",
+      "hora": "13h30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 414,
+      "data": "2025-09-14",
+      "campeonato": "La Liga",
+      "time1": "Barcelona",
+      "time2": "Valencia",
+      "hora": "16h",
+      "canal": "ESPN e Disney+"
+    },
+    {
+      "id": 415,
+      "data": "2025-09-14",
+      "campeonato": "Ligue 1",
+      "time1": "Lille",
+      "time2": "Toulouse",
+      "hora": "10h",
+      "canal": "CazéTV"
+    },
+    {
+      "id": 416,
+      "data": "2025-09-14",
+      "campeonato": "Ligue 1",
+      "time1": "PSG",
+      "time2": "Lens",
+      "hora": "12h15",
+      "canal": "CazéTV"
+    },
+    {
+      "id": 417,
+      "data": "2025-09-14",
+      "campeonato": "Premier League",
+      "time1": "Burnley",
+      "time2": "Liverpool",
+      "hora": "10h",
+      "canal": "ESPN e Disney+"
+    },
+    {
+      "id": 418,
+      "data": "2025-09-14",
+      "campeonato": "Premier League",
+      "time1": "Manchester City",
+      "time2": "Manchester United",
+      "hora": "12h30",
+      "canal": "ESPN e Disney+"
+    },
+    {
+      "id": 419,
+      "data": "2025-09-14",
+      "campeonato": "Serie A",
+      "time1": "Roma",
+      "time2": "Torino",
+      "hora": "07h30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 420,
+      "data": "2025-09-14",
+      "campeonato": "Serie A",
+      "time1": "Atalanta",
+      "time2": "Lecce",
+      "hora": "10h",
+      "canal": "Disney+"
+    },
+    {
+      "id": 421,
+      "data": "2025-09-14",
+      "campeonato": "Serie A",
+      "time1": "Sassuolo",
+      "time2": "Lazio",
+      "hora": "13h",
+      "canal": "ESPN 4 e Disney+"
+    },
+    {
+      "id": 422,
+      "data": "2025-09-14",
+      "campeonato": "Serie A",
+      "time1": "Milan",
+      "time2": "Bologna",
+      "hora": "15h45",
+      "canal": "CazéTV e Disney+"
+    },
+    {
+      "id": 423,
+      "data": "2025-09-14",
+      "campeonato": "Campeonato Português",
+      "time1": "Braga",
+      "time2": "Gil Vicente",
+      "hora": "16h30",
+      "canal": "Disney+"
+    },
+    {
+      "id": 424,
+      "data": "2025-09-14",
+      "campeonato": "Saudi Pro League",
+      "time1": "Damac",
+      "time2": "NEOM",
+      "hora": "12h50",
+      "canal": "Canal GOAT"
+    },
+    {
+      "id": 425,
+      "data": "2025-09-14",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Nassr",
+      "time2": "Al Kholood",
+      "hora": "15h",
+      "canal": "Sportv e Canal GOAT"
+    },
     {
       "id": 426,
       "data": "2025-09-14",
@@ -1938,7 +1938,7 @@
     {
       "id": 435,
       "data": "2025-09-15",
-      "campeonato": "Champions League Asiática",
+      "campeonato": "Champions League Elite (Ásia)",
       "time1": "Al Ahli",
       "time2": "Nasaf",
       "hora": "15h15",
@@ -2026,7 +2026,7 @@
     {
       "id": 443,
       "data": "2025-09-16",
-      "campeonato": "Champions League Asiática",
+      "campeonato": "Champions League Elite (Ásia)",
       "time1": "Al Hilal",
       "time2": "Al Duhail",
       "hora": "15h15",
@@ -2121,94 +2121,237 @@
       "canal": "Paramount+",
       "divisao": "",
       "fase": "quartas de final"
-},
-    {
-        "id": 452,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Browns",
-        "time2": "Ravens",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
     },
     {
-        "id": 453,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Bengals",
-        "time2": "Jaguars",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 452,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Browns",
+      "time2": "Ravens",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 454,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Giants",
-        "time2": "Cowboys",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 453,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Bengals",
+      "time2": "Jaguars",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 455,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Bears",
-        "time2": "Lions",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 454,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Giants",
+      "time2": "Cowboys",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 456,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Patriots",
-        "time2": "Dolphins",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 455,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Bears",
+      "time2": "Lions",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 457,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "49ers",
-        "time2": "Saints",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 456,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Patriots",
+      "time2": "Dolphins",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 458,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Rams",
-        "time2": "Titans",
-        "hora": "14h00",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 457,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "49ers",
+      "time2": "Saints",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
     },
     {
-        "id": 459,
-        "data": "2025-09-14",
-        "campeonato": "NFL",
-        "time1": "Panthers",
-        "time2": "Cardinals",
-        "hora": "17h05",
-        "canal": "DAZN",
-        "divisao": "",
-        "fase": ""
+      "id": 458,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Rams",
+      "time2": "Titans",
+      "hora": "14h00",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 459,
+      "data": "2025-09-14",
+      "campeonato": "NFL",
+      "time1": "Panthers",
+      "time2": "Cardinals",
+      "hora": "17h05",
+      "canal": "DAZN",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 460,
+      "data": "2025-09-17",
+      "campeonato": "Champions League Elite (Ásia)",
+      "time1": "Shanghai Port",
+      "time2": "Vissel Kobe",
+      "hora": "9h15",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 461,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "Olympiacos",
+      "time2": "Pafos",
+      "hora": "13h45",
+      "canal": "TNT e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 462,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "Slavia Praga",
+      "time2": "Bodo/Glimt",
+      "hora": "13h45",
+      "canal": "Space e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 463,
+      "data": "2025-09-17",
+      "campeonato": "Champions League Two (Ásia)",
+      "time1": "Al Nassr",
+      "time2": "Istiklol",
+      "hora": "15h15",
+      "canal": "ESPN 2 e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 464,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "Bayern",
+      "time2": "Chelsea",
+      "hora": "16h",
+      "canal": "TNT e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 465,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "PSG",
+      "time2": "Atalanta",
+      "hora": "16h",
+      "canal": "Space e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 466,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "Liverpool",
+      "time2": "Atlético de Madrid",
+      "hora": "16h",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 467,
+      "data": "2025-09-17",
+      "campeonato": "Champions League",
+      "time1": "Ajax",
+      "time2": "Inter de Milão",
+      "hora": "16h",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 468,
+      "data": "2025-09-17",
+      "campeonato": "Copa da Liga Inglesa",
+      "time1": "Swansea",
+      "time2": "Nottingham Forest",
+      "hora": "16h",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 469,
+      "data": "2025-09-17",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Bolívar",
+      "time2": "Atlético-MG",
+      "hora": "19h",
+      "canal": "ESPN e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 470,
+      "data": "2025-09-17",
+      "campeonato": "Brasileirão",
+      "time1": "Botafogo",
+      "time2": "Mirassol",
+      "hora": "19h30",
+      "canal": "Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 471,
+      "data": "2025-09-17",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Independiente del Valle",
+      "time2": "Once Caldas",
+      "hora": "21h30",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 472,
+      "data": "2025-09-17",
+      "campeonato": "Copa Libertadores da América",
+      "time1": "River Plate",
+      "time2": "Palmeiras",
+      "hora": "21h30",
+      "canal": "Globo, ge tv, ESPN e Disney+",
+      "divisao": "",
+      "fase": "quartas"
     }
   ]
 }
