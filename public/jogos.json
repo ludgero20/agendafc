@@ -2473,6 +2473,39 @@
         "canal": "Sportv 2",
         "divisao": "",
         "fase": ""
+    },
+    {
+      "id": 484,
+      "data": "2025-09-18",
+      "campeonato": "Saudi Pro League",
+      "time1": "Al Taawoun",
+      "time2": "Al Ettifaq",
+      "hora": "12h40",
+      "canal": "Canal GOAT",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 485,
+      "data": "2025-09-18",
+      "campeonato": "Saudi Pro League",
+      "time1": "Neom",
+      "time2": "Al Okhdood",
+      "hora": "15h",
+      "canal": "Canal GOAT e Sportv",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 486,
+      "data": "2025-09-18",
+      "campeonato": "Brasileirão",
+      "time1": "Botafogo-SP",
+      "time2": "Operário-PR",
+      "hora": "19h",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "Série B",
+      "fase": ""
     }
   ]
 }
