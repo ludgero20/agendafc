@@ -2506,6 +2506,105 @@
       "canal": "ESPN 4 e Disney+",
       "divisao": "Série B",
       "fase": ""
+    },
+    {
+      "id": 487,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Saudita",
+      "time1": "Al Qadsiah",
+      "time2": "Al Khaleej",
+      "hora": "12h15",
+      "canal": "Canal GOAT",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 488,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Saudita",
+      "time1": "Al Fayha",
+      "time2": "Al Shabab",
+      "hora": "12h05",
+      "canal": "BandSports",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 489,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Saudita",
+      "time1": "Al Ahli",
+      "time2": "Al Hilal",
+      "hora": "15h",
+      "canal": "Canal GOAT e BandSports",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 490,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Alemão",
+      "time1": "Stuttgart",
+      "time2": "St. Pauli",
+      "hora": "15h30",
+      "canal": "Xsports, Sportv e OneFootball",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 491,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Francês",
+      "time1": "Lyon",
+      "time2": "Angers",
+      "hora": "15h45",
+      "canal": "CazeTV",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 492,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Italiano",
+      "time1": "Lecce",
+      "time2": "Cagliari",
+      "hora": "15h45",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 493,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Espanhol",
+      "time1": "Betis",
+      "time2": "Real Sociedad",
+      "hora": "16h",
+      "canal": "ESPN e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 494,
+      "data": "2025-09-19",
+      "campeonato": "Campeonato Português",
+      "time1": "Rio Ave",
+      "time2": "Porto",
+      "hora": "16h15",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 495,
+      "data": "2025-09-19",
+      "campeonato": "Brasileirão",
+      "time1": "Novorizontino",
+      "time2": "Athletic",
+      "hora": "19h",
+      "canal": "ESPN e Disney+",
+      "divisao": "Série B",
+      "fase": ""
     }
   ]
 }
