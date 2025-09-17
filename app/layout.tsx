@@ -7,11 +7,11 @@ import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://agendafc.vercel.app'),
+  metadataBase: new URL('https://agendafc.com.br'),
 
-  title: "Agenda FC - Programação de Jogos",
+  title: "Agenda FC - Jogos de Futebol e NFL ao Vivo | Onde Assistir Hoje",
   description:
-    "Acompanhe a programação completa dos jogos de futebol com horários e canais de transmissão. Jogos de hoje, agenda da semana e muito mais!",
+    "Confira a Agenda FC: horários e canais para assistir aos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo.",
   keywords:
     "futebol, jogos, agenda, programação, horários, canais, transmissão, brasileirão, champions league",
   authors: [{ name: "Agenda FC" }],
@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://agendafc.com.br",
     siteName: "Agenda FC",
-    title: "Agenda FC - Programação da NFL e jogos de Futebol",
+    title: "Agenda FC - Jogos de Futebol e NFL ao Vivo",
     description:
-      "Nunca mais perca um jogo! Veja horários, canais e a programação completa da NFL e dos principais campeonatos de futebol.",
+      "Horários e canais dos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo. Não perca nenhum lance!",
     images: [
       {
-        url: "https://agendafc.vercel.app/logo.jpg",
+        url: "https://agendafc.com.br/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Agenda FC - Programação de Jogos",
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
   // Twitter Cards
   twitter: {
     card: "summary_large_image",
-    title: "Agenda FC - Programação dos Jogos",
+    title: "Agenda FC - Jogos de Futebol e NFL ao Vivo",
     description:
-      "Veja horários, canais e a programação completa da NFL e dos principais campeonatos de futebol!",
-    images: ["https://agendafc.vercel.app/logo.jpg"],
+      "Agenda FC mostra onde assistir os jogos de futebol e NFL hoje e amanhã, com horários e canais atualizados.",
+    images: ["https://agendafc.com.br/logo.jpg"],
     // site e creator serão adicionados quando você criar o Twitter
   },
 
