@@ -233,227 +233,223 @@ export default function Home() {
 
   return (
     <div className="space-y-8">
-        {/* Hero Section */}
-        <div className="text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            ⚽ Agenda FC 🏈
-          </h1>
-          <h2 className="text-2xl text-gray-700 mb-2">
-            Jogos de Hoje e Amanhã
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Onde assistir os principais jogos de futebol e da NFL!
-          </p>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Horários e canais de transmissão!
-          </p>
-        </div>
-
-        {/* Jogos de Hoje */}
-        <div className="">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-gray-800 capitalize">
-              📅 Hoje - {formatarData(hoje)}
-            </h2>
-          </div>
-          {Object.keys(jogosHoje).length === 0 ? (
-            <div className="bg-gray-100 rounded-xl p-6 text-center">
-              <p className="text-gray-600">Nenhum jogo programado para hoje</p>
-            </div>
-          ) : (
-            <div className="space-y-6">
-              {ordenarCampeonatos(Object.keys(jogosHoje), jogosHoje).map(
-                (chave) => {
-                  const jogosDoGrupo = jogosHoje[chave];
-                  const jogoExemplo = jogosDoGrupo[0];
-                  const nomeExibicao = criarNomeExibicao(jogoExemplo);
-
-                  return (
-                    <div
-                      key={chave}
-                      className="bg-white rounded-xl border border-gray-200 overflow-hidden"
-                    >
-                      <button
-                        onClick={() => toggleCampeonatoHoje(chave)}
-                        className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-                      >
-                        <div className="flex items-center">
-                          <span className="mr-3 text-xl">
-                            {getBandeiraPorCompeticao(jogoExemplo.campeonato)}
-                          </span>
-                          <h3 className="text-lg font-bold text-gray-800">
-                            {nomeExibicao}
-                          </h3>
-                          <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                            {jogosDoGrupo.length}{" "}
-                            {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}
-                          </span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="text-sm text-gray-500 mr-2">
-                            {campeonatosExpandidosHoje[chave]
-                              ? "Recolher"
-                              : "Ver jogos"}
-                          </span>
-                          {campeonatosExpandidosHoje[chave] ? (
-                            <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-                          ) : (
-                            <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-                          )}
-                        </div>
-                      </button>
-                      {campeonatosExpandidosHoje[chave] && (
-                        <div className="p-4">
-                          <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                            {jogosDoGrupo.map((jogo) => (
-                              <div
-                                key={jogo.id}
-                                className="bg-gray-50 rounded-lg p-4 border border-gray-100"
-                              >
-                                <div className="flex items-center justify-center mb-3">
-                                  <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                                    🕒 {jogo.hora}
-                                  </span>
-                                  {jogo.fase && (
-                                    <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
-                                      🏆 {jogo.fase}
-                                    </span>
-                                  )}
-                                </div>
-                                <div className="text-center mb-3">
-                                  <div className="flex items-center justify-center">
-                                    <span className="text-lg font-semibold text-gray-800">
-                                      {jogo.time1}
-                                    </span>
-                                    <span className="mx-3 text-gray-400 font-bold">
-                                      VS
-                                    </span>
-                                    <span className="text-lg font-semibold text-gray-800">
-                                      {jogo.time2}
-                                    </span>
-                                  </div>
-                                </div>
-                                <div className="text-center">
-                                  <span className="text-sm text-gray-600">
-                                    📺 {jogo.canal}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                }
-              )}
-            </div>
-          )}
-        </div>
-
-        {/* Jogos de Amanhã */}
-        <div className="">
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-gray-800 capitalize">
-              📅 Amanhã - {formatarData(amanha)}
-            </h2>
-          </div>
-          {Object.keys(jogosAmanha).length === 0 ? (
-            <div className="bg-gray-100 rounded-xl p-6 text-center">
-              <p className="text-gray-600">
-                Nenhum jogo programado para amanhã
-              </p>
-            </div>
-          ) : (
-            <div className="space-y-6">
-              {ordenarCampeonatos(Object.keys(jogosAmanha), jogosAmanha).map(
-                (chave) => {
-                  const jogosDoGrupo = jogosAmanha[chave];
-                  const jogoExemplo = jogosDoGrupo[0];
-                  const nomeExibicao = criarNomeExibicao(jogoExemplo);
-
-                  return (
-                    <div
-                      key={chave}
-                      className="bg-white rounded-xl border border-gray-200 overflow-hidden"
-                    >
-                      <button
-                        onClick={() => toggleCampeonatoAmanha(chave)}
-                        className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-                      >
-                        <div className="flex items-center">
-                          <span className="mr-3 text-xl">
-                            {getBandeiraPorCompeticao(jogoExemplo.campeonato)}
-                          </span>
-                          <h3 className="text-lg font-bold text-gray-800">
-                            {nomeExibicao}
-                          </h3>
-                          <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                            {jogosDoGrupo.length}{" "}
-                            {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}
-                          </span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="text-sm text-gray-500 mr-2">
-                            {campeonatosExpandidosAmanha[chave]
-                              ? "Recolher"
-                              : "Ver jogos"}
-                          </span>
-                          {campeonatosExpandidosAmanha[chave] ? (
-                            <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-                          ) : (
-                            <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-                          )}
-                        </div>
-                      </button>
-                      {campeonatosExpandidosAmanha[chave] && (
-                        <div className="p-4">
-                          <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                            {jogosDoGrupo.map((jogo) => (
-                              <div
-                                key={jogo.id}
-                                className="bg-gray-50 rounded-lg p-4 border border-gray-100"
-                              >
-                                <div className="flex items-center justify-center mb-3">
-                                  <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                                    🕒 {jogo.hora}
-                                  </span>
-                                  {jogo.fase && (
-                                    <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
-                                      🏆 {jogo.fase}
-                                    </span>
-                                  )}
-                                </div>
-                                <div className="text-center mb-3">
-                                  <div className="flex items-center justify-center">
-                                    <span className="text-lg font-semibold text-gray-800">
-                                      {jogo.time1}
-                                    </span>
-                                    <span className="mx-3 text-gray-400 font-bold">
-                                      VS
-                                    </span>
-                                    <span className="text-lg font-semibold text-gray-800">
-                                      {jogo.time2}
-                                    </span>
-                                  </div>
-                                </div>
-                                <div className="text-center">
-                                  <span className="text-sm text-gray-600">
-                                    📺 {jogo.canal}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                }
-              )}
-            </div>
-          )}
-        </div>
+      {/* Hero Section */}
+      <div className="text-center py-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          ⚽ Agenda FC 🏈
+        </h1>
+        <h2 className="text-2xl text-gray-700 mb-2">Jogos de Hoje e Amanhã</h2>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Onde assistir os principais jogos de futebol e da NFL!
+        </p>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Horários e canais de transmissão!
+        </p>
       </div>
+
+      {/* Jogos de Hoje */}
+      <div className="">
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 capitalize">
+            📅 Hoje - {formatarData(hoje)}
+          </h2>
+        </div>
+        {Object.keys(jogosHoje).length === 0 ? (
+          <div className="bg-gray-100 rounded-xl p-6 text-center">
+            <p className="text-gray-600">Nenhum jogo programado para hoje</p>
+          </div>
+        ) : (
+          <div className="space-y-6">
+            {ordenarCampeonatos(Object.keys(jogosHoje), jogosHoje).map(
+              (chave) => {
+                const jogosDoGrupo = jogosHoje[chave];
+                const jogoExemplo = jogosDoGrupo[0];
+                const nomeExibicao = criarNomeExibicao(jogoExemplo);
+
+                return (
+                  <div
+                    key={chave}
+                    className="bg-white rounded-xl border border-gray-200 overflow-hidden"
+                  >
+                    <button
+                      onClick={() => toggleCampeonatoHoje(chave)}
+                      className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <div className="flex items-center">
+                        <span className="mr-3 text-xl">
+                          {getBandeiraPorCompeticao(jogoExemplo.campeonato)}
+                        </span>
+                        <h3 className="text-lg font-bold text-gray-800">
+                          {nomeExibicao}
+                        </h3>
+                        <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                          {jogosDoGrupo.length}{" "}
+                          {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-sm text-gray-500 mr-2">
+                          {campeonatosExpandidosHoje[chave]
+                            ? "Recolher"
+                            : "Ver jogos"}
+                        </span>
+                        {campeonatosExpandidosHoje[chave] ? (
+                          <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                        ) : (
+                          <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                        )}
+                      </div>
+                    </button>
+                    {campeonatosExpandidosHoje[chave] && (
+                      <div className="p-4">
+                        <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                          {jogosDoGrupo.map((jogo) => (
+                            <div
+                              key={jogo.id}
+                              className="bg-gray-50 rounded-lg p-4 border border-gray-100"
+                            >
+                              <div className="flex items-center justify-center mb-3">
+                                <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                  🕒 {jogo.hora}
+                                </span>
+                                {jogo.fase && (
+                                  <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
+                                    🏆 {jogo.fase}
+                                  </span>
+                                )}
+                              </div>
+                              <div className="text-center mb-3">
+                                <div className="flex items-center justify-center">
+                                  <span className="text-lg font-semibold text-gray-800">
+                                    {jogo.time1}
+                                  </span>
+                                  <span className="mx-3 text-gray-400 font-bold">
+                                    VS
+                                  </span>
+                                  <span className="text-lg font-semibold text-gray-800">
+                                    {jogo.time2}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="text-center">
+                                <span className="text-sm text-gray-600">
+                                  📺 {jogo.canal}
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              },
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Jogos de Amanhã */}
+      <div className="">
+        <div className="mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 capitalize">
+            📅 Amanhã - {formatarData(amanha)}
+          </h2>
+        </div>
+        {Object.keys(jogosAmanha).length === 0 ? (
+          <div className="bg-gray-100 rounded-xl p-6 text-center">
+            <p className="text-gray-600">Nenhum jogo programado para amanhã</p>
+          </div>
+        ) : (
+          <div className="space-y-6">
+            {ordenarCampeonatos(Object.keys(jogosAmanha), jogosAmanha).map(
+              (chave) => {
+                const jogosDoGrupo = jogosAmanha[chave];
+                const jogoExemplo = jogosDoGrupo[0];
+                const nomeExibicao = criarNomeExibicao(jogoExemplo);
+
+                return (
+                  <div
+                    key={chave}
+                    className="bg-white rounded-xl border border-gray-200 overflow-hidden"
+                  >
+                    <button
+                      onClick={() => toggleCampeonatoAmanha(chave)}
+                      className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
+                    >
+                      <div className="flex items-center">
+                        <span className="mr-3 text-xl">
+                          {getBandeiraPorCompeticao(jogoExemplo.campeonato)}
+                        </span>
+                        <h3 className="text-lg font-bold text-gray-800">
+                          {nomeExibicao}
+                        </h3>
+                        <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                          {jogosDoGrupo.length}{" "}
+                          {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}
+                        </span>
+                      </div>
+                      <div className="flex items-center">
+                        <span className="text-sm text-gray-500 mr-2">
+                          {campeonatosExpandidosAmanha[chave]
+                            ? "Recolher"
+                            : "Ver jogos"}
+                        </span>
+                        {campeonatosExpandidosAmanha[chave] ? (
+                          <ChevronUpIcon className="h-5 w-5 text-gray-400" />
+                        ) : (
+                          <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                        )}
+                      </div>
+                    </button>
+                    {campeonatosExpandidosAmanha[chave] && (
+                      <div className="p-4">
+                        <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+                          {jogosDoGrupo.map((jogo) => (
+                            <div
+                              key={jogo.id}
+                              className="bg-gray-50 rounded-lg p-4 border border-gray-100"
+                            >
+                              <div className="flex items-center justify-center mb-3">
+                                <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                                  🕒 {jogo.hora}
+                                </span>
+                                {jogo.fase && (
+                                  <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
+                                    🏆 {jogo.fase}
+                                  </span>
+                                )}
+                              </div>
+                              <div className="text-center mb-3">
+                                <div className="flex items-center justify-center">
+                                  <span className="text-lg font-semibold text-gray-800">
+                                    {jogo.time1}
+                                  </span>
+                                  <span className="mx-3 text-gray-400 font-bold">
+                                    VS
+                                  </span>
+                                  <span className="text-lg font-semibold text-gray-800">
+                                    {jogo.time2}
+                                  </span>
+                                </div>
+                              </div>
+                              <div className="text-center">
+                                <span className="text-sm text-gray-600">
+                                  📺 {jogo.canal}
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              },
+            )}
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
