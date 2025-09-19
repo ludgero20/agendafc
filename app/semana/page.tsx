@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from 'react'
-import JogoCard from '../components/JogoCard'
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
 // Removidas dependências do arquivo prioridades.ts - agora usa JSON direto
 
