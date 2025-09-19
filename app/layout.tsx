@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   // Adicionar cor do tema para navegadores mobile
   themeColor: "#ffffff",
 
-  // SUGESTÃO 3: Adicionar o manifest para PWA (verifique se o arquivo existe em /public/manifest.json)
+  // Adicionar o manifest para PWA
   manifest: "/manifest.json",
 
   // Open Graph (Facebook, WhatsApp, LinkedIn)
