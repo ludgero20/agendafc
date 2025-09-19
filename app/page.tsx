@@ -3,12 +3,7 @@
 import React, { useState, useEffect } from "react";
 import JogoCard from "./components/JogoCard";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
-import {
-  carregarPrioridades,
-  getPrioridadeCampeonato,
-  getCampeonatosSemPrioridade,
-  getBandeiraPorCompeticao,
-} from "./utils/prioridades";
+// Removidas dependências do arquivo prioridades.ts - agora usa JSON direto
 
 type JogoSemana = {
   id: number;
@@ -28,12 +23,69 @@ export default function Home() {
     {},
   );
   const [loading, setLoading] = useState(true);
-  const [prioridades, setPrioridades] = useState<any>(null);
+  const [competicoesData, setCompeticoesData] = useState<any>(null);
   const [campeonatosExpandidosHoje, setCampeonatosExpandidosHoje] = useState<
     Record<string, boolean>
   >({});
   const [campeonatosExpandidosAmanha, setCampeonatosExpandidosAmanha] =
     useState<Record<string, boolean>>({});
+
+  // Funções auxiliares para trabalhar com dados das competições
+  const getPrioridadeCampeonato = (campeonato: string, time1?: string, time2?: string): number => {
+    // Regra especial: Seleção Brasileira sempre no Grupo 1
+    if (time1 || time2) {
+      const times = [time1, time2].filter(Boolean).map(t => t?.toLowerCase());
+      const temSelecaoBrasileira = times.some(time => 
+        time?.includes('brasil') || 
+        time?.includes('brazil') || 
+        time === 'seleção brasileira' ||
+        time === 'selecao brasileira'
+      );
+      
+      if (temSelecaoBrasileira) {
+        return 1;
+      }
+    }
+
+    // Buscar nas competições
+    if (competicoesData?.competicoes) {
+      const competicao = competicoesData.competicoes.find((comp: any) => 
+        comp.nome === campeonato && comp.ativo
+      );
+      if (competicao) {
+        return competicao.prioridade;
+      }
+    }
+    
+    // Se não encontrar, retorna prioridade 6 (nova) e log para identificação
+    console.warn(`⚠️ CAMPEONATO NÃO CADASTRADO: "${campeonato}" - Necessário definir prioridade!`);
+    return 6;
+  };
+
+  const getBandeiraPorCompeticao = (campeonato: string): string => {
+    if (competicoesData?.competicoes) {
+      const competicao = competicoesData.competicoes.find((comp: any) => 
+        comp.nome === campeonato && comp.ativo
+      );
+      if (competicao) {
+        return competicao.bandeiraEmoji;
+      }
+    }
+    return '🌎'; // Emoji padrão se não encontrar
+  };
+
+  const getCampeonatosSemPrioridade = (jogos: JogoSemana[]): string[] => {
+    const campeonatosUnicos = [...new Set(jogos.map(jogo => jogo.campeonato))];
+    const campeonatosSemPrioridade: string[] = [];
+    
+    for (const campeonato of campeonatosUnicos) {
+      if (getPrioridadeCampeonato(campeonato, '', '') === 6) {
+        campeonatosSemPrioridade.push(campeonato);
+      }
+    }
+    
+    return campeonatosSemPrioridade;
+  };
 
   // Função para criar nome de exibição do campeonato
   const criarNomeExibicao = (jogo: JogoSemana) => {
@@ -63,8 +115,9 @@ export default function Home() {
   useEffect(() => {
     const carregarJogos = async () => {
       try {
-        const prioridadesData = await carregarPrioridades();
-        setPrioridades(prioridadesData);
+        const competicoesResponse = await fetch('/competicoes-unificadas.json');
+        const competicoesData = await competicoesResponse.json();
+        setCompeticoesData(competicoesData);
 
         const response = await fetch("/jogos.json");
         const data = await response.json();
@@ -134,10 +187,7 @@ export default function Home() {
         setJogosAmanha(jogosAmanhaPorCampeonato);
 
         // Verificar campeonatos sem prioridade
-        const campeonatosSemPrioridade = getCampeonatosSemPrioridade(
-          data.jogosSemana,
-          prioridadesData,
-        );
+        const campeonatosSemPrioridade = getCampeonatosSemPrioridade(data.jogosSemana);
         if (campeonatosSemPrioridade.length > 0) {
           console.warn(
             "🚨 CAMPEONATOS SEM PRIORIDADE DETECTADOS:",
@@ -206,23 +256,13 @@ export default function Home() {
     jogosGrupo: Record<string, JogoSemana[]>,
   ) => {
     return chaves.sort((a, b) => {
-      if (!prioridades) return a.localeCompare(b);
+      if (!competicoesData) return a.localeCompare(b);
 
       const jogoA = jogosGrupo[a][0];
       const jogoB = jogosGrupo[b][0];
 
-      const prioridadeA = getPrioridadeCampeonato(
-        jogoA.campeonato,
-        prioridades,
-        "",
-        "",
-      );
-      const prioridadeB = getPrioridadeCampeonato(
-        jogoB.campeonato,
-        prioridades,
-        "",
-        "",
-      );
+      const prioridadeA = getPrioridadeCampeonato(jogoA.campeonato, "", "");
+      const prioridadeB = getPrioridadeCampeonato(jogoB.campeonato, "", "");
 
       if (prioridadeA !== prioridadeB) {
         return prioridadeA - prioridadeB;
