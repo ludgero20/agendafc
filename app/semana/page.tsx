@@ -114,12 +114,8 @@ export default function Semana() {
           return data; // Já está no formato YYYY-MM-DD
         };
 
-        // Extrair campeonatos únicos para o filtro
+        // Filtrar e normalizar jogos para mostrar apenas de hoje em diante PRIMEIRO
         const jogosDaSemanа = data.jogosSemana || [];
-        const campeonatosUnicos = [...new Set(jogosDaSemanа.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
-        setCampeonatosDisponiveis(campeonatosUnicos.sort());
-
-        // Filtrar e normalizar jogos para mostrar apenas de hoje em diante
         const jogosNormalizados = jogosDaSemanа
           .map((jogo: JogoSemana) => ({
             ...jogo,
@@ -128,6 +124,10 @@ export default function Semana() {
           .filter((jogo: JogoSemana) => {
             return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
           });
+
+        // DEPOIS extrair campeonatos únicos APENAS dos jogos que serão exibidos
+        const campeonatosUnicos = [...new Set(jogosNormalizados.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
+        setCampeonatosDisponiveis(campeonatosUnicos.sort());
 
         // Aplicar filtro de competição se selecionado
         const jogosFiltrados = filtroCompeticao === "todos" 

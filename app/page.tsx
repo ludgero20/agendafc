@@ -145,12 +145,8 @@ export default function Home() {
           "-" +
           String(amanhaDate.getDate()).padStart(2, "0");
 
-        // Extrair campeonatos únicos para o filtro
+        // Filtrar jogos por data PRIMEIRO
         const jogosDaSemanа = data.jogosSemana || [];
-        const campeonatosUnicos = [...new Set(jogosDaSemanа.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
-        setCampeonatosDisponiveis(campeonatosUnicos.sort());
-
-        // Filtrar jogos por data
         const jogosDeHoje = jogosDaSemanа.filter((jogo: JogoSemana) => {
           // Converter formato DD/MM para YYYY-MM-DD se necessário
           let dataJogo = jogo.data;
@@ -171,6 +167,11 @@ export default function Home() {
           }
           return dataJogo === amanhaStr;
         });
+
+        // DEPOIS extrair campeonatos únicos APENAS dos jogos que serão exibidos
+        const jogosRelevantes = [...jogosDeHoje, ...jogosDeAmanha];
+        const campeonatosUnicos = [...new Set(jogosRelevantes.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
+        setCampeonatosDisponiveis(campeonatosUnicos.sort());
 
         // Aplicar filtro de competição se selecionado
         const jogosHojeFiltrados = filtroCompeticao === "todos" 
