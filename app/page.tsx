@@ -28,6 +28,8 @@ export default function Home() {
   >({});
   const [campeonatosExpandidosAmanha, setCampeonatosExpandidosAmanha] =
     useState<Record<string, boolean>>({});
+  const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
+  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
 
   // Funções auxiliares para trabalhar com dados das competições
   const getPrioridadeCampeonato = (campeonato: string, time1?: string, time2?: string): number => {
@@ -143,8 +145,12 @@ export default function Home() {
           "-" +
           String(amanhaDate.getDate()).padStart(2, "0");
 
-        // Filtrar jogos por data
+        // Extrair campeonatos únicos para o filtro
         const jogosDaSemanа = data.jogosSemana || [];
+        const campeonatosUnicos = [...new Set(jogosDaSemanа.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
+        setCampeonatosDisponiveis(campeonatosUnicos.sort());
+
+        // Filtrar jogos por data
         const jogosDeHoje = jogosDaSemanа.filter((jogo: JogoSemana) => {
           // Converter formato DD/MM para YYYY-MM-DD se necessário
           let dataJogo = jogo.data;
@@ -166,9 +172,18 @@ export default function Home() {
           return dataJogo === amanhaStr;
         });
 
+        // Aplicar filtro de competição se selecionado
+        const jogosHojeFiltrados = filtroCompeticao === "todos" 
+          ? jogosDeHoje 
+          : jogosDeHoje.filter((jogo: JogoSemana) => jogo.campeonato === filtroCompeticao);
+        
+        const jogosAmanhaFiltrados = filtroCompeticao === "todos" 
+          ? jogosDeAmanha 
+          : jogosDeAmanha.filter((jogo: JogoSemana) => jogo.campeonato === filtroCompeticao);
+
         // Organizar jogos por campeonato+divisão
-        const jogosHojePorCampeonato = agruparJogos(jogosDeHoje);
-        const jogosAmanhaPorCampeonato = agruparJogos(jogosDeAmanha);
+        const jogosHojePorCampeonato = agruparJogos(jogosHojeFiltrados);
+        const jogosAmanhaPorCampeonato = agruparJogos(jogosAmanhaFiltrados);
 
         // Ordenar jogos por horário dentro de cada campeonato
         Object.keys(jogosHojePorCampeonato).forEach((chave) => {
@@ -278,12 +293,32 @@ export default function Home() {
           ⚽ Agenda FC 🏈
         </h1>
         <h2 className="text-2xl text-gray-700 mb-2">Jogos de Hoje e Amanhã</h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
           Onde assistir os principais jogos de futebol e da NFL!
         </p>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
           Horários e canais de transmissão!
         </p>
+        
+        {/* Filtro de campeonatos */}
+        <div className="max-w-md mx-auto">
+          <label htmlFor="filtroCompeticao" className="block text-sm font-medium text-gray-700 mb-2">
+            🔍 Filtrar por campeonato:
+          </label>
+          <select
+            id="filtroCompeticao"
+            value={filtroCompeticao}
+            onChange={(e) => setFiltroCompeticao(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
+          >
+            <option value="todos">📋 Todos os campeonatos</option>
+            {campeonatosDisponiveis.map((campeonato) => (
+              <option key={campeonato} value={campeonato}>
+                {getBandeiraPorCompeticao(campeonato)} {campeonato}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {/* Jogos de Hoje */}
