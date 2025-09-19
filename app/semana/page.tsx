@@ -144,7 +144,7 @@ export default function Semana() {
     };
 
     carregarJogos();
-  }, []);
+  }, [filtroCompeticao]);
 
   if (loading) {
     return (

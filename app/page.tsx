@@ -220,7 +220,7 @@ export default function Home() {
     };
 
     carregarJogos();
-  }, []);
+  }, [filtroCompeticao]);
 
   if (loading) {
     return (
