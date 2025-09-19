@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react'
-import { carregarCompeticoes, getCompeticoesPorPrioridade, getGrupoPrioridade } from '../utils/prioridades'
+// Removidas dependências do arquivo prioridades.ts - agora usa JSON direto
 
 type Competicao = {
   id: number;
@@ -28,7 +28,8 @@ export default function Competicoes() {
   useEffect(() => {
     const carregarDados = async () => {
       try {
-        const data = await carregarCompeticoes();
+        const response = await fetch('/competicoes-unificadas.json');
+        const data = await response.json();
         setCompeticoes(data.competicoes.filter(comp => comp.ativo));
         setGruposPrioridade(data.grupos_prioridade);
       } catch (error) {
