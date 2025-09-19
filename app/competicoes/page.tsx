@@ -30,7 +30,7 @@ export default function Competicoes() {
       try {
         const response = await fetch('/competicoes-unificadas.json');
         const data = await response.json();
-        setCompeticoes(data.competicoes.filter(comp => comp.ativo));
+        setCompeticoes(data.competicoes.filter((comp: Competicao) => comp.ativo));
         setGruposPrioridade(data.grupos_prioridade);
       } catch (error) {
         console.error('Erro ao carregar campeonatos:', error);
