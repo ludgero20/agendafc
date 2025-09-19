@@ -21,6 +21,8 @@ export default function Semana() {
   const [loading, setLoading] = useState(true);
   const [competicoesData, setCompeticoesData] = useState<any>(null);
   const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
+  const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
+  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
 
   // Funções auxiliares para trabalhar com dados das competições
   const getPrioridadeCampeonato = (campeonato: string, time1?: string, time2?: string): number => {
@@ -112,8 +114,13 @@ export default function Semana() {
           return data; // Já está no formato YYYY-MM-DD
         };
 
+        // Extrair campeonatos únicos para o filtro
+        const jogosDaSemanа = data.jogosSemana || [];
+        const campeonatosUnicos = [...new Set(jogosDaSemanа.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
+        setCampeonatosDisponiveis(campeonatosUnicos.sort());
+
         // Filtrar e normalizar jogos para mostrar apenas de hoje em diante
-        const jogosFiltrados = (data.jogosSemana || [])
+        const jogosNormalizados = jogosDaSemanа
           .map((jogo: JogoSemana) => ({
             ...jogo,
             data: normalizarData(jogo.data, hojeDate.getFullYear())
@@ -121,6 +128,11 @@ export default function Semana() {
           .filter((jogo: JogoSemana) => {
             return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
           });
+
+        // Aplicar filtro de competição se selecionado
+        const jogosFiltrados = filtroCompeticao === "todos" 
+          ? jogosNormalizados 
+          : jogosNormalizados.filter((jogo: JogoSemana) => jogo.campeonato === filtroCompeticao);
         
         setJogos(jogosFiltrados);
       } catch (error) {
@@ -217,9 +229,29 @@ export default function Semana() {
         <h2 className="text-2xl text-gray-700 mb-4">
           📅 Programação da Semana
         </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
           Veja todos os jogos programados para esta semana com horários e canais
         </p>
+        
+        {/* Filtro de campeonatos */}
+        <div className="max-w-md mx-auto">
+          <label htmlFor="filtroCompeticaoSemana" className="block text-sm font-medium text-gray-700 mb-2">
+            🔍 Filtrar por campeonato:
+          </label>
+          <select
+            id="filtroCompeticaoSemana"
+            value={filtroCompeticao}
+            onChange={(e) => setFiltroCompeticao(e.target.value)}
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
+          >
+            <option value="todos">📋 Todos os campeonatos</option>
+            {campeonatosDisponiveis.map((campeonato) => (
+              <option key={campeonato} value={campeonato}>
+                {getBandeiraPorCompeticao(campeonato)} {campeonato}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       
       {Object.keys(jogosPorData).length === 0 ? (
