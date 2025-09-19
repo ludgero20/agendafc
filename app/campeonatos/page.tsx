@@ -1,9 +1,11 @@
-"use client";
+import fs from 'fs';
+import path from 'path';
+import Link from 'next/link'; // Importe o Link para o futuro
 
-import React, { useState, useEffect } from 'react'
-
+// --- TIPOS ---
 type Competicao = {
   id: number;
+  slug?: string; 
   nome: string;
   pais: string;
   tipo: string;
@@ -19,52 +21,40 @@ type GrupoPrioridade = {
   descricao: string;
 };
 
-export default function Competicoes() {
-  const [competicoes, setCompeticoes] = useState<Competicao[]>([]);
-  const [gruposPrioridade, setGruposPrioridade] = useState<Record<string, GrupoPrioridade>>({});
-  const [loading, setLoading] = useState(true);
+// --- FUNÇÃO PARA CARREGAR DADOS (NO SERVIDOR) ---
+async function carregarDados() {
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'competicoes-unificadas.json');
+    const jsonData = await fs.promises.readFile(filePath, 'utf-8');
+    const data = JSON.parse(jsonData);
 
-  useEffect(() => {
-    const carregarDados = async () => {
-      try {
-        const response = await fetch('/competicoes-unificadas.json');
-        const data = await response.json();
-        setCompeticoes(data.competicoes.filter((comp: Competicao) => comp.ativo));
-        setGruposPrioridade(data.grupos_prioridade);
-      } catch (error) {
-        console.error('Erro ao carregar campeonatos:', error);
-        setCompeticoes([]);
-        setGruposPrioridade({});
-      } finally {
-        setLoading(false);
-      }
+    const competicoesAtivas = data.competicoes.filter((comp: Competicao) => comp.ativo);
+
+    return {
+      competicoes: competicoesAtivas,
+      gruposPrioridade: data.grupos_prioridade as Record<string, GrupoPrioridade>,
     };
-
-    carregarDados();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="space-y-8">
-        <div className="text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            NFL e os Melhores Campeonatos de Futebol: Estatísticas, Tabelas e Jogos
-          </h1>
-          <p className="text-xl text-gray-600">Carregando campeonatos...</p>
-        </div>
-      </div>
-    );
+  } catch (error) {
+    console.error('[ERRO] Falha ao carregar o JSON:', error);
+    return { competicoes: [], gruposPrioridade: {} };
   }
+}
 
-  // Agrupar competições por prioridade
-  const competicoesPorPrioridade = competicoes.reduce((acc, comp) => {
-    const prioridade = comp.prioridade;
-    if (!acc[prioridade]) {
-      acc[prioridade] = [];
-    }
-    acc[prioridade].push(comp);
-    return acc;
-  }, {} as Record<number, Competicao[]>);
+// --- COMPONENTE DA PÁGINA (SERVER COMPONENT) ---
+export default async function Competicoes() {
+  const { competicoes, gruposPrioridade } = await carregarDados();
+
+  const competicoesPorPrioridade = competicoes.reduce(
+    (acc: Record<number, Competicao[]>, comp: Competicao) => {
+      const prioridade = comp.prioridade;
+      if (!acc[prioridade]) {
+        acc[prioridade] = [];
+      }
+      acc[prioridade].push(comp);
+      return acc;
+    }, 
+    {} as Record<number, Competicao[]>
+  );
 
   const getBadgeColor = (tipo: string) => {
     switch (tipo) {
@@ -82,13 +72,13 @@ export default function Competicoes() {
     <div className="space-y-8">
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          NFL e os Melhores Campeonatos de Futebol: Estatísticas, Tabelas e Jogos
+          🏆 Guia de Campeonatos de Futebol e NFL
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          No Agenda FC, você encontra o guia definitivo para acompanhar os principais campeonatos de futebol do Brasil e do mundo. Fique por dentro de tabelas de classificação, próximos jogos e resultados do Brasileirão, da emocionante Champions League, da competitiva Premier League e das outras grandes ligas europeias, além da temporada da NFL.
+          No Agenda FC, você encontra o guia definitivo para acompanhar os principais campeonatos de futebol do Brasil e do mundo. Fique por dentro de tabelas, jogos e resultados.
         </p>
       </div>
-      
+
       {Object.keys(competicoesPorPrioridade).length === 0 ? (
         <div className="bg-gray-100 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-semibold text-gray-800 mb-2">Em desenvolvimento!</h3>
@@ -96,15 +86,14 @@ export default function Competicoes() {
         </div>
       ) : (
         <div className="space-y-10">
-          {/* Ordenar prioridades de 1 a 5 */}
           {[1, 2, 3, 4, 5].map((prioridade) => {
             const competicoesGrupo = competicoesPorPrioridade[prioridade] || [];
-            const grupoInfo = gruposPrioridade[prioridade.toString()];
-            
+            const grupoInfo = gruposPrioridade[prioridade.toString()]; 
+
             if (competicoesGrupo.length === 0) return null;
-            
+
             return (
-              <div key={prioridade} className="">
+              <div key={prioridade}>
                 <div className="mb-6">
                   <div className="flex items-center gap-3 mb-2">
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${grupoInfo?.cor || 'bg-gray-100 text-gray-800'}`}>
@@ -116,9 +105,9 @@ export default function Competicoes() {
                   </div>
                   <p className="text-gray-600">{grupoInfo?.descricao}</p>
                 </div>
-                
+
                 <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-                  {competicoesGrupo.map((comp) => (
+                {competicoesGrupo.map((comp: Competicao) => (
                     <div key={comp.id} className="bg-white hover:bg-gray-50 p-6 rounded-xl transition-all duration-200 border border-gray-200 shadow-sm">
                       <div className="flex justify-between items-start mb-3">
                         <div className="flex items-center gap-2">
@@ -129,9 +118,9 @@ export default function Competicoes() {
                           {comp.tipo}
                         </span>
                       </div>
-                      
+
                       <p className="text-gray-600 text-sm mb-3">{comp.descricao}</p>
-                      
+
                       <div className="flex items-center justify-between text-sm">
                         <div className="flex items-center text-gray-500">
                           <span className="mr-1">📍</span>
@@ -151,5 +140,5 @@ export default function Competicoes() {
         </div>
       )}
     </div>
-  )
+  );
 }

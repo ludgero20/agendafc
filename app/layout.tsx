@@ -10,7 +10,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   metadataBase: new URL('https://agendafc.com.br'),
 
-  title: "Agenda FC - Jogos de Futebol e NFL ao Vivo | Onde Assistir Hoje",
+  // Adicionar um template para os títulos das página
+  title: {
+    default: "Agenda FC - Jogos de Futebol e NFL ao Vivo | Onde Assistir Hoje",
+    template: "%s | Agenda FC", // Ex: "Tabela do Brasileirão | Agenda FC"
+  },
   description:
     "Confira a Agenda FC: horários e canais para assistir aos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo.",
   keywords:
@@ -18,6 +22,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Agenda FC" }],
   creator: "Agenda FC",
   publisher: "Agenda FC",
+
+  // Adicionar cor do tema para navegadores mobile
+  themeColor: "#ffffff",
+
+  // SUGESTÃO 3: Adicionar o manifest para PWA (verifique se o arquivo existe em /public/manifest.json)
+  manifest: "/manifest.json",
 
   // Open Graph (Facebook, WhatsApp, LinkedIn)
   openGraph: {
@@ -30,13 +40,12 @@ export const metadata: Metadata = {
       "Horários e canais dos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo. Não perca nenhum lance!",
     images: [
       {
-        url: "https://agendafc.com.br/logo.jpg",
+        url: "/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Agenda FC - Programação de Jogos",
       },
     ],
-    
   },
 
   // Twitter Cards
@@ -45,8 +54,9 @@ export const metadata: Metadata = {
     title: "Agenda FC - Jogos de Futebol e NFL ao Vivo",
     description:
       "Agenda FC mostra onde assistir os jogos de futebol e NFL hoje e amanhã, com horários e canais atualizados.",
-    images: ["https://agendafc.com.br/logo.jpg"],
-    // site e creator serão adicionados quando você criar o Twitter
+    images: ["/logo.jpg"], 
+    creator: "@agendafc_br",
+    site: "@agendafc_br",
   },
 
   // Configurações de indexação
@@ -61,8 +71,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
-  // Verificação será adicionada quando você configurar o Search Console
 };
 
 export default function RootLayout({
@@ -75,7 +83,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-gray-50 flex flex-col">
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-QB7BSD411W"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -83,17 +91,19 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-QB7BSD411W');
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
           `}
         </Script>
 
-        {/* Google AdSense */}
-        <Script
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830084677363341"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        
+        {/* Google AdSense (se você usar) */}
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
+          <Script
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
+
         <Header />
         <main className="flex-grow pt-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
