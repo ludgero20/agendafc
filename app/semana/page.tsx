@@ -104,10 +104,24 @@ export default function Semana() {
                        String(hojeDate.getMonth() + 1).padStart(2, '0') + '-' + 
                        String(hojeDate.getDate()).padStart(2, '0');
         
-        // Filtrar jogos para mostrar apenas de hoje em diante
-        const jogosFiltrados = data.jogosSemana.filter((jogo: JogoSemana) => {
-          return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
-        });
+        // Função para normalizar data DD/MM → YYYY-MM-DD
+        const normalizarData = (data: string, ano: number): string => {
+          if (data.includes("/")) {
+            const [dia, mes] = data.split("/");
+            return `${ano}-${mes.padStart(2, "0")}-${dia.padStart(2, "0")}`;
+          }
+          return data; // Já está no formato YYYY-MM-DD
+        };
+
+        // Filtrar e normalizar jogos para mostrar apenas de hoje em diante
+        const jogosFiltrados = (data.jogosSemana || [])
+          .map((jogo: JogoSemana) => ({
+            ...jogo,
+            data: normalizarData(jogo.data, hojeDate.getFullYear())
+          }))
+          .filter((jogo: JogoSemana) => {
+            return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
+          });
         
         setJogos(jogosFiltrados);
       } catch (error) {
