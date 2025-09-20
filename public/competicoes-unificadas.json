@@ -77,7 +77,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional da Argentina",
       "prioridade": 4,
-      "ativo": false,
+      "ativo": true,
       "bandeiraEmoji": "🇦🇷"
     },
     {
