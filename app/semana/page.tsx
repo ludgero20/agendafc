@@ -1,9 +1,9 @@
-"use client";
+import React from 'react';
+import fs from 'fs/promises';
+import path from 'path';
+import SemanaListClient from '../components/SemanaListClient';
 
-import React, { useState, useEffect } from 'react'
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline'
-// Removidas dependências do arquivo prioridades.ts - agora usa JSON direto
-
+// Tipos
 type JogoSemana = {
   id: number;
   data: string;
@@ -16,327 +16,104 @@ type JogoSemana = {
   fase?: string;
 };
 
-export default function Semana() {
-  const [jogos, setJogos] = useState<JogoSemana[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [competicoesData, setCompeticoesData] = useState<any>(null);
-  const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
-  const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
-  const [campeonatosDisponiveis, setCampeonatosDisponiveis] = useState<string[]>([]);
+type CompeticaoInfo = { 
+  nome: string; 
+  prioridade: number; 
+  bandeiraEmoji: string; 
+  ativo: boolean; 
+};
 
-  // Funções auxiliares para trabalhar com dados das competições
-  const getPrioridadeCampeonato = (campeonato: string, time1?: string, time2?: string): number => {
-    // Regra especial: Seleção Brasileira sempre no Grupo 1
-    if (time1 || time2) {
-      const times = [time1, time2].filter(Boolean).map(t => t?.toLowerCase());
-      const temSelecaoBrasileira = times.some(time => 
-        time?.includes('brasil') || 
-        time?.includes('brazil') || 
-        time === 'seleção brasileira' ||
-        time === 'selecao brasileira'
-      );
-      
-      if (temSelecaoBrasileira) {
-        return 1;
-      }
-    }
+// Função de carregamento de dados (roda no servidor)
+async function carregarDadosDaSemana() {
+  try {
+    const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
+    const jogosPath = path.join(process.cwd(), "public", "jogos.json");
 
-    // Buscar nas competições
-    if (competicoesData?.competicoes) {
-      const competicao = competicoesData.competicoes.find((comp: any) => 
-        comp.nome === campeonato && comp.ativo
-      );
-      if (competicao) {
-        return competicao.prioridade;
-      }
-    }
-    
-    // Se não encontrar, retorna prioridade 6 (nova) e log para identificação
-    console.warn(`⚠️ CAMPEONATO NÃO CADASTRADO: "${campeonato}" - Necessário definir prioridade!`);
-    return 6;
-  };
+    const [competicoesFile, jogosFile] = await Promise.all([
+      fs.readFile(competicoesPath, "utf-8"),
+      fs.readFile(jogosPath, "utf-8"),
+    ]);
 
-  const getBandeiraPorCompeticao = (campeonato: string): string => {
-    if (competicoesData?.competicoes) {
-      const competicao = competicoesData.competicoes.find((comp: any) => 
-        comp.nome === campeonato && comp.ativo
-      );
-      if (competicao) {
-        return competicao.bandeiraEmoji;
-      }
-    }
-    return '🌎'; // Emoji padrão se não encontrar
-  };
+    const competicoesData = JSON.parse(competicoesFile);
+    const jogosData = JSON.parse(jogosFile);
 
-  // Função para criar nome de exibição do campeonato
-  const criarNomeExibicao = (jogo: JogoSemana) => {
-    let nome = jogo.campeonato;
-    if (jogo.divisao) nome += ` ${jogo.divisao}`;
-    if (jogo.fase) nome += ` (${jogo.fase})`;
-    return nome;
-  };
+    const competicoesAtivas: Record<string, CompeticaoInfo> = 
+      competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
+        if (comp.ativo) acc[comp.nome] = comp;
+        return acc;
+      }, {});
 
-  // Função para agrupar jogos por campeonato+divisão
-  const agruparJogos = (jogos: JogoSemana[]) => {
-    return jogos.reduce((acc: Record<string, JogoSemana[]>, jogo: JogoSemana) => {
+    const agora = new Date();
+    const hojeDate = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
+    const hojeStr = hojeDate.toISOString().split('T')[0];
+
+    const todosOsJogos: JogoSemana[] = jogosData.jogosSemana || [];
+
+    const jogosDaSemanaFiltrados = todosOsJogos
+      .map(jogo => ({...jogo, data: jogo.data.includes('/') ? `${hojeDate.getFullYear()}-${jogo.data.split('/')[1]}-${jogo.data.split('/')[0]}` : jogo.data }))
+      .filter(jogo => jogo.data >= hojeStr);
+
+    const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].sort();
+
+    const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
+      const data = jogo.data;
+      if (!acc[data]) acc[data] = {};
       const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
-      if (!acc[chave]) {
-        acc[chave] = [];
-      }
-      acc[chave].push(jogo);
+      if (!acc[data][chave]) acc[data][chave] = [];
+      acc[data][chave].push(jogo);
       return acc;
-    }, {} as Record<string, JogoSemana[]>);
-  };
+    }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-  useEffect(() => {
-    const carregarJogos = async () => {
-      try {
-        const competicoesResponse = await fetch('/competicoes-unificadas.json');
-        const competicoesData = await competicoesResponse.json();
-        setCompeticoesData(competicoesData);
-        
-        const response = await fetch('/jogos.json');
-        const data = await response.json();
-        
-        // Obter data de hoje usando timezone de São Paulo
-        const agora = new Date();
-        const hojeDate = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
-        const hojeStr = hojeDate.getFullYear() + '-' + 
-                       String(hojeDate.getMonth() + 1).padStart(2, '0') + '-' + 
-                       String(hojeDate.getDate()).padStart(2, '0');
-        
-        // Função para normalizar data DD/MM → YYYY-MM-DD
-        const normalizarData = (data: string, ano: number): string => {
-          if (data.includes("/")) {
-            const [dia, mes] = data.split("/");
-            return `${ano}-${mes.padStart(2, "0")}-${dia.padStart(2, "0")}`;
-          }
-          return data; // Já está no formato YYYY-MM-DD
-        };
+    Object.values(jogosPorData).forEach(campeonatos => {
+      Object.values(campeonatos).forEach(jogos => {
+        jogos.sort((a, b) => a.hora.localeCompare(b.hora));
+      });
+    });
 
-        // Filtrar e normalizar jogos para mostrar apenas de hoje em diante PRIMEIRO
-        const jogosDaSemanа = data.jogosSemana || [];
-        const jogosNormalizados = jogosDaSemanа
-          .map((jogo: JogoSemana) => ({
-            ...jogo,
-            data: normalizarData(jogo.data, hojeDate.getFullYear())
-          }))
-          .filter((jogo: JogoSemana) => {
-            return jogo.data >= hojeStr; // Mostra jogos de hoje em diante
-          });
+    return { jogosPorData, campeonatosDisponiveis, competicoesAtivas };
 
-        // DEPOIS extrair campeonatos únicos APENAS dos jogos que serão exibidos
-        const campeonatosUnicos = [...new Set(jogosNormalizados.map((jogo: JogoSemana) => jogo.campeonato))] as string[];
-        setCampeonatosDisponiveis(campeonatosUnicos.sort());
-
-        // Aplicar filtro de competição se selecionado
-        const jogosFiltrados = filtroCompeticao === "todos" 
-          ? jogosNormalizados 
-          : jogosNormalizados.filter((jogo: JogoSemana) => jogo.campeonato === filtroCompeticao);
-        
-        setJogos(jogosFiltrados);
-      } catch (error) {
-        console.error('Erro ao carregar jogos da semana:', error);
-        setJogos([]);
-      } finally {
-        setLoading(false);
-      }
+  } catch (error) {
+    console.error("🚨 ERRO AO CARREGAR DADOS DA SEMANA:", error);
+    return {
+      jogosPorData: {},
+      campeonatosDisponiveis: [],
+      competicoesAtivas: {}
     };
-
-    carregarJogos();
-  }, [filtroCompeticao]);
-
-  if (loading) {
-    return (
-      <div className="space-y-8">
-        <div className="text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            📅 Agenda da Semana
-          </h1>
-          <p className="text-xl text-gray-600">Carregando jogos...</p>
-        </div>
-      </div>
-    );
   }
+}
 
-  // Organizar jogos por data, depois por campeonato+divisão
-  const jogosPorData = jogos.reduce((acc, jogo) => {
-    const data = jogo.data;
-    if (!acc[data]) {
-      acc[data] = {};
-    }
-    
-    const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
-    if (!acc[data][chave]) {
-      acc[data][chave] = [];
-    }
-    acc[data][chave].push(jogo);
-    return acc;
-  }, {} as Record<string, Record<string, JogoSemana[]>>);
-
-  // Ordenar jogos dentro de cada campeonato por horário
-  Object.keys(jogosPorData).forEach(data => {
-    Object.keys(jogosPorData[data]).forEach(chave => {
-      jogosPorData[data][chave].sort((a, b) => a.hora.localeCompare(b.hora));
-    });
-  });
-
-  const formatarData = (data: string) => {
-    const [ano, mes, dia] = data.split('-');
-    const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia));
-    return dataObj.toLocaleDateString('pt-BR', { 
-      weekday: 'long', 
-      day: 'numeric', 
-      month: 'long' 
-    });
-  };
-
-  // Função para alternar expansão do campeonato
-  const toggleCampeonato = (data: string, chave: string) => {
-    setCampeonatosExpandidos(prev => ({
-      ...prev,
-      [data]: {
-        ...prev[data],
-        [chave]: !prev[data]?.[chave]
-      }
-    }));
-  };
-
-  // Função para ordenar campeonatos por prioridade
-  const ordenarCampeonatos = (chaves: string[], jogosGrupo: Record<string, JogoSemana[]>) => {
-    return chaves.sort((a, b) => {
-      if (!competicoesData) return a.localeCompare(b);
-      
-      const jogoA = jogosGrupo[a][0];
-      const jogoB = jogosGrupo[b][0];
-      
-      const prioridadeA = getPrioridadeCampeonato(jogoA.campeonato, '', '');
-      const prioridadeB = getPrioridadeCampeonato(jogoB.campeonato, '', '');
-      
-      if (prioridadeA !== prioridadeB) {
-        return prioridadeA - prioridadeB;
-      }
-      return a.localeCompare(b);
-    });
-  };
+// A página da semana agora é um Server Component
+export default async function Semana() {
+  const { jogosPorData, campeonatosDisponiveis, competicoesAtivas } = await carregarDadosDaSemana();
 
   return (
     <div className="space-y-8">
+      {/* Hero Section Otimizada para SEO */}
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          ⚽ Agenda FC 🏈
+          Agenda da Semana: Programação de Jogos na TV
         </h1>
-        <h2 className="text-2xl text-gray-700 mb-4">
-          📅 Programação da Semana
-        </h2>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
-          Veja todos os jogos programados para esta semana com horários e canais
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          Confira todos os jogos de futebol e da NFL programados para os próximos dias, com horários e canais de transmissão para você não perder nada.
         </p>
-        
-        {/* Filtro de campeonatos */}
-        <div className="max-w-md mx-auto">
-          <label htmlFor="filtroCompeticaoSemana" className="block text-sm font-medium text-gray-700 mb-2">
-            🔍 Filtrar por campeonato:
-          </label>
-          <select
-            id="filtroCompeticaoSemana"
-            value={filtroCompeticao}
-            onChange={(e) => setFiltroCompeticao(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
-          >
-            <option value="todos">📋 Todos os campeonatos</option>
-            {campeonatosDisponiveis.map((campeonato) => (
-              <option key={campeonato} value={campeonato}>
-                {getBandeiraPorCompeticao(campeonato)} {campeonato}
-              </option>
-            ))}
-          </select>
-        </div>
+      </div>
+
+      {/* O componente de cliente renderiza a parte interativa */}
+      <SemanaListClient
+        jogosPorDataIniciais={jogosPorData}
+        campeonatosDisponiveis={campeonatosDisponiveis}
+        competicoesAtivas={competicoesAtivas}
+      />
+      {/* ===== Bloco de Mensagem Final ===== */}
+      <div className="text-center p-8 mt-8 bg-blue-50 border border-blue-200 rounded-xl">
+        <h3 className="text-2xl font-bold text-blue-900 mb-2">
+          🗓️ Novas Transmissões em Breve
+        </h3>
+        <p className="text-blue-700 max-w-xl mx-auto">
+          Nossa agenda é atualizada constantemente. Estamos sempre aguardando a confirmação dos próximos dias de transmissão para trazer a informação mais precisa para você. Volte em breve!
+        </p>
       </div>
       
-      {Object.keys(jogosPorData).length === 0 ? (
-        <div className="bg-gray-100 rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-2">Nenhum jogo encontrado!</h3>
-          <p className="text-gray-600">Não há jogos programados para esta semana.</p>
-        </div>
-      ) : (
-        <div className="space-y-10">
-          {Object.keys(jogosPorData).sort().map((data) => (
-            <div key={data} className="">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                📅 {formatarData(data)}
-              </h2>
-              
-              <div className="space-y-6">
-                {ordenarCampeonatos(Object.keys(jogosPorData[data]), jogosPorData[data]).map((chave) => {
-                  const jogosDoGrupo = jogosPorData[data][chave];
-                  const jogoExemplo = jogosDoGrupo[0];
-                  const nomeExibicao = criarNomeExibicao(jogoExemplo);
-                  
-                  return (
-                    <div key={chave} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
-                      <button
-                        onClick={() => toggleCampeonato(data, chave)}
-                        className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-                      >
-                        <div className="flex items-center">
-                          <span className="mr-3 text-2xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
-                          <h3 className="text-xl font-bold text-gray-800">{nomeExibicao}</h3>
-                          <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                            {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'jogo' : 'jogos'}
-                          </span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="text-sm text-gray-500 mr-2">
-                            {campeonatosExpandidos[data]?.[chave] ? 'Recolher' : 'Ver jogos'}
-                          </span>
-                          {campeonatosExpandidos[data]?.[chave] ? (
-                            <ChevronUpIcon className="h-5 w-5 text-gray-400" />
-                          ) : (
-                            <ChevronDownIcon className="h-5 w-5 text-gray-400" />
-                          )}
-                        </div>
-                      </button>
-                      {campeonatosExpandidos[data]?.[chave] && (
-                        <div className="p-6">
-                          <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-                            {jogosDoGrupo.map((jogo) => (
-                              <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-100">
-                                <div className="flex items-center justify-between mb-3">
-                                  <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                                    🕒 {jogo.hora}
-                                  </span>
-                                  {jogo.fase && (
-                                    <span className="text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
-                                      🏆 {jogo.fase}
-                                    </span>
-                                  )}
-                                </div>
-                                <div className="text-center mb-3">
-                                  <div className="flex items-center justify-center">
-                                    <span className="text-lg font-semibold text-gray-800">{jogo.time1}</span>
-                                    <span className="mx-3 text-gray-400 font-bold">VS</span>
-                                    <span className="text-lg font-semibold text-gray-800">{jogo.time2}</span>
-                                  </div>
-                                </div>
-                                <div className="text-center">
-                                  <span className="text-sm text-gray-600">
-                                    📺 {jogo.canal}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
-  )
+  );
 }

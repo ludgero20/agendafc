@@ -3,7 +3,7 @@ import fs from "fs/promises";
 import path from "path";
 import JogoListClient from "./components/JogoListClient";
 
-// ... Seus tipos (JogoSemana, CompeticaoInfo) continuam aqui ...
+// Tipos (JogoSemana, CompeticaoInfo)
 type JogoSemana = {
   id: number;
   data: string;
@@ -17,7 +17,7 @@ type JogoSemana = {
 };
 type CompeticaoInfo = { nome: string; prioridade: number; bandeiraEmoji: string; ativo: boolean; };
 
-// A função de carregamento de dados continua a mesma
+// Função de carregamento de dados
 async function carregarDadosDosJogos() {
   try {
     // Carrega os dois JSONs em paralelo
