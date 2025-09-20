@@ -3,10 +3,12 @@
     {
       "id": 1,
       "nome": "Brasileirão",
+      "slug": "brasileirao",
       "pais": "Brasil",
       "tipo": "Nacional",
       "descricao": "Principal campeonato do futebol brasileiro",
       "prioridade": 1,
+      "ordem": 10,
       "ativo": true,
       "bandeiraEmoji": "🇧🇷"
     },
@@ -17,6 +19,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa eliminatória mais importante do Brasil",
       "prioridade": 1,
+      "ordem": 12,
       "ativo": true,
       "bandeiraEmoji": "🇧🇷"
     },
@@ -27,6 +30,7 @@
       "tipo": "Nacional",
       "descricao": "Principal campeonato feminino do Brasil",
       "prioridade": 1,
+      "ordem": 30,
       "ativo": true,
       "bandeiraEmoji": "🇧🇷"
     },
@@ -37,6 +41,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Principal competição regional do Nordeste",
       "prioridade": 1,
+      "ordem": 40,
       "ativo": false,
       "bandeiraEmoji": "🇧🇷"
     },
@@ -47,16 +52,19 @@
       "tipo": "Continental",
       "descricao": "Principal competição de clubes da América do Sul",
       "prioridade": 1,
+      "ordem": 11,
       "ativo": true,
       "bandeiraEmoji": "⚽"
     },
     {
       "id": 6,
       "nome": "Champions League",
+      "slug": "champions-league",
       "pais": "Europa",
       "tipo": "Continental",
       "descricao": "Principal competição de clubes da Europa",
       "prioridade": 2,
+      "ordem": 13,
       "ativo": true,
       "bandeiraEmoji": "🇪🇺"
     },
@@ -67,6 +75,7 @@
       "tipo": "Eliminatórias",
       "descricao": "Classificatórias para Copa do Mundo",
       "prioridade": 1,
+      "ordem": 50,
       "ativo": false,
       "bandeiraEmoji": "⚽"
     },
@@ -77,6 +86,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional da Argentina",
       "prioridade": 4,
+      "ordem": 99,
       "ativo": true,
       "bandeiraEmoji": "🇦🇷"
     },
@@ -87,6 +97,7 @@
       "tipo": "Continental",
       "descricao": "Segunda principal competição da América do Sul",
       "prioridade": 3,
+      "ordem": 15,
       "ativo": true,
       "bandeiraEmoji": "⚽"
     },
@@ -97,66 +108,79 @@
       "tipo": "Continental",
       "descricao": "Segunda principal competição europeia",
       "prioridade": 3,
+      "ordem": 16,
       "ativo": true,
       "bandeiraEmoji": "🇪🇺"
     },
     {
       "id": 11,
       "nome": "Premier League",
+      "slug": "premier-league",
       "pais": "Inglaterra",
       "tipo": "Nacional",
       "descricao": "Liga inglesa de futebol",
       "prioridade": 2,
+      "ordem": 21,
       "ativo": true,
       "bandeiraEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
     {
       "id": 12,
       "nome": "La Liga",
+      "slug": "la-liga",
       "pais": "Espanha",
       "tipo": "Nacional",
       "descricao": "Liga espanhola de futebol",
       "prioridade": 2,
+      "ordem": 22,
       "ativo": true,
       "bandeiraEmoji": "🇪🇸"
     },
     {
       "id": 13,
       "nome": "Serie A",
+      "slug": "serie-a",
       "pais": "Itália",
       "tipo": "Nacional",
       "descricao": "Principal liga de futebol da Itália",
       "prioridade": 2,
+      "ordem": 23,
       "ativo": true,
       "bandeiraEmoji": "🇮🇹"
     },
     {
       "id": 14,
       "nome": "Bundesliga",
+      "slug": "bundesliga",
       "pais": "Alemanha",
       "tipo": "Nacional",
       "descricao": "Principal liga de clubes da Alemanha",
       "prioridade": 3,
+      "ordem": 24,
       "ativo": true,
       "bandeiraEmoji": "🇩🇪"
     },
     {
       "id": 15,
       "nome": "Ligue 1",
+      "slug": "ligue-1",
       "pais": "França",
       "tipo": "Nacional",
       "descricao": "Principal liga de futebol da França",
       "prioridade": 3,
+      "ordem": 25,
       "ativo": true,
       "bandeiraEmoji": "🇫🇷"
     },
     {
       "id": 16,
-      "nome": "Campeonato Português",
+      "nome": "Primeira Liga",
+      "slug": "primeira-liga",
       "pais": "Portugal",
       "tipo": "Nacional",
       "descricao": "Liga portuguesa de futebol",
       "prioridade": 3,
+      "ordem": 26,
       "ativo": true,
       "bandeiraEmoji": "🇵🇹"
     },
@@ -167,6 +191,7 @@
       "tipo": "Eliminatórias",
       "descricao": "Classificatórias europeias para Copa do Mundo",
       "prioridade": 3,
+      "ordem": 27,
       "ativo": true,
       "bandeiraEmoji": "🇪🇺"
     },
@@ -177,6 +202,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Supercopa argentina",
       "prioridade": 4,
+      "ordem": 99,
       "ativo": false,
       "bandeiraEmoji": "🇦🇷"
     },
@@ -187,6 +213,7 @@
       "tipo": "Nacional",
       "descricao": "Liga uruguaia de futebol",
       "prioridade": 4,
+      "ordem": 99,
       "ativo": false,
       "bandeiraEmoji": "🇺🇾"
     },
@@ -197,6 +224,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional inglesa",
       "prioridade": 4,
+      "ordem": 31,
       "ativo": true,
       "bandeiraEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
@@ -207,6 +235,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa da Liga inglesa",
       "prioridade": 4,
+      "ordem": 32,
       "ativo": true,
       "bandeiraEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     },
@@ -217,6 +246,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional francesa",
       "prioridade": 4,
+      "ordem": 33,
       "ativo": true,
       "bandeiraEmoji": "🇫🇷"
     },
@@ -227,6 +257,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional alemã",
       "prioridade": 4,
+      "ordem": 34,
       "ativo": true,
       "bandeiraEmoji": "🇩🇪"
     },
@@ -237,6 +268,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional portuguesa",
       "prioridade": 4,
+      "ordem": 35,
       "ativo": true,
       "bandeiraEmoji": "🇵🇹"
     },
@@ -247,6 +279,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional italiana",
       "prioridade": 4,
+      "ordem": 36,
       "ativo": true,
       "bandeiraEmoji": "🇮🇹"
     },
@@ -257,6 +290,7 @@
       "tipo": "Copa Nacional",
       "descricao": "Copa nacional espanhola",
       "prioridade": 4,
+      "ordem": 37,
       "ativo": true,
       "bandeiraEmoji": "🇪🇸"
     },
@@ -267,6 +301,7 @@
       "tipo": "Nacional",
       "descricao": "Liga americana de futebol",
       "prioridade": 4,
+      "ordem": 50,
       "ativo": false,
       "bandeiraEmoji": "🇺🇸"
     },
@@ -277,6 +312,7 @@
       "tipo": "Nacional",
       "descricao": "Principal liga de futebol da Arábia Saudita",
       "prioridade": 4,
+      "ordem": 51,
       "ativo": true,
       "bandeiraEmoji": "🇸🇦"
     },
@@ -287,6 +323,7 @@
       "tipo": "Eliminatórias",
       "descricao": "Classificatórias africanas para Copa do Mundo",
       "prioridade": 5,
+      "ordem": 60,
       "ativo": true,
       "bandeiraEmoji": "⚽"
     },
@@ -297,6 +334,7 @@
       "tipo": "Eliminatórias",
       "descricao": "Classificatórias da Concacaf para Copa do Mundo",
       "prioridade": 5,
+      "ordem": 61,
       "ativo": true,
       "bandeiraEmoji": "🇺🇸"
     },
@@ -307,6 +345,7 @@
       "tipo": "Amistoso",
       "descricao": "Jogos amistosos entre seleções",
       "prioridade": 5,
+      "ordem": 80,
       "ativo": true,
       "bandeiraEmoji": "🌐"
     },
@@ -317,6 +356,7 @@
       "tipo": "Futebol Americano",
       "descricao": "Liga Nacional de Futebol Americano",
       "prioridade": 5,
+      "ordem": 41,
       "ativo": true,
       "bandeiraEmoji": "🏈"
     }
@@ -325,7 +365,7 @@
     "1": {
       "nome": "Futebol Brasileiro",
       "cor": "bg-green-100 text-green-800",
-      "descricao": "Campeonatos brasileiros mais importantes"
+      "descricao": "Campeonatos brasileiros nacionais"
     },
     "2": {
       "nome": "Champions League + Top Europa",
@@ -333,7 +373,7 @@
       "descricao": "Principais competições europeias"
     },
     "3": {
-      "nome": "Sul-Americana e Europa League",
+      "nome": "Futebol Brasileiro Estadual e Regional",
       "cor": "bg-purple-100 text-purple-800",
       "descricao": "Segundo escalão continentais"
     },
@@ -346,6 +386,16 @@
       "nome": "Outros",
       "cor": "bg-gray-100 text-gray-800",
       "descricao": "Eliminatórias, amistosos e outros esportes"
+    },
+    "6": {
+      "nome": "Eliminatórias, amistosos e outros esportes",
+      "cor": "bg-gray-100 text-gray-800",
+      "descricao": "Outros esportes"
+    },
+    "7": {
+      "nome": "Outros Esportes",
+      "cor": "bg-gray-100 text-gray-800",
+      "descricao": "Outros esportes"
     }
   }
 }
