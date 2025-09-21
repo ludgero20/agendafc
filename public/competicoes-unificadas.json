@@ -353,6 +353,7 @@
       "id": 32,
       "nome": "NFL",
       "pais": "Estados Unidos",
+      "slug": "nfl",
       "tipo": "Futebol Americano",
       "descricao": "Liga Nacional de Futebol Americano",
       "prioridade": 5,
