@@ -2,6 +2,7 @@ import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
 import SemanaListClient from '../components/SemanaListClient';
+export const revalidate = 3600;
 
 // Tipos
 type JogoSemana = {
