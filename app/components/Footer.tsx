@@ -13,7 +13,7 @@ export default function Footer() {
             <span>© 2025 Agenda FC</span>
             <span className="mx-2">•</span>
             <span className="flex items-center">
-              Feito com <HeartIcon className="w-4 h-4 mx-1 text-red-500" /> para os amantes do futebol
+              Feito com <HeartIcon className="w-4 h-4 mx-1 text-red-500" /> para os amantes do esporte
             </span>
           </div>
 
