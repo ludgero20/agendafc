@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import InstallPrompt from './components/InstallPrompt';
 
   export const metadata: Metadata = {
     metadataBase: new URL('https://agendafc.com.br'),
@@ -105,6 +106,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <InstallPrompt />
       </body>
     </html>
   );
