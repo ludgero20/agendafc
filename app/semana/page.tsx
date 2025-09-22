@@ -92,10 +92,10 @@ export default async function Semana() {
       {/* Hero Section Otimizada para SEO */}
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Agenda da Semana: Programação de Jogos na TV
+          Agenda da Semana: Jogos e Corridas na TV
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Confira todos os jogos de futebol e da NFL programados para os próximos dias, com horários e canais de transmissão para você não perder nada.
+          Acompanhe a programação completa de jogos de futebol, NFL e as corridas de Fórmula 1 para os próximos dias. Veja todos os horários e canais de transmissão para não perder nada.
         </p>
       </div>
 

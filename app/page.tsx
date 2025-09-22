@@ -2,26 +2,15 @@ import React from "react";
 import fs from "fs/promises";
 import path from "path";
 import JogoListClient from "./components/JogoListClient";
-export const revalidate = 3600;
 
-// Tipos (JogoSemana, CompeticaoInfo)
-type JogoSemana = {
-  id: number;
-  data: string;
-  campeonato: string;
-  time1: string;
-  time2: string;
-  hora: string;
-  canal: string;
-  divisao?: string;
-  fase?: string;
-};
+// Tipos
+type JogoSemana = { id: number; data: string; campeonato: string; time1: string; time2: string; hora: string; canal: string; divisao?: string; fase?: string; };
 type CompeticaoInfo = { nome: string; prioridade: number; bandeiraEmoji: string; ativo: boolean; };
 
-// Função de carregamento de dados
+export const revalidate = 3600; 
+
 async function carregarDadosDosJogos() {
   try {
-    // Carrega os dois JSONs em paralelo
     const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
 
@@ -39,17 +28,18 @@ async function carregarDadosDosJogos() {
         return acc;
       }, {});
 
-    // Lógica de datas (no servidor)
     const agora = new Date();
-    const hojeDate = new Date(agora.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
-    const amanhaDate = new Date(hojeDate);
-    amanhaDate.setDate(hojeDate.getDate() + 1);
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const hojeStr = formatter.format(agora);
 
-    const hojeStr = hojeDate.toISOString().split('T')[0];
-    const amanhaStr = amanhaDate.toISOString().split('T')[0];
+    const amanhaDate = new Date();
+    amanhaDate.setUTCDate(amanhaDate.getUTCDate() + 1);
+    const amanhaStr = formatter.format(amanhaDate);
+
+    const hojeDateObj = new Date(hojeStr + 'T12:00:00Z');
+    const amanhaDateObj = new Date(amanhaStr + 'T12:00:00Z');
 
     const todosOsJogos: JogoSemana[] = jogosData.jogosSemana || [];
-
     const jogosDeHoje = todosOsJogos.filter(jogo => jogo.data === hojeStr);
     const jogosDeAmanha = todosOsJogos.filter(jogo => jogo.data === amanhaStr);
 
@@ -70,20 +60,11 @@ async function carregarDadosDosJogos() {
 
     const campeonatosDisponiveis = [...new Set([...jogosDeHoje, ...jogosDeAmanha].map(j => j.campeonato))].sort();
 
-    // Este é o retorno em caso de SUCESSO
-    return { jogosHojePorCampeonato, jogosAmanhaPorCampeonato, campeonatosDisponiveis, competicoesAtivas, hojeDate, amanhaDate };
+    return { jogosHojePorCampeonato, jogosAmanhaPorCampeonato, campeonatosDisponiveis, competicoesAtivas, hojeDate: hojeDateObj, amanhaDate: amanhaDateObj };
 
   } catch (error) {
-    console.error("🚨 ERRO AO CARREGAR DADOS NO SERVIDOR:", error);
-
-    return {
-      jogosHojePorCampeonato: {},
-      jogosAmanhaPorCampeonato: {},
-      campeonatosDisponiveis: [],
-      competicoesAtivas: {},
-      hojeDate: new Date(),
-      amanhaDate: new Date()
-    };
+    console.error("🚨 ERRO AO CARREGAR DADOS DOS JOGOS:", error);
+    return { jogosHojePorCampeonato: {}, jogosAmanhaPorCampeonato: {}, campeonatosDisponiveis: [], competicoesAtivas: {}, hojeDate: new Date(), amanhaDate: new Date() };
   }
 }
 
@@ -93,26 +74,33 @@ export default async function Home() {
     jogosAmanhaPorCampeonato, 
     campeonatosDisponiveis, 
     competicoesAtivas,
+    hojeDate,
+    amanhaDate
   } = await carregarDadosDosJogos();
+
+  // MUDANÇA: O objeto 'helpers' agora só passa as datas, não a função
+  const helpers = {
+    hoje: hojeDate,
+    amanha: amanhaDate,
+  };
 
   return (
     <div className="space-y-8">
-      {/* Hero Section */}
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Jogos de Hoje na TV: Onde Assistir Futebol e NFL ao Vivo
+          Onde Assistir Esportes Ao Vivo: Sua Agenda na TV
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
-          Confira a agenda completa de jogos para hoje e amanhã. Saiba os horários e canais de transmissão para não perder nenhum lance do seu time.
+          Confira a agenda completa com horários e canais de transmissão para não perder nenhum lance do seu time ou a largada da sua corrida favorita.
         </p>
       </div>
 
-      {/* Passamos os dados brutos, incluindo 'competicoesAtivas' */}
       <JogoListClient 
         jogosHoje={jogosHojePorCampeonato}
         jogosAmanha={jogosAmanhaPorCampeonato}
         campeonatosDisponiveis={campeonatosDisponiveis}
-        competicoesAtivas={competicoesAtivas} 
+        competicoesAtivas={competicoesAtivas}
+        helpers={helpers} 
       />
     </div>
   );

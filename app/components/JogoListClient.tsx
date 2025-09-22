@@ -28,27 +28,29 @@ type Props = {
   jogosAmanha: Record<string, JogoSemana[]>;
   campeonatosDisponiveis: string[];
   competicoesAtivas: Record<string, CompeticaoInfo>;
+  helpers: {
+    hoje: Date;
+    amanha: Date;
+  }
 };
 
 export default function JogoListClient({ 
   jogosHoje: jogosHojeIniciais, 
   jogosAmanha: jogosAmanhaIniciais, 
   campeonatosDisponiveis, 
-  competicoesAtivas 
+  competicoesAtivas,
+  helpers
 }: Props) {
 
   // --- FUNÇÕES AUXILIARES ---
+  const formatarData = (data: Date) => data.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long", timeZone: 'UTC' });
   const getBandeiraPorCompeticao = (campeonato: string): string => competicoesAtivas[campeonato]?.bandeiraEmoji || '🌎';
-
   const criarNomeExibicao = (jogo: JogoSemana) => {
     let nome = jogo.campeonato;
     if (jogo.divisao) nome += ` ${jogo.divisao}`;
     if (jogo.fase) nome += ` (${jogo.fase})`;
     return nome;
   };
-
-  const formatarData = (data: Date) => data.toLocaleDateString("pt-BR", { weekday: "long", day: "numeric", month: "long" });
-
   const ordenarCampeonatos = (chaves: string[], jogosGrupo: Record<string, JogoSemana[]>) => {
     return chaves.sort((a, b) => {
       const jogoA = jogosGrupo[a][0];
@@ -60,16 +62,14 @@ export default function JogoListClient({
     });
   };
 
-  const agora = new Date();
-  const hoje = new Date(agora.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }));
-  const amanha = new Date(hoje);
-  amanha.setDate(hoje.getDate() + 1);
+  const { hoje, amanha } = helpers;
 
   // --- ESTADOS E EFEITOS ---
   const [jogosHoje, setJogosHoje] = useState(jogosHojeIniciais);
   const [jogosAmanha, setJogosAmanha] = useState(jogosAmanhaIniciais);
   const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
 
+  // 1. As variáveis são definidas aqui usando useState
   const [campeonatosExpandidosHoje, setCampeonatosExpandidosHoje] = useState<Record<string, boolean>>({});
   const [campeonatosExpandidosAmanha, setCampeonatosExpandidosAmanha] = useState<Record<string, boolean>>({});
 
@@ -85,7 +85,6 @@ export default function JogoListClient({
       }
       return jogosFiltrados;
     };
-
     setJogosHoje(filtrar(jogosHojeIniciais));
     setJogosAmanha(filtrar(jogosAmanhaIniciais));
   }, [filtroCompeticao, jogosHojeIniciais, jogosAmanhaIniciais]);
@@ -101,32 +100,21 @@ export default function JogoListClient({
     dia: string
   ) => {
     if (Object.keys(jogos).length === 0) {
-      return (
-        <div className="bg-white rounded-xl p-6 text-center border">
-          <p className="text-gray-600">Nenhum jogo programado para {dia} com o filtro selecionado.</p>
-        </div>
-      );
+      return ( <div className="bg-white rounded-xl p-6 text-center border"><p className="text-gray-600">Nenhum jogo programado para {dia} com o filtro selecionado.</p></div> );
     }
-
     return (
       <div className="space-y-6">
         {ordenarCampeonatos(Object.keys(jogos), jogos).map((chave) => {
           const jogosDoGrupo = jogos[chave];
           const jogoExemplo = jogosDoGrupo[0];
           const nomeExibicao = criarNomeExibicao(jogoExemplo);
-
           return (
             <div key={chave} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-              <button
-                onClick={() => toggleFn(chave)}
-                className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between"
-              >
+              <button onClick={() => toggleFn(chave)} className="w-full bg-gray-50 px-6 py-4 border-b border-gray-200 hover:bg-gray-100 transition-colors flex items-center justify-between">
                 <div className="flex items-center text-left">
                   <span className="mr-3 text-xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
                   <h3 className="text-lg font-bold text-gray-800">{nomeExibicao}</h3>
-                  <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                    {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}
-                  </span>
+                  <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">{jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? "jogo" : "jogos"}</span>
                 </div>
                 <div className="flex items-center flex-shrink-0 ml-4">
                   <span className="text-sm text-gray-500 mr-2 hidden sm:inline">{expandidos[chave] ? "Recolher" : "Ver jogos"}</span>
@@ -137,18 +125,15 @@ export default function JogoListClient({
                 <div className="p-4">
                   <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
                     {jogosDoGrupo.map((jogo) => (
-                      <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                      <div key={jogo.id} className="bg-white p-4 rounded-lg shadow-md border">
+                        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "SportsEvent", "name": `${jogo.time1} vs ${jogo.time2}`, "startDate": `${jogo.data}T${jogo.hora}`, "location": { "@type": "Place", "name": "Estádio" }, "homeTeam": { "@type": "SportsTeam", "name": jogo.time1 }, "awayTeam": { "@type": "SportsTeam", "name": jogo.time2 }, "competitor": [{ "@type": "SportsTeam", "name": jogo.time1 },{ "@type": "SportsTeam", "name": jogo.time2 }], "broadcastChannel": { "@type": "BroadcastChannel", "name": jogo.canal }})}} />
                         <div className="flex items-center justify-center mb-3">
                           <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">🕒 {jogo.hora}</span>
-                          {jogo.fase && (
-                            <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">🏆 {jogo.fase}</span>
-                          )}
+                          {jogo.fase && ( <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">🏆 {jogo.fase}</span> )}
                         </div>
                         <div className="text-center mb-3">
                           <div className="font-semibold text-gray-800">
-                            <span>{jogo.time1}</span>
-                            <span className="mx-2 text-gray-400 font-bold">vs</span>
-                            <span>{jogo.time2}</span>
+                            <span>{jogo.time1}</span><span className="mx-2 text-gray-400 font-bold">vs</span><span>{jogo.time2}</span>
                           </div>
                         </div>
                         <div className="text-center bg-white py-2 px-3 rounded-lg border border-gray-200">
@@ -169,35 +154,22 @@ export default function JogoListClient({
   // --- JSX FINAL DO COMPONENTE ---
   return (
     <div className="space-y-12">
-      {/* Filtro de campeonatos */}
       <div className="max-w-md mx-auto">
-        <label htmlFor="filtroCompeticao" className="block text-sm font-medium text-gray-700 mb-2 text-center">
-          🔍 Filtrar por campeonato:
-        </label>
-        <select
-          id="filtroCompeticao"
-          value={filtroCompeticao}
-          onChange={(e) => setFiltroCompeticao(e.target.value)}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
-        >
+        <label htmlFor="filtroCompeticao" className="block text-sm font-medium text-gray-700 mb-2 text-center">🔍 Filtrar por campeonato:</label>
+        <select id="filtroCompeticao" value={filtroCompeticao} onChange={(e) => setFiltroCompeticao(e.target.value)} className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white">
           <option value="todos">📋 Todos os campeonatos</option>
           {campeonatosDisponiveis.map((campeonato) => (
-            <option key={campeonato} value={campeonato}>
-              {getBandeiraPorCompeticao(campeonato)} {campeonato}
-            </option>
+            <option key={campeonato} value={campeonato}>{getBandeiraPorCompeticao(campeonato)} {campeonato}</option>
           ))}
         </select>
       </div>
-
-      {/* Jogos de Hoje */}
       <section>
-        <h2 className="text-3xl font-bold text-gray-800 capitalize mb-6 border-b pb-4">📅 Hoje - {formatarData(hoje)}</h2>
-         {renderizarGrupoDeJogos(jogosHoje, toggleCampeonatoHoje, campeonatosExpandidosHoje, "hoje")}
+        <h2 className="text-3xl font-bold text-gray-800 capitalize mb-6 border-b pb-4">📅 Hoje - {formatarData(new Date(hoje))}</h2>
+        {/* 2. A variável é passada como argumento aqui, garantindo que está definida */}
+        {renderizarGrupoDeJogos(jogosHoje, toggleCampeonatoHoje, campeonatosExpandidosHoje, "hoje")}
       </section>
-
-      {/* Jogos de Amanhã */}
       <section>
-        <h2 className="text-3xl font-bold text-gray-800 capitalize mb-6 border-b pb-4">📅 Amanhã - {formatarData(amanha)}</h2>
+        <h2 className="text-3xl font-bold text-gray-800 capitalize mb-6 border-b pb-4">📅 Amanhã - {formatarData(new Date(amanha))}</h2>
         {renderizarGrupoDeJogos(jogosAmanha, toggleCampeonatoAmanha, campeonatosExpandidosAmanha, "amanhã")}
       </section>
     </div>

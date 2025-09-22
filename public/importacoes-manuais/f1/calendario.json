@@ -1,0 +1,490 @@
+{
+  "races": [
+    {
+      "round": 1,
+      "raceName": "GP da Austrália",
+      "circuitName": "Albert Park Circuit",
+      "country": "🇦🇺",
+      "status": "Finalizado",
+      "results": {
+        "pole": "C. Leclerc",
+        "p1": "O. Piastri",
+        "p2": "L. Norris",
+        "p3": "C. Leclerc"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-03-13", "hora": "22:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-03-14", "hora": "02:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-03-14", "hora": "22:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-03-15", "hora": "02:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-03-16", "hora": "01:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 2,
+      "raceName": "GP da China",
+      "circuitName": "Shanghai International Circuit",
+      "country": "🇨🇳",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "O. Piastri",
+        "p2": "L. Norris",
+        "p3": "M. Verstappen"
+      },
+      "sprintResults": {
+        "pole": "L. Norris",
+        "p1": "L. Norris",
+        "p2": "O. Piastri",
+        "p3": "M. Verstappen"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-03-21", "hora": "00:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-03-21", "hora": "04:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-03-22", "hora": "00:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-03-22", "hora": "04:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-03-23", "hora": "04:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 3,
+      "raceName": "GP do Japão",
+      "circuitName": "Suzuka International Racing Course",
+      "country": "🇯🇵",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "M. Verstappen",
+        "p2": "O. Piastri",
+        "p3": "L. Norris"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-04-03", "hora": "23:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-04-04", "hora": "03:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-04-04", "hora": "23:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-04-05", "hora": "03:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-04-06", "hora": "02:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 4,
+      "raceName": "GP do Bahrein",
+      "circuitName": "Bahrain International Circuit",
+      "country": "🇧🇭",
+      "status": "Finalizado",
+      "results": {
+        "pole": "C. Leclerc",
+        "p1": "L. Norris",
+        "p2": "C. Leclerc",
+        "p3": "G. Russell"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-04-11", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-04-11", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-04-12", "hora": "09:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-04-12", "hora": "13:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-04-13", "hora": "12:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 5,
+      "raceName": "GP da Arábia Saudita",
+      "circuitName": "Jeddah Corniche Circuit",
+      "country": "🇸🇦",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "M. Verstappen",
+        "p2": "O. Piastri",
+        "p3": "G. Russell"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-04-18", "hora": "10:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-04-18", "hora": "14:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-04-19", "hora": "10:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-04-19", "hora": "14:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-04-20", "hora": "14:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 6,
+      "raceName": "GP de Miami",
+      "circuitName": "Miami International Autodrome",
+      "country": "🇺🇸",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "L. Norris",
+        "p2": "M. Verstappen",
+        "p3": "C. Leclerc"
+      },
+      "sprintResults": {
+        "pole": "M. Verstappen",
+        "p1": "M. Verstappen",
+        "p2": "C. Leclerc",
+        "p3": "G. Russell"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-05-02", "hora": "13:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-05-02", "hora": "17:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-05-03", "hora": "13:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-05-03", "hora": "17:15", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-05-04", "hora": "17:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 7,
+      "raceName": "GP da Emilia Romagna",
+      "circuitName": "Imola Circuit",
+      "country": "🇮🇹",
+      "status": "Finalizado",
+      "results": {
+        "pole": "O. Piastri",
+        "p1": "O. Piastri",
+        "p2": "L. Norris",
+        "p3": "M. Verstappen"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-05-16", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-05-16", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-05-17", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-05-17", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-05-18", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 8,
+      "raceName": "GP de Mônaco",
+      "circuitName": "Circuit de Monaco",
+      "country": "🇲🇨",
+      "status": "Finalizado",
+      "results": {
+        "pole": "C. Leclerc",
+        "p1": "O. Piastri",
+        "p2": "C. Leclerc",
+        "p3": "L. Norris"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-05-23", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-05-23", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-05-24", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-05-24", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-05-25", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 9,
+      "raceName": "GP da Espanha",
+      "circuitName": "Circuit de Barcelona-Catalunya",
+      "country": "🇪🇸",
+      "status": "Finalizado",
+      "results": {
+        "pole": "L. Norris",
+        "p1": "L. Norris",
+        "p2": "O. Piastri",
+        "p3": "M. Verstappen"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-05-30", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-05-30", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-05-31", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-05-31", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-06-01", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 10,
+      "raceName": "GP do Canadá",
+      "circuitName": "Circuit Gilles Villeneuve",
+      "country": "🇨🇦",
+      "status": "Finalizado",
+      "results": {
+        "pole": "G. Russell",
+        "p1": "G. Russell",
+        "p2": "L. Norris",
+        "p3": "O. Piastri"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-06-13", "hora": "14:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-06-13", "hora": "18:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-06-14", "hora": "13:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-06-14", "hora": "17:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-06-15", "hora": "15:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 11,
+      "raceName": "GP da Áustria",
+      "circuitName": "Red Bull Ring",
+      "country": "🇦🇹",
+      "status": "Finalizado",
+      "results": {
+        "pole": "O. Piastri",
+        "p1": "O. Piastri",
+        "p2": "M. Verstappen",
+        "p3": "L. Norris"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-06-27", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-06-27", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-06-28", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-06-28", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-06-29", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 12,
+      "raceName": "GP da Grã-Bretanha",
+      "circuitName": "Silverstone Circuit",
+      "country": "🇬🇧",
+      "status": "Finalizado",
+      "results": {
+        "pole": "L. Norris",
+        "p1": "L. Norris",
+        "p2": "O. Piastri",
+        "p3": "G. Russell"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-07-04", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-07-04", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-07-05", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-07-05", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-07-06", "hora": "11:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 13,
+      "raceName": "GP da Bélgica",
+      "circuitName": "Circuit de Spa-Francorchamps",
+      "country": "🇧🇪",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "O. Piastri",
+        "p2": "M. Verstappen",
+        "p3": "L. Norris"
+      },
+      "sprintResults": {
+        "pole": "O. Piastri",
+        "p1": "O. Piastri",
+        "p2": "M. Verstappen",
+        "p3": "L. Norris"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-07-25", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-07-25", "hora": "11:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-07-26", "hora": "07:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-07-26", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-07-27", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 14,
+      "raceName": "GP da Hungria",
+      "circuitName": "Hungaroring",
+      "country": "🇭🇺",
+      "status": "Finalizado",
+      "results": {
+        "pole": "L. Norris",
+        "p1": "L. Norris",
+        "p2": "O. Piastri",
+        "p3": "M. Verstappen"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-08-01", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-08-01", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-08-02", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-08-02", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-08-03", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 15,
+      "raceName": "GP da Holanda",
+      "circuitName": "Circuit Zandvoort",
+      "country": "🇳🇱",
+      "status": "Finalizado",
+      "results": {
+        "pole": "M. Verstappen",
+        "p1": "M. Verstappen",
+        "p2": "L. Norris",
+        "p3": "O. Piastri"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-08-29", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-08-29", "hora": "11:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-08-30", "hora": "06:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-08-30", "hora": "10:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-08-31", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 16,
+      "raceName": "GP da Itália",
+      "circuitName": "Monza Circuit",
+      "country": "🇮🇹",
+      "status": "Finalizado",
+      "results": {
+        "pole": "C. Leclerc",
+        "p1": "O. Piastri",
+        "p2": "C. Leclerc",
+        "p3": "L. Norris"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-09-05", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-09-05", "hora": "12:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-09-06", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-09-06", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-09-07", "hora": "10:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 17,
+      "raceName": "GP do Azerbaijão",
+      "circuitName": "Baku City Circuit",
+      "country": "🇦🇿",
+      "status": "Finalizado",
+      "results": {
+        "pole": "O. Piastri",
+        "p1": "O. Piastri",
+        "p2": "M. Verstappen",
+        "p3": "G. Russell"
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-09-19", "hora": "05:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-09-19", "hora": "09:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-09-20", "hora": "05:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-09-20", "hora": "09:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-09-21", "hora": "08:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 18,
+      "raceName": "GP de Singapura",
+      "circuitName": "Marina Bay Street Circuit",
+      "country": "🇸🇬",
+      "status": "Próxima Corrida",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-10-03", "hora": "06:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-10-03", "hora": "10:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-10-04", "hora": "06:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-10-04", "hora": "10:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-10-05", "hora": "09:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 19,
+      "raceName": "GP dos Estados Unidos",
+      "circuitName": "Circuit of the Americas",
+      "country": "🇺🇸",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sprintResults": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-10-17", "hora": "15:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-10-17", "hora": "19:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-10-18", "hora": "15:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-10-18", "hora": "19:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-10-19", "hora": "16:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 20,
+      "raceName": "GP do México",
+      "circuitName": "Autódromo Hermanos Rodríguez",
+      "country": "🇲🇽",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-10-24", "hora": "15:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-10-24", "hora": "19:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-10-25", "hora": "14:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-10-25", "hora": "18:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-10-26", "hora": "17:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 21,
+      "raceName": "GP de São Paulo",
+      "circuitName": "Interlagos Circuit",
+      "country": "🇧🇷",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sprintResults": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-11-07", "hora": "11:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-11-07", "hora": "15:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-11-08", "hora": "11:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-11-08", "hora": "15:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-11-09", "hora": "14:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 22,
+      "raceName": "GP de Las Vegas",
+      "circuitName": "Las Vegas Strip Circuit",
+      "country": "🇺🇸",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-11-20", "hora": "22:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-11-21", "hora": "02:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-11-21", "hora": "22:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-11-22", "hora": "02:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-11-23", "hora": "03:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 23,
+      "raceName": "GP do Catar",
+      "circuitName": "Lusail International Circuit",
+      "country": "🇶🇦",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sprintResults": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-11-28", "hora": "09:30", "transmissao": ["BandSports"] },
+        { "nome": "Quali Sprint", "data": "2025-11-28", "hora": "13:30", "transmissao": ["BandSports"] },
+        { "nome": "Corrida Sprint", "data": "2025-11-29", "hora": "09:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-11-29", "hora": "13:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-11-30", "hora": "12:00", "transmissao": ["Band"] }
+      ]
+    },
+    {
+      "round": 24,
+      "raceName": "GP de Abu Dhabi",
+      "circuitName": "Yas Marina Circuit",
+      "country": "🇦🇪",
+      "status": "Agendado",
+      "results": {
+        "pole": "", "p1": "", "p2": "", "p3": ""
+      },
+      "sessoes": [
+        { "nome": "Treino Livre 1", "data": "2025-12-05", "hora": "07:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 2", "data": "2025-12-05", "hora": "11:00", "transmissao": ["BandSports"] },
+        { "nome": "Treino Livre 3", "data": "2025-12-06", "hora": "08:30", "transmissao": ["BandSports"] },
+        { "nome": "Treino Classificatório", "data": "2025-12-06", "hora": "12:00", "transmissao": ["Band", "BandSports"] },
+        { "nome": "Corrida", "data": "2025-12-07", "hora": "11:00", "transmissao": ["Band"] }
+      ]
+    }
+  ]
+}

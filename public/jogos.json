@@ -2420,15 +2420,15 @@
       "fase": ""
     },
     {
-        "id": 479,
-        "data": "2025-09-18",
-        "campeonato": "Copa Sul-Americana",
-        "time1": "Alianza Lima",
-        "time2": "Universidad de Chile",
-        "hora": "21h30",
-        "canal": "Paramount+",
-        "divisao": "",
-        "fase": "quartas"
+      "id": 479,
+      "data": "2025-09-18",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Alianza Lima",
+      "time2": "Universidad de Chile",
+      "hora": "21h30",
+      "canal": "Paramount+",
+      "divisao": "",
+      "fase": "quartas"
     },
     {
       "id": 480,
@@ -2453,26 +2453,26 @@
       "fase": "quartas"
     },
     {
-        "id": 482,
-        "data": "2025-09-18",
-        "campeonato": "Copa Sul-Americana",
-        "time1": "Alianza Lima",
-        "time2": "Club Universidad de Chile",
-        "hora": "21h30",
-        "canal": "Paramount+",
-        "divisao": "",
-        "fase": "quartas"
+      "id": 482,
+      "data": "2025-09-18",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Alianza Lima",
+      "time2": "Club Universidad de Chile",
+      "hora": "21h30",
+      "canal": "Paramount+",
+      "divisao": "",
+      "fase": "quartas"
     },
     {
-        "id": 483,
-        "data": "2025-09-18",
-        "campeonato": "NFL",
-        "time1": "Buffalo Bills",
-        "time2": "Miami Dolphins",
-        "hora": "21h",
-        "canal": "Sportv 2",
-        "divisao": "",
-        "fase": ""
+      "id": 483,
+      "data": "2025-09-18",
+      "campeonato": "NFL",
+      "time1": "Buffalo Bills",
+      "time2": "Miami Dolphins",
+      "hora": "21h",
+      "canal": "Sportv 2",
+      "divisao": "",
+      "fase": ""
     },
     {
       "id": 484,
@@ -3158,11 +3158,11 @@
     },
     {
       "id": 546,
-      "data": "2025-09-21",
+      "data": "2025-09-22",
       "campeonato": "Ligue 1",
       "time1": "Olympique de Marseille",
       "time2": "PSG",
-      "hora": "15h45",
+      "hora": "15h",
       "canal": "CazéTV",
       "divisao": "",
       "fase": ""
@@ -3671,6 +3671,259 @@
       "hora": "21h15",
       "canal": "ESPN 2 / Disney+ / NFL Game Pass",
       "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 593,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Itália",
+      "time1": "Parma",
+      "time2": "Spezia",
+      "hora": "12h",
+      "canal": "SportyNet (TV fechada e YouTube)",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 594,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Itália",
+      "time1": "Hellas Verona",
+      "time2": "Venezia",
+      "hora": "13h30",
+      "canal": "SportyNet (TV fechada e YouTube)",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 595,
+      "data": "2025-09-24",
+      "campeonato": "Europa League",
+      "time1": "PAOK",
+      "time2": "Maccabi Tel Aviv",
+      "hora": "13h45",
+      "canal": "CazéTV",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 596,
+      "data": "2025-09-24",
+      "campeonato": "La Liga",
+      "time1": "Getafe",
+      "time2": "Alavés",
+      "hora": "14h",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 597,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Liga Inglesa",
+      "time1": "Huddersfield",
+      "time2": "Manchester City",
+      "hora": "15h45",
+      "canal": "ESPN e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 598,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Liga Inglesa",
+      "time1": "Newcastle",
+      "time2": "Bradford",
+      "hora": "15h45",
+      "canal": "ESPN 2 e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 599,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Liga Inglesa",
+      "time1": "Tottenham",
+      "time2": "Doncaster",
+      "hora": "15h45",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 600,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Liga Inglesa",
+      "time1": "Port Vale",
+      "time2": "Arsenal",
+      "hora": "16h",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 601,
+      "data": "2025-09-24",
+      "campeonato": "Europa League",
+      "time1": "Nice",
+      "time2": "Roma",
+      "hora": "16h",
+      "canal": "CazéTV",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 602,
+      "data": "2025-09-24",
+      "campeonato": "Europa League",
+      "time1": "Real Bétis",
+      "time2": "Nottingham Forest",
+      "hora": "16h",
+      "canal": "CazéTV",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 603,
+      "data": "2025-09-24",
+      "campeonato": "Copa da Itália",
+      "time1": "Como",
+      "time2": "Sassuolo",
+      "hora": "16h",
+      "canal": "SportyNet (TV fechada e YouTube)",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 604,
+      "data": "2025-09-24",
+      "campeonato": "La Liga",
+      "time1": "Atlético de Madrid",
+      "time2": "Rayo Vallecano",
+      "hora": "16h30",
+      "canal": "Xsports e Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 605,
+      "data": "2025-09-24",
+      "campeonato": "La Liga",
+      "time1": "Real Sociedad",
+      "time2": "Mallorca",
+      "hora": "16h30",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 606,
+      "data": "2025-09-24",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Atlético-MG",
+      "time2": "Bolívar",
+      "hora": "19h",
+      "canal": "ESPN e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 607,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Athletic Club",
+      "time2": "Athletico-PR",
+      "hora": "19h",
+      "canal": "Disney+",
+      "divisao": "Série B",
+      "fase": ""
+    },
+    {
+      "id": 608,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "CRB",
+      "time2": "Botafogo-SP",
+      "hora": "19h",
+      "canal": "Disney+",
+      "divisao": "Série B",
+      "fase": ""
+    },
+    {
+      "id": 609,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Vila Nova",
+      "time2": "Cuiabá",
+      "hora": "19h",
+      "canal": "Disney+",
+      "divisao": "Série B",
+      "fase": ""
+    },
+    {
+      "id": 610,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Grêmio",
+      "time2": "Botafogo",
+      "hora": "19h30",
+      "canal": "Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 611,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Vasco",
+      "time2": "Bahia",
+      "hora": "19h30",
+      "canal": "Prime Video",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 612,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Operário-PR",
+      "time2": "Amazonas",
+      "hora": "20h",
+      "canal": "Disney+",
+      "divisao": "Série B",
+      "fase": ""
+    },
+    {
+      "id": 613,
+      "data": "2025-09-24",
+      "campeonato": "Copa Libertadores da América",
+      "time1": "Palmeiras",
+      "time2": "River Plate",
+      "hora": "21h30",
+      "canal": "Globo, ge tv, ESPN e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 614,
+      "data": "2025-09-24",
+      "campeonato": "Copa Sul-Americana",
+      "time1": "Once Caldas",
+      "time2": "Independiente del Valle",
+      "hora": "21h30",
+      "canal": "ESPN 2 e Disney+",
+      "divisao": "",
+      "fase": "quartas"
+    },
+    {
+      "id": 615,
+      "data": "2025-09-24",
+      "campeonato": "Brasileirão",
+      "time1": "Volta Redonda",
+      "time2": "Remo",
+      "hora": "21h30",
+      "canal": "ESPN 4 e Disney+",
+      "divisao": "Série B",
       "fase": ""
     }
   ]

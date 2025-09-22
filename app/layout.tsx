@@ -7,57 +7,49 @@ import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://agendafc.com.br'),
+  export const metadata: Metadata = {
+    metadataBase: new URL('https://agendafc.com.br'),
 
-  // Adicionar um template para os títulos das página
-  title: {
-    default: "Agenda FC - Jogos de Futebol e NFL ao Vivo | Onde Assistir Hoje",
-    template: "%s | Agenda FC", // Ex: "Tabela do Brasileirão | Agenda FC"
-  },
-  description:
-    "Confira a Agenda FC: horários e canais para assistir aos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo.",
-  keywords:
-    "futebol, jogos, agenda, programação, horários, canais, transmissão, brasileirão, champions league",
-  authors: [{ name: "Agenda FC" }],
-  creator: "Agenda FC",
-  publisher: "Agenda FC",
-
-  // Adicionar cor do tema para navegadores mobile
-  themeColor: "#ffffff",
-
-  // Adicionar o manifest para PWA
-  manifest: "/manifest.json",
-
-  // Open Graph (Facebook, WhatsApp, LinkedIn)
-  openGraph: {
-    type: "website",
-    locale: "pt_BR",
-    url: "https://agendafc.com.br",
-    siteName: "Agenda FC",
-    title: "Agenda FC - Jogos de Futebol e NFL ao Vivo",
+    // Título abrangente
+    title: {
+      default: "Agenda FC - Onde Assistir Esportes Ao Vivo na TV",
+      template: "%s | Agenda FC",
+    },
+    // Descrição que inclui F1
     description:
-      "Horários e canais dos principais jogos de futebol do Brasil, Europa, Champions League e NFL ao vivo. Não perca nenhum lance!",
-    images: [
-      {
-        url: "/logo.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Agenda FC - Programação de Jogos",
-      },
-    ],
-  },
+      "Sua agenda de esportes na TV. Saiba os horários e canais para assistir ao vivo jogos de Futebol, NFL, corridas de Fórmula 1 e muito mais.",
+    // Palavras-chave atualizadas
+    keywords:
+      "futebol, nfl, fórmula 1, f1, jogos, corridas, agenda, programação, horários, canais, transmissão ao vivo",
 
-  // Twitter Cards
-  twitter: {
-    card: "summary_large_image",
-    title: "Agenda FC - Jogos de Futebol e NFL ao Vivo",
-    description:
-      "Agenda FC mostra onde assistir os jogos de futebol e NFL hoje e amanhã, com horários e canais atualizados.",
-    images: ["/logo.jpg"], 
-    creator: "@agendafc_br",
-    site: "@agendafc_br",
-  },
+    authors: [{ name: "Agenda FC" }],
+    creator: "Agenda FC",
+    publisher: "Agenda FC",
+    themeColor: "#ffffff",
+    manifest: "/manifest.json",
+
+    // Open Graph (para compartilhamento em redes sociais) atualizado
+    openGraph: {
+      type: "website",
+      locale: "pt_BR",
+      url: "https://agendafc.com.br",
+      siteName: "Agenda FC",
+      title: "Agenda FC - Onde Assistir Esportes Ao Vivo",
+      description:
+        "A agenda completa para saber onde assistir Futebol, NFL e Fórmula 1 na TV e no streaming. Não perca nenhum lance!",
+      images: [ { url: "/logo.jpg", width: 1200, height: 630, alt: "Agenda FC" } ],
+    },
+
+    // Twitter Cards atualizado
+    twitter: {
+      card: "summary_large_image",
+      title: "Agenda FC - Onde Assistir Esportes Ao Vivo",
+      description:
+        "A agenda completa para saber onde assistir Futebol, NFL e Fórmula 1 na TV e no streaming.",
+      images: ["/logo.jpg"],
+      creator: "@agendafc_br",
+      site: "@agendafc_br",
+    },
 
   // Configurações de indexação
   robots: {

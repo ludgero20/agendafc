@@ -360,6 +360,17 @@
       "ordem": 41,
       "ativo": true,
       "bandeiraEmoji": "🏈"
+    },
+    {
+      "id": 33,
+      "nome": "Fórmula 1",
+      "slug": "f1",
+      "pais": "Mundo",
+      "tipo": "Corrida",
+      "descricao": "Classificação de pilotos, equipes e o calendário completo da temporada.",
+      "ordem": 5,
+      "ativo": true,
+      "bandeiraEmoji": "🏁"
     }
   ],
   "grupos_prioridade": {

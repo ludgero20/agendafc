@@ -4,11 +4,11 @@ import path from 'path';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: "Guia de Campeonatos de Futebol | Agenda FC",
-  description: "Explore todos os campeonatos cobertos pelo Agenda FC. Acompanhe o Brasileirão, Champions League, Premier League, NFL e muitas outras ligas e copas.",
+  title: "Guia de Campeonatos de Futebol, NFL e F1 | Agenda FC",
+  description: "Explore guias completos com tabelas, classificações e calendários da Fórmula 1, NFL e das principais ligas de futebol do Brasil e do mundo.",
 };
 
-// ... (O tipo 'Competicao' continua o mesmo)
+// Tipos
 type Competicao = {
   id: number;
   nome: string;
@@ -22,8 +22,7 @@ type Competicao = {
   bandeiraEmoji: string;
 };
 
-
-// 1. A função de carregamento agora separa as competições em duas listas
+// Função para carregar e separar os dados
 async function carregarCompeticoes() {
   const filePath = path.join(process.cwd(), 'public', 'competicoes-unificadas.json');
   const jsonData = fs.readFileSync(filePath, 'utf-8');
@@ -35,6 +34,7 @@ async function carregarCompeticoes() {
   const semPagina: Competicao[] = [];
 
   competicoesAtivas.forEach(comp => {
+    // Verifica se o slug existe e não está vazio
     if (comp.slug && comp.slug.trim() !== "") {
       comPagina.push(comp);
     } else {
@@ -54,16 +54,16 @@ export default async function Competicoes() {
 
   const getBadgeColor = (tipo: string) => {
     switch (tipo) {
-        case 'Nacional': return 'bg-blue-100 text-blue-800';
-        case 'Continental': return 'bg-green-100 text-green-800';
-        case 'Copa Nacional': return 'bg-yellow-100 text-yellow-800';
-        case 'Eliminatórias': return 'bg-purple-100 text-purple-800';
-        case 'Amistoso': return 'bg-gray-100 text-gray-800';
-        case 'Futebol Americano': return 'bg-red-100 text-red-800';
-        default: return 'bg-gray-100 text-gray-800';
+      case 'Nacional': return 'bg-blue-100 text-blue-800';
+      case 'Continental': return 'bg-green-100 text-green-800';
+      case 'Copa Nacional': return 'bg-yellow-100 text-yellow-800';
+      case 'Eliminatórias': return 'bg-purple-100 text-purple-800';
+      case 'Amistoso': return 'bg-gray-100 text-gray-800';
+      case 'Futebol Americano': return 'bg-orange-100 text-orange-800';
+      case 'Corrida': return 'bg-red-100 text-red-800';
+      default: return 'bg-gray-100 text-gray-800';
     }
   };
-
 
   // Componente reutilizável para renderizar a grade de cards
   const CardGrid = ({ competicoes }: { competicoes: Competicao[] }) => (
@@ -90,6 +90,7 @@ export default async function Competicoes() {
           </div>
         );
 
+        // Se o campeonato tem um slug, ele vira um link. Senão, é só um div.
         if (comp.slug) {
           return <Link key={comp.id} href={`/campeonatos/${comp.slug}`}>{cardContent}</Link>;
         }
@@ -103,17 +104,15 @@ export default async function Competicoes() {
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">🏆 Campeonatos</h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Explore guias completos com tabelas e jogos ou acompanhe a agenda dos seus campeonatos favoritos.
+          Explore guias completos com tabelas, classificações e calendários da Fórmula 1, NFL e das principais ligas de futebol do Brasil e do mundo.
         </p>
       </div>
 
-      {/* 2. Renderiza a primeira seção com os guias completos */}
       <section>
         <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">Guias Completos</h2>
         {comPagina.length > 0 ? <CardGrid competicoes={comPagina} /> : <p className="text-gray-600">Nenhum guia completo disponível no momento.</p>}
       </section>
 
-      {/* 3. Renderiza a segunda seção com os outros campeonatos */}
       <section>
         <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">Outros Campeonatos com Agenda</h2>
         {semPagina.length > 0 ? <CardGrid competicoes={semPagina} /> : <p className="text-gray-600">Nenhum outro campeonato para exibir.</p>}
