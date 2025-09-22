@@ -15,9 +15,7 @@ const Footer = () => {
           <Link href="/instalar" className="flex items-center text-gray-700 font-semibold hover:text-blue-600 transition-colors">
             <ArrowDownTrayIcon className="h-5 w-5 mr-1" />
             <span>Instalar App</span>
-          </Link>
-
-          
+          </Link>          
         </div>
       </div>
     </footer>

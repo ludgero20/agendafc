@@ -88,10 +88,13 @@ export default async function Home() {
     <div className="space-y-8">
       <div className="text-center py-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Onde Assistir Esportes Ao Vivo: Sua Agenda na TV
+          Onde Assistir Esportes Ao Vivo
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
-          Confira a agenda completa com horários e canais de transmissão para não perder nenhum lance do seu time ou a largada da sua corrida favorita.
+          Não perca nenhum lance!
+        </p>
+        <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+          A melhor agenda dos seus esportes favoritos está aqui!
         </p>
       </div>
 
