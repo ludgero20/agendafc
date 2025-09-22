@@ -142,6 +142,14 @@ export default async function NFLPage() {
           ) : ( <div className="bg-white p-4 rounded-lg shadow-md border text-center"><p className="text-gray-600">Aguardando definição dos próximos jogos.</p></div> )}
         </div>
       </div>
+      <div className="text-center p-6 mt-12 bg-gray-50 border border-gray-200 rounded-xl">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          🔄 Sobre a Atualização da Tabela
+        </h3>
+        <p className="text-gray-600 max-w-xl mx-auto text-sm">
+          Para garantir a precisão dos dados, a tabela de classificação da NFL é atualizada ao final de cada rodada, geralmente após a partida de segunda-feira (Monday Night Football).
+        </p>
+      </div>
     </div>
   );
 }
