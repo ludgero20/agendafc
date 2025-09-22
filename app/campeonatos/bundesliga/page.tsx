@@ -13,7 +13,7 @@ type ProximoJogo = { id: number; utcDate: string; matchday: number; homeTeam: { 
 // --- Funções para buscar os dados da API ---
 async function getTabelaBundesliga(): Promise<Tabela | null> {
   const url = `https://api.football-data.org/v4/competitions/BL1/standings`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 10800 } });
+  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
   if (!res.ok) { console.error("ERRO AO BUSCAR TABELA (Bundesliga)"); return null; }
   const data = await res.json();
   return data?.standings?.[0]?.table;

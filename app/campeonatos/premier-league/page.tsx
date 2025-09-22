@@ -35,7 +35,7 @@ async function getTabelaPremierLeague(): Promise<Tabela | null> {
   const url = `https://api.football-data.org/v4/competitions/PL/standings`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 } 
+    next: { revalidate: 18000 } 
   });
 
   if (!res.ok) {
@@ -51,7 +51,7 @@ async function getProximosJogosPremierLeague(): Promise<ProximoJogo[] | null> {
   const url = `https://api.football-data.org/v4/competitions/PL/matches?status=SCHEDULED`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 }
+    next: { revalidate: 18000 }
   });
 
   if (!res.ok) {

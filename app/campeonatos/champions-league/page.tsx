@@ -34,7 +34,7 @@ async function getTabelaChampionsLeague(): Promise<Tabela | null> {
   const url = `https://api.football-data.org/v4/competitions/CL/standings`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 } 
+    next: { revalidate: 18000 } 
   });
 
   if (!res.ok) {
@@ -52,7 +52,7 @@ async function getProximosJogosChampions(): Promise<ProximoJogo[] | null> {
   const url = `https://api.football-data.org/v4/competitions/CL/matches?status=SCHEDULED`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 } // Mesmo cache da tabela
+    next: { revalidate: 18000 } // Mesmo cache da tabela
   });
 
   if (!res.ok) {

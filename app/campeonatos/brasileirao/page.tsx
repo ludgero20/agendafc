@@ -35,7 +35,7 @@ async function getTabelaBrasileirao(): Promise<Tabela | null> {
   const url = `https://api.football-data.org/v4/competitions/BSA/standings`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 } 
+    next: { revalidate: 18000 } 
   });
 
   if (!res.ok) {
@@ -52,7 +52,7 @@ async function getProximosJogosBrasileirao(): Promise<ProximoJogo[] | null> {
   const url = `https://api.football-data.org/v4/competitions/BSA/matches?status=SCHEDULED`;
   const res = await fetch(url, {
     headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 10800 }
+    next: { revalidate: 18000 }
   });
 
   if (!res.ok) {

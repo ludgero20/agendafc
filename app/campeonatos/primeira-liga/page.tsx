@@ -13,7 +13,7 @@ type ProximoJogo = { id: number; utcDate: string; matchday: number; homeTeam: { 
 // --- Funções para buscar os dados da API ---
 async function getTabelaPrimeiraLiga(): Promise<Tabela | null> {
   const url = `https://api.football-data.org/v4/competitions/PPL/standings`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 10800 } });
+  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
   if (!res.ok) { console.error("ERRO AO BUSCAR TABELA (Primeira Liga)"); return null; }
   const data = await res.json();
   return data?.standings?.[0]?.table;
@@ -21,7 +21,7 @@ async function getTabelaPrimeiraLiga(): Promise<Tabela | null> {
 
 async function getProximosJogosPrimeiraLiga(): Promise<ProximoJogo[] | null> {
   const url = `https://api.football-data.org/v4/competitions/PPL/matches?status=SCHEDULED`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 10800 } });
+  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
   if (!res.ok) { console.error("ERRO AO BUSCAR JOGOS (Primeira Liga)"); return null; }
   const data = await res.json();
   return data?.matches;
