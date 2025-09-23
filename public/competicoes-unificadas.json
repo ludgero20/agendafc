@@ -175,6 +175,7 @@
     {
       "id": 16,
       "nome": "Primeira Liga",
+      "slug": "primeira-liga",
       "pais": "Portugal",
       "tipo": "Nacional",
       "descricao": "Liga portuguesa de futebol",
