@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import fs from 'fs/promises';
+import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Ligue 1 | Agenda FC",
@@ -12,19 +14,27 @@ type ProximoJogo = { id: number; utcDate: string; matchday: number; homeTeam: { 
 
 // --- Funções para buscar os dados da API ---
 async function getTabelaLigue1(): Promise<Tabela | null> {
-  const url = `https://api.football-data.org/v4/competitions/FL1/standings`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
-  if (!res.ok) { console.error("ERRO AO BUSCAR TABELA (Ligue 1)"); return null; }
-  const data = await res.json();
-  return data?.standings?.[0]?.table;
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/ligue-1-standings.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.standings?.[0]?.table;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache da tabela (Ligue 1):", error);
+    return null;
+  }
 }
 
 async function getProximosJogosLigue1(): Promise<ProximoJogo[] | null> {
-  const url = `https://api.football-data.org/v4/competitions/FL1/matches?status=SCHEDULED`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
-  if (!res.ok) { console.error("ERRO AO BUSCAR JOGOS (Ligue 1)"); return null; }
-  const data = await res.json();
-  return data?.matches;
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/ligue-1-matches.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.matches;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache dos jogos (Ligue 1):", error);
+    return null;
+  }
 }
 
 // --- Componente da Página ---

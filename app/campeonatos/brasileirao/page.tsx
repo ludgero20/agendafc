@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import fs from 'fs/promises';
+import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos do Brasileirão Série A | Agenda FC",
@@ -29,39 +31,29 @@ type ProximoJogo = {
 };
 
 // --- Funções para buscar os dados da API ---
-
 async function getTabelaBrasileirao(): Promise<Tabela | null> {
-  // O código do Brasileirão no football-data.org é 'BSA'
-  const url = `https://api.football-data.org/v4/competitions/BSA/standings`;
-  const res = await fetch(url, {
-    headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 18000 } 
-  });
-
-  if (!res.ok) {
-    console.error("ERRO AO BUSCAR TABELA (Brasileirão)");
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-standings.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.standings?.[0]?.table;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache da tabela (Brasileirão):", error);
     return null;
   }
-
-  const data = await res.json();
-  return data?.standings?.[0]?.table;
 }
 
 // 1. ADICIONAMOS A FUNÇÃO PARA BUSCAR OS PRÓXIMOS JOGOS
 async function getProximosJogosBrasileirao(): Promise<ProximoJogo[] | null> {
-  const url = `https://api.football-data.org/v4/competitions/BSA/matches?status=SCHEDULED`;
-  const res = await fetch(url, {
-    headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 18000 }
-  });
-
-  if (!res.ok) {
-    console.error("ERRO AO BUSCAR JOGOS (Brasileirão)");
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-matches.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.matches;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache dos jogos (Brasileirão):", error);
     return null;
   }
-
-  const data = await res.json();
-  return data?.matches;
 }
 
 // --- Componente da Página ---

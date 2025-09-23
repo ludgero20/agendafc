@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import fs from 'fs/promises';
+import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Bundesliga | Agenda FC",
@@ -12,19 +14,27 @@ type ProximoJogo = { id: number; utcDate: string; matchday: number; homeTeam: { 
 
 // --- Funções para buscar os dados da API ---
 async function getTabelaBundesliga(): Promise<Tabela | null> {
-  const url = `https://api.football-data.org/v4/competitions/BL1/standings`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 18000 } });
-  if (!res.ok) { console.error("ERRO AO BUSCAR TABELA (Bundesliga)"); return null; }
-  const data = await res.json();
-  return data?.standings?.[0]?.table;
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/bundesliga-standings.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.standings?.[0]?.table;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache da tabela (Bundesliga):", error);
+    return null;
+  }
 }
 
 async function getProximosJogosBundesliga(): Promise<ProximoJogo[] | null> {
-  const url = `https://api.football-data.org/v4/competitions/BL1/matches?status=SCHEDULED`;
-  const res = await fetch(url, { headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' }, next: { revalidate: 10800 } });
-  if (!res.ok) { console.error("ERRO AO BUSCAR JOGOS (Bundesliga)"); return null; }
-  const data = await res.json();
-  return data?.matches;
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/bundesliga-matches.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.matches;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache dos jogos (Bundesliga):", error);
+    return null;
+  }
 }
 
 // --- Componente da Página ---

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import fs from 'fs/promises';
+import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Premier League | Agenda FC",
@@ -31,36 +33,27 @@ type ProximoJogo = {
 // --- Funções para buscar os dados da API ---
 
 async function getTabelaPremierLeague(): Promise<Tabela | null> {
-  // O código da Premier League no football-data.org é 'PL'
-  const url = `https://api.football-data.org/v4/competitions/PL/standings`;
-  const res = await fetch(url, {
-    headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 18000 } 
-  });
-
-  if (!res.ok) {
-    console.error("ERRO AO BUSCAR TABELA (Premier League)");
+try {
+    const filePath = path.join(process.cwd(), "public/api-cache/premier-league-standings.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    return data?.standings?.[0]?.table;
+  } catch (error) {
+    console.error("ERRO AO LER ARQUIVO de cache da tabela (Premier League):", error);
     return null;
   }
-
-  const data = await res.json();
-  return data?.standings?.[0]?.table;
 }
 
 async function getProximosJogosPremierLeague(): Promise<ProximoJogo[] | null> {
-  const url = `https://api.football-data.org/v4/competitions/PL/matches?status=SCHEDULED`;
-  const res = await fetch(url, {
-    headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY || '' },
-    next: { revalidate: 18000 }
-  });
-
-  if (!res.ok) {
-    console.error("ERRO AO BUSCAR JOGOS (Premier League)");
-    return null;
-  }
-
-  const data = await res.json();
-  return data?.matches;
+  try {
+      const filePath = path.join(process.cwd(), "public/api-cache/premier-league-matches.json");
+      const jsonData = await fs.readFile(filePath, "utf-8");
+      const data = JSON.parse(jsonData);
+      return data?.matches;
+    } catch (error) {
+      console.error("ERRO AO LER ARQUIVO de cache dos jogos (Premier League):", error);
+      return null;
+    }
 }
 
 // --- Componente da Página ---
