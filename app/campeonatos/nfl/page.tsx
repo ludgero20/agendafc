@@ -130,7 +130,7 @@ export default async function NFLPage() {
             <div className="space-y-4">
               {proximosJogos.map((jogo: ProximoJogoNFL) => (
                 <div key={jogo.idEvent} className="bg-white p-4 rounded-lg shadow-md border">
-                  <p className="text-sm text-center text-gray-500 mb-2">Rodada {jogo.intRound} - {formatarDataJogoNFL(jogo.dateEvent, jogo.strTime)}</p>
+                  <p className="text-sm text-center text-gray-500 mb-2">Semana {jogo.intRound} - {formatarDataJogoNFL(jogo.dateEvent, jogo.strTime)}</p>
                   <div className="text-center font-medium text-sm">
                     <p>{jogo.strAwayTeam}</p>
                     <p className="text-gray-400 font-bold my-1">@</p>
