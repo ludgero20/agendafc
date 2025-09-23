@@ -88,7 +88,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google AdSense (se você usar) */}
+        {/* Google AdSense*/}
         {process.env.NEXT_PUBLIC_ADSENSE_ID && (
           <Script
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
