@@ -34,7 +34,7 @@ export default function Header() {
                 className="text-2xl font-bold text-blue-600 whitespace-nowrap" // MUDANÇA: Adicionado whitespace-nowrap
                 onClick={closeMobileMenu}
               >
-                ⚽ Agenda FC 🏈
+                 Agenda FC 
               </Link>
             </div>
 
