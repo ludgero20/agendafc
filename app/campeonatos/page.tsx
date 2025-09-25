@@ -60,7 +60,7 @@ export default async function Competicoes() {
       case 'Eliminatórias': return 'bg-purple-100 text-purple-800';
       case 'Amistoso': return 'bg-gray-100 text-gray-800';
       case 'Futebol Americano': return 'bg-orange-100 text-orange-800';
-      case 'Corrida': return 'bg-red-100 text-red-800';
+      case 'Automobilismo': return 'bg-red-100 text-red-800';
       default: return 'bg-gray-100 text-gray-800';
     }
   };

@@ -302,7 +302,7 @@
       "descricao": "Liga americana de futebol",
       "prioridade": 4,
       "ordem": 50,
-      "ativo": false,
+      "ativo": true,
       "bandeiraEmoji": "🇺🇸"
     },
     {
@@ -357,7 +357,7 @@
       "tipo": "Futebol Americano",
       "descricao": "Liga Nacional de Futebol Americano",
       "prioridade": 5,
-      "ordem": 41,
+      "ordem": 6,
       "ativo": true,
       "bandeiraEmoji": "🏈"
     },
@@ -366,7 +366,7 @@
       "nome": "Fórmula 1",
       "slug": "f1",
       "pais": "Mundo",
-      "tipo": "Corrida",
+      "tipo": "Automobilismo",
       "descricao": "Classificação de pilotos, equipes e o calendário completo da temporada.",
       "ordem": 5,
       "ativo": true,
