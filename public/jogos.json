@@ -5553,6 +5553,226 @@
       "canal": "RedeTV!, Desimpedidos, ESPN e Disney+",
       "divisao": "Série B",
       "fase": ""
+    },
+    {
+      "id": 765,
+      "data": "2025-10-01",
+      "campeonato": "Champions League Asiática",
+      "time1": "Shanghai Shenhua",
+      "time2": "Ulsan HD",
+      "hora": "09h15",
+      "canal": "Disney+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 766,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Union Saint-Gilloise",
+      "time2": "Newcastle",
+      "hora": "13h45",
+      "canal": "TNT e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 767,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Qarabag",
+      "time2": "Copenhague",
+      "hora": "13h45",
+      "canal": "Space e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 768,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Barcelona",
+      "time2": "PSG",
+      "hora": "16h00",
+      "canal": "TNT e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 769,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Monaco",
+      "time2": "Manchester City",
+      "hora": "16h00",
+      "canal": "Space e HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 770,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Arsenal",
+      "time2": "Olympiacos",
+      "hora": "16h00",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 771,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Villarreal",
+      "time2": "Juventus",
+      "hora": "16h00",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 772,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Napoli",
+      "time2": "Sporting",
+      "hora": "16h00",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 773,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Bayer Leverkusen",
+      "time2": "PSV",
+      "hora": "16h00",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 774,
+      "data": "2025-10-01",
+      "campeonato": "Champions League",
+      "time1": "Borussia Dortmund",
+      "time2": "Athletic Bilbao",
+      "hora": "16h00",
+      "canal": "HBO Max",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 775,
+      "data": "2025-10-01",
+      "campeonato": "Mundial sub-20",
+      "time1": "Espanha sub-20",
+      "time2": "México sub-20",
+      "hora": "17h00",
+      "canal": "Sportv, CazéTV e FIFA+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 776,
+      "data": "2025-10-01",
+      "campeonato": "Mundial sub-20",
+      "time1": "Itália sub-20",
+      "time2": "Cuba sub-20",
+      "hora": "17h00",
+      "canal": "FIFA+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 777,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Palmeiras",
+      "time2": "Vasco",
+      "hora": "19h00",
+      "canal": "Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 778,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Sport",
+      "time2": "Fluminense",
+      "hora": "19h00",
+      "canal": "Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 779,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Mirassol",
+      "time2": "RB Bragantino",
+      "hora": "19h00",
+      "canal": "Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 780,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Internacional",
+      "time2": "Corinthians",
+      "hora": "19h30",
+      "canal": "Prime Video",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 781,
+      "data": "2025-10-01",
+      "campeonato": "Mundial sub-20",
+      "time1": "Brasil sub-20",
+      "time2": "Marrocos sub-20",
+      "hora": "20h00",
+      "canal": "Sportv, CazéTV e FIFA+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 782,
+      "data": "2025-10-01",
+      "campeonato": "Mundial sub-20",
+      "time1": "Argentina sub-20",
+      "time2": "Austrália sub-20",
+      "hora": "20h00",
+      "canal": "FIFA+",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 783,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Santos",
+      "time2": "Grêmio",
+      "hora": "21h30",
+      "canal": "Globo e Premiere",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 784,
+      "data": "2025-10-01",
+      "campeonato": "Brasileirão",
+      "time1": "Botafogo",
+      "time2": "Bahia",
+      "hora": "21h30",
+      "canal": "Globo e Premiere",
+      "divisao": "",
+      "fase": ""
     }
   ]
 }
