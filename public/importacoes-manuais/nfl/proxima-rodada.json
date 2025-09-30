@@ -2,131 +2,115 @@
   "events": [
     {
       "idEvent": "1",
-      "strHomeTeam": "Seattle Seahawks",
-      "strAwayTeam": "Arizona Cardinals",
-      "dateEvent": "2025-09-25",
+      "strHomeTeam": "San Francisco 49ers",
+      "strAwayTeam": "Los Angeles Rams",
+      "dateEvent": "2025-10-02",
       "strTime": "21:15:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "2",
       "strHomeTeam": "Minnesota Vikings",
-      "strAwayTeam": "Pittsburgh Steelers",
-      "dateEvent": "2025-09-28",
+      "strAwayTeam": "Cleveland Browns",
+      "dateEvent": "2025-10-05",
       "strTime": "10:30:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "3",
-      "strHomeTeam": "Washington Commanders",
-      "strAwayTeam": "Atlanta Falcons",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Dallas Cowboys",
+      "strAwayTeam": "New York Jets",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "4",
-      "strHomeTeam": "Los Angeles Chargers",
-      "strAwayTeam": "New York Giants",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Las Vegas Raiders",
+      "strAwayTeam": "Indianapolis Colts",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "5",
-      "strHomeTeam": "Tennessee Titans",
-      "strAwayTeam": "Houston Texans",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Denver Broncos",
+      "strAwayTeam": "Philadelphia Eagles",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "6",
-      "strHomeTeam": "Philadelphia Eagles",
-      "strAwayTeam": "Tampa Bay Buccaneers",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "New York Giants",
+      "strAwayTeam": "New Orleans Saints",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "7",
-      "strHomeTeam": "Carolina Panthers",
-      "strAwayTeam": "New England Patriots",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Miami Dolphins",
+      "strAwayTeam": "Carolina Panthers",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "8",
-      "strHomeTeam": "New Orleans Saints",
-      "strAwayTeam": "Buffalo Bills",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Houston Texans",
+      "strAwayTeam": "Baltimore Ravens",
+      "dateEvent": "2025-10-05",
       "strTime": "14:00:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "9",
-      "strHomeTeam": "Cleveland Browns",
-      "strAwayTeam": "Detroit Lions",
-      "dateEvent": "2025-09-28",
-      "strTime": "14:00:00",
-      "intRound": "4"
+      "strHomeTeam": "Tennessee Titans",
+      "strAwayTeam": "Arizona Cardinals",
+      "dateEvent": "2025-10-05",
+      "strTime": "17:05:00",
+      "intRound": "5"
     },
     {
       "idEvent": "10",
-      "strHomeTeam": "Jacksonville Jaguars",
-      "strAwayTeam": "San Francisco 49ers",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Tampa Bay Buccaneers",
+      "strAwayTeam": "Seattle Seahawks",
+      "dateEvent": "2025-10-05",
       "strTime": "17:05:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "11",
-      "strHomeTeam": "Indianapolis Colts",
-      "strAwayTeam": "Los Angeles Rams",
-      "dateEvent": "2025-09-28",
-      "strTime": "17:05:00",
-      "intRound": "4"
+      "strHomeTeam": "Detroit Lions",
+      "strAwayTeam": "Cincinnati Bengals",
+      "dateEvent": "2025-10-05",
+      "strTime": "17:25:00",
+      "intRound": "5"
     },
     {
       "idEvent": "12",
-      "strHomeTeam": "Chicago Bears",
-      "strAwayTeam": "Las Vegas Raiders",
-      "dateEvent": "2025-09-28",
+      "strHomeTeam": "Washington Commanders",
+      "strAwayTeam": "Los Angeles Chargers",
+      "dateEvent": "2025-10-05",
       "strTime": "17:25:00",
-      "intRound": "4"
+      "intRound": "5"
     },
     {
       "idEvent": "13",
-      "strHomeTeam": "Baltimore Ravens",
-      "strAwayTeam": "Kansas City Chiefs",
-      "dateEvent": "2025-09-28",
-      "strTime": "17:25:00",
-      "intRound": "4"
+      "strHomeTeam": "New England Patriots",
+      "strAwayTeam": "Buffalo Bills",
+      "dateEvent": "2025-10-05",
+      "strTime": "21:20:00",
+      "intRound": "5"
     },
     {
       "idEvent": "14",
-      "strHomeTeam": "Green Bay Packers",
-      "strAwayTeam": "Dallas Cowboys",
-      "dateEvent": "2025-09-28",
-      "strTime": "21:20:00",
-      "intRound": "4"
-    },
-    {
-      "idEvent": "15",
-      "strHomeTeam": "New York Jets",
-      "strAwayTeam": "Miami Dolphins",
-      "dateEvent": "2025-09-29",
-      "strTime": "20:15:00",
-      "intRound": "4"
-    },
-    {
-      "idEvent": "16",
-      "strHomeTeam": "Cincinnati Bengals",
-      "strAwayTeam": "Denver Broncos",
-      "dateEvent": "2025-09-29",
+      "strHomeTeam": "Kansas City Chiefs",
+      "strAwayTeam": "Jacksonville Jaguars",
+      "dateEvent": "2025-10-06",
       "strTime": "21:15:00",
-      "intRound": "4"
+      "intRound": "5"
     }
   ]
 }
