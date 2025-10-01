@@ -6048,6 +6048,160 @@
       "canal": "RedeTV!, Desimpedidos, ESPN e Disney+",
       "divisao": "Série B",
       "fase": ""
+    },
+    {
+      "id": 810,
+      "data": "2025-10-02",
+      "campeonato": "NFL",
+      "time1": "Los Angeles Rams",
+      "time2": "San Francisco 49ers",
+      "hora": "21h15",
+      "canal": "SporTV / Globoplay / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 811,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Cleveland Browns",
+      "time2": "Minnesota Vikings",
+      "hora": "10h30",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 812,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Indianapolis Colts",
+      "time2": "Las Vegas Raiders",
+      "hora": "14h00",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 813,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "New Orleans Saints",
+      "time2": "New York Giants",
+      "hora": "14h00",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 814,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "New York Jets",
+      "time2": "Dallas Cowboys",
+      "hora": "14h00",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 815,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Philadelphia Eagles",
+      "time2": "Denver Broncos",
+      "hora": "14h00",
+      "canal": "ESPN 2 / Disney+ / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 816,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Carolina Panthers",
+      "time2": "Miami Dolphins",
+      "hora": "14h00",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 817,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Baltimore Ravens",
+      "time2": "Houston Texans",
+      "hora": "14h00",
+      "canal": "Ge TV / Globoplay / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 818,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Arizona Cardinals",
+      "time2": "Tennessee Titans",
+      "hora": "17h05",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 819,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Seattle Seahawks",
+      "time2": "Rampa Bay Buccaneers",
+      "hora": "17h05",
+      "canal": "ESPN 2 / Disney+ / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 820,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Cincinnati Bengals",
+      "time2": "Detroit Lions",
+      "hora": "17h25",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 821,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Los Angeles Chargers",
+      "time2": "Washington Commanders",
+      "hora": "17h25",
+      "canal": "SporTV 3 / Globoplay / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 822,
+      "data": "2025-10-05",
+      "campeonato": "NFL",
+      "time1": "Buffalo Bills",
+      "time2": "New England Patriots",
+      "hora": "21h20",
+      "canal": "NFL Game Pass",
+      "divisao": "",
+      "fase": ""
+    },
+    {
+      "id": 823,
+      "data": "2025-10-06",
+      "campeonato": "NFL",
+      "time1": "Jacksonville Jaguars",
+      "time2": "Kansas City Chiefs",
+      "hora": "21h15",
+      "canal": "ESPN 2 / Disney+ / NFL Game Pass",
+      "divisao": "",
+      "fase": ""
     }
   ]
 }
