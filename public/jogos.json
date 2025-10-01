@@ -6202,6 +6202,66 @@
       "canal": "ESPN 2 / Disney+ / NFL Game Pass",
       "divisao": "",
       "fase": ""
+    },
+    {
+      "id": 824,
+      "data": "2025-10-03",
+      "hora": "06:30",
+      "campeonato": "Fórmula 1",
+      "canal": "BandSports",
+      "time1": null,
+      "time2": null,
+      "fase": null,
+      "evento_nome": "Treino Livre 1",
+      "evento_descricao": "GP de Singapura"
+    },
+    {
+      "id": 825,
+      "data": "2025-10-03",
+      "hora": "10:00",
+      "campeonato": "Fórmula 1",
+      "canal": "BandSports",
+      "time1": null,
+      "time2": null,
+      "fase": null,
+      "evento_nome": "Treino Livre 2",
+      "evento_descricao": "GP de Singapura"
+    },
+    {
+      "id": 826,
+      "data": "2025-10-04",
+      "hora": "06:30",
+      "campeonato": "Fórmula 1",
+      "canal": "BandSports",
+      "time1": null,
+      "time2": null,
+      "fase": null,
+      "evento_nome": "Treino Livre 3",
+      "evento_descricao": "GP de Singapura"
+    },
+    {
+      "id": 827,
+      "data": "2025-10-04",
+      "hora": "10:00",
+      "campeonato": "Fórmula 1",
+      "canal": "Band/BandSports",
+      "time1": null,
+      "time2": null,
+      "fase": null,
+      "evento_nome": "Treino Classificatório",
+      "evento_descricao": "GP de Singapura"
+    },
+    {
+      "id": 828,
+      "data": "2025-10-05",
+      "hora": "09:00",
+      "campeonato": "Fórmula 1",
+      "canal": "Band",
+      "time1": null,
+      "time2": null,
+      "fase": null,
+      "evento_nome": "Corrida",
+      "evento_descricao": "GP de Singapura"
     }
   ]
 }

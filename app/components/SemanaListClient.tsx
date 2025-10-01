@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
@@ -8,12 +8,16 @@ type JogoSemana = {
   id: number;
   data: string;
   campeonato: string;
-  time1: string;
-  time2: string;
   hora: string;
   canal: string;
+  // Campos de Jogo
+  time1?: string | null;
+  time2?: string | null;
   divisao?: string;
   fase?: string;
+  // Campos de Evento (F1)
+  evento_nome?: string | null;
+  evento_descricao?: string | null;
 };
 
 type CompeticaoInfo = { 
@@ -69,13 +73,13 @@ export default function SemanaListClient({
   const criarNomeExibicao = (jogo: JogoSemana) => {
     let nome = jogo.campeonato;
     if (jogo.divisao) nome += ` ${jogo.divisao}`;
-    if (jogo.fase) nome += ` (${jogo.fase})`;
+    if (jogo.fase && jogo.campeonato !== 'Fórmula 1') nome += ` (${jogo.fase})`;
     return nome;
   };
 
   const formatarData = (data: string) => {
     const [ano, mes, dia] = data.split('-');
-    const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia), 12); // Adiciona hora para evitar problemas de fuso
+    const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia), 12);
     return dataObj.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
   };
 
@@ -123,8 +127,8 @@ export default function SemanaListClient({
       {/* Lista de Jogos */}
       {Object.keys(jogosPorData).length === 0 ? (
         <div className="bg-white rounded-xl p-8 text-center border">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-2">Nenhum jogo encontrado!</h3>
-          <p className="text-gray-600">Não há jogos programados para o filtro selecionado.</p>
+          <h3 className="text-2xl font-semibold text-gray-800 mb-2">Nenhum evento encontrado!</h3>
+          <p className="text-gray-600">Não há jogos ou corridas programadas para o filtro selecionado.</p>
         </div>
       ) : (
         <div className="space-y-12">
@@ -148,12 +152,12 @@ export default function SemanaListClient({
                           <span className="mr-3 text-xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
                           <h3 className="text-lg font-bold text-gray-800">{nomeExibicao}</h3>
                            <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                             {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'jogo' : 'jogos'}
+                             {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'evento' : 'eventos'}
                            </span>
                         </div>
                         <div className="flex items-center flex-shrink-0 ml-4">
                            <span className="text-sm text-gray-500 mr-2 hidden sm:inline">
-                             {campeonatosExpandidos[data]?.[chave] ? 'Recolher' : 'Ver jogos'}
+                             {campeonatosExpandidos[data]?.[chave] ? 'Recolher' : 'Ver eventos'}
                            </span>
                            {campeonatosExpandidos[data]?.[chave] ? <ChevronUpIcon className="h-5 w-5" /> : <ChevronDownIcon className="h-5 w-5" />}
                         </div>
@@ -162,30 +166,36 @@ export default function SemanaListClient({
                         <div className="p-4">
                            <div className="grid gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
                             {jogosDoGrupo.map((jogo) => (
-                              <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                <div key={jogo.id} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
-                                  <div className="flex items-center justify-center mb-3">
-                                    <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
-                                      🕒 {jogo.hora}
-                                    </span>
-                                    {jogo.fase && (
-                                      <span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">
-                                        🏆 {jogo.fase}
-                                      </span>
-                                    )}
-                                  </div>
-                                  <div className="text-center mb-3">
-                                    <div className="font-semibold text-gray-800">
-                                      <span>{jogo.time1}</span>
-                                      <span className="mx-2 text-gray-400 font-bold">vs</span>
-                                      <span>{jogo.time2}</span>
+                              <div key={jogo.id} className="bg-white p-4 rounded-lg shadow-md border">
+                                {jogo.time1 ? ( // Se for JOGO
+                                  <>
+                                    <div className="flex items-center justify-center mb-3">
+                                      <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">🕒 {jogo.hora}</span>
+                                      {jogo.fase && (<span className="ml-2 text-xs font-medium text-purple-600 bg-purple-50 px-2 py-1 rounded">🏆 {jogo.fase}</span>)}
                                     </div>
-                                  </div>
-                                  <div className="text-center bg-white py-2 px-3 rounded-lg border border-gray-200">
-                                    <span className="text-sm text-gray-700 font-medium">
-                                      📺 {jogo.canal}
-                                    </span>
-                                  </div>
+                                    <div className="text-center mb-3">
+                                      <div className="font-semibold text-gray-800">
+                                        <span>{jogo.time1}</span>
+                                        <span className="mx-2 text-gray-400 font-bold">vs</span>
+                                        <span>{jogo.time2}</span>
+                                      </div>
+                                    </div>
+                                  </>
+                                ) : ( // Senão, é EVENTO (F1)
+                                  <>
+                                    <div className="flex items-center justify-center mb-3">
+                                      <span className="text-sm font-medium text-green-600 bg-green-50 px-2 py-1 rounded">🕒 {jogo.hora}</span>
+                                    </div>
+                                    <div className="text-center mb-3">
+                                      <div className="font-semibold text-gray-800">
+                                        <p className="text-lg">{jogo.evento_nome}</p>
+                                        <p className="text-sm text-gray-500 font-normal">{jogo.evento_descricao}</p>
+                                      </div>
+                                    </div>
+                                  </>
+                                )}
+                                <div className="text-center bg-white py-2 px-3 rounded-lg border border-gray-200">
+                                  <span className="text-sm text-gray-700 font-medium">📺 {jogo.canal}</span>
                                 </div>
                               </div>
                             ))}
