@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 146,
-    "first": "2025-09-24",
+    "count": 133,
+    "first": "2025-10-01",
     "last": "2025-12-21",
     "played": 0
   },
@@ -37,774 +37,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535086,
-      "utcDate": "2025-09-24T22:30:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:01Z",
-      "homeTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "awayTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535091,
-      "utcDate": "2025-09-24T22:30:00Z",
-      "status": "TIMED",
-      "matchday": 16,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-22T01:32:01Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535183,
-      "utcDate": "2025-09-27T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-21T01:32:07Z",
-      "homeTeam": {
-        "id": 3984,
-        "name": "Fortaleza EC",
-        "shortName": "Fortaleza",
-        "tla": "FEC",
-        "crest": "https://crests.football-data.org/3984.png"
-      },
-      "awayTeam": {
-        "id": 1778,
-        "name": "SC Recife",
-        "shortName": "Recife",
-        "tla": "REC",
-        "crest": "https://crests.football-data.org/1778.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535176,
-      "utcDate": "2025-09-27T21:30:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:04Z",
-      "homeTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "awayTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535184,
-      "utcDate": "2025-09-27T21:30:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-22T01:32:04Z",
-      "homeTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "awayTeam": {
-        "id": 6684,
-        "name": "SC Internacional",
-        "shortName": "Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535180,
-      "utcDate": "2025-09-28T00:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:04Z",
-      "homeTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "awayTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535181,
-      "utcDate": "2025-09-28T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-22T01:32:05Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 1782,
-        "name": "EC Vitória",
-        "shortName": "Vitória",
-        "tla": "VIT",
-        "crest": "https://crests.football-data.org/1782.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535175,
-      "utcDate": "2025-09-28T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:05Z",
-      "homeTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "awayTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535182,
-      "utcDate": "2025-09-28T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:05Z",
-      "homeTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535179,
-      "utcDate": "2025-09-28T21:30:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:05Z",
-      "homeTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "awayTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535177,
-      "utcDate": "2025-09-28T23:30:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1779,
-        "name": "SC Corinthians Paulista",
-        "shortName": "Corinthians",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/1779.png"
-      },
-      "awayTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535178,
-      "utcDate": "2025-09-29T23:00:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T01:32:06Z",
-      "homeTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "awayTeam": {
-        "id": 1837,
-        "name": "Ceará SC",
-        "shortName": "Ceará",
-        "tla": "CSC",
-        "crest": "https://crests.football-data.org/1837.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535190,
-      "utcDate": "2025-10-01T00:30:00Z",
-      "status": "TIMED",
-      "matchday": 26,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
-      "homeTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "awayTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535187,
@@ -813,7 +46,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T01:32:00Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -863,7 +96,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535189,
@@ -872,7 +105,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-25T01:32:05Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -922,7 +155,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535194,
@@ -931,7 +164,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-25T01:32:05Z",
       "homeTeam": {
         "id": 1778,
         "name": "SC Recife",
@@ -981,7 +214,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535191,
@@ -990,7 +223,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -1040,7 +273,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535186,
@@ -1049,7 +282,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-25T01:32:05Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -1099,7 +332,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535188,
@@ -1108,7 +341,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:01Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -1158,7 +391,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535192,
@@ -1167,7 +400,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-10-01T01:32:01Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -1217,7 +450,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535193,
@@ -1226,7 +459,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-26T01:32:05Z",
       "homeTeam": {
         "id": 3984,
         "name": "Fortaleza EC",
@@ -1276,7 +509,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535185,
@@ -1285,7 +518,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -1335,7 +568,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535195,
@@ -1344,7 +577,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:05Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -1394,7 +627,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535199,
@@ -1403,7 +636,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:05Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -1453,7 +686,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535201,
@@ -1462,7 +695,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:05Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -1512,7 +745,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535197,
@@ -1521,7 +754,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -1571,7 +804,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535196,
@@ -1580,7 +813,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-10-01T01:32:04Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -1630,7 +863,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535198,
@@ -1639,7 +872,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -1689,7 +922,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535202,
@@ -1698,7 +931,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -1748,7 +981,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535204,
@@ -1757,7 +990,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:06Z",
       "homeTeam": {
         "id": 4245,
         "name": "EC Juventude",
@@ -1807,7 +1040,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535200,
@@ -1816,7 +1049,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-09-29T01:32:06Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -1866,7 +1099,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535203,
@@ -1875,7 +1108,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T15:21:02Z",
+      "lastUpdated": "2025-10-01T01:32:05Z",
       "homeTeam": {
         "id": 1837,
         "name": "Ceará SC",
@@ -1925,7 +1158,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535070,
@@ -1984,7 +1217,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535059,
@@ -2043,7 +1276,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535047,
@@ -2052,7 +1285,7 @@
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -2102,7 +1335,1187 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535207,
+      "utcDate": "2025-10-15T22:00:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "awayTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535206,
+      "utcDate": "2025-10-15T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
+      },
+      "awayTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535209,
+      "utcDate": "2025-10-15T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
+      },
+      "awayTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535214,
+      "utcDate": "2025-10-15T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1778,
+        "name": "SC Recife",
+        "shortName": "Recife",
+        "tla": "REC",
+        "crest": "https://crests.football-data.org/1778.png"
+      },
+      "awayTeam": {
+        "id": 1837,
+        "name": "Ceará SC",
+        "shortName": "Ceará",
+        "tla": "CSC",
+        "crest": "https://crests.football-data.org/1837.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535208,
+      "utcDate": "2025-10-16T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
+      "awayTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535210,
+      "utcDate": "2025-10-16T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1766,
+        "name": "CA Mineiro",
+        "shortName": "Mineiro",
+        "tla": "CAM",
+        "crest": "https://crests.football-data.org/1766.png"
+      },
+      "awayTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535213,
+      "utcDate": "2025-10-16T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 3984,
+        "name": "Fortaleza EC",
+        "shortName": "Fortaleza",
+        "tla": "FEC",
+        "crest": "https://crests.football-data.org/3984.png"
+      },
+      "awayTeam": {
+        "id": 1780,
+        "name": "CR Vasco da Gama",
+        "shortName": "Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535211,
+      "utcDate": "2025-10-16T22:00:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "awayTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535205,
+      "utcDate": "2025-10-17T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "awayTeam": {
+        "id": 4245,
+        "name": "EC Juventude",
+        "shortName": "Juventude",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/4245_large.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535212,
+      "utcDate": "2025-10-17T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 28,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "tla": "VIT",
+        "crest": "https://crests.football-data.org/1782.png"
+      },
+      "awayTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535217,
+      "utcDate": "2025-10-18T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "awayTeam": {
+        "id": 1766,
+        "name": "CA Mineiro",
+        "shortName": "Mineiro",
+        "tla": "CAM",
+        "crest": "https://crests.football-data.org/1766.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535221,
+      "utcDate": "2025-10-18T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "awayTeam": {
+        "id": 1778,
+        "name": "SC Recife",
+        "shortName": "Recife",
+        "tla": "REC",
+        "crest": "https://crests.football-data.org/1778.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535220,
+      "utcDate": "2025-10-19T00:00:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "awayTeam": {
+        "id": 3984,
+        "name": "Fortaleza EC",
+        "shortName": "Fortaleza",
+        "tla": "FEC",
+        "crest": "https://crests.football-data.org/3984.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535219,
+      "utcDate": "2025-10-19T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
+      },
+      "awayTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535223,
+      "utcDate": "2025-10-19T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1837,
+        "name": "Ceará SC",
+        "shortName": "Ceará",
+        "tla": "CSC",
+        "crest": "https://crests.football-data.org/1837.png"
+      },
+      "awayTeam": {
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535215,
+      "utcDate": "2025-10-19T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
+      "awayTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535222,
+      "utcDate": "2025-10-19T23:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "awayTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535224,
+      "utcDate": "2025-10-20T22:00:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 4245,
+        "name": "EC Juventude",
+        "shortName": "Juventude",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/4245_large.png"
+      },
+      "awayTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535216,
+      "utcDate": "2025-10-20T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1780,
+        "name": "CR Vasco da Gama",
+        "shortName": "Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "awayTeam": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535218,
+      "utcDate": "2025-10-21T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 29,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
+      "awayTeam": {
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "tla": "VIT",
+        "crest": "https://crests.football-data.org/1782.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535072,
@@ -2161,1491 +2574,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535205,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "awayTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535206,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "awayTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535207,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "awayTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535208,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "awayTeam": {
-        "id": 1779,
-        "name": "SC Corinthians Paulista",
-        "shortName": "Corinthians",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/1779.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535209,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
-      },
-      "awayTeam": {
-        "id": 6684,
-        "name": "SC Internacional",
-        "shortName": "Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535210,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:32Z",
-      "homeTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "awayTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535211,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:33Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535212,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:32Z",
-      "homeTeam": {
-        "id": 1782,
-        "name": "EC Vitória",
-        "shortName": "Vitória",
-        "tla": "VIT",
-        "crest": "https://crests.football-data.org/1782.png"
-      },
-      "awayTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535213,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 3984,
-        "name": "Fortaleza EC",
-        "shortName": "Fortaleza",
-        "tla": "FEC",
-        "crest": "https://crests.football-data.org/3984.png"
-      },
-      "awayTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535214,
-      "utcDate": "2025-10-25T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:32Z",
-      "homeTeam": {
-        "id": 1778,
-        "name": "SC Recife",
-        "shortName": "Recife",
-        "tla": "REC",
-        "crest": "https://crests.football-data.org/1778.png"
-      },
-      "awayTeam": {
-        "id": 1837,
-        "name": "Ceará SC",
-        "shortName": "Ceará",
-        "tla": "CSC",
-        "crest": "https://crests.football-data.org/1837.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535215,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535216,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "awayTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535217,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1779,
-        "name": "SC Corinthians Paulista",
-        "shortName": "Corinthians",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/1779.png"
-      },
-      "awayTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535218,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:32Z",
-      "homeTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "awayTeam": {
-        "id": 1782,
-        "name": "EC Vitória",
-        "shortName": "Vitória",
-        "tla": "VIT",
-        "crest": "https://crests.football-data.org/1782.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535219,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
-      },
-      "awayTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535220,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:14:49Z",
-      "homeTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "awayTeam": {
-        "id": 3984,
-        "name": "Fortaleza EC",
-        "shortName": "Fortaleza",
-        "tla": "FEC",
-        "crest": "https://crests.football-data.org/3984.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535221,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 6684,
-        "name": "SC Internacional",
-        "shortName": "Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
-      },
-      "awayTeam": {
-        "id": 1778,
-        "name": "SC Recife",
-        "shortName": "Recife",
-        "tla": "REC",
-        "crest": "https://crests.football-data.org/1778.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535222,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T16:46:49Z",
-      "homeTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "awayTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535223,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1837,
-        "name": "Ceará SC",
-        "shortName": "Ceará",
-        "tla": "CSC",
-        "crest": "https://crests.football-data.org/1837.png"
-      },
-      "awayTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535224,
-      "utcDate": "2025-11-05T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "awayTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535225,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "awayTeam": {
-        "id": 6684,
-        "name": "SC Internacional",
-        "shortName": "Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535226,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T16:46:49Z",
-      "homeTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "awayTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535227,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "awayTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535228,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:32Z",
-      "homeTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "awayTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535229,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T16:46:49Z",
-      "homeTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "awayTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535230,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-10-25T19:00:00Z",
+      "status": "TIMED",
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -3695,75 +2633,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535231,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535232,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-10-25T19:00:00Z",
+      "status": "TIMED",
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -3813,75 +2692,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535233,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 3984,
-        "name": "Fortaleza EC",
-        "shortName": "Fortaleza",
-        "tla": "FEC",
-        "crest": "https://crests.football-data.org/3984.png"
-      },
-      "awayTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535234,
-      "utcDate": "2025-11-19T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-10-25T21:30:00Z",
+      "status": "TIMED",
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1778,
         "name": "SC Recife",
@@ -3931,207 +2751,30 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535235,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 31,
+      "id": 535233,
+      "utcDate": "2025-10-25T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
-      },
-      "awayTeam": {
-        "id": 1778,
-        "name": "SC Recife",
-        "shortName": "Recife",
-        "tla": "REC",
-        "crest": "https://crests.football-data.org/1778.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535236,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 31,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "awayTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535237,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 31,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1779,
-        "name": "SC Corinthians Paulista",
-        "shortName": "Corinthians",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/1779.png"
-      },
-      "awayTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535238,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 31,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "awayTeam": {
         "id": 3984,
         "name": "Fortaleza EC",
         "shortName": "Fortaleza",
         "tla": "FEC",
         "crest": "https://crests.football-data.org/3984.png"
       },
+      "awayTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
       "score": {
         "winner": null,
         "duration": "REGULAR",
@@ -4167,30 +2810,148 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535239,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 31,
+      "id": 535225,
+      "utcDate": "2025-10-26T01:30:00Z",
+      "status": "TIMED",
+      "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
       },
       "awayTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535228,
+      "utcDate": "2025-10-26T01:30:00Z",
+      "status": "TIMED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "awayTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535226,
+      "utcDate": "2025-10-26T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
         "shortName": "Botafogo",
         "tla": "BOT",
         "crest": "https://crests.football-data.org/1770.png"
       },
+      "awayTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
       "score": {
         "winner": null,
         "duration": "REGULAR",
@@ -4226,16 +2987,193 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535229,
+      "utcDate": "2025-10-26T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "awayTeam": {
+        "id": 1780,
+        "name": "CR Vasco da Gama",
+        "shortName": "Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535227,
+      "utcDate": "2025-10-26T23:30:00Z",
+      "status": "TIMED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "awayTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535231,
+      "utcDate": "2025-10-27T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 30,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "awayTeam": {
+        "id": 4245,
+        "name": "EC Juventude",
+        "shortName": "Juventude",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/4245_large.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535240,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-01T19:00:00Z",
+      "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:14:49Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -4285,29 +3223,29 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535241,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
+      "id": 535239,
+      "utcDate": "2025-11-01T21:30:00Z",
+      "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
-        "id": 6684,
-        "name": "SC Internacional",
-        "shortName": "Internacional",
-        "tla": "SCI",
-        "crest": "https://crests.football-data.org/6684.png"
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
       },
       "awayTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
       },
       "score": {
         "winner": null,
@@ -4344,29 +3282,29 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535242,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
+      "id": 535235,
+      "utcDate": "2025-11-02T00:00:00Z",
+      "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T16:43:56Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
       },
       "awayTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
+        "id": 1778,
+        "name": "SC Recife",
+        "shortName": "Recife",
+        "tla": "REC",
+        "crest": "https://crests.football-data.org/1778.png"
       },
       "score": {
         "winner": null,
@@ -4403,16 +3341,75 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535237,
+      "utcDate": "2025-11-02T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "awayTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535243,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-02T19:00:00Z",
+      "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1837,
         "name": "Ceará SC",
@@ -4462,16 +3459,193 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535241,
+      "utcDate": "2025-11-02T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "awayTeam": {
+        "id": 1766,
+        "name": "CA Mineiro",
+        "shortName": "Mineiro",
+        "tla": "CAM",
+        "crest": "https://crests.football-data.org/1766.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535242,
+      "utcDate": "2025-11-02T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "awayTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535236,
+      "utcDate": "2025-11-02T23:30:00Z",
+      "status": "TIMED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1780,
+        "name": "CR Vasco da Gama",
+        "shortName": "Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "awayTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535244,
-      "utcDate": "2025-11-22T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-02T23:30:00Z",
+      "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 4245,
         "name": "EC Juventude",
@@ -4521,206 +3695,29 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535245,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
+      "id": 535238,
+      "utcDate": "2025-11-03T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "awayTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535246,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T16:46:49Z",
-      "homeTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "awayTeam": {
-        "id": 1780,
-        "name": "CR Vasco da Gama",
-        "shortName": "Vasco da Gama",
-        "tla": "VAS",
-        "crest": "https://crests.football-data.org/1780.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535247,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "awayTeam": {
         "id": 6685,
         "name": "Santos FC",
         "shortName": "Santos",
         "tla": "SAN",
         "crest": "https://crests.football-data.org/6685.png"
       },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535248,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
       "awayTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
+        "id": 3984,
+        "name": "Fortaleza EC",
+        "shortName": "Fortaleza",
+        "tla": "FEC",
+        "crest": "https://crests.football-data.org/3984.png"
       },
       "score": {
         "winner": null,
@@ -4757,16 +3754,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535249,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-05T22:00:00Z",
+      "status": "TIMED",
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -4816,134 +3813,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535250,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "awayTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535251,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535252,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-05T22:00:00Z",
+      "status": "TIMED",
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -4993,75 +3872,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535253,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1837,
-        "name": "Ceará SC",
-        "shortName": "Ceará",
-        "tla": "CSC",
-        "crest": "https://crests.football-data.org/1837.png"
-      },
-      "awayTeam": {
-        "id": 3984,
-        "name": "Fortaleza EC",
-        "shortName": "Fortaleza",
-        "tla": "FEC",
-        "crest": "https://crests.football-data.org/3984.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535254,
-      "utcDate": "2025-11-29T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-05T22:00:00Z",
+      "status": "TIMED",
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1778,
         "name": "SC Recife",
@@ -5111,22 +3931,376 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535255,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
+      "id": 535246,
+      "utcDate": "2025-11-05T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
+      },
+      "awayTeam": {
+        "id": 1780,
+        "name": "CR Vasco da Gama",
+        "shortName": "Vasco da Gama",
+        "tla": "VAS",
+        "crest": "https://crests.football-data.org/1780.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535250,
+      "utcDate": "2025-11-05T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1766,
+        "name": "CA Mineiro",
+        "shortName": "Mineiro",
+        "tla": "CAM",
+        "crest": "https://crests.football-data.org/1766.png"
+      },
+      "awayTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535251,
+      "utcDate": "2025-11-05T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "awayTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535248,
+      "utcDate": "2025-11-06T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "awayTeam": {
         "id": 1783,
         "name": "CR Flamengo",
         "shortName": "Flamengo",
         "tla": "FLA",
         "crest": "https://crests.football-data.org/1783.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535245,
+      "utcDate": "2025-11-06T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "awayTeam": {
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535253,
+      "utcDate": "2025-11-06T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1837,
+        "name": "Ceará SC",
+        "shortName": "Ceará",
+        "tla": "CSC",
+        "crest": "https://crests.football-data.org/1837.png"
+      },
+      "awayTeam": {
+        "id": 3984,
+        "name": "Fortaleza EC",
+        "shortName": "Fortaleza",
+        "tla": "FEC",
+        "crest": "https://crests.football-data.org/3984.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535247,
+      "utcDate": "2025-11-07T00:30:00Z",
+      "status": "TIMED",
+      "matchday": 32,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
       },
       "awayTeam": {
         "id": 6685,
@@ -5170,16 +4344,75 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535256,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "id": 535264,
+      "utcDate": "2025-11-08T19:00:00Z",
+      "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1778,
+        "name": "SC Recife",
+        "shortName": "Recife",
+        "tla": "REC",
+        "crest": "https://crests.football-data.org/1778.png"
+      },
+      "awayTeam": {
+        "id": 1766,
+        "name": "CA Mineiro",
+        "shortName": "Mineiro",
+        "tla": "CAM",
+        "crest": "https://crests.football-data.org/1766.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535256,
+      "utcDate": "2025-11-08T21:00:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -5229,252 +4462,16 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535257,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 1779,
-        "name": "SC Corinthians Paulista",
-        "shortName": "Corinthians",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/1779.png"
-      },
-      "awayTeam": {
-        "id": 1837,
-        "name": "Ceará SC",
-        "shortName": "Ceará",
-        "tla": "CSC",
-        "crest": "https://crests.football-data.org/1837.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535258,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
-      "homeTeam": {
-        "id": 1776,
-        "name": "São Paulo FC",
-        "shortName": "São Paulo",
-        "tla": "PAU",
-        "crest": "https://crests.football-data.org/1776.png"
-      },
-      "awayTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535259,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
-      "homeTeam": {
-        "id": 4364,
-        "name": "Mirassol FC",
-        "shortName": "Mirassol",
-        "tla": "MIR",
-        "crest": "https://crests.football-data.org/4364.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535260,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:14:49Z",
-      "homeTeam": {
-        "id": 1771,
-        "name": "Cruzeiro EC",
-        "shortName": "Cruzeiro",
-        "tla": "CRU",
-        "crest": "https://crests.football-data.org/1771.png"
-      },
-      "awayTeam": {
-        "id": 1765,
-        "name": "Fluminense FC",
-        "shortName": "Fluminense",
-        "tla": "FLU",
-        "crest": "https://crests.football-data.org/1765.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535261,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2025-11-08T21:30:00Z",
+      "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -5524,16 +4521,252 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535262,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "id": 535258,
+      "utcDate": "2025-11-09T00:00:00Z",
+      "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1776,
+        "name": "São Paulo FC",
+        "shortName": "São Paulo",
+        "tla": "PAU",
+        "crest": "https://crests.football-data.org/1776.png"
+      },
+      "awayTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535257,
+      "utcDate": "2025-11-09T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "awayTeam": {
+        "id": 1837,
+        "name": "Ceará SC",
+        "shortName": "Ceará",
+        "tla": "CSC",
+        "crest": "https://crests.football-data.org/1837.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535260,
+      "utcDate": "2025-11-09T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
+      "homeTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "awayTeam": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535255,
+      "utcDate": "2025-11-09T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
+      "awayTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535262,
+      "utcDate": "2025-11-09T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -5583,16 +4816,75 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
-      "id": 535263,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
+      "id": 535259,
+      "utcDate": "2025-11-09T23:30:00Z",
+      "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-04-09T17:10:31Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
+      "homeTeam": {
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
+      },
+      "awayTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 26,
+        "winner": null
+      },
+      "id": 535263,
+      "utcDate": "2025-11-09T23:30:00Z",
+      "status": "TIMED",
+      "matchday": 33,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-09-30T15:21:12Z",
       "homeTeam": {
         "id": 3984,
         "name": "Fortaleza EC",
@@ -5642,66 +4934,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 535264,
-      "utcDate": "2025-12-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-04-09T17:10:30Z",
-      "homeTeam": {
-        "id": 1778,
-        "name": "SC Recife",
-        "shortName": "Recife",
-        "tla": "REC",
-        "crest": "https://crests.football-data.org/1778.png"
-      },
-      "awayTeam": {
-        "id": 1766,
-        "name": "CA Mineiro",
-        "shortName": "Mineiro",
-        "tla": "CAM",
-        "crest": "https://crests.football-data.org/1766.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535265,
@@ -5710,7 +4943,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -5760,7 +4993,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535266,
@@ -5819,7 +5052,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535267,
@@ -5828,7 +5061,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -5878,7 +5111,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535268,
@@ -5937,7 +5170,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535269,
@@ -5996,7 +5229,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535270,
@@ -6005,7 +5238,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -6055,7 +5288,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535271,
@@ -6114,7 +5347,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535272,
@@ -6173,7 +5406,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535273,
@@ -6232,7 +5465,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535274,
@@ -6291,7 +5524,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535275,
@@ -6300,7 +5533,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -6350,7 +5583,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535276,
@@ -6409,7 +5642,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535277,
@@ -6418,7 +5651,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -6468,7 +5701,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535278,
@@ -6527,7 +5760,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535279,
@@ -6586,7 +5819,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535280,
@@ -6595,7 +5828,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -6645,7 +5878,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535281,
@@ -6704,7 +5937,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535282,
@@ -6763,7 +5996,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535283,
@@ -6822,7 +6055,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535284,
@@ -6881,7 +6114,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535285,
@@ -6940,7 +6173,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535286,
@@ -6999,7 +6232,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535287,
@@ -7008,7 +6241,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -7058,7 +6291,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535288,
@@ -7117,7 +6350,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535289,
@@ -7176,7 +6409,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535290,
@@ -7185,7 +6418,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -7235,7 +6468,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535291,
@@ -7244,7 +6477,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -7294,7 +6527,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535292,
@@ -7353,7 +6586,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535293,
@@ -7412,7 +6645,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535294,
@@ -7471,7 +6704,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535296,
@@ -7530,7 +6763,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535297,
@@ -7539,7 +6772,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -7589,7 +6822,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535298,
@@ -7648,7 +6881,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535299,
@@ -7707,7 +6940,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535300,
@@ -7766,7 +6999,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535301,
@@ -7825,7 +7058,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535302,
@@ -7884,7 +7117,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535303,
@@ -7893,7 +7126,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 3984,
         "name": "Fortaleza EC",
@@ -7943,7 +7176,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535304,
@@ -8002,7 +7235,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535295,
@@ -8011,7 +7244,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -8061,7 +7294,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535305,
@@ -8120,7 +7353,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535306,
@@ -8179,7 +7412,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535307,
@@ -8188,7 +7421,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -8238,7 +7471,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535308,
@@ -8297,7 +7530,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535309,
@@ -8306,7 +7539,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -8356,7 +7589,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535310,
@@ -8415,7 +7648,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535311,
@@ -8474,7 +7707,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535312,
@@ -8533,7 +7766,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535313,
@@ -8542,7 +7775,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-23T00:20:57Z",
+      "lastUpdated": "2025-10-01T00:21:02Z",
       "homeTeam": {
         "id": 1837,
         "name": "Ceará SC",
@@ -8592,7 +7825,7 @@
         "id": 2371,
         "startDate": "2025-03-29",
         "endDate": "2025-12-21",
-        "currentMatchday": 24,
+        "currentMatchday": 26,
         "winner": null
       },
       "id": 535314,
