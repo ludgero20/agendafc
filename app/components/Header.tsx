@@ -19,7 +19,8 @@ export default function Header() {
   const menuItems = [
     { href: '/', label: 'Início' },
     { href: '/semana', label: 'Agenda da semana' },
-    { href: '/campeonatos', label: 'Tabelas' }
+    { href: '/campeonatos', label: 'Tabelas' },
+    { href: '/instalar', label: 'Baixe o App' }
   ];
 
   return (
