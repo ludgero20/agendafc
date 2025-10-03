@@ -170,14 +170,14 @@
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 3,
-          "draw": 2,
+          "draw": 3,
           "lost": 2,
-          "points": 11,
-          "goalsFor": 8,
-          "goalsAgainst": 9,
+          "points": 12,
+          "goalsFor": 9,
+          "goalsAgainst": 10,
           "goalDifference": -1
         },
         {
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 79,
+            "name": "CA Osasuna",
+            "shortName": "Osasuna",
+            "tla": "OSA",
+            "crest": "https://crests.football-data.org/79.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 2,
+          "draw": 2,
+          "lost": 4,
+          "points": 8,
+          "goalsFor": 6,
+          "goalsAgainst": 8,
+          "goalDifference": -2
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -255,25 +274,6 @@
           "goalsFor": 9,
           "goalsAgainst": 12,
           "goalDifference": -3
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 79,
-            "name": "CA Osasuna",
-            "shortName": "Osasuna",
-            "tla": "OSA",
-            "crest": "https://crests.football-data.org/79.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 4,
-          "points": 7,
-          "goalsFor": 5,
-          "goalsAgainst": 7,
-          "goalDifference": -2
         },
         {
           "position": 14,
