@@ -6499,6 +6499,7 @@
       "canal": "ESPN 4 e Disney+",
       "time1": "Chapecoense",
       "time2": "Novorizontino",
+      "divisao": "Série B",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -6511,6 +6512,7 @@
       "canal": "Metrópoles (YouTube)",
       "time1": "Barra",
       "time2": "Santa Cruz",
+      "divisao": "Série D",
       "fase": "final",
       "evento_nome": null,
       "evento_descricao": null
@@ -6571,6 +6573,7 @@
       "canal": "SportyNet (TV e YouTube) e SportyNet+",
       "time1": "Guarani",
       "time2": "Náutico",
+      "divisao": "Série C",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -6631,6 +6634,7 @@
       "canal": "Disney+",
       "time1": "Volta Redonda",
       "time2": "Goiás",
+      "divisao": "Série B",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -6655,6 +6659,7 @@
       "canal": "SportyNet (TV e YouTube) e SportyNet+",
       "time1": "Brusque",
       "time2": "Ponte Preta",
+      "divisao": "Série C",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -6691,6 +6696,7 @@
       "canal": "Disney+",
       "time1": "Ferroviária",
       "time2": "América-MG",
+      "divisao": "Série B",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -7087,6 +7093,7 @@
       "canal": "SportyNet e Disney+",
       "time1": "Operário-PR",
       "time2": "Remo",
+      "divisao": "Série B",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -7099,6 +7106,7 @@
       "canal": "SportyNet+",
       "time1": "Floresta",
       "time2": "Londrina",
+      "divisao": "Série C",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -7159,6 +7167,7 @@
       "canal": "SportyNet+",
       "time1": "São Bernardo",
       "time2": "Caxias",
+      "divisao": "Série C",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
@@ -7219,6 +7228,7 @@
       "canal": "SportyNet, ESPN e Disney+",
       "time1": "Atlético-GO",
       "time2": "Athletico-PR",
+      "divisao": "Série B",
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
