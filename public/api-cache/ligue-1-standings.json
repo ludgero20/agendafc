@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 516,
+            "name": "Olympique de Marseille",
+            "shortName": "Marseille",
+            "tla": "MAR",
+            "crest": "https://crests.football-data.org/516.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 5,
+          "draw": 0,
+          "lost": 2,
+          "points": 15,
+          "goalsFor": 14,
+          "goalsAgainst": 5,
+          "goalDifference": 9
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
             "shortName": "PSG",
@@ -48,7 +67,7 @@
           "goalDifference": 8
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
@@ -65,25 +84,6 @@
           "goalsFor": 8,
           "goalsAgainst": 3,
           "goalDifference": 5
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 516,
-            "name": "Olympique de Marseille",
-            "shortName": "Marseille",
-            "tla": "MAR",
-            "crest": "https://crests.football-data.org/516.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 4,
-          "draw": 0,
-          "lost": 2,
-          "points": 12,
-          "goalsFor": 12,
-          "goalsAgainst": 5,
-          "goalDifference": 7
         },
         {
           "position": 4,
@@ -360,15 +360,15 @@
             "tla": "FCM",
             "crest": "https://crests.football-data.org/545.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 0,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 2,
           "goalsFor": 5,
-          "goalsAgainst": 13,
-          "goalDifference": -8
+          "goalsAgainst": 15,
+          "goalDifference": -10
         }
       ]
     }
