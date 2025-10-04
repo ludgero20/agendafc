@@ -145,11 +145,11 @@
         {
           "position": 7,
           "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
+            "id": 5543,
+            "name": "Vitória SC",
+            "shortName": "Vitória SC",
+            "tla": "GUI",
+            "crest": "https://crests.football-data.org/5543.png"
           },
           "playedGames": 8,
           "form": null,
@@ -157,9 +157,9 @@
           "draw": 2,
           "lost": 3,
           "points": 11,
-          "goalsFor": 6,
-          "goalsAgainst": 8,
-          "goalDifference": -2
+          "goalsFor": 9,
+          "goalsAgainst": 12,
+          "goalDifference": -3
         },
         {
           "position": 8,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 2,
+          "draw": 2,
+          "lost": 4,
+          "points": 8,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "goalDifference": -4
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 6618,
             "name": "Casa Pia AC",
             "shortName": "Casa Pia",
@@ -235,25 +254,6 @@
           "points": 8,
           "goalsFor": 8,
           "goalsAgainst": 13,
-          "goalDifference": -5
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 5543,
-            "name": "Vitória SC",
-            "shortName": "Vitória SC",
-            "tla": "GUI",
-            "crest": "https://crests.football-data.org/5543.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 4,
-          "points": 8,
-          "goalsFor": 7,
-          "goalsAgainst": 12,
           "goalDifference": -5
         },
         {
