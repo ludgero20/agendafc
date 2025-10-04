@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 73,
+            "name": "Tottenham Hotspur FC",
+            "shortName": "Tottenham",
+            "tla": "TOT",
+            "crest": "https://crests.football-data.org/73.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 4,
+          "draw": 2,
+          "lost": 1,
+          "points": 14,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "goalDifference": 8
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 1044,
             "name": "AFC Bournemouth",
             "shortName": "Bournemouth",
@@ -67,7 +86,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 57,
             "name": "Arsenal FC",
@@ -86,7 +105,7 @@
           "goalDifference": 9
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 354,
             "name": "Crystal Palace FC",
@@ -103,25 +122,6 @@
           "goalsFor": 8,
           "goalsAgainst": 3,
           "goalDifference": 5
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 73,
-            "name": "Tottenham Hotspur FC",
-            "shortName": "Tottenham",
-            "tla": "TOT",
-            "crest": "https://crests.football-data.org/73.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 1,
-          "points": 11,
-          "goalsFor": 11,
-          "goalsAgainst": 4,
-          "goalDifference": 7
         },
         {
           "position": 6,
@@ -246,15 +246,15 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 9,
-          "goalDifference": -3
+          "goalsFor": 7,
+          "goalsAgainst": 11,
+          "goalDifference": -4
         },
         {
           "position": 13,
