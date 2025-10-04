@@ -2394,6 +2394,56 @@
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
+    },
+    {
+      "id": 909,
+      "data": "2025-10-07",
+      "hora": "20:00",
+      "campeonato": "Brasileirão",
+      "canal": "Disney+",
+      "time1": "Amazonas",
+      "time2": "Criciúma",
+      "divisao": "Série B",
+      "fase": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 910,
+      "data": "2025-10-07",
+      "hora": "21:35",
+      "campeonato": "Brasileirão",
+      "canal": "RedeTV!, Desimpedidos, SportyNet, ESPN e Disney+",
+      "time1": "Botafogo-SP",
+      "time2": "Paysandu",
+      "divisao": "Série B",
+      "fase": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 911,
+      "data": "2025-10-06",
+      "hora": "19:00",
+      "campeonato": "Campeonato Argentino",
+      "canal": "Disney+",
+      "time1": "Deportivo Riestra",
+      "time2": "Vélez Sarsfield",
+      "fase": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 912,
+      "data": "2025-10-06",
+      "hora": "21:00",
+      "campeonato": "Campeonato Argentino",
+      "canal": "ESPN e Disney+",
+      "time1": "Racing",
+      "time2": "Independiente Rivadavia",
+      "fase": null,
+      "evento_nome": null,
+      "evento_descricao": null
     }
   ]
 }
