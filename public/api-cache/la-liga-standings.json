@@ -240,6 +240,44 @@
         {
           "position": 12,
           "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 3,
+          "points": 9,
+          "goalsFor": 9,
+          "goalsAgainst": 12,
+          "goalDifference": -3
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 88,
+            "name": "Levante UD",
+            "shortName": "Levante",
+            "tla": "LEV",
+            "crest": "https://crests.football-data.org/88.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 2,
+          "draw": 2,
+          "lost": 4,
+          "points": 8,
+          "goalsFor": 13,
+          "goalsAgainst": 14,
+          "goalDifference": -1
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -257,44 +295,6 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
-          "team": {
-            "id": 88,
-            "name": "Levante UD",
-            "shortName": "Levante",
-            "tla": "LEV",
-            "crest": "https://crests.football-data.org/88.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 4,
-          "points": 8,
-          "goalsFor": 12,
-          "goalsAgainst": 14,
-          "goalDifference": -2
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 3,
-          "points": 8,
-          "goalsFor": 9,
-          "goalsAgainst": 12,
-          "goalDifference": -3
-        },
-        {
           "position": 15,
           "team": {
             "id": 1048,
@@ -310,8 +310,8 @@
           "lost": 6,
           "points": 6,
           "goalsFor": 4,
-          "goalsAgainst": 13,
-          "goalDifference": -9
+          "goalsAgainst": 14,
+          "goalDifference": -10
         },
         {
           "position": 16,
@@ -398,12 +398,12 @@
             "tla": "GIR",
             "crest": "https://crests.football-data.org/298.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 0,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 3,
+          "points": 4,
           "goalsFor": 3,
           "goalsAgainst": 16,
           "goalDifference": -13
