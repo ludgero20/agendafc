@@ -39,13 +39,13 @@
           },
           "playedGames": 6,
           "form": null,
-          "won": 5,
-          "draw": 1,
+          "won": 6,
+          "draw": 0,
           "lost": 0,
-          "points": 16,
-          "goalsFor": 22,
+          "points": 18,
+          "goalsFor": 25,
           "goalsAgainst": 3,
-          "goalDifference": 19
+          "goalDifference": 22
         },
         {
           "position": 2,
@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 2,
-          "points": 10,
-          "goalsFor": 17,
-          "goalsAgainst": 13,
-          "goalDifference": 4
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 1,
             "name": "1. FC Köln",
             "shortName": "1. FC Köln",
@@ -141,6 +122,25 @@
           "goalsFor": 11,
           "goalsAgainst": 9,
           "goalDifference": 2
+        },
+        {
+          "position": 6,
+          "team": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 3,
+          "draw": 0,
+          "lost": 3,
+          "points": 9,
+          "goalsFor": 17,
+          "goalsAgainst": 16,
+          "goalDifference": 1
         },
         {
           "position": 7,

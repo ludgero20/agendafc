@@ -59,12 +59,12 @@
           "playedGames": 7,
           "form": null,
           "won": 5,
-          "draw": 1,
-          "lost": 1,
-          "points": 16,
-          "goalsFor": 12,
-          "goalsAgainst": 7,
-          "goalDifference": 5
+          "draw": 0,
+          "lost": 2,
+          "points": 15,
+          "goalsFor": 13,
+          "goalsAgainst": 9,
+          "goalDifference": 4
         },
         {
           "position": 3,
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 2,
+          "points": 11,
+          "goalsFor": 13,
+          "goalsAgainst": 9,
+          "goalDifference": 4
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 71,
             "name": "Sunderland AFC",
             "shortName": "Sunderland",
@@ -143,7 +162,7 @@
           "goalDifference": 1
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 65,
             "name": "Manchester City FC",
@@ -162,7 +181,7 @@
           "goalDifference": 8
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 66,
             "name": "Manchester United FC",
@@ -179,25 +198,6 @@
           "goalsFor": 9,
           "goalsAgainst": 11,
           "goalDifference": -2
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 2,
-          "points": 9,
-          "goalsFor": 11,
-          "goalsAgainst": 8,
-          "goalDifference": 3
         },
         {
           "position": 10,

@@ -43,9 +43,9 @@
           "draw": 0,
           "lost": 2,
           "points": 12,
-          "goalsFor": 14,
-          "goalsAgainst": 7,
-          "goalDifference": 7
+          "goalsFor": 17,
+          "goalsAgainst": 8,
+          "goalDifference": 9
         },
         {
           "position": 2,
@@ -145,25 +145,6 @@
         {
           "position": 7,
           "team": {
-            "id": 457,
-            "name": "US Cremonese",
-            "shortName": "Cremonese",
-            "tla": "CRE",
-            "crest": "https://crests.football-data.org/457.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 1,
-          "points": 9,
-          "goalsFor": 6,
-          "goalsAgainst": 5,
-          "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 471,
             "name": "US Sassuolo Calcio",
             "shortName": "Sassuolo",
@@ -179,6 +160,25 @@
           "goalsFor": 8,
           "goalsAgainst": 8,
           "goalDifference": 0
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 457,
+            "name": "US Cremonese",
+            "shortName": "Cremonese",
+            "tla": "CRE",
+            "crest": "https://crests.football-data.org/457.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 1,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "goalDifference": -1
         },
         {
           "position": 9,

@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 77,
+            "name": "Athletic Club",
+            "shortName": "Athletic",
+            "tla": "ATH",
+            "crest": "https://crests.football-data.org/77.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 4,
+          "draw": 1,
+          "lost": 3,
+          "points": 13,
+          "goalsFor": 9,
+          "goalsAgainst": 9,
+          "goalDifference": 0
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 78,
             "name": "Club Atlético de Madrid",
             "shortName": "Atleti",
@@ -124,7 +143,7 @@
           "goalDifference": 5
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 90,
             "name": "Real Betis Balompié",
@@ -143,7 +162,7 @@
           "goalDifference": 4
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -160,25 +179,6 @@
           "goalsFor": 10,
           "goalsAgainst": 9,
           "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 77,
-            "name": "Athletic Club",
-            "shortName": "Athletic",
-            "tla": "ATH",
-            "crest": "https://crests.football-data.org/77.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 3,
-          "points": 11,
-          "goalsFor": 7,
-          "goalsAgainst": 8,
-          "goalDifference": -1
         },
         {
           "position": 9,
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 4,
-          "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 11,
-          "goalDifference": -5
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 1048,
             "name": "Real Oviedo",
             "shortName": "Real Oviedo",
@@ -333,7 +314,7 @@
           "goalDifference": -10
         },
         {
-          "position": 17,
+          "position": 16,
           "team": {
             "id": 298,
             "name": "Girona FC",
@@ -352,7 +333,7 @@
           "goalDifference": -12
         },
         {
-          "position": 18,
+          "position": 17,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -371,7 +352,7 @@
           "goalDifference": -3
         },
         {
-          "position": 19,
+          "position": 18,
           "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
@@ -390,7 +371,7 @@
           "goalDifference": -3
         },
         {
-          "position": 20,
+          "position": 19,
           "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
@@ -407,6 +388,25 @@
           "goalsFor": 7,
           "goalsAgainst": 11,
           "goalDifference": -4
+        },
+        {
+          "position": 20,
+          "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 1,
+          "draw": 2,
+          "lost": 5,
+          "points": 5,
+          "goalsFor": 7,
+          "goalsAgainst": 13,
+          "goalDifference": -6
         }
       ]
     }

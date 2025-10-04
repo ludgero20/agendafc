@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 7822,
+            "name": "FC Alverca",
+            "shortName": "Alverca",
+            "tla": "ALV",
+            "crest": "https://crests.football-data.org/7822.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 4,
+          "points": 10,
+          "goalsFor": 10,
+          "goalsAgainst": 12,
+          "goalDifference": -2
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 5529,
             "name": "CD Nacional",
             "shortName": "CD Nacional",
@@ -162,7 +181,7 @@
           "goalDifference": -3
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 5613,
             "name": "Sporting Clube de Braga",
@@ -181,7 +200,7 @@
           "goalDifference": 4
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -200,7 +219,7 @@
           "goalDifference": -3
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 5543,
             "name": "Vitória SC",
@@ -219,7 +238,7 @@
           "goalDifference": -4
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 6618,
             "name": "Casa Pia AC",
@@ -238,7 +257,7 @@
           "goalDifference": -5
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 712,
             "name": "FC Arouca",
@@ -257,7 +276,7 @@
           "goalDifference": -9
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -274,25 +293,6 @@
           "goalsFor": 6,
           "goalsAgainst": 8,
           "goalDifference": -2
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 7822,
-            "name": "FC Alverca",
-            "shortName": "Alverca",
-            "tla": "ALV",
-            "crest": "https://crests.football-data.org/7822.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 4,
-          "points": 7,
-          "goalsFor": 8,
-          "goalsAgainst": 11,
-          "goalDifference": -3
         },
         {
           "position": 15,
@@ -360,15 +360,15 @@
             "tla": "AVS",
             "crest": "https://crests.football-data.org/10340.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 0,
           "draw": 1,
-          "lost": 6,
+          "lost": 7,
           "points": 1,
-          "goalsFor": 4,
-          "goalsAgainst": 17,
-          "goalDifference": -13
+          "goalsFor": 5,
+          "goalsAgainst": 19,
+          "goalDifference": -14
         }
       ]
     }
