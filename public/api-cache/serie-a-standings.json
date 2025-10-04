@@ -132,18 +132,37 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 0,
-          "points": 9,
-          "goalsFor": 10,
-          "goalsAgainst": 4,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 5,
           "goalDifference": 6
         },
         {
           "position": 7,
+          "team": {
+            "id": 7397,
+            "name": "Como 1907",
+            "shortName": "Como 1907",
+            "tla": "COM",
+            "crest": "https://crests.football-data.org/7397.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 1,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 5,
+          "goalDifference": 2
+        },
+        {
+          "position": 8,
           "team": {
             "id": 471,
             "name": "US Sassuolo Calcio",
@@ -162,7 +181,7 @@
           "goalDifference": 0
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 457,
             "name": "US Cremonese",
@@ -179,25 +198,6 @@
           "goalsFor": 7,
           "goalsAgainst": 8,
           "goalDifference": -1
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 7397,
-            "name": "Como 1907",
-            "shortName": "Como 1907",
-            "tla": "COM",
-            "crest": "https://crests.football-data.org/7397.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 1,
-          "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 4,
-          "goalDifference": 2
         },
         {
           "position": 10,

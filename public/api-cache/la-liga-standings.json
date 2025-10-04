@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 86,
+            "name": "Real Madrid CF",
+            "shortName": "Real Madrid",
+            "tla": "RMA",
+            "crest": "https://crests.football-data.org/86.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 7,
+          "draw": 0,
+          "lost": 1,
+          "points": 21,
+          "goalsFor": 17,
+          "goalsAgainst": 8,
+          "goalDifference": 9
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 81,
             "name": "FC Barcelona",
             "shortName": "Barça",
@@ -48,25 +67,6 @@
           "goalDifference": 16
         },
         {
-          "position": 2,
-          "team": {
-            "id": 86,
-            "name": "Real Madrid CF",
-            "shortName": "Real Madrid",
-            "tla": "RMA",
-            "crest": "https://crests.football-data.org/86.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 6,
-          "draw": 0,
-          "lost": 1,
-          "points": 18,
-          "goalsFor": 16,
-          "goalsAgainst": 8,
-          "goalDifference": 8
-        },
-        {
           "position": 3,
           "team": {
             "id": 94,
@@ -75,15 +75,15 @@
             "tla": "VIL",
             "crest": "https://crests.football-data.org/94.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 5,
           "draw": 1,
-          "lost": 1,
+          "lost": 2,
           "points": 16,
           "goalsFor": 13,
-          "goalsAgainst": 5,
-          "goalDifference": 8
+          "goalsAgainst": 6,
+          "goalDifference": 7
         },
         {
           "position": 4,

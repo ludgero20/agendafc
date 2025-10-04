@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 546,
+            "name": "Racing Club de Lens",
+            "shortName": "RC Lens",
+            "tla": "RCL",
+            "crest": "https://crests.football-data.org/546.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 2,
+          "points": 11,
+          "goalsFor": 9,
+          "goalsAgainst": 6,
+          "goalDifference": 3
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -141,25 +160,6 @@
           "goalsFor": 13,
           "goalsAgainst": 9,
           "goalDifference": 4
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 546,
-            "name": "Racing Club de Lens",
-            "shortName": "RC Lens",
-            "tla": "RCL",
-            "crest": "https://crests.football-data.org/546.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 2,
-          "points": 10,
-          "goalsFor": 8,
-          "goalsAgainst": 5,
-          "goalDifference": 3
         },
         {
           "position": 8,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 519,
+            "name": "AJ Auxerre",
+            "shortName": "Auxerre",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/519.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 4,
+          "points": 7,
+          "goalsFor": 5,
+          "goalsAgainst": 9,
+          "goalDifference": -4
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 525,
             "name": "FC Lorient",
             "shortName": "Lorient",
@@ -276,7 +295,7 @@
           "goalDifference": -7
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 543,
             "name": "FC Nantes",
@@ -293,25 +312,6 @@
           "goalsFor": 5,
           "goalsAgainst": 7,
           "goalDifference": -2
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 519,
-            "name": "AJ Auxerre",
-            "shortName": "Auxerre",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/519.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 4,
-          "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 8,
-          "goalDifference": -4
         },
         {
           "position": 16,
