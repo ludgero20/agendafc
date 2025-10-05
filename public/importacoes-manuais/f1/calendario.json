@@ -363,9 +363,9 @@
       "raceName": "GP de Singapura",
       "circuitName": "Marina Bay Street Circuit",
       "country": "🇸🇬",
-      "status": "Próxima Corrida",
+      "status": "Finalizado",
       "results": {
-        "pole": "G. Russell", "p1": "", "p2": "", "p3": ""
+        "pole": "G. Russell", "p1": "G. Russell", "p2": "M. Verstappen", "p3": "L. Norris"
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-10-03", "hora": "06:30", "transmissao": ["BandSports"] },
@@ -380,7 +380,7 @@
       "raceName": "GP dos Estados Unidos",
       "circuitName": "Circuit of the Americas",
       "country": "🇺🇸",
-      "status": "Agendado",
+      "status": "Próxima Corrida",
       "results": {
         "pole": "", "p1": "", "p2": "", "p3": ""
       },

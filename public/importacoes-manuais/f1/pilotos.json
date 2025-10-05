@@ -5,7 +5,7 @@
       "name": "O. Piastri",
       "nationality": "🇦🇺",
       "team": "McLaren",
-      "points": 324,
+      "points": 336,
       "wins": 7,
       "podiums": 14
     },
@@ -14,34 +14,34 @@
       "name": "L. Norris",
       "nationality": "🇬🇧",
       "team": "McLaren",
-      "points": 299,
+      "points": 314,
       "wins": 5,
-      "podiums": 13
+      "podiums": 14
     },
     {
       "position": 3,
       "name": "M. Verstappen",
       "nationality": "🇳🇱",
       "team": "Red Bull",
-      "points": 255,
+      "points": 273,
       "wins": 4,
-      "podiums": 8
+      "podiums": 9
     },
     {
       "position": 4,
       "name": "G. Russell",
       "nationality": "🇬🇧",
       "team": "Mercedes",
-      "points": 212,
-      "wins": 1,
-      "podiums": 7
+      "points": 237,
+      "wins": 2,
+      "podiums": 8
     },
     {
       "position": 5,
       "name": "C. Leclerc",
       "nationality": "🇲🇨",
       "team": "Ferrari",
-      "points": 165,
+      "points": 173,
       "wins": 0,
       "podiums": 5
     },
@@ -50,7 +50,7 @@
       "name": "L. Hamilton",
       "nationality": "🇬🇧",
       "team": "Ferrari",
-      "points": 121,
+      "points": 127,
       "wins": 0,
       "podiums": 0
     },
@@ -59,7 +59,7 @@
       "name": "K. Antonelli",
       "nationality": "🇮🇹",
       "team": "Mercedes",
-      "points": 78,
+      "points": 88,
       "wins": 0,
       "podiums": 1
     },
@@ -92,10 +92,10 @@
     },
     {
       "position": 11,
-      "name": "L. Stroll",
-      "nationality": "🇨🇦",
+      "name": "F. Alonso",
+      "nationality": "🇪🇸",
       "team": "Aston Martin Aramco-Mercedes",
-      "points": 32,
+      "points": 34,
       "wins": 0,
       "podiums": 0
     },
@@ -104,24 +104,24 @@
       "name": "C. Sainz Jr.",
       "nationality": "🇪🇸",
       "team": "Williams",
-      "points": 31,
+      "points": 32,
       "wins": 0,
       "podiums": 1
     },
     {
       "position": 13,
-      "name": "L. Lawson",
-      "nationality": "🇳🇿",
-      "team": "Racing Bulls",
-      "points": 30,
+      "name": "L. Stroll",
+      "nationality": "🇨🇦",
+      "team": "Aston Martin Aramco-Mercedes",
+      "points": 32,
       "wins": 0,
       "podiums": 0
     },
     {
       "position": 14,
-      "name": "F. Alonso",
-      "nationality": "🇪🇸",
-      "team": "Aston Martin Aramco-Mercedes",
+      "name": "L. Lawson",
+      "nationality": "🇳🇿",
+      "team": "Racing Bulls",
       "points": 30,
       "wins": 0,
       "podiums": 0
@@ -167,7 +167,7 @@
       "name": "O. Bearman",
       "nationality": "🇬🇧",
       "team": "Haas",
-      "points": 16,
+      "points": 18,
       "wins": 0,
       "podiums": 0
     },
