@@ -94,12 +94,12 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 3,
-          "draw": 4,
+          "draw": 5,
           "lost": 0,
-          "points": 13,
+          "points": 14,
           "goalsFor": 10,
           "goalsAgainst": 6,
           "goalDifference": 4
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 263,
+            "name": "Deportivo Alavés",
+            "shortName": "Alavés",
+            "tla": "ALA",
+            "crest": "https://crests.football-data.org/263.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 3,
+          "points": 9,
+          "goalsFor": 6,
+          "goalsAgainst": 7,
+          "goalDifference": -1
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -254,25 +273,6 @@
           "points": 8,
           "goalsFor": 13,
           "goalsAgainst": 14,
-          "goalDifference": -1
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 263,
-            "name": "Deportivo Alavés",
-            "shortName": "Alavés",
-            "tla": "ALA",
-            "crest": "https://crests.football-data.org/263.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 3,
-          "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 7,
           "goalDifference": -1
         },
         {

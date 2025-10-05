@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 4,
+          "draw": 1,
+          "lost": 1,
+          "points": 13,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "goalDifference": 4
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -48,7 +67,7 @@
           "goalDifference": 9
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 98,
             "name": "AC Milan",
@@ -67,7 +86,7 @@
           "goalDifference": 6
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -84,25 +103,6 @@
           "goalsFor": 10,
           "goalsAgainst": 5,
           "goalDifference": 5
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 4,
-          "draw": 0,
-          "lost": 1,
-          "points": 12,
-          "goalsFor": 5,
-          "goalsAgainst": 1,
-          "goalDifference": 4
         },
         {
           "position": 5,
@@ -214,12 +214,31 @@
           "draw": 2,
           "lost": 2,
           "points": 8,
+          "goalsFor": 6,
+          "goalsAgainst": 6,
+          "goalDifference": 0
+        },
+        {
+          "position": 11,
+          "team": {
+            "id": 103,
+            "name": "Bologna FC 1909",
+            "shortName": "Bologna",
+            "tla": "BOL",
+            "crest": "https://crests.football-data.org/103.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 2,
+          "lost": 2,
+          "points": 8,
           "goalsFor": 5,
           "goalsAgainst": 5,
           "goalDifference": 0
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 115,
             "name": "Udinese Calcio",
@@ -233,12 +252,12 @@
           "draw": 2,
           "lost": 2,
           "points": 8,
-          "goalsFor": 5,
-          "goalsAgainst": 8,
+          "goalsFor": 6,
+          "goalsAgainst": 9,
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 110,
             "name": "SS Lazio",
@@ -255,25 +274,6 @@
           "goalsFor": 10,
           "goalsAgainst": 7,
           "goalDifference": 3
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 103,
-            "name": "Bologna FC 1909",
-            "shortName": "Bologna",
-            "tla": "BOL",
-            "crest": "https://crests.football-data.org/103.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 2,
-          "points": 7,
-          "goalsFor": 5,
-          "goalsAgainst": 5,
-          "goalDifference": 0
         },
         {
           "position": 14,
@@ -341,18 +341,37 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 0,
-          "draw": 3,
+          "draw": 4,
           "lost": 2,
-          "points": 3,
+          "points": 4,
           "goalsFor": 3,
           "goalsAgainst": 6,
           "goalDifference": -3
         },
         {
           "position": 18,
+          "team": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS",
+            "crest": "https://crests.football-data.org/487.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 0,
+          "draw": 3,
+          "lost": 3,
+          "points": 3,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDifference": -3
+        },
+        {
+          "position": 19,
           "team": {
             "id": 450,
             "name": "Hellas Verona FC",
@@ -369,25 +388,6 @@
           "goalsFor": 2,
           "goalsAgainst": 9,
           "goalDifference": -7
-        },
-        {
-          "position": 19,
-          "team": {
-            "id": 487,
-            "name": "AC Pisa 1909",
-            "shortName": "AC Pisa",
-            "tla": "PIS",
-            "crest": "https://crests.football-data.org/487.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 3,
-          "points": 2,
-          "goalsFor": 3,
-          "goalsAgainst": 6,
-          "goalDifference": -3
         },
         {
           "position": 20,

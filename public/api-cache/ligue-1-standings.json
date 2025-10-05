@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 5,
+          "draw": 1,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 8,
+          "goalsAgainst": 3,
+          "goalDifference": 5
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 516,
             "name": "Olympique de Marseille",
             "shortName": "Marseille",
@@ -48,7 +67,7 @@
           "goalDifference": 10
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
@@ -65,25 +84,6 @@
           "goalsFor": 12,
           "goalsAgainst": 4,
           "goalDifference": 8
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 5,
-          "draw": 0,
-          "lost": 1,
-          "points": 15,
-          "goalsFor": 8,
-          "goalsAgainst": 3,
-          "goalDifference": 5
         },
         {
           "position": 4,
@@ -227,12 +227,12 @@
             "tla": "TOU",
             "crest": "https://crests.football-data.org/511.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 7,
+          "points": 8,
           "goalsFor": 9,
           "goalsAgainst": 11,
           "goalDifference": -2
