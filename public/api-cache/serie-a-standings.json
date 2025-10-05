@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP",
+            "crest": "https://crests.football-data.org/113.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 5,
+          "draw": 0,
+          "lost": 1,
+          "points": 15,
+          "goalsFor": 12,
+          "goalsAgainst": 6,
+          "goalDifference": 6
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 100,
             "name": "AS Roma",
             "shortName": "Roma",
@@ -48,13 +67,13 @@
           "goalDifference": 5
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
-            "id": 113,
-            "name": "SSC Napoli",
-            "shortName": "Napoli",
-            "tla": "NAP",
-            "crest": "https://crests.football-data.org/113.png"
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL",
+            "crest": "https://crests.football-data.org/98.png"
           },
           "playedGames": 6,
           "form": null,
@@ -62,12 +81,12 @@
           "draw": 1,
           "lost": 1,
           "points": 13,
-          "goalsFor": 10,
-          "goalsAgainst": 5,
-          "goalDifference": 5
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "goalDifference": 6
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
@@ -86,25 +105,6 @@
           "goalDifference": 9
         },
         {
-          "position": 4,
-          "team": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL",
-            "crest": "https://crests.football-data.org/98.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 4,
-          "draw": 0,
-          "lost": 1,
-          "points": 12,
-          "goalsFor": 9,
-          "goalsAgainst": 3,
-          "goalDifference": 6
-        },
-        {
           "position": 5,
           "team": {
             "id": 109,
@@ -113,12 +113,12 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 3,
-          "draw": 2,
+          "draw": 3,
           "lost": 0,
-          "points": 11,
+          "points": 12,
           "goalsFor": 9,
           "goalsAgainst": 5,
           "goalDifference": 4
@@ -354,25 +354,6 @@
         {
           "position": 18,
           "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 3,
-          "points": 3,
-          "goalsFor": 2,
-          "goalsAgainst": 7,
-          "goalDifference": -5
-        },
-        {
-          "position": 19,
-          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -388,6 +369,25 @@
           "goalsFor": 2,
           "goalsAgainst": 9,
           "goalDifference": -7
+        },
+        {
+          "position": 19,
+          "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 4,
+          "points": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 9,
+          "goalDifference": -6
         },
         {
           "position": 20,
