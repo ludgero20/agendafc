@@ -99,6 +99,7 @@ export default async function F1Page() {
                   <th className="px-3 py-2 text-left font-semibold text-gray-600">#</th>
                   <th className="px-3 py-2 text-left font-semibold text-gray-600">Equipe</th>
                   <th className="px-3 py-2 text-center font-semibold text-gray-600">Pontos</th>
+                  <th className="px-3 py-2 text-center font-semibold text-gray-600">Vitórias</th>
                   <th className="px-3 py-2 text-center font-semibold text-gray-600">Pódios</th>
                 </tr>
               </thead>
@@ -110,6 +111,7 @@ export default async function F1Page() {
                       {equipe.name}
                     </td>
                     <td className="px-3 py-2 text-center font-bold text-blue-600">{equipe.points}</td>
+                    <td className="px-3 py-2 text-center">{equipe.wins}</td>
                     <td className="px-3 py-2 text-center">{equipe.podiums}</td>
                   </tr>
                 ))}
