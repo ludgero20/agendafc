@@ -75,14 +75,14 @@
             "tla": "CRU",
             "crest": "https://crests.football-data.org/1771.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 15,
-          "draw": 6,
+          "draw": 7,
           "lost": 5,
-          "points": 51,
-          "goalsFor": 39,
-          "goalsAgainst": 19,
+          "points": 52,
+          "goalsFor": 40,
+          "goalsAgainst": 20,
           "goalDifference": 20
         },
         {
@@ -202,6 +202,25 @@
         {
           "position": 10,
           "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 9,
+          "draw": 7,
+          "lost": 10,
+          "points": 34,
+          "goalsFor": 26,
+          "goalsAgainst": 24,
+          "goalDifference": 2
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 1780,
             "name": "CR Vasco da Gama",
             "shortName": "Vasco da Gama",
@@ -219,7 +238,7 @@
           "goalDifference": 1
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
@@ -238,7 +257,7 @@
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
@@ -257,7 +276,7 @@
           "goalDifference": -5
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 6684,
             "name": "SC Internacional",
@@ -274,25 +293,6 @@
           "goalsFor": 32,
           "goalsAgainst": 38,
           "goalDifference": -6
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 10,
-          "points": 31,
-          "goalsFor": 23,
-          "goalsAgainst": 24,
-          "goalDifference": -1
         },
         {
           "position": 15,
@@ -322,37 +322,18 @@
             "tla": "SAN",
             "crest": "https://crests.football-data.org/6685.png"
           },
-          "playedGames": 25,
-          "form": null,
-          "won": 7,
-          "draw": 7,
-          "lost": 11,
-          "points": 28,
-          "goalsFor": 25,
-          "goalsAgainst": 35,
-          "goalDifference": -10
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 4245,
-            "name": "EC Juventude",
-            "shortName": "Juventude",
-            "tla": "JUV",
-            "crest": "https://crests.football-data.org/4245_large.png"
-          },
           "playedGames": 26,
           "form": null,
           "won": 7,
-          "draw": 5,
-          "lost": 14,
-          "points": 26,
-          "goalsFor": 21,
-          "goalsAgainst": 46,
-          "goalDifference": -25
+          "draw": 7,
+          "lost": 12,
+          "points": 28,
+          "goalsFor": 25,
+          "goalsAgainst": 38,
+          "goalDifference": -13
         },
         {
-          "position": 18,
+          "position": 17,
           "team": {
             "id": 1782,
             "name": "EC Vitória",
@@ -371,7 +352,7 @@
           "goalDifference": -18
         },
         {
-          "position": 19,
+          "position": 18,
           "team": {
             "id": 3984,
             "name": "Fortaleza EC",
@@ -381,13 +362,32 @@
           },
           "playedGames": 26,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 6,
-          "lost": 15,
-          "points": 21,
-          "goalsFor": 24,
+          "lost": 14,
+          "points": 24,
+          "goalsFor": 26,
           "goalsAgainst": 41,
-          "goalDifference": -17
+          "goalDifference": -15
+        },
+        {
+          "position": 19,
+          "team": {
+            "id": 4245,
+            "name": "EC Juventude",
+            "shortName": "Juventude",
+            "tla": "JUV",
+            "crest": "https://crests.football-data.org/4245_large.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 6,
+          "draw": 5,
+          "lost": 15,
+          "points": 23,
+          "goalsFor": 21,
+          "goalsAgainst": 48,
+          "goalDifference": -27
         },
         {
           "position": 20,
@@ -398,14 +398,14 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 2,
-          "draw": 9,
+          "draw": 10,
           "lost": 13,
-          "points": 15,
-          "goalsFor": 18,
-          "goalsAgainst": 37,
+          "points": 16,
+          "goalsFor": 19,
+          "goalsAgainst": 38,
           "goalDifference": -19
         }
       ]
