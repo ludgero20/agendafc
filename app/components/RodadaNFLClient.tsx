@@ -36,7 +36,7 @@ export default function RodadaNFLClient({ todosOsJogos, rodadaInicial }: Props) 
   // Filtra os jogos para mostrar apenas os da rodada atual
   const jogosDaRodada = todosOsJogos.filter(jogo => parseInt(jogo.intRound) === rodadaAtual);
 
-  const formatarDataJogoNFL = (data: string, hora: string) => {
+  const formatarDataJogoNFL = (data: string | null, hora: string | null) => {
     if (!data || !hora) return 'Data a definir';
     const [ano, mes, dia] = data.split('-');
     const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia), ...hora.split(':').map(Number));
@@ -70,7 +70,7 @@ export default function RodadaNFLClient({ todosOsJogos, rodadaInicial }: Props) 
                   {jogo.strStatus === 'Match Finished' ? (
                     <p className="text-lg font-bold">{jogo.intAwayScore} - {jogo.intHomeScore}</p>
                   ) : (
-                    <p className="text-sm text-gray-400">{jogo.strTime.substring(0, 5)}</p>
+                    <p className="text-sm text-gray-400">{jogo.strTime ? jogo.strTime.substring(0, 5) : 'A definir'}</p>
                   )}
                 </div>
                 {/* Time da Casa */}
