@@ -303,15 +303,15 @@
             "tla": "CAM",
             "crest": "https://crests.football-data.org/1766.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 8,
           "lost": 10,
-          "points": 29,
-          "goalsFor": 22,
+          "points": 32,
+          "goalsFor": 23,
           "goalsAgainst": 29,
-          "goalDifference": -7
+          "goalDifference": -6
         },
         {
           "position": 16,
@@ -398,15 +398,15 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 2,
           "draw": 10,
-          "lost": 13,
+          "lost": 14,
           "points": 16,
           "goalsFor": 19,
-          "goalsAgainst": 38,
-          "goalDifference": -19
+          "goalsAgainst": 39,
+          "goalDifference": -20
         }
       ]
     }
