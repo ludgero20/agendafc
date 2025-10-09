@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 4364,
+            "name": "Mirassol FC",
+            "shortName": "Mirassol",
+            "tla": "MIR",
+            "crest": "https://crests.football-data.org/4364.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 11,
+          "draw": 11,
+          "lost": 5,
+          "points": 44,
+          "goalsFor": 43,
+          "goalsAgainst": 29,
+          "goalDifference": 14
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 1770,
             "name": "Botafogo FR",
             "shortName": "Botafogo",
@@ -105,7 +124,7 @@
           "goalDifference": 14
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 1777,
             "name": "EC Bahia",
@@ -124,25 +143,6 @@
           "goalDifference": 4
         },
         {
-          "position": 6,
-          "team": {
-            "id": 4364,
-            "name": "Mirassol FC",
-            "shortName": "Mirassol",
-            "tla": "MIR",
-            "crest": "https://crests.football-data.org/4364.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 11,
-          "draw": 10,
-          "lost": 5,
-          "points": 43,
-          "goalsFor": 42,
-          "goalsAgainst": 28,
-          "goalDifference": 14
-        },
-        {
           "position": 7,
           "team": {
             "id": 1765,
@@ -151,14 +151,14 @@
             "tla": "FLU",
             "crest": "https://crests.football-data.org/1765.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 11,
-          "draw": 5,
+          "draw": 6,
           "lost": 9,
-          "points": 38,
-          "goalsFor": 33,
-          "goalsAgainst": 31,
+          "points": 39,
+          "goalsFor": 34,
+          "goalsAgainst": 32,
           "goalDifference": 2
         },
         {
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 1766,
+            "name": "CA Mineiro",
+            "shortName": "Mineiro",
+            "tla": "CAM",
+            "crest": "https://crests.football-data.org/1766.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 8,
+          "draw": 8,
+          "lost": 10,
+          "points": 32,
+          "goalsFor": 25,
+          "goalsAgainst": 30,
+          "goalDifference": -5
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 6684,
             "name": "SC Internacional",
             "shortName": "Internacional",
@@ -292,25 +311,6 @@
           "points": 32,
           "goalsFor": 32,
           "goalsAgainst": 38,
-          "goalDifference": -6
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 1766,
-            "name": "CA Mineiro",
-            "shortName": "Mineiro",
-            "tla": "CAM",
-            "crest": "https://crests.football-data.org/1766.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 8,
-          "draw": 8,
-          "lost": 10,
-          "points": 32,
-          "goalsFor": 23,
-          "goalsAgainst": 29,
           "goalDifference": -6
         },
         {
@@ -404,9 +404,9 @@
           "draw": 10,
           "lost": 14,
           "points": 16,
-          "goalsFor": 19,
-          "goalsAgainst": 39,
-          "goalDifference": -20
+          "goalsFor": 20,
+          "goalsAgainst": 41,
+          "goalDifference": -21
         }
       ]
     }
