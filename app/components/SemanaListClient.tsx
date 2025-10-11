@@ -142,6 +142,10 @@ export default function SemanaListClient({
                   const jogosDoGrupo = jogosPorData[data][chave];
                   const jogoExemplo = jogosDoGrupo[0];
                   const nomeExibicao = criarNomeExibicao(jogoExemplo);
+              const ehCorrida = jogoExemplo.campeonato === 'Fórmula 1';
+              const labelSingular = ehCorrida ? 'evento' : 'jogo';
+              const labelPlural = ehCorrida ? 'eventos' : 'jogos';
+              const countLabel = jogosDoGrupo.length === 1 ? labelSingular : labelPlural;
                   return (
                     <div key={chave} className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
                       <button
@@ -151,9 +155,9 @@ export default function SemanaListClient({
                         <div className="flex items-center text-left">
                           <span className="mr-3 text-xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
                           <h3 className="text-lg font-bold text-gray-800">{nomeExibicao}</h3>
-                           <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-                             {jogosDoGrupo.length} {jogosDoGrupo.length === 1 ? 'evento' : 'eventos'}
-                           </span>
+                          <span className="ml-4 bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+                            {jogosDoGrupo.length} {countLabel}
+                          </span>
                         </div>
                         <div className="flex items-center flex-shrink-0 ml-4">
                            <span className="text-sm text-gray-500 mr-2 hidden sm:inline">
