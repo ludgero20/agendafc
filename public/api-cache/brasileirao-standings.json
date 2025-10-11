@@ -37,12 +37,12 @@
             "tla": "PAL",
             "crest": "https://crests.football-data.org/1769.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 17,
-          "draw": 4,
+          "draw": 5,
           "lost": 4,
-          "points": 55,
+          "points": 56,
           "goalsFor": 42,
           "goalsAgainst": 21,
           "goalDifference": 21
@@ -379,12 +379,12 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/4245_large.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 6,
-          "draw": 5,
+          "draw": 6,
           "lost": 15,
-          "points": 23,
+          "points": 24,
           "goalsFor": 21,
           "goalsAgainst": 48,
           "goalDifference": -27
