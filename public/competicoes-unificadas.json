@@ -351,6 +351,17 @@
     },
     {
       "id": 32,
+      "nome": "Eliminatórias Asiáticas",
+      "pais": "Ásia",
+      "tipo": "Eliminatórias",
+      "descricao": "Classificatórias asiáticas para Copa do Mundo",
+      "prioridade": 5,
+      "ordem": 62,
+      "ativo": true,
+      "bandeiraEmoji": "⚽"
+    },
+    {
+      "id": 33,
       "nome": "NFL",
       "pais": "Estados Unidos",
       "slug": "nfl",
@@ -362,7 +373,7 @@
       "bandeiraEmoji": "🏈"
     },
     {
-      "id": 33,
+      "id": 34,
       "nome": "Fórmula 1",
       "slug": "f1",
       "pais": "Mundo",
