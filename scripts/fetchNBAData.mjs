@@ -8,20 +8,28 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
 const API_KEY = process.env.BALLDONTLIE_API_KEY;
 const JOGOS_NBA_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nba/jogos-nba.json');
 
-// Função para buscar os jogos do dia anterior na API
-async function fetchYesterdayGames() {
+// MUDANÇA: A função agora busca em uma janela de 48h (ontem e anteontem)
+async function fetchRecentGames() {
   if (!API_KEY) {
     console.error("ERRO: Chave da API Balldontlie (BALLDONTLIE_API_KEY) não encontrada.");
     return null;
   }
 
-  // Calcula a data de ontem no formato YYYY-MM-DD
-  const yesterday = new Date();
-  yesterday.setDate(yesterday.getDate() - 1);
-  const dateStr = new Intl.DateTimeFormat('en-CA').format(yesterday);
+  // Calcula as datas de ontem e anteontem
+  const today = new Date();
+  const yesterday = new Date(today);
+  yesterday.setDate(today.getDate() - 1);
+  const dayBefore = new Date(today);
+  dayBefore.setDate(today.getDate() - 2);
 
-  console.log(`Buscando jogos da NBA para a data: ${dateStr}`);
-  const url = `https://api.balldontlie.io/v1/games?dates[]=${dateStr}`;
+  const formatter = new Intl.DateTimeFormat('en-CA');
+  const yesterdayStr = formatter.format(yesterday);
+  const dayBeforeStr = formatter.format(dayBefore);
+
+  console.log(`Buscando jogos da NBA para as datas: ${yesterdayStr} e ${dayBeforeStr}`);
+  
+  // A API permite passar múltiplas datas no mesmo parâmetro
+  const url = `https://api.balldontlie.io/v1/games?dates[]=${yesterdayStr}&dates[]=${dayBeforeStr}`;
 
   try {
     const response = await fetch(url, {
@@ -33,8 +41,8 @@ async function fetchYesterdayGames() {
     }
     
     const data = await response.json();
-    console.log(`Encontrados ${data.data.length} jogos.`);
-    return data.data; // A API retorna os jogos dentro de um array 'data'
+    console.log(`Encontrados ${data.data.length} jogos nas últimas 48 horas.`);
+    return data.data;
 
   } catch (error) {
     console.error("Erro ao buscar dados da API Balldontlie:", error.message);
@@ -42,33 +50,35 @@ async function fetchYesterdayGames() {
   }
 }
 
-// Função principal que lê, atualiza e salva o arquivo JSON
 async function main() {
-  const yesterdayGames = await fetchYesterdayGames();
+  // Chama a nova função de busca
+  const recentGames = await fetchRecentGames();
 
-  if (!yesterdayGames || yesterdayGames.length === 0) {
-    console.log("Nenhum jogo encontrado para ontem ou falha na API. Encerrando.");
+  if (!recentGames || recentGames.length === 0) {
+    console.log("Nenhum jogo recente encontrado ou falha na API. Encerrando.");
     return;
   }
 
   try {
-    // Lê o arquivo de jogos existente
     const currentData = await fs.readFile(JOGOS_NBA_PATH, 'utf-8');
     const jogosJson = JSON.parse(currentData);
-
     let updatedCount = 0;
 
-    // Para cada resultado obtido, atualiza o jogo correspondente no nosso arquivo
-    yesterdayGames.forEach(gameResult => {
+    // O resto da lógica continua a mesma, mas agora ela tem mais resultados para comparar
+    recentGames.forEach(gameResult => {
       const homeTeamName = gameResult.home_team.full_name;
       const awayTeamName = gameResult.visitor_team.full_name;
+      const gameDate = gameResult.date.substring(0, 10);
 
       const gameIndex = jogosJson.events.findIndex(
-        localGame => localGame.strHomeTeam === homeTeamName && localGame.strAwayTeam === awayTeamName
+        localGame => 
+          localGame.strHomeTeam === homeTeamName && 
+          localGame.strAwayTeam === awayTeamName &&
+          localGame.dateEvent === gameDate
       );
 
-      if (gameIndex > -1) {
-        console.log(`Atualizando placar para: ${awayTeamName} @ ${homeTeamName}`);
+      if (gameIndex > -1 && jogosJson.events[gameIndex].strStatus !== "Match Finished") {
+        console.log(`Atualizando placar para: ${awayTeamName} @ ${homeTeamName} em ${gameDate}`);
         jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
         jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
         jogosJson.events[gameIndex].strStatus = "Match Finished";
@@ -77,7 +87,6 @@ async function main() {
     });
 
     if (updatedCount > 0) {
-      // Salva o arquivo JSON atualizado
       await fs.writeFile(JOGOS_NBA_PATH, JSON.stringify(jogosJson, null, 2));
       console.log(`Atualização concluída. ${updatedCount} jogos foram atualizados.`);
     } else {
