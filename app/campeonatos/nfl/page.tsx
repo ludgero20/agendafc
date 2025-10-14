@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 // Tipos
 type TimeTabelaNFL = {
     idStanding: string; strTeam: string; strTeamBadge: string; intRank: string;
-    intWin: string; intLoss: string; intTie: string; strConference: string; strDivision: string;
+    intWin: string; intLoss: string; intTie: string; strConference: string; strDivision: string; strPercentage: string;
 };
 type JogoNFL = {
     idEvent: string; intRound: string; dateEvent: string; strTime: string; strHomeTeam: string;
@@ -103,6 +103,7 @@ export default async function NFLPage() {
                             <th className="px-3 py-2 text-center font-semibold text-gray-600">V</th>
                             <th className="px-3 py-2 text-center font-semibold text-gray-600">D</th>
                             <th className="px-3 py-2 text-center font-semibold text-gray-600">E</th>
+                            <th className="px-3 py-2 text-center font-semibold text-gray-600">%</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -115,6 +116,7 @@ export default async function NFLPage() {
                               <td className="px-3 py-2 text-center font-bold">{time.intWin}</td>
                               <td className="px-3 py-2 text-center">{time.intLoss}</td>
                               <td className="px-3 py-2 text-center">{time.intTie}</td>
+                              <td className="px-3 py-2 text-center font-bold">{time.strPercentage}</td>
                             </tr>
                           ))}
                         </tbody>
