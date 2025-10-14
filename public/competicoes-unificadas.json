@@ -64,7 +64,7 @@
       "tipo": "Continental",
       "descricao": "Principal competição de clubes da Europa",
       "prioridade": 2,
-      "ordem": 13,
+      "ordem": 2,
       "ativo": true,
       "bandeiraEmoji": "🇪🇺"
     },
@@ -132,7 +132,7 @@
       "tipo": "Nacional",
       "descricao": "Liga espanhola de futebol",
       "prioridade": 2,
-      "ordem": 22,
+      "ordem": 4,
       "ativo": true,
       "bandeiraEmoji": "🇪🇸"
     },
@@ -382,6 +382,17 @@
       "ordem": 5,
       "ativo": true,
       "bandeiraEmoji": "🏁"
+    },
+    {
+     "id": 35,
+      "nome": "NBA",
+      "slug": "nba",
+      "pais": "Estados Unidos",
+      "tipo": "Basquete",
+      "descricao": "Acompanhe as tabelas de classificação e os jogos da NBA.",
+      "ordem": 7,
+      "ativo": true,
+      "bandeiraEmoji": "🏀"
     }
   ],
   "grupos_prioridade": {
