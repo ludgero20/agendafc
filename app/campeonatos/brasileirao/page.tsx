@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos do Brasileirão Série A | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos do Campeonato Brasileiro Série A. Veja a situação do seu time e a agenda completa da rodada.",
+  description: "Tabela de classificação e os próximos jogos do Campeonato Brasileiro Série A.",
 };
 
 // --- Tipos para os dados da API ---

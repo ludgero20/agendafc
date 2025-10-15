@@ -6,7 +6,7 @@ import DiaNBAClient from '@/app/components/DiaNBAClient'; // Importamos o novo c
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NBA | Classificação e Rodadas | Agenda FC",
-  description: "Acompanhe a classificação completa das conferências Leste e Oeste da NBA, além dos últimos resultados e próximos jogos da temporada.",
+  description: "Tabela de classificação e calendário de jogos e resultados das conferências Leste e Oeste da NBA.",
 };
 
 // --- Tipos para os dados do JSON ---

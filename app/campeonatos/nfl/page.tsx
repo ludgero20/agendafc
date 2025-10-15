@@ -6,7 +6,7 @@ import RodadaNFLClient from '@/app/components/RodadaNFLClient';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NFL | Classificação e Rodadas | Agenda FC",
-  description: "Acompanhe a classificação completa da NFL, dividida por conferências e divisões, e navegue por todas as rodadas da temporada.",
+  description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências.",
 };
 
 // Tipos

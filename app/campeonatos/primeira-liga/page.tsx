@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Primeira Liga | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos da Primeira Liga. Veja a situação do seu time e a agenda completa da rodada do campeonato português.",
+  description: "Tabela de classificação e calendário de jogos da Primeira Liga.",
 };
 
 // --- Tipos para os dados da API ---

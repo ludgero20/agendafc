@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Champions League | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos da UEFA Champions League. Veja a situação do seu time e a agenda completa da rodada.",
+  description: "Tabela de classificação e os próximos jogos da UEFA Champions League.",
 };
 
 // --- Tipos para os dados da API ---

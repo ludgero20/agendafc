@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Ligue 1 | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos da Ligue 1. Veja a situação do seu time e a agenda completa da rodada do campeonato francês.",
+  description: "Tabela de classificação e os próximos jogos da Ligue 1.",
 };
 
 // --- Tipos para os dados da API ---

@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Bundesliga | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos da Bundesliga. Veja a situação do seu time e a agenda completa da rodada do campeonato alemão.",
+  description: "Tabela de classificação e os próximos jogos da Bundesliga.",
 };
 
 // --- Tipos para os dados da API ---

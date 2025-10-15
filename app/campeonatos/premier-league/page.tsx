@@ -4,7 +4,7 @@ import path from 'path';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da Premier League | Agenda FC",
-  description: "Acompanhe a tabela de classificação e os próximos jogos da Premier League. Veja a situação do seu time e a agenda completa da rodada do campeonato inglês.",
+  description: "Tabela de classificação e calendário de jogos da Premier League.",
 };
 
 // --- Tipos para os dados da API ---

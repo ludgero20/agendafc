@@ -6,7 +6,7 @@ import CalendarioF1Client from '@/app/components/CalendarioF1Client'; // Importa
 
 export const metadata: Metadata = {
   title: "Fórmula 1: Classificação e Calendário | Agenda FC",
-  description: "Acompanhe o calendário completo da temporada, a classificação de pilotos e o campeonato de construtores da Fórmula 1.",
+  description: "Calendário de corridas, classificação de pilotos e classificação de construtores da Fórmula 1.",
 };
 
 // --- Tipos para os dados dos seus arquivos JSON ---
