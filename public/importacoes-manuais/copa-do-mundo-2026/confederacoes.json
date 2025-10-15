@@ -1,0 +1,46 @@
+{
+  "confederations": [
+    {
+      "name": "CONMEBOL",
+      "status": "Finalizado",
+      "direct_slots": 6,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 1
+    },
+    {
+      "name": "UEFA",
+      "status": "Em andamento",
+      "direct_slots": 16,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 0
+    },
+    {
+      "name": "CONCACAF",
+      "status": "Em andamento",
+      "direct_slots": 6,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 2
+    },
+    {
+      "name": "AFC",
+      "status": "Em andamento",
+      "direct_slots": 8,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 1
+    },
+    {
+      "name": "CAF",
+      "status": "Em andamento",
+      "direct_slots": 9,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 1
+    },
+    {
+      "name": "OFC",
+      "status": "Em andamento",
+      "direct_slots": 1,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 1
+    }
+  ]
+}
