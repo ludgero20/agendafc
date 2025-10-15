@@ -368,7 +368,7 @@
       "tipo": "Futebol Americano",
       "descricao": "Liga Nacional de Futebol Americano",
       "prioridade": 5,
-      "ordem": 6,
+      "ordem": 5,
       "ativo": true,
       "bandeiraEmoji": "🏈"
     },
@@ -379,7 +379,7 @@
       "pais": "Mundo",
       "tipo": "Automobilismo",
       "descricao": "Classificação de pilotos, equipes e o calendário completo da temporada.",
-      "ordem": 5,
+      "ordem": 6,
       "ativo": true,
       "bandeiraEmoji": "🏁"
     },
