@@ -5395,6 +5395,66 @@
         "fase": null,
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1140,
+        "data": "2025-10-17",
+        "hora": "14h30",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Treino Livre",
+        "evento_descricao": "GP dos Estados Unidos"
+    },
+    {
+        "id": 1141,
+        "data": "2025-10-17",
+        "hora": "18h30",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Classificação Sprint",
+        "evento_descricao": "GP dos Estados Unidos"
+    },
+    {
+        "id": 1142,
+        "data": "2025-10-18",
+        "hora": "14h00",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Corrida Sprint",
+        "evento_descricao": "GP dos Estados Unidos"
+    },
+    {
+        "id": 1143,
+        "data": "2025-10-18",
+        "hora": "18h00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Classificação",
+        "evento_descricao": "GP dos Estados Unidos"
+    },
+    {
+        "id": 1144,
+        "data": "2025-10-19",
+        "hora": "16h00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Corrida",
+        "evento_descricao": "GP dos Estados Unidos"
     }
   ]
 }
