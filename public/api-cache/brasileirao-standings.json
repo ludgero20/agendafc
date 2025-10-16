@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 1776,
+            "name": "São Paulo FC",
+            "shortName": "São Paulo",
+            "tla": "PAU",
+            "crest": "https://crests.football-data.org/1776.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 9,
+          "points": 39,
+          "goalsFor": 31,
+          "goalsAgainst": 28,
+          "goalDifference": 3
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 1765,
             "name": "Fluminense FC",
             "shortName": "Fluminense",
@@ -160,25 +179,6 @@
           "goalsFor": 34,
           "goalsAgainst": 33,
           "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 1776,
-            "name": "São Paulo FC",
-            "shortName": "São Paulo",
-            "tla": "PAU",
-            "crest": "https://crests.football-data.org/1776.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 10,
-          "draw": 8,
-          "lost": 9,
-          "points": 38,
-          "goalsFor": 31,
-          "goalsAgainst": 28,
-          "goalDifference": 3
         },
         {
           "position": 9,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 1767,
+            "name": "Grêmio FBPA",
+            "shortName": "Grêmio",
+            "tla": "FBP",
+            "crest": "https://crests.football-data.org/1767.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 8,
+          "draw": 10,
+          "lost": 10,
+          "points": 34,
+          "goalsFor": 28,
+          "goalsAgainst": 33,
+          "goalDifference": -5
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
             "shortName": "Corinthians",
@@ -254,25 +273,6 @@
           "points": 33,
           "goalsFor": 30,
           "goalsAgainst": 35,
-          "goalDifference": -5
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 1767,
-            "name": "Grêmio FBPA",
-            "shortName": "Grêmio",
-            "tla": "FBP",
-            "crest": "https://crests.football-data.org/1767.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 8,
-          "draw": 9,
-          "lost": 10,
-          "points": 33,
-          "goalsFor": 28,
-          "goalsAgainst": 33,
           "goalDifference": -5
         },
         {
