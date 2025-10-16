@@ -8,6 +8,8 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
 const API_KEY = process.env.BALLDONTLIE_API_KEY;
 const JOGOS_NBA_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nba/jogos-nba.json');
 
+const wait = (ms) => new Promise(res => setTimeout(res, ms));
+
 async function fetchAllSeasonGames() {
   if (!API_KEY) {
     console.error("ERRO: Chave da API Balldontlie (BALLDONTLIE_API_KEY) não encontrada.");
@@ -37,6 +39,7 @@ async function fetchAllSeasonGames() {
       // Verifica se há uma próxima página
       if (data.meta.next_cursor) {
         cursor = data.meta.next_cursor;
+        await wait(7000); // Espera 7 segundos para respeitar o rate limit
       } else {
         hasMore = false;
       }
@@ -53,7 +56,7 @@ async function fetchAllSeasonGames() {
 function transformApiData(apiGames) {
   return apiGames.map(game => {
     // Converte a data UTC da API para o horário de Brasília
-    const gameDateUTC = new Date(game.date);
+    const gameDateUTC = new Date(game.datetime);
     
     // Formata a data e a hora já no fuso correto
     const dateEvent = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(gameDateUTC);
