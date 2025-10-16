@@ -39,7 +39,7 @@ async function fetchAllSeasonGames() {
       // Verifica se há uma próxima página
       if (data.meta.next_cursor) {
         cursor = data.meta.next_cursor;
-        await wait(7000); // Espera 7 segundos para respeitar o rate limit
+        await wait(15000); // Espera 15 segundos para respeitar o rate limit
       } else {
         hasMore = false;
       }
