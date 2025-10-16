@@ -1001,56 +1001,6 @@
       "strStatus": "Not Started"
     },
     {
-      "idEvent": "18446917",
-      "dateEvent": "2025-11-03",
-      "strTime": "22:00:00",
-      "strHomeTeam": "Houston Rockets",
-      "strAwayTeam": "Dallas Mavericks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18446914",
-      "dateEvent": "2025-11-03",
-      "strTime": "21:00:00",
-      "strHomeTeam": "Indiana Pacers",
-      "strAwayTeam": "Milwaukee Bucks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18446915",
-      "dateEvent": "2025-11-03",
-      "strTime": "21:30:00",
-      "strHomeTeam": "Boston Celtics",
-      "strAwayTeam": "Utah Jazz",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18446916",
-      "dateEvent": "2025-11-03",
-      "strTime": "21:30:00",
-      "strHomeTeam": "New York Knicks",
-      "strAwayTeam": "Washington Wizards",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18446913",
-      "dateEvent": "2025-11-03",
-      "strTime": "21:00:00",
-      "strHomeTeam": "Brooklyn Nets",
-      "strAwayTeam": "Minnesota Timberwolves",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
       "idEvent": "18446926",
       "dateEvent": "2025-11-05",
       "strTime": "00:00:00",
@@ -1996,26 +1946,6 @@
       "strTime": "17:30:00",
       "strHomeTeam": "Boston Celtics",
       "strAwayTeam": "LA Clippers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447016",
-      "dateEvent": "2025-11-16",
-      "strTime": "22:00:00",
-      "strHomeTeam": "Phoenix Suns",
-      "strAwayTeam": "Atlanta Hawks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447015",
-      "dateEvent": "2025-11-16",
-      "strTime": "21:30:00",
-      "strHomeTeam": "Dallas Mavericks",
-      "strAwayTeam": "Portland Trail Blazers",
       "intHomeScore": null,
       "intAwayScore": null,
       "strStatus": "Not Started"
@@ -3001,16 +2931,6 @@
       "strStatus": "Not Started"
     },
     {
-      "idEvent": "18447110",
-      "dateEvent": "2025-11-30",
-      "strTime": "17:00:00",
-      "strHomeTeam": "Utah Jazz",
-      "strAwayTeam": "Houston Rockets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
       "idEvent": "18447111",
       "dateEvent": "2025-11-30",
       "strTime": "20:00:00",
@@ -3026,26 +2946,6 @@
       "strTime": "20:00:00",
       "strHomeTeam": "New York Knicks",
       "strAwayTeam": "Toronto Raptors",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447115",
-      "dateEvent": "2025-11-30",
-      "strTime": "21:00:00",
-      "strHomeTeam": "Minnesota Timberwolves",
-      "strAwayTeam": "San Antonio Spurs",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447113",
-      "dateEvent": "2025-11-30",
-      "strTime": "20:00:00",
-      "strHomeTeam": "Philadelphia 76ers",
-      "strAwayTeam": "Atlanta Hawks",
       "intHomeScore": null,
       "intAwayScore": null,
       "strStatus": "Not Started"
@@ -8021,36 +7921,6 @@
       "strStatus": "Not Started"
     },
     {
-      "idEvent": "18447629",
-      "dateEvent": "2026-02-21",
-      "strTime": "19:00:00",
-      "strHomeTeam": "Phoenix Suns",
-      "strAwayTeam": "Orlando Magic",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447634",
-      "dateEvent": "2026-02-21",
-      "strTime": "22:30:00",
-      "strHomeTeam": "New York Knicks",
-      "strAwayTeam": "Houston Rockets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447633",
-      "dateEvent": "2026-02-21",
-      "strTime": "22:00:00",
-      "strHomeTeam": "San Antonio Spurs",
-      "strAwayTeam": "Sacramento Kings",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
       "idEvent": "18447641",
       "dateEvent": "2026-02-22",
       "strTime": "20:30:00",
@@ -8996,36 +8866,6 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Houston Rockets",
       "strAwayTeam": "Portland Trail Blazers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447727",
-      "dateEvent": "2026-03-06",
-      "strTime": "21:00:00",
-      "strHomeTeam": "Charlotte Hornets",
-      "strAwayTeam": "Miami Heat",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447726",
-      "dateEvent": "2026-03-06",
-      "strTime": "21:00:00",
-      "strHomeTeam": "Boston Celtics",
-      "strAwayTeam": "Dallas Mavericks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
-    },
-    {
-      "idEvent": "18447732",
-      "dateEvent": "2026-03-07",
-      "strTime": "00:30:00",
-      "strHomeTeam": "Los Angeles Lakers",
-      "strAwayTeam": "Indiana Pacers",
       "intHomeScore": null,
       "intAwayScore": null,
       "strStatus": "Not Started"

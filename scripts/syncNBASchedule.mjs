@@ -50,7 +50,12 @@ async function fetchAllSeasonGames() {
   }
 
   console.log(`Busca concluída. Total de ${allGames.length} jogos encontrados.`);
-  return allGames;
+  console.log("Filtrando jogos duplicados...");
+  // Usamos um Map para garantir que cada jogo (baseado no seu 'id') seja único
+  const uniqueGames = [...new Map(allGames.map(game => [game.id, game])).values()];
+  
+  console.log(`Total de ${uniqueGames.length} jogos únicos.`);
+  return uniqueGames;
 }
 
 function transformApiData(apiGames) {
