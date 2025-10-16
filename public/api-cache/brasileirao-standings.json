@@ -39,13 +39,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 18,
-          "draw": 5,
+          "won": 19,
+          "draw": 4,
           "lost": 4,
-          "points": 59,
-          "goalsFor": 46,
-          "goalsAgainst": 22,
-          "goalDifference": 24
+          "points": 61,
+          "goalsFor": 51,
+          "goalsAgainst": 23,
+          "goalDifference": 28
         },
         {
           "position": 2,
@@ -56,15 +56,15 @@
             "tla": "FLA",
             "crest": "https://crests.football-data.org/1783.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
-          "won": 16,
+          "won": 17,
           "draw": 7,
           "lost": 3,
-          "points": 55,
-          "goalsFor": 50,
+          "points": 58,
+          "goalsFor": 53,
           "goalsAgainst": 13,
-          "goalDifference": 37
+          "goalDifference": 40
         },
         {
           "position": 3,
@@ -75,12 +75,12 @@
             "tla": "CRU",
             "crest": "https://crests.football-data.org/1771.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 15,
-          "draw": 7,
+          "draw": 8,
           "lost": 5,
-          "points": 52,
+          "points": 53,
           "goalsFor": 40,
           "goalsAgainst": 20,
           "goalDifference": 20
@@ -94,15 +94,15 @@
             "tla": "MIR",
             "crest": "https://crests.football-data.org/4364.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 12,
+          "won": 13,
           "draw": 10,
           "lost": 5,
-          "points": 46,
-          "goalsFor": 44,
-          "goalsAgainst": 29,
-          "goalDifference": 15
+          "points": 49,
+          "goalsFor": 47,
+          "goalsAgainst": 30,
+          "goalDifference": 17
         },
         {
           "position": 5,
@@ -113,15 +113,15 @@
             "tla": "BOT",
             "crest": "https://crests.football-data.org/1770.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 12,
           "draw": 7,
-          "lost": 8,
+          "lost": 9,
           "points": 43,
           "goalsFor": 37,
-          "goalsAgainst": 23,
-          "goalDifference": 14
+          "goalsAgainst": 26,
+          "goalDifference": 11
         },
         {
           "position": 6,
@@ -183,6 +183,25 @@
         {
           "position": 9,
           "team": {
+            "id": 1780,
+            "name": "CR Vasco da Gama",
+            "shortName": "Vasco da Gama",
+            "tla": "VAS",
+            "crest": "https://crests.football-data.org/1780.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 10,
+          "draw": 6,
+          "lost": 12,
+          "points": 36,
+          "goalsFor": 43,
+          "goalsAgainst": 41,
+          "goalDifference": 2
+        },
+        {
+          "position": 10,
+          "team": {
             "id": 4286,
             "name": "RB Bragantino",
             "shortName": "Bragantino",
@@ -192,15 +211,15 @@
           "playedGames": 28,
           "form": null,
           "won": 10,
-          "draw": 7,
-          "lost": 11,
-          "points": 37,
-          "goalsFor": 33,
-          "goalsAgainst": 38,
-          "goalDifference": -5
+          "draw": 6,
+          "lost": 12,
+          "points": 36,
+          "goalsFor": 34,
+          "goalsAgainst": 43,
+          "goalDifference": -9
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 1837,
             "name": "Ceará SC",
@@ -208,34 +227,15 @@
             "tla": "CSC",
             "crest": "https://crests.football-data.org/1837.png"
           },
-          "playedGames": 26,
-          "form": null,
-          "won": 9,
-          "draw": 7,
-          "lost": 10,
-          "points": 34,
-          "goalsFor": 26,
-          "goalsAgainst": 24,
-          "goalDifference": 2
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 1780,
-            "name": "CR Vasco da Gama",
-            "shortName": "Vasco da Gama",
-            "tla": "VAS",
-            "crest": "https://crests.football-data.org/1780.png"
-          },
           "playedGames": 27,
           "form": null,
           "won": 9,
-          "draw": 6,
-          "lost": 12,
-          "points": 33,
-          "goalsFor": 42,
-          "goalsAgainst": 41,
-          "goalDifference": 1
+          "draw": 8,
+          "lost": 10,
+          "points": 35,
+          "goalsFor": 27,
+          "goalsAgainst": 25,
+          "goalDifference": 2
         },
         {
           "position": 12,
@@ -246,15 +246,15 @@
             "tla": "COR",
             "crest": "https://crests.football-data.org/1779.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 8,
           "draw": 9,
-          "lost": 10,
+          "lost": 11,
           "points": 33,
           "goalsFor": 29,
-          "goalsAgainst": 32,
-          "goalDifference": -3
+          "goalsAgainst": 34,
+          "goalDifference": -5
         },
         {
           "position": 13,
@@ -284,12 +284,12 @@
             "tla": "CAM",
             "crest": "https://crests.football-data.org/1766.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 8,
-          "draw": 8,
+          "draw": 9,
           "lost": 10,
-          "points": 32,
+          "points": 33,
           "goalsFor": 25,
           "goalsAgainst": 30,
           "goalDifference": -5
@@ -303,15 +303,15 @@
             "tla": "SCI",
             "crest": "https://crests.football-data.org/6684.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 8,
           "draw": 8,
-          "lost": 10,
+          "lost": 11,
           "points": 32,
-          "goalsFor": 32,
-          "goalsAgainst": 38,
-          "goalDifference": -6
+          "goalsFor": 33,
+          "goalsAgainst": 41,
+          "goalDifference": -8
         },
         {
           "position": 16,
@@ -322,15 +322,15 @@
             "tla": "SAN",
             "crest": "https://crests.football-data.org/6685.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 7,
           "lost": 12,
-          "points": 28,
-          "goalsFor": 25,
+          "points": 31,
+          "goalsFor": 27,
           "goalsAgainst": 38,
-          "goalDifference": -13
+          "goalDifference": -11
         },
         {
           "position": 17,
@@ -360,15 +360,15 @@
             "tla": "FEC",
             "crest": "https://crests.football-data.org/3984.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 6,
           "draw": 6,
-          "lost": 14,
+          "lost": 15,
           "points": 24,
           "goalsFor": 26,
-          "goalsAgainst": 41,
-          "goalDifference": -15
+          "goalsAgainst": 42,
+          "goalDifference": -16
         },
         {
           "position": 19,
@@ -398,14 +398,14 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 2,
-          "draw": 10,
+          "draw": 11,
           "lost": 14,
-          "points": 16,
-          "goalsFor": 20,
-          "goalsAgainst": 41,
+          "points": 17,
+          "goalsFor": 21,
+          "goalsAgainst": 42,
           "goalDifference": -21
         }
       ]
