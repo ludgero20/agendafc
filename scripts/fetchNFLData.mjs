@@ -82,7 +82,7 @@ async function main() {
     let gamesUpdated = 0;
 
     recentGames.forEach(gameResult => {
-      if (gameResult.status !== 'Final') return;
+      if (!gameResult.status.startsWith('Final')) return;
 
       const apiHomeTeam = gameResult.home_team.full_name;
       const apiAwayTeam = gameResult.visitor_team.full_name;
