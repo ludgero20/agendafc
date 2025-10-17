@@ -59,8 +59,8 @@ function transformApiData(apiGames) {
       strTime: strTime,
       strHomeTeam: game.home_team.full_name,
       strAwayTeam: game.visitor_team.full_name,
-      intHomeScore: isFinished && game.home_team_score > 0 ? game.home_team_score.toString() : null,
-      intAwayScore: isFinished && game.visitor_team_score > 0 ? game.visitor_team_score.toString() : null,
+      intHomeScore: isFinished && game.home_team_score != null ? game.home_team_score.toString() : null,
+      intAwayScore: isFinished && game.visitor_team_score != null ? game.visitor_team_score.toString() : null,
       strStatus: isFinished ? "Match Finished" : "Not Started"
     };
   });

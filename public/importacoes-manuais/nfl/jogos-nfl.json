@@ -229,7 +229,7 @@
       "strAwayTeam": "New York Giants",
       "intHomeScore": "40",
       "intAwayScore": "37",
-      "strStatus": "Not Started"
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "423962",
@@ -437,7 +437,7 @@
       "strHomeTeam": "Carolina Panthers",
       "strAwayTeam": "Atlanta Falcons",
       "intHomeScore": "30",
-      "intAwayScore": null,
+      "intAwayScore": "0",
       "strStatus": "Match Finished"
     },
     {
@@ -591,7 +591,7 @@
       "strHomeTeam": "Houston Texans",
       "strAwayTeam": "Tennessee Titans",
       "intHomeScore": "26",
-      "intAwayScore": null,
+      "intAwayScore": "0",
       "strStatus": "Match Finished"
     },
     {
@@ -680,7 +680,7 @@
       "strAwayTeam": "Green Bay Packers",
       "intHomeScore": "40",
       "intAwayScore": "40",
-      "strStatus": "Not Started"
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424007",
@@ -713,7 +713,7 @@
       "strAwayTeam": "San Francisco 49ers",
       "intHomeScore": "23",
       "intAwayScore": "26",
-      "strStatus": "Not Started"
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424010",
