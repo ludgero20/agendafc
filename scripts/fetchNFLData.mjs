@@ -15,6 +15,7 @@ async function fetchRecentNFLGames() {
     return null;
   }
 
+  // Calcula as datas de hoje, ontem e anteontem
   const today = new Date();
   const yesterday = new Date(today);
   yesterday.setDate(today.getDate() - 1);
@@ -22,13 +23,14 @@ async function fetchRecentNFLGames() {
   dayBefore.setDate(today.getDate() - 2);
 
   const formatter = new Intl.DateTimeFormat('en-CA');
+  const todayStr = formatter.format(today);
   const yesterdayStr = formatter.format(yesterday);
   const dayBeforeStr = formatter.format(dayBefore);
-  
-  console.log(`Buscando jogos da NFL para as datas: ${yesterdayStr} e ${dayBeforeStr}`);
+
+  console.log(`Buscando jogos da NFL para as datas: ${todayStr}, ${yesterdayStr} e ${dayBeforeStr}`);
   
   // URL correta para o endpoint da NFL
-  const url = `https://api.balldontlie.io/nfl/v1/games?dates[]=${yesterdayStr}&dates[]=${dayBeforeStr}`;
+  const url = `https://api.balldontlie.io/nfl/v1/games?dates[]=${todayStr}&dates[]=${yesterdayStr}&dates[]=${dayBeforeStr}`;
 
   try {
     const response = await fetch(url, { headers: { 'Authorization': API_KEY } });
@@ -36,8 +38,7 @@ async function fetchRecentNFLGames() {
       throw new Error(`Falha na requisição de jogos da NFL: ${response.status}`);
     }
     const data = await response.json();
-    console.log("🔍 Dados brutos recebidos da API:", JSON.stringify(data, null, 2));
-    console.log(`Encontrados ${data.data.length} jogos da NFL nas últimas 48 horas.`);
+    console.log(`Encontrados ${data.data.length} jogos nas últimas 72 horas.`);
     return data.data;
   } catch (error) {
     console.error("Erro ao buscar dados da API Balldontlie:", error.message);
