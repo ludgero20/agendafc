@@ -90,7 +90,6 @@ async function main() {
       // AJUSTE FINAL: Lógica de correspondência flexível e correta
       const gameIndex = jogosJson.events.findIndex(localGame => {
         const localTeams = new Set([localGame.strHomeTeam, localGame.strAwayTeam]);
-        const apiTeams = new Set([apiHomeTeam, apiAwayTeam]);
 
         // Retorna verdadeiro se os times são os mesmos E o jogo ainda não foi finalizado
         return localTeams.has(apiHomeTeam) && 
