@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 3,
+          "draw": 4,
+          "lost": 2,
+          "points": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 11,
+          "goalDifference": 0
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 77,
             "name": "Athletic Club",
             "shortName": "Athletic",
@@ -178,25 +197,6 @@
           "points": 13,
           "goalsFor": 9,
           "goalsAgainst": 9,
-          "goalDifference": 0
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 2,
-          "points": 12,
-          "goalsFor": 11,
-          "goalsAgainst": 11,
           "goalDifference": 0
         },
         {
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 1048,
+            "name": "Real Oviedo",
+            "shortName": "Real Oviedo",
+            "tla": "OVI",
+            "crest": "https://crests.football-data.org/1048.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 6,
+          "points": 7,
+          "goalsFor": 4,
+          "goalsAgainst": 14,
+          "goalDifference": -10
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
             "shortName": "Celta",
@@ -331,25 +350,6 @@
           "goalsFor": 7,
           "goalsAgainst": 10,
           "goalDifference": -3
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 1048,
-            "name": "Real Oviedo",
-            "shortName": "Real Oviedo",
-            "tla": "OVI",
-            "crest": "https://crests.football-data.org/1048.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 6,
-          "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 14,
-          "goalDifference": -10
         },
         {
           "position": 18,

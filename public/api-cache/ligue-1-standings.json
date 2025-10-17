@@ -31,24 +31,43 @@
         {
           "position": 1,
           "team": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 6,
+          "draw": 0,
+          "lost": 2,
+          "points": 18,
+          "goalsFor": 17,
+          "goalsAgainst": 8,
+          "goalDifference": 9
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
             "shortName": "PSG",
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 5,
           "draw": 1,
-          "lost": 1,
+          "lost": 2,
           "points": 16,
-          "goalsFor": 13,
-          "goalsAgainst": 5,
-          "goalDifference": 8
+          "goalsFor": 14,
+          "goalsAgainst": 8,
+          "goalDifference": 6
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 516,
             "name": "Olympique de Marseille",
@@ -65,25 +84,6 @@
           "goalsFor": 15,
           "goalsAgainst": 5,
           "goalDifference": 10
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 5,
-          "draw": 0,
-          "lost": 2,
-          "points": 15,
-          "goalsFor": 14,
-          "goalsAgainst": 7,
-          "goalDifference": 7
         },
         {
           "position": 4,
