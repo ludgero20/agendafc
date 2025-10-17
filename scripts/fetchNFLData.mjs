@@ -38,6 +38,7 @@ async function fetchRecentNFLGames() {
       throw new Error(`Falha na requisição de jogos da NFL: ${response.status}`);
     }
     const data = await response.json();
+    console.log("🔍 Dados brutos recebidos da API:", JSON.stringify(data, null, 2));
     console.log(`Encontrados ${data.data.length} jogos nas últimas 72 horas.`);
     return data.data;
   } catch (error) {
