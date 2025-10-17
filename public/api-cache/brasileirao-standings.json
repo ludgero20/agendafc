@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 1777,
-            "name": "EC Bahia",
-            "shortName": "Bahia",
-            "tla": "BAH",
-            "crest": "https://crests.football-data.org/1777.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 12,
-          "draw": 8,
-          "lost": 7,
-          "points": 44,
-          "goalsFor": 35,
-          "goalsAgainst": 31,
-          "goalDifference": 4
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 1770,
             "name": "Botafogo FR",
             "shortName": "Botafogo",
@@ -143,6 +124,25 @@
           "goalDifference": 11
         },
         {
+          "position": 6,
+          "team": {
+            "id": 1777,
+            "name": "EC Bahia",
+            "shortName": "Bahia",
+            "tla": "BAH",
+            "crest": "https://crests.football-data.org/1777.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 12,
+          "draw": 7,
+          "lost": 8,
+          "points": 43,
+          "goalsFor": 35,
+          "goalsAgainst": 32,
+          "goalDifference": 3
+        },
+        {
           "position": 7,
           "team": {
             "id": 1765,
@@ -153,13 +153,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 11,
-          "draw": 6,
+          "won": 12,
+          "draw": 5,
           "lost": 10,
-          "points": 39,
-          "goalsFor": 34,
+          "points": 41,
+          "goalsFor": 35,
           "goalsAgainst": 33,
-          "goalDifference": 1
+          "goalDifference": 2
         },
         {
           "position": 8,
@@ -343,13 +343,13 @@
           },
           "playedGames": 28,
           "form": null,
-          "won": 5,
-          "draw": 11,
+          "won": 6,
+          "draw": 10,
           "lost": 12,
-          "points": 26,
-          "goalsFor": 25,
+          "points": 28,
+          "goalsFor": 26,
           "goalsAgainst": 43,
-          "goalDifference": -18
+          "goalDifference": -17
         },
         {
           "position": 18,
@@ -382,12 +382,12 @@
           "playedGames": 28,
           "form": null,
           "won": 6,
-          "draw": 6,
-          "lost": 16,
-          "points": 24,
+          "draw": 5,
+          "lost": 17,
+          "points": 23,
           "goalsFor": 22,
-          "goalsAgainst": 52,
-          "goalDifference": -30
+          "goalsAgainst": 53,
+          "goalDifference": -31
         },
         {
           "position": 20,
