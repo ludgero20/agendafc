@@ -31,25 +31,6 @@
         {
           "position": 1,
           "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 6,
-          "draw": 0,
-          "lost": 2,
-          "points": 18,
-          "goalsFor": 17,
-          "goalsAgainst": 8,
-          "goalDifference": 9
-        },
-        {
-          "position": 2,
-          "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
             "shortName": "PSG",
@@ -59,12 +40,31 @@
           "playedGames": 8,
           "form": null,
           "won": 5,
+          "draw": 2,
+          "lost": 1,
+          "points": 17,
+          "goalsFor": 16,
+          "goalsAgainst": 8,
+          "goalDifference": 8
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 5,
           "draw": 1,
           "lost": 2,
           "points": 16,
-          "goalsFor": 14,
-          "goalsAgainst": 8,
-          "goalDifference": 6
+          "goalsFor": 17,
+          "goalsAgainst": 10,
+          "goalDifference": 7
         },
         {
           "position": 3,
