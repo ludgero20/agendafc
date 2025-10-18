@@ -1734,9 +1734,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Pittsburgh Steelers",
       "strAwayTeam": "Cincinnati Bengals",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "33",
+      "intAwayScore": "31",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424103",
