@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 58466,
+          "name": "Florian Exner",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57539,
+          "name": "Tobias Welz",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57518,
+          "name": "Florian Badstübner",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 337,
+          "name": "Patrick Ittrich",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -312,7 +340,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57527,
+          "name": "Timo Gerach",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
