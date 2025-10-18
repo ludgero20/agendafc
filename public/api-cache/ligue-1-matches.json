@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 241,
-    "first": "2025-10-17",
+    "count": 240,
+    "first": "2025-10-18",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/FL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 8,
-        "winner": null
-      },
-      "id": 542474,
-      "utcDate": "2025-10-17T18:45:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-15T01:32:01Z",
-      "homeTeam": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
-      },
-      "awayTeam": {
-        "id": 576,
-        "name": "RC Strasbourg Alsace",
-        "shortName": "Strasbourg",
-        "tla": "RC ",
-        "crest": "https://crests.football-data.org/576.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 9374,
-          "name": "Clément Turpin",
-          "type": "REFEREE",
-          "nationality": "France"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2081,
@@ -230,7 +164,7 @@
       "matchday": 8,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-15T01:32:03Z",
+      "lastUpdated": "2025-10-18T01:32:02Z",
       "homeTeam": {
         "id": 516,
         "name": "Olympique de Marseille",
@@ -584,7 +518,7 @@
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-09T15:21:09Z",
+      "lastUpdated": "2025-10-18T01:32:06Z",
       "homeTeam": {
         "id": 1045,
         "name": "Paris FC",
