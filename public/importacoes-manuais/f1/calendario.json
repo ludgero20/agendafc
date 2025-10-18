@@ -346,9 +346,9 @@
       "status": "Finalizado",
       "results": {
         "pole": "O. Piastri",
-        "p1": "O. Piastri",
-        "p2": "M. Verstappen",
-        "p3": "G. Russell"
+        "p1": "M. Verstappen",
+        "p2": "G. Russell",
+        "p3": "C. Sainz Jr."
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-09-19", "hora": "05:30", "transmissao": ["BandSports"] },
@@ -385,7 +385,7 @@
         "pole": "", "p1": "", "p2": "", "p3": ""
       },
       "sprintResults": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "M. Verstappen", "p1": "M. Verstappen", "p2": "G. Russell", "p3": "C. Sainz Jr."
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-10-17", "hora": "15:30", "transmissao": ["BandSports"] },
