@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL",
+            "crest": "https://crests.football-data.org/78.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 16,
+          "goalsAgainst": 10,
+          "goalDifference": 6
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 90,
             "name": "Real Betis Balompié",
             "shortName": "Real Betis",
@@ -105,7 +124,7 @@
           "goalDifference": 5
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -122,25 +141,6 @@
           "goalsFor": 13,
           "goalsAgainst": 11,
           "goalDifference": 2
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 78,
-            "name": "Club Atlético de Madrid",
-            "shortName": "Atleti",
-            "tla": "ATL",
-            "crest": "https://crests.football-data.org/78.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 1,
-          "points": 14,
-          "goalsFor": 15,
-          "goalsAgainst": 10,
-          "goalDifference": 5
         },
         {
           "position": 7,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 79,
-            "name": "CA Osasuna",
-            "shortName": "Osasuna",
-            "tla": "OSA",
-            "crest": "https://crests.football-data.org/79.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 4,
-          "points": 11,
-          "goalsFor": 7,
-          "goalsAgainst": 8,
-          "goalDifference": -1
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 82,
             "name": "Getafe CF",
             "shortName": "Getafe",
@@ -254,6 +235,25 @@
           "points": 11,
           "goalsFor": 9,
           "goalsAgainst": 11,
+          "goalDifference": -2
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 79,
+            "name": "CA Osasuna",
+            "shortName": "Osasuna",
+            "tla": "OSA",
+            "crest": "https://crests.football-data.org/79.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 5,
+          "points": 10,
+          "goalsFor": 7,
+          "goalsAgainst": 9,
           "goalDifference": -2
         },
         {
