@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 299,
+    "count": 297,
     "first": "2025-10-18",
     "last": "2026-05-24",
     "played": 0
@@ -19,138 +19,6 @@
     "emblem": "https://crests.football-data.org/laliga.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 9,
-        "winner": null
-      },
-      "id": 544300,
-      "utcDate": "2025-10-18T12:00:00Z",
-      "status": "TIMED",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-18T01:32:00Z",
-      "homeTeam": {
-        "id": 559,
-        "name": "Sevilla FC",
-        "shortName": "Sevilla FC",
-        "tla": "SEV",
-        "crest": "https://crests.football-data.org/559.png"
-      },
-      "awayTeam": {
-        "id": 89,
-        "name": "RCD Mallorca",
-        "shortName": "Mallorca",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/89.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 56995,
-          "name": "Víctor García Verdura",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 9,
-        "winner": null
-      },
-      "id": 544293,
-      "utcDate": "2025-10-18T14:15:00Z",
-      "status": "TIMED",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-18T01:32:01Z",
-      "homeTeam": {
-        "id": 81,
-        "name": "FC Barcelona",
-        "shortName": "Barça",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/81.png"
-      },
-      "awayTeam": {
-        "id": 298,
-        "name": "Girona FC",
-        "shortName": "Girona",
-        "tla": "GIR",
-        "crest": "https://crests.football-data.org/298.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 206211,
-          "name": "Jesús Gil Manzano",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2224,
@@ -208,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 214213,
+          "name": "Francisco Hernández Maeso",
+          "type": "REFEREE",
+          "nationality": "Spain"
+        }
+      ]
     },
     {
       "area": {

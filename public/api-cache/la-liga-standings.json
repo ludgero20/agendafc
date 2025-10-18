@@ -56,14 +56,14 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 6,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "points": 19,
-          "goalsFor": 22,
-          "goalsAgainst": 9,
+          "points": 20,
+          "goalsFor": 23,
+          "goalsAgainst": 10,
           "goalDifference": 13
         },
         {
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 298,
+            "name": "Girona FC",
+            "shortName": "Girona",
+            "tla": "GIR",
+            "crest": "https://crests.football-data.org/298.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 1,
+          "draw": 4,
+          "lost": 4,
+          "points": 7,
+          "goalsFor": 6,
+          "goalsAgainst": 18,
+          "goalDifference": -12
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
             "shortName": "Celta",
@@ -350,25 +369,6 @@
           "goalsFor": 7,
           "goalsAgainst": 10,
           "goalDifference": -3
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 298,
-            "name": "Girona FC",
-            "shortName": "Girona",
-            "tla": "GIR",
-            "crest": "https://crests.football-data.org/298.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 4,
-          "points": 6,
-          "goalsFor": 5,
-          "goalsAgainst": 17,
-          "goalDifference": -12
         },
         {
           "position": 19,
