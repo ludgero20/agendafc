@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 57,
+            "name": "Arsenal FC",
+            "shortName": "Arsenal",
+            "tla": "ARS",
+            "crest": "https://crests.football-data.org/57.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 6,
+          "draw": 1,
+          "lost": 1,
+          "points": 19,
+          "goalsFor": 15,
+          "goalsAgainst": 3,
+          "goalDifference": 12
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -45,25 +64,6 @@
           "points": 16,
           "goalsFor": 17,
           "goalsAgainst": 6,
-          "goalDifference": 11
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 57,
-            "name": "Arsenal FC",
-            "shortName": "Arsenal",
-            "tla": "ARS",
-            "crest": "https://crests.football-data.org/57.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 5,
-          "draw": 1,
-          "lost": 1,
-          "points": 16,
-          "goalsFor": 14,
-          "goalsAgainst": 3,
           "goalDifference": 11
         },
         {
@@ -284,15 +284,15 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "points": 8,
           "goalsFor": 8,
-          "goalsAgainst": 11,
-          "goalDifference": -3
+          "goalsAgainst": 12,
+          "goalDifference": -4
         },
         {
           "position": 15,

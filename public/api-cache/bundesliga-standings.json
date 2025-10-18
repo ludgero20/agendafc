@@ -37,15 +37,15 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
-          "won": 6,
+          "won": 7,
           "draw": 0,
           "lost": 0,
-          "points": 18,
-          "goalsFor": 25,
-          "goalsAgainst": 3,
-          "goalDifference": 22
+          "points": 21,
+          "goalsFor": 27,
+          "goalsAgainst": 4,
+          "goalDifference": 23
         },
         {
           "position": 2,
@@ -94,15 +94,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 4,
           "draw": 2,
-          "lost": 0,
+          "lost": 1,
           "points": 14,
-          "goalsFor": 12,
-          "goalsAgainst": 4,
-          "goalDifference": 8
+          "goalsFor": 13,
+          "goalsAgainst": 6,
+          "goalDifference": 7
         },
         {
           "position": 5,
