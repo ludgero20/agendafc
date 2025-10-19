@@ -75,15 +75,15 @@
             "tla": "CRU",
             "crest": "https://crests.football-data.org/1771.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 15,
+          "won": 16,
           "draw": 8,
           "lost": 5,
-          "points": 53,
-          "goalsFor": 41,
+          "points": 56,
+          "goalsFor": 42,
           "goalsAgainst": 21,
-          "goalDifference": 20
+          "goalDifference": 21
         },
         {
           "position": 4,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 1779,
+            "name": "SC Corinthians Paulista",
+            "shortName": "Corinthians",
+            "tla": "COR",
+            "crest": "https://crests.football-data.org/1779.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 11,
+          "points": 36,
+          "goalsFor": 31,
+          "goalsAgainst": 35,
+          "goalDifference": -4
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 1837,
             "name": "Ceará SC",
             "shortName": "Ceará",
@@ -257,25 +276,6 @@
           "goalDifference": 2
         },
         {
-          "position": 13,
-          "team": {
-            "id": 1779,
-            "name": "SC Corinthians Paulista",
-            "shortName": "Corinthians",
-            "tla": "COR",
-            "crest": "https://crests.football-data.org/1779.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 8,
-          "draw": 10,
-          "lost": 11,
-          "points": 34,
-          "goalsFor": 30,
-          "goalsAgainst": 35,
-          "goalDifference": -5
-        },
-        {
           "position": 14,
           "team": {
             "id": 1766,
@@ -287,12 +287,12 @@
           "playedGames": 28,
           "form": null,
           "won": 8,
-          "draw": 10,
-          "lost": 10,
-          "points": 34,
+          "draw": 9,
+          "lost": 11,
+          "points": 33,
           "goalsFor": 26,
-          "goalsAgainst": 31,
-          "goalDifference": -5
+          "goalsAgainst": 32,
+          "goalDifference": -6
         },
         {
           "position": 15,
@@ -360,15 +360,15 @@
             "tla": "FEC",
             "crest": "https://crests.football-data.org/3984.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 6,
           "draw": 6,
-          "lost": 15,
+          "lost": 16,
           "points": 24,
           "goalsFor": 26,
-          "goalsAgainst": 43,
-          "goalDifference": -17
+          "goalsAgainst": 44,
+          "goalDifference": -18
         },
         {
           "position": 19,
