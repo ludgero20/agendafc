@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 3,
+          "points": 10,
+          "goalsFor": 18,
+          "goalsAgainst": 17,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 28,
             "name": "1. FC Union Berlin",
             "shortName": "Union Berlin",
@@ -162,25 +181,6 @@
           "goalDifference": -3
         },
         {
-          "position": 8,
-          "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 3,
-          "draw": 0,
-          "lost": 3,
-          "points": 9,
-          "goalsFor": 17,
-          "goalsAgainst": 16,
-          "goalDifference": 1
-        },
-        {
           "position": 9,
           "team": {
             "id": 17,
@@ -189,14 +189,14 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 2,
+          "draw": 3,
           "lost": 2,
-          "points": 8,
-          "goalsFor": 9,
-          "goalsAgainst": 9,
+          "points": 9,
+          "goalsFor": 10,
+          "goalsAgainst": 10,
           "goalDifference": 0
         },
         {

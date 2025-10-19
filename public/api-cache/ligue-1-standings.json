@@ -132,14 +132,14 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 4,
-          "draw": 1,
+          "draw": 2,
           "lost": 2,
-          "points": 13,
-          "goalsFor": 10,
-          "goalsAgainst": 6,
+          "points": 14,
+          "goalsFor": 11,
+          "goalsAgainst": 7,
           "goalDifference": 4
         },
         {
@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 1045,
+            "name": "Paris FC",
+            "shortName": "Paris FC",
+            "tla": "PFC",
+            "crest": "https://crests.football-data.org/1045.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 3,
+          "points": 11,
+          "goalsFor": 13,
+          "goalsAgainst": 14,
+          "goalDifference": -1
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 522,
             "name": "OGC Nice",
             "shortName": "Nice",
@@ -179,25 +198,6 @@
           "goalsFor": 12,
           "goalsAgainst": 14,
           "goalDifference": -2
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 1045,
-            "name": "Paris FC",
-            "shortName": "Paris FC",
-            "tla": "PFC",
-            "crest": "https://crests.football-data.org/1045.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 3,
-          "points": 10,
-          "goalsFor": 12,
-          "goalsAgainst": 13,
-          "goalDifference": -1
         },
         {
           "position": 10,
