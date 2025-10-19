@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL",
+            "crest": "https://crests.football-data.org/521.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 4,
+          "draw": 2,
+          "lost": 2,
+          "points": 14,
+          "goalsFor": 15,
+          "goalsAgainst": 10,
+          "goalDifference": 5
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -143,7 +162,7 @@
           "goalDifference": 4
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 511,
             "name": "Toulouse FC",
@@ -160,25 +179,6 @@
           "goalsFor": 15,
           "goalsAgainst": 12,
           "goalDifference": 3
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 521,
-            "name": "Lille OSC",
-            "shortName": "Lille",
-            "tla": "LIL",
-            "crest": "https://crests.football-data.org/521.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 2,
-          "points": 11,
-          "goalsFor": 14,
-          "goalsAgainst": 10,
-          "goalDifference": 4
         },
         {
           "position": 9,
@@ -303,15 +303,15 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 1,
           "draw": 3,
-          "lost": 3,
+          "lost": 4,
           "points": 6,
           "goalsFor": 5,
-          "goalsAgainst": 7,
-          "goalDifference": -2
+          "goalsAgainst": 8,
+          "goalDifference": -3
         },
         {
           "position": 16,
