@@ -380,7 +380,7 @@
       "raceName": "GP dos Estados Unidos",
       "circuitName": "Circuit of the Americas",
       "country": "🇺🇸",
-      "status": "Próxima Corrida",
+      "status": "Finalizado",
       "results": {
         "pole": "M. Verstappen", "p1": "M. Verstappen", "p2": "L. Norris", "p3": "C. Leclerc"
       },
@@ -400,7 +400,7 @@
       "raceName": "GP do México",
       "circuitName": "Autódromo Hermanos Rodríguez",
       "country": "🇲🇽",
-      "status": "Agendado",
+      "status": "Próxima Corrida",
       "results": {
         "pole": "", "p1": "", "p2": "", "p3": ""
       },
