@@ -4,15 +4,15 @@
       "position": 1,
       "name": "McLaren",
       "logoUrl": "",
-      "points": 650,
+      "points": 678,
       "wins": 12,
-      "podiums": 28
+      "podiums": 29
     },
     {
       "position": 2,
       "name": "Mercedes",
       "logoUrl": "",
-      "points": 325,
+      "points": 341,
       "wins": 2,
       "podiums": 9
     },
@@ -20,23 +20,23 @@
       "position": 3,
       "name": "Ferrari",
       "logoUrl": "",
-      "points": 300,
+      "points": 334,
       "wins": 0,
-      "podiums": 5
+      "podiums": 6
     },
     {
       "position": 4,
       "name": "Red Bull",
       "logoUrl": "",
-      "points": 290,
-      "wins": 4,
-      "podiums": 9
+      "points": 331,
+      "wins": 5,
+      "podiums": 10
     },
     {
       "position": 5,
       "name": "Williams",
       "logoUrl": "",
-      "points": 102,
+      "points": 111,
       "wins": 0,
       "podiums": 1
     },
@@ -52,7 +52,7 @@
       "position": 7,
       "name": "Aston Martin Aramco-Mercedes",
       "logoUrl": "",
-      "points": 66,
+      "points": 69,
       "wins": 0,
       "podiums": 0
     },
@@ -60,7 +60,7 @@
       "position": 8,
       "name": "Sauber",
       "logoUrl": "",
-      "points": 55,
+      "points": 59,
       "wins": 0,
       "podiums": 1
     },
@@ -68,7 +68,7 @@
       "position": 9,
       "name": "Haas",
       "logoUrl": "",
-      "points": 46,
+      "points": 48,
       "wins": 0,
       "podiums": 0
     },
