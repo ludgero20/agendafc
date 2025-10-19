@@ -86,7 +86,7 @@
           "goalDifference": 3
         },
         {
-          "position": 4,
+          "position": 3,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -100,8 +100,8 @@
           "draw": 0,
           "lost": 3,
           "points": 15,
-          "goalsFor": 13,
-          "goalsAgainst": 10,
+          "goalsFor": 14,
+          "goalsAgainst": 11,
           "goalDifference": 3
         },
         {
@@ -195,8 +195,8 @@
           "draw": 1,
           "lost": 3,
           "points": 13,
-          "goalsFor": 10,
-          "goalsAgainst": 11,
+          "goalsFor": 11,
+          "goalsAgainst": 12,
           "goalDifference": -1
         },
         {
