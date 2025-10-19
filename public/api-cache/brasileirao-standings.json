@@ -43,9 +43,9 @@
           "draw": 4,
           "lost": 5,
           "points": 61,
-          "goalsFor": 52,
+          "goalsFor": 53,
           "goalsAgainst": 26,
-          "goalDifference": 26
+          "goalDifference": 27
         },
         {
           "position": 2,
@@ -63,8 +63,8 @@
           "lost": 3,
           "points": 61,
           "goalsFor": 56,
-          "goalsAgainst": 14,
-          "goalDifference": 42
+          "goalsAgainst": 15,
+          "goalDifference": 41
         },
         {
           "position": 3,
@@ -94,15 +94,15 @@
             "tla": "MIR",
             "crest": "https://crests.football-data.org/4364.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 13,
+          "won": 14,
           "draw": 10,
           "lost": 5,
-          "points": 49,
-          "goalsFor": 47,
+          "points": 52,
+          "goalsFor": 48,
           "goalsAgainst": 30,
-          "goalDifference": 17
+          "goalDifference": 18
         },
         {
           "position": 5,
@@ -113,12 +113,12 @@
             "tla": "BOT",
             "crest": "https://crests.football-data.org/1770.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 12,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 43,
+          "points": 44,
           "goalsFor": 37,
           "goalsAgainst": 26,
           "goalDifference": 11
@@ -170,15 +170,15 @@
             "tla": "PAU",
             "crest": "https://crests.football-data.org/1776.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 10,
           "draw": 8,
-          "lost": 10,
+          "lost": 11,
           "points": 38,
           "goalsFor": 31,
-          "goalsAgainst": 30,
-          "goalDifference": 1
+          "goalsAgainst": 31,
+          "goalDifference": 0
         },
         {
           "position": 9,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 10,
+          "points": 36,
+          "goalsFor": 27,
+          "goalsAgainst": 25,
+          "goalDifference": 2
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -238,7 +257,7 @@
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
@@ -257,26 +276,26 @@
           "goalDifference": -4
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
+            "id": 6684,
+            "name": "SC Internacional",
+            "shortName": "Internacional",
+            "tla": "SCI",
+            "crest": "https://crests.football-data.org/6684.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 9,
           "draw": 8,
-          "lost": 10,
+          "lost": 11,
           "points": 35,
-          "goalsFor": 27,
-          "goalsAgainst": 25,
-          "goalDifference": 2
+          "goalsFor": 34,
+          "goalsAgainst": 41,
+          "goalDifference": -7
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 1766,
             "name": "CA Mineiro",
@@ -293,25 +312,6 @@
           "goalsFor": 26,
           "goalsAgainst": 32,
           "goalDifference": -6
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 6684,
-            "name": "SC Internacional",
-            "shortName": "Internacional",
-            "tla": "SCI",
-            "crest": "https://crests.football-data.org/6684.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 8,
-          "draw": 8,
-          "lost": 11,
-          "points": 32,
-          "goalsFor": 33,
-          "goalsAgainst": 41,
-          "goalDifference": -8
         },
         {
           "position": 16,
@@ -398,15 +398,15 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 2,
           "draw": 11,
-          "lost": 14,
+          "lost": 15,
           "points": 17,
           "goalsFor": 21,
-          "goalsAgainst": 42,
-          "goalDifference": -21
+          "goalsAgainst": 43,
+          "goalDifference": -22
         }
       ]
     }
