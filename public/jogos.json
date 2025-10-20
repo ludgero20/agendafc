@@ -6898,6 +6898,32 @@
         "fase": null,
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1256,
+        "data": "2025-10-21",
+        "hora": "20:30",
+        "campeonato": "NBA",
+        "canal": "Amazon Prime Video",
+        "time1": "Houston Rockets",
+        "time2": "Oklahoma City Thunder",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1257,
+        "data": "2025-10-21",
+        "hora": "23:00",
+        "campeonato": "NBA",
+        "canal": "Disney+",
+        "time1": "Golden State Warriors",
+        "time2": "Los Angeles Lakers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
     }
   ]
 }
