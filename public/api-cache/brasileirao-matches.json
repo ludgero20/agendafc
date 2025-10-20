@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 98,
-    "first": "2025-10-19",
+    "count": 97,
+    "first": "2025-10-20",
     "last": "2025-12-21",
     "played": 0
   },
@@ -40,72 +40,13 @@
         "currentMatchday": 29,
         "winner": null
       },
-      "id": 535222,
-      "utcDate": "2025-10-19T23:30:00Z",
-      "status": "TIMED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-17T01:32:04Z",
-      "homeTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
-      },
-      "awayTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 29,
-        "winner": null
-      },
       "id": 535224,
       "utcDate": "2025-10-20T22:00:00Z",
       "status": "TIMED",
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-17T01:32:05Z",
+      "lastUpdated": "2025-10-20T01:32:00Z",
       "homeTeam": {
         "id": 4245,
         "name": "EC Juventude",
@@ -164,7 +105,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-17T01:32:05Z",
+      "lastUpdated": "2025-10-20T01:32:00Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -282,7 +223,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-16T01:32:05Z",
+      "lastUpdated": "2025-10-20T01:32:01Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -341,7 +282,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-19T01:32:05Z",
+      "lastUpdated": "2025-10-20T01:32:04Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -459,7 +400,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-19T05:21:04Z",
+      "lastUpdated": "2025-10-20T01:32:04Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -695,7 +636,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-30T15:21:12Z",
+      "lastUpdated": "2025-10-20T01:32:05Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -754,7 +695,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-19T05:21:04Z",
+      "lastUpdated": "2025-10-20T01:32:05Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -813,7 +754,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-30T15:21:12Z",
+      "lastUpdated": "2025-10-20T01:32:05Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -872,7 +813,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-19T15:20:50Z",
+      "lastUpdated": "2025-10-20T01:32:05Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",

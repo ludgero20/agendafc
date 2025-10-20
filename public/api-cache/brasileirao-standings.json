@@ -100,9 +100,9 @@
           "draw": 10,
           "lost": 5,
           "points": 52,
-          "goalsFor": 48,
+          "goalsFor": 50,
           "goalsAgainst": 30,
-          "goalDifference": 18
+          "goalDifference": 20
         },
         {
           "position": 5,
@@ -115,13 +115,13 @@
           },
           "playedGames": 29,
           "form": null,
-          "won": 12,
-          "draw": 8,
+          "won": 13,
+          "draw": 7,
           "lost": 9,
-          "points": 44,
-          "goalsFor": 37,
+          "points": 46,
+          "goalsFor": 39,
           "goalsAgainst": 26,
-          "goalDifference": 11
+          "goalDifference": 13
         },
         {
           "position": 6,
@@ -132,15 +132,15 @@
             "tla": "BAH",
             "crest": "https://crests.football-data.org/1777.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 12,
+          "won": 13,
           "draw": 7,
           "lost": 8,
-          "points": 43,
-          "goalsFor": 35,
+          "points": 46,
+          "goalsFor": 39,
           "goalsAgainst": 32,
-          "goalDifference": 3
+          "goalDifference": 7
         },
         {
           "position": 7,
@@ -177,8 +177,8 @@
           "lost": 11,
           "points": 38,
           "goalsFor": 31,
-          "goalsAgainst": 31,
-          "goalDifference": 0
+          "goalsAgainst": 33,
+          "goalDifference": -2
         },
         {
           "position": 9,
@@ -221,44 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 10,
-          "points": 36,
-          "goalsFor": 27,
-          "goalsAgainst": 25,
-          "goalDifference": 2
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 1767,
-            "name": "Grêmio FBPA",
-            "shortName": "Grêmio",
-            "tla": "FBP",
-            "crest": "https://crests.football-data.org/1767.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 10,
-          "points": 36,
-          "goalsFor": 30,
-          "goalsAgainst": 33,
-          "goalDifference": -3
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
             "shortName": "Corinthians",
@@ -276,6 +238,44 @@
           "goalDifference": -4
         },
         {
+          "position": 12,
+          "team": {
+            "id": 1767,
+            "name": "Grêmio FBPA",
+            "shortName": "Grêmio",
+            "tla": "FBP",
+            "crest": "https://crests.football-data.org/1767.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 11,
+          "points": 36,
+          "goalsFor": 30,
+          "goalsAgainst": 37,
+          "goalDifference": -7
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 9,
+          "draw": 8,
+          "lost": 11,
+          "points": 35,
+          "goalsFor": 27,
+          "goalsAgainst": 27,
+          "goalDifference": 0
+        },
+        {
           "position": 14,
           "team": {
             "id": 6684,
@@ -290,9 +290,9 @@
           "draw": 8,
           "lost": 11,
           "points": 35,
-          "goalsFor": 34,
+          "goalsFor": 35,
           "goalsAgainst": 41,
-          "goalDifference": -7
+          "goalDifference": -6
         },
         {
           "position": 15,
@@ -405,8 +405,8 @@
           "lost": 15,
           "points": 17,
           "goalsFor": 21,
-          "goalsAgainst": 43,
-          "goalDifference": -22
+          "goalsAgainst": 44,
+          "goalDifference": -23
         }
       ]
     }
