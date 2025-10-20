@@ -208,18 +208,37 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/457.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 8,
+          "points": 10,
+          "goalsFor": 8,
+          "goalsAgainst": 9,
           "goalDifference": -1
         },
         {
           "position": 11,
+          "team": {
+            "id": 115,
+            "name": "Udinese Calcio",
+            "shortName": "Udinese",
+            "tla": "UDI",
+            "crest": "https://crests.football-data.org/115.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 2,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 10,
+          "goalDifference": -3
+        },
+        {
+          "position": 12,
           "team": {
             "id": 110,
             "name": "SS Lazio",
@@ -238,7 +257,7 @@
           "goalDifference": 3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 104,
             "name": "Cagliari Calcio",
@@ -255,25 +274,6 @@
           "goalsFor": 6,
           "goalsAgainst": 8,
           "goalDifference": -2
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 115,
-            "name": "Udinese Calcio",
-            "shortName": "Udinese",
-            "tla": "UDI",
-            "crest": "https://crests.football-data.org/115.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 2,
-          "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 9,
-          "goalDifference": -3
         },
         {
           "position": 14,
