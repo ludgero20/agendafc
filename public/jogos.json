@@ -4816,6 +4816,58 @@
         "fase": "semifinal",
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1280,
+        "data": "2025-10-23",
+        "hora": "20h30",
+        "campeonato": "NBA",
+        "canal": "ESPN 2",
+        "time1": "Oklahoma City Thunder",
+        "time2": "Indiana Pacers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1281,
+        "data": "2025-10-23",
+        "hora": "23h00",
+        "campeonato": "NBA",
+        "canal": "ESPN 2",
+        "time1": "Denver Nuggets",
+        "time2": "Golden State Warriors",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1282,
+        "data": "2025-10-24",
+        "hora": "20h30",
+        "campeonato": "NBA",
+        "canal": "Amazon Prime Video",
+        "time1": "Boston Celtics",
+        "time2": "New York Knicks",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1283,
+        "data": "2025-10-24",
+        "hora": "23h00",
+        "campeonato": "NBA",
+        "canal": "Amazon Prime Video",
+        "time1": "Minnesota Timberwolves",
+        "time2": "Los Angeles Lakers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
     }
   ]
 }
