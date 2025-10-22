@@ -9,7 +9,10 @@ const API_KEY = process.env.BALLDONTLIE_API_KEY;
 const JOGOS_NBA_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nba/jogos-nba.json');
 const TABELA_NBA_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nba/tabela.json');
 
-// A função agora busca em uma janela de 48h (ontem e anteontem)
+/**
+ * FUNÇÃO DE BUSCA: Busca jogos em uma janela de 48h para garantir que
+ * nenhum jogo seja perdido por causa de fuso horário.
+ */
 async function fetchRecentGames() {
   if (!API_KEY) {
     console.error("ERRO: Chave da API Balldontlie (BALLDONTLIE_API_KEY) não encontrada.");
@@ -28,7 +31,6 @@ async function fetchRecentGames() {
 
   console.log(`Buscando jogos da NBA para as datas: ${yesterdayStr} e ${dayBeforeStr}`);
   
-  // MUDANÇA 1: URL correta para o endpoint da NBA
   const url = `https://api.balldontlie.io/v1/games?dates[]=${yesterdayStr}&dates[]=${dayBeforeStr}`;
 
   try {
@@ -45,24 +47,27 @@ async function fetchRecentGames() {
   }
 }
 
-// Nova função para recalcular a tabela
+/**
+ * FUNÇÃO DE CÁLCULO: Lê a lista completa de jogos e o arquivo base da tabela
+ * para gerar a classificação atualizada.
+ */
 function calculateStandings(allGames, baseTable) {
   console.log("Calculando a tabela de classificação...");
   
-  // 1. Cria um mapa de estatísticas zeradas
+  // 1. Cria um mapa de estatísticas zeradas a partir da sua tabela base
   const teamStats = {};
   baseTable.standings.forEach(team => {
     teamStats[team.teamName] = {
-      ...team, // Preserva dados do seu arquivo (logo, ID, etc.)
+      ...team, // Preserva dados (logo, ID, nome, conferência)
       intWin: 0,
       intLoss: 0,
       strPercentage: ".000",
       strStreak: "-",
-      games: []
+      games: [] // Lista temporária para calcular a sequência
     };
   });
 
-  // 2. Processa os jogos finalizados
+  // 2. Processa os jogos finalizados para calcular V/D
   allGames.filter(game => game.strStatus === "Match Finished").forEach(game => {
     const homeTeam = game.strHomeTeam;
     const awayTeam = game.strAwayTeam;
@@ -88,8 +93,10 @@ function calculateStandings(allGames, baseTable) {
   // 3. Calcula % e sequência para cada time
   Object.values(teamStats).forEach((stats) => {
     const totalGames = stats.intWin + stats.intLoss;
+    // Calcula a porcentagem
     stats.strPercentage = totalGames > 0 ? (stats.intWin / totalGames).toFixed(3).substring(1) : ".000";
     
+    // Calcula a sequência (streak)
     stats.games.sort((a, b) => b.date.localeCompare(a.date)); // Ordena jogos do mais recente
     let streakCount = 0;
     let streakType = '';
@@ -112,25 +119,29 @@ function calculateStandings(allGames, baseTable) {
     if (a.conference !== b.conference) return a.conference.localeCompare(b.conference);
     const percentB = parseFloat(`0${b.strPercentage}`);
     const percentA = parseFloat(`0${a.strPercentage}`);
-    if (percentB !== percentA) return percentB - percentA;
-    return a.teamName.localeCompare(b.teamName); 
+    if (percentB !== percentA) return percentB - percentA; // Maior % primeiro
+    return a.teamName.localeCompare(b.teamName); // Desempate alfabético
   });
 
   let rankLeste = 1, rankOeste = 1;
   standings.forEach(team => {
     team.rank = (team.conference === 'Leste' ? rankLeste++ : rankOeste++).toString();
-    delete team.games; // Remove a lista de jogos interna, que não precisamos no JSON final
+    delete team.games; // Remove a lista de jogos interna, não precisamos dela no JSON final
   });
 
   console.log("Cálculo da tabela concluído.");
   return { standings };
 }
 
+/**
+ * FUNÇÃO PRINCIPAL: Orquestra o processo de atualização.
+ */
 async function main() {
   const recentGames = await fetchRecentGames();
   if (!recentGames || recentGames.length === 0) {
-    console.log("Nenhum jogo recente encontrado ou falha na API. Encerrando.");
-    return;
+    console.log("Nenhum jogo recente encontrado ou falha na API.");
+    // NÃO ENCERRA: Mesmo sem jogos novos, precisamos recalcular a tabela
+    // caso o arquivo de jogos tenha sido atualizado manualmente.
   }
 
   try {
@@ -138,34 +149,34 @@ async function main() {
     let baseTabelaJson = JSON.parse(await fs.readFile(TABELA_NBA_PATH, 'utf-8'));
     let gamesUpdated = 0;
 
-    recentGames.forEach(gameResult => {
-      // MUDANÇA 2: Verificamos se o status retornado pela API é "Final"
-      if (gameResult.status !== 'Final') return;
-      
-      const homeTeamName = gameResult.home_team.full_name;
-      const awayTeamName = gameResult.visitor_team.full_name;
-      const gameDate = gameResult.date.substring(0, 10);
-
-      // MUDANÇA 3: A correspondência agora é mais flexível para evitar erros de fuso horário
-      // Ela busca o primeiro jogo NÃO FINALIZADO entre os dois times
-      const gameIndex = jogosJson.events.findIndex(
-        localGame => 
-          localGame.strHomeTeam === homeTeamName && 
-          localGame.strAwayTeam === awayTeamName &&
-          localGame.dateEvent === gameDate &&
-          localGame.strStatus !== "Match Finished"
-      );
-
-      if (gameIndex > -1) {
-        console.log(`Atualizando placar para: ${awayTeamName} @ ${homeTeamName}`);
+    // 1. Atualiza os placares no jogos-nba.json
+    if (recentGames && recentGames.length > 0) {
+      recentGames.forEach(gameResult => {
+        if (gameResult.status !== 'Final') return;
         
-        // MUDANÇA 4: Usamos os campos corretos e atualizamos para "Match Finished"
-        jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
-        jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
-        jogosJson.events[gameIndex].strStatus = "Match Finished";
-        gamesUpdated++;
-      }
-    });
+        const homeTeamName = gameResult.home_team.full_name;
+        const awayTeamName = gameResult.visitor_team.full_name;
+        const gameDate = gameResult.date.substring(0, 10);
+
+        const gameIndex = jogosJson.events.findIndex(
+          localGame => 
+            localGame.strHomeTeam === homeTeamName && 
+            localGame.strAwayTeam === awayTeamName &&
+            localGame.dateEvent === gameDate &&
+            localGame.strStatus !== "Match Finished"
+        );
+
+        if (gameIndex > -1) {
+          const eventId = jogosJson.events[gameIndex].idEvent;
+          console.log(`Atualizando placar para: ${awayTeamName} @ ${homeTeamName} (idEvent: ${eventId})`);
+          
+          jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
+          jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
+          jogosJson.events[gameIndex].strStatus = "Match Finished";
+          gamesUpdated++;
+        }
+      });
+    }
 
     if (gamesUpdated > 0) {
       await fs.writeFile(JOGOS_NBA_PATH, JSON.stringify(jogosJson, null, 2));
@@ -174,7 +185,7 @@ async function main() {
       console.log("Nenhum placar de jogo da NBA para atualizar.");
     }
 
-    // 2. Recalcula a tabela de classificação
+    // 2. Recalcula a tabela de classificação (SEMPRE)
     // Passamos a lista COMPLETA de jogos (jogosJson.events) e a tabela base
     const finalJsonTabela = calculateStandings(jogosJson.events, baseTabelaJson);
     
