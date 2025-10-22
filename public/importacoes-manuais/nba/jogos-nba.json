@@ -6,9 +6,9 @@
       "strTime": "20:30:00",
       "strHomeTeam": "Oklahoma City Thunder",
       "strAwayTeam": "Houston Rockets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "125",
+      "intAwayScore": "124",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18446820",
@@ -16,9 +16,9 @@
       "strTime": "23:00:00",
       "strHomeTeam": "Los Angeles Lakers",
       "strAwayTeam": "Golden State Warriors",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "109",
+      "intAwayScore": "119",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18446822",
