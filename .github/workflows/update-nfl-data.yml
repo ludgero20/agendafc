@@ -36,8 +36,9 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          # Adiciona APENAS o arquivo de jogos que pode ter sido modificado
+          # ATUALIZADO: Adiciona AMBOS os arquivos que podem ter sido modificados
           git add public/importacoes-manuais/nfl/jogos-nfl.json
+          git add public/importacoes-manuais/nfl/tabela.json
           
-          # Só faz o commit e o push se houver alguma mudança no arquivo adicionado
-          git diff --staged --quiet || (git commit -m "Atualização automática dos placares da NFL" && git push)
+          # Só faz o commit e o push se houver alguma mudança nos arquivos adicionados
+          git diff --staged --quiet || (git commit -m "Atualização automática dos placares e tabela da NFL" && git push)

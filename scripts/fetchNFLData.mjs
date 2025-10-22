@@ -7,17 +7,9 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env.local') });
 
 const API_KEY = process.env.BALLDONTLIE_API_KEY;
 const JOGOS_NFL_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nfl/jogos-nfl.json');
+const TABELA_NFL_PATH = path.join(process.cwd(), 'public/importacoes-manuais/nfl/tabela.json');
 
-/**
- * FUNÇÃO IMPORTANTE: Buscar Jogos Recentes
- * ----------------------------------------
- * Esta função é o coração da busca de dados.
- * 1. Ela calcula as datas de "hoje", "ontem" e "anteontem".
- * 2. Cria uma URL para a API Balldontlie pedindo todos os jogos da NFL que aconteceram nessa janela de 72 horas.
- * Isso garante que não perderemos nenhum jogo por causa de diferenças de fuso horário.
- * 3. Faz a chamada à API usando a sua chave de segurança.
- * 4. Retorna a lista de jogos encontrados.
- */
+//** FUNÇÃO DE BUSCA: Buscar Jogos Recentes (72h)
 async function fetchRecentNFLGames() {
   if (!API_KEY) {
     console.error("ERRO: Chave da API Balldontlie (BALLDONTLIE_API_KEY) não encontrada.");
@@ -46,8 +38,7 @@ async function fetchRecentNFLGames() {
       throw new Error(`Falha na requisição de jogos da NFL: ${response.status}`);
     }
     const data = await response.json();
-    console.log("🔍 Dados brutos recebidos da API:", JSON.stringify(data, null, 2));
-    console.log(`Encontrados ${data.data.length} jogos nas últimas 72 horas.`);
+    console.log(`Encontrados ${data.data.length} jogos da NFL nas últimas 72 horas.`);
     return data.data;
   } catch (error) {
     console.error("Erro ao buscar dados da API Balldontlie:", error.message);
@@ -56,66 +47,183 @@ async function fetchRecentNFLGames() {
 }
 
 /**
- * FUNÇÃO IMPORTANTE: Principal (main)
- * -----------------------------------
- * Esta é a função que orquestra todo o processo de atualização.
- * 1. Ela chama `fetchRecentNFLGames` para obter os resultados mais recentes.
- * 2. Lê o seu arquivo `jogos-nfl.json` existente.
- * 3. Para cada jogo retornado pela API, ela procura uma correspondência no seu arquivo.
- * 4. A correspondência é flexível: ela procura o primeiro jogo entre os dois times que ainda não foi finalizado,
- * não importando quem é o mandante ou visitante. Isso previne erros de cadastro.
- * 5. Se encontra uma correspondência, atualiza os campos de placar e status.
- * 6. Se algum jogo foi atualizado, ela salva o arquivo `jogos-nfl.json` com os novos dados.
+ * NOVA FUNÇÃO DE CÁLCULO: Gera a classificação da NFL
+ */
+
+function calculateNFLStandings(allGames, baseTable) {
+  console.log("Calculando a tabela de classificação da NFL...");
+  const teamStats = {};
+  
+  // 1. Inicializa estatísticas a partir da tabela base
+  baseTable.standings.forEach(team => {
+    teamStats[team.teamName] = {
+      ...team,
+      intWin: 0,
+      intLoss: 0,
+      intTie: 0, // NFL tem empates
+      strPercentage: ".000",
+      strStreak: "-",
+      games: [] // Para calcular a sequência
+    };
+  });
+
+  // 2. Processa os jogos finalizados para calcular V/D/E
+  allGames.filter(game => game.strStatus === "Match Finished").forEach(game => {
+    const homeTeam = game.strHomeTeam;
+    const awayTeam = game.strAwayTeam;
+
+    if (teamStats[homeTeam] && teamStats[awayTeam]) {
+      const homeScore = parseInt(game.intHomeScore || '0');
+      const awayScore = parseInt(game.intAwayScore || '0');
+
+      let homeResult = 'L', awayResult = 'W';
+      if (homeScore > awayScore) {
+        teamStats[homeTeam].intWin++;
+        teamStats[awayTeam].intLoss++;
+        homeResult = 'W';
+        awayResult = 'L';
+      } else if (homeScore < awayScore) {
+        teamStats[homeTeam].intLoss++;
+        teamStats[awayTeam].intWin++;
+        homeResult = 'L';
+        awayResult = 'W';
+      } else { // Empate
+        teamStats[homeTeam].intTie++;
+        teamStats[awayTeam].intTie++;
+        homeResult = 'T';
+        awayResult = 'T';
+      }
+      
+      teamStats[homeTeam].games.push({ date: game.dateEvent, result: homeResult });
+      teamStats[awayTeam].games.push({ date: game.dateEvent, result: awayResult });
+    }
+  });
+
+  // 3. Calcula % e sequência para cada time
+  Object.values(teamStats).forEach((stats) => {
+    const totalGames = stats.intWin + stats.intLoss + stats.intTie;
+    
+    // Calcula a porcentagem (NFL: Vitórias + 0.5 * Empates) / Total
+    if (totalGames === 0) {
+      stats.strPercentage = ".000";
+    } else {
+      const percentage = (stats.intWin + (0.5 * stats.intTie)) / totalGames;
+      if (percentage === 1) {
+        stats.strPercentage = "1.000";
+      } else {
+        stats.strPercentage = percentage.toFixed(3).substring(1); // Formato .XXX
+      }
+    }
+    
+    // Calcula a sequência (streak)
+    stats.games.sort((a, b) => new Date(b.date) - new Date(a.date)); // Ordena jogos do mais recente
+    let streakCount = 0;
+    let streakType = '';
+    if (stats.games.length > 0) {
+        streakType = stats.games[0].result; // W, L, ou T
+        for (const game of stats.games) {
+            if (game.result === streakType) {
+                streakCount++;
+            } else { break; }
+        }
+    }
+    stats.strStreak = streakCount > 0 ? `${streakType}${streakCount}` : '-';
+  });
+
+  const standings = Object.values(teamStats);
+
+  // 4. Ordena por conferência, divisão e porcentagem
+  standings.sort((a, b) => {
+    if (a.conference !== b.conference) return a.conference.localeCompare(b.conference);
+    if (a.division !== b.division) return a.division.localeCompare(b.division);
+    
+    const percentB = parseFloat(b.strPercentage.replace(".", "0."));
+    const percentA = parseFloat(a.strPercentage.replace(".", "0."));
+    if (percentB !== percentA) return percentB - percentA;
+    
+    return a.teamName.localeCompare(b.teamName); 
+  });
+
+  // 5. Atribui o rank DENTRO da divisão
+  let currentDivision = '';
+  let rank = 1;
+  standings.forEach(team => {
+    if (team.division !== currentDivision) {
+        rank = 1; // Reseta o rank para a nova divisão
+        currentDivision = team.division;
+    }
+    team.rank = rank.toString();
+    rank++;
+    delete team.games; // Limpa os dados auxiliares
+  });
+
+  console.log("Cálculo da tabela da NFL concluído.");
+  return { standings };
+}
+
+
+/**
+ * FUNÇÃO PRINCIPAL (main)
+ * Orquestra a atualização de placares e o recálculo da tabela.
  */
 async function main() {
-  console.log("Iniciando atualização de placares da NFL...");
+  console.log("Iniciando atualização de placares e tabela da NFL...");
   
   const recentGames = await fetchRecentNFLGames();
 
-  if (!recentGames || recentGames.length === 0) {
-    console.log("Nenhum jogo recente da NFL encontrado ou falha na API. Encerrando.");
+  if (!recentGames) {
+    console.log("Falha na API da NFL. Encerrando.");
     return;
   }
 
   try {
+    // Carrega AMBOS os arquivos
     const jogosJson = JSON.parse(await fs.readFile(JOGOS_NFL_PATH, 'utf-8'));
+    const baseTabelaJson = JSON.parse(await fs.readFile(TABELA_NFL_PATH, 'utf-8'));
     let gamesUpdated = 0;
 
-    recentGames.forEach(gameResult => {
-      if (!gameResult.status.startsWith('Final')) return;
+    // ETAPA 1: Atualizar placares no jogos-nfl.json (lógica original)
+    if (recentGames.length > 0) {
+        recentGames.forEach(gameResult => {
+            if (!gameResult.status.startsWith('Final')) return;
 
-      const apiHomeTeam = gameResult.home_team.full_name;
-      const apiAwayTeam = gameResult.visitor_team.full_name;
-      
-      // AJUSTE FINAL: Lógica de correspondência flexível e correta
-      const gameIndex = jogosJson.events.findIndex(localGame => {
-        const localTeams = new Set([localGame.strHomeTeam, localGame.strAwayTeam]);
+            const apiHomeTeam = gameResult.home_team.full_name;
+            const apiAwayTeam = gameResult.visitor_team.full_name;
+            
+            const gameIndex = jogosJson.events.findIndex(localGame => {
+                const localTeams = new Set([localGame.strHomeTeam, localGame.strAwayTeam]);
+                return localTeams.has(apiHomeTeam) && 
+                       localTeams.has(apiAwayTeam) &&
+                       localGame.strStatus !== "Match Finished";
+            });
 
-        // Retorna verdadeiro se os times são os mesmos E o jogo ainda não foi finalizado
-        return localTeams.has(apiHomeTeam) && 
-               localTeams.has(apiAwayTeam) &&
-               localGame.strStatus !== "Match Finished";
-      });
-
-      if (gameIndex > -1) {
-        const eventId = jogosJson.events[gameIndex].idEvent;
-        console.log(`Atualizando placar para: ${apiAwayTeam} @ ${apiHomeTeam} (idEvent: ${eventId})`);
-        
-        jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
-        jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
-        jogosJson.events[gameIndex].strStatus = "Match Finished"; 
-        gamesUpdated++;
-      }
-    });
+            if (gameIndex > -1) {
+                const eventId = jogosJson.events[gameIndex].idEvent;
+                console.log(`Atualizando placar para: ${apiAwayTeam} @ ${apiHomeTeam} (idEvent: ${eventId})`);
+                
+                jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
+                jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
+                jogosJson.events[gameIndex].strStatus = "Match Finished"; 
+                gamesUpdated++;
+            }
+        });
+    }
 
     if (gamesUpdated > 0) {
       await fs.writeFile(JOGOS_NFL_PATH, JSON.stringify(jogosJson, null, 2));
       console.log(`✅ ${gamesUpdated} placares de jogos da NFL foram atualizados.`);
     } else {
-      console.log("Nenhum placar de jogo da NFL para atualizar (jogos já estavam atualizados ou não foram encontrados).");
+      console.log("Nenhum placar de jogo da NFL para atualizar.");
     }
 
-    console.log("Atualização dos placares da NFL concluída!");
+    // ETAPA 2: Recalcular a tabela de classificação (SEMPRE)
+    // Usamos o 'jogosJson' completo (que pode ter sido atualizado ou não)
+    console.log("Iniciando recálculo da tabela da NFL...");
+    const finalJsonTabela = calculateNFLStandings(jogosJson.events, baseTabelaJson);
+    await fs.writeFile(TABELA_NFL_PATH, JSON.stringify(finalJsonTabela, null, 2));
+    console.log(`✅ Sucesso! O arquivo tabela.json da NFL foi recalculado e atualizado.`);
+
+    console.log("Atualização da NFL concluída!");
 
   } catch (error) {
     console.error("Falha no processo de atualização dos jogos da NFL:", error);
