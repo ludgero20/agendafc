@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 1777,
+            "name": "EC Bahia",
+            "shortName": "Bahia",
+            "tla": "BAH",
+            "crest": "https://crests.football-data.org/1777.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 13,
+          "draw": 8,
+          "lost": 8,
+          "points": 47,
+          "goalsFor": 39,
+          "goalsAgainst": 32,
+          "goalDifference": 7
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 1770,
             "name": "Botafogo FR",
             "shortName": "Botafogo",
@@ -122,25 +141,6 @@
           "goalsFor": 39,
           "goalsAgainst": 26,
           "goalDifference": 13
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 1777,
-            "name": "EC Bahia",
-            "shortName": "Bahia",
-            "tla": "BAH",
-            "crest": "https://crests.football-data.org/1777.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 13,
-          "draw": 7,
-          "lost": 8,
-          "points": 46,
-          "goalsFor": 39,
-          "goalsAgainst": 32,
-          "goalDifference": 7
         },
         {
           "position": 7,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 6684,
+            "name": "SC Internacional",
+            "shortName": "Internacional",
+            "tla": "SCI",
+            "crest": "https://crests.football-data.org/6684.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 11,
+          "points": 36,
+          "goalsFor": 35,
+          "goalsAgainst": 41,
+          "goalDifference": -6
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -257,7 +276,7 @@
           "goalDifference": -7
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 1837,
             "name": "Ceará SC",
@@ -274,25 +293,6 @@
           "goalsFor": 27,
           "goalsAgainst": 27,
           "goalDifference": 0
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 6684,
-            "name": "SC Internacional",
-            "shortName": "Internacional",
-            "tla": "SCI",
-            "crest": "https://crests.football-data.org/6684.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 9,
-          "draw": 8,
-          "lost": 11,
-          "points": 35,
-          "goalsFor": 35,
-          "goalsAgainst": 41,
-          "goalDifference": -6
         },
         {
           "position": 15,
