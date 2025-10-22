@@ -163,7 +163,7 @@ async function main() {
         jogosJson.events[gameIndex].intHomeScore = gameResult.home_team_score.toString();
         jogosJson.events[gameIndex].intAwayScore = gameResult.visitor_team_score.toString();
         jogosJson.events[gameIndex].strStatus = "Match Finished";
-        updatedCount++;
+        gamesUpdated++;
       }
     });
 
