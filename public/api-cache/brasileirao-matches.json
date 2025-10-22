@@ -808,12 +808,12 @@
         "winner": null
       },
       "id": 535239,
-      "utcDate": "2025-11-01T21:30:00Z",
+      "utcDate": "2025-11-01T21:00:00Z",
       "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-30T15:21:12Z",
+      "lastUpdated": "2025-10-22T18:25:31Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -984,6 +984,65 @@
         "currentMatchday": 29,
         "winner": null
       },
+      "id": 535242,
+      "utcDate": "2025-11-02T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 31,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-10-22T18:25:31Z",
+      "homeTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "awayTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 29,
+        "winner": null
+      },
       "id": 535243,
       "utcDate": "2025-11-02T19:00:00Z",
       "status": "TIMED",
@@ -1102,26 +1161,26 @@
         "currentMatchday": 29,
         "winner": null
       },
-      "id": 535242,
+      "id": 535244,
       "utcDate": "2025-11-02T21:30:00Z",
       "status": "TIMED",
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-30T15:21:12Z",
+      "lastUpdated": "2025-10-22T18:25:32Z",
       "homeTeam": {
-        "id": 1777,
-        "name": "EC Bahia",
-        "shortName": "Bahia",
-        "tla": "BAH",
-        "crest": "https://crests.football-data.org/1777.png"
+        "id": 4245,
+        "name": "EC Juventude",
+        "shortName": "Juventude",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/4245_large.png"
       },
       "awayTeam": {
-        "id": 4286,
-        "name": "RB Bragantino",
-        "shortName": "Bragantino",
-        "tla": "RBB",
-        "crest": "https://crests.football-data.org/4286.png"
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
       },
       "score": {
         "winner": null,
@@ -1181,65 +1240,6 @@
         "shortName": "São Paulo",
         "tla": "PAU",
         "crest": "https://crests.football-data.org/1776.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 29,
-        "winner": null
-      },
-      "id": 535244,
-      "utcDate": "2025-11-02T23:30:00Z",
-      "status": "TIMED",
-      "matchday": 31,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-22T00:21:18Z",
-      "homeTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
       },
       "score": {
         "winner": null,
