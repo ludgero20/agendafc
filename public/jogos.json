@@ -5544,6 +5544,66 @@
         "fase": null,
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1336,
+        "data": "2025-10-03",
+        "hora": "06h30",
+        "campeonato": "Fórmula 1",
+        "canal": "BandSports",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 1",
+        "evento_descricao": "GP de Singapura"
+    },
+    {
+        "id": 1337,
+        "data": "2025-10-03",
+        "hora": "10h00",
+        "campeonato": "Fórmula 1",
+        "canal": "BandSports",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 2",
+        "evento_descricao": "GP de Singapura"
+    },
+    {
+        "id": 1338,
+        "data": "2025-10-04",
+        "hora": "06h30",
+        "campeonato": "Fórmula 1",
+        "canal": "BandSports",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 3",
+        "evento_descricao": "GP de Singapura"
+    },
+    {
+        "id": 1339,
+        "data": "2025-10-04",
+        "hora": "10h00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / BandSports",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Treino Classificatório",
+        "evento_descricao": "GP de Singapura"
+    },
+    {
+        "id": 1340,
+        "data": "2025-10-05",
+        "hora": "09h00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band",
+        "time1": null,
+        "time2": null,
+        "fase": null,
+        "evento_nome": "Corrida",
+        "evento_descricao": "GP de Singapura"
     }
   ]
 }
