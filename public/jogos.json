@@ -5546,64 +5546,64 @@
         "evento_descricao": null
     },
     {
-        "id": 1336,
-        "data": "2025-10-03",
-        "hora": "06h30",
+        "id": 1341,
+        "data": "2025-10-24",
+        "hora": "15h30",
         "campeonato": "Fórmula 1",
-        "canal": "BandSports",
+        "canal": "Bandsports e F1TV Pro",
         "time1": null,
         "time2": null,
         "fase": null,
         "evento_nome": "Treino Livre 1",
-        "evento_descricao": "GP de Singapura"
+        "evento_descricao": "GP do México"
     },
     {
-        "id": 1337,
-        "data": "2025-10-03",
-        "hora": "10h00",
+        "id": 1342,
+        "data": "2025-10-24",
+        "hora": "19h00",
         "campeonato": "Fórmula 1",
-        "canal": "BandSports",
+        "canal": "Bandsports e F1TV Pro",
         "time1": null,
         "time2": null,
         "fase": null,
         "evento_nome": "Treino Livre 2",
-        "evento_descricao": "GP de Singapura"
+        "evento_descricao": "GP do México"
     },
     {
-        "id": 1338,
-        "data": "2025-10-04",
-        "hora": "06h30",
+        "id": 1343,
+        "data": "2025-10-25",
+        "hora": "14h30",
         "campeonato": "Fórmula 1",
-        "canal": "BandSports",
+        "canal": "Bandsports e F1TV Pro",
         "time1": null,
         "time2": null,
         "fase": null,
         "evento_nome": "Treino Livre 3",
-        "evento_descricao": "GP de Singapura"
+        "evento_descricao": "GP do México"
     },
     {
-        "id": 1339,
-        "data": "2025-10-04",
-        "hora": "10h00",
+        "id": 1344,
+        "data": "2025-10-25",
+        "hora": "18h00",
         "campeonato": "Fórmula 1",
-        "canal": "Band / BandSports",
+        "canal": "Band, Bandsports e F1TV Pro",
         "time1": null,
         "time2": null,
         "fase": null,
-        "evento_nome": "Treino Classificatório",
-        "evento_descricao": "GP de Singapura"
+        "evento_nome": "Classificação",
+        "evento_descricao": "GP do México"
     },
     {
-        "id": 1340,
-        "data": "2025-10-05",
-        "hora": "09h00",
+        "id": 1345,
+        "data": "2025-10-26",
+        "hora": "17h00",
         "campeonato": "Fórmula 1",
-        "canal": "Band",
+        "canal": "Band e F1TV Pro",
         "time1": null,
         "time2": null,
         "fase": null,
         "evento_nome": "Corrida",
-        "evento_descricao": "GP de Singapura"
+        "evento_descricao": "GP do México"
     }
   ]
 }
