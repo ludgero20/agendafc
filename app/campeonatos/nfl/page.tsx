@@ -9,14 +9,25 @@ export const metadata: Metadata = {
   description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências.",
 };
 
-// Tipos
+// ==========================================================
+// Atualiza o 'type' 
+// ==========================================================
 type TimeTabelaNFL = {
-    idStanding: string; strTeam: string; strTeamBadge: string; intRank: string;
-    intWin: string; intLoss: string; intTie: string; strConference: string; strDivision: string; strPercentage: string;
+  teamName: string;      
+  teamLogo: string;      
+  rank: string;          
+  conference: string;    
+  division: string;      
+  intWin: string;
+  intLoss: string;
+  intTie: string;
+  strPercentage: string;
 };
+// ==========================================================
+
 type JogoNFL = {
-    idEvent: string; intRound: string; dateEvent: string; strTime: string; strHomeTeam: string;
-    strAwayTeam: string; intHomeScore: string | null; intAwayScore: string | null; strStatus: string;
+  idEvent: string; intRound: string; dateEvent: string; strTime: string; strHomeTeam: string;
+  strAwayTeam: string; intHomeScore: string | null; intAwayScore: string | null; strStatus: string;
 };
 
 // Funções de busca de dados
@@ -25,7 +36,13 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
     const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
-    return data.table;
+
+    // ==========================================================
+    // Lê 'data.standings''
+    // ==========================================================
+    return data.standings;
+    // ==========================================================
+
   } catch (error) {
     console.error("🚨 ERRO AO LER ARQUIVO da tabela da NFL:", error);
     return null;
@@ -54,8 +71,8 @@ export default async function NFLPage() {
   if (!tabelaCompleta || !todosOsJogos) {
     return (
         <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-6 rounded-lg text-center">
-            <h2 className="font-bold text-lg mb-2">Dados da NFL Indisponíveis</h2>
-            <p>Os dados de classificação ou jogos estão sendo atualizados. Por favor, volte mais tarde.</p>
+          <h2 className="font-bold text-lg mb-2">Dados da NFL Indisponíveis</h2>
+          <p>Os dados de classificação ou jogos estão sendo atualizados. Por favor, volte mais tarde.</p>
         </div>
     );
   }
@@ -70,14 +87,18 @@ export default async function NFLPage() {
     rodadaInicial = todosOsJogos.reduce((max, jogo) => Math.max(max, parseInt(jogo.intRound)), 0);
   }
 
+  // ==========================================================
+  // Agrupa usando os nomes 'conference' e 'division'
+  // ==========================================================
   const tabelasPorConferencia = tabelaCompleta.reduce((acc, time) => {
-    const conferencia = time.strConference.includes("American") ? "AFC" : "NFC";
-    const divisao = time.strDivision;
+    const conferencia = time.conference.includes("American") ? "AFC" : "NFC";
+    const divisao = time.division;
     if (!acc[conferencia]) acc[conferencia] = {};
     if (!acc[conferencia][divisao]) acc[conferencia][divisao] = [];
     acc[conferencia][divisao].push(time);
     return acc;
   }, {} as Record<string, Record<string, TimeTabelaNFL[]>>);
+  // ==========================================================
 
   return (
     <div>
@@ -107,11 +128,14 @@ export default async function NFLPage() {
                           </tr>
                         </thead>
                         <tbody>
-                          {tabela.sort((a,b) => parseInt(a.intRank) - parseInt(b.intRank)).map((time) => (
-                            <tr key={time.idStanding} className="border-t">
+                          {/* ========================================================== */}
+                          {/* Renderiza usando os novos nomes das propriedades */}
+                          {/* ========================================================== */}
+                          {tabela.sort((a,b) => parseInt(a.rank) - parseInt(b.rank)).map((time) => (
+                            <tr key={time.teamName} className="border-t">
                               <td className="px-3 py-2 flex items-center">
-                                <Image src={time.strTeamBadge} alt={time.strTeam} width={20} height={20} className="w-5 h-5 mr-2" />
-                                <span className="font-medium">{time.strTeam}</span>
+                                <Image src={time.teamLogo} alt={time.teamName} width={20} height={20} className="w-5 h-5 mr-2" />
+                                <span className="font-medium">{time.teamName}</span>
                               </td>
                               <td className="px-3 py-2 text-center font-bold">{time.intWin}</td>
                               <td className="px-3 py-2 text-center">{time.intLoss}</td>
@@ -119,6 +143,7 @@ export default async function NFLPage() {
                               <td className="px-3 py-2 text-center font-bold">{time.strPercentage}</td>
                             </tr>
                           ))}
+                          {/* ========================================================== */}
                         </tbody>
                       </table>
                     </div>
