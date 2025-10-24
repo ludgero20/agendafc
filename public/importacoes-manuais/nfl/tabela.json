@@ -161,11 +161,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/vrqanp1687734910.png",
       "conference": "American Football Conference",
       "division": "AFC West",
-      "intWin": 4,
+      "intWin": 5,
       "intLoss": 3,
       "intTie": 0,
-      "strPercentage": ".571",
-      "strStreak": "L1",
+      "strPercentage": ".625",
+      "strStreak": "W1",
       "rank": "2"
     },
     {
@@ -282,10 +282,10 @@
       "conference": "National Football Conference",
       "division": "NFC North",
       "intWin": 3,
-      "intLoss": 3,
+      "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".500",
-      "strStreak": "L1",
+      "strPercentage": ".429",
+      "strStreak": "L2",
       "rank": "4"
     },
     {

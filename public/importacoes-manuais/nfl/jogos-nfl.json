@@ -1195,9 +1195,9 @@
       "strTime": "21:15:00",
       "strHomeTeam": "Los Angeles Chargers",
       "strAwayTeam": "Minnesota Vikings",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "37",
+      "intAwayScore": "10",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424054",
