@@ -189,15 +189,15 @@
             "tla": "SEV",
             "crest": "https://crests.football-data.org/559.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 4,
           "draw": 1,
-          "lost": 4,
+          "lost": 5,
           "points": 13,
-          "goalsFor": 16,
-          "goalsAgainst": 14,
-          "goalDifference": 2
+          "goalsFor": 17,
+          "goalsAgainst": 16,
+          "goalDifference": 1
         },
         {
           "position": 10,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 5,
+          "points": 9,
+          "goalsFor": 10,
+          "goalsAgainst": 14,
+          "goalDifference": -4
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -295,7 +314,7 @@
           "goalDifference": -4
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 88,
             "name": "Levante UD",
@@ -314,7 +333,7 @@
           "goalDifference": -4
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -333,7 +352,7 @@
           "goalDifference": -4
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
@@ -350,25 +369,6 @@
           "goalsFor": 8,
           "goalsAgainst": 11,
           "goalDifference": -3
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 5,
-          "points": 6,
-          "goalsFor": 8,
-          "goalsAgainst": 13,
-          "goalDifference": -5
         },
         {
           "position": 19,
