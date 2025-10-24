@@ -146,9 +146,9 @@
       "strTime": "20:30:00",
       "strHomeTeam": "Indiana Pacers",
       "strAwayTeam": "Oklahoma City Thunder",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "135",
+      "intAwayScore": "141",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18446834",
@@ -156,9 +156,9 @@
       "strTime": "23:00:00",
       "strHomeTeam": "Golden State Warriors",
       "strAwayTeam": "Denver Nuggets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "137",
+      "intAwayScore": "131",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18446835",

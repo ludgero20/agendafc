@@ -139,9 +139,9 @@
       "rank": "13",
       "conference": "Leste",
       "intWin": 0,
-      "intLoss": 0,
+      "intLoss": 1,
       "strPercentage": ".000",
-      "strStreak": "-"
+      "strStreak": "L1"
     },
     {
       "teamId": "9",
@@ -171,10 +171,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/irobi61565197527.png",
       "rank": "1",
       "conference": "Oeste",
-      "intWin": 1,
+      "intWin": 2,
       "intLoss": 0,
       "strPercentage": "1.000",
-      "strStreak": "W1"
+      "strStreak": "W2"
     },
     {
       "teamId": "28",
@@ -204,10 +204,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/27v8861746610370.png",
       "rank": "4",
       "conference": "Oeste",
-      "intWin": 1,
+      "intWin": 2,
       "intLoss": 0,
       "strPercentage": "1.000",
-      "strStreak": "W1"
+      "strStreak": "W2"
     },
     {
       "teamId": "18",
@@ -249,9 +249,9 @@
       "rank": "8",
       "conference": "Oeste",
       "intWin": 0,
-      "intLoss": 0,
+      "intLoss": 1,
       "strPercentage": ".000",
-      "strStreak": "-"
+      "strStreak": "L1"
     },
     {
       "teamId": "26",
