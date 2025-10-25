@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 4,
+          "points": 9,
+          "goalsFor": 6,
+          "goalsAgainst": 10,
+          "goalDifference": -4
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
@@ -238,7 +257,7 @@
           "goalDifference": -9
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -255,25 +274,6 @@
           "goalsFor": 11,
           "goalsAgainst": 13,
           "goalDifference": -2
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 4,
-          "points": 8,
-          "goalsFor": 6,
-          "goalsAgainst": 10,
-          "goalDifference": -4
         },
         {
           "position": 14,
@@ -360,12 +360,12 @@
             "tla": "AVS",
             "crest": "https://crests.football-data.org/10340.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 0,
-          "draw": 1,
+          "draw": 2,
           "lost": 7,
-          "points": 1,
+          "points": 2,
           "goalsFor": 5,
           "goalsAgainst": 20,
           "goalDifference": -15

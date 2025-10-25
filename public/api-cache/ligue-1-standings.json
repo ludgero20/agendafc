@@ -43,9 +43,9 @@
           "draw": 2,
           "lost": 1,
           "points": 20,
-          "goalsFor": 18,
+          "goalsFor": 19,
           "goalsAgainst": 8,
-          "goalDifference": 10
+          "goalDifference": 11
         },
         {
           "position": 2,
@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 2,
+          "points": 17,
+          "goalsFor": 18,
+          "goalsAgainst": 13,
+          "goalDifference": 5
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -86,7 +105,7 @@
           "goalDifference": 7
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 546,
             "name": "Racing Club de Lens",
@@ -105,7 +124,7 @@
           "goalDifference": 5
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
@@ -124,7 +143,7 @@
           "goalDifference": 3
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 521,
             "name": "Lille OSC",
@@ -143,25 +162,6 @@
           "goalDifference": 6
         },
         {
-          "position": 7,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 2,
-          "points": 14,
-          "goalsFor": 17,
-          "goalsAgainst": 13,
-          "goalDifference": 4
-        },
-        {
           "position": 8,
           "team": {
             "id": 511,
@@ -170,15 +170,15 @@
             "tla": "TOU",
             "crest": "https://crests.football-data.org/511.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 4,
           "draw": 1,
-          "lost": 3,
+          "lost": 4,
           "points": 13,
           "goalsFor": 15,
-          "goalsAgainst": 12,
-          "goalDifference": 3
+          "goalsAgainst": 13,
+          "goalDifference": 2
         },
         {
           "position": 9,
@@ -253,8 +253,8 @@
           "lost": 4,
           "points": 9,
           "goalsFor": 14,
-          "goalsAgainst": 16,
-          "goalDifference": -2
+          "goalsAgainst": 17,
+          "goalDifference": -3
         },
         {
           "position": 13,

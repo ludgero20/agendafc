@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 4,
+            "name": "Borussia Dortmund",
+            "shortName": "Dortmund",
+            "tla": "BVB",
+            "crest": "https://crests.football-data.org/4.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 1,
+          "points": 17,
+          "goalsFor": 14,
+          "goalsAgainst": 6,
+          "goalDifference": 8
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 10,
             "name": "VfB Stuttgart",
             "shortName": "Stuttgart",
@@ -84,25 +103,6 @@
           "goalsFor": 11,
           "goalsAgainst": 6,
           "goalDifference": 5
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 4,
-            "name": "Borussia Dortmund",
-            "shortName": "Dortmund",
-            "tla": "BVB",
-            "crest": "https://crests.football-data.org/4.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 1,
-          "points": 14,
-          "goalsFor": 13,
-          "goalsAgainst": 6,
-          "goalDifference": 7
         },
         {
           "position": 5,
@@ -170,15 +170,15 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 3,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 11,
           "goalsFor": 12,
-          "goalsAgainst": 10,
-          "goalDifference": 2
+          "goalsAgainst": 11,
+          "goalDifference": 1
         },
         {
           "position": 9,
