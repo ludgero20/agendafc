@@ -56,14 +56,14 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 6,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 18,
-          "goalsFor": 21,
-          "goalsAgainst": 7,
+          "points": 19,
+          "goalsFor": 22,
+          "goalsAgainst": 8,
           "goalDifference": 14
         },
         {
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 546,
+            "name": "Racing Club de Lens",
+            "shortName": "RC Lens",
+            "tla": "RCL",
+            "crest": "https://crests.football-data.org/546.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 2,
+          "points": 17,
+          "goalsFor": 13,
+          "goalsAgainst": 8,
+          "goalDifference": 5
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -103,25 +122,6 @@
           "goalsFor": 17,
           "goalsAgainst": 10,
           "goalDifference": 7
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 546,
-            "name": "Racing Club de Lens",
-            "shortName": "RC Lens",
-            "tla": "RCL",
-            "crest": "https://crests.football-data.org/546.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 5,
-          "draw": 1,
-          "lost": 2,
-          "points": 16,
-          "goalsFor": 12,
-          "goalsAgainst": 7,
-          "goalDifference": 5
         },
         {
           "position": 6,
