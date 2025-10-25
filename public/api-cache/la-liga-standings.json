@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 5,
+          "draw": 3,
+          "lost": 2,
+          "points": 18,
+          "goalsFor": 14,
+          "goalsAgainst": 11,
+          "goalDifference": 3
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 94,
             "name": "Villarreal CF",
             "shortName": "Villarreal",
@@ -86,7 +105,7 @@
           "goalDifference": 6
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 78,
             "name": "Club Atlético de Madrid",
@@ -105,7 +124,7 @@
           "goalDifference": 6
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 90,
             "name": "Real Betis Balompié",
@@ -124,25 +143,6 @@
           "goalDifference": 5
         },
         {
-          "position": 6,
-          "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 4,
-          "draw": 3,
-          "lost": 2,
-          "points": 15,
-          "goalsFor": 13,
-          "goalsAgainst": 11,
-          "goalDifference": 2
-        },
-        {
           "position": 7,
           "team": {
             "id": 285,
@@ -151,15 +151,15 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 3,
           "draw": 5,
-          "lost": 1,
+          "lost": 2,
           "points": 14,
           "goalsFor": 11,
-          "goalsAgainst": 9,
-          "goalDifference": 2
+          "goalsAgainst": 10,
+          "goalDifference": 1
         },
         {
           "position": 8,
