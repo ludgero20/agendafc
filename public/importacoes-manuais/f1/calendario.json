@@ -400,9 +400,9 @@
       "raceName": "GP do México",
       "circuitName": "Autódromo Hermanos Rodríguez",
       "country": "🇲🇽",
-      "status": "Próxima Corrida",
+      "status": "Em andamento",
       "results": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "M. Verstappen", "p1": "", "p2": "", "p3": ""
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-10-24", "hora": "15:30", "transmissao": ["BandSports"] },
