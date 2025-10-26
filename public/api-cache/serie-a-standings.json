@@ -284,15 +284,15 @@
             "tla": "TOR",
             "crest": "https://crests.football-data.org/586.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "points": 8,
           "goalsFor": 6,
-          "goalsAgainst": 13,
-          "goalDifference": -7
+          "goalsAgainst": 14,
+          "goalDifference": -8
         },
         {
           "position": 15,
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 1,
+          "draw": 3,
+          "lost": 4,
+          "points": 6,
+          "goalsFor": 4,
+          "goalsAgainst": 9,
+          "goalDifference": -5
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 5890,
             "name": "US Lecce",
             "shortName": "Lecce",
@@ -333,7 +352,7 @@
           "goalDifference": -6
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 487,
             "name": "AC Pisa 1909",
@@ -352,7 +371,7 @@
           "goalDifference": -7
         },
         {
-          "position": 18,
+          "position": 19,
           "team": {
             "id": 450,
             "name": "Hellas Verona FC",
@@ -371,7 +390,7 @@
           "goalDifference": -7
         },
         {
-          "position": 19,
+          "position": 20,
           "team": {
             "id": 99,
             "name": "ACF Fiorentina",
@@ -388,25 +407,6 @@
           "goalsFor": 5,
           "goalsAgainst": 10,
           "goalDifference": -5
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 4,
-          "points": 3,
-          "goalsFor": 3,
-          "goalsAgainst": 9,
-          "goalDifference": -6
         }
       ]
     }
