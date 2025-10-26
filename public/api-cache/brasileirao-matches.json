@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 87,
+    "count": 85,
     "first": "2025-10-26",
     "last": "2025-12-21",
     "played": 0
@@ -19,124 +19,6 @@
     "emblem": "https://crests.football-data.org/bsa.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 535226,
-      "utcDate": "2025-10-26T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-23T01:32:05Z",
-      "homeTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
-      },
-      "awayTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 535231,
-      "utcDate": "2025-10-26T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-26T01:32:01Z",
-      "homeTeam": {
-        "id": 1767,
-        "name": "Grêmio FBPA",
-        "shortName": "Grêmio",
-        "tla": "FBP",
-        "crest": "https://crests.football-data.org/1767.png"
-      },
-      "awayTeam": {
-        "id": 4245,
-        "name": "EC Juventude",
-        "shortName": "Juventude",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/4245_large.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
     {
       "area": {
         "id": 2032,

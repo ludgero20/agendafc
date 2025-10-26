@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 2,
+          "points": 17,
+          "goalsFor": 17,
+          "goalsAgainst": 10,
+          "goalDifference": 7
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -124,25 +143,6 @@
           "goalDifference": 5
         },
         {
-          "position": 6,
-          "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 5,
-          "draw": 1,
-          "lost": 2,
-          "points": 16,
-          "goalsFor": 17,
-          "goalsAgainst": 10,
-          "goalDifference": 7
-        },
-        {
           "position": 7,
           "team": {
             "id": 523,
@@ -151,12 +151,12 @@
             "tla": "LYO",
             "crest": "https://crests.football-data.org/523.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 5,
-          "draw": 0,
+          "draw": 1,
           "lost": 3,
-          "points": 15,
+          "points": 16,
           "goalsFor": 11,
           "goalsAgainst": 8,
           "goalDifference": 3
