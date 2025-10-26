@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 498,
+            "name": "Sporting Clube de Portugal",
+            "shortName": "Sporting CP",
+            "tla": "SPO",
+            "crest": "https://crests.football-data.org/498.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 7,
+          "draw": 1,
+          "lost": 1,
+          "points": 22,
+          "goalsFor": 21,
+          "goalsAgainst": 5,
+          "goalDifference": 16
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
             "shortName": "SL Benfica",
@@ -65,25 +84,6 @@
           "goalsFor": 18,
           "goalsAgainst": 4,
           "goalDifference": 14
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 498,
-            "name": "Sporting Clube de Portugal",
-            "shortName": "Sporting CP",
-            "tla": "SPO",
-            "crest": "https://crests.football-data.org/498.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 1,
-          "points": 19,
-          "goalsFor": 20,
-          "goalsAgainst": 5,
-          "goalDifference": 15
         },
         {
           "position": 4,
@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 5531,
+            "name": "FC Famalicão",
+            "shortName": "Famalicão",
+            "tla": "FAM",
+            "crest": "https://crests.football-data.org/5531.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 1,
+          "points": 16,
+          "goalsFor": 10,
+          "goalsAgainst": 4,
+          "goalDifference": 6
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 583,
             "name": "Moreirense FC",
             "shortName": "Moreirense",
@@ -124,45 +143,7 @@
           "goalDifference": 1
         },
         {
-          "position": 6,
-          "team": {
-            "id": 5531,
-            "name": "FC Famalicão",
-            "shortName": "Famalicão",
-            "tla": "FAM",
-            "crest": "https://crests.football-data.org/5531.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 1,
-          "points": 14,
-          "goalsFor": 8,
-          "goalsAgainst": 4,
-          "goalDifference": 4
-        },
-        {
           "position": 7,
-          "team": {
-            "id": 5543,
-            "name": "Vitória SC",
-            "shortName": "Vitória SC",
-            "tla": "GUI",
-            "crest": "https://crests.football-data.org/5543.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 3,
-          "points": 12,
-          "goalsFor": 9,
-          "goalsAgainst": 12,
-          "goalDifference": -3
-        },
-        {
-          "position": 8,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -181,7 +162,7 @@
           "goalDifference": -1
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -200,7 +181,7 @@
           "goalDifference": -2
         },
         {
-          "position": 10,
+          "position": 9,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -214,9 +195,28 @@
           "draw": 2,
           "lost": 4,
           "points": 11,
-          "goalsFor": 9,
-          "goalsAgainst": 12,
+          "goalsFor": 10,
+          "goalsAgainst": 13,
           "goalDifference": -3
+        },
+        {
+          "position": 10,
+          "team": {
+            "id": 5543,
+            "name": "Vitória SC",
+            "shortName": "Vitória SC",
+            "tla": "GUI",
+            "crest": "https://crests.football-data.org/5543.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 4,
+          "points": 11,
+          "goalsFor": 9,
+          "goalsAgainst": 14,
+          "goalDifference": -5
         },
         {
           "position": 11,
@@ -309,8 +309,8 @@
           "draw": 4,
           "lost": 4,
           "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 14,
           "goalDifference": -3
         },
         {
@@ -341,15 +341,15 @@
             "tla": "TON",
             "crest": "https://crests.football-data.org/1049.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 1,
           "draw": 2,
-          "lost": 5,
+          "lost": 6,
           "points": 5,
           "goalsFor": 4,
-          "goalsAgainst": 14,
-          "goalDifference": -10
+          "goalsAgainst": 15,
+          "goalDifference": -11
         },
         {
           "position": 18,

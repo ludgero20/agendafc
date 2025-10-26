@@ -39,13 +39,13 @@
           },
           "playedGames": 10,
           "form": null,
-          "won": 8,
-          "draw": 1,
+          "won": 9,
+          "draw": 0,
           "lost": 1,
-          "points": 25,
-          "goalsFor": 21,
+          "points": 27,
+          "goalsFor": 22,
           "goalsAgainst": 10,
-          "goalDifference": 11
+          "goalDifference": 12
         },
         {
           "position": 2,
@@ -59,12 +59,12 @@
           "playedGames": 10,
           "form": null,
           "won": 7,
-          "draw": 2,
-          "lost": 1,
-          "points": 23,
+          "draw": 1,
+          "lost": 2,
+          "points": 22,
           "goalsFor": 25,
-          "goalsAgainst": 11,
-          "goalDifference": 14
+          "goalsAgainst": 12,
+          "goalDifference": 13
         },
         {
           "position": 3,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 79,
+            "name": "CA Osasuna",
+            "shortName": "Osasuna",
+            "tla": "OSA",
+            "crest": "https://crests.football-data.org/79.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 4,
+          "draw": 1,
+          "lost": 5,
+          "points": 13,
+          "goalsFor": 9,
+          "goalsAgainst": 10,
+          "goalDifference": -1
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -238,7 +257,7 @@
           "goalDifference": 1
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -255,25 +274,6 @@
           "goalsFor": 11,
           "goalsAgainst": 10,
           "goalDifference": 1
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 79,
-            "name": "CA Osasuna",
-            "shortName": "Osasuna",
-            "tla": "OSA",
-            "crest": "https://crests.football-data.org/79.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 5,
-          "points": 10,
-          "goalsFor": 7,
-          "goalsAgainst": 9,
-          "goalDifference": -2
         },
         {
           "position": 14,
@@ -360,15 +360,15 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 0,
           "draw": 7,
-          "lost": 2,
+          "lost": 3,
           "points": 7,
-          "goalsFor": 8,
-          "goalsAgainst": 11,
-          "goalDifference": -3
+          "goalsFor": 9,
+          "goalsAgainst": 13,
+          "goalDifference": -4
         },
         {
           "position": 19,

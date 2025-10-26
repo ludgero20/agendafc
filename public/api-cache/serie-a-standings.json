@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 103,
+            "name": "Bologna FC 1909",
+            "shortName": "Bologna",
+            "tla": "BOL",
+            "crest": "https://crests.football-data.org/103.png"
+          },
+          "playedGames": 8,
+          "form": null,
+          "won": 5,
+          "draw": 1,
+          "lost": 2,
+          "points": 16,
+          "goalsFor": 13,
+          "goalsAgainst": 5,
+          "goalDifference": 8
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -103,25 +122,6 @@
           "goalsFor": 19,
           "goalsAgainst": 11,
           "goalDifference": 8
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 103,
-            "name": "Bologna FC 1909",
-            "shortName": "Bologna",
-            "tla": "BOL",
-            "crest": "https://crests.football-data.org/103.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 4,
-          "draw": 1,
-          "lost": 2,
-          "points": 13,
-          "goalsFor": 11,
-          "goalsAgainst": 5,
-          "goalDifference": 6
         },
         {
           "position": 6,
@@ -379,15 +379,15 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 7,
+          "playedGames": 8,
           "form": null,
           "won": 0,
           "draw": 3,
-          "lost": 4,
+          "lost": 5,
           "points": 3,
           "goalsFor": 5,
-          "goalsAgainst": 10,
-          "goalDifference": -5
+          "goalsAgainst": 12,
+          "goalDifference": -7
         },
         {
           "position": 20,
