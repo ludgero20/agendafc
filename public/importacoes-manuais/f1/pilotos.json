@@ -2,37 +2,37 @@
   "standings": [
     {
       "position": 1,
-      "name": "O. Piastri",
-      "nationality": "🇦🇺",
-      "team": "McLaren",
-      "points": 346,
-      "wins": 7,
-      "podiums": 14
-    },
-    {
-      "position": 2,
       "name": "L. Norris",
       "nationality": "🇬🇧",
       "team": "McLaren",
-      "points": 332,
-      "wins": 5,
-      "podiums": 15
+      "points": 357,
+      "wins": 6,
+      "podiums": 16
+    },
+    {
+      "position": 2,
+      "name": "O. Piastri",
+      "nationality": "🇦🇺",
+      "team": "McLaren",
+      "points": 356,
+      "wins": 7,
+      "podiums": 14
     },
     {
       "position": 3,
       "name": "M. Verstappen",
       "nationality": "🇳🇱",
       "team": "Red Bull",
-      "points": 306,
+      "points": 321,
       "wins": 5,
-      "podiums": 10
+      "podiums": 11
     },
     {
       "position": 4,
       "name": "G. Russell",
       "nationality": "🇬🇧",
       "team": "Mercedes",
-      "points": 252,
+      "points": 258,
       "wins": 2,
       "podiums": 8
     },
@@ -41,16 +41,16 @@
       "name": "C. Leclerc",
       "nationality": "🇲🇨",
       "team": "Ferrari",
-      "points": 192,
+      "points": 210,
       "wins": 0,
-      "podiums": 6
+      "podiums": 7
     },
     {
       "position": 6,
       "name": "L. Hamilton",
       "nationality": "🇬🇧",
       "team": "Ferrari",
-      "points": 142,
+      "points": 146,
       "wins": 0,
       "podiums": 0
     },
@@ -59,7 +59,7 @@
       "name": "K. Antonelli",
       "nationality": "🇮🇹",
       "team": "Mercedes",
-      "points": 89,
+      "points": 97,
       "wins": 0,
       "podiums": 1
     },
@@ -110,6 +110,15 @@
     },
     {
       "position": 13,
+      "name": "O. Bearman",
+      "nationality": "🇬🇧",
+      "team": "Haas",
+      "points": 32,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 14,
       "name": "L. Stroll",
       "nationality": "🇨🇦",
       "team": "Aston Martin Aramco-Mercedes",
@@ -118,7 +127,7 @@
       "podiums": 0
     },
     {
-      "position": 14,
+      "position": 15,
       "name": "L. Lawson",
       "nationality": "🇳🇿",
       "team": "Racing Bulls",
@@ -127,16 +136,16 @@
       "podiums": 0
     },
     {
-      "position": 15,
+      "position": 16,
       "name": "E. Ocon",
       "nationality": "🇫🇷",
       "team": "Haas",
-      "points": 28,
+      "points": 30,
       "wins": 0,
       "podiums": 0
     },
     {
-      "position": 16,
+      "position": 17,
       "name": "Y. Tsunoda",
       "nationality": "🇯🇵",
       "team": "Red Bull",
@@ -145,19 +154,10 @@
       "podiums": 0
     },
     {
-      "position": 17,
+      "position": 18,
       "name": "P. Gasly",
       "nationality": "🇫🇷",
       "team": "Alpine",
-      "points": 20,
-      "wins": 0,
-      "podiums": 0
-    },
-    {
-      "position": 18,
-      "name": "O. Bearman",
-      "nationality": "🇬🇧",
-      "team": "Haas",
       "points": 20,
       "wins": 0,
       "podiums": 0
@@ -167,7 +167,7 @@
       "name": "G. Bortoleto",
       "nationality": "🇧🇷",
       "team": "Sauber",
-      "points": 18,
+      "points": 19,
       "wins": 0,
       "podiums": 0
     },
@@ -184,7 +184,7 @@
       "position": 21,
       "name": "J. Doohan",
       "nationality": "🇦🇺",
-      "team": "Alpine",
+      "team": "sem equipe",
       "points": 0,
       "wins": 0,
       "podiums": 0

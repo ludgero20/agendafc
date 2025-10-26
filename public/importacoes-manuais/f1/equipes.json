@@ -4,33 +4,33 @@
       "position": 1,
       "name": "McLaren",
       "logoUrl": "",
-      "points": 678,
-      "wins": 12,
-      "podiums": 29
+      "points": 713,
+      "wins": 13,
+      "podiums": 30
     },
     {
       "position": 2,
+      "name": "Ferrari",
+      "logoUrl": "",
+      "points": 356,
+      "wins": 0,
+      "podiums": 7
+    },
+    {
+      "position": 3,
       "name": "Mercedes",
       "logoUrl": "",
-      "points": 341,
+      "points": 355,
       "wins": 2,
       "podiums": 9
     },
     {
-      "position": 3,
-      "name": "Ferrari",
-      "logoUrl": "",
-      "points": 334,
-      "wins": 0,
-      "podiums": 6
-    },
-    {
       "position": 4,
-      "name": "Red Bull",
+      "name": "Red Bull Racing",
       "logoUrl": "",
-      "points": 331,
+      "points": 346,
       "wins": 5,
-      "podiums": 10
+      "podiums": 11
     },
     {
       "position": 5,
@@ -50,7 +50,7 @@
     },
     {
       "position": 7,
-      "name": "Aston Martin Aramco-Mercedes",
+      "name": "Aston Martin",
       "logoUrl": "",
       "points": 69,
       "wins": 0,
@@ -58,19 +58,19 @@
     },
     {
       "position": 8,
-      "name": "Sauber",
+      "name": "Haas F1 Team",
       "logoUrl": "",
-      "points": 59,
+      "points": 62,
       "wins": 0,
-      "podiums": 1
+      "podiums": 0
     },
     {
       "position": 9,
-      "name": "Haas",
+      "name": "Kick Sauber",
       "logoUrl": "",
-      "points": 48,
+      "points": 60,
       "wins": 0,
-      "podiums": 0
+      "podiums": 1
     },
     {
       "position": 10,
