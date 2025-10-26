@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 6,
+          "draw": 0,
+          "lost": 3,
+          "points": 18,
+          "goalsFor": 13,
+          "goalsAgainst": 9,
+          "goalDifference": 4
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -103,25 +122,6 @@
           "goalsFor": 22,
           "goalsAgainst": 11,
           "goalDifference": 11
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 2,
-          "points": 17,
-          "goalsFor": 17,
-          "goalsAgainst": 10,
-          "goalDifference": 7
         },
         {
           "position": 6,
@@ -145,11 +145,11 @@
         {
           "position": 7,
           "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
           },
           "playedGames": 9,
           "form": null,
@@ -157,9 +157,9 @@
           "draw": 1,
           "lost": 3,
           "points": 16,
-          "goalsFor": 11,
-          "goalsAgainst": 8,
-          "goalDifference": 3
+          "goalsFor": 18,
+          "goalsAgainst": 12,
+          "goalDifference": 6
         },
         {
           "position": 8,
