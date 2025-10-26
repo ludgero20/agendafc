@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 304,
+    "count": 302,
     "first": "2025-10-26",
     "last": "2026-05-24",
     "played": 0
@@ -19,138 +19,6 @@
     "emblem": "https://crests.football-data.org/SA.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 8,
-        "winner": null
-      },
-      "id": 536888,
-      "utcDate": "2025-10-26T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-25T01:32:02Z",
-      "homeTeam": {
-        "id": 450,
-        "name": "Hellas Verona FC",
-        "shortName": "Verona",
-        "tla": "HVE",
-        "crest": "https://crests.football-data.org/450.png"
-      },
-      "awayTeam": {
-        "id": 104,
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57837,
-          "name": "Federico Dionisi",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 8,
-        "winner": null
-      },
-      "id": 536891,
-      "utcDate": "2025-10-26T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-26T01:32:00Z",
-      "homeTeam": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "awayTeam": {
-        "id": 100,
-        "name": "AS Roma",
-        "shortName": "Roma",
-        "tla": "ROM",
-        "crest": "https://crests.football-data.org/100.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 11072,
-          "name": "Gianluca Manganiello",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
