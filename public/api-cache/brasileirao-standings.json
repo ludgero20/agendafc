@@ -37,12 +37,12 @@
             "tla": "PAL",
             "crest": "https://crests.football-data.org/1769.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 19,
-          "draw": 4,
+          "draw": 5,
           "lost": 5,
-          "points": 61,
+          "points": 62,
           "goalsFor": 53,
           "goalsAgainst": 26,
           "goalDifference": 27
@@ -75,12 +75,12 @@
             "tla": "CRU",
             "crest": "https://crests.football-data.org/1771.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 16,
-          "draw": 8,
+          "draw": 9,
           "lost": 5,
-          "points": 56,
+          "points": 57,
           "goalsFor": 42,
           "goalsAgainst": 21,
           "goalDifference": 21
@@ -176,9 +176,9 @@
           "draw": 6,
           "lost": 12,
           "points": 42,
-          "goalsFor": 47,
+          "goalsFor": 49,
           "goalsAgainst": 41,
-          "goalDifference": 6
+          "goalDifference": 8
         },
         {
           "position": 9,
@@ -253,8 +253,8 @@
           "lost": 14,
           "points": 36,
           "goalsFor": 34,
-          "goalsAgainst": 45,
-          "goalDifference": -11
+          "goalsAgainst": 47,
+          "goalDifference": -13
         },
         {
           "position": 13,
