@@ -113,12 +113,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 4,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 16,
+          "points": 17,
           "goalsFor": 16,
           "goalsAgainst": 10,
           "goalDifference": 6
@@ -132,12 +132,12 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 4,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 16,
+          "points": 17,
           "goalsFor": 15,
           "goalsAgainst": 10,
           "goalDifference": 5
