@@ -400,7 +400,7 @@
       "raceName": "GP do México",
       "circuitName": "Autódromo Hermanos Rodríguez",
       "country": "🇲🇽",
-      "status": "Em andamento",
+      "status": "Finalizado",
       "results": {
         "pole": "M. Verstappen", "p1": "", "p2": "", "p3": ""
       },
@@ -417,7 +417,7 @@
       "raceName": "GP de São Paulo",
       "circuitName": "Interlagos Circuit",
       "country": "🇧🇷",
-      "status": "Agendado",
+      "status": "Próxima corrida",
       "results": {
         "pole": "", "p1": "", "p2": "", "p3": ""
       },
