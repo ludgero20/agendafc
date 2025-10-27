@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL",
+            "crest": "https://crests.football-data.org/78.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 5,
+          "draw": 4,
+          "lost": 1,
+          "points": 19,
+          "goalsFor": 18,
+          "goalsAgainst": 10,
+          "goalDifference": 8
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
             "shortName": "Espanyol",
@@ -105,25 +124,6 @@
           "goalDifference": 3
         },
         {
-          "position": 5,
-          "team": {
-            "id": 78,
-            "name": "Club Atlético de Madrid",
-            "shortName": "Atleti",
-            "tla": "ATL",
-            "crest": "https://crests.football-data.org/78.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 1,
-          "points": 17,
-          "goalsFor": 16,
-          "goalsAgainst": 10,
-          "goalDifference": 6
-        },
-        {
           "position": 6,
           "team": {
             "id": 90,
@@ -135,12 +135,12 @@
           "playedGames": 10,
           "form": null,
           "won": 4,
-          "draw": 5,
-          "lost": 1,
-          "points": 17,
+          "draw": 4,
+          "lost": 2,
+          "points": 16,
           "goalsFor": 15,
-          "goalsAgainst": 10,
-          "goalDifference": 5
+          "goalsAgainst": 12,
+          "goalDifference": 3
         },
         {
           "position": 7,
