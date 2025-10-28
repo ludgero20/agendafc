@@ -37,12 +37,12 @@
             "tla": "NAP",
             "crest": "https://crests.football-data.org/113.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 6,
-          "draw": 0,
+          "draw": 1,
           "lost": 2,
-          "points": 18,
+          "points": 19,
           "goalsFor": 15,
           "goalsAgainst": 8,
           "goalDifference": 7
@@ -322,12 +322,12 @@
             "tla": "USL",
             "crest": "https://crests.football-data.org/5890.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 1,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 6,
+          "points": 7,
           "goalsFor": 7,
           "goalsAgainst": 13,
           "goalDifference": -6

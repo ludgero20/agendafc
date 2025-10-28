@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 300,
+    "count": 299,
     "first": "2025-10-28",
     "last": "2026-05-24",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/SA.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 9,
-        "winner": null
-      },
-      "id": 536904,
-      "utcDate": "2025-10-28T17:30:00Z",
-      "status": "TIMED",
-      "matchday": 9,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-26T01:32:01Z",
-      "homeTeam": {
-        "id": 5890,
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "tla": "USL",
-        "crest": "https://crests.football-data.org/5890.png"
-      },
-      "awayTeam": {
-        "id": 113,
-        "name": "SSC Napoli",
-        "shortName": "Napoli",
-        "tla": "NAP",
-        "crest": "https://crests.football-data.org/113.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 97848,
-          "name": "Giuseppe Collu",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
