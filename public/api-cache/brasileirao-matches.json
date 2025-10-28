@@ -1633,26 +1633,26 @@
         "currentMatchday": 30,
         "winner": null
       },
-      "id": 535255,
-      "utcDate": "2025-11-09T21:30:00Z",
+      "id": 535262,
+      "utcDate": "2025-11-09T19:00:00Z",
       "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-26T15:20:57Z",
+      "lastUpdated": "2025-10-27T23:25:25Z",
       "homeTeam": {
-        "id": 1783,
-        "name": "CR Flamengo",
-        "shortName": "Flamengo",
-        "tla": "FLA",
-        "crest": "https://crests.football-data.org/1783.png"
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "tla": "VIT",
+        "crest": "https://crests.football-data.org/1782.png"
       },
       "awayTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
       },
       "score": {
         "winner": null,
@@ -1692,26 +1692,26 @@
         "currentMatchday": 30,
         "winner": null
       },
-      "id": 535262,
+      "id": 535255,
       "utcDate": "2025-11-09T21:30:00Z",
       "status": "TIMED",
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-09-30T15:21:12Z",
+      "lastUpdated": "2025-10-26T15:20:57Z",
       "homeTeam": {
-        "id": 1782,
-        "name": "EC Vitória",
-        "shortName": "Vitória",
-        "tla": "VIT",
-        "crest": "https://crests.football-data.org/1782.png"
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
       },
       "awayTeam": {
-        "id": 1770,
-        "name": "Botafogo FR",
-        "shortName": "Botafogo",
-        "tla": "BOT",
-        "crest": "https://crests.football-data.org/1770.png"
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
       },
       "score": {
         "winner": null,
