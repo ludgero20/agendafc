@@ -1327,9 +1327,9 @@
       "strTime": "21:15:00",
       "strHomeTeam": "Kansas City Chiefs",
       "strAwayTeam": "Washington Commanders",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "28",
+      "intAwayScore": "7",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424066",
