@@ -3987,6 +3987,84 @@
         "fase": "playoffs",
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1505,
+        "data": "2025-11-01",
+        "hora": "18:00",
+        "campeonato": "NBA",
+        "canal": "ESPN 2 / Disney+",
+        "time1": "Sacramento Kings",
+        "time2": "Milwaukee Bucks",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1506,
+        "data": "2025-11-01",
+        "hora": "21:00",
+        "campeonato": "NBA",
+        "canal": "ESPN 2 / Disney+",
+        "time1": "Houston Rockets",
+        "time2": "Boston Celtics",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1507,
+        "data": "2025-11-01",
+        "hora": "23:00",
+        "campeonato": "NBA",
+        "canal": "ESPN 2",
+        "time1": "Dallas Mavericks",
+        "time2": "Detroit Pistons",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1508,
+        "data": "2025-11-02",
+        "hora": "23:30",
+        "campeonato": "NBA",
+        "canal": "Amazon Prime Video",
+        "time1": "Miami Heat",
+        "time2": "Los Angeles Lakers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1509,
+        "data": "2025-11-03",
+        "hora": "21:00",
+        "campeonato": "NBA",
+        "canal": "ESPN 2 / Disney+",
+        "time1": "Minnesota Timberwolves",
+        "time2": "Brooklyn Nets",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1510,
+        "data": "2025-11-04",
+        "hora": "00:30",
+        "campeonato": "NBA",
+        "canal": "Amazon Prime Video",
+        "time1": "Miami Heat",
+        "time2": "Los Angeles Clippers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
     }
   ]
 }
