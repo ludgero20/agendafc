@@ -37,12 +37,12 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 6,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 20,
+          "points": 21,
           "goalsFor": 19,
           "goalsAgainst": 8,
           "goalDifference": 11
@@ -56,12 +56,12 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 6,
-          "draw": 1,
+          "draw": 2,
           "lost": 2,
-          "points": 19,
+          "points": 20,
           "goalsFor": 14,
           "goalsAgainst": 8,
           "goalDifference": 6
@@ -113,15 +113,15 @@
             "tla": "LIL",
             "crest": "https://crests.football-data.org/521.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 5,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 17,
           "goalsFor": 22,
-          "goalsAgainst": 11,
-          "goalDifference": 11
+          "goalsAgainst": 12,
+          "goalDifference": 10
         },
         {
           "position": 6,
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 3,
+          "points": 17,
+          "goalsFor": 15,
+          "goalsAgainst": 15,
+          "goalDifference": 0
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -160,25 +179,6 @@
           "goalsFor": 18,
           "goalsAgainst": 12,
           "goalDifference": 6
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 3,
-          "points": 14,
-          "goalsFor": 14,
-          "goalsAgainst": 15,
-          "goalDifference": -1
         },
         {
           "position": 9,
@@ -238,7 +238,7 @@
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 11,
           "team": {
             "id": 512,
             "name": "Stade Brestois 29",
@@ -246,18 +246,37 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/512.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 9,
+          "points": 10,
           "goalsFor": 14,
           "goalsAgainst": 17,
           "goalDifference": -3
         },
         {
           "position": 13,
+          "team": {
+            "id": 533,
+            "name": "Le Havre AC",
+            "shortName": "Le Havre",
+            "tla": "HAC",
+            "crest": "https://crests.football-data.org/533.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 4,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 16,
+          "goalDifference": -5
+        },
+        {
+          "position": 14,
           "team": {
             "id": 543,
             "name": "FC Nantes",
@@ -274,25 +293,6 @@
           "goalsFor": 7,
           "goalsAgainst": 10,
           "goalDifference": -3
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 533,
-            "name": "Le Havre AC",
-            "shortName": "Le Havre",
-            "tla": "HAC",
-            "crest": "https://crests.football-data.org/533.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 4,
-          "points": 9,
-          "goalsFor": 11,
-          "goalsAgainst": 16,
-          "goalDifference": -5
         },
         {
           "position": 15,
@@ -322,12 +322,12 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
-          "draw": 2,
+          "draw": 3,
           "lost": 5,
-          "points": 8,
+          "points": 9,
           "goalsFor": 12,
           "goalsAgainst": 21,
           "goalDifference": -9
@@ -360,12 +360,12 @@
             "tla": "FCM",
             "crest": "https://crests.football-data.org/545.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 0,
-          "draw": 2,
+          "draw": 3,
           "lost": 7,
-          "points": 2,
+          "points": 3,
           "goalsFor": 6,
           "goalsAgainst": 26,
           "goalDifference": -20
