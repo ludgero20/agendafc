@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15545,
+          "name": "Benoît Millot",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57042,
+          "name": "Willy Delajod",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57501,
+          "name": "Abdelatif Kherradji",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57088,
+          "name": "Bastien Dechepy",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
