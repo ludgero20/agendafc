@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 1765,
+            "name": "Fluminense FC",
+            "shortName": "Fluminense",
+            "tla": "FLU",
+            "crest": "https://crests.football-data.org/1765.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 14,
+          "draw": 5,
+          "lost": 11,
+          "points": 47,
+          "goalsFor": 37,
+          "goalsAgainst": 35,
+          "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 1770,
             "name": "Botafogo FR",
             "shortName": "Botafogo",
@@ -141,25 +160,6 @@
           "goalsFor": 41,
           "goalsAgainst": 28,
           "goalDifference": 13
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 1765,
-            "name": "Fluminense FC",
-            "shortName": "Fluminense",
-            "tla": "FLU",
-            "crest": "https://crests.football-data.org/1765.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 13,
-          "draw": 6,
-          "lost": 11,
-          "points": 45,
-          "goalsFor": 36,
-          "goalsAgainst": 35,
-          "goalDifference": 1
         },
         {
           "position": 8,
@@ -259,25 +259,6 @@
         {
           "position": 13,
           "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 12,
-          "points": 36,
-          "goalsFor": 27,
-          "goalsAgainst": 28,
-          "goalDifference": -1
-        },
-        {
-          "position": 14,
-          "team": {
             "id": 1766,
             "name": "CA Mineiro",
             "shortName": "Mineiro",
@@ -293,6 +274,25 @@
           "goalsFor": 27,
           "goalsAgainst": 32,
           "goalDifference": -5
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 9,
+          "draw": 8,
+          "lost": 13,
+          "points": 35,
+          "goalsFor": 27,
+          "goalsAgainst": 29,
+          "goalDifference": -2
         },
         {
           "position": 15,
