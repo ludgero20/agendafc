@@ -1338,9 +1338,9 @@
       "strTime": "21:15:00",
       "strHomeTeam": "Miami Dolphins",
       "strAwayTeam": "Baltimore Ravens",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "6",
+      "intAwayScore": "28",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424068",

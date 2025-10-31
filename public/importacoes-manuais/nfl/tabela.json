@@ -30,10 +30,10 @@
       "conference": "American Football Conference",
       "division": "AFC East",
       "intWin": 2,
-      "intLoss": 6,
+      "intLoss": 7,
       "intTie": 0,
-      "strPercentage": ".250",
-      "strStreak": "W1",
+      "strPercentage": ".222",
+      "strStreak": "L1",
       "rank": "3"
     },
     {
@@ -61,6 +61,18 @@
       "rank": "1"
     },
     {
+      "teamName": "Baltimore Ravens",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
+      "conference": "American Football Conference",
+      "division": "AFC North",
+      "intWin": 3,
+      "intLoss": 5,
+      "intTie": 0,
+      "strPercentage": ".375",
+      "strStreak": "W2",
+      "rank": "2"
+    },
+    {
       "teamName": "Cincinnati Bengals",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png",
       "conference": "American Football Conference",
@@ -70,18 +82,6 @@
       "intTie": 0,
       "strPercentage": ".333",
       "strStreak": "L2",
-      "rank": "2"
-    },
-    {
-      "teamName": "Baltimore Ravens",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
-      "conference": "American Football Conference",
-      "division": "AFC North",
-      "intWin": 2,
-      "intLoss": 5,
-      "intTie": 0,
-      "strPercentage": ".286",
-      "strStreak": "W1",
       "rank": "3"
     },
     {
