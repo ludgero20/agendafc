@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 109,
+            "name": "Juventus FC",
+            "shortName": "Juventus",
+            "tla": "JUV",
+            "crest": "https://crests.football-data.org/109.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 5,
+          "draw": 3,
+          "lost": 2,
+          "points": 18,
+          "goalsFor": 13,
+          "goalsAgainst": 9,
+          "goalDifference": 4
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -124,7 +143,7 @@
           "goalDifference": 6
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 103,
             "name": "Bologna FC 1909",
@@ -141,25 +160,6 @@
           "goalsFor": 13,
           "goalsAgainst": 7,
           "goalDifference": 6
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 109,
-            "name": "Juventus FC",
-            "shortName": "Juventus",
-            "tla": "JUV",
-            "crest": "https://crests.football-data.org/109.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 4,
-          "draw": 3,
-          "lost": 2,
-          "points": 15,
-          "goalsFor": 12,
-          "goalsAgainst": 9,
-          "goalDifference": 3
         },
         {
           "position": 8,
@@ -189,15 +189,15 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/457.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 3,
           "draw": 5,
-          "lost": 1,
+          "lost": 2,
           "points": 14,
           "goalsFor": 11,
-          "goalsAgainst": 10,
-          "goalDifference": 1
+          "goalsAgainst": 11,
+          "goalDifference": 0
         },
         {
           "position": 10,
