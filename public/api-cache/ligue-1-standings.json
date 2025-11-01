@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 516,
+            "name": "Olympique de Marseille",
+            "shortName": "Marseille",
+            "tla": "MAR",
+            "crest": "https://crests.football-data.org/516.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 7,
+          "draw": 1,
+          "lost": 3,
+          "points": 22,
+          "goalsFor": 25,
+          "goalsAgainst": 11,
+          "goalDifference": 14
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -65,25 +84,6 @@
           "goalsFor": 23,
           "goalsAgainst": 17,
           "goalDifference": 6
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 516,
-            "name": "Olympique de Marseille",
-            "shortName": "Marseille",
-            "tla": "MAR",
-            "crest": "https://crests.football-data.org/516.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 3,
-          "points": 19,
-          "goalsFor": 24,
-          "goalsAgainst": 11,
-          "goalDifference": 13
         },
         {
           "position": 4,
@@ -341,15 +341,15 @@
             "tla": "AJA",
             "crest": "https://crests.football-data.org/519.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 2,
           "draw": 1,
-          "lost": 7,
+          "lost": 8,
           "points": 7,
           "goalsFor": 7,
-          "goalsAgainst": 16,
-          "goalDifference": -9
+          "goalsAgainst": 17,
+          "goalDifference": -10
         },
         {
           "position": 18,
