@@ -115,13 +115,13 @@
           },
           "playedGames": 10,
           "form": null,
-          "won": 4,
-          "draw": 5,
+          "won": 5,
+          "draw": 4,
           "lost": 1,
-          "points": 17,
-          "goalsFor": 10,
+          "points": 19,
+          "goalsFor": 11,
           "goalsAgainst": 4,
-          "goalDifference": 6
+          "goalDifference": 7
         },
         {
           "position": 6,
@@ -164,43 +164,24 @@
         {
           "position": 8,
           "team": {
-            "id": 5529,
-            "name": "CD Nacional",
-            "shortName": "CD Nacional",
-            "tla": "CDN",
-            "crest": "https://crests.football-data.org/5529.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 4,
-          "points": 12,
-          "goalsFor": 10,
-          "goalsAgainst": 13,
-          "goalDifference": -3
-        },
-        {
-          "position": 9,
-          "team": {
             "id": 496,
             "name": "Rio Ave FC",
             "shortName": "Rio Ave",
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
-          "draw": 5,
+          "draw": 6,
           "lost": 2,
-          "points": 11,
+          "points": 12,
           "goalsFor": 13,
           "goalsAgainst": 14,
           "goalDifference": -1
         },
         {
-          "position": 10,
+          "position": 9,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -217,6 +198,25 @@
           "goalsFor": 8,
           "goalsAgainst": 10,
           "goalDifference": -2
+        },
+        {
+          "position": 10,
+          "team": {
+            "id": 5529,
+            "name": "CD Nacional",
+            "shortName": "CD Nacional",
+            "tla": "CDN",
+            "crest": "https://crests.football-data.org/5529.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 5,
+          "points": 11,
+          "goalsFor": 10,
+          "goalsAgainst": 14,
+          "goalDifference": -4
         },
         {
           "position": 11,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 5,
+          "points": 9,
+          "goalsFor": 8,
+          "goalsAgainst": 17,
+          "goalDifference": -9
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
@@ -276,25 +295,6 @@
           "goalDifference": -14
         },
         {
-          "position": 14,
-          "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 5,
-          "points": 8,
-          "goalsFor": 8,
-          "goalsAgainst": 17,
-          "goalDifference": -9
-        },
-        {
           "position": 15,
           "team": {
             "id": 582,
@@ -303,12 +303,12 @@
             "tla": "EST",
             "crest": "https://crests.football-data.org/582.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 1,
-          "draw": 4,
+          "draw": 5,
           "lost": 4,
-          "points": 7,
+          "points": 8,
           "goalsFor": 11,
           "goalsAgainst": 14,
           "goalDifference": -3
@@ -322,12 +322,12 @@
             "tla": "AMA",
             "crest": "https://crests.football-data.org/9136.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 1,
-          "draw": 4,
+          "draw": 5,
           "lost": 4,
-          "points": 7,
+          "points": 8,
           "goalsFor": 7,
           "goalsAgainst": 10,
           "goalDifference": -3
