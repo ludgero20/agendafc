@@ -37,12 +37,12 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 6,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 21,
+          "points": 22,
           "goalsFor": 20,
           "goalsAgainst": 9,
           "goalDifference": 11
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 5,
+          "draw": 3,
+          "lost": 3,
+          "points": 18,
+          "goalsFor": 16,
+          "goalsAgainst": 15,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -160,25 +179,6 @@
           "goalsFor": 22,
           "goalsAgainst": 13,
           "goalDifference": 9
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 3,
-          "points": 17,
-          "goalsFor": 16,
-          "goalsAgainst": 15,
-          "goalDifference": 1
         },
         {
           "position": 9,

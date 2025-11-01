@@ -62,9 +62,9 @@
           "draw": 2,
           "lost": 2,
           "points": 23,
-          "goalsFor": 19,
+          "goalsFor": 22,
           "goalsAgainst": 10,
-          "goalDifference": 9
+          "goalDifference": 12
         },
         {
           "position": 3,
@@ -94,12 +94,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 5,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 19,
+          "points": 20,
           "goalsFor": 18,
           "goalsAgainst": 10,
           "goalDifference": 8
@@ -164,11 +164,11 @@
         {
           "position": 8,
           "team": {
-            "id": 87,
-            "name": "Rayo Vallecano de Madrid",
-            "shortName": "Rayo Vallecano",
-            "tla": "RAY",
-            "crest": "https://crests.football-data.org/87.png"
+            "id": 559,
+            "name": "Sevilla FC",
+            "shortName": "Sevilla FC",
+            "tla": "SEV",
+            "crest": "https://crests.football-data.org/559.png"
           },
           "playedGames": 11,
           "form": null,
@@ -176,8 +176,8 @@
           "draw": 2,
           "lost": 5,
           "points": 14,
-          "goalsFor": 12,
-          "goalsAgainst": 11,
+          "goalsFor": 17,
+          "goalsAgainst": 16,
           "goalDifference": 1
         },
         {
@@ -221,21 +221,21 @@
         {
           "position": 11,
           "team": {
-            "id": 559,
-            "name": "Sevilla FC",
-            "shortName": "Sevilla FC",
-            "tla": "SEV",
-            "crest": "https://crests.football-data.org/559.png"
+            "id": 87,
+            "name": "Rayo Vallecano de Madrid",
+            "shortName": "Rayo Vallecano",
+            "tla": "RAY",
+            "crest": "https://crests.football-data.org/87.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 4,
-          "draw": 1,
+          "draw": 2,
           "lost": 5,
-          "points": 13,
-          "goalsFor": 17,
-          "goalsAgainst": 16,
-          "goalDifference": 1
+          "points": 14,
+          "goalsFor": 12,
+          "goalsAgainst": 14,
+          "goalDifference": -2
         },
         {
           "position": 12,
