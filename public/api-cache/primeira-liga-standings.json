@@ -132,15 +132,15 @@
             "tla": "MOR",
             "crest": "https://crests.football-data.org/583.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 0,
           "lost": 4,
-          "points": 15,
-          "goalsFor": 13,
+          "points": 18,
+          "goalsFor": 14,
           "goalsAgainst": 13,
-          "goalDifference": 0
+          "goalDifference": 1
         },
         {
           "position": 7,
@@ -303,15 +303,15 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/712.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
           "draw": 3,
-          "lost": 4,
+          "lost": 5,
           "points": 9,
           "goalsFor": 10,
-          "goalsAgainst": 24,
-          "goalDifference": -14
+          "goalsAgainst": 25,
+          "goalDifference": -15
         },
         {
           "position": 16,
@@ -343,13 +343,13 @@
           },
           "playedGames": 10,
           "form": null,
-          "won": 2,
-          "draw": 2,
+          "won": 1,
+          "draw": 3,
           "lost": 6,
-          "points": 8,
-          "goalsFor": 5,
-          "goalsAgainst": 17,
-          "goalDifference": -12
+          "points": 6,
+          "goalsFor": 6,
+          "goalsAgainst": 19,
+          "goalDifference": -13
         },
         {
           "position": 18,
@@ -363,12 +363,12 @@
           "playedGames": 10,
           "form": null,
           "won": 0,
-          "draw": 1,
-          "lost": 9,
-          "points": 1,
-          "goalsFor": 5,
-          "goalsAgainst": 23,
-          "goalDifference": -18
+          "draw": 2,
+          "lost": 8,
+          "points": 2,
+          "goalsFor": 7,
+          "goalsAgainst": 24,
+          "goalDifference": -17
         }
       ]
     }

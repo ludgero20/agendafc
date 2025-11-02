@@ -126,20 +126,20 @@
         {
           "position": 6,
           "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
+            "id": 2,
+            "name": "TSG 1899 Hoffenheim",
+            "shortName": "Hoffenheim",
+            "tla": "TSG",
+            "crest": "https://crests.football-data.org/2.png"
           },
           "playedGames": 9,
           "form": null,
-          "won": 4,
-          "draw": 2,
+          "won": 5,
+          "draw": 1,
           "lost": 3,
-          "points": 14,
-          "goalsFor": 22,
-          "goalsAgainst": 19,
+          "points": 16,
+          "goalsFor": 18,
+          "goalsAgainst": 15,
           "goalDifference": 3
         },
         {
@@ -157,28 +157,28 @@
           "draw": 2,
           "lost": 3,
           "points": 14,
-          "goalsFor": 14,
+          "goalsFor": 16,
           "goalsAgainst": 12,
-          "goalDifference": 2
+          "goalDifference": 4
         },
         {
           "position": 8,
           "team": {
-            "id": 2,
-            "name": "TSG 1899 Hoffenheim",
-            "shortName": "Hoffenheim",
-            "tla": "TSG",
-            "crest": "https://crests.football-data.org/2.png"
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 4,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 13,
-          "goalsFor": 15,
-          "goalsAgainst": 13,
-          "goalDifference": 2
+          "points": 14,
+          "goalsFor": 22,
+          "goalsAgainst": 19,
+          "goalDifference": 3
         },
         {
           "position": 9,
@@ -246,15 +246,15 @@
             "tla": "WOB",
             "crest": "https://crests.football-data.org/11.png"
           },
-          "playedGames": 8,
+          "playedGames": 9,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 8,
-          "goalsFor": 9,
-          "goalsAgainst": 13,
-          "goalDifference": -4
+          "goalsFor": 11,
+          "goalsAgainst": 16,
+          "goalDifference": -5
         },
         {
           "position": 13,
@@ -272,8 +272,8 @@
           "lost": 5,
           "points": 8,
           "goalsFor": 8,
-          "goalsAgainst": 13,
-          "goalDifference": -5
+          "goalsAgainst": 15,
+          "goalDifference": -7
         },
         {
           "position": 14,

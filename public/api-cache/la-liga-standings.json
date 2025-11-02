@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 81,
+            "name": "FC Barcelona",
+            "shortName": "Barça",
+            "tla": "FCB",
+            "crest": "https://crests.football-data.org/81.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 8,
+          "draw": 1,
+          "lost": 2,
+          "points": 25,
+          "goalsFor": 27,
+          "goalsAgainst": 13,
+          "goalDifference": 14
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 94,
             "name": "Villarreal CF",
             "shortName": "Villarreal",
@@ -65,25 +84,6 @@
           "goalsFor": 22,
           "goalsAgainst": 10,
           "goalDifference": 12
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 81,
-            "name": "FC Barcelona",
-            "shortName": "Barça",
-            "tla": "FCB",
-            "crest": "https://crests.football-data.org/81.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 7,
-          "draw": 1,
-          "lost": 2,
-          "points": 22,
-          "goalsFor": 25,
-          "goalsAgainst": 12,
-          "goalDifference": 13
         },
         {
           "position": 4,
@@ -119,9 +119,9 @@
           "draw": 3,
           "lost": 3,
           "points": 18,
-          "goalsFor": 14,
+          "goalsFor": 15,
           "goalsAgainst": 13,
-          "goalDifference": 1
+          "goalDifference": 2
         },
         {
           "position": 6,
@@ -177,8 +177,8 @@
           "lost": 4,
           "points": 15,
           "goalsFor": 11,
-          "goalsAgainst": 9,
-          "goalDifference": 2
+          "goalsAgainst": 10,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -189,15 +189,15 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 3,
           "draw": 5,
-          "lost": 2,
+          "lost": 3,
           "points": 14,
-          "goalsFor": 11,
-          "goalsAgainst": 10,
-          "goalDifference": 1
+          "goalsFor": 12,
+          "goalsAgainst": 12,
+          "goalDifference": 0
         },
         {
           "position": 10,
