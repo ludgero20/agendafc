@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 3,
+          "points": 20,
+          "goalsFor": 16,
+          "goalsAgainst": 12,
+          "goalDifference": 4
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -141,25 +160,6 @@
           "goalsFor": 22,
           "goalsAgainst": 16,
           "goalDifference": 6
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 3,
-          "points": 19,
-          "goalsFor": 16,
-          "goalsAgainst": 12,
-          "goalDifference": 4
         },
         {
           "position": 8,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 512,
+            "name": "Stade Brestois 29",
+            "shortName": "Brest",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/512.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 5,
+          "points": 10,
+          "goalsFor": 14,
+          "goalsAgainst": 18,
+          "goalDifference": -4
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 532,
             "name": "Angers SCO",
             "shortName": "Angers SCO",
@@ -274,25 +293,6 @@
           "goalsFor": 8,
           "goalsAgainst": 15,
           "goalDifference": -7
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 512,
-            "name": "Stade Brestois 29",
-            "shortName": "Brest",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/512.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 5,
-          "points": 9,
-          "goalsFor": 14,
-          "goalsAgainst": 18,
-          "goalDifference": -4
         },
         {
           "position": 15,
