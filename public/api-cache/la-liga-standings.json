@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 90,
+            "name": "Real Betis Balompié",
+            "shortName": "Real Betis",
+            "tla": "BET",
+            "crest": "https://crests.football-data.org/90.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 5,
+          "draw": 4,
+          "lost": 2,
+          "points": 19,
+          "goalsFor": 18,
+          "goalsAgainst": 12,
+          "goalDifference": 6
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
             "shortName": "Espanyol",
@@ -122,25 +141,6 @@
           "goalsFor": 15,
           "goalsAgainst": 13,
           "goalDifference": 2
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 90,
-            "name": "Real Betis Balompié",
-            "shortName": "Real Betis",
-            "tla": "BET",
-            "crest": "https://crests.football-data.org/90.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 2,
-          "points": 17,
-          "goalsFor": 15,
-          "goalsAgainst": 12,
-          "goalDifference": 3
         },
         {
           "position": 7,
@@ -316,25 +316,6 @@
         {
           "position": 16,
           "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 2,
-          "draw": 4,
-          "lost": 5,
-          "points": 10,
-          "goalsFor": 11,
-          "goalsAgainst": 15,
-          "goalDifference": -4
-        },
-        {
-          "position": 17,
-          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -350,6 +331,25 @@
           "goalsFor": 15,
           "goalsAgainst": 20,
           "goalDifference": -5
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 6,
+          "points": 9,
+          "goalsFor": 11,
+          "goalsAgainst": 18,
+          "goalDifference": -7
         },
         {
           "position": 18,

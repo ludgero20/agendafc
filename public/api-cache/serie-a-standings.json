@@ -50,25 +50,6 @@
         {
           "position": 2,
           "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 7,
-          "draw": 1,
-          "lost": 2,
-          "points": 22,
-          "goalsFor": 10,
-          "goalsAgainst": 4,
-          "goalDifference": 6
-        },
-        {
-          "position": 3,
-          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -86,7 +67,7 @@
           "goalDifference": 12
         },
         {
-          "position": 4,
+          "position": 3,
           "team": {
             "id": 98,
             "name": "AC Milan",
@@ -96,13 +77,32 @@
           },
           "playedGames": 10,
           "form": null,
-          "won": 5,
-          "draw": 4,
+          "won": 6,
+          "draw": 3,
           "lost": 1,
-          "points": 19,
-          "goalsFor": 14,
+          "points": 21,
+          "goalsFor": 15,
           "goalsAgainst": 7,
-          "goalDifference": 7
+          "goalDifference": 8
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 7,
+          "draw": 0,
+          "lost": 3,
+          "points": 21,
+          "goalsFor": 10,
+          "goalsAgainst": 5,
+          "goalDifference": 5
         },
         {
           "position": 5,
