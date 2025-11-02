@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 286,
+    "count": 284,
     "first": "2025-11-02",
     "last": "2026-05-24",
     "played": 0
@@ -19,138 +19,6 @@
     "emblem": "https://crests.football-data.org/SA.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 10,
-        "winner": null
-      },
-      "id": 536905,
-      "utcDate": "2025-11-02T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-30T01:32:02Z",
-      "homeTeam": {
-        "id": 99,
-        "name": "ACF Fiorentina",
-        "shortName": "Fiorentina",
-        "tla": "FIO",
-        "crest": "https://crests.football-data.org/99.png"
-      },
-      "awayTeam": {
-        "id": 5890,
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "tla": "USL",
-        "crest": "https://crests.football-data.org/5890.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 11018,
-          "name": "Antonio Rapuano",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 10,
-        "winner": null
-      },
-      "id": 536907,
-      "utcDate": "2025-11-02T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 10,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-10-31T01:32:02Z",
-      "homeTeam": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
-      },
-      "awayTeam": {
-        "id": 487,
-        "name": "AC Pisa 1909",
-        "shortName": "AC Pisa",
-        "tla": "PIS",
-        "crest": "https://crests.football-data.org/487.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 135544,
-          "name": "Alberto Arena",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
