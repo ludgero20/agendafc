@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 1783,
+            "name": "CR Flamengo",
+            "shortName": "Flamengo",
+            "tla": "FLA",
+            "crest": "https://crests.football-data.org/1783.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 19,
+          "draw": 7,
+          "lost": 4,
+          "points": 64,
+          "goalsFor": 59,
+          "goalsAgainst": 16,
+          "goalDifference": 43
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 1769,
             "name": "SE Palmeiras",
             "shortName": "Palmeiras",
@@ -46,25 +65,6 @@
           "goalsFor": 53,
           "goalsAgainst": 26,
           "goalDifference": 27
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 1783,
-            "name": "CR Flamengo",
-            "shortName": "Flamengo",
-            "tla": "FLA",
-            "crest": "https://crests.football-data.org/1783.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 18,
-          "draw": 7,
-          "lost": 4,
-          "points": 61,
-          "goalsFor": 56,
-          "goalsAgainst": 16,
-          "goalDifference": 40
         },
         {
           "position": 3,
@@ -398,15 +398,15 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 2,
           "draw": 11,
-          "lost": 16,
+          "lost": 17,
           "points": 17,
           "goalsFor": 22,
-          "goalsAgainst": 46,
-          "goalDifference": -24
+          "goalsAgainst": 49,
+          "goalDifference": -27
         }
       ]
     }
