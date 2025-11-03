@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ",
+            "crest": "https://crests.football-data.org/110.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 3,
+          "draw": 4,
+          "lost": 3,
+          "points": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 7,
+          "goalDifference": 4
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 471,
             "name": "US Sassuolo Calcio",
             "shortName": "Sassuolo",
@@ -233,12 +252,12 @@
           "draw": 1,
           "lost": 5,
           "points": 13,
-          "goalsFor": 10,
-          "goalsAgainst": 11,
+          "goalsFor": 11,
+          "goalsAgainst": 12,
           "goalDifference": -1
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -257,25 +276,6 @@
           "goalDifference": -6
         },
         {
-          "position": 13,
-          "team": {
-            "id": 110,
-            "name": "SS Lazio",
-            "shortName": "Lazio",
-            "tla": "LAZ",
-            "crest": "https://crests.football-data.org/110.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 3,
-          "points": 12,
-          "goalsFor": 11,
-          "goalsAgainst": 7,
-          "goalDifference": 4
-        },
-        {
           "position": 14,
           "team": {
             "id": 104,
@@ -284,12 +284,12 @@
             "tla": "CAG",
             "crest": "https://crests.football-data.org/104.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 9,
+          "points": 10,
           "goalsFor": 9,
           "goalsAgainst": 12,
           "goalDifference": -3
@@ -366,8 +366,8 @@
           "draw": 3,
           "lost": 6,
           "points": 6,
-          "goalsFor": 5,
-          "goalsAgainst": 13,
+          "goalsFor": 6,
+          "goalsAgainst": 14,
           "goalDifference": -8
         },
         {
