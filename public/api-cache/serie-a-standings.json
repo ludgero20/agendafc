@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ",
+            "crest": "https://crests.football-data.org/110.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 4,
+          "draw": 3,
+          "lost": 3,
+          "points": 15,
+          "goalsFor": 13,
+          "goalsAgainst": 7,
+          "goalDifference": 6
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 115,
             "name": "Udinese Calcio",
             "shortName": "Udinese",
@@ -181,7 +200,7 @@
           "goalDifference": -3
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 457,
             "name": "US Cremonese",
@@ -200,7 +219,7 @@
           "goalDifference": 0
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 102,
             "name": "Atalanta BC",
@@ -217,25 +236,6 @@
           "goalsFor": 13,
           "goalsAgainst": 8,
           "goalDifference": 5
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 110,
-            "name": "SS Lazio",
-            "shortName": "Lazio",
-            "tla": "LAZ",
-            "crest": "https://crests.football-data.org/110.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 3,
-          "points": 13,
-          "goalsFor": 11,
-          "goalsAgainst": 7,
-          "goalDifference": 4
         },
         {
           "position": 12,
@@ -287,12 +287,12 @@
           "playedGames": 10,
           "form": null,
           "won": 2,
-          "draw": 4,
-          "lost": 4,
-          "points": 10,
+          "draw": 3,
+          "lost": 5,
+          "points": 9,
           "goalsFor": 9,
-          "goalsAgainst": 12,
-          "goalDifference": -3
+          "goalsAgainst": 14,
+          "goalDifference": -5
         },
         {
           "position": 15,
