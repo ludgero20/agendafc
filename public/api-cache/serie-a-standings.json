@@ -227,15 +227,15 @@
             "tla": "SAS",
             "crest": "https://crests.football-data.org/471.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 4,
           "draw": 1,
-          "lost": 4,
+          "lost": 5,
           "points": 13,
           "goalsFor": 10,
-          "goalsAgainst": 10,
-          "goalDifference": 0
+          "goalsAgainst": 11,
+          "goalDifference": -1
         },
         {
           "position": 12,
@@ -354,6 +354,25 @@
         {
           "position": 18,
           "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 1,
+          "draw": 3,
+          "lost": 6,
+          "points": 6,
+          "goalsFor": 5,
+          "goalsAgainst": 13,
+          "goalDifference": -8
+        },
+        {
+          "position": 19,
+          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -371,7 +390,7 @@
           "goalDifference": -10
         },
         {
-          "position": 19,
+          "position": 20,
           "team": {
             "id": 99,
             "name": "ACF Fiorentina",
@@ -387,25 +406,6 @@
           "points": 4,
           "goalsFor": 7,
           "goalsAgainst": 16,
-          "goalDifference": -9
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 9,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 6,
-          "points": 3,
-          "goalsFor": 4,
-          "goalsAgainst": 13,
           "goalDifference": -9
         }
       ]
