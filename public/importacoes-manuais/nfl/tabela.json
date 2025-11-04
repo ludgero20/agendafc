@@ -222,10 +222,10 @@
       "conference": "National Football Conference",
       "division": "NFC East",
       "intWin": 3,
-      "intLoss": 5,
+      "intLoss": 6,
       "intTie": 1,
-      "strPercentage": ".389",
-      "strStreak": "L2",
+      "strPercentage": ".350",
+      "strStreak": "L3",
       "rank": "3"
     },
     {
@@ -253,6 +253,18 @@
       "rank": "1"
     },
     {
+      "teamName": "Detroit Lions",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
+      "conference": "National Football Conference",
+      "division": "NFC North",
+      "intWin": 6,
+      "intLoss": 3,
+      "intTie": 0,
+      "strPercentage": ".667",
+      "strStreak": "W1",
+      "rank": "2"
+    },
+    {
       "teamName": "Chicago Bears",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png",
       "conference": "National Football Conference",
@@ -262,18 +274,6 @@
       "intTie": 0,
       "strPercentage": ".625",
       "strStreak": "W1",
-      "rank": "2"
-    },
-    {
-      "teamName": "Detroit Lions",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
-      "conference": "National Football Conference",
-      "division": "NFC North",
-      "intWin": 5,
-      "intLoss": 3,
-      "intTie": 0,
-      "strPercentage": ".625",
-      "strStreak": "L1",
       "rank": "3"
     },
     {
@@ -282,10 +282,10 @@
       "conference": "National Football Conference",
       "division": "NFC North",
       "intWin": 4,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".500",
-      "strStreak": "W1",
+      "strPercentage": ".444",
+      "strStreak": "L1",
       "rank": "4"
     },
     {
@@ -377,11 +377,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 2,
+      "intWin": 3,
       "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".286",
-      "strStreak": "L5",
+      "strPercentage": ".375",
+      "strStreak": "W1",
       "rank": "4"
     }
   ]

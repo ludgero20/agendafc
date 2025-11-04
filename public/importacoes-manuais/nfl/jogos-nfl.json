@@ -1481,9 +1481,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Dallas Cowboys",
       "strAwayTeam": "Arizona Cardinals",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "17",
+      "intAwayScore": "27",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424080",
@@ -2592,9 +2592,9 @@
       "strTime": "18:30:00",
       "strHomeTeam": "Minnesota Vikings",
       "strAwayTeam": "Detroit Lions",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "27",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424187",
