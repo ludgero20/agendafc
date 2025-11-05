@@ -6015,6 +6015,71 @@
         "fase": null,
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1661,
+        "data": "2025-11-07",
+        "hora": "11:30",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Treino Livre",
+        "evento_descricao": "GP do Brasil"
+    },
+    {
+        "id": 1662,
+        "data": "2025-11-07",
+        "hora": "15:30",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Classificação Sprint",
+        "evento_descricao": "GP do Brasil"
+    },
+    {
+        "id": 1663,
+        "data": "2025-11-08",
+        "hora": "11:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Corrida Sprint",
+        "evento_descricao": "GP do Brasil"
+    },
+    {
+        "id": 1664,
+        "data": "2025-11-08",
+        "hora": "15:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Classificação",
+        "evento_descricao": "GP do Brasil"
+    },
+    {
+        "id": 1665,
+        "data": "2025-11-09",
+        "hora": "14:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Corrida",
+        "evento_descricao": "GP do Brasil"
     }
   ]
 }
