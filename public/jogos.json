@@ -6080,6 +6080,84 @@
         "fase": null,
         "evento_nome": "Corrida",
         "evento_descricao": "GP do Brasil"
+    },
+    {
+        "id": 1666,
+        "data": "2025-11-09",
+        "hora": "11h30",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "Atlanta Falcons",
+        "time2": "Indianapolis Colts",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1667,
+        "data": "2025-11-09",
+        "hora": "15h00",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "New Orleans Saints",
+        "time2": "Carolina Panthers",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1668,
+        "data": "2025-11-09",
+        "hora": "15h00",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "New York Giants",
+        "time2": "Chicago Bears",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1669,
+        "data": "2025-11-09",
+        "hora": "15h00",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "Jacksonville Jaguars",
+        "time2": "Houston Texans",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1670,
+        "data": "2025-11-09",
+        "hora": "15h00",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "Baltimore Ravens",
+        "time2": "Minnesota Vikings",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
+    },
+    {
+        "id": 1671,
+        "data": "2025-11-09",
+        "hora": "15h00",
+        "campeonato": "NFL",
+        "canal": "NFL Game Pass",
+        "time1": "Cleveland Browns",
+        "time2": "New York Jets",
+        "divisao": null,
+        "fase": null,
+        "evento_nome": null,
+        "evento_descricao": null
     }
   ]
 }
