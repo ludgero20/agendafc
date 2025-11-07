@@ -189,12 +189,12 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 3,
-          "points": 14,
+          "points": 15,
           "goalsFor": 12,
           "goalsAgainst": 13,
           "goalDifference": -1
@@ -284,12 +284,12 @@
             "tla": "RSO",
             "crest": "https://crests.football-data.org/92.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 3,
-          "draw": 3,
+          "draw": 4,
           "lost": 5,
-          "points": 12,
+          "points": 13,
           "goalsFor": 13,
           "goalsAgainst": 16,
           "goalDifference": -3

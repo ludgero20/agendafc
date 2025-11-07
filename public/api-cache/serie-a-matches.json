@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 280,
-    "first": "2025-11-07",
+    "count": 279,
+    "first": "2025-11-08",
     "last": "2026-05-24",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/SA.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/SA.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 11,
-        "winner": null
-      },
-      "id": 536923,
-      "utcDate": "2025-11-07T19:45:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-04T01:32:01Z",
-      "homeTeam": {
-        "id": 487,
-        "name": "AC Pisa 1909",
-        "shortName": "AC Pisa",
-        "tla": "PIS",
-        "crest": "https://crests.football-data.org/487.png"
-      },
-      "awayTeam": {
-        "id": 457,
-        "name": "US Cremonese",
-        "shortName": "Cremonese",
-        "tla": "CRE",
-        "crest": "https://crests.football-data.org/457.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57868,
-          "name": "Matteo Marcenaro",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
