@@ -37,12 +37,12 @@
             "tla": "PAL",
             "crest": "https://crests.football-data.org/1769.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 20,
-          "draw": 5,
+          "draw": 6,
           "lost": 5,
-          "points": 65,
+          "points": 66,
           "goalsFor": 55,
           "goalsAgainst": 26,
           "goalDifference": 29
@@ -94,15 +94,15 @@
             "tla": "MIR",
             "crest": "https://crests.football-data.org/4364.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 15,
           "draw": 11,
-          "lost": 5,
+          "lost": 6,
           "points": 56,
           "goalsFor": 52,
-          "goalsAgainst": 31,
-          "goalDifference": 21
+          "goalsAgainst": 32,
+          "goalDifference": 20
         },
         {
           "position": 5,
@@ -151,15 +151,15 @@
             "tla": "FLU",
             "crest": "https://crests.football-data.org/1765.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
-          "won": 14,
+          "won": 15,
           "draw": 5,
           "lost": 12,
-          "points": 47,
-          "goalsFor": 37,
+          "points": 50,
+          "goalsFor": 38,
           "goalsAgainst": 37,
-          "goalDifference": 0
+          "goalDifference": 1
         },
         {
           "position": 8,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 13,
+          "points": 39,
+          "goalsFor": 30,
+          "goalsAgainst": 30,
+          "goalDifference": 0
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -274,25 +293,6 @@
           "goalsFor": 33,
           "goalsAgainst": 41,
           "goalDifference": -8
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 10,
-          "draw": 8,
-          "lost": 13,
-          "points": 38,
-          "goalsFor": 29,
-          "goalsAgainst": 29,
-          "goalDifference": 0
         },
         {
           "position": 15,
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 6685,
+            "name": "Santos FC",
+            "shortName": "Santos",
+            "tla": "SAN",
+            "crest": "https://crests.football-data.org/6685.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 8,
+          "draw": 10,
+          "lost": 13,
+          "points": 34,
+          "goalsFor": 31,
+          "goalsAgainst": 43,
+          "goalDifference": -12
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 1782,
             "name": "EC Vitória",
             "shortName": "Vitória",
@@ -331,25 +350,6 @@
           "goalsFor": 29,
           "goalsAgainst": 47,
           "goalDifference": -18
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 6685,
-            "name": "Santos FC",
-            "shortName": "Santos",
-            "tla": "SAN",
-            "crest": "https://crests.football-data.org/6685.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 8,
-          "draw": 9,
-          "lost": 13,
-          "points": 33,
-          "goalsFor": 31,
-          "goalsAgainst": 43,
-          "goalDifference": -12
         },
         {
           "position": 18,
@@ -379,14 +379,14 @@
             "tla": "FEC",
             "crest": "https://crests.football-data.org/3984.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 16,
-          "points": 28,
-          "goalsFor": 28,
-          "goalsAgainst": 45,
+          "points": 29,
+          "goalsFor": 29,
+          "goalsAgainst": 46,
           "goalDifference": -17
         },
         {
