@@ -1492,9 +1492,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Denver Broncos",
       "strAwayTeam": "Las Vegas Raiders",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "10",
+      "intAwayScore": "7",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424081",
