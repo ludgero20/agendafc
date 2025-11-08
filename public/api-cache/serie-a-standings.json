@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL",
+            "crest": "https://crests.football-data.org/98.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 7,
+          "draw": 3,
+          "lost": 1,
+          "points": 24,
+          "goalsFor": 16,
+          "goalsAgainst": 7,
+          "goalDifference": 9
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 113,
             "name": "SSC Napoli",
             "shortName": "Napoli",
@@ -48,7 +67,7 @@
           "goalDifference": 8
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
@@ -65,25 +84,6 @@
           "goalsFor": 24,
           "goalsAgainst": 12,
           "goalDifference": 12
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL",
-            "crest": "https://crests.football-data.org/98.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 1,
-          "points": 21,
-          "goalsFor": 15,
-          "goalsAgainst": 7,
-          "goalDifference": 8
         },
         {
           "position": 4,
@@ -341,15 +341,15 @@
             "tla": "PAR",
             "crest": "https://crests.football-data.org/112.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 1,
           "draw": 4,
-          "lost": 5,
+          "lost": 6,
           "points": 7,
           "goalsFor": 5,
-          "goalsAgainst": 12,
-          "goalDifference": -7
+          "goalsAgainst": 13,
+          "goalDifference": -8
         },
         {
           "position": 18,

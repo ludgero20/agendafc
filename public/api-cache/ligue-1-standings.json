@@ -249,34 +249,15 @@
           "playedGames": 12,
           "form": null,
           "won": 3,
-          "draw": 4,
-          "lost": 5,
-          "points": 13,
-          "goalsFor": 12,
+          "draw": 5,
+          "lost": 4,
+          "points": 14,
+          "goalsFor": 13,
           "goalsAgainst": 17,
-          "goalDifference": -5
+          "goalDifference": -4
         },
         {
           "position": 13,
-          "team": {
-            "id": 543,
-            "name": "FC Nantes",
-            "shortName": "Nantes",
-            "tla": "NAN",
-            "crest": "https://crests.football-data.org/543.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 6,
-          "points": 12,
-          "goalsFor": 11,
-          "goalsAgainst": 17,
-          "goalDifference": -6
-        },
-        {
-          "position": 14,
           "team": {
             "id": 512,
             "name": "Stade Brestois 29",
@@ -292,6 +273,25 @@
           "points": 10,
           "goalsFor": 14,
           "goalsAgainst": 21,
+          "goalDifference": -7
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 543,
+            "name": "FC Nantes",
+            "shortName": "Nantes",
+            "tla": "NAN",
+            "crest": "https://crests.football-data.org/543.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 6,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 18,
           "goalDifference": -7
         },
         {
