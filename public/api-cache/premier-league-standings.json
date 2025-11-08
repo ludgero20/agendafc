@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 3,
+          "points": 20,
+          "goalsFor": 18,
+          "goalsAgainst": 16,
+          "goalDifference": 2
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -65,25 +84,6 @@
           "goalsFor": 20,
           "goalsAgainst": 8,
           "goalDifference": 12
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 73,
-            "name": "Tottenham Hotspur FC",
-            "shortName": "Tottenham",
-            "tla": "TOT",
-            "crest": "https://crests.football-data.org/73.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 5,
-          "draw": 3,
-          "lost": 3,
-          "points": 18,
-          "goalsFor": 17,
-          "goalsAgainst": 8,
-          "goalDifference": 9
         },
         {
           "position": 4,
@@ -145,21 +145,21 @@
         {
           "position": 7,
           "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
+            "id": 73,
+            "name": "Tottenham Hotspur FC",
+            "shortName": "Tottenham",
+            "tla": "TOT",
+            "crest": "https://crests.football-data.org/73.png"
           },
           "playedGames": 11,
           "form": null,
           "won": 5,
-          "draw": 3,
-          "lost": 3,
-          "points": 18,
+          "draw": 2,
+          "lost": 4,
+          "points": 17,
           "goalsFor": 17,
-          "goalsAgainst": 16,
-          "goalDifference": 1
+          "goalsAgainst": 9,
+          "goalDifference": 8
         },
         {
           "position": 8,

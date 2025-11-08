@@ -170,15 +170,15 @@
             "tla": "ALA",
             "crest": "https://crests.football-data.org/263.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 4,
           "draw": 3,
-          "lost": 4,
+          "lost": 5,
           "points": 15,
           "goalsFor": 11,
-          "goalsAgainst": 10,
-          "goalDifference": 1
+          "goalsAgainst": 11,
+          "goalDifference": 0
         },
         {
           "position": 9,
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 298,
+            "name": "Girona FC",
+            "shortName": "Girona",
+            "tla": "GIR",
+            "crest": "https://crests.football-data.org/298.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 6,
+          "points": 10,
+          "goalsFor": 11,
+          "goalsAgainst": 24,
+          "goalDifference": -13
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -333,7 +352,7 @@
           "goalDifference": -5
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -352,7 +371,7 @@
           "goalDifference": -7
         },
         {
-          "position": 18,
+          "position": 19,
           "team": {
             "id": 95,
             "name": "Valencia CF",
@@ -371,7 +390,7 @@
           "goalDifference": -10
         },
         {
-          "position": 19,
+          "position": 20,
           "team": {
             "id": 1048,
             "name": "Real Oviedo",
@@ -388,25 +407,6 @@
           "goalsFor": 7,
           "goalsAgainst": 19,
           "goalDifference": -12
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 298,
-            "name": "Girona FC",
-            "shortName": "Girona",
-            "tla": "GIR",
-            "crest": "https://crests.football-data.org/298.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 1,
-          "draw": 4,
-          "lost": 6,
-          "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 24,
-          "goalDifference": -14
         }
       ]
     }
