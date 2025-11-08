@@ -56,12 +56,12 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 7,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 22,
+          "points": 23,
           "goalsFor": 25,
           "goalsAgainst": 11,
           "goalDifference": 14
@@ -265,12 +265,12 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/512.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 2,
-          "draw": 4,
+          "draw": 5,
           "lost": 5,
-          "points": 10,
+          "points": 11,
           "goalsFor": 14,
           "goalsAgainst": 18,
           "goalDifference": -4
