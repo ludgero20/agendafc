@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 81,
+            "name": "FC Barcelona",
+            "shortName": "Barça",
+            "tla": "FCB",
+            "crest": "https://crests.football-data.org/81.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 8,
+          "draw": 2,
+          "lost": 2,
+          "points": 26,
+          "goalsFor": 28,
+          "goalsAgainst": 13,
+          "goalDifference": 15
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 94,
             "name": "Villarreal CF",
             "shortName": "Villarreal",
@@ -65,25 +84,6 @@
           "goalsFor": 24,
           "goalsAgainst": 10,
           "goalDifference": 14
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 81,
-            "name": "FC Barcelona",
-            "shortName": "Barça",
-            "tla": "FCB",
-            "crest": "https://crests.football-data.org/81.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 8,
-          "draw": 1,
-          "lost": 2,
-          "points": 25,
-          "goalsFor": 28,
-          "goalsAgainst": 13,
-          "goalDifference": 15
         },
         {
           "position": 4,
@@ -119,8 +119,8 @@
           "draw": 5,
           "lost": 2,
           "points": 20,
-          "goalsFor": 18,
-          "goalsAgainst": 12,
+          "goalsFor": 19,
+          "goalsAgainst": 13,
           "goalDifference": 6
         },
         {
@@ -265,12 +265,12 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 2,
-          "draw": 7,
+          "draw": 8,
           "lost": 2,
-          "points": 13,
+          "points": 14,
           "goalsFor": 13,
           "goalsAgainst": 14,
           "goalDifference": -1
@@ -347,8 +347,8 @@
           "draw": 4,
           "lost": 6,
           "points": 10,
-          "goalsFor": 10,
-          "goalsAgainst": 20,
+          "goalsFor": 11,
+          "goalsAgainst": 21,
           "goalDifference": -10
         },
         {

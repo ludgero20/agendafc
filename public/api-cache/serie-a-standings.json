@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 108,
+            "name": "FC Internazionale Milano",
+            "shortName": "Inter",
+            "tla": "INT",
+            "crest": "https://crests.football-data.org/108.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 8,
+          "draw": 0,
+          "lost": 3,
+          "points": 24,
+          "goalsFor": 25,
+          "goalsAgainst": 12,
+          "goalDifference": 13
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 100,
             "name": "AS Roma",
             "shortName": "Roma",
@@ -48,7 +67,7 @@
           "goalDifference": 7
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 98,
             "name": "AC Milan",
@@ -67,7 +86,7 @@
           "goalDifference": 8
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -84,25 +103,6 @@
           "goalsFor": 16,
           "goalsAgainst": 10,
           "goalDifference": 6
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 108,
-            "name": "FC Internazionale Milano",
-            "shortName": "Inter",
-            "tla": "INT",
-            "crest": "https://crests.football-data.org/108.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 7,
-          "draw": 0,
-          "lost": 3,
-          "points": 21,
-          "goalsFor": 24,
-          "goalsAgainst": 12,
-          "goalDifference": 12
         },
         {
           "position": 5,
@@ -189,15 +189,15 @@
             "tla": "LAZ",
             "crest": "https://crests.football-data.org/110.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 4,
           "draw": 3,
-          "lost": 3,
+          "lost": 4,
           "points": 15,
           "goalsFor": 13,
-          "goalsAgainst": 7,
-          "goalDifference": 6
+          "goalsAgainst": 8,
+          "goalDifference": 5
         },
         {
           "position": 10,
