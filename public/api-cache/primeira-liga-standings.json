@@ -75,15 +75,15 @@
             "tla": "BEN",
             "crest": "https://crests.football-data.org/1903.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 3,
           "lost": 0,
-          "points": 24,
-          "goalsFor": 21,
-          "goalsAgainst": 4,
-          "goalDifference": 17
+          "points": 27,
+          "goalsFor": 23,
+          "goalsAgainst": 5,
+          "goalDifference": 18
         },
         {
           "position": 4,
@@ -132,18 +132,37 @@
             "tla": "MOR",
             "crest": "https://crests.football-data.org/583.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 6,
           "draw": 0,
-          "lost": 4,
+          "lost": 5,
           "points": 18,
           "goalsFor": 15,
-          "goalsAgainst": 13,
-          "goalDifference": 2
+          "goalsAgainst": 14,
+          "goalDifference": 1
         },
         {
           "position": 7,
+          "team": {
+            "id": 5613,
+            "name": "Sporting Clube de Braga",
+            "shortName": "Braga",
+            "tla": "SCB",
+            "crest": "https://crests.football-data.org/5613.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 3,
+          "points": 16,
+          "goalsFor": 18,
+          "goalsAgainst": 10,
+          "goalDifference": 8
+        },
+        {
+          "position": 8,
           "team": {
             "id": 5543,
             "name": "Vitória SC",
@@ -160,25 +179,6 @@
           "goalsFor": 10,
           "goalsAgainst": 17,
           "goalDifference": -7
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 5613,
-            "name": "Sporting Clube de Braga",
-            "shortName": "Braga",
-            "tla": "SCB",
-            "crest": "https://crests.football-data.org/5613.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 3,
-          "points": 13,
-          "goalsFor": 17,
-          "goalsAgainst": 10,
-          "goalDifference": 7
         },
         {
           "position": 9,
@@ -322,15 +322,15 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 2,
           "draw": 2,
-          "lost": 6,
+          "lost": 7,
           "points": 8,
-          "goalsFor": 11,
-          "goalsAgainst": 22,
-          "goalDifference": -11
+          "goalsFor": 12,
+          "goalsAgainst": 24,
+          "goalDifference": -12
         },
         {
           "position": 17,

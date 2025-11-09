@@ -56,12 +56,12 @@
             "tla": "FLA",
             "crest": "https://crests.football-data.org/1783.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 19,
-          "draw": 8,
+          "draw": 9,
           "lost": 4,
-          "points": 65,
+          "points": 66,
           "goalsFor": 61,
           "goalsAgainst": 18,
           "goalDifference": 43
@@ -341,12 +341,12 @@
             "tla": "SAN",
             "crest": "https://crests.football-data.org/6685.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 8,
-          "draw": 9,
+          "draw": 10,
           "lost": 14,
-          "points": 33,
+          "points": 34,
           "goalsFor": 31,
           "goalsAgainst": 45,
           "goalDifference": -14
