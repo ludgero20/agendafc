@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 503,
+            "name": "FC Porto",
+            "shortName": "Porto",
+            "tla": "FCP",
+            "crest": "https://crests.football-data.org/503.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 9,
+          "draw": 2,
+          "lost": 0,
+          "points": 29,
+          "goalsFor": 23,
+          "goalsAgainst": 3,
+          "goalDifference": 20
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
             "shortName": "Sporting CP",
@@ -48,45 +67,7 @@
           "goalDifference": 21
         },
         {
-          "position": 2,
-          "team": {
-            "id": 503,
-            "name": "FC Porto",
-            "shortName": "Porto",
-            "tla": "FCP",
-            "crest": "https://crests.football-data.org/503.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 9,
-          "draw": 1,
-          "lost": 0,
-          "points": 28,
-          "goalsFor": 23,
-          "goalsAgainst": 3,
-          "goalDifference": 20
-        },
-        {
           "position": 3,
-          "team": {
-            "id": 5533,
-            "name": "Gil Vicente FC",
-            "shortName": "Gil Vicente",
-            "tla": "GIL",
-            "crest": "https://crests.football-data.org/5533.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 8,
-          "draw": 1,
-          "lost": 2,
-          "points": 25,
-          "goalsFor": 16,
-          "goalsAgainst": 4,
-          "goalDifference": 12
-        },
-        {
-          "position": 4,
           "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
@@ -105,6 +86,25 @@
           "goalDifference": 17
         },
         {
+          "position": 4,
+          "team": {
+            "id": 5533,
+            "name": "Gil Vicente FC",
+            "shortName": "Gil Vicente",
+            "tla": "GIL",
+            "crest": "https://crests.football-data.org/5533.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 7,
+          "draw": 2,
+          "lost": 2,
+          "points": 23,
+          "goalsFor": 16,
+          "goalsAgainst": 5,
+          "goalDifference": 11
+        },
+        {
           "position": 5,
           "team": {
             "id": 5531,
@@ -113,12 +113,12 @@
             "tla": "FAM",
             "crest": "https://crests.football-data.org/5531.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 5,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 19,
+          "points": 20,
           "goalsFor": 11,
           "goalsAgainst": 4,
           "goalDifference": 7
@@ -214,8 +214,8 @@
           "draw": 3,
           "lost": 5,
           "points": 12,
-          "goalsFor": 10,
-          "goalsAgainst": 14,
+          "goalsFor": 11,
+          "goalsAgainst": 15,
           "goalDifference": -4
         },
         {
@@ -252,8 +252,8 @@
           "draw": 5,
           "lost": 4,
           "points": 11,
-          "goalsFor": 12,
-          "goalsAgainst": 13,
+          "goalsFor": 13,
+          "goalsAgainst": 14,
           "goalDifference": -1
         },
         {
@@ -363,12 +363,12 @@
           "playedGames": 11,
           "form": null,
           "won": 0,
-          "draw": 2,
-          "lost": 9,
-          "points": 2,
-          "goalsFor": 7,
+          "draw": 3,
+          "lost": 8,
+          "points": 3,
+          "goalsFor": 8,
           "goalsAgainst": 25,
-          "goalDifference": -18
+          "goalDifference": -17
         }
       ]
     }

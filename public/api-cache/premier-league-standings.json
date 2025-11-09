@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 7,
+          "draw": 1,
+          "lost": 3,
+          "points": 22,
+          "goalsFor": 23,
+          "goalsAgainst": 8,
+          "goalDifference": 15
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -65,25 +84,6 @@
           "goalsFor": 21,
           "goalsAgainst": 11,
           "goalDifference": 10
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 65,
-            "name": "Manchester City FC",
-            "shortName": "Man City",
-            "tla": "MCI",
-            "crest": "https://crests.football-data.org/65.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 3,
-          "points": 19,
-          "goalsFor": 20,
-          "goalsAgainst": 8,
-          "goalDifference": 12
         },
         {
           "position": 4,
@@ -126,25 +126,6 @@
         {
           "position": 6,
           "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 0,
-          "lost": 4,
-          "points": 18,
-          "goalsFor": 18,
-          "goalsAgainst": 14,
-          "goalDifference": 4
-        },
-        {
-          "position": 7,
-          "team": {
             "id": 58,
             "name": "Aston Villa FC",
             "shortName": "Aston Villa",
@@ -162,7 +143,7 @@
           "goalDifference": 3
         },
         {
-          "position": 8,
+          "position": 7,
           "team": {
             "id": 66,
             "name": "Manchester United FC",
@@ -178,6 +159,25 @@
           "points": 18,
           "goalsFor": 19,
           "goalsAgainst": 18,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 6,
+          "draw": 0,
+          "lost": 5,
+          "points": 18,
+          "goalsFor": 18,
+          "goalsAgainst": 17,
           "goalDifference": 1
         },
         {

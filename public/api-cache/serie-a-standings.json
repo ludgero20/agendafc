@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 8,
+          "draw": 0,
+          "lost": 3,
+          "points": 24,
+          "goalsFor": 12,
+          "goalsAgainst": 5,
+          "goalDifference": 7
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 98,
             "name": "AC Milan",
             "shortName": "Milan",
@@ -48,7 +67,7 @@
           "goalDifference": 8
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -67,7 +86,7 @@
           "goalDifference": 6
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
@@ -86,7 +105,7 @@
           "goalDifference": 12
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 103,
             "name": "Bologna FC 1909",
@@ -103,25 +122,6 @@
           "goalsFor": 18,
           "goalsAgainst": 8,
           "goalDifference": 10
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 7,
-          "draw": 0,
-          "lost": 3,
-          "points": 21,
-          "goalsFor": 10,
-          "goalsAgainst": 5,
-          "goalDifference": 5
         },
         {
           "position": 6,
@@ -208,15 +208,15 @@
             "tla": "UDI",
             "crest": "https://crests.football-data.org/115.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 4,
           "draw": 3,
-          "lost": 3,
+          "lost": 4,
           "points": 15,
           "goalsFor": 12,
-          "goalsAgainst": 15,
-          "goalDifference": -3
+          "goalsAgainst": 17,
+          "goalDifference": -5
         },
         {
           "position": 11,
