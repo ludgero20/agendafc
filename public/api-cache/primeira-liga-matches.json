@@ -40,65 +40,6 @@
         "currentMatchday": 11,
         "winner": null
       },
-      "id": 545795,
-      "utcDate": "2025-11-09T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-02T01:32:05Z",
-      "homeTeam": {
-        "id": 5613,
-        "name": "Sporting Clube de Braga",
-        "shortName": "Braga",
-        "tla": "SCB",
-        "crest": "https://crests.football-data.org/5613.png"
-      },
-      "awayTeam": {
-        "id": 583,
-        "name": "Moreirense FC",
-        "shortName": "Moreirense",
-        "tla": "MOR",
-        "crest": "https://crests.football-data.org/583.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 11,
-        "winner": null
-      },
       "id": 545790,
       "utcDate": "2025-11-09T15:30:00Z",
       "status": "TIMED",
@@ -164,7 +105,7 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T01:32:02Z",
+      "lastUpdated": "2025-11-09T01:32:00Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -223,7 +164,7 @@
       "matchday": 11,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-09T01:32:01Z",
       "homeTeam": {
         "id": 5531,
         "name": "FC Famalicão",
@@ -237,6 +178,65 @@
         "shortName": "Porto",
         "tla": "FCP",
         "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2433,
+        "startDate": "2025-08-08",
+        "endDate": "2026-05-17",
+        "currentMatchday": 11,
+        "winner": null
+      },
+      "id": 545795,
+      "utcDate": "2025-11-09T20:30:00Z",
+      "status": "TIMED",
+      "matchday": 11,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-11-09T02:59:04Z",
+      "homeTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "awayTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
       },
       "score": {
         "winner": null,
@@ -754,7 +754,7 @@
       "matchday": 12,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -1285,7 +1285,7 @@
       "matchday": 13,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 1049,
         "name": "CD Tondela",
@@ -1698,7 +1698,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -2052,7 +2052,7 @@
       "matchday": 15,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 7822,
         "name": "FC Alverca",
@@ -2642,7 +2642,7 @@
       "matchday": 16,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -3173,7 +3173,7 @@
       "matchday": 17,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 5530,
         "name": "CD Santa Clara",
@@ -3999,7 +3999,7 @@
       "matchday": 18,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 5543,
         "name": "Vitória SC",
@@ -4176,7 +4176,7 @@
       "matchday": 19,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -4884,7 +4884,7 @@
       "matchday": 20,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 6618,
         "name": "Casa Pia AC",
@@ -5533,7 +5533,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -6123,7 +6123,7 @@
       "matchday": 22,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 5529,
         "name": "CD Nacional",
@@ -6536,7 +6536,7 @@
       "matchday": 23,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -6831,7 +6831,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -7716,7 +7716,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 1903,
         "name": "Sport Lisboa e Benfica",
@@ -8011,7 +8011,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -8719,7 +8719,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 5613,
         "name": "Sporting Clube de Braga",
@@ -9014,7 +9014,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -9545,7 +9545,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
@@ -10312,7 +10312,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -10725,7 +10725,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -11079,7 +11079,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -11669,7 +11669,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 10340,
         "name": "AVS",
@@ -12200,7 +12200,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-08T00:21:04Z",
+      "lastUpdated": "2025-11-08T10:21:06Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",

@@ -173,12 +173,12 @@
           "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 10,
-          "lost": 11,
-          "points": 46,
+          "draw": 9,
+          "lost": 12,
+          "points": 45,
           "goalsFor": 37,
-          "goalsAgainst": 35,
-          "goalDifference": 2
+          "goalsAgainst": 36,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 4286,
+            "name": "RB Bragantino",
+            "shortName": "Bragantino",
+            "tla": "RBB",
+            "crest": "https://crests.football-data.org/4286.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 12,
+          "draw": 6,
+          "lost": 15,
+          "points": 42,
+          "goalsFor": 38,
+          "goalsAgainst": 50,
+          "goalDifference": -12
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
             "shortName": "Corinthians",
@@ -236,25 +255,6 @@
           "goalsFor": 35,
           "goalsAgainst": 37,
           "goalDifference": -2
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 4286,
-            "name": "RB Bragantino",
-            "shortName": "Bragantino",
-            "tla": "RBB",
-            "crest": "https://crests.football-data.org/4286.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 11,
-          "draw": 7,
-          "lost": 15,
-          "points": 40,
-          "goalsFor": 37,
-          "goalsAgainst": 50,
-          "goalDifference": -13
         },
         {
           "position": 13,
