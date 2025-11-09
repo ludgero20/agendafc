@@ -208,12 +208,12 @@
             "tla": "TOU",
             "crest": "https://crests.football-data.org/511.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 4,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 15,
+          "points": 16,
           "goalsFor": 17,
           "goalsAgainst": 15,
           "goalDifference": 2
@@ -322,12 +322,12 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 6,
-          "points": 9,
+          "points": 10,
           "goalsFor": 13,
           "goalsAgainst": 25,
           "goalDifference": -12
