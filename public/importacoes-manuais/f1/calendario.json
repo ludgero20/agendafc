@@ -417,12 +417,12 @@
       "raceName": "GP de São Paulo",
       "circuitName": "Interlagos Circuit",
       "country": "🇧🇷",
-      "status": "Próxima corrida",
+      "status": "Finalizado",
       "results": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "L. Norris", "p1": "L. Norris", "p2": "A. Antonelli", "p3": "M. Verstappen"
       },
       "sprintResults": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "L. Norris", "p1": "L. Norris", "p2": "A. Antonelli", "p3": "G. Russell"
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-11-07", "hora": "11:30", "transmissao": ["BandSports"] },
