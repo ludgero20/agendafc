@@ -116,12 +116,12 @@
           "playedGames": 33,
           "form": null,
           "won": 15,
-          "draw": 7,
-          "lost": 11,
-          "points": 52,
-          "goalsFor": 42,
-          "goalsAgainst": 39,
-          "goalDifference": 3
+          "draw": 8,
+          "lost": 10,
+          "points": 53,
+          "goalsFor": 44,
+          "goalsAgainst": 40,
+          "goalDifference": 4
         },
         {
           "position": 6,
@@ -170,12 +170,12 @@
             "tla": "PAU",
             "crest": "https://crests.football-data.org/1776.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 9,
+          "draw": 10,
           "lost": 11,
-          "points": 45,
+          "points": 46,
           "goalsFor": 37,
           "goalsAgainst": 35,
           "goalDifference": 2
@@ -215,8 +215,8 @@
           "lost": 15,
           "points": 42,
           "goalsFor": 50,
-          "goalsAgainst": 48,
-          "goalDifference": 2
+          "goalsAgainst": 49,
+          "goalDifference": 1
         },
         {
           "position": 11,
@@ -246,12 +246,12 @@
             "tla": "RBB",
             "crest": "https://crests.football-data.org/4286.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 11,
-          "draw": 6,
+          "draw": 7,
           "lost": 15,
-          "points": 39,
+          "points": 40,
           "goalsFor": 37,
           "goalsAgainst": 50,
           "goalDifference": -13
@@ -278,25 +278,6 @@
         {
           "position": 14,
           "team": {
-            "id": 6684,
-            "name": "SC Internacional",
-            "shortName": "Internacional",
-            "tla": "SCI",
-            "crest": "https://crests.football-data.org/6684.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 10,
-          "draw": 9,
-          "lost": 14,
-          "points": 39,
-          "goalsFor": 36,
-          "goalsAgainst": 44,
-          "goalDifference": -8
-        },
-        {
-          "position": 15,
-          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -312,6 +293,25 @@
           "goalsFor": 33,
           "goalsAgainst": 41,
           "goalDifference": -8
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 6684,
+            "name": "SC Internacional",
+            "shortName": "Internacional",
+            "tla": "SCI",
+            "crest": "https://crests.football-data.org/6684.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 9,
+          "draw": 10,
+          "lost": 14,
+          "points": 37,
+          "goalsFor": 37,
+          "goalsAgainst": 46,
+          "goalDifference": -9
         },
         {
           "position": 16,
@@ -366,9 +366,9 @@
           "draw": 5,
           "lost": 19,
           "points": 32,
-          "goalsFor": 28,
+          "goalsFor": 29,
           "goalsAgainst": 59,
-          "goalDifference": -31
+          "goalDifference": -30
         },
         {
           "position": 19,
