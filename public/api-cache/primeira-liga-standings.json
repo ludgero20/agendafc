@@ -77,13 +77,13 @@
           },
           "playedGames": 11,
           "form": null,
-          "won": 8,
-          "draw": 3,
+          "won": 7,
+          "draw": 4,
           "lost": 0,
-          "points": 27,
+          "points": 25,
           "goalsFor": 23,
-          "goalsAgainst": 5,
-          "goalDifference": 18
+          "goalsAgainst": 6,
+          "goalDifference": 17
         },
         {
           "position": 4,
@@ -138,8 +138,8 @@
           "draw": 0,
           "lost": 5,
           "points": 18,
-          "goalsFor": 15,
-          "goalsAgainst": 14,
+          "goalsFor": 16,
+          "goalsAgainst": 15,
           "goalDifference": 1
         },
         {
@@ -157,8 +157,8 @@
           "draw": 4,
           "lost": 3,
           "points": 16,
-          "goalsFor": 18,
-          "goalsAgainst": 10,
+          "goalsFor": 19,
+          "goalsAgainst": 11,
           "goalDifference": 8
         },
         {
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 6,
+          "points": 9,
+          "goalsFor": 13,
+          "goalsAgainst": 24,
+          "goalDifference": -11
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
@@ -312,25 +331,6 @@
           "goalsFor": 13,
           "goalsAgainst": 30,
           "goalDifference": -17
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 7,
-          "points": 8,
-          "goalsFor": 12,
-          "goalsAgainst": 24,
-          "goalDifference": -12
         },
         {
           "position": 17,
