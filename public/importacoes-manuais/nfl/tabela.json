@@ -197,11 +197,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
       "conference": "National Football Conference",
       "division": "NFC East",
-      "intWin": 6,
+      "intWin": 7,
       "intLoss": 2,
       "intTie": 0,
-      "strPercentage": ".750",
-      "strStreak": "W2",
+      "strPercentage": ".778",
+      "strStreak": "W3",
       "rank": "1"
     },
     {
@@ -253,18 +253,6 @@
       "rank": "1"
     },
     {
-      "teamName": "Green Bay Packers",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
-      "conference": "National Football Conference",
-      "division": "NFC North",
-      "intWin": 5,
-      "intLoss": 2,
-      "intTie": 1,
-      "strPercentage": ".688",
-      "strStreak": "L1",
-      "rank": "2"
-    },
-    {
       "teamName": "Chicago Bears",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png",
       "conference": "National Football Conference",
@@ -274,6 +262,18 @@
       "intTie": 0,
       "strPercentage": ".667",
       "strStreak": "W2",
+      "rank": "2"
+    },
+    {
+      "teamName": "Green Bay Packers",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
+      "conference": "National Football Conference",
+      "division": "NFC North",
+      "intWin": 5,
+      "intLoss": 3,
+      "intTie": 1,
+      "strPercentage": ".611",
+      "strStreak": "L2",
       "rank": "3"
     },
     {
@@ -305,11 +305,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png",
       "conference": "National Football Conference",
       "division": "NFC South",
-      "intWin": 5,
+      "intWin": 6,
       "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".500",
-      "strStreak": "L1",
+      "strPercentage": ".545",
+      "strStreak": "W1",
       "rank": "2"
     },
     {
@@ -330,10 +330,10 @@
       "conference": "National Football Conference",
       "division": "NFC South",
       "intWin": 2,
-      "intLoss": 8,
+      "intLoss": 9,
       "intTie": 0,
-      "strPercentage": ".200",
-      "strStreak": "W1",
+      "strPercentage": ".182",
+      "strStreak": "L1",
       "rank": "4"
     },
     {

@@ -1635,9 +1635,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Green Bay Packers",
       "strAwayTeam": "Philadelphia Eagles",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "7",
+      "intAwayScore": "10",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424094",
@@ -2350,9 +2350,9 @@
       "strTime": "18:25:00",
       "strHomeTeam": "New Orleans Saints",
       "strAwayTeam": "Carolina Panthers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "7",
+      "intAwayScore": "17",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424162",
