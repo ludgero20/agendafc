@@ -56,15 +56,15 @@
             "tla": "FLA",
             "crest": "https://crests.football-data.org/1783.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 20,
           "draw": 8,
-          "lost": 4,
+          "lost": 5,
           "points": 68,
           "goalsFor": 64,
-          "goalsAgainst": 20,
-          "goalDifference": 44
+          "goalsAgainst": 21,
+          "goalDifference": 43
         },
         {
           "position": 3,
@@ -398,15 +398,15 @@
             "tla": "REC",
             "crest": "https://crests.football-data.org/1778.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
-          "won": 2,
+          "won": 3,
           "draw": 11,
           "lost": 19,
-          "points": 17,
-          "goalsFor": 24,
+          "points": 20,
+          "goalsFor": 25,
           "goalsAgainst": 55,
-          "goalDifference": -31
+          "goalDifference": -30
         }
       ]
     }
