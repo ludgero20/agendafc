@@ -2669,9 +2669,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "New York Jets",
       "strAwayTeam": "New England Patriots",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "27",
+      "intAwayScore": "14",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424196",
