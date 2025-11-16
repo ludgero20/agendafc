@@ -189,18 +189,37 @@
             "tla": "CAM",
             "crest": "https://crests.football-data.org/1766.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 11,
-          "draw": 11,
+          "draw": 12,
           "lost": 11,
-          "points": 44,
+          "points": 45,
           "goalsFor": 37,
           "goalsAgainst": 37,
           "goalDifference": 0
         },
         {
           "position": 10,
+          "team": {
+            "id": 4286,
+            "name": "RB Bragantino",
+            "shortName": "Bragantino",
+            "tla": "RBB",
+            "crest": "https://crests.football-data.org/4286.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 12,
+          "draw": 7,
+          "lost": 15,
+          "points": 43,
+          "goalsFor": 38,
+          "goalsAgainst": 50,
+          "goalDifference": -12
+        },
+        {
+          "position": 11,
           "team": {
             "id": 1780,
             "name": "CR Vasco da Gama",
@@ -217,25 +236,6 @@
           "goalsFor": 50,
           "goalsAgainst": 49,
           "goalDifference": 1
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 4286,
-            "name": "RB Bragantino",
-            "shortName": "Bragantino",
-            "tla": "RBB",
-            "crest": "https://crests.football-data.org/4286.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 12,
-          "draw": 6,
-          "lost": 15,
-          "points": 42,
-          "goalsFor": 38,
-          "goalsAgainst": 50,
-          "goalDifference": -12
         },
         {
           "position": 12,
