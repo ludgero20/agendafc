@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 50,
+    "count": 49,
     "first": "2025-11-16",
     "last": "2025-12-07",
     "played": 0
@@ -19,65 +19,6 @@
     "emblem": "https://crests.football-data.org/bsa.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2371,
-        "startDate": "2025-03-29",
-        "endDate": "2025-12-21",
-        "currentMatchday": 33,
-        "winner": null
-      },
-      "id": 535058,
-      "utcDate": "2025-11-16T00:00:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-15T00:21:04Z",
-      "homeTeam": {
-        "id": 6685,
-        "name": "Santos FC",
-        "shortName": "Santos",
-        "tla": "SAN",
-        "crest": "https://crests.football-data.org/6685.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
     {
       "area": {
         "id": 2032,
