@@ -65,15 +65,15 @@
     },
     {
       "id": 10,
-      "name": "Austrália",
-      "flagEmoji": "🇦🇺",
-      "confederation": "AFC",
+      "name": "Nova Zelândia",
+      "flagEmoji": "🇳🇿",
+      "confederation": "OFC",
       "status": "Classificado"
     },
     {
       "id": 11,
-      "name": "Coreia do Sul",
-      "flagEmoji": "🇰🇷",
+      "name": "Japão",
+      "flagEmoji": "🇯🇵",
       "confederation": "AFC",
       "status": "Classificado"
     },
@@ -86,22 +86,22 @@
     },
     {
       "id": 13,
-      "name": "Japão",
-      "flagEmoji": "🇯🇵",
+      "name": "Coreia do Sul",
+      "flagEmoji": "🇰🇷",
       "confederation": "AFC",
       "status": "Classificado"
     },
     {
       "id": 14,
-      "name": "Jordânia",
-      "flagEmoji": "🇯🇴",
+      "name": "Austrália",
+      "flagEmoji": "🇦🇺",
       "confederation": "AFC",
       "status": "Classificado"
     },
     {
       "id": 15,
-      "name": "Uzbequistão",
-      "flagEmoji": "🇺🇿",
+      "name": "Arábia Saudita",
+      "flagEmoji": "🇸🇦",
       "confederation": "AFC",
       "status": "Classificado"
     },
@@ -114,43 +114,43 @@
     },
     {
       "id": 17,
-      "name": "Arábia Saudita",
-      "flagEmoji": "🇸🇦",
+      "name": "Jordânia",
+      "flagEmoji": "🇯🇴",
       "confederation": "AFC",
       "status": "Classificado"
     },
     {
       "id": 18,
-      "name": "Argélia",
-      "flagEmoji": "🇩🇿",
-      "confederation": "CAF",
+      "name": "Uzbequistão",
+      "flagEmoji": "🇺🇿",
+      "confederation": "AFC",
       "status": "Classificado"
     },
     {
       "id": 19,
-      "name": "Cabo Verde",
-      "flagEmoji": "🇨🇻",
+      "name": "Marrocos",
+      "flagEmoji": "🇲🇦",
       "confederation": "CAF",
       "status": "Classificado"
     },
     {
       "id": 20,
+      "name": "Senegal",
+      "flagEmoji": "🇸🇳",
+      "confederation": "CAF",
+      "status": "Classificado"
+    },
+    {
+      "id": 21,
       "name": "Egito",
       "flagEmoji": "🇪🇬",
       "confederation": "CAF",
       "status": "Classificado"
     },
     {
-      "id": 21,
-      "name": "Gana",
-      "flagEmoji": "🇬🇭",
-      "confederation": "CAF",
-      "status": "Classificado"
-    },
-    {
       "id": 22,
-      "name": "Marrocos",
-      "flagEmoji": "🇲🇦",
+      "name": "Argélia",
+      "flagEmoji": "🇩🇿",
       "confederation": "CAF",
       "status": "Classificado"
     },
@@ -163,100 +163,282 @@
     },
     {
       "id": 24,
-      "name": "Senegal",
-      "flagEmoji": "🇸🇳",
-      "confederation": "CAF",
-      "status": "Classificado"
-    },
-    {
-      "id": 25,
       "name": "Costa do Marfim",
       "flagEmoji": "🇨🇮",
       "confederation": "CAF",
       "status": "Classificado"
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "África do Sul",
       "flagEmoji": "🇿🇦",
       "confederation": "CAF",
       "status": "Classificado"
     },
     {
-      "id": 27,
-      "name": "Camarões",
-      "flagEmoji": "🇨🇲",
+      "id": 26,
+      "name": "Cabo Verde",
+      "flagEmoji": "🇨🇻",
       "confederation": "CAF",
-      "status": "Repescagem Continental"
+      "status": "Classificado"
+    },
+    {
+      "id": 27,
+      "name": "Gana",
+      "flagEmoji": "🇬🇭",
+      "confederation": "CAF",
+      "status": "Classificado"
     },
     {
       "id": 28,
-      "name": "Nova Zelândia",
-      "flagEmoji": "🇳🇿",
-      "confederation": "OFC",
+      "name": "Alemanha",
+      "flagEmoji": "🇩🇪",
+      "confederation": "UEFA",
       "status": "Classificado"
     },
     {
       "id": 29,
+      "name": "França",
+      "flagEmoji": "🇫🇷",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 30,
+      "name": "Espanha",
+      "flagEmoji": "🇪🇸",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 31,
       "name": "Inglaterra",
       "flagEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
       "confederation": "UEFA",
       "status": "Classificado"
     },
     {
-      "id": 30,
+      "id": 32,
+      "name": "Bélgica",
+      "flagEmoji": "🇧🇪",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 33,
+      "name": "Holanda",
+      "flagEmoji": "🇳🇱",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 34,
+      "name": "Portugal",
+      "flagEmoji": "🇵🇹",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 35,
+      "name": "Croácia",
+      "flagEmoji": "🇭🇷",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 36,
+      "name": "Noruega",
+      "flagEmoji": "🇳🇴",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 37,
+      "name": "Suíça",
+      "flagEmoji": "🇨🇭",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 38,
+      "name": "Escócia",
+      "flagEmoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 39,
+      "name": "Áustria",
+      "flagEmoji": "🇦🇹",
+      "confederation": "UEFA",
+      "status": "Classificado"
+    },
+    {
+      "id": 40,
       "name": "Bolívia",
       "flagEmoji": "🇧🇴",
       "confederation": "CONMEBOL",
       "status": "Repescagem Mundial"
     },
     {
-      "id": 31,
-      "name": "Emirados Árabes Unidos",
-      "flagEmoji": "🇦🇪",
-      "confederation": "AFC",
-      "status": "Repescagem Continental"
+      "id": 41,
+      "name": "Nova Caledônia",
+      "flagEmoji": "🇳🇨",
+      "confederation": "OFC",
+      "status": "Repescagem Mundial"
     },
     {
-      "id": 32,
-      "name": "Omã",
-      "flagEmoji": "🇴🇲",
-      "confederation": "AFC",
-      "status": "Repescagem Continental"
-    },
-    {
-      "id": 33,
-      "name": "Iraque",
-      "flagEmoji": "🇮🇶",
-      "confederation": "AFC",
-      "status": "Repescagem Continental"
-    },
-    {
-      "id": 34,
-      "name": "Indonésia",
-      "flagEmoji": "🇮🇩",
-      "confederation": "AFC",
-      "status": "Repescagem Continental"
-    },
-    {
-      "id": 35,
+      "id": 42,
       "name": "Nigéria",
       "flagEmoji": "🇳🇬",
       "confederation": "CAF",
       "status": "Repescagem Continental"
     },
     {
-      "id": 36,
+      "id": 43,
+      "name": "Camarões",
+      "flagEmoji": "🇨🇲",
+      "confederation": "CAF",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 44,
       "name": "RD Congo",
       "flagEmoji": "🇨🇩",
       "confederation": "CAF",
       "status": "Repescagem Continental"
     },
     {
-      "id": 37,
+      "id": 45,
       "name": "Gabão",
       "flagEmoji": "🇬🇦",
       "confederation": "CAF",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 46,
+      "name": "Emirados Árabes",
+      "flagEmoji": "🇦🇪",
+      "confederation": "AFC",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 47,
+      "name": "Iraque",
+      "flagEmoji": "🇮🇶",
+      "confederation": "AFC",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 48,
+      "name": "Itália",
+      "flagEmoji": "🇮🇹",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 49,
+      "name": "Polônia",
+      "flagEmoji": "🇵🇱",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 50,
+      "name": "Suécia",
+      "flagEmoji": "🇸🇪",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 51,
+      "name": "Ucrânia",
+      "flagEmoji": "🇺🇦",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 52,
+      "name": "Turquia",
+      "flagEmoji": "🇹🇷",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 53,
+      "name": "País de Gales",
+      "flagEmoji": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 54,
+      "name": "Eslováquia",
+      "flagEmoji": "🇸🇰",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 55,
+      "name": "República da Irlanda",
+      "flagEmoji": "🇮🇪",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 56,
+      "name": "Romênia",
+      "flagEmoji": "🇷🇴",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 57,
+      "name": "Dinamarca",
+      "flagEmoji": "🇩🇰",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 58,
+      "name": "República Tcheca",
+      "flagEmoji": "🇨🇿",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 59,
+      "name": "Albânia",
+      "flagEmoji": "🇦🇱",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 60,
+      "name": "Bósnia e Herzegovina",
+      "flagEmoji": "🇧🇦",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 61,
+      "name": "Kosovo",
+      "flagEmoji": "🇽🇰",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 62,
+      "name": "Irlanda do Norte",
+      "flagEmoji": "🏴󠁧󠁢󠁮󠁩󠁲󠁿",
+      "confederation": "UEFA",
+      "status": "Repescagem Continental"
+    },
+    {
+      "id": 63,
+      "name": "Macedônia do Norte",
+      "flagEmoji": "🇲🇰",
+      "confederation": "UEFA",
       "status": "Repescagem Continental"
     }
   ]
