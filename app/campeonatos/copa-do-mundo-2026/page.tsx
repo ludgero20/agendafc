@@ -65,7 +65,7 @@ export default async function CopaDoMundoPage() {
     return acc;
   }, {} as Record<string, Selecao[]>);
 
-  const ordemConfederacoes = ['CONMEBOL', 'UEFA', 'CONCACAF', 'AFC', 'CAF', 'OFC'];
+  const ordemConfederacoes = ['CONMEBOL', 'CONCACAF', 'OFC', 'UEFA', 'AFC', 'CAF'];
 
   // MUDANÇA 2: Função de cor agora diferencia os tipos de repescagem
   const getStatusColor = (status: string) => {
