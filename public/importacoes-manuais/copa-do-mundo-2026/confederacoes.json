@@ -7,19 +7,20 @@
       "continental_playoff_slots": 0,
       "intercontinental_playoff_slots": 1
     },
-    {
-      "name": "UEFA",
-      "status": "Em andamento",
-      "direct_slots": 16,
-      "continental_playoff_slots": 0,
-      "intercontinental_playoff_slots": 0
-    },
+    
     {
       "name": "CONCACAF",
       "status": "Em andamento",
       "direct_slots": 6,
       "continental_playoff_slots": 0,
       "intercontinental_playoff_slots": 2
+    },
+    {
+      "name": "OFC",
+      "status": "Em andamento",
+      "direct_slots": 1,
+      "continental_playoff_slots": 0,
+      "intercontinental_playoff_slots": 1
     },
     {
       "name": "AFC",
@@ -36,11 +37,11 @@
       "intercontinental_playoff_slots": 1
     },
     {
-      "name": "OFC",
+      "name": "UEFA",
       "status": "Em andamento",
-      "direct_slots": 1,
-      "continental_playoff_slots": 0,
-      "intercontinental_playoff_slots": 1
+      "direct_slots": 16,
+      "continental_playoff_slots": 16,
+      "intercontinental_playoff_slots": 0
     }
   ]
 }
