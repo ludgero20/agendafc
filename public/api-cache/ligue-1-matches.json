@@ -1869,26 +1869,26 @@
         "currentMatchday": 13,
         "winner": null
       },
-      "id": 542541,
-      "utcDate": "2025-12-14T16:15:00Z",
+      "id": 542544,
+      "utcDate": "2025-12-14T14:00:00Z",
       "status": "TIMED",
       "matchday": 16,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-10-07T15:21:11Z",
+      "lastUpdated": "2025-11-21T14:25:29Z",
       "homeTeam": {
-        "id": 519,
-        "name": "AJ Auxerre",
-        "shortName": "Auxerre",
-        "tla": "AJA",
-        "crest": "https://crests.football-data.org/519.png"
+        "id": 523,
+        "name": "Olympique Lyonnais",
+        "shortName": "Olympique Lyon",
+        "tla": "LYO",
+        "crest": "https://crests.football-data.org/523.png"
       },
       "awayTeam": {
-        "id": 521,
-        "name": "Lille OSC",
-        "shortName": "Lille",
-        "tla": "LIL",
-        "crest": "https://crests.football-data.org/521.png"
+        "id": 533,
+        "name": "Le Havre AC",
+        "shortName": "Le Havre",
+        "tla": "HAC",
+        "crest": "https://crests.football-data.org/533.png"
       },
       "score": {
         "winner": null,
@@ -1928,7 +1928,7 @@
         "currentMatchday": 13,
         "winner": null
       },
-      "id": 542544,
+      "id": 542541,
       "utcDate": "2025-12-14T16:15:00Z",
       "status": "TIMED",
       "matchday": 16,
@@ -1936,18 +1936,18 @@
       "group": null,
       "lastUpdated": "2025-10-07T15:21:11Z",
       "homeTeam": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "tla": "LYO",
-        "crest": "https://crests.football-data.org/523.png"
+        "id": 519,
+        "name": "AJ Auxerre",
+        "shortName": "Auxerre",
+        "tla": "AJA",
+        "crest": "https://crests.football-data.org/519.png"
       },
       "awayTeam": {
-        "id": 533,
-        "name": "Le Havre AC",
-        "shortName": "Le Havre",
-        "tla": "HAC",
-        "crest": "https://crests.football-data.org/533.png"
+        "id": 521,
+        "name": "Lille OSC",
+        "shortName": "Lille",
+        "tla": "LIL",
+        "crest": "https://crests.football-data.org/521.png"
       },
       "score": {
         "winner": null,
