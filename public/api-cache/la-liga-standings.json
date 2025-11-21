@@ -341,18 +341,37 @@
             "tla": "VAL",
             "crest": "https://crests.football-data.org/95.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 2,
-          "draw": 4,
+          "draw": 5,
           "lost": 6,
-          "points": 10,
+          "points": 11,
           "goalsFor": 11,
           "goalsAgainst": 21,
           "goalDifference": -10
         },
         {
           "position": 18,
+          "team": {
+            "id": 88,
+            "name": "Levante UD",
+            "shortName": "Levante",
+            "tla": "LEV",
+            "crest": "https://crests.football-data.org/88.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 7,
+          "points": 10,
+          "goalsFor": 16,
+          "goalsAgainst": 23,
+          "goalDifference": -7
+        },
+        {
+          "position": 19,
           "team": {
             "id": 298,
             "name": "Girona FC",
@@ -369,25 +388,6 @@
           "goalsFor": 11,
           "goalsAgainst": 24,
           "goalDifference": -13
-        },
-        {
-          "position": 19,
-          "team": {
-            "id": 88,
-            "name": "Levante UD",
-            "shortName": "Levante",
-            "tla": "LEV",
-            "crest": "https://crests.football-data.org/88.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 7,
-          "points": 9,
-          "goalsFor": 16,
-          "goalsAgainst": 23,
-          "goalDifference": -7
         },
         {
           "position": 20,

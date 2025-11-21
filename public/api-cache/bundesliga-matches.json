@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 216,
-    "first": "2025-11-21",
+    "count": 215,
+    "first": "2025-11-22",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/BL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 11,
-        "winner": null
-      },
-      "id": 540498,
-      "utcDate": "2025-11-21T19:30:00Z",
-      "status": "TIMED",
-      "matchday": 11,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-19T01:32:00Z",
-      "homeTeam": {
-        "id": 15,
-        "name": "1. FSV Mainz 05",
-        "shortName": "Mainz",
-        "tla": "M05",
-        "crest": "https://crests.football-data.org/15.png"
-      },
-      "awayTeam": {
-        "id": 2,
-        "name": "TSG 1899 Hoffenheim",
-        "shortName": "Hoffenheim",
-        "tla": "TSG",
-        "crest": "https://crests.football-data.org/2.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 9567,
-          "name": "Sascha Stegemann",
-          "type": "REFEREE",
-          "nationality": "Germany"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2088,

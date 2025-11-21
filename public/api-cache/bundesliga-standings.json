@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 2,
+            "name": "TSG 1899 Hoffenheim",
+            "shortName": "Hoffenheim",
+            "tla": "TSG",
+            "crest": "https://crests.football-data.org/2.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 7,
+          "draw": 1,
+          "lost": 3,
+          "points": 22,
+          "goalsFor": 22,
+          "goalsAgainst": 16,
+          "goalDifference": 6
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 4,
             "name": "Borussia Dortmund",
             "shortName": "Dortmund",
@@ -86,7 +105,7 @@
           "goalDifference": 9
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 10,
             "name": "VfB Stuttgart",
@@ -105,7 +124,7 @@
           "goalDifference": 5
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
@@ -122,25 +141,6 @@
           "goalsFor": 24,
           "goalsAgainst": 14,
           "goalDifference": 10
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 2,
-            "name": "TSG 1899 Hoffenheim",
-            "shortName": "Hoffenheim",
-            "tla": "TSG",
-            "crest": "https://crests.football-data.org/2.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 6,
-          "draw": 1,
-          "lost": 3,
-          "points": 19,
-          "goalsFor": 21,
-          "goalsAgainst": 16,
-          "goalDifference": 5
         },
         {
           "position": 7,
@@ -341,15 +341,15 @@
             "tla": "M05",
             "crest": "https://crests.football-data.org/15.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 1,
           "draw": 2,
-          "lost": 7,
+          "lost": 8,
           "points": 5,
           "goalsFor": 10,
-          "goalsAgainst": 18,
-          "goalDifference": -8
+          "goalsAgainst": 19,
+          "goalDifference": -9
         },
         {
           "position": 18,
