@@ -240,25 +240,6 @@
         {
           "position": 12,
           "team": {
-            "id": 1837,
-            "name": "Ceará SC",
-            "shortName": "Ceará",
-            "tla": "CSC",
-            "crest": "https://crests.football-data.org/1837.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 11,
-          "draw": 10,
-          "lost": 13,
-          "points": 43,
-          "goalsFor": 31,
-          "goalsAgainst": 30,
-          "goalDifference": 1
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -276,7 +257,7 @@
           "goalDifference": -6
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 1780,
             "name": "CR Vasco da Gama",
@@ -295,6 +276,25 @@
           "goalDifference": -1
         },
         {
+          "position": 14,
+          "team": {
+            "id": 1837,
+            "name": "Ceará SC",
+            "shortName": "Ceará",
+            "tla": "CSC",
+            "crest": "https://crests.football-data.org/1837.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 11,
+          "draw": 9,
+          "lost": 14,
+          "points": 42,
+          "goalsFor": 32,
+          "goalsAgainst": 32,
+          "goalDifference": 0
+        },
+        {
           "position": 15,
           "team": {
             "id": 6684,
@@ -305,13 +305,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 9,
-          "draw": 11,
+          "won": 10,
+          "draw": 10,
           "lost": 14,
-          "points": 38,
-          "goalsFor": 37,
-          "goalsAgainst": 46,
-          "goalDifference": -9
+          "points": 40,
+          "goalsFor": 39,
+          "goalsAgainst": 47,
+          "goalDifference": -8
         },
         {
           "position": 16,
