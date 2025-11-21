@@ -9434,6 +9434,71 @@
         "fase": null,
         "evento_nome": null,
         "evento_descricao": null
+    },
+    {
+        "id": 1924,
+        "data": "2025-11-20",
+        "hora": "21:30",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 1",
+        "evento_descricao": "GP de Las Vegas"
+    },
+    {
+        "id": 1925,
+        "data": "2025-11-21",
+        "hora": "01:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 2",
+        "evento_descricao": "GP de Las Vegas"
+    },
+    {
+        "id": 1926,
+        "data": "2025-11-21",
+        "hora": "21:30",
+        "campeonato": "Fórmula 1",
+        "canal": "Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Treino Livre 3",
+        "evento_descricao": "GP de Las Vegas"
+    },
+    {
+        "id": 1927,
+        "data": "2025-11-22",
+        "hora": "01:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / Bandsports / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Classificação",
+        "evento_descricao": "GP de Las Vegas"
+    },
+    {
+        "id": 1928,
+        "data": "2025-11-23",
+        "hora": "01:00",
+        "campeonato": "Fórmula 1",
+        "canal": "Band / F1TV Pro",
+        "time1": null,
+        "time2": null,
+        "divisao": null,
+        "fase": null,
+        "evento_nome": "Corrida",
+        "evento_descricao": "GP de Las Vegas"
     }
   ]
 }
