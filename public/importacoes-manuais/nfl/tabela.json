@@ -18,10 +18,10 @@
       "conference": "American Football Conference",
       "division": "AFC East",
       "intWin": 7,
-      "intLoss": 3,
+      "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".700",
-      "strStreak": "W1",
+      "strPercentage": ".636",
+      "strStreak": "L1",
       "rank": "2"
     },
     {
@@ -125,11 +125,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqyryy1421436627.png",
       "conference": "American Football Conference",
       "division": "AFC South",
-      "intWin": 5,
+      "intWin": 6,
       "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".500",
-      "strStreak": "W2",
+      "strPercentage": ".545",
+      "strStreak": "W3",
       "rank": "3"
     },
     {
