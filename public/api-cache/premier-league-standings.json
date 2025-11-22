@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 7,
+          "draw": 2,
+          "lost": 3,
+          "points": 23,
+          "goalsFor": 22,
+          "goalsAgainst": 11,
+          "goalDifference": 11
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -65,25 +84,6 @@
           "goalsFor": 23,
           "goalsAgainst": 8,
           "goalDifference": 15
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 3,
-          "points": 21,
-          "goalsFor": 21,
-          "goalsAgainst": 11,
-          "goalDifference": 10
         },
         {
           "position": 4,
@@ -316,25 +316,6 @@
         {
           "position": 16,
           "team": {
-            "id": 328,
-            "name": "Burnley FC",
-            "shortName": "Burnley",
-            "tla": "BUR",
-            "crest": "https://crests.football-data.org/328.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 7,
-          "points": 11,
-          "goalsFor": 14,
-          "goalsAgainst": 22,
-          "goalDifference": -8
-        },
-        {
-          "position": 17,
-          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -350,6 +331,25 @@
           "goalsFor": 10,
           "goalsAgainst": 20,
           "goalDifference": -10
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 328,
+            "name": "Burnley FC",
+            "shortName": "Burnley",
+            "tla": "BUR",
+            "crest": "https://crests.football-data.org/328.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 8,
+          "points": 10,
+          "goalsFor": 14,
+          "goalsAgainst": 23,
+          "goalDifference": -9
         },
         {
           "position": 18,
