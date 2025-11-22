@@ -75,12 +75,12 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 8,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 25,
+          "points": 26,
           "goalsFor": 21,
           "goalsAgainst": 11,
           "goalDifference": 10
@@ -94,12 +94,12 @@
             "tla": "RC ",
             "crest": "https://crests.football-data.org/576.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 7,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 22,
+          "points": 23,
           "goalsFor": 24,
           "goalsAgainst": 16,
           "goalDifference": 8
