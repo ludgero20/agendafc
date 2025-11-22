@@ -75,12 +75,12 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 6,
-          "draw": 2,
+          "draw": 3,
           "lost": 3,
-          "points": 20,
+          "points": 21,
           "goalsFor": 21,
           "goalsAgainst": 11,
           "goalDifference": 10
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 328,
+            "name": "Burnley FC",
+            "shortName": "Burnley",
+            "tla": "BUR",
+            "crest": "https://crests.football-data.org/328.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 7,
+          "points": 11,
+          "goalsFor": 14,
+          "goalsAgainst": 22,
+          "goalDifference": -8
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -331,25 +350,6 @@
           "goalsFor": 10,
           "goalsAgainst": 20,
           "goalDifference": -10
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 328,
-            "name": "Burnley FC",
-            "shortName": "Burnley",
-            "tla": "BUR",
-            "crest": "https://crests.football-data.org/328.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 3,
-          "draw": 1,
-          "lost": 7,
-          "points": 10,
-          "goalsFor": 14,
-          "goalsAgainst": 22,
-          "goalDifference": -8
         },
         {
           "position": 18,
