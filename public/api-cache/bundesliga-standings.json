@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 3,
+          "points": 20,
+          "goalsFor": 25,
+          "goalsAgainst": 20,
+          "goalDifference": 5
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
             "shortName": "Hoffenheim",
@@ -141,25 +160,6 @@
           "goalsFor": 22,
           "goalsAgainst": 17,
           "goalDifference": 5
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 3,
-          "points": 17,
-          "goalsFor": 23,
-          "goalsAgainst": 19,
-          "goalDifference": 4
         },
         {
           "position": 8,
@@ -189,15 +189,15 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 4,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 14,
-          "goalsFor": 17,
-          "goalsAgainst": 15,
-          "goalDifference": 2
+          "goalsFor": 18,
+          "goalsAgainst": 17,
+          "goalDifference": 1
         },
         {
           "position": 10,

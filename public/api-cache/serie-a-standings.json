@@ -132,14 +132,14 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 5,
-          "draw": 4,
+          "draw": 5,
           "lost": 2,
-          "points": 19,
-          "goalsFor": 14,
-          "goalsAgainst": 10,
+          "points": 20,
+          "goalsFor": 15,
+          "goalsAgainst": 11,
           "goalDifference": 4
         },
         {
@@ -373,6 +373,25 @@
         {
           "position": 19,
           "team": {
+            "id": 99,
+            "name": "ACF Fiorentina",
+            "shortName": "Fiorentina",
+            "tla": "FIO",
+            "crest": "https://crests.football-data.org/99.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 0,
+          "draw": 6,
+          "lost": 6,
+          "points": 6,
+          "goalsFor": 10,
+          "goalsAgainst": 19,
+          "goalDifference": -9
+        },
+        {
+          "position": 20,
+          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -388,25 +407,6 @@
           "goalsFor": 6,
           "goalsAgainst": 16,
           "goalDifference": -10
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 99,
-            "name": "ACF Fiorentina",
-            "shortName": "Fiorentina",
-            "tla": "FIO",
-            "crest": "https://crests.football-data.org/99.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 0,
-          "draw": 5,
-          "lost": 6,
-          "points": 5,
-          "goalsFor": 9,
-          "goalsAgainst": 18,
-          "goalDifference": -9
         }
       ]
     }
