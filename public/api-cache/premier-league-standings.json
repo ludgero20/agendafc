@@ -50,25 +50,6 @@
         {
           "position": 2,
           "team": {
-            "id": 65,
-            "name": "Manchester City FC",
-            "shortName": "Man City",
-            "tla": "MCI",
-            "crest": "https://crests.football-data.org/65.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 7,
-          "draw": 2,
-          "lost": 3,
-          "points": 23,
-          "goalsFor": 23,
-          "goalsAgainst": 8,
-          "goalDifference": 15
-        },
-        {
-          "position": 3,
-          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -84,6 +65,25 @@
           "goalsFor": 23,
           "goalsAgainst": 11,
           "goalDifference": 12
+        },
+        {
+          "position": 3,
+          "team": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 7,
+          "draw": 1,
+          "lost": 4,
+          "points": 22,
+          "goalsFor": 24,
+          "goalsAgainst": 10,
+          "goalDifference": 14
         },
         {
           "position": 4,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW",
+            "crest": "https://crests.football-data.org/67.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 4,
+          "draw": 3,
+          "lost": 5,
+          "points": 15,
+          "goalsFor": 13,
+          "goalsAgainst": 15,
+          "goalDifference": -2
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 63,
             "name": "Fulham FC",
             "shortName": "Fulham",
@@ -292,25 +311,6 @@
           "points": 14,
           "goalsFor": 13,
           "goalsAgainst": 16,
-          "goalDifference": -3
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 67,
-            "name": "Newcastle United FC",
-            "shortName": "Newcastle",
-            "tla": "NEW",
-            "crest": "https://crests.football-data.org/67.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 5,
-          "points": 13,
-          "goalsFor": 11,
-          "goalsAgainst": 14,
           "goalDifference": -3
         },
         {
