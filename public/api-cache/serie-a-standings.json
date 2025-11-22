@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP",
+            "crest": "https://crests.football-data.org/113.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 8,
+          "draw": 1,
+          "lost": 3,
+          "points": 25,
+          "goalsFor": 19,
+          "goalsAgainst": 11,
+          "goalDifference": 8
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -48,7 +67,7 @@
           "goalDifference": 14
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 103,
             "name": "Bologna FC 1909",
@@ -67,7 +86,7 @@
           "goalDifference": 13
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 100,
             "name": "AS Roma",
@@ -84,25 +103,6 @@
           "goalsFor": 12,
           "goalsAgainst": 5,
           "goalDifference": 7
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 113,
-            "name": "SSC Napoli",
-            "shortName": "Napoli",
-            "tla": "NAP",
-            "crest": "https://crests.football-data.org/113.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 7,
-          "draw": 2,
-          "lost": 3,
-          "points": 23,
-          "goalsFor": 16,
-          "goalsAgainst": 10,
-          "goalDifference": 6
         },
         {
           "position": 5,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 102,
-            "name": "Atalanta BC",
-            "shortName": "Atalanta",
-            "tla": "ATA",
-            "crest": "https://crests.football-data.org/102.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 2,
-          "draw": 8,
-          "lost": 2,
-          "points": 14,
-          "goalsFor": 13,
-          "goalsAgainst": 11,
-          "goalDifference": 2
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 457,
             "name": "US Cremonese",
             "shortName": "Cremonese",
@@ -257,7 +238,7 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -274,6 +255,25 @@
           "goalsFor": 10,
           "goalsAgainst": 16,
           "goalDifference": -6
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA",
+            "crest": "https://crests.football-data.org/102.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 2,
+          "draw": 7,
+          "lost": 3,
+          "points": 13,
+          "goalsFor": 14,
+          "goalsAgainst": 14,
+          "goalDifference": 0
         },
         {
           "position": 14,

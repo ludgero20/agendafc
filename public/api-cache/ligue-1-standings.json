@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 524,
+            "name": "Paris Saint-Germain FC",
+            "shortName": "PSG",
+            "tla": "PSG",
+            "crest": "https://crests.football-data.org/524.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 9,
+          "draw": 3,
+          "lost": 1,
+          "points": 30,
+          "goalsFor": 27,
+          "goalsAgainst": 11,
+          "goalDifference": 16
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 516,
             "name": "Olympique de Marseille",
             "shortName": "Marseille",
@@ -48,7 +67,7 @@
           "goalDifference": 21
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 546,
             "name": "Racing Club de Lens",
@@ -65,25 +84,6 @@
           "goalsFor": 22,
           "goalsAgainst": 11,
           "goalDifference": 11
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 524,
-            "name": "Paris Saint-Germain FC",
-            "shortName": "PSG",
-            "tla": "PSG",
-            "crest": "https://crests.football-data.org/524.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 8,
-          "draw": 3,
-          "lost": 1,
-          "points": 27,
-          "goalsFor": 24,
-          "goalsAgainst": 11,
-          "goalDifference": 13
         },
         {
           "position": 4,
@@ -246,15 +246,15 @@
             "tla": "HAC",
             "crest": "https://crests.football-data.org/533.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 3,
           "draw": 5,
-          "lost": 4,
+          "lost": 5,
           "points": 14,
           "goalsFor": 13,
-          "goalsAgainst": 17,
-          "goalDifference": -4
+          "goalsAgainst": 20,
+          "goalDifference": -7
         },
         {
           "position": 13,

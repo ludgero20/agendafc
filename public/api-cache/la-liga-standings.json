@@ -77,13 +77,13 @@
           },
           "playedGames": 13,
           "form": null,
-          "won": 8,
-          "draw": 3,
+          "won": 9,
+          "draw": 2,
           "lost": 2,
-          "points": 27,
-          "goalsFor": 24,
-          "goalsAgainst": 10,
-          "goalDifference": 14
+          "points": 29,
+          "goalsFor": 26,
+          "goalsAgainst": 11,
+          "goalDifference": 15
         },
         {
           "position": 4,
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 6,
-          "points": 13,
-          "goalsFor": 12,
-          "goalsAgainst": 18,
-          "goalDifference": -6
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -331,6 +312,25 @@
           "goalsFor": 12,
           "goalsAgainst": 21,
           "goalDifference": -9
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 7,
+          "points": 12,
+          "goalsFor": 13,
+          "goalsAgainst": 20,
+          "goalDifference": -7
         },
         {
           "position": 17,
