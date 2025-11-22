@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 38,
+    "count": 40,
     "first": "2025-11-22",
     "last": "2025-12-07",
     "played": 0
@@ -46,7 +46,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:01Z",
+      "lastUpdated": "2025-11-22T01:32:01Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -105,7 +105,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -164,7 +164,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:01Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -282,7 +282,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:02Z",
+      "lastUpdated": "2025-11-22T01:32:02Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -400,7 +400,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:02Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -459,7 +459,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-19T01:32:04Z",
+      "lastUpdated": "2025-11-22T01:32:03Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -577,7 +577,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:03Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -636,7 +636,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-21T01:32:03Z",
+      "lastUpdated": "2025-11-22T01:32:03Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -813,7 +813,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-07T20:20:51Z",
+      "lastUpdated": "2025-11-22T01:32:04Z",
       "homeTeam": {
         "id": 4245,
         "name": "EC Juventude",
@@ -872,7 +872,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-07T20:20:51Z",
+      "lastUpdated": "2025-11-22T01:32:04Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -931,7 +931,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-07T20:20:51Z",
+      "lastUpdated": "2025-11-22T01:32:04Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -1108,7 +1108,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -1344,7 +1344,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 3984,
         "name": "Fortaleza EC",
@@ -1358,6 +1358,65 @@
         "shortName": "Corinthians",
         "tla": "COR",
         "crest": "https://crests.football-data.org/1779.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 37,
+        "winner": null
+      },
+      "id": 535269,
+      "utcDate": "2025-12-03T22:00:00Z",
+      "status": "TIMED",
+      "matchday": 34,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-11-21T15:21:14Z",
+      "homeTeam": {
+        "id": 4286,
+        "name": "RB Bragantino",
+        "shortName": "Bragantino",
+        "tla": "RBB",
+        "crest": "https://crests.football-data.org/4286.png"
+      },
+      "awayTeam": {
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "tla": "VIT",
+        "crest": "https://crests.football-data.org/1782.png"
       },
       "score": {
         "winner": null,
@@ -1515,13 +1574,72 @@
         "currentMatchday": 37,
         "winner": null
       },
+      "id": 535302,
+      "utcDate": "2025-12-03T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 37,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2025-11-21T05:21:05Z",
+      "homeTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "awayTeam": {
+        "id": 1778,
+        "name": "SC Recife",
+        "shortName": "Recife",
+        "tla": "REC",
+        "crest": "https://crests.football-data.org/1778.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2371,
+        "startDate": "2025-03-29",
+        "endDate": "2025-12-21",
+        "currentMatchday": 37,
+        "winner": null
+      },
       "id": 535270,
       "utcDate": "2025-12-04T00:30:00Z",
       "status": "TIMED",
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -1580,7 +1698,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -1816,7 +1934,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -1934,7 +2052,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -2170,7 +2288,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-20T15:21:15Z",
+      "lastUpdated": "2025-11-22T00:21:09Z",
       "homeTeam": {
         "id": 1837,
         "name": "Ceará SC",
