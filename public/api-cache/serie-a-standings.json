@@ -50,21 +50,21 @@
         {
           "position": 2,
           "team": {
-            "id": 108,
-            "name": "FC Internazionale Milano",
-            "shortName": "Inter",
-            "tla": "INT",
-            "crest": "https://crests.football-data.org/108.png"
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL",
+            "crest": "https://crests.football-data.org/98.png"
           },
           "playedGames": 12,
           "form": null,
-          "won": 8,
-          "draw": 1,
-          "lost": 3,
+          "won": 7,
+          "draw": 4,
+          "lost": 1,
           "points": 25,
-          "goalsFor": 26,
-          "goalsAgainst": 12,
-          "goalDifference": 14
+          "goalsFor": 18,
+          "goalsAgainst": 9,
+          "goalDifference": 9
         },
         {
           "position": 3,
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 108,
+            "name": "FC Internazionale Milano",
+            "shortName": "Inter",
+            "tla": "INT",
+            "crest": "https://crests.football-data.org/108.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 8,
+          "draw": 0,
+          "lost": 4,
+          "points": 24,
+          "goalsFor": 26,
+          "goalsAgainst": 13,
+          "goalDifference": 13
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 103,
             "name": "Bologna FC 1909",
             "shortName": "Bologna",
@@ -103,25 +122,6 @@
           "goalsFor": 21,
           "goalsAgainst": 8,
           "goalDifference": 13
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL",
-            "crest": "https://crests.football-data.org/98.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 1,
-          "points": 23,
-          "goalsFor": 17,
-          "goalsAgainst": 9,
-          "goalDifference": 8
         },
         {
           "position": 6,
