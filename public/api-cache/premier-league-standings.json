@@ -37,15 +37,15 @@
             "tla": "ARS",
             "crest": "https://crests.football-data.org/57.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
-          "won": 8,
+          "won": 9,
           "draw": 2,
           "lost": 1,
-          "points": 26,
-          "goalsFor": 20,
-          "goalsAgainst": 5,
-          "goalDifference": 15
+          "points": 29,
+          "goalsFor": 24,
+          "goalsAgainst": 6,
+          "goalDifference": 18
         },
         {
           "position": 2,
@@ -189,15 +189,15 @@
             "tla": "TOT",
             "crest": "https://crests.football-data.org/73.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 5,
           "draw": 3,
-          "lost": 3,
+          "lost": 4,
           "points": 18,
-          "goalsFor": 19,
-          "goalsAgainst": 10,
-          "goalDifference": 9
+          "goalsFor": 20,
+          "goalsAgainst": 14,
+          "goalDifference": 6
         },
         {
           "position": 10,
