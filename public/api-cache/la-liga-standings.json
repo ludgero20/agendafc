@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 87,
+            "name": "Rayo Vallecano de Madrid",
+            "shortName": "Rayo Vallecano",
+            "tla": "RAY",
+            "crest": "https://crests.football-data.org/87.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 5,
+          "points": 16,
+          "goalsFor": 12,
+          "goalsAgainst": 14,
+          "goalDifference": -2
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 285,
             "name": "Elche CF",
             "shortName": "Elche",
@@ -257,7 +276,7 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 263,
             "name": "Deportivo Alavés",
@@ -274,25 +293,6 @@
           "goalsFor": 11,
           "goalsAgainst": 12,
           "goalDifference": -1
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 87,
-            "name": "Rayo Vallecano de Madrid",
-            "shortName": "Rayo Vallecano",
-            "tla": "RAY",
-            "crest": "https://crests.football-data.org/87.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 4,
-          "draw": 3,
-          "lost": 5,
-          "points": 15,
-          "goalsFor": 12,
-          "goalsAgainst": 14,
-          "goalDifference": -2
         },
         {
           "position": 15,
@@ -398,12 +398,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 2,
-          "draw": 2,
+          "draw": 3,
           "lost": 8,
-          "points": 8,
+          "points": 9,
           "goalsFor": 7,
           "goalsAgainst": 20,
           "goalDifference": -13

@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 6,
+          "draw": 3,
+          "lost": 4,
+          "points": 21,
+          "goalsFor": 18,
+          "goalsAgainst": 15,
+          "goalDifference": 3
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -141,25 +160,6 @@
           "goalsFor": 23,
           "goalsAgainst": 15,
           "goalDifference": 8
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 6,
-          "draw": 2,
-          "lost": 4,
-          "points": 20,
-          "goalsFor": 18,
-          "goalsAgainst": 15,
-          "goalDifference": 3
         },
         {
           "position": 8,
@@ -360,12 +360,12 @@
             "tla": "AJA",
             "crest": "https://crests.football-data.org/519.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 2,
-          "draw": 1,
+          "draw": 2,
           "lost": 9,
-          "points": 7,
+          "points": 8,
           "goalsFor": 7,
           "goalsAgainst": 19,
           "goalDifference": -12
