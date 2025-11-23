@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 112,
+            "name": "Parma Calcio 1913",
+            "shortName": "Parma",
+            "tla": "PAR",
+            "crest": "https://crests.football-data.org/112.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 2,
+          "draw": 5,
+          "lost": 5,
+          "points": 11,
+          "goalsFor": 8,
+          "goalsAgainst": 14,
+          "goalDifference": -6
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 5890,
             "name": "US Lecce",
             "shortName": "Lecce",
@@ -314,7 +333,7 @@
           "goalDifference": -6
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 487,
             "name": "AC Pisa 1909",
@@ -331,25 +350,6 @@
           "goalsFor": 8,
           "goalsAgainst": 14,
           "goalDifference": -6
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 112,
-            "name": "Parma Calcio 1913",
-            "shortName": "Parma",
-            "tla": "PAR",
-            "crest": "https://crests.football-data.org/112.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 1,
-          "draw": 5,
-          "lost": 5,
-          "points": 8,
-          "goalsFor": 7,
-          "goalsAgainst": 14,
-          "goalDifference": -7
         },
         {
           "position": 18,
@@ -398,15 +398,15 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 0,
           "draw": 6,
-          "lost": 5,
+          "lost": 6,
           "points": 6,
           "goalsFor": 6,
-          "goalsAgainst": 16,
-          "goalDifference": -10
+          "goalsAgainst": 17,
+          "goalDifference": -11
         }
       ]
     }
