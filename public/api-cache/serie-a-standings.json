@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 108,
+            "name": "FC Internazionale Milano",
+            "shortName": "Inter",
+            "tla": "INT",
+            "crest": "https://crests.football-data.org/108.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 8,
+          "draw": 1,
+          "lost": 3,
+          "points": 25,
+          "goalsFor": 26,
+          "goalsAgainst": 12,
+          "goalDifference": 14
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 113,
             "name": "SSC Napoli",
             "shortName": "Napoli",
@@ -65,25 +84,6 @@
           "goalsFor": 19,
           "goalsAgainst": 11,
           "goalDifference": 8
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 108,
-            "name": "FC Internazionale Milano",
-            "shortName": "Inter",
-            "tla": "INT",
-            "crest": "https://crests.football-data.org/108.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 8,
-          "draw": 0,
-          "lost": 3,
-          "points": 24,
-          "goalsFor": 26,
-          "goalsAgainst": 12,
-          "goalDifference": 14
         },
         {
           "position": 4,
@@ -113,12 +113,12 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 6,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 22,
+          "points": 23,
           "goalsFor": 17,
           "goalsAgainst": 9,
           "goalDifference": 8
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ",
+            "crest": "https://crests.football-data.org/110.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 5,
+          "draw": 3,
+          "lost": 4,
+          "points": 18,
+          "goalsFor": 15,
+          "goalsAgainst": 9,
+          "goalDifference": 6
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -160,25 +179,6 @@
           "goalsFor": 12,
           "goalsAgainst": 6,
           "goalDifference": 6
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 110,
-            "name": "SS Lazio",
-            "shortName": "Lazio",
-            "tla": "LAZ",
-            "crest": "https://crests.football-data.org/110.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 5,
-          "draw": 3,
-          "lost": 4,
-          "points": 18,
-          "goalsFor": 14,
-          "goalsAgainst": 9,
-          "goalDifference": 5
         },
         {
           "position": 9,
@@ -329,8 +329,8 @@
           "lost": 6,
           "points": 10,
           "goalsFor": 8,
-          "goalsAgainst": 15,
-          "goalDifference": -7
+          "goalsAgainst": 16,
+          "goalDifference": -8
         },
         {
           "position": 17,

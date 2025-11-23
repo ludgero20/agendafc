@@ -151,15 +151,15 @@
             "tla": "LIL",
             "crest": "https://crests.football-data.org/521.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 6,
           "draw": 2,
-          "lost": 4,
+          "lost": 5,
           "points": 20,
           "goalsFor": 23,
-          "goalsAgainst": 15,
-          "goalDifference": 8
+          "goalsAgainst": 16,
+          "goalDifference": 7
         },
         {
           "position": 8,
@@ -183,6 +183,25 @@
         {
           "position": 9,
           "team": {
+            "id": 1045,
+            "name": "Paris FC",
+            "shortName": "Paris FC",
+            "tla": "PFC",
+            "crest": "https://crests.football-data.org/1045.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 6,
+          "points": 17,
+          "goalsFor": 19,
+          "goalsAgainst": 21,
+          "goalDifference": -2
+        },
+        {
+          "position": 10,
+          "team": {
             "id": 522,
             "name": "OGC Nice",
             "shortName": "Nice",
@@ -200,7 +219,7 @@
           "goalDifference": -5
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 511,
             "name": "Toulouse FC",
@@ -219,7 +238,7 @@
           "goalDifference": 1
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 532,
             "name": "Angers SCO",
@@ -236,25 +255,6 @@
           "goalsFor": 11,
           "goalsAgainst": 15,
           "goalDifference": -4
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 1045,
-            "name": "Paris FC",
-            "shortName": "Paris FC",
-            "tla": "PFC",
-            "crest": "https://crests.football-data.org/1045.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 4,
-          "draw": 2,
-          "lost": 6,
-          "points": 14,
-          "goalsFor": 18,
-          "goalsAgainst": 21,
-          "goalDifference": -3
         },
         {
           "position": 13,
