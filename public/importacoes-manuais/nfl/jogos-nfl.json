@@ -1822,9 +1822,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Detroit Lions",
       "strAwayTeam": "New York Giants",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "34",
+      "intAwayScore": "27",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424116",
@@ -1833,9 +1833,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Baltimore Ravens",
       "strAwayTeam": "New York Jets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "23",
+      "intAwayScore": "10",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424110",
@@ -1844,9 +1844,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Chicago Bears",
       "strAwayTeam": "Pittsburgh Steelers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "31",
+      "intAwayScore": "28",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424111",
@@ -1855,9 +1855,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Cincinnati Bengals",
       "strAwayTeam": "New England Patriots",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "20",
+      "intAwayScore": "26",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424115",
@@ -1866,9 +1866,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Kansas City Chiefs",
       "strAwayTeam": "Indianapolis Colts",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "23",
+      "intAwayScore": "20",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424114",
@@ -1877,9 +1877,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Tennessee Titans",
       "strAwayTeam": "Seattle Seahawks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "30",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424113",
@@ -1888,9 +1888,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Green Bay Packers",
       "strAwayTeam": "Minnesota Vikings",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "23",
+      "intAwayScore": "6",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424118",
@@ -1899,9 +1899,9 @@
       "strTime": "18:05:00",
       "strHomeTeam": "Arizona Cardinals",
       "strAwayTeam": "Jacksonville Jaguars",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "27",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424117",
@@ -1910,9 +1910,9 @@
       "strTime": "18:05:00",
       "strHomeTeam": "Las Vegas Raiders",
       "strAwayTeam": "Cleveland Browns",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "10",
+      "intAwayScore": "24",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424120",
@@ -1921,9 +1921,9 @@
       "strTime": "18:25:00",
       "strHomeTeam": "New Orleans Saints",
       "strAwayTeam": "Atlanta Falcons",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "10",
+      "intAwayScore": "24",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424119",
@@ -1932,9 +1932,9 @@
       "strTime": "18:25:00",
       "strHomeTeam": "Dallas Cowboys",
       "strAwayTeam": "Philadelphia Eagles",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "21",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424121",
@@ -1943,9 +1943,9 @@
       "strTime": "22:20:00",
       "strHomeTeam": "Los Angeles Rams",
       "strAwayTeam": "Tampa Bay Buccaneers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "34",
+      "intAwayScore": "7",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424122",
