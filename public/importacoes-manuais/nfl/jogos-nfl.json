@@ -1954,9 +1954,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "San Francisco 49ers",
       "strAwayTeam": "Carolina Panthers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "20",
+      "intAwayScore": "9",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424123",
@@ -2823,9 +2823,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Atlanta Falcons",
       "strAwayTeam": "New Orleans Saints",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "10",
+      "intAwayScore": "24",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424202",
@@ -2900,9 +2900,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Minnesota Vikings",
       "strAwayTeam": "Green Bay Packers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "23",
+      "intAwayScore": "6",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424209",
