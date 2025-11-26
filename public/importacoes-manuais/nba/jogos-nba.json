@@ -2596,9 +2596,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Philadelphia 76ers",
       "strAwayTeam": "Orlando Magic",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "103",
+      "intAwayScore": "144",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447081",
@@ -2616,9 +2616,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Washington Wizards",
       "strAwayTeam": "Atlanta Hawks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "132",
+      "intAwayScore": "113",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447087",
