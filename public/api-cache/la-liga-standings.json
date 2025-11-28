@@ -153,35 +153,16 @@
           },
           "playedGames": 14,
           "form": null,
-          "won": 5,
-          "draw": 3,
+          "won": 6,
+          "draw": 2,
           "lost": 6,
-          "points": 18,
-          "goalsFor": 12,
+          "points": 20,
+          "goalsFor": 13,
           "goalsAgainst": 15,
-          "goalDifference": -3
+          "goalDifference": -2
         },
         {
           "position": 8,
-          "team": {
-            "id": 285,
-            "name": "Elche CF",
-            "shortName": "Elche",
-            "tla": "ELC",
-            "crest": "https://crests.football-data.org/285.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 8,
-          "lost": 3,
-          "points": 17,
-          "goalsFor": 15,
-          "goalsAgainst": 16,
-          "goalDifference": -1
-        },
-        {
-          "position": 9,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -200,7 +181,7 @@
           "goalDifference": -5
         },
         {
-          "position": 10,
+          "position": 9,
           "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
@@ -219,7 +200,7 @@
           "goalDifference": -1
         },
         {
-          "position": 11,
+          "position": 10,
           "team": {
             "id": 559,
             "name": "Sevilla FC",
@@ -238,7 +219,7 @@
           "goalDifference": -2
         },
         {
-          "position": 12,
+          "position": 11,
           "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
@@ -254,6 +235,25 @@
           "points": 16,
           "goalsFor": 16,
           "goalsAgainst": 18,
+          "goalDifference": -2
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 285,
+            "name": "Elche CF",
+            "shortName": "Elche",
+            "tla": "ELC",
+            "crest": "https://crests.football-data.org/285.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 7,
+          "lost": 4,
+          "points": 16,
+          "goalsFor": 15,
+          "goalsAgainst": 17,
           "goalDifference": -2
         },
         {

@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 6,
+          "draw": 6,
+          "lost": 2,
+          "points": 24,
+          "goalsFor": 24,
+          "goalsAgainst": 18,
+          "goalDifference": 6
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -105,7 +124,7 @@
           "goalDifference": 10
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
@@ -122,25 +141,6 @@
           "goalsFor": 24,
           "goalsAgainst": 17,
           "goalDifference": 7
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 5,
-          "draw": 7,
-          "lost": 2,
-          "points": 22,
-          "goalsFor": 23,
-          "goalsAgainst": 18,
-          "goalDifference": 5
         },
         {
           "position": 7,
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 545,
-            "name": "FC Metz",
-            "shortName": "FC Metz",
-            "tla": "FCM",
-            "crest": "https://crests.football-data.org/545.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 8,
-          "points": 12,
-          "goalsFor": 14,
-          "goalsAgainst": 30,
-          "goalDifference": -16
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 543,
             "name": "FC Nantes",
             "shortName": "Nantes",
@@ -333,7 +314,7 @@
           "goalDifference": -7
         },
         {
-          "position": 17,
+          "position": 16,
           "team": {
             "id": 525,
             "name": "FC Lorient",
@@ -350,6 +331,25 @@
           "goalsFor": 15,
           "goalsAgainst": 27,
           "goalDifference": -12
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM",
+            "crest": "https://crests.football-data.org/545.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 9,
+          "points": 11,
+          "goalsFor": 14,
+          "goalsAgainst": 31,
+          "goalDifference": -17
         },
         {
           "position": 18,
