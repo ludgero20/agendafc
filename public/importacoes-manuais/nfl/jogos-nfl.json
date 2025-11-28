@@ -1965,9 +1965,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Detroit Lions",
       "strAwayTeam": "Green Bay Packers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "31",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424124",
@@ -1976,9 +1976,9 @@
       "strTime": "18:30:00",
       "strHomeTeam": "Dallas Cowboys",
       "strAwayTeam": "Kansas City Chiefs",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "31",
+      "intAwayScore": "28",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424125",
@@ -1987,9 +1987,9 @@
       "strTime": "22:20:00",
       "strHomeTeam": "Baltimore Ravens",
       "strAwayTeam": "Cincinnati Bengals",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "14",
+      "intAwayScore": "32",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424126",
