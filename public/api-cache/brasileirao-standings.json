@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 1765,
+            "name": "Fluminense FC",
+            "shortName": "Fluminense",
+            "tla": "FLU",
+            "crest": "https://crests.football-data.org/1765.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 17,
+          "draw": 7,
+          "lost": 12,
+          "points": 58,
+          "goalsFor": 46,
+          "goalsAgainst": 38,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 1770,
             "name": "Botafogo FR",
             "shortName": "Botafogo",
@@ -124,7 +143,7 @@
           "goalDifference": 18
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 1777,
             "name": "EC Bahia",
@@ -143,25 +162,6 @@
           "goalDifference": 4
         },
         {
-          "position": 7,
-          "team": {
-            "id": 1765,
-            "name": "Fluminense FC",
-            "shortName": "Fluminense",
-            "tla": "FLU",
-            "crest": "https://crests.football-data.org/1765.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 16,
-          "draw": 7,
-          "lost": 12,
-          "points": 55,
-          "goalsFor": 40,
-          "goalsAgainst": 38,
-          "goalDifference": 2
-        },
-        {
           "position": 8,
           "team": {
             "id": 1776,
@@ -170,15 +170,15 @@
             "tla": "PAU",
             "crest": "https://crests.football-data.org/1776.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 13,
           "draw": 9,
-          "lost": 13,
+          "lost": 14,
           "points": 48,
           "goalsFor": 40,
-          "goalsAgainst": 40,
-          "goalDifference": 0
+          "goalsAgainst": 46,
+          "goalDifference": -6
         },
         {
           "position": 9,
