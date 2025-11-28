@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 207,
-    "first": "2025-11-28",
+    "count": 206,
+    "first": "2025-11-29",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/BL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 12,
-        "winner": null
-      },
-      "id": 540510,
-      "utcDate": "2025-11-28T19:30:00Z",
-      "status": "TIMED",
-      "matchday": 12,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-24T01:32:01Z",
-      "homeTeam": {
-        "id": 18,
-        "name": "Borussia Mönchengladbach",
-        "shortName": "M'gladbach",
-        "tla": "BMG",
-        "crest": "https://crests.football-data.org/18.png"
-      },
-      "awayTeam": {
-        "id": 721,
-        "name": "RB Leipzig",
-        "shortName": "RB Leipzig",
-        "tla": "RBL",
-        "crest": "https://crests.football-data.org/721.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57527,
-          "name": "Timo Gerach",
-          "type": "REFEREE",
-          "nationality": "Germany"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2088,
