@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 6685,
+            "name": "Santos FC",
+            "shortName": "Santos",
+            "tla": "SAN",
+            "crest": "https://crests.football-data.org/6685.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 10,
+          "draw": 11,
+          "lost": 15,
+          "points": 41,
+          "goalsFor": 39,
+          "goalsAgainst": 50,
+          "goalDifference": -11
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 6684,
             "name": "SC Internacional",
             "shortName": "Internacional",
@@ -311,25 +330,6 @@
           "points": 41,
           "goalsFor": 41,
           "goalsAgainst": 53,
-          "goalDifference": -12
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 6685,
-            "name": "Santos FC",
-            "shortName": "Santos",
-            "tla": "SAN",
-            "crest": "https://crests.football-data.org/6685.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 10,
-          "draw": 11,
-          "lost": 15,
-          "points": 41,
-          "goalsFor": 38,
-          "goalsAgainst": 50,
           "goalDifference": -12
         },
         {
@@ -405,8 +405,8 @@
           "lost": 23,
           "points": 17,
           "goalsFor": 28,
-          "goalsAgainst": 68,
-          "goalDifference": -40
+          "goalsAgainst": 69,
+          "goalDifference": -41
         }
       ]
     }
