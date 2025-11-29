@@ -1998,9 +1998,9 @@
       "strTime": "17:00:00",
       "strHomeTeam": "Philadelphia Eagles",
       "strAwayTeam": "Chicago Bears",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "15",
+      "intAwayScore": "24",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424131",
@@ -2295,9 +2295,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Cincinnati Bengals",
       "strAwayTeam": "Baltimore Ravens",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "14",
+      "intAwayScore": "32",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424156",
