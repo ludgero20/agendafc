@@ -56,12 +56,12 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 7,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 25,
+          "points": 26,
           "goalsFor": 18,
           "goalsAgainst": 9,
           "goalDifference": 9
@@ -170,12 +170,12 @@
             "tla": "LAZ",
             "crest": "https://crests.football-data.org/110.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 5,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 18,
+          "points": 19,
           "goalsFor": 15,
           "goalsAgainst": 9,
           "goalDifference": 6

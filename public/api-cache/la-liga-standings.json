@@ -94,12 +94,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 8,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 28,
+          "points": 29,
           "goalsFor": 25,
           "goalsAgainst": 11,
           "goalDifference": 14
@@ -373,6 +373,25 @@
         {
           "position": 19,
           "team": {
+            "id": 1048,
+            "name": "Real Oviedo",
+            "shortName": "Real Oviedo",
+            "tla": "OVI",
+            "crest": "https://crests.football-data.org/1048.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 8,
+          "points": 10,
+          "goalsFor": 7,
+          "goalsAgainst": 20,
+          "goalDifference": -13
+        },
+        {
+          "position": 20,
+          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -388,25 +407,6 @@
           "goalsFor": 16,
           "goalsAgainst": 26,
           "goalDifference": -10
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 1048,
-            "name": "Real Oviedo",
-            "shortName": "Real Oviedo",
-            "tla": "OVI",
-            "crest": "https://crests.football-data.org/1048.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 8,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 20,
-          "goalDifference": -13
         }
       ]
     }

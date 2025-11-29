@@ -94,15 +94,15 @@
             "tla": "MIR",
             "crest": "https://crests.football-data.org/4364.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 17,
           "draw": 12,
-          "lost": 6,
+          "lost": 7,
           "points": 63,
           "goalsFor": 58,
-          "goalsAgainst": 34,
-          "goalDifference": 24
+          "goalsAgainst": 35,
+          "goalDifference": 23
         },
         {
           "position": 5,
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 1782,
+            "name": "EC Vitória",
+            "shortName": "Vitória",
+            "tla": "VIT",
+            "crest": "https://crests.football-data.org/1782.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 10,
+          "draw": 12,
+          "lost": 14,
+          "points": 42,
+          "goalsFor": 33,
+          "goalsAgainst": 48,
+          "goalDifference": -15
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 6685,
             "name": "Santos FC",
             "shortName": "Santos",
@@ -314,7 +333,7 @@
           "goalDifference": -11
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 6684,
             "name": "SC Internacional",
@@ -331,25 +350,6 @@
           "goalsFor": 41,
           "goalsAgainst": 53,
           "goalDifference": -12
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 1782,
-            "name": "EC Vitória",
-            "shortName": "Vitória",
-            "tla": "VIT",
-            "crest": "https://crests.football-data.org/1782.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 9,
-          "draw": 12,
-          "lost": 14,
-          "points": 39,
-          "goalsFor": 32,
-          "goalsAgainst": 48,
-          "goalDifference": -16
         },
         {
           "position": 18,
