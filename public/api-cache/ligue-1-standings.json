@@ -40,12 +40,12 @@
           "playedGames": 14,
           "form": null,
           "won": 9,
-          "draw": 4,
-          "lost": 1,
-          "points": 31,
+          "draw": 3,
+          "lost": 2,
+          "points": 30,
           "goalsFor": 27,
-          "goalsAgainst": 11,
-          "goalDifference": 16
+          "goalsAgainst": 12,
+          "goalDifference": 15
         },
         {
           "position": 2,
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 7,
+          "draw": 2,
+          "lost": 5,
+          "points": 23,
+          "goalsFor": 26,
+          "goalsAgainst": 25,
+          "goalDifference": 1
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -143,7 +162,7 @@
           "goalDifference": 7
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
@@ -160,25 +179,6 @@
           "goalsFor": 18,
           "goalsAgainst": 15,
           "goalDifference": 3
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 5,
-          "points": 21,
-          "goalsFor": 25,
-          "goalsAgainst": 25,
-          "goalDifference": 0
         },
         {
           "position": 9,
@@ -246,12 +246,12 @@
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
-          "draw": 2,
+          "draw": 3,
           "lost": 7,
-          "points": 14,
+          "points": 15,
           "goalsFor": 20,
           "goalsAgainst": 25,
           "goalDifference": -5
@@ -360,12 +360,12 @@
             "tla": "AJA",
             "crest": "https://crests.football-data.org/519.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 2,
-          "draw": 2,
+          "draw": 3,
           "lost": 9,
-          "points": 8,
+          "points": 9,
           "goalsFor": 7,
           "goalsAgainst": 19,
           "goalDifference": -12
