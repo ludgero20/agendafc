@@ -94,15 +94,15 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 7,
           "draw": 2,
-          "lost": 2,
+          "lost": 3,
           "points": 23,
           "goalsFor": 16,
-          "goalsAgainst": 5,
-          "goalDifference": 11
+          "goalsAgainst": 6,
+          "goalDifference": 10
         },
         {
           "position": 5,
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 1049,
+            "name": "CD Tondela",
+            "shortName": "Tondela",
+            "tla": "TON",
+            "crest": "https://crests.football-data.org/1049.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 7,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 20,
+          "goalDifference": -13
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
@@ -331,25 +350,6 @@
           "goalsFor": 13,
           "goalsAgainst": 30,
           "goalDifference": -17
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 1049,
-            "name": "CD Tondela",
-            "shortName": "Tondela",
-            "tla": "TON",
-            "crest": "https://crests.football-data.org/1049.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 7,
-          "points": 6,
-          "goalsFor": 6,
-          "goalsAgainst": 20,
-          "goalDifference": -14
         },
         {
           "position": 18,
