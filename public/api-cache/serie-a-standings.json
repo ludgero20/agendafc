@@ -246,15 +246,15 @@
             "tla": "TOR",
             "crest": "https://crests.football-data.org/586.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 3,
           "draw": 5,
-          "lost": 4,
+          "lost": 5,
           "points": 14,
           "goalsFor": 11,
-          "goalsAgainst": 21,
-          "goalDifference": -10
+          "goalsAgainst": 23,
+          "goalDifference": -12
         },
         {
           "position": 13,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 5890,
+            "name": "US Lecce",
+            "shortName": "Lecce",
+            "tla": "USL",
+            "crest": "https://crests.football-data.org/5890.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 3,
+          "draw": 4,
+          "lost": 6,
+          "points": 13,
+          "goalsFor": 10,
+          "goalsAgainst": 16,
+          "goalDifference": -6
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 104,
             "name": "Cagliari Calcio",
             "shortName": "Cagliari",
@@ -295,7 +314,7 @@
           "goalDifference": -6
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 107,
             "name": "Genoa CFC",
@@ -314,7 +333,7 @@
           "goalDifference": -7
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -333,7 +352,7 @@
           "goalDifference": -8
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 487,
             "name": "AC Pisa 1909",
@@ -350,25 +369,6 @@
           "goalsFor": 10,
           "goalsAgainst": 16,
           "goalDifference": -6
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 5890,
-            "name": "US Lecce",
-            "shortName": "Lecce",
-            "tla": "USL",
-            "crest": "https://crests.football-data.org/5890.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 2,
-          "draw": 4,
-          "lost": 6,
-          "points": 10,
-          "goalsFor": 8,
-          "goalsAgainst": 16,
-          "goalDifference": -8
         },
         {
           "position": 19,
