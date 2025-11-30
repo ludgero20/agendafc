@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 7,
+          "draw": 2,
+          "lost": 5,
+          "points": 23,
+          "goalsFor": 24,
+          "goalsAgainst": 17,
+          "goalDifference": 7
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -141,25 +160,6 @@
           "goalsFor": 26,
           "goalsAgainst": 25,
           "goalDifference": 1
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 7,
-          "draw": 1,
-          "lost": 5,
-          "points": 22,
-          "goalsFor": 24,
-          "goalsAgainst": 17,
-          "goalDifference": 7
         },
         {
           "position": 8,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 512,
+            "name": "Stade Brestois 29",
+            "shortName": "Brest",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/512.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 6,
+          "points": 14,
+          "goalsFor": 17,
+          "goalsAgainst": 23,
+          "goalDifference": -6
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 533,
             "name": "Le Havre AC",
             "shortName": "Le Havre",
@@ -274,25 +293,6 @@
           "goalsFor": 13,
           "goalsAgainst": 20,
           "goalDifference": -7
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 512,
-            "name": "Stade Brestois 29",
-            "shortName": "Brest",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/512.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 6,
-          "points": 13,
-          "goalsFor": 17,
-          "goalsAgainst": 23,
-          "goalDifference": -6
         },
         {
           "position": 15,

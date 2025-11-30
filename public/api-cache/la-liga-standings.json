@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 94,
+            "name": "Villarreal CF",
+            "shortName": "Villarreal",
+            "tla": "VIL",
+            "crest": "https://crests.football-data.org/94.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 10,
+          "draw": 2,
+          "lost": 2,
+          "points": 32,
+          "goalsFor": 27,
+          "goalsAgainst": 11,
+          "goalDifference": 16
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 78,
             "name": "Club Atlético de Madrid",
             "shortName": "Atleti",
@@ -84,25 +103,6 @@
           "goalsFor": 27,
           "goalsAgainst": 11,
           "goalDifference": 16
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 94,
-            "name": "Villarreal CF",
-            "shortName": "Villarreal",
-            "tla": "VIL",
-            "crest": "https://crests.football-data.org/94.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 9,
-          "draw": 2,
-          "lost": 2,
-          "points": 29,
-          "goalsFor": 26,
-          "goalsAgainst": 11,
-          "goalDifference": 15
         },
         {
           "position": 5,
@@ -183,25 +183,6 @@
         {
           "position": 9,
           "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 5,
-          "points": 16,
-          "goalsFor": 17,
-          "goalsAgainst": 18,
-          "goalDifference": -1
-        },
-        {
-          "position": 10,
-          "team": {
             "id": 559,
             "name": "Sevilla FC",
             "shortName": "Sevilla FC",
@@ -216,6 +197,25 @@
           "points": 16,
           "goalsFor": 19,
           "goalsAgainst": 21,
+          "goalDifference": -2
+        },
+        {
+          "position": 10,
+          "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 6,
+          "points": 16,
+          "goalsFor": 17,
+          "goalsAgainst": 19,
           "goalDifference": -2
         },
         {

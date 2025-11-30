@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 108,
+            "name": "FC Internazionale Milano",
+            "shortName": "Inter",
+            "tla": "INT",
+            "crest": "https://crests.football-data.org/108.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 8,
+          "draw": 1,
+          "lost": 4,
+          "points": 25,
+          "goalsFor": 26,
+          "goalsAgainst": 13,
+          "goalDifference": 13
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 113,
             "name": "SSC Napoli",
             "shortName": "Napoli",
@@ -84,25 +103,6 @@
           "goalsFor": 19,
           "goalsAgainst": 11,
           "goalDifference": 8
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 108,
-            "name": "FC Internazionale Milano",
-            "shortName": "Inter",
-            "tla": "INT",
-            "crest": "https://crests.football-data.org/108.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 8,
-          "draw": 0,
-          "lost": 4,
-          "points": 24,
-          "goalsFor": 26,
-          "goalsAgainst": 13,
-          "goalDifference": 13
         },
         {
           "position": 5,
@@ -252,9 +252,9 @@
           "draw": 5,
           "lost": 5,
           "points": 14,
-          "goalsFor": 11,
+          "goalsFor": 12,
           "goalsAgainst": 23,
-          "goalDifference": -12
+          "goalDifference": -11
         },
         {
           "position": 13,
@@ -291,8 +291,8 @@
           "lost": 6,
           "points": 13,
           "goalsFor": 10,
-          "goalsAgainst": 16,
-          "goalDifference": -6
+          "goalsAgainst": 17,
+          "goalDifference": -7
         },
         {
           "position": 15,
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS",
+            "crest": "https://crests.football-data.org/487.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 1,
+          "draw": 8,
+          "lost": 4,
+          "points": 11,
+          "goalsFor": 10,
+          "goalsAgainst": 16,
+          "goalDifference": -6
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 107,
             "name": "Genoa CFC",
             "shortName": "Genoa",
@@ -333,7 +352,7 @@
           "goalDifference": -7
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -350,25 +369,6 @@
           "goalsFor": 9,
           "goalsAgainst": 17,
           "goalDifference": -8
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 487,
-            "name": "AC Pisa 1909",
-            "shortName": "AC Pisa",
-            "tla": "PIS",
-            "crest": "https://crests.football-data.org/487.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 1,
-          "draw": 7,
-          "lost": 4,
-          "points": 10,
-          "goalsFor": 10,
-          "goalsAgainst": 16,
-          "goalDifference": -6
         },
         {
           "position": 19,

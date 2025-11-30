@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 5,
-          "draw": 6,
-          "lost": 2,
-          "points": 21,
-          "goalsFor": 16,
-          "goalsAgainst": 9,
-          "goalDifference": 7
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 58,
             "name": "Aston Villa FC",
             "shortName": "Aston Villa",
@@ -143,7 +124,45 @@
           "goalDifference": 4
         },
         {
+          "position": 6,
+          "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 6,
+          "draw": 3,
+          "lost": 4,
+          "points": 21,
+          "goalsFor": 21,
+          "goalsAgainst": 20,
+          "goalDifference": 1
+        },
+        {
           "position": 7,
+          "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 5,
+          "draw": 5,
+          "lost": 3,
+          "points": 20,
+          "goalsFor": 17,
+          "goalsAgainst": 11,
+          "goalDifference": 6
+        },
+        {
+          "position": 8,
           "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
@@ -162,7 +181,7 @@
           "goalDifference": 3
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 402,
             "name": "Brentford FC",
@@ -179,25 +198,6 @@
           "goalsFor": 21,
           "goalsAgainst": 20,
           "goalDifference": 1
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 5,
-          "draw": 4,
-          "lost": 4,
-          "points": 19,
-          "goalsFor": 19,
-          "goalsAgainst": 19,
-          "goalDifference": 0
         },
         {
           "position": 10,
