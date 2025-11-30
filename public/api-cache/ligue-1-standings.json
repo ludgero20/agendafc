@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 546,
+            "name": "Racing Club de Lens",
+            "shortName": "RC Lens",
+            "tla": "RCL",
+            "crest": "https://crests.football-data.org/546.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 10,
+          "draw": 1,
+          "lost": 3,
+          "points": 31,
+          "goalsFor": 24,
+          "goalsAgainst": 12,
+          "goalDifference": 12
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
             "shortName": "PSG",
@@ -48,7 +67,7 @@
           "goalDifference": 15
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 516,
             "name": "Olympique de Marseille",
@@ -67,25 +86,6 @@
           "goalDifference": 21
         },
         {
-          "position": 3,
-          "team": {
-            "id": 546,
-            "name": "Racing Club de Lens",
-            "shortName": "RC Lens",
-            "tla": "RCL",
-            "crest": "https://crests.football-data.org/546.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 9,
-          "draw": 2,
-          "lost": 3,
-          "points": 29,
-          "goalsFor": 22,
-          "goalsAgainst": 11,
-          "goalDifference": 11
-        },
-        {
           "position": 4,
           "team": {
             "id": 521,
@@ -96,13 +96,13 @@
           },
           "playedGames": 14,
           "form": null,
-          "won": 7,
-          "draw": 3,
+          "won": 8,
+          "draw": 2,
           "lost": 4,
-          "points": 24,
-          "goalsFor": 27,
+          "points": 26,
+          "goalsFor": 28,
           "goalsAgainst": 17,
-          "goalDifference": 10
+          "goalDifference": 11
         },
         {
           "position": 5,
@@ -183,25 +183,6 @@
         {
           "position": 9,
           "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 2,
-          "lost": 6,
-          "points": 20,
-          "goalsFor": 19,
-          "goalsAgainst": 23,
-          "goalDifference": -4
-        },
-        {
-          "position": 10,
-          "team": {
             "id": 511,
             "name": "Toulouse FC",
             "shortName": "Toulouse",
@@ -219,26 +200,26 @@
           "goalDifference": 1
         },
         {
-          "position": 11,
+          "position": 10,
           "team": {
-            "id": 532,
-            "name": "Angers SCO",
-            "shortName": "Angers SCO",
-            "tla": "ANG",
-            "crest": "https://crests.football-data.org/532.png"
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
           },
           "playedGames": 14,
           "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 5,
+          "won": 5,
+          "draw": 2,
+          "lost": 7,
           "points": 17,
-          "goalsFor": 11,
-          "goalsAgainst": 15,
-          "goalDifference": -4
+          "goalsFor": 19,
+          "goalsAgainst": 26,
+          "goalDifference": -7
         },
         {
-          "position": 12,
+          "position": 11,
           "team": {
             "id": 512,
             "name": "Stade Brestois 29",
@@ -254,6 +235,25 @@
           "points": 16,
           "goalsFor": 19,
           "goalsAgainst": 24,
+          "goalDifference": -5
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 532,
+            "name": "Angers SCO",
+            "shortName": "Angers SCO",
+            "tla": "ANG",
+            "crest": "https://crests.football-data.org/532.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 6,
+          "points": 16,
+          "goalsFor": 12,
+          "goalsAgainst": 17,
           "goalDifference": -5
         },
         {
@@ -287,15 +287,34 @@
           "playedGames": 14,
           "form": null,
           "won": 3,
-          "draw": 6,
-          "lost": 5,
-          "points": 15,
+          "draw": 5,
+          "lost": 6,
+          "points": 14,
           "goalsFor": 13,
-          "goalsAgainst": 20,
-          "goalDifference": -7
+          "goalsAgainst": 21,
+          "goalDifference": -8
         },
         {
           "position": 15,
+          "team": {
+            "id": 525,
+            "name": "FC Lorient",
+            "shortName": "Lorient",
+            "tla": "FCL",
+            "crest": "https://crests.football-data.org/525.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 6,
+          "points": 14,
+          "goalsFor": 18,
+          "goalsAgainst": 28,
+          "goalDifference": -10
+        },
+        {
+          "position": 16,
           "team": {
             "id": 543,
             "name": "FC Nantes",
@@ -312,25 +331,6 @@
           "goalsFor": 12,
           "goalsAgainst": 19,
           "goalDifference": -7
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 525,
-            "name": "FC Lorient",
-            "shortName": "Lorient",
-            "tla": "FCL",
-            "crest": "https://crests.football-data.org/525.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 2,
-          "draw": 5,
-          "lost": 7,
-          "points": 11,
-          "goalsFor": 15,
-          "goalsAgainst": 28,
-          "goalDifference": -13
         },
         {
           "position": 17,

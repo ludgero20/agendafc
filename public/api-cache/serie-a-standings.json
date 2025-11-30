@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA",
+            "crest": "https://crests.football-data.org/102.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 3,
+          "draw": 7,
+          "lost": 3,
+          "points": 16,
+          "goalsFor": 16,
+          "goalsAgainst": 14,
+          "goalDifference": 2
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 457,
             "name": "US Cremonese",
             "shortName": "Cremonese",
@@ -238,7 +257,7 @@
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -255,25 +274,6 @@
           "goalsFor": 12,
           "goalsAgainst": 23,
           "goalDifference": -11
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 102,
-            "name": "Atalanta BC",
-            "shortName": "Atalanta",
-            "tla": "ATA",
-            "crest": "https://crests.football-data.org/102.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 2,
-          "draw": 7,
-          "lost": 3,
-          "points": 13,
-          "goalsFor": 14,
-          "goalsAgainst": 14,
-          "goalDifference": 0
         },
         {
           "position": 14,
@@ -379,15 +379,15 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 0,
           "draw": 6,
-          "lost": 6,
+          "lost": 7,
           "points": 6,
           "goalsFor": 10,
-          "goalsAgainst": 19,
-          "goalDifference": -9
+          "goalsAgainst": 21,
+          "goalDifference": -11
         },
         {
           "position": 20,
