@@ -227,18 +227,37 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 11,
+          "playedGames": 12,
           "form": null,
           "won": 2,
-          "draw": 6,
+          "draw": 7,
           "lost": 3,
-          "points": 12,
-          "goalsFor": 14,
-          "goalsAgainst": 19,
+          "points": 13,
+          "goalsFor": 15,
+          "goalsAgainst": 20,
           "goalDifference": -5
         },
         {
           "position": 12,
+          "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 12,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 6,
+          "points": 12,
+          "goalsFor": 10,
+          "goalsAgainst": 14,
+          "goalDifference": -4
+        },
+        {
+          "position": 13,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -257,7 +276,7 @@
           "goalDifference": -5
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -274,25 +293,6 @@
           "goalsFor": 13,
           "goalsAgainst": 14,
           "goalDifference": -1
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 6,
-          "points": 11,
-          "goalsFor": 9,
-          "goalsAgainst": 13,
-          "goalDifference": -4
         },
         {
           "position": 15,
