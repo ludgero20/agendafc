@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 7,
+          "draw": 3,
+          "lost": 4,
+          "points": 24,
+          "goalsFor": 21,
+          "goalsAgainst": 15,
+          "goalDifference": 6
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -143,7 +162,7 @@
           "goalDifference": 1
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
@@ -160,25 +179,6 @@
           "goalsFor": 25,
           "goalsAgainst": 19,
           "goalDifference": 6
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 4,
-          "lost": 4,
-          "points": 22,
-          "goalsFor": 18,
-          "goalsAgainst": 15,
-          "goalDifference": 3
         },
         {
           "position": 9,
@@ -325,12 +325,12 @@
           "playedGames": 14,
           "form": null,
           "won": 2,
-          "draw": 6,
-          "lost": 6,
-          "points": 12,
+          "draw": 5,
+          "lost": 7,
+          "points": 11,
           "goalsFor": 12,
-          "goalsAgainst": 19,
-          "goalDifference": -7
+          "goalsAgainst": 22,
+          "goalDifference": -10
         },
         {
           "position": 17,
