@@ -132,15 +132,15 @@
             "tla": "BOT",
             "crest": "https://crests.football-data.org/1770.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 16,
           "draw": 10,
-          "lost": 9,
+          "lost": 10,
           "points": 58,
           "goalsFor": 50,
-          "goalsAgainst": 32,
-          "goalDifference": 18
+          "goalsAgainst": 33,
+          "goalDifference": 17
         },
         {
           "position": 7,
@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 1779,
+            "name": "SC Corinthians Paulista",
+            "shortName": "Corinthians",
+            "tla": "COR",
+            "crest": "https://crests.football-data.org/1779.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 13,
+          "draw": 9,
+          "lost": 14,
+          "points": 48,
+          "goalsFor": 39,
+          "goalsAgainst": 42,
+          "goalDifference": -3
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 1776,
             "name": "São Paulo FC",
             "shortName": "São Paulo",
@@ -181,7 +200,7 @@
           "goalDifference": -6
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
@@ -200,7 +219,7 @@
           "goalDifference": -6
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 1780,
             "name": "CR Vasco da Gama",
@@ -219,7 +238,7 @@
           "goalDifference": 2
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 4286,
             "name": "RB Bragantino",
@@ -236,25 +255,6 @@
           "goalsFor": 40,
           "goalsAgainst": 54,
           "goalDifference": -14
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 1779,
-            "name": "SC Corinthians Paulista",
-            "shortName": "Corinthians",
-            "tla": "COR",
-            "crest": "https://crests.football-data.org/1779.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 12,
-          "draw": 9,
-          "lost": 14,
-          "points": 45,
-          "goalsFor": 38,
-          "goalsAgainst": 42,
-          "goalDifference": -4
         },
         {
           "position": 13,

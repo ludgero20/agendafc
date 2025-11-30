@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 242,
-    "first": "2025-11-30",
+    "count": 241,
+    "first": "2025-12-01",
     "last": "2026-05-24",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/laliga.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 14,
-        "winner": null
-      },
-      "id": 544343,
-      "utcDate": "2025-11-30T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 14,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-30T01:32:01Z",
-      "homeTeam": {
-        "id": 298,
-        "name": "Girona FC",
-        "shortName": "Girona",
-        "tla": "GIR",
-        "crest": "https://crests.football-data.org/298.png"
-      },
-      "awayTeam": {
-        "id": 86,
-        "name": "Real Madrid CF",
-        "shortName": "Real Madrid",
-        "tla": "RMA",
-        "crest": "https://crests.football-data.org/86.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 15628,
-          "name": "Ricardo de Burgos",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2224,
