@@ -2,81 +2,190 @@
   "standings": [
     {
       "position": 1,
-      "name": "McLaren",
-      "logoUrl": "",
-      "points": 713,
-      "wins": 13,
-      "podiums": 30
+      "name": "L. Norris",
+      "nationality": "🇬🇧",
+      "team": "McLaren",
+      "points": 408,
+      "wins": 7,
+      "podiums": 17
     },
     {
       "position": 2,
-      "name": "Ferrari",
-      "logoUrl": "",
-      "points": 356,
-      "wins": 0,
-      "podiums": 7
+      "name": "M. Verstappen",
+      "nationality": "🇳🇱",
+      "team": "Red Bull",
+      "points": 396,
+      "wins": 7,
+      "podiums": 14
     },
     {
       "position": 3,
-      "name": "Mercedes",
-      "logoUrl": "",
-      "points": 355,
+      "name": "O. Piastri",
+      "nationality": "🇦🇺",
+      "team": "McLaren",
+      "points": 392,
+      "wins": 7,
+      "podiums": 15
+    },
+    {
+      "position": 4,
+      "name": "G. Russell",
+      "nationality": "🇬🇧",
+      "team": "Mercedes",
+      "points": 309,
       "wins": 2,
       "podiums": 9
     },
     {
-      "position": 4,
-      "name": "Red Bull Racing",
-      "logoUrl": "",
-      "points": 346,
-      "wins": 5,
-      "podiums": 11
-    },
-    {
       "position": 5,
-      "name": "Williams",
-      "logoUrl": "",
-      "points": 111,
+      "name": "C. Leclerc",
+      "nationality": "🇲🇨",
+      "team": "Ferrari",
+      "points": 230,
       "wins": 0,
-      "podiums": 1
+      "podiums": 7
     },
     {
       "position": 6,
-      "name": "Racing Bulls",
-      "logoUrl": "",
-      "points": 72,
-      "wins": 0,
-      "podiums": 1
-    },
-    {
-      "position": 7,
-      "name": "Aston Martin",
-      "logoUrl": "",
-      "points": 69,
+      "name": "L. Hamilton",
+      "nationality": "🇬🇧",
+      "team": "Ferrari",
+      "points": 152,
       "wins": 0,
       "podiums": 0
     },
     {
+      "position": 7,
+      "name": "A. Antonelli",
+      "nationality": "🇮🇹",
+      "team": "Mercedes",
+      "points": 150,
+      "wins": 0,
+      "podiums": 3
+    },
+    {
       "position": 8,
-      "name": "Haas F1 Team",
-      "logoUrl": "",
-      "points": 62,
+      "name": "A. Albon",
+      "nationality": "🇹🇭",
+      "team": "Williams",
+      "points": 73,
       "wins": 0,
       "podiums": 0
     },
     {
       "position": 9,
-      "name": "Kick Sauber",
-      "logoUrl": "",
-      "points": 60,
+      "name": "C. Sainz Jr.",
+      "nationality": "🇪🇸",
+      "team": "Williams",
+      "points": 64,
+      "wins": 0,
+      "podiums": 2
+    },
+    {
+      "position": 10,
+      "name": "I. Hadjar",
+      "nationality": "🇫🇷",
+      "team": "Racing Bulls",
+      "points": 51,
       "wins": 0,
       "podiums": 1
     },
     {
-      "position": 10,
-      "name": "Alpine",
-      "logoUrl": "",
-      "points": 20,
+      "position": 11,
+      "name": "N. Hulkenberg",
+      "nationality": "🇩🇪",
+      "team": "Sauber",
+      "points": 49,
+      "wins": 0,
+      "podiums": 1
+    },
+    {
+      "position": 12,
+      "name": "F. Alonso",
+      "nationality": "🇪🇸",
+      "team": "Aston Martin Aramco-Mercedes",
+      "points": 48,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 13,
+      "name": "O. Bearman",
+      "nationality": "🇬🇧",
+      "team": "Haas",
+      "points": 41,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 14,
+      "name": "L. Lawson",
+      "nationality": "🇳🇿",
+      "team": "Racing Bulls",
+      "points": 38,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 15,
+      "name": "Y. Tsunoda",
+      "nationality": "🇯🇵",
+      "team": "Red Bull",
+      "points": 33,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 16,
+      "name": "E. Ocon",
+      "nationality": "🇫🇷",
+      "team": "Haas",
+      "points": 32,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 17,
+      "name": "L. Stroll",
+      "nationality": "🇨🇦",
+      "team": "Aston Martin Aramco-Mercedes",
+      "points": 32,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 18,
+      "name": "P. Gasly",
+      "nationality": "🇫🇷",
+      "team": "Alpine",
+      "points": 22,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 19,
+      "name": "G. Bortoleto",
+      "nationality": "🇧🇷",
+      "team": "Sauber",
+      "points": 19,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 20,
+      "name": "F. Colapinto",
+      "nationality": "🇦🇷",
+      "team": "Alpine",
+      "points": 0,
+      "wins": 0,
+      "podiums": 0
+    },
+    {
+      "position": 21,
+      "name": "J. Doohan",
+      "nationality": "🇦🇺",
+      "team": "Alpine",
+      "points": 0,
       "wins": 0,
       "podiums": 0
     }
