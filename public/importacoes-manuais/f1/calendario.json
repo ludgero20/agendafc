@@ -437,9 +437,9 @@
       "raceName": "GP de Las Vegas",
       "circuitName": "Las Vegas Strip Circuit",
       "country": "🇺🇸",
-      "status": "Agendado",
+      "status": "Finalizado",
       "results": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "L. Norris", "p1": "M. Verstappen", "p2": "G. Russell", "p3": "A. Antonelli"
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-11-20", "hora": "22:30", "transmissao": ["BandSports"] },
@@ -454,12 +454,12 @@
       "raceName": "GP do Catar",
       "circuitName": "Lusail International Circuit",
       "country": "🇶🇦",
-      "status": "Agendado",
+      "status": "Finalizado",
       "results": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "O. Piastri", "p1": "M. Verstappen", "p2": "O. Piastri", "p3": "C. Sainz Jr."
       },
       "sprintResults": {
-        "pole": "", "p1": "", "p2": "", "p3": ""
+        "pole": "O. Piastri", "p1": "O. Piastri", "p2": "G. Russell", "p3": "L. Norris"
       },
       "sessoes": [
         { "nome": "Treino Livre 1", "data": "2025-11-28", "hora": "09:30", "transmissao": ["BandSports"] },
@@ -474,7 +474,7 @@
       "raceName": "GP de Abu Dhabi",
       "circuitName": "Yas Marina Circuit",
       "country": "🇦🇪",
-      "status": "Agendado",
+      "status": "Próxima Corrida",
       "results": {
         "pole": "", "p1": "", "p2": "", "p3": ""
       },
