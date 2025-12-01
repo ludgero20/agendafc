@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 1766,
-            "name": "CA Mineiro",
-            "shortName": "Mineiro",
-            "tla": "CAM",
-            "crest": "https://crests.football-data.org/1766.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 11,
-          "draw": 13,
-          "lost": 12,
-          "points": 46,
-          "goalsFor": 38,
-          "goalsAgainst": 40,
-          "goalDifference": -2
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 1780,
             "name": "CR Vasco da Gama",
             "shortName": "Vasco da Gama",
@@ -257,7 +238,7 @@
           "goalDifference": 2
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 4286,
             "name": "RB Bragantino",
@@ -274,6 +255,25 @@
           "goalsFor": 40,
           "goalsAgainst": 54,
           "goalDifference": -14
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 1766,
+            "name": "CA Mineiro",
+            "shortName": "Mineiro",
+            "tla": "CAM",
+            "crest": "https://crests.football-data.org/1766.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 11,
+          "draw": 12,
+          "lost": 13,
+          "points": 45,
+          "goalsFor": 38,
+          "goalsAgainst": 41,
+          "goalDifference": -3
         },
         {
           "position": 14,
@@ -362,13 +362,13 @@
           },
           "playedGames": 36,
           "form": null,
-          "won": 9,
-          "draw": 11,
+          "won": 10,
+          "draw": 10,
           "lost": 16,
-          "points": 38,
-          "goalsFor": 38,
+          "points": 40,
+          "goalsFor": 39,
           "goalsAgainst": 53,
-          "goalDifference": -15
+          "goalDifference": -14
         },
         {
           "position": 19,
