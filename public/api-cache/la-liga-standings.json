@@ -37,14 +37,14 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 11,
-          "draw": 1,
+          "draw": 2,
           "lost": 2,
-          "points": 34,
-          "goalsFor": 39,
-          "goalsAgainst": 16,
+          "points": 35,
+          "goalsFor": 40,
+          "goalsAgainst": 17,
           "goalDifference": 23
         },
         {
@@ -94,14 +94,14 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 9,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 31,
-          "goalsFor": 27,
-          "goalsAgainst": 11,
+          "points": 32,
+          "goalsFor": 28,
+          "goalsAgainst": 12,
           "goalDifference": 16
         },
         {
