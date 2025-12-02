@@ -2130,9 +2130,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "New England Patriots",
       "strAwayTeam": "New York Giants",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "33",
+      "intAwayScore": "15",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424139",
@@ -2801,9 +2801,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Jacksonville Jaguars",
       "strAwayTeam": "Tennessee Titans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "3",
+      "intAwayScore": "25",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424216",
@@ -2812,9 +2812,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Houston Texans",
       "strAwayTeam": "Indianapolis Colts",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "16",
+      "intAwayScore": "20",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424201",

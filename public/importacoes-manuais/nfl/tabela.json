@@ -5,10 +5,10 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png",
       "conference": "American Football Conference",
       "division": "AFC East",
-      "intWin": 10,
+      "intWin": 11,
       "intLoss": 3,
       "intTie": 0,
-      "strPercentage": ".769",
+      "strPercentage": ".786",
       "strStreak": "L1",
       "rank": "1"
     },
@@ -101,11 +101,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
       "conference": "American Football Conference",
       "division": "AFC South",
-      "intWin": 8,
+      "intWin": 9,
       "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".667",
-      "strStreak": "L2",
+      "strPercentage": ".692",
+      "strStreak": "W1",
       "rank": "1"
     },
     {
@@ -114,10 +114,10 @@
       "conference": "American Football Conference",
       "division": "AFC South",
       "intWin": 8,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".667",
-      "strStreak": "W3",
+      "strPercentage": ".615",
+      "strStreak": "L1",
       "rank": "2"
     },
     {
@@ -126,10 +126,10 @@
       "conference": "American Football Conference",
       "division": "AFC South",
       "intWin": 7,
-      "intLoss": 5,
+      "intLoss": 6,
       "intTie": 0,
-      "strPercentage": ".583",
-      "strStreak": "W4",
+      "strPercentage": ".538",
+      "strStreak": "L1",
       "rank": "3"
     },
     {
@@ -137,11 +137,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/m48yia1515847376.png",
       "conference": "American Football Conference",
       "division": "AFC South",
-      "intWin": 1,
+      "intWin": 2,
       "intLoss": 11,
       "intTie": 0,
-      "strPercentage": ".083",
-      "strStreak": "L7",
+      "strPercentage": ".154",
+      "strStreak": "W1",
       "rank": "4"
     },
     {
@@ -234,10 +234,10 @@
       "conference": "National Football Conference",
       "division": "NFC East",
       "intWin": 2,
-      "intLoss": 10,
+      "intLoss": 11,
       "intTie": 0,
-      "strPercentage": ".167",
-      "strStreak": "L6",
+      "strPercentage": ".154",
+      "strStreak": "L7",
       "rank": "4"
     },
     {
