@@ -2141,9 +2141,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Detroit Lions",
       "strAwayTeam": "Dallas Cowboys",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "44",
+      "intAwayScore": "30",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424141",

@@ -210,10 +210,10 @@
       "conference": "National Football Conference",
       "division": "NFC East",
       "intWin": 6,
-      "intLoss": 6,
+      "intLoss": 7,
       "intTie": 1,
-      "strPercentage": ".500",
-      "strStreak": "L1",
+      "strPercentage": ".464",
+      "strStreak": "L2",
       "rank": "2"
     },
     {
@@ -269,11 +269,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
       "conference": "National Football Conference",
       "division": "NFC North",
-      "intWin": 8,
+      "intWin": 9,
       "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".615",
-      "strStreak": "W1",
+      "strPercentage": ".643",
+      "strStreak": "W2",
       "rank": "3"
     },
     {
