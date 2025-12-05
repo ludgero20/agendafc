@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 238,
-    "first": "2025-12-05",
+    "count": 237,
+    "first": "2025-12-06",
     "last": "2026-05-24",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/laliga.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 19,
-        "winner": null
-      },
-      "id": 544359,
-      "utcDate": "2025-12-05T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 15,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-02T01:32:01Z",
-      "homeTeam": {
-        "id": 1048,
-        "name": "Real Oviedo",
-        "shortName": "Real Oviedo",
-        "tla": "OVI",
-        "crest": "https://crests.football-data.org/1048.png"
-      },
-      "awayTeam": {
-        "id": 89,
-        "name": "RCD Mallorca",
-        "shortName": "Mallorca",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/89.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 215593,
-          "name": "Iosu Galech Apezteguía",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2224,

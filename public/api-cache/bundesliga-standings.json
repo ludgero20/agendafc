@@ -246,12 +246,12 @@
             "tla": "BMG",
             "crest": "https://crests.football-data.org/18.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 3,
-          "draw": 4,
+          "draw": 5,
           "lost": 5,
-          "points": 13,
+          "points": 14,
           "goalsFor": 16,
           "goalsAgainst": 19,
           "goalDifference": -3
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 15,
+            "name": "1. FSV Mainz 05",
+            "shortName": "Mainz",
+            "tla": "M05",
+            "crest": "https://crests.football-data.org/15.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 1,
+          "draw": 4,
+          "lost": 8,
+          "points": 7,
+          "goalsFor": 11,
+          "goalsAgainst": 23,
+          "goalDifference": -12
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 20,
             "name": "FC St. Pauli 1910",
             "shortName": "St. Pauli",
@@ -350,25 +369,6 @@
           "goalsFor": 10,
           "goalsAgainst": 24,
           "goalDifference": -14
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 15,
-            "name": "1. FSV Mainz 05",
-            "shortName": "Mainz",
-            "tla": "M05",
-            "crest": "https://crests.football-data.org/15.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 8,
-          "points": 6,
-          "goalsFor": 11,
-          "goalsAgainst": 23,
-          "goalDifference": -12
         }
       ]
     }

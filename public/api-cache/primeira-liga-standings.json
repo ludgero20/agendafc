@@ -56,12 +56,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 10,
-          "draw": 1,
+          "draw": 2,
           "lost": 1,
-          "points": 31,
+          "points": 32,
           "goalsFor": 31,
           "goalsAgainst": 6,
           "goalDifference": 25
@@ -75,12 +75,12 @@
             "tla": "BEN",
             "crest": "https://crests.football-data.org/1903.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 8,
-          "draw": 4,
+          "draw": 5,
           "lost": 0,
-          "points": 28,
+          "points": 29,
           "goalsFor": 25,
           "goalsAgainst": 7,
           "goalDifference": 18

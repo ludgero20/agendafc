@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 7,
+          "points": 14,
+          "goalsFor": 15,
+          "goalsAgainst": 22,
+          "goalDifference": -7
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -312,25 +331,6 @@
           "goalsFor": 13,
           "goalsAgainst": 22,
           "goalDifference": -9
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 7,
-          "points": 13,
-          "goalsFor": 15,
-          "goalsAgainst": 22,
-          "goalDifference": -7
         },
         {
           "position": 17,
@@ -373,6 +373,25 @@
         {
           "position": 19,
           "team": {
+            "id": 1048,
+            "name": "Real Oviedo",
+            "shortName": "Real Oviedo",
+            "tla": "OVI",
+            "crest": "https://crests.football-data.org/1048.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 2,
+          "draw": 4,
+          "lost": 9,
+          "points": 10,
+          "goalsFor": 7,
+          "goalsAgainst": 22,
+          "goalDifference": -15
+        },
+        {
+          "position": 20,
+          "team": {
             "id": 88,
             "name": "Levante UD",
             "shortName": "Levante",
@@ -388,25 +407,6 @@
           "goalsFor": 16,
           "goalsAgainst": 26,
           "goalDifference": -10
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 1048,
-            "name": "Real Oviedo",
-            "shortName": "Real Oviedo",
-            "tla": "OVI",
-            "crest": "https://crests.football-data.org/1048.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 9,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 22,
-          "goalDifference": -15
         }
       ]
     }
