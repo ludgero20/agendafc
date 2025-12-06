@@ -43,9 +43,9 @@
           "draw": 0,
           "lost": 4,
           "points": 30,
-          "goalsFor": 30,
+          "goalsFor": 32,
           "goalsAgainst": 13,
-          "goalDifference": 17
+          "goalDifference": 19
         },
         {
           "position": 2,
@@ -139,8 +139,8 @@
           "lost": 2,
           "points": 24,
           "goalsFor": 19,
-          "goalsAgainst": 9,
-          "goalDifference": 10
+          "goalsAgainst": 11,
+          "goalDifference": 8
         },
         {
           "position": 7,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA",
+            "crest": "https://crests.football-data.org/102.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 8,
+          "lost": 3,
+          "points": 17,
+          "goalsFor": 16,
+          "goalsAgainst": 14,
+          "goalDifference": 2
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 457,
             "name": "US Cremonese",
             "shortName": "Cremonese",
@@ -236,25 +255,6 @@
           "goalsFor": 16,
           "goalsAgainst": 17,
           "goalDifference": -1
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 102,
-            "name": "Atalanta BC",
-            "shortName": "Atalanta",
-            "tla": "ATA",
-            "crest": "https://crests.football-data.org/102.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 3,
-          "draw": 7,
-          "lost": 3,
-          "points": 16,
-          "goalsFor": 16,
-          "goalsAgainst": 14,
-          "goalDifference": 2
         },
         {
           "position": 13,
@@ -379,12 +379,12 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 0,
-          "draw": 6,
+          "draw": 7,
           "lost": 7,
-          "points": 6,
+          "points": 7,
           "goalsFor": 8,
           "goalsAgainst": 20,
           "goalDifference": -12

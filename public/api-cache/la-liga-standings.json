@@ -43,9 +43,9 @@
           "draw": 1,
           "lost": 2,
           "points": 40,
-          "goalsFor": 46,
-          "goalsAgainst": 18,
-          "goalDifference": 28
+          "goalsFor": 47,
+          "goalsAgainst": 20,
+          "goalDifference": 27
         },
         {
           "position": 2,
@@ -94,12 +94,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 9,
-          "draw": 4,
+          "draw": 5,
           "lost": 2,
-          "points": 31,
+          "points": 32,
           "goalsFor": 28,
           "goalsAgainst": 14,
           "goalDifference": 14
@@ -119,9 +119,9 @@
           "draw": 6,
           "lost": 3,
           "points": 24,
-          "goalsFor": 23,
-          "goalsAgainst": 18,
-          "goalDifference": 5
+          "goalsFor": 25,
+          "goalsAgainst": 19,
+          "goalDifference": 6
         },
         {
           "position": 6,
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 77,
+            "name": "Athletic Club",
+            "shortName": "Athletic",
+            "tla": "ATH",
+            "crest": "https://crests.football-data.org/77.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 6,
+          "draw": 3,
+          "lost": 7,
+          "points": 21,
+          "goalsFor": 14,
+          "goalsAgainst": 20,
+          "goalDifference": -6
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 82,
             "name": "Getafe CF",
             "shortName": "Getafe",
@@ -160,25 +179,6 @@
           "goalsFor": 13,
           "goalsAgainst": 17,
           "goalDifference": -4
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 77,
-            "name": "Athletic Club",
-            "shortName": "Athletic",
-            "tla": "ATH",
-            "crest": "https://crests.football-data.org/77.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 6,
-          "draw": 2,
-          "lost": 7,
-          "points": 20,
-          "goalsFor": 14,
-          "goalsAgainst": 20,
-          "goalDifference": -6
         },
         {
           "position": 9,
