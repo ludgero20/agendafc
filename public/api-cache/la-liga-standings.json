@@ -37,15 +37,15 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
-          "won": 12,
+          "won": 13,
           "draw": 1,
           "lost": 2,
-          "points": 37,
-          "goalsFor": 42,
-          "goalsAgainst": 17,
-          "goalDifference": 25
+          "points": 40,
+          "goalsFor": 46,
+          "goalsAgainst": 18,
+          "goalDifference": 28
         },
         {
           "position": 2,
@@ -113,15 +113,15 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 6,
           "draw": 6,
-          "lost": 2,
+          "lost": 3,
           "points": 24,
-          "goalsFor": 22,
-          "goalsAgainst": 14,
-          "goalDifference": 8
+          "goalsFor": 23,
+          "goalsAgainst": 18,
+          "goalDifference": 5
         },
         {
           "position": 6,

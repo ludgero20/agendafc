@@ -56,15 +56,15 @@
             "tla": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
-          "won": 8,
+          "won": 9,
           "draw": 2,
           "lost": 2,
-          "points": 26,
-          "goalsFor": 22,
+          "points": 29,
+          "goalsFor": 24,
           "goalsAgainst": 13,
-          "goalDifference": 9
+          "goalDifference": 11
         },
         {
           "position": 3,
@@ -151,15 +151,15 @@
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
           "won": 6,
           "draw": 3,
-          "lost": 3,
+          "lost": 4,
           "points": 21,
           "goalsFor": 28,
-          "goalsAgainst": 23,
-          "goalDifference": 5
+          "goalsAgainst": 25,
+          "goalDifference": 3
         },
         {
           "position": 8,
