@@ -75,15 +75,15 @@
             "tla": "VIL",
             "crest": "https://crests.football-data.org/94.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 2,
           "lost": 2,
-          "points": 32,
-          "goalsFor": 29,
+          "points": 35,
+          "goalsFor": 30,
           "goalsAgainst": 13,
-          "goalDifference": 16
+          "goalDifference": 17
         },
         {
           "position": 4,
@@ -151,15 +151,15 @@
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 6,
           "draw": 2,
-          "lost": 6,
+          "lost": 7,
           "points": 20,
           "goalsFor": 13,
-          "goalsAgainst": 15,
-          "goalDifference": -2
+          "goalsAgainst": 16,
+          "goalDifference": -3
         },
         {
           "position": 8,

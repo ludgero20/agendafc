@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11605,
+          "name": "Michael Oliver",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11443,
+          "name": "Chris Kavanagh",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11423,
+          "name": "Andy Madley",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11494,
+          "name": "Stuart Attwell",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -312,7 +340,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11446,
+          "name": "Robert Jones",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
