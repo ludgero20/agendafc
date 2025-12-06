@@ -37,12 +37,12 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 10,
-          "draw": 1,
+          "draw": 2,
           "lost": 3,
-          "points": 31,
+          "points": 32,
           "goalsFor": 24,
           "goalsAgainst": 12,
           "goalDifference": 12
@@ -322,12 +322,12 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 2,
-          "draw": 5,
+          "draw": 6,
           "lost": 7,
-          "points": 11,
+          "points": 12,
           "goalsFor": 12,
           "goalsAgainst": 22,
           "goalDifference": -10
