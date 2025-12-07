@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 11,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 36,
+          "points": 37,
           "goalsFor": 32,
           "goalsAgainst": 13,
           "goalDifference": 19
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 558,
+            "name": "RC Celta de Vigo",
+            "shortName": "Celta",
+            "tla": "CEL",
+            "crest": "https://crests.football-data.org/558.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 3,
+          "draw": 8,
+          "lost": 4,
+          "points": 17,
+          "goalsFor": 16,
+          "goalsAgainst": 19,
+          "goalDifference": -3
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
             "shortName": "Rayo Vallecano",
@@ -238,7 +257,7 @@
           "goalDifference": -3
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 559,
             "name": "Sevilla FC",
@@ -257,7 +276,7 @@
           "goalDifference": -4
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
@@ -273,25 +292,6 @@
           "points": 16,
           "goalsFor": 19,
           "goalsAgainst": 22,
-          "goalDifference": -3
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 558,
-            "name": "RC Celta de Vigo",
-            "shortName": "Celta",
-            "tla": "CEL",
-            "crest": "https://crests.football-data.org/558.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 7,
-          "lost": 4,
-          "points": 16,
-          "goalsFor": 16,
-          "goalsAgainst": 19,
           "goalDifference": -3
         },
         {

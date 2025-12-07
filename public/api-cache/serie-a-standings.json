@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP",
+            "crest": "https://crests.football-data.org/113.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 10,
+          "draw": 1,
+          "lost": 3,
+          "points": 31,
+          "goalsFor": 21,
+          "goalsAgainst": 11,
+          "goalDifference": 10
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -48,7 +67,7 @@
           "goalDifference": 19
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 98,
             "name": "AC Milan",
@@ -65,25 +84,6 @@
           "goalsFor": 19,
           "goalsAgainst": 9,
           "goalDifference": 10
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 113,
-            "name": "SSC Napoli",
-            "shortName": "Napoli",
-            "tla": "NAP",
-            "crest": "https://crests.football-data.org/113.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 9,
-          "draw": 1,
-          "lost": 3,
-          "points": 28,
-          "goalsFor": 20,
-          "goalsAgainst": 11,
-          "goalDifference": 9
         },
         {
           "position": 4,
@@ -151,15 +151,15 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 6,
           "draw": 5,
-          "lost": 2,
+          "lost": 3,
           "points": 23,
           "goalsFor": 17,
-          "goalsAgainst": 12,
-          "goalDifference": 5
+          "goalsAgainst": 13,
+          "goalDifference": 4
         },
         {
           "position": 8,

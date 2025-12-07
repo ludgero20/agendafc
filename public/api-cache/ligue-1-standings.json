@@ -113,12 +113,12 @@
             "tla": "LYO",
             "crest": "https://crests.football-data.org/523.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 7,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 24,
+          "points": 25,
           "goalsFor": 21,
           "goalsAgainst": 15,
           "goalDifference": 6
@@ -303,12 +303,12 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 14,
+          "points": 15,
           "goalsFor": 18,
           "goalsAgainst": 28,
           "goalDifference": -10
