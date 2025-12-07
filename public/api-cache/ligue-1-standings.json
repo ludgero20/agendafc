@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 532,
+            "name": "Angers SCO",
+            "shortName": "Angers SCO",
+            "tla": "ANG",
+            "crest": "https://crests.football-data.org/532.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 5,
+          "draw": 4,
+          "lost": 6,
+          "points": 19,
+          "goalsFor": 13,
+          "goalsAgainst": 17,
+          "goalDifference": -4
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 522,
             "name": "OGC Nice",
             "shortName": "Nice",
@@ -230,31 +249,12 @@
           "playedGames": 15,
           "form": null,
           "won": 5,
-          "draw": 3,
-          "lost": 7,
-          "points": 18,
-          "goalsFor": 19,
-          "goalsAgainst": 26,
-          "goalDifference": -7
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 532,
-            "name": "Angers SCO",
-            "shortName": "Angers SCO",
-            "tla": "ANG",
-            "crest": "https://crests.football-data.org/532.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 6,
+          "draw": 2,
+          "lost": 8,
           "points": 17,
-          "goalsFor": 12,
-          "goalsAgainst": 17,
-          "goalDifference": -5
+          "goalsFor": 19,
+          "goalsAgainst": 27,
+          "goalDifference": -8
         },
         {
           "position": 13,
@@ -265,12 +265,12 @@
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 4,
-          "draw": 3,
+          "draw": 4,
           "lost": 7,
-          "points": 15,
+          "points": 16,
           "goalsFor": 21,
           "goalsAgainst": 26,
           "goalDifference": -5
@@ -284,12 +284,12 @@
             "tla": "HAC",
             "crest": "https://crests.football-data.org/533.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 14,
+          "points": 15,
           "goalsFor": 13,
           "goalsAgainst": 21,
           "goalDifference": -8
@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM",
+            "crest": "https://crests.football-data.org/545.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 9,
+          "points": 12,
+          "goalsFor": 14,
+          "goalsAgainst": 31,
+          "goalDifference": -17
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 543,
             "name": "FC Nantes",
             "shortName": "Nantes",
@@ -333,25 +352,6 @@
           "goalDifference": -11
         },
         {
-          "position": 17,
-          "team": {
-            "id": 545,
-            "name": "FC Metz",
-            "shortName": "FC Metz",
-            "tla": "FCM",
-            "crest": "https://crests.football-data.org/545.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 9,
-          "points": 11,
-          "goalsFor": 14,
-          "goalsAgainst": 31,
-          "goalDifference": -17
-        },
-        {
           "position": 18,
           "team": {
             "id": 519,
@@ -360,12 +360,12 @@
             "tla": "AJA",
             "crest": "https://crests.football-data.org/519.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 2,
-          "draw": 3,
+          "draw": 4,
           "lost": 9,
-          "points": 9,
+          "points": 10,
           "goalsFor": 8,
           "goalsAgainst": 20,
           "goalDifference": -12

@@ -97,12 +97,12 @@
           "playedGames": 14,
           "form": null,
           "won": 9,
-          "draw": 1,
-          "lost": 4,
-          "points": 28,
+          "draw": 0,
+          "lost": 5,
+          "points": 27,
           "goalsFor": 15,
-          "goalsAgainst": 7,
-          "goalDifference": 8
+          "goalsAgainst": 8,
+          "goalDifference": 7
         },
         {
           "position": 5,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 104,
+            "name": "Cagliari Calcio",
+            "shortName": "Cagliari",
+            "tla": "CAG",
+            "crest": "https://crests.football-data.org/104.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 6,
+          "points": 14,
+          "goalsFor": 14,
+          "goalsAgainst": 19,
+          "goalDifference": -5
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 586,
             "name": "Torino FC",
             "shortName": "Torino",
@@ -276,7 +295,7 @@
           "goalDifference": -11
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 5890,
             "name": "US Lecce",
@@ -293,25 +312,6 @@
           "goalsFor": 10,
           "goalsAgainst": 19,
           "goalDifference": -9
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 104,
-            "name": "Cagliari Calcio",
-            "shortName": "Cagliari",
-            "tla": "CAG",
-            "crest": "https://crests.football-data.org/104.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 2,
-          "draw": 6,
-          "lost": 6,
-          "points": 12,
-          "goalsFor": 13,
-          "goalsAgainst": 19,
-          "goalDifference": -6
         },
         {
           "position": 16,
