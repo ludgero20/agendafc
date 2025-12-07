@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA",
+            "crest": "https://crests.football-data.org/397.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 6,
+          "draw": 5,
+          "lost": 4,
+          "points": 23,
+          "goalsFor": 24,
+          "goalsAgainst": 20,
+          "goalDifference": 4
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 71,
             "name": "Sunderland AFC",
             "shortName": "Sunderland",
@@ -162,7 +181,7 @@
           "goalDifference": 1
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -181,7 +200,7 @@
           "goalDifference": 0
         },
         {
-          "position": 9,
+          "position": 10,
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
@@ -198,25 +217,6 @@
           "goalsFor": 25,
           "goalsAgainst": 18,
           "goalDifference": 7
-        },
-        {
-          "position": 10,
-          "team": {
-            "id": 397,
-            "name": "Brighton & Hove Albion FC",
-            "shortName": "Brighton Hove",
-            "tla": "BHA",
-            "crest": "https://crests.football-data.org/397.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 4,
-          "lost": 4,
-          "points": 22,
-          "goalsFor": 24,
-          "goalsAgainst": 20,
-          "goalDifference": 4
         },
         {
           "position": 11,
@@ -360,12 +360,12 @@
             "tla": "WHU",
             "crest": "https://crests.football-data.org/563.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 3,
-          "draw": 3,
+          "draw": 4,
           "lost": 8,
-          "points": 12,
+          "points": 13,
           "goalsFor": 16,
           "goalsAgainst": 28,
           "goalDifference": -12

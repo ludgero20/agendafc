@@ -227,12 +227,12 @@
             "tla": "NIC",
             "crest": "https://crests.football-data.org/522.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 5,
-          "draw": 2,
+          "draw": 3,
           "lost": 7,
-          "points": 17,
+          "points": 18,
           "goalsFor": 19,
           "goalsAgainst": 26,
           "goalDifference": -7
@@ -246,12 +246,12 @@
             "tla": "ANG",
             "crest": "https://crests.football-data.org/532.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 4,
-          "draw": 4,
+          "draw": 5,
           "lost": 6,
-          "points": 16,
+          "points": 17,
           "goalsFor": 12,
           "goalsAgainst": 17,
           "goalDifference": -5
