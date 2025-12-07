@@ -316,11 +316,11 @@
         {
           "position": 16,
           "team": {
-            "id": 545,
-            "name": "FC Metz",
-            "shortName": "FC Metz",
-            "tla": "FCM",
-            "crest": "https://crests.football-data.org/545.png"
+            "id": 519,
+            "name": "AJ Auxerre",
+            "shortName": "Auxerre",
+            "tla": "AJA",
+            "crest": "https://crests.football-data.org/519.png"
           },
           "playedGames": 15,
           "form": null,
@@ -328,9 +328,9 @@
           "draw": 3,
           "lost": 9,
           "points": 12,
-          "goalsFor": 14,
-          "goalsAgainst": 31,
-          "goalDifference": -17
+          "goalsFor": 11,
+          "goalsAgainst": 21,
+          "goalDifference": -10
         },
         {
           "position": 17,
@@ -354,21 +354,21 @@
         {
           "position": 18,
           "team": {
-            "id": 519,
-            "name": "AJ Auxerre",
-            "shortName": "Auxerre",
-            "tla": "AJA",
-            "crest": "https://crests.football-data.org/519.png"
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM",
+            "crest": "https://crests.football-data.org/545.png"
           },
           "playedGames": 15,
           "form": null,
-          "won": 2,
-          "draw": 4,
-          "lost": 9,
-          "points": 10,
-          "goalsFor": 8,
-          "goalsAgainst": 20,
-          "goalDifference": -12
+          "won": 3,
+          "draw": 2,
+          "lost": 10,
+          "points": 11,
+          "goalsFor": 15,
+          "goalsAgainst": 34,
+          "goalDifference": -19
         }
       ]
     }

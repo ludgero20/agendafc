@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 8,
+          "draw": 3,
+          "lost": 4,
+          "points": 27,
+          "goalsFor": 19,
+          "goalsAgainst": 16,
+          "goalDifference": 3
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 90,
             "name": "Real Betis Balompié",
             "shortName": "Real Betis",
@@ -122,25 +141,6 @@
           "goalsFor": 25,
           "goalsAgainst": 19,
           "goalDifference": 6
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 7,
-          "draw": 3,
-          "lost": 4,
-          "points": 24,
-          "goalsFor": 18,
-          "goalsAgainst": 16,
-          "goalDifference": 2
         },
         {
           "position": 7,
@@ -227,15 +227,15 @@
             "tla": "RAY",
             "crest": "https://crests.football-data.org/87.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 4,
           "draw": 5,
-          "lost": 5,
+          "lost": 6,
           "points": 17,
           "goalsFor": 13,
-          "goalsAgainst": 15,
-          "goalDifference": -2
+          "goalsAgainst": 16,
+          "goalDifference": -3
         },
         {
           "position": 12,
@@ -252,8 +252,8 @@
           "draw": 2,
           "lost": 8,
           "points": 17,
-          "goalsFor": 19,
-          "goalsAgainst": 23,
+          "goalsFor": 20,
+          "goalsAgainst": 24,
           "goalDifference": -4
         },
         {
@@ -309,8 +309,8 @@
           "draw": 6,
           "lost": 6,
           "points": 15,
-          "goalsFor": 13,
-          "goalsAgainst": 22,
+          "goalsFor": 14,
+          "goalsAgainst": 23,
           "goalDifference": -9
         },
         {

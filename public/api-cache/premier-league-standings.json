@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 7,
+          "draw": 5,
+          "lost": 3,
+          "points": 26,
+          "goalsFor": 20,
+          "goalsAgainst": 12,
+          "goalDifference": 8
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -105,7 +124,7 @@
           "goalDifference": 10
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 62,
             "name": "Everton FC",
@@ -122,25 +141,6 @@
           "goalsFor": 18,
           "goalsAgainst": 17,
           "goalDifference": 1
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 3,
-          "points": 23,
-          "goalsFor": 18,
-          "goalsAgainst": 11,
-          "goalDifference": 7
         },
         {
           "position": 7,
@@ -303,15 +303,15 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 5,
           "draw": 2,
-          "lost": 7,
+          "lost": 8,
           "points": 17,
-          "goalsFor": 19,
-          "goalsAgainst": 22,
-          "goalDifference": -3
+          "goalsFor": 20,
+          "goalsAgainst": 24,
+          "goalDifference": -4
         },
         {
           "position": 16,
