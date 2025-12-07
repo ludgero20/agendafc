@@ -116,12 +116,12 @@
           "playedGames": 15,
           "form": null,
           "won": 7,
-          "draw": 4,
-          "lost": 4,
-          "points": 25,
+          "draw": 3,
+          "lost": 5,
+          "points": 24,
           "goalsFor": 21,
-          "goalsAgainst": 15,
-          "goalDifference": 6
+          "goalsAgainst": 16,
+          "goalDifference": 5
         },
         {
           "position": 6,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 525,
+            "name": "FC Lorient",
+            "shortName": "Lorient",
+            "tla": "FCL",
+            "crest": "https://crests.football-data.org/525.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 4,
+          "draw": 5,
+          "lost": 6,
+          "points": 17,
+          "goalsFor": 19,
+          "goalsAgainst": 28,
+          "goalDifference": -9
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 1045,
             "name": "Paris FC",
             "shortName": "Paris FC",
@@ -276,7 +295,7 @@
           "goalDifference": -5
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 533,
             "name": "Le Havre AC",
@@ -293,25 +312,6 @@
           "goalsFor": 13,
           "goalsAgainst": 21,
           "goalDifference": -8
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 525,
-            "name": "FC Lorient",
-            "shortName": "Lorient",
-            "tla": "FCL",
-            "crest": "https://crests.football-data.org/525.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 3,
-          "draw": 6,
-          "lost": 6,
-          "points": 15,
-          "goalsFor": 18,
-          "goalsAgainst": 28,
-          "goalDifference": -10
         },
         {
           "position": 16,

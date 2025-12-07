@@ -37,15 +37,15 @@
             "tla": "FCP",
             "crest": "https://crests.football-data.org/503.png"
           },
-          "playedGames": 12,
+          "playedGames": 13,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 1,
           "lost": 0,
-          "points": 34,
-          "goalsFor": 25,
+          "points": 37,
+          "goalsFor": 27,
           "goalsAgainst": 3,
-          "goalDifference": 22
+          "goalDifference": 24
         },
         {
           "position": 2,
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 1049,
-            "name": "CD Tondela",
-            "shortName": "Tondela",
-            "tla": "TON",
-            "crest": "https://crests.football-data.org/1049.png"
-          },
-          "playedGames": 12,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 7,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 20,
-          "goalDifference": -13
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 6618,
             "name": "Casa Pia AC",
             "shortName": "Casa Pia",
@@ -331,6 +312,25 @@
           "goalsFor": 13,
           "goalsAgainst": 27,
           "goalDifference": -14
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 1049,
+            "name": "CD Tondela",
+            "shortName": "Tondela",
+            "tla": "TON",
+            "crest": "https://crests.football-data.org/1049.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 8,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 22,
+          "goalDifference": -15
         },
         {
           "position": 17,
