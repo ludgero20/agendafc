@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 5613,
+            "name": "Sporting Clube de Braga",
+            "shortName": "Braga",
+            "tla": "SCB",
+            "crest": "https://crests.football-data.org/5613.png"
+          },
+          "playedGames": 13,
+          "form": null,
+          "won": 6,
+          "draw": 4,
+          "lost": 3,
+          "points": 22,
+          "goalsFor": 25,
+          "goalsAgainst": 12,
+          "goalDifference": 13
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 5531,
             "name": "FC Famalicão",
             "shortName": "Famalicão",
@@ -116,31 +135,12 @@
           "playedGames": 13,
           "form": null,
           "won": 5,
-          "draw": 6,
-          "lost": 2,
-          "points": 21,
-          "goalsFor": 14,
-          "goalsAgainst": 8,
-          "goalDifference": 6
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 5613,
-            "name": "Sporting Clube de Braga",
-            "shortName": "Braga",
-            "tla": "SCB",
-            "crest": "https://crests.football-data.org/5613.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 5,
           "draw": 5,
           "lost": 3,
           "points": 20,
-          "goalsFor": 24,
-          "goalsAgainst": 12,
-          "goalDifference": 12
+          "goalsFor": 14,
+          "goalsAgainst": 9,
+          "goalDifference": 5
         },
         {
           "position": 7,
