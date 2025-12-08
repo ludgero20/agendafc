@@ -227,14 +227,14 @@
             "tla": "UDI",
             "crest": "https://crests.football-data.org/115.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 5,
-          "draw": 3,
+          "draw": 4,
           "lost": 5,
-          "points": 18,
-          "goalsFor": 14,
-          "goalsAgainst": 20,
+          "points": 19,
+          "goalsFor": 15,
+          "goalsAgainst": 21,
           "goalDifference": -6
         },
         {
@@ -341,14 +341,14 @@
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 2,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 11,
-          "goalsFor": 13,
-          "goalsAgainst": 20,
+          "points": 12,
+          "goalsFor": 14,
+          "goalsAgainst": 21,
           "goalDifference": -7
         },
         {
