@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 197,
-    "first": "2025-12-06",
+    "count": 189,
+    "first": "2025-12-12",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,478 +19,6 @@
     "emblem": "https://crests.football-data.org/BL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540517,
-      "utcDate": "2025-12-06T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
-      "homeTeam": {
-        "id": 10,
-        "name": "VfB Stuttgart",
-        "shortName": "Stuttgart",
-        "tla": "VFB",
-        "crest": "https://crests.football-data.org/10.png"
-      },
-      "awayTeam": {
-        "id": 5,
-        "name": "FC Bayern München",
-        "shortName": "Bayern",
-        "tla": "FCB",
-        "crest": "https://crests.football-data.org/5.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540518,
-      "utcDate": "2025-12-06T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-06T01:32:00Z",
-      "homeTeam": {
-        "id": 11,
-        "name": "VfL Wolfsburg",
-        "shortName": "Wolfsburg",
-        "tla": "WOB",
-        "crest": "https://crests.football-data.org/11.png"
-      },
-      "awayTeam": {
-        "id": 28,
-        "name": "1. FC Union Berlin",
-        "shortName": "Union Berlin",
-        "tla": "UNB",
-        "crest": "https://crests.football-data.org/28.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540519,
-      "utcDate": "2025-12-06T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-01T01:32:02Z",
-      "homeTeam": {
-        "id": 44,
-        "name": "1. FC Heidenheim 1846",
-        "shortName": "Heidenheim",
-        "tla": "HEI",
-        "crest": "https://crests.football-data.org/44.png"
-      },
-      "awayTeam": {
-        "id": 17,
-        "name": "SC Freiburg",
-        "shortName": "Freiburg",
-        "tla": "SCF",
-        "crest": "https://crests.football-data.org/17.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540520,
-      "utcDate": "2025-12-06T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-06T01:32:00Z",
-      "homeTeam": {
-        "id": 1,
-        "name": "1. FC Köln",
-        "shortName": "1. FC Köln",
-        "tla": "KOE",
-        "crest": "https://crests.football-data.org/1.png"
-      },
-      "awayTeam": {
-        "id": 20,
-        "name": "FC St. Pauli 1910",
-        "shortName": "St. Pauli",
-        "tla": "STP",
-        "crest": "https://crests.football-data.org/20.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540522,
-      "utcDate": "2025-12-06T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-01T01:32:02Z",
-      "homeTeam": {
-        "id": 16,
-        "name": "FC Augsburg",
-        "shortName": "Augsburg",
-        "tla": "FCA",
-        "crest": "https://crests.football-data.org/16.png"
-      },
-      "awayTeam": {
-        "id": 3,
-        "name": "Bayer 04 Leverkusen",
-        "shortName": "Leverkusen",
-        "tla": "B04",
-        "crest": "https://crests.football-data.org/3.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540516,
-      "utcDate": "2025-12-06T17:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-11-30T01:32:03Z",
-      "homeTeam": {
-        "id": 721,
-        "name": "RB Leipzig",
-        "shortName": "RB Leipzig",
-        "tla": "RBL",
-        "crest": "https://crests.football-data.org/721.png"
-      },
-      "awayTeam": {
-        "id": 19,
-        "name": "Eintracht Frankfurt",
-        "shortName": "Frankfurt",
-        "tla": "SGE",
-        "crest": "https://crests.football-data.org/19.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540521,
-      "utcDate": "2025-12-07T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-06T01:32:01Z",
-      "homeTeam": {
-        "id": 7,
-        "name": "Hamburger SV",
-        "shortName": "HSV",
-        "tla": "HSV",
-        "crest": "https://crests.football-data.org/7.png"
-      },
-      "awayTeam": {
-        "id": 12,
-        "name": "SV Werder Bremen",
-        "shortName": "Bremen",
-        "tla": "SVW",
-        "crest": "https://crests.football-data.org/12.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 13,
-        "winner": null
-      },
-      "id": 540514,
-      "utcDate": "2025-12-07T16:30:00Z",
-      "status": "TIMED",
-      "matchday": 13,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-01T01:32:04Z",
-      "homeTeam": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "awayTeam": {
-        "id": 2,
-        "name": "TSG 1899 Hoffenheim",
-        "shortName": "Hoffenheim",
-        "tla": "TSG",
-        "crest": "https://crests.football-data.org/2.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
     {
       "area": {
         "id": 2088,
@@ -577,7 +105,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-08T01:32:02Z",
       "homeTeam": {
         "id": 19,
         "name": "Eintracht Frankfurt",
@@ -636,7 +164,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T01:32:02Z",
       "homeTeam": {
         "id": 18,
         "name": "Borussia Mönchengladbach",
@@ -695,7 +223,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-07T01:32:02Z",
       "homeTeam": {
         "id": 20,
         "name": "FC St. Pauli 1910",
@@ -754,7 +282,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-08T01:32:02Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -813,7 +341,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-07T01:32:03Z",
       "homeTeam": {
         "id": 3,
         "name": "Bayer 04 Leverkusen",
@@ -872,7 +400,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-08T01:32:03Z",
       "homeTeam": {
         "id": 17,
         "name": "SC Freiburg",
@@ -931,7 +459,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-11-05T15:21:11Z",
+      "lastUpdated": "2025-12-08T01:32:03Z",
       "homeTeam": {
         "id": 5,
         "name": "FC Bayern München",
@@ -990,7 +518,7 @@
       "matchday": 14,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T01:32:03Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -1108,7 +636,7 @@
       "matchday": 15,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -1167,7 +695,7 @@
       "matchday": 15,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -1226,7 +754,7 @@
       "matchday": 15,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 16,
         "name": "FC Augsburg",
@@ -1698,7 +1226,7 @@
       "matchday": 16,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -1934,7 +1462,7 @@
       "matchday": 16,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 3,
         "name": "Bayer 04 Leverkusen",
@@ -2052,7 +1580,7 @@
       "matchday": 16,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 5,
         "name": "FC Bayern München",
@@ -2111,7 +1639,7 @@
       "matchday": 17,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -2170,7 +1698,7 @@
       "matchday": 17,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 4,
         "name": "Borussia Dortmund",
@@ -2347,7 +1875,7 @@
       "matchday": 17,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -2642,7 +2170,7 @@
       "matchday": 18,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -2937,7 +2465,7 @@
       "matchday": 18,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -3055,7 +2583,7 @@
       "matchday": 18,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -3291,7 +2819,7 @@
       "matchday": 19,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 3,
         "name": "Bayer 04 Leverkusen",
@@ -3350,7 +2878,7 @@
       "matchday": 19,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 15,
         "name": "1. FSV Mainz 05",
@@ -3586,7 +3114,7 @@
       "matchday": 19,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 18,
         "name": "Borussia Mönchengladbach",
@@ -3822,7 +3350,7 @@
       "matchday": 20,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -3940,7 +3468,7 @@
       "matchday": 20,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -3999,7 +3527,7 @@
       "matchday": 20,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 1,
         "name": "1. FC Köln",
@@ -4353,7 +3881,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -4471,7 +3999,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 17,
         "name": "SC Freiburg",
@@ -4530,7 +4058,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 20,
         "name": "FC St. Pauli 1910",
@@ -4766,7 +4294,7 @@
       "matchday": 22,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -5002,7 +4530,7 @@
       "matchday": 22,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 721,
         "name": "RB Leipzig",
@@ -5238,7 +4766,7 @@
       "matchday": 22,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -5474,7 +5002,7 @@
       "matchday": 23,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 20,
         "name": "FC St. Pauli 1910",
@@ -5533,7 +5061,7 @@
       "matchday": 23,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 44,
         "name": "1. FC Heidenheim 1846",
@@ -5651,7 +5179,7 @@
       "matchday": 23,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -6064,7 +5592,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -6241,7 +5769,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -6536,7 +6064,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 28,
         "name": "1. FC Union Berlin",
@@ -6595,7 +6123,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 15,
         "name": "1. FSV Mainz 05",
@@ -6831,7 +6359,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -6949,7 +6477,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -7008,7 +6536,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -7067,7 +6595,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -7598,7 +7126,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -7657,7 +7185,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 16,
         "name": "FC Augsburg",
@@ -8011,7 +7539,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -8129,7 +7657,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -8188,7 +7716,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 3,
         "name": "Bayer 04 Leverkusen",
@@ -8601,7 +8129,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -8719,7 +8247,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 1,
         "name": "1. FC Köln",
@@ -8955,7 +8483,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -9132,7 +8660,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -9427,7 +8955,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 5,
         "name": "FC Bayern München",
@@ -9486,7 +9014,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 28,
         "name": "1. FC Union Berlin",
@@ -9781,7 +9309,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -9840,7 +9368,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -10253,7 +9781,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -10312,7 +9840,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 17,
         "name": "SC Freiburg",
@@ -10371,7 +9899,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -10607,7 +10135,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -10666,7 +10194,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -10843,7 +10371,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -11138,7 +10666,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -11315,7 +10843,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 19,
         "name": "Eintracht Frankfurt",
@@ -11374,7 +10902,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-12-06T00:21:02Z",
+      "lastUpdated": "2025-12-08T00:20:51Z",
       "homeTeam": {
         "id": 20,
         "name": "FC St. Pauli 1910",
