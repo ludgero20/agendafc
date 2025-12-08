@@ -2152,9 +2152,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Cleveland Browns",
       "strAwayTeam": "Tennessee Titans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "29",
+      "intAwayScore": "31",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424142",
@@ -2163,9 +2163,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Green Bay Packers",
       "strAwayTeam": "Chicago Bears",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "28",
+      "intAwayScore": "21",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424148",
@@ -2185,9 +2185,9 @@
       "strTime": "18:25:00",
       "strHomeTeam": "Arizona Cardinals",
       "strAwayTeam": "Los Angeles Rams",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "17",
+      "intAwayScore": "45",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424149",
@@ -2196,9 +2196,9 @@
       "strTime": "18:25:00",
       "strHomeTeam": "Buffalo Bills",
       "strAwayTeam": "Cincinnati Bengals",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "39",
+      "intAwayScore": "34",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424151",
@@ -2207,9 +2207,9 @@
       "strTime": "22:20:00",
       "strHomeTeam": "Kansas City Chiefs",
       "strAwayTeam": "Houston Texans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "10",
+      "intAwayScore": "20",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424152",
@@ -2691,9 +2691,9 @@
       "strTime": "15:00:00",
       "strHomeTeam": "Indianapolis Colts",
       "strAwayTeam": "Jacksonville Jaguars",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "36",
+      "intAwayScore": "19",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424194",
@@ -2922,9 +2922,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Pittsburgh Steelers",
       "strAwayTeam": "Baltimore Ravens",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "22",
+      "intAwayScore": "27",
+      "strStatus": "Match Finished"
     }
   ]
 }
