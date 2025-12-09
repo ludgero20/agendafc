@@ -620,6 +620,25 @@
         {
           "position": 32,
           "team": {
+            "id": 654,
+            "name": "PAE Olympiakos SFP",
+            "shortName": "Olympiakos",
+            "tla": "OLY",
+            "crest": "https://crests.football-data.org/654.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 0,
+          "draw": 3,
+          "lost": 3,
+          "points": 3,
+          "goalsFor": 5,
+          "goalsAgainst": 13,
+          "goalDifference": -8
+        },
+        {
+          "position": 33,
+          "team": {
             "id": 5721,
             "name": "FK Bodø/Glimt",
             "shortName": "Bodø/Glimt",
@@ -637,26 +656,26 @@
           "goalDifference": -4
         },
         {
-          "position": 33,
+          "position": 34,
           "team": {
-            "id": 654,
-            "name": "PAE Olympiakos SFP",
-            "shortName": "Olympiakos",
-            "tla": "OLY",
-            "crest": "https://crests.football-data.org/654.png"
+            "id": 10601,
+            "name": "FK Kairat",
+            "shortName": "FK Kairat",
+            "tla": "KAI",
+            "crest": "https://crests.football-data.org/10601.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 0,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "points": 2,
-          "goalsFor": 5,
-          "goalsAgainst": 13,
-          "goalDifference": -8
+          "goalsFor": 4,
+          "goalsAgainst": 14,
+          "goalDifference": -10
         },
         {
-          "position": 34,
+          "position": 35,
           "team": {
             "id": 94,
             "name": "Villarreal CF",
@@ -673,25 +692,6 @@
           "goalsFor": 2,
           "goalsAgainst": 10,
           "goalDifference": -8
-        },
-        {
-          "position": 35,
-          "team": {
-            "id": 10601,
-            "name": "FK Kairat",
-            "shortName": "FK Kairat",
-            "tla": "KAI",
-            "crest": "https://crests.football-data.org/10601.png"
-          },
-          "playedGames": 5,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 4,
-          "points": 1,
-          "goalsFor": 4,
-          "goalsAgainst": 14,
-          "goalDifference": -10
         },
         {
           "position": 36,
