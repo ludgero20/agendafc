@@ -161,11 +161,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/vrqanp1687734910.png",
       "conference": "American Football Conference",
       "division": "AFC West",
-      "intWin": 8,
+      "intWin": 9,
       "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".667",
-      "strStreak": "W1",
+      "strPercentage": ".692",
+      "strStreak": "W2",
       "rank": "2"
     },
     {
@@ -198,10 +198,10 @@
       "conference": "National Football Conference",
       "division": "NFC East",
       "intWin": 8,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".667",
-      "strStreak": "L2",
+      "strPercentage": ".615",
+      "strStreak": "L3",
       "rank": "1"
     },
     {
@@ -245,24 +245,12 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/ji22531698678538.png",
       "conference": "National Football Conference",
       "division": "NFC North",
-      "intWin": 9,
+      "intWin": 10,
       "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".692",
-      "strStreak": "L1",
+      "strPercentage": ".714",
+      "strStreak": "W1",
       "rank": "1"
-    },
-    {
-      "teamName": "Green Bay Packers",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
-      "conference": "National Football Conference",
-      "division": "NFC North",
-      "intWin": 9,
-      "intLoss": 4,
-      "intTie": 1,
-      "strPercentage": ".679",
-      "strStreak": "L1",
-      "rank": "2"
     },
     {
       "teamName": "Detroit Lions",
@@ -274,6 +262,18 @@
       "intTie": 0,
       "strPercentage": ".643",
       "strStreak": "W2",
+      "rank": "2"
+    },
+    {
+      "teamName": "Green Bay Packers",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
+      "conference": "National Football Conference",
+      "division": "NFC North",
+      "intWin": 9,
+      "intLoss": 5,
+      "intTie": 1,
+      "strPercentage": ".633",
+      "strStreak": "L2",
       "rank": "3"
     },
     {
@@ -349,18 +349,6 @@
       "rank": "1"
     },
     {
-      "teamName": "Los Angeles Rams",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/8e8v4i1599764614.png",
-      "conference": "National Football Conference",
-      "division": "NFC West",
-      "intWin": 10,
-      "intLoss": 4,
-      "intTie": 0,
-      "strPercentage": ".714",
-      "strStreak": "L1",
-      "rank": "2"
-    },
-    {
       "teamName": "San Francisco 49ers",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png",
       "conference": "National Football Conference",
@@ -370,6 +358,18 @@
       "intTie": 0,
       "strPercentage": ".692",
       "strStreak": "W3",
+      "rank": "2"
+    },
+    {
+      "teamName": "Los Angeles Rams",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/8e8v4i1599764614.png",
+      "conference": "National Football Conference",
+      "division": "NFC West",
+      "intWin": 10,
+      "intLoss": 5,
+      "intTie": 0,
+      "strPercentage": ".667",
+      "strStreak": "L2",
       "rank": "3"
     },
     {
@@ -377,11 +377,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 3,
+      "intWin": 4,
       "intLoss": 10,
       "intTie": 0,
-      "strPercentage": ".231",
-      "strStreak": "L5",
+      "strPercentage": ".286",
+      "strStreak": "W1",
       "rank": "4"
     }
   ]
