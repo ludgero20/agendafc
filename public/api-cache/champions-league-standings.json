@@ -335,25 +335,6 @@
         {
           "position": 17,
           "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 1,
-          "points": 9,
-          "goalsFor": 7,
-          "goalsAgainst": 8,
-          "goalDifference": -1
-        },
-        {
-          "position": 18,
-          "team": {
             "id": 610,
             "name": "Galatasaray SK",
             "shortName": "Galatasaray",
@@ -369,6 +350,25 @@
           "goalsFor": 8,
           "goalsAgainst": 8,
           "goalDifference": 0
+        },
+        {
+          "position": 18,
+          "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 1,
+          "points": 9,
+          "goalsFor": 7,
+          "goalsAgainst": 8,
+          "goalDifference": -1
         },
         {
           "position": 19,
