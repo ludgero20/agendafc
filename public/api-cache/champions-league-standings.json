@@ -354,25 +354,6 @@
         {
           "position": 18,
           "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 1,
-          "points": 9,
-          "goalsFor": 10,
-          "goalsAgainst": 12,
-          "goalDifference": -2
-        },
-        {
-          "position": 19,
-          "team": {
             "id": 610,
             "name": "Galatasaray SK",
             "shortName": "Galatasaray",
@@ -390,7 +371,7 @@
           "goalDifference": 0
         },
         {
-          "position": 20,
+          "position": 19,
           "team": {
             "id": 548,
             "name": "AS Monaco FC",
@@ -407,6 +388,25 @@
           "goalsFor": 7,
           "goalsAgainst": 8,
           "goalDifference": -1
+        },
+        {
+          "position": 20,
+          "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 1,
+          "points": 9,
+          "goalsFor": 10,
+          "goalsAgainst": 12,
+          "goalDifference": -2
         },
         {
           "position": 21,
@@ -430,25 +430,6 @@
         {
           "position": 22,
           "team": {
-            "id": 1876,
-            "name": "FC København",
-            "shortName": "København",
-            "tla": "KOB",
-            "crest": "https://crests.football-data.org/1876.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 3,
-          "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 16,
-          "goalDifference": -6
-        },
-        {
-          "position": 23,
-          "team": {
             "id": 611,
             "name": "Qarabağ Ağdam FK",
             "shortName": "Qarabağ Ağdam",
@@ -466,7 +447,7 @@
           "goalDifference": -3
         },
         {
-          "position": 24,
+          "position": 23,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -483,6 +464,25 @@
           "goalsFor": 6,
           "goalsAgainst": 11,
           "goalDifference": -5
+        },
+        {
+          "position": 24,
+          "team": {
+            "id": 1876,
+            "name": "FC København",
+            "shortName": "København",
+            "tla": "KOB",
+            "crest": "https://crests.football-data.org/1876.png"
+          },
+          "playedGames": 6,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 3,
+          "points": 7,
+          "goalsFor": 10,
+          "goalsAgainst": 16,
+          "goalDifference": -6
         },
         {
           "position": 25,
