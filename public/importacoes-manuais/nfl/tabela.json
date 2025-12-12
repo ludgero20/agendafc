@@ -289,18 +289,6 @@
       "rank": "4"
     },
     {
-      "teamName": "Tampa Bay Buccaneers",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png",
-      "conference": "National Football Conference",
-      "division": "NFC South",
-      "intWin": 7,
-      "intLoss": 5,
-      "intTie": 0,
-      "strPercentage": ".583",
-      "strStreak": "W1",
-      "rank": "1"
-    },
-    {
       "teamName": "Carolina Panthers",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png",
       "conference": "National Football Conference",
@@ -310,6 +298,18 @@
       "intTie": 0,
       "strPercentage": ".571",
       "strStreak": "W2",
+      "rank": "1"
+    },
+    {
+      "teamName": "Tampa Bay Buccaneers",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png",
+      "conference": "National Football Conference",
+      "division": "NFC South",
+      "intWin": 7,
+      "intLoss": 6,
+      "intTie": 0,
+      "strPercentage": ".538",
+      "strStreak": "L1",
       "rank": "2"
     },
     {
@@ -317,11 +317,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png",
       "conference": "National Football Conference",
       "division": "NFC South",
-      "intWin": 4,
+      "intWin": 5,
       "intLoss": 9,
       "intTie": 0,
-      "strPercentage": ".308",
-      "strStreak": "L2",
+      "strPercentage": ".357",
+      "strStreak": "L1",
       "rank": "3"
     },
     {

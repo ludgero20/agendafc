@@ -2229,9 +2229,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Tampa Bay Buccaneers",
       "strAwayTeam": "Atlanta Falcons",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "28",
+      "intAwayScore": "29",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424160",
