@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 5890,
+            "name": "US Lecce",
+            "shortName": "Lecce",
+            "tla": "USL",
+            "crest": "https://crests.football-data.org/5890.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 7,
+          "points": 14,
+          "goalsFor": 10,
+          "goalsAgainst": 19,
+          "goalDifference": -9
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 586,
             "name": "Torino FC",
             "shortName": "Torino",
@@ -333,25 +352,6 @@
           "goalDifference": -12
         },
         {
-          "position": 17,
-          "team": {
-            "id": 5890,
-            "name": "US Lecce",
-            "shortName": "Lecce",
-            "tla": "USL",
-            "crest": "https://crests.football-data.org/5890.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 7,
-          "points": 13,
-          "goalsFor": 10,
-          "goalsAgainst": 19,
-          "goalDifference": -9
-        },
-        {
           "position": 18,
           "team": {
             "id": 487,
@@ -360,12 +360,12 @@
             "tla": "PIS",
             "crest": "https://crests.football-data.org/487.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 1,
-          "draw": 7,
+          "draw": 8,
           "lost": 6,
-          "points": 10,
+          "points": 11,
           "goalsFor": 10,
           "goalsAgainst": 19,
           "goalDifference": -9

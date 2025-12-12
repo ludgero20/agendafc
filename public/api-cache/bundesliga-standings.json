@@ -56,12 +56,12 @@
             "tla": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 9,
-          "draw": 2,
+          "draw": 3,
           "lost": 2,
-          "points": 29,
+          "points": 30,
           "goalsFor": 28,
           "goalsAgainst": 13,
           "goalDifference": 15
@@ -246,12 +246,12 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
-          "draw": 3,
+          "draw": 4,
           "lost": 6,
-          "points": 15,
+          "points": 16,
           "goalsFor": 16,
           "goalsAgainst": 22,
           "goalDifference": -6

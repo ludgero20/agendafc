@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 4,
+          "draw": 5,
+          "lost": 7,
+          "points": 17,
+          "goalsFor": 19,
+          "goalsAgainst": 22,
+          "goalDifference": -3
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
             "shortName": "Rayo Vallecano",
@@ -257,7 +276,7 @@
           "goalDifference": -3
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 559,
             "name": "Sevilla FC",
@@ -274,25 +293,6 @@
           "goalsFor": 20,
           "goalsAgainst": 24,
           "goalDifference": -4
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 7,
-          "points": 16,
-          "goalsFor": 19,
-          "goalsAgainst": 22,
-          "goalDifference": -3
         },
         {
           "position": 15,
@@ -360,12 +360,12 @@
             "tla": "GIR",
             "crest": "https://crests.football-data.org/298.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 2,
-          "draw": 6,
+          "draw": 7,
           "lost": 7,
-          "points": 12,
+          "points": 13,
           "goalsFor": 13,
           "goalsAgainst": 29,
           "goalDifference": -16
