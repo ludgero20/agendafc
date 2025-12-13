@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57532,
+          "name": "Frank Willenborg",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 337,
+          "name": "Patrick Ittrich",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57515,
+          "name": "Sören Storks",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15825,
+          "name": "Martin Petersen",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
