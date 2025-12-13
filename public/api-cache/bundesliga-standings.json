@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 8,
+          "draw": 2,
+          "lost": 4,
+          "points": 26,
+          "goalsFor": 30,
+          "goalsAgainst": 19,
+          "goalDifference": 11
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
             "shortName": "Hoffenheim",
@@ -102,25 +121,6 @@
           "points": 26,
           "goalsFor": 29,
           "goalsAgainst": 20,
-          "goalDifference": 9
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 7,
-          "draw": 3,
-          "lost": 4,
-          "points": 24,
-          "goalsFor": 28,
-          "goalsAgainst": 19,
           "goalDifference": 9
         },
         {
@@ -192,12 +192,12 @@
           "playedGames": 14,
           "form": null,
           "won": 4,
-          "draw": 5,
-          "lost": 5,
-          "points": 17,
+          "draw": 4,
+          "lost": 6,
+          "points": 16,
           "goalsFor": 22,
-          "goalsAgainst": 21,
-          "goalDifference": 1
+          "goalsAgainst": 23,
+          "goalDifference": -1
         },
         {
           "position": 10,
