@@ -88,6 +88,44 @@
         {
           "position": 4,
           "team": {
+            "id": 2,
+            "name": "TSG 1899 Hoffenheim",
+            "shortName": "Hoffenheim",
+            "tla": "TSG",
+            "crest": "https://crests.football-data.org/2.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 8,
+          "draw": 2,
+          "lost": 4,
+          "points": 26,
+          "goalsFor": 29,
+          "goalsAgainst": 20,
+          "goalDifference": 9
+        },
+        {
+          "position": 5,
+          "team": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 7,
+          "draw": 3,
+          "lost": 4,
+          "points": 24,
+          "goalsFor": 29,
+          "goalsAgainst": 29,
+          "goalDifference": 0
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
             "shortName": "Leverkusen",
@@ -105,26 +143,7 @@
           "goalDifference": 9
         },
         {
-          "position": 5,
-          "team": {
-            "id": 2,
-            "name": "TSG 1899 Hoffenheim",
-            "shortName": "Hoffenheim",
-            "tla": "TSG",
-            "crest": "https://crests.football-data.org/2.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 7,
-          "draw": 2,
-          "lost": 4,
-          "points": 23,
-          "goalsFor": 25,
-          "goalsAgainst": 19,
-          "goalDifference": 6
-        },
-        {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 10,
             "name": "VfB Stuttgart",
@@ -140,25 +159,6 @@
           "points": 22,
           "goalsFor": 21,
           "goalsAgainst": 22,
-          "goalDifference": -1
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 4,
-          "points": 21,
-          "goalsFor": 28,
-          "goalsAgainst": 29,
           "goalDifference": -1
         },
         {
@@ -227,15 +227,15 @@
             "tla": "BMG",
             "crest": "https://crests.football-data.org/18.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
           "draw": 4,
-          "lost": 5,
+          "lost": 6,
           "points": 16,
-          "goalsFor": 17,
-          "goalsAgainst": 19,
-          "goalDifference": -2
+          "goalsFor": 18,
+          "goalsAgainst": 22,
+          "goalDifference": -4
         },
         {
           "position": 12,
@@ -259,24 +259,43 @@
         {
           "position": 13,
           "team": {
+            "id": 11,
+            "name": "VfL Wolfsburg",
+            "shortName": "Wolfsburg",
+            "tla": "WOB",
+            "crest": "https://crests.football-data.org/11.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 4,
+          "draw": 3,
+          "lost": 7,
+          "points": 15,
+          "goalsFor": 20,
+          "goalsAgainst": 24,
+          "goalDifference": -4
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 7,
             "name": "Hamburger SV",
             "shortName": "HSV",
             "tla": "HSV",
             "crest": "https://crests.football-data.org/7.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
           "draw": 3,
-          "lost": 6,
+          "lost": 7,
           "points": 15,
-          "goalsFor": 14,
-          "goalsAgainst": 20,
-          "goalDifference": -6
+          "goalsFor": 15,
+          "goalsAgainst": 24,
+          "goalDifference": -9
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 16,
             "name": "FC Augsburg",
@@ -284,56 +303,18 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/16.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
           "draw": 1,
-          "lost": 8,
+          "lost": 9,
           "points": 13,
           "goalsFor": 17,
-          "goalsAgainst": 27,
-          "goalDifference": -10
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 11,
-            "name": "VfL Wolfsburg",
-            "shortName": "Wolfsburg",
-            "tla": "WOB",
-            "crest": "https://crests.football-data.org/11.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 3,
-          "draw": 3,
-          "lost": 7,
-          "points": 12,
-          "goalsFor": 17,
-          "goalsAgainst": 23,
-          "goalDifference": -6
+          "goalsAgainst": 28,
+          "goalDifference": -11
         },
         {
           "position": 16,
-          "team": {
-            "id": 44,
-            "name": "1. FC Heidenheim 1846",
-            "shortName": "Heidenheim",
-            "tla": "HEI",
-            "crest": "https://crests.football-data.org/44.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 3,
-          "draw": 2,
-          "lost": 8,
-          "points": 11,
-          "goalsFor": 12,
-          "goalsAgainst": 28,
-          "goalDifference": -16
-        },
-        {
-          "position": 17,
           "team": {
             "id": 20,
             "name": "FC St. Pauli 1910",
@@ -341,15 +322,34 @@
             "tla": "STP",
             "crest": "https://crests.football-data.org/20.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
-          "won": 2,
+          "won": 3,
           "draw": 2,
           "lost": 9,
-          "points": 8,
-          "goalsFor": 11,
-          "goalsAgainst": 25,
-          "goalDifference": -14
+          "points": 11,
+          "goalsFor": 13,
+          "goalsAgainst": 26,
+          "goalDifference": -13
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 44,
+            "name": "1. FC Heidenheim 1846",
+            "shortName": "Heidenheim",
+            "tla": "HEI",
+            "crest": "https://crests.football-data.org/44.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 9,
+          "points": 11,
+          "goalsFor": 13,
+          "goalsAgainst": 30,
+          "goalDifference": -17
         },
         {
           "position": 18,

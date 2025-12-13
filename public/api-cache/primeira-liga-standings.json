@@ -94,15 +94,15 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 3,
           "lost": 3,
-          "points": 24,
-          "goalsFor": 16,
+          "points": 27,
+          "goalsFor": 17,
           "goalsAgainst": 6,
-          "goalDifference": 10
+          "goalDifference": 11
         },
         {
           "position": 5,
@@ -303,15 +303,15 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 2,
           "draw": 3,
-          "lost": 8,
+          "lost": 9,
           "points": 9,
           "goalsFor": 13,
-          "goalsAgainst": 27,
-          "goalDifference": -14
+          "goalsAgainst": 28,
+          "goalDifference": -15
         },
         {
           "position": 16,
