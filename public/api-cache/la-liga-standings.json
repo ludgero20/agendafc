@@ -94,15 +94,15 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
-          "won": 9,
+          "won": 10,
           "draw": 4,
           "lost": 3,
-          "points": 31,
-          "goalsFor": 28,
+          "points": 34,
+          "goalsFor": 29,
           "goalsAgainst": 15,
-          "goalDifference": 13
+          "goalDifference": 14
         },
         {
           "position": 5,
@@ -322,15 +322,15 @@
             "tla": "VAL",
             "crest": "https://crests.football-data.org/95.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 3,
           "draw": 6,
-          "lost": 6,
+          "lost": 7,
           "points": 15,
           "goalsFor": 14,
-          "goalsAgainst": 23,
-          "goalDifference": -9
+          "goalsAgainst": 24,
+          "goalDifference": -10
         },
         {
           "position": 17,
