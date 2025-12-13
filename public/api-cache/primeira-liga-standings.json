@@ -56,15 +56,15 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 2,
           "lost": 1,
-          "points": 32,
-          "goalsFor": 32,
+          "points": 35,
+          "goalsFor": 37,
           "goalsAgainst": 7,
-          "goalDifference": 25
+          "goalDifference": 30
         },
         {
           "position": 3,
@@ -360,15 +360,15 @@
             "tla": "AVS",
             "crest": "https://crests.football-data.org/10340.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 0,
           "draw": 3,
-          "lost": 10,
+          "lost": 11,
           "points": 3,
           "goalsFor": 9,
-          "goalsAgainst": 31,
-          "goalDifference": -22
+          "goalsAgainst": 36,
+          "goalDifference": -27
         }
       ]
     }
