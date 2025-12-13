@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 7,
+          "draw": 3,
+          "lost": 4,
+          "points": 24,
+          "goalsFor": 28,
+          "goalsAgainst": 19,
+          "goalDifference": 9
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 19,
             "name": "Eintracht Frankfurt",
             "shortName": "Frankfurt",
@@ -122,25 +141,6 @@
           "goalsFor": 29,
           "goalsAgainst": 29,
           "goalDifference": 0
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 13,
-          "form": null,
-          "won": 7,
-          "draw": 2,
-          "lost": 4,
-          "points": 23,
-          "goalsFor": 28,
-          "goalsAgainst": 19,
-          "goalDifference": 9
         },
         {
           "position": 7,
@@ -189,12 +189,12 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 13,
+          "playedGames": 14,
           "form": null,
           "won": 4,
-          "draw": 4,
+          "draw": 5,
           "lost": 5,
-          "points": 16,
+          "points": 17,
           "goalsFor": 22,
           "goalsAgainst": 21,
           "goalDifference": 1
