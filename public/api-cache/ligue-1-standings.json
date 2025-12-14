@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 546,
+            "name": "Racing Club de Lens",
+            "shortName": "RC Lens",
+            "tla": "RCL",
+            "crest": "https://crests.football-data.org/546.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 12,
+          "draw": 1,
+          "lost": 3,
+          "points": 37,
+          "goalsFor": 28,
+          "goalsAgainst": 13,
+          "goalDifference": 15
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 524,
             "name": "Paris Saint-Germain FC",
             "shortName": "PSG",
@@ -48,25 +67,6 @@
           "goalDifference": 21
         },
         {
-          "position": 2,
-          "team": {
-            "id": 546,
-            "name": "Racing Club de Lens",
-            "shortName": "RC Lens",
-            "tla": "RCL",
-            "crest": "https://crests.football-data.org/546.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 11,
-          "draw": 2,
-          "lost": 3,
-          "points": 35,
-          "goalsFor": 26,
-          "goalsAgainst": 13,
-          "goalDifference": 13
-        },
-        {
           "position": 3,
           "team": {
             "id": 521,
@@ -81,8 +81,8 @@
           "draw": 2,
           "lost": 4,
           "points": 32,
-          "goalsFor": 30,
-          "goalsAgainst": 17,
+          "goalsFor": 33,
+          "goalsAgainst": 20,
           "goalDifference": 13
         },
         {
@@ -240,25 +240,6 @@
         {
           "position": 12,
           "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 5,
-          "draw": 3,
-          "lost": 8,
-          "points": 18,
-          "goalsFor": 19,
-          "goalsAgainst": 27,
-          "goalDifference": -8
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 525,
             "name": "FC Lorient",
             "shortName": "Lorient",
@@ -274,6 +255,25 @@
           "goalsFor": 19,
           "goalsAgainst": 28,
           "goalDifference": -9
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 5,
+          "draw": 2,
+          "lost": 9,
+          "points": 17,
+          "goalsFor": 19,
+          "goalsAgainst": 29,
+          "goalDifference": -10
         },
         {
           "position": 14,
@@ -328,8 +328,8 @@
           "draw": 3,
           "lost": 10,
           "points": 12,
-          "goalsFor": 11,
-          "goalsAgainst": 22,
+          "goalsFor": 14,
+          "goalsAgainst": 25,
           "goalDifference": -11
         },
         {

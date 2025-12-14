@@ -278,25 +278,6 @@
         {
           "position": 14,
           "team": {
-            "id": 1044,
-            "name": "AFC Bournemouth",
-            "shortName": "Bournemouth",
-            "tla": "BOU",
-            "crest": "https://crests.football-data.org/bournemouth.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 5,
-          "draw": 5,
-          "lost": 5,
-          "points": 20,
-          "goalsFor": 21,
-          "goalsAgainst": 24,
-          "goalDifference": -3
-        },
-        {
-          "position": 14,
-          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -308,6 +289,25 @@
           "won": 6,
           "draw": 2,
           "lost": 8,
+          "points": 20,
+          "goalsFor": 22,
+          "goalsAgainst": 25,
+          "goalDifference": -3
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 1044,
+            "name": "AFC Bournemouth",
+            "shortName": "Bournemouth",
+            "tla": "BOU",
+            "crest": "https://crests.football-data.org/bournemouth.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 5,
+          "draw": 5,
+          "lost": 5,
           "points": 20,
           "goalsFor": 21,
           "goalsAgainst": 24,
@@ -347,8 +347,8 @@
           "draw": 4,
           "lost": 8,
           "points": 16,
-          "goalsFor": 19,
-          "goalsAgainst": 29,
+          "goalsFor": 20,
+          "goalsAgainst": 30,
           "goalDifference": -10
         },
         {
