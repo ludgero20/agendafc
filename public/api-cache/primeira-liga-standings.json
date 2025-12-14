@@ -77,13 +77,13 @@
           },
           "playedGames": 14,
           "form": null,
-          "won": 8,
-          "draw": 6,
+          "won": 9,
+          "draw": 5,
           "lost": 0,
-          "points": 30,
-          "goalsFor": 26,
+          "points": 32,
+          "goalsFor": 30,
           "goalsAgainst": 8,
-          "goalDifference": 18
+          "goalDifference": 22
         },
         {
           "position": 4,
@@ -145,25 +145,6 @@
         {
           "position": 7,
           "team": {
-            "id": 583,
-            "name": "Moreirense FC",
-            "shortName": "Moreirense",
-            "tla": "MOR",
-            "crest": "https://crests.football-data.org/583.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 5,
-          "points": 21,
-          "goalsFor": 21,
-          "goalsAgainst": 20,
-          "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 5543,
             "name": "Vitória SC",
             "shortName": "Vitória SC",
@@ -179,6 +160,25 @@
           "goalsFor": 15,
           "goalsAgainst": 17,
           "goalDifference": -2
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 583,
+            "name": "Moreirense FC",
+            "shortName": "Moreirense",
+            "tla": "MOR",
+            "crest": "https://crests.football-data.org/583.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 6,
+          "draw": 2,
+          "lost": 6,
+          "points": 20,
+          "goalsFor": 21,
+          "goalsAgainst": 24,
+          "goalDifference": -3
         },
         {
           "position": 9,

@@ -94,12 +94,12 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 9,
-          "draw": 2,
+          "draw": 3,
           "lost": 4,
-          "points": 29,
+          "points": 30,
           "goalsFor": 35,
           "goalsAgainst": 15,
           "goalDifference": 20
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 7,
+          "draw": 3,
+          "lost": 6,
+          "points": 24,
+          "goalsFor": 26,
+          "goalsAgainst": 26,
+          "goalDifference": 0
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -162,7 +181,7 @@
           "goalDifference": 5
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 511,
             "name": "Toulouse FC",
@@ -179,25 +198,6 @@
           "goalsFor": 24,
           "goalsAgainst": 19,
           "goalDifference": 5
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 7,
-          "draw": 2,
-          "lost": 6,
-          "points": 23,
-          "goalsFor": 26,
-          "goalsAgainst": 26,
-          "goalDifference": 0
         },
         {
           "position": 10,
