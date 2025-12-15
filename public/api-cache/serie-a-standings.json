@@ -94,12 +94,12 @@
             "tla": "ROM",
             "crest": "https://crests.football-data.org/100.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 9,
-          "draw": 0,
+          "draw": 1,
           "lost": 5,
-          "points": 27,
+          "points": 28,
           "goalsFor": 15,
           "goalsAgainst": 8,
           "goalDifference": 7
@@ -151,12 +151,12 @@
             "tla": "COM",
             "crest": "https://crests.football-data.org/7397.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 6,
-          "draw": 6,
+          "draw": 7,
           "lost": 2,
-          "points": 24,
+          "points": 25,
           "goalsFor": 19,
           "goalsAgainst": 11,
           "goalDifference": 8

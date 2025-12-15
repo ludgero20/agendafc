@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 8,
+          "draw": 4,
+          "lost": 4,
+          "points": 28,
+          "goalsFor": 27,
+          "goalsAgainst": 22,
+          "goalDifference": 5
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 354,
             "name": "Crystal Palace FC",
             "shortName": "Crystal Palace",
@@ -124,7 +143,7 @@
           "goalDifference": 5
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -143,7 +162,7 @@
           "goalDifference": 2
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 71,
             "name": "Sunderland AFC",
@@ -160,25 +179,6 @@
           "goalsFor": 19,
           "goalsAgainst": 17,
           "goalDifference": 2
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 7,
-          "draw": 4,
-          "lost": 4,
-          "points": 25,
-          "goalsFor": 26,
-          "goalsAgainst": 22,
-          "goalDifference": 4
         },
         {
           "position": 9,
@@ -303,15 +303,15 @@
             "tla": "BOU",
             "crest": "https://crests.football-data.org/bournemouth.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 5,
           "draw": 5,
-          "lost": 5,
+          "lost": 6,
           "points": 20,
           "goalsFor": 21,
-          "goalsAgainst": 24,
-          "goalDifference": -3
+          "goalsAgainst": 25,
+          "goalDifference": -4
         },
         {
           "position": 16,
