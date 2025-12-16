@@ -2394,9 +2394,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Pittsburgh Steelers",
       "strAwayTeam": "Miami Dolphins",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "28",
+      "intAwayScore": "15",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424169",
