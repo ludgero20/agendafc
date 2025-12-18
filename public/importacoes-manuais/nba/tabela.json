@@ -78,26 +78,26 @@
       "strStreak": "L4"
     },
     {
-      "teamId": "3",
-      "teamName": "Cleveland Cavaliers",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/tys75k1664478652.png",
-      "rank": "8",
-      "conference": "Leste",
-      "intWin": 13,
-      "intLoss": 11,
-      "strPercentage": ".542",
-      "strStreak": "L1"
-    },
-    {
       "teamId": "8",
       "teamName": "Atlanta Hawks",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/q3bx641635067495.png",
-      "rank": "9",
+      "rank": "8",
       "conference": "Leste",
       "intWin": 11,
       "intLoss": 10,
       "strPercentage": ".524",
       "strStreak": "W1"
+    },
+    {
+      "teamId": "3",
+      "teamName": "Cleveland Cavaliers",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/tys75k1664478652.png",
+      "rank": "9",
+      "conference": "Leste",
+      "intWin": 13,
+      "intLoss": 12,
+      "strPercentage": ".520",
+      "strStreak": "L2"
     },
     {
       "teamId": "5",
@@ -116,10 +116,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yk7swg1547214677.png",
       "rank": "11",
       "conference": "Leste",
-      "intWin": 8,
+      "intWin": 9,
       "intLoss": 14,
-      "strPercentage": ".364",
-      "strStreak": "L7"
+      "strPercentage": ".391",
+      "strStreak": "W1"
     },
     {
       "teamId": "7",
@@ -227,9 +227,9 @@
       "rank": "6",
       "conference": "Oeste",
       "intWin": 13,
-      "intLoss": 8,
-      "strPercentage": ".619",
-      "strStreak": "L1"
+      "intLoss": 9,
+      "strPercentage": ".591",
+      "strStreak": "L2"
     },
     {
       "teamId": "20",
@@ -254,26 +254,26 @@
       "strStreak": "W1"
     },
     {
+      "teamId": "28",
+      "teamName": "Memphis Grizzlies",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/m64v461565196789.png",
+      "rank": "9",
+      "conference": "Oeste",
+      "intWin": 10,
+      "intLoss": 13,
+      "strPercentage": ".435",
+      "strStreak": "W2"
+    },
+    {
       "teamId": "23",
       "teamName": "Portland Trail Blazers",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/ljkd1r1696445959.png",
-      "rank": "9",
+      "rank": "10",
       "conference": "Oeste",
       "intWin": 7,
       "intLoss": 10,
       "strPercentage": ".412",
       "strStreak": "L2"
-    },
-    {
-      "teamId": "28",
-      "teamName": "Memphis Grizzlies",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/m64v461565196789.png",
-      "rank": "10",
-      "conference": "Oeste",
-      "intWin": 9,
-      "intLoss": 13,
-      "strPercentage": ".409",
-      "strStreak": "W1"
     },
     {
       "teamId": "21",
