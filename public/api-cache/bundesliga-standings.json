@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 4,
+            "name": "Borussia Dortmund",
+            "shortName": "Dortmund",
+            "tla": "BVB",
+            "crest": "https://crests.football-data.org/4.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 9,
+          "draw": 5,
+          "lost": 1,
+          "points": 32,
+          "goalsFor": 25,
+          "goalsAgainst": 12,
+          "goalDifference": 13
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -65,25 +84,6 @@
           "goalsFor": 29,
           "goalsAgainst": 16,
           "goalDifference": 13
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 4,
-            "name": "Borussia Dortmund",
-            "shortName": "Dortmund",
-            "tla": "BVB",
-            "crest": "https://crests.football-data.org/4.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 8,
-          "draw": 5,
-          "lost": 1,
-          "points": 29,
-          "goalsFor": 24,
-          "goalsAgainst": 12,
-          "goalDifference": 12
         },
         {
           "position": 4,
@@ -227,15 +227,15 @@
             "tla": "BMG",
             "crest": "https://crests.football-data.org/18.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 4,
           "draw": 4,
-          "lost": 6,
+          "lost": 7,
           "points": 16,
           "goalsFor": 18,
-          "goalsAgainst": 22,
-          "goalDifference": -4
+          "goalsAgainst": 23,
+          "goalDifference": -5
         },
         {
           "position": 12,

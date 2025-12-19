@@ -94,12 +94,12 @@
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 7,
-          "draw": 4,
+          "draw": 5,
           "lost": 3,
-          "points": 25,
+          "points": 26,
           "goalsFor": 26,
           "goalsAgainst": 12,
           "goalDifference": 14
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 582,
+            "name": "GD Estoril Praia",
+            "shortName": "Estoril Praia",
+            "tla": "EST",
+            "crest": "https://crests.football-data.org/582.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 3,
+          "draw": 6,
+          "lost": 6,
+          "points": 15,
+          "goalsFor": 22,
+          "goalsAgainst": 25,
+          "goalDifference": -3
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 5529,
             "name": "CD Nacional",
             "shortName": "CD Nacional",
@@ -238,7 +257,7 @@
           "goalDifference": -4
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -255,25 +274,6 @@
           "goalsFor": 11,
           "goalsAgainst": 15,
           "goalDifference": -4
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 582,
-            "name": "GD Estoril Praia",
-            "shortName": "Estoril Praia",
-            "tla": "EST",
-            "crest": "https://crests.football-data.org/582.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 6,
-          "points": 14,
-          "goalsFor": 22,
-          "goalsAgainst": 25,
-          "goalDifference": -3
         },
         {
           "position": 14,
