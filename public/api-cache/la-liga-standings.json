@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 558,
+            "name": "RC Celta de Vigo",
+            "shortName": "Celta",
+            "tla": "CEL",
+            "crest": "https://crests.football-data.org/558.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 5,
+          "draw": 8,
+          "lost": 4,
+          "points": 23,
+          "goalsFor": 20,
+          "goalsAgainst": 19,
+          "goalDifference": 1
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 77,
             "name": "Athletic Club",
             "shortName": "Athletic",
@@ -160,25 +179,6 @@
           "goalsFor": 15,
           "goalsAgainst": 22,
           "goalDifference": -7
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 558,
-            "name": "RC Celta de Vigo",
-            "shortName": "Celta",
-            "tla": "CEL",
-            "crest": "https://crests.football-data.org/558.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 5,
-          "draw": 7,
-          "lost": 4,
-          "points": 22,
-          "goalsFor": 20,
-          "goalsAgainst": 19,
-          "goalDifference": 1
         },
         {
           "position": 9,
@@ -379,12 +379,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 2,
-          "draw": 4,
+          "draw": 5,
           "lost": 10,
-          "points": 10,
+          "points": 11,
           "goalsFor": 7,
           "goalsAgainst": 26,
           "goalDifference": -19
