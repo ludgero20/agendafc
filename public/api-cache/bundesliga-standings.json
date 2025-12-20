@@ -69,24 +69,43 @@
         {
           "position": 3,
           "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 15,
+          "form": null,
+          "won": 9,
+          "draw": 2,
+          "lost": 4,
+          "points": 29,
+          "goalsFor": 32,
+          "goalsAgainst": 20,
+          "goalDifference": 12
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
             "tla": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "playedGames": 14,
+          "playedGames": 15,
           "form": null,
           "won": 9,
           "draw": 2,
-          "lost": 3,
+          "lost": 4,
           "points": 29,
-          "goalsFor": 29,
-          "goalsAgainst": 16,
-          "goalDifference": 13
+          "goalsFor": 30,
+          "goalsAgainst": 18,
+          "goalDifference": 12
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
@@ -103,25 +122,6 @@
           "goalsFor": 29,
           "goalsAgainst": 20,
           "goalDifference": 9
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 8,
-          "draw": 2,
-          "lost": 4,
-          "points": 26,
-          "goalsFor": 30,
-          "goalsAgainst": 19,
-          "goalDifference": 11
         },
         {
           "position": 6,
