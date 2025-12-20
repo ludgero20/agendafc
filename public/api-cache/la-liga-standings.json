@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 12,
-          "draw": 3,
+          "draw": 4,
           "lost": 2,
-          "points": 39,
+          "points": 40,
           "goalsFor": 34,
           "goalsAgainst": 16,
           "goalDifference": 18
@@ -189,12 +189,12 @@
             "tla": "SEV",
             "crest": "https://crests.football-data.org/559.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 6,
-          "draw": 2,
+          "draw": 3,
           "lost": 8,
-          "points": 20,
+          "points": 21,
           "goalsFor": 24,
           "goalsAgainst": 24,
           "goalDifference": 0
@@ -240,20 +240,20 @@
         {
           "position": 12,
           "team": {
-            "id": 263,
-            "name": "Deportivo Alavés",
-            "shortName": "Alavés",
-            "tla": "ALA",
-            "crest": "https://crests.football-data.org/263.png"
+            "id": 79,
+            "name": "CA Osasuna",
+            "shortName": "Osasuna",
+            "tla": "OSA",
+            "crest": "https://crests.football-data.org/79.png"
           },
           "playedGames": 17,
           "form": null,
           "won": 5,
-          "draw": 4,
-          "lost": 8,
-          "points": 19,
-          "goalsFor": 14,
-          "goalsAgainst": 17,
+          "draw": 3,
+          "lost": 9,
+          "points": 18,
+          "goalsFor": 17,
+          "goalsAgainst": 20,
           "goalDifference": -3
         },
         {
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 263,
+            "name": "Deportivo Alavés",
+            "shortName": "Alavés",
+            "tla": "ALA",
+            "crest": "https://crests.football-data.org/263.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 5,
+          "draw": 3,
+          "lost": 9,
+          "points": 18,
+          "goalsFor": 14,
+          "goalsAgainst": 20,
+          "goalDifference": -6
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 92,
             "name": "Real Sociedad de Fútbol",
             "shortName": "Real Sociedad",
@@ -312,25 +331,6 @@
           "goalsFor": 21,
           "goalsAgainst": 25,
           "goalDifference": -4
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 79,
-            "name": "CA Osasuna",
-            "shortName": "Osasuna",
-            "tla": "OSA",
-            "crest": "https://crests.football-data.org/79.png"
-          },
-          "playedGames": 17,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 9,
-          "points": 16,
-          "goalsFor": 14,
-          "goalsAgainst": 20,
-          "goalDifference": -6
         },
         {
           "position": 17,
