@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 5,
+          "draw": 4,
+          "lost": 8,
+          "points": 19,
+          "goalsFor": 21,
+          "goalsAgainst": 24,
+          "goalDifference": -3
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -257,7 +276,7 @@
           "goalDifference": -3
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -276,7 +295,7 @@
           "goalDifference": -3
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -293,25 +312,6 @@
           "goalsFor": 19,
           "goalsAgainst": 24,
           "goalDifference": -5
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 8,
-          "points": 16,
-          "goalsFor": 20,
-          "goalsAgainst": 24,
-          "goalDifference": -4
         },
         {
           "position": 16,
@@ -398,15 +398,15 @@
             "tla": "LEV",
             "crest": "https://crests.football-data.org/88.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 2,
           "draw": 3,
-          "lost": 10,
+          "lost": 11,
           "points": 9,
           "goalsFor": 16,
-          "goalsAgainst": 28,
-          "goalDifference": -12
+          "goalsAgainst": 29,
+          "goalDifference": -13
         }
       ]
     }
