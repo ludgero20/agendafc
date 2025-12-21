@@ -197,11 +197,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
       "conference": "National Football Conference",
       "division": "NFC East",
-      "intWin": 9,
+      "intWin": 10,
       "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".643",
-      "strStreak": "W1",
+      "strPercentage": ".667",
+      "strStreak": "W2",
       "rank": "1"
     },
     {
@@ -222,10 +222,10 @@
       "conference": "National Football Conference",
       "division": "NFC East",
       "intWin": 5,
-      "intLoss": 9,
+      "intLoss": 10,
       "intTie": 0,
-      "strPercentage": ".357",
-      "strStreak": "W2",
+      "strPercentage": ".333",
+      "strStreak": "W1",
       "rank": "3"
     },
     {

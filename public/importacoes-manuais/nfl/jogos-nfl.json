@@ -2416,9 +2416,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Washington Commanders",
       "strAwayTeam": "Philadelphia Eagles",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "18",
+      "intAwayScore": "29",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424170",
