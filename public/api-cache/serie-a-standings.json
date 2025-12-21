@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 104,
-            "name": "Cagliari Calcio",
-            "shortName": "Cagliari",
-            "tla": "CAG",
-            "crest": "https://crests.football-data.org/104.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 7,
-          "points": 14,
-          "goalsFor": 15,
-          "goalsAgainst": 21,
-          "goalDifference": -6
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 107,
             "name": "Genoa CFC",
             "shortName": "Genoa",
@@ -330,6 +311,25 @@
           "points": 14,
           "goalsFor": 16,
           "goalsAgainst": 23,
+          "goalDifference": -7
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 104,
+            "name": "Cagliari Calcio",
+            "shortName": "Cagliari",
+            "tla": "CAG",
+            "crest": "https://crests.football-data.org/104.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 8,
+          "points": 14,
+          "goalsFor": 15,
+          "goalsAgainst": 22,
           "goalDifference": -7
         },
         {
@@ -354,6 +354,25 @@
         {
           "position": 18,
           "team": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS",
+            "crest": "https://crests.football-data.org/487.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 2,
+          "draw": 7,
+          "lost": 7,
+          "points": 13,
+          "goalsFor": 11,
+          "goalsAgainst": 20,
+          "goalDifference": -9
+        },
+        {
+          "position": 19,
+          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -369,25 +388,6 @@
           "goalsFor": 13,
           "goalsAgainst": 22,
           "goalDifference": -9
-        },
-        {
-          "position": 19,
-          "team": {
-            "id": 487,
-            "name": "AC Pisa 1909",
-            "shortName": "AC Pisa",
-            "tla": "PIS",
-            "crest": "https://crests.football-data.org/487.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 1,
-          "draw": 7,
-          "lost": 7,
-          "points": 10,
-          "goalsFor": 10,
-          "goalsAgainst": 20,
-          "goalDifference": -10
         },
         {
           "position": 20,
