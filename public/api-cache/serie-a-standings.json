@@ -233,12 +233,31 @@
           "draw": 3,
           "lost": 7,
           "points": 21,
-          "goalsFor": 16,
-          "goalsAgainst": 26,
+          "goalsFor": 17,
+          "goalsAgainst": 27,
           "goalDifference": -10
         },
         {
           "position": 12,
+          "team": {
+            "id": 102,
+            "name": "Atalanta BC",
+            "shortName": "Atalanta",
+            "tla": "ATA",
+            "crest": "https://crests.football-data.org/102.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 4,
+          "draw": 8,
+          "lost": 4,
+          "points": 20,
+          "goalsFor": 19,
+          "goalsAgainst": 18,
+          "goalDifference": 1
+        },
+        {
+          "position": 13,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -255,25 +274,6 @@
           "goalsFor": 16,
           "goalsAgainst": 26,
           "goalDifference": -10
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 102,
-            "name": "Atalanta BC",
-            "shortName": "Atalanta",
-            "tla": "ATA",
-            "crest": "https://crests.football-data.org/102.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 4,
-          "draw": 7,
-          "lost": 4,
-          "points": 19,
-          "goalsFor": 19,
-          "goalsAgainst": 18,
-          "goalDifference": 1
         },
         {
           "position": 14,
@@ -322,12 +322,12 @@
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 7,
-          "points": 14,
+          "points": 15,
           "goalsFor": 16,
           "goalsAgainst": 23,
           "goalDifference": -7
@@ -404,8 +404,8 @@
           "draw": 6,
           "lost": 9,
           "points": 9,
-          "goalsFor": 16,
-          "goalsAgainst": 26,
+          "goalsFor": 17,
+          "goalsAgainst": 27,
           "goalDifference": -10
         }
       ]
