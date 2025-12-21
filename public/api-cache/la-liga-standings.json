@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL",
+            "crest": "https://crests.football-data.org/78.png"
+          },
+          "playedGames": 18,
+          "form": null,
+          "won": 11,
+          "draw": 4,
+          "lost": 3,
+          "points": 37,
+          "goalsFor": 32,
+          "goalsAgainst": 16,
+          "goalDifference": 16
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 94,
             "name": "Villarreal CF",
             "shortName": "Villarreal",
@@ -84,25 +103,6 @@
           "goalsFor": 31,
           "goalsAgainst": 13,
           "goalDifference": 18
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 78,
-            "name": "Club Atlético de Madrid",
-            "shortName": "Atleti",
-            "tla": "ATL",
-            "crest": "https://crests.football-data.org/78.png"
-          },
-          "playedGames": 17,
-          "form": null,
-          "won": 10,
-          "draw": 4,
-          "lost": 3,
-          "points": 34,
-          "goalsFor": 30,
-          "goalsAgainst": 16,
-          "goalDifference": 14
         },
         {
           "position": 5,
@@ -360,15 +360,15 @@
             "tla": "GIR",
             "crest": "https://crests.football-data.org/298.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 3,
           "draw": 6,
-          "lost": 7,
+          "lost": 8,
           "points": 15,
           "goalsFor": 15,
-          "goalsAgainst": 30,
-          "goalDifference": -15
+          "goalsAgainst": 32,
+          "goalDifference": -17
         },
         {
           "position": 19,
