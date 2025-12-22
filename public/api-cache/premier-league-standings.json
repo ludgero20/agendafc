@@ -303,12 +303,12 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 6,
-          "draw": 2,
+          "draw": 3,
           "lost": 8,
-          "points": 20,
+          "points": 21,
           "goalsFor": 23,
           "goalsAgainst": 26,
           "goalDifference": -3
@@ -341,12 +341,12 @@
             "tla": "NOT",
             "crest": "https://crests.football-data.org/351.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 5,
-          "draw": 3,
+          "draw": 4,
           "lost": 8,
-          "points": 18,
+          "points": 19,
           "goalsFor": 17,
           "goalsAgainst": 25,
           "goalDifference": -8
