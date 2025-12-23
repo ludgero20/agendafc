@@ -2570,9 +2570,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Indianapolis Colts",
       "strAwayTeam": "San Francisco 49ers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "27",
+      "intAwayScore": "48",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424185",
@@ -2790,9 +2790,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Tampa Bay Buccaneers",
       "strAwayTeam": "Carolina Panthers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "23",
+      "intAwayScore": "20",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424215",

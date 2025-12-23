@@ -97,18 +97,6 @@
       "rank": "4"
     },
     {
-      "teamName": "Indianapolis Colts",
-      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
-      "conference": "American Football Conference",
-      "division": "AFC South",
-      "intWin": 10,
-      "intLoss": 5,
-      "intTie": 0,
-      "strPercentage": ".667",
-      "strStreak": "W2",
-      "rank": "1"
-    },
-    {
       "teamName": "Houston Texans",
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqyryy1421436627.png",
       "conference": "American Football Conference",
@@ -118,6 +106,18 @@
       "intTie": 0,
       "strPercentage": ".625",
       "strStreak": "L1",
+      "rank": "1"
+    },
+    {
+      "teamName": "Indianapolis Colts",
+      "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
+      "conference": "American Football Conference",
+      "division": "AFC South",
+      "intWin": 10,
+      "intLoss": 6,
+      "intTie": 0,
+      "strPercentage": ".625",
+      "strStreak": "W2",
       "rank": "2"
     },
     {
@@ -294,10 +294,10 @@
       "conference": "National Football Conference",
       "division": "NFC South",
       "intWin": 9,
-      "intLoss": 6,
+      "intLoss": 7,
       "intTie": 0,
-      "strPercentage": ".600",
-      "strStreak": "W3",
+      "strPercentage": ".563",
+      "strStreak": "L1",
       "rank": "1"
     },
     {
@@ -305,11 +305,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png",
       "conference": "National Football Conference",
       "division": "NFC South",
-      "intWin": 7,
+      "intWin": 8,
       "intLoss": 7,
       "intTie": 0,
-      "strPercentage": ".500",
-      "strStreak": "L2",
+      "strPercentage": ".533",
+      "strStreak": "W1",
       "rank": "2"
     },
     {
@@ -353,11 +353,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 10,
+      "intWin": 11,
       "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".714",
-      "strStreak": "W4",
+      "strPercentage": ".733",
+      "strStreak": "W5",
       "rank": "2"
     },
     {
