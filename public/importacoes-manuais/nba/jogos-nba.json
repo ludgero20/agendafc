@@ -4136,9 +4136,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Chicago Bulls",
       "strAwayTeam": "Philadelphia 76ers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "109",
+      "intAwayScore": "102",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447245",
@@ -4156,9 +4156,9 @@
       "strTime": "23:30:00",
       "strHomeTeam": "Utah Jazz",
       "strAwayTeam": "Detroit Pistons",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "131",
+      "intAwayScore": "129",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447239",
@@ -4166,9 +4166,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Washington Wizards",
       "strAwayTeam": "Toronto Raptors",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "138",
+      "intAwayScore": "117",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447238",
@@ -4176,9 +4176,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Orlando Magic",
       "strAwayTeam": "Charlotte Hornets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "105",
+      "intAwayScore": "120",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447237",
@@ -4186,9 +4186,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Atlanta Hawks",
       "strAwayTeam": "Miami Heat",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "111",
+      "intAwayScore": "126",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447242",
@@ -4196,9 +4196,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Memphis Grizzlies",
       "strAwayTeam": "Milwaukee Bucks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "125",
+      "intAwayScore": "104",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447243",
@@ -4206,9 +4206,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "New Orleans Pelicans",
       "strAwayTeam": "Phoenix Suns",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "108",
+      "intAwayScore": "115",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447240",
@@ -4216,9 +4216,9 @@
       "strTime": "21:30:00",
       "strHomeTeam": "Indiana Pacers",
       "strAwayTeam": "Boston Celtics",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "122",
+      "intAwayScore": "140",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447252",
