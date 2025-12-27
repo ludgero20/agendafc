@@ -56,12 +56,12 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 12,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 37,
+          "points": 38,
           "goalsFor": 41,
           "goalsAgainst": 16,
           "goalDifference": 25
@@ -341,12 +341,12 @@
             "tla": "NOT",
             "crest": "https://crests.football-data.org/351.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 5,
-          "draw": 3,
+          "draw": 4,
           "lost": 9,
-          "points": 18,
+          "points": 19,
           "goalsFor": 17,
           "goalsAgainst": 26,
           "goalDifference": -9
