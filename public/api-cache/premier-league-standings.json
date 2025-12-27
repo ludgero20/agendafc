@@ -77,35 +77,16 @@
           },
           "playedGames": 18,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 3,
-          "lost": 4,
-          "points": 36,
-          "goalsFor": 27,
+          "lost": 3,
+          "points": 39,
+          "goalsFor": 29,
           "goalsAgainst": 19,
-          "goalDifference": 8
+          "goalDifference": 10
         },
         {
           "position": 4,
-          "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 9,
-          "draw": 5,
-          "lost": 4,
-          "points": 32,
-          "goalsFor": 30,
-          "goalsAgainst": 17,
-          "goalDifference": 13
-        },
-        {
-          "position": 5,
           "team": {
             "id": 64,
             "name": "Liverpool FC",
@@ -122,6 +103,25 @@
           "goalsFor": 30,
           "goalsAgainst": 26,
           "goalDifference": 4
+        },
+        {
+          "position": 5,
+          "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 18,
+          "form": null,
+          "won": 8,
+          "draw": 5,
+          "lost": 5,
+          "points": 29,
+          "goalsFor": 30,
+          "goalsAgainst": 19,
+          "goalDifference": 11
         },
         {
           "position": 6,
