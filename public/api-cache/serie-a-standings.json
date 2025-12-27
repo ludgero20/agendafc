@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 7397,
+            "name": "Como 1907",
+            "shortName": "Como 1907",
+            "tla": "COM",
+            "crest": "https://crests.football-data.org/7397.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 7,
+          "draw": 6,
+          "lost": 3,
+          "points": 27,
+          "goalsFor": 22,
+          "goalsAgainst": 12,
+          "goalDifference": 10
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 103,
             "name": "Bologna FC 1909",
             "shortName": "Bologna",
@@ -141,25 +160,6 @@
           "goalsFor": 23,
           "goalsAgainst": 13,
           "goalDifference": 10
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 7397,
-            "name": "Como 1907",
-            "shortName": "Como 1907",
-            "tla": "COM",
-            "crest": "https://crests.football-data.org/7397.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 6,
-          "draw": 7,
-          "lost": 3,
-          "points": 25,
-          "goalsFor": 19,
-          "goalsAgainst": 12,
-          "goalDifference": 7
         },
         {
           "position": 8,
@@ -268,15 +268,34 @@
           "playedGames": 17,
           "form": null,
           "won": 5,
-          "draw": 6,
-          "lost": 6,
-          "points": 21,
-          "goalsFor": 16,
-          "goalsAgainst": 26,
-          "goalDifference": -10
+          "draw": 5,
+          "lost": 7,
+          "points": 20,
+          "goalsFor": 17,
+          "goalsAgainst": 28,
+          "goalDifference": -11
         },
         {
           "position": 14,
+          "team": {
+            "id": 104,
+            "name": "Cagliari Calcio",
+            "shortName": "Cagliari",
+            "tla": "CAG",
+            "crest": "https://crests.football-data.org/104.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 4,
+          "draw": 6,
+          "lost": 7,
+          "points": 18,
+          "goalsFor": 19,
+          "goalsAgainst": 24,
+          "goalDifference": -5
+        },
+        {
+          "position": 15,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -295,7 +314,7 @@
           "goalDifference": -7
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 5890,
             "name": "US Lecce",
@@ -306,31 +325,12 @@
           "playedGames": 16,
           "form": null,
           "won": 4,
-          "draw": 5,
-          "lost": 7,
-          "points": 17,
-          "goalsFor": 11,
-          "goalsAgainst": 19,
-          "goalDifference": -8
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 104,
-            "name": "Cagliari Calcio",
-            "shortName": "Cagliari",
-            "tla": "CAG",
-            "crest": "https://crests.football-data.org/104.png"
-          },
-          "playedGames": 17,
-          "form": null,
-          "won": 3,
-          "draw": 7,
-          "lost": 7,
+          "draw": 4,
+          "lost": 8,
           "points": 16,
-          "goalsFor": 17,
-          "goalsAgainst": 23,
-          "goalDifference": -6
+          "goalsFor": 11,
+          "goalsAgainst": 22,
+          "goalDifference": -11
         },
         {
           "position": 17,
