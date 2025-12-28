@@ -94,15 +94,15 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 7,
           "draw": 5,
-          "lost": 3,
+          "lost": 4,
           "points": 26,
-          "goalsFor": 19,
-          "goalsAgainst": 9,
-          "goalDifference": 10
+          "goalsFor": 20,
+          "goalsAgainst": 11,
+          "goalDifference": 9
         },
         {
           "position": 5,
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 5543,
+            "name": "Vitória SC",
+            "shortName": "Vitória SC",
+            "tla": "GUI",
+            "crest": "https://crests.football-data.org/5543.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 6,
+          "draw": 4,
+          "lost": 6,
+          "points": 22,
+          "goalsFor": 16,
+          "goalsAgainst": 21,
+          "goalDifference": -5
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 583,
             "name": "Moreirense FC",
             "shortName": "Moreirense",
@@ -160,25 +179,6 @@
           "goalsFor": 21,
           "goalsAgainst": 24,
           "goalDifference": -3
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 5543,
-            "name": "Vitória SC",
-            "shortName": "Vitória SC",
-            "tla": "GUI",
-            "crest": "https://crests.football-data.org/5543.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 6,
-          "draw": 3,
-          "lost": 6,
-          "points": 21,
-          "goalsFor": 16,
-          "goalsAgainst": 21,
-          "goalDifference": -5
         },
         {
           "position": 9,
@@ -297,40 +297,40 @@
         {
           "position": 15,
           "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 3,
-          "draw": 4,
-          "lost": 8,
-          "points": 13,
-          "goalsFor": 16,
-          "goalsAgainst": 29,
-          "goalDifference": -13
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
             "tla": "FCA",
             "crest": "https://crests.football-data.org/712.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
-          "won": 3,
+          "won": 4,
           "draw": 4,
           "lost": 8,
-          "points": 13,
-          "goalsFor": 15,
-          "goalsAgainst": 37,
-          "goalDifference": -22
+          "points": 16,
+          "goalsFor": 17,
+          "goalsAgainst": 38,
+          "goalDifference": -21
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 8,
+          "points": 14,
+          "goalsFor": 16,
+          "goalsAgainst": 29,
+          "goalDifference": -13
         },
         {
           "position": 17,
