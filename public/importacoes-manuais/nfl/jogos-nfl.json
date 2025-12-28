@@ -2636,9 +2636,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Green Bay Packers",
       "strAwayTeam": "Baltimore Ravens",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "24",
+      "intAwayScore": "41",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424192",
@@ -2658,9 +2658,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "Los Angeles Chargers",
       "strAwayTeam": "Houston Texans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "16",
+      "intAwayScore": "20",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424197",
