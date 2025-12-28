@@ -56,12 +56,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 12,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 38,
+          "points": 39,
           "goalsFor": 42,
           "goalsAgainst": 8,
           "goalDifference": 34
@@ -81,8 +81,8 @@
           "draw": 6,
           "lost": 0,
           "points": 36,
-          "goalsFor": 31,
-          "goalsAgainst": 8,
+          "goalsFor": 33,
+          "goalsAgainst": 10,
           "goalDifference": 23
         },
         {
@@ -119,8 +119,8 @@
           "draw": 5,
           "lost": 4,
           "points": 26,
-          "goalsFor": 26,
-          "goalsAgainst": 13,
+          "goalsFor": 28,
+          "goalsAgainst": 15,
           "goalDifference": 13
         },
         {
@@ -227,12 +227,12 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 3,
-          "draw": 8,
+          "draw": 9,
           "lost": 4,
-          "points": 17,
+          "points": 18,
           "goalsFor": 19,
           "goalsAgainst": 24,
           "goalDifference": -5
