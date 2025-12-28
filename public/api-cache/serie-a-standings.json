@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 98,
+            "name": "AC Milan",
+            "shortName": "Milan",
+            "tla": "MIL",
+            "crest": "https://crests.football-data.org/98.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 10,
+          "draw": 5,
+          "lost": 1,
+          "points": 35,
+          "goalsFor": 25,
+          "goalsAgainst": 13,
+          "goalDifference": 12
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 108,
             "name": "FC Internazionale Milano",
             "shortName": "Inter",
@@ -46,25 +65,6 @@
           "goalsFor": 34,
           "goalsAgainst": 14,
           "goalDifference": 20
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 98,
-            "name": "AC Milan",
-            "shortName": "Milan",
-            "tla": "MIL",
-            "crest": "https://crests.football-data.org/98.png"
-          },
-          "playedGames": 15,
-          "form": null,
-          "won": 9,
-          "draw": 5,
-          "lost": 1,
-          "points": 32,
-          "goalsFor": 24,
-          "goalsAgainst": 13,
-          "goalDifference": 11
         },
         {
           "position": 3,
@@ -360,15 +360,15 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 2,
           "draw": 6,
-          "lost": 7,
+          "lost": 8,
           "points": 12,
           "goalsFor": 13,
-          "goalsAgainst": 22,
-          "goalDifference": -9
+          "goalsAgainst": 23,
+          "goalDifference": -10
         },
         {
           "position": 19,
