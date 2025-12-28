@@ -75,12 +75,12 @@
             "tla": "BEN",
             "crest": "https://crests.football-data.org/1903.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 10,
-          "draw": 5,
+          "draw": 6,
           "lost": 0,
-          "points": 35,
+          "points": 36,
           "goalsFor": 31,
           "goalsAgainst": 8,
           "goalDifference": 23
@@ -97,12 +97,12 @@
           "playedGames": 16,
           "form": null,
           "won": 7,
-          "draw": 5,
-          "lost": 4,
-          "points": 26,
-          "goalsFor": 20,
+          "draw": 6,
+          "lost": 3,
+          "points": 27,
+          "goalsFor": 21,
           "goalsAgainst": 11,
-          "goalDifference": 9
+          "goalDifference": 10
         },
         {
           "position": 5,
@@ -113,12 +113,12 @@
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 7,
-          "draw": 4,
+          "draw": 5,
           "lost": 4,
-          "points": 25,
+          "points": 26,
           "goalsFor": 26,
           "goalsAgainst": 13,
           "goalDifference": 13
@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 712,
-            "name": "FC Arouca",
-            "shortName": "Arouca",
-            "tla": "FCA",
-            "crest": "https://crests.football-data.org/712.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 8,
-          "points": 16,
-          "goalsFor": 17,
-          "goalsAgainst": 38,
-          "goalDifference": -21
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 6618,
             "name": "Casa Pia AC",
             "shortName": "Casa Pia",
@@ -331,6 +312,25 @@
           "goalsFor": 16,
           "goalsAgainst": 29,
           "goalDifference": -13
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 712,
+            "name": "FC Arouca",
+            "shortName": "Arouca",
+            "tla": "FCA",
+            "crest": "https://crests.football-data.org/712.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 3,
+          "draw": 5,
+          "lost": 8,
+          "points": 14,
+          "goalsFor": 17,
+          "goalsAgainst": 39,
+          "goalDifference": -22
         },
         {
           "position": 17,
