@@ -18,10 +18,10 @@
       "conference": "American Football Conference",
       "division": "AFC East",
       "intWin": 11,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".733",
-      "strStreak": "W4",
+      "strPercentage": ".688",
+      "strStreak": "L1",
       "rank": "2"
     },
     {
@@ -29,11 +29,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/trtusv1421435081.png",
       "conference": "American Football Conference",
       "division": "AFC East",
-      "intWin": 5,
+      "intWin": 6,
       "intLoss": 9,
       "intTie": 0,
-      "strPercentage": ".357",
-      "strStreak": "L2",
+      "strPercentage": ".400",
+      "strStreak": "W1",
       "rank": "3"
     },
     {
@@ -66,10 +66,10 @@
       "conference": "American Football Conference",
       "division": "AFC North",
       "intWin": 8,
-      "intLoss": 7,
+      "intLoss": 8,
       "intTie": 0,
-      "strPercentage": ".533",
-      "strStreak": "L1",
+      "strPercentage": ".500",
+      "strStreak": "L2",
       "rank": "2"
     },
     {
@@ -77,11 +77,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png",
       "conference": "American Football Conference",
       "division": "AFC North",
-      "intWin": 5,
+      "intWin": 6,
       "intLoss": 10,
       "intTie": 0,
-      "strPercentage": ".333",
-      "strStreak": "W1",
+      "strPercentage": ".375",
+      "strStreak": "W2",
       "rank": "3"
     },
     {
@@ -89,11 +89,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/squvxy1420942389.png",
       "conference": "American Football Conference",
       "division": "AFC North",
-      "intWin": 3,
+      "intWin": 4,
       "intLoss": 12,
       "intTie": 0,
-      "strPercentage": ".200",
-      "strStreak": "L4",
+      "strPercentage": ".250",
+      "strStreak": "W1",
       "rank": "4"
     },
     {
@@ -138,10 +138,10 @@
       "conference": "American Football Conference",
       "division": "AFC South",
       "intWin": 4,
-      "intLoss": 12,
+      "intLoss": 13,
       "intTie": 0,
-      "strPercentage": ".250",
-      "strStreak": "W2",
+      "strPercentage": ".235",
+      "strStreak": "W1",
       "rank": "4"
     },
     {
@@ -186,9 +186,9 @@
       "conference": "American Football Conference",
       "division": "AFC West",
       "intWin": 4,
-      "intLoss": 12,
+      "intLoss": 13,
       "intTie": 0,
-      "strPercentage": ".250",
+      "strPercentage": ".235",
       "strStreak": "W1",
       "rank": "4"
     },
@@ -197,10 +197,10 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
       "conference": "National Football Conference",
       "division": "NFC East",
-      "intWin": 10,
+      "intWin": 11,
       "intLoss": 6,
       "intTie": 0,
-      "strPercentage": ".625",
+      "strPercentage": ".647",
       "strStreak": "L1",
       "rank": "1"
     },
@@ -233,11 +233,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/vxppup1423669459.png",
       "conference": "National Football Conference",
       "division": "NFC East",
-      "intWin": 2,
+      "intWin": 3,
       "intLoss": 13,
       "intTie": 0,
-      "strPercentage": ".133",
-      "strStreak": "L9",
+      "strPercentage": ".188",
+      "strStreak": "W1",
       "rank": "4"
     },
     {
@@ -246,10 +246,10 @@
       "conference": "National Football Conference",
       "division": "NFC North",
       "intWin": 11,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".733",
-      "strStreak": "W2",
+      "strPercentage": ".688",
+      "strStreak": "L1",
       "rank": "1"
     },
     {
@@ -294,10 +294,10 @@
       "conference": "National Football Conference",
       "division": "NFC South",
       "intWin": 9,
-      "intLoss": 7,
+      "intLoss": 8,
       "intTie": 0,
-      "strPercentage": ".563",
-      "strStreak": "L1",
+      "strPercentage": ".529",
+      "strStreak": "L2",
       "rank": "1"
     },
     {
@@ -306,9 +306,9 @@
       "conference": "National Football Conference",
       "division": "NFC South",
       "intWin": 8,
-      "intLoss": 7,
+      "intLoss": 8,
       "intTie": 0,
-      "strPercentage": ".533",
+      "strPercentage": ".500",
       "strStreak": "W1",
       "rank": "2"
     },
@@ -329,11 +329,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/nd46c71537821337.png",
       "conference": "National Football Conference",
       "division": "NFC South",
-      "intWin": 4,
+      "intWin": 5,
       "intLoss": 11,
       "intTie": 0,
-      "strPercentage": ".267",
-      "strStreak": "W2",
+      "strPercentage": ".313",
+      "strStreak": "W3",
       "rank": "4"
     },
     {
@@ -341,11 +341,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wwuqyr1421434817.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 11,
+      "intWin": 12,
       "intLoss": 3,
       "intTie": 0,
-      "strPercentage": ".786",
-      "strStreak": "W4",
+      "strPercentage": ".800",
+      "strStreak": "W5",
       "rank": "1"
     },
     {
@@ -353,11 +353,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 11,
+      "intWin": 12,
       "intLoss": 4,
       "intTie": 0,
-      "strPercentage": ".733",
-      "strStreak": "W5",
+      "strPercentage": ".750",
+      "strStreak": "W6",
       "rank": "2"
     },
     {
@@ -378,9 +378,9 @@
       "conference": "National Football Conference",
       "division": "NFC West",
       "intWin": 4,
-      "intLoss": 12,
+      "intLoss": 13,
       "intTie": 0,
-      "strPercentage": ".250",
+      "strPercentage": ".235",
       "strStreak": "W1",
       "rank": "4"
     }
