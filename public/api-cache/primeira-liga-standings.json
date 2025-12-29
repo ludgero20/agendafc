@@ -37,12 +37,12 @@
             "tla": "FCP",
             "crest": "https://crests.football-data.org/503.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 14,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 43,
+          "points": 44,
           "goalsFor": 33,
           "goalsAgainst": 4,
           "goalDifference": 29
@@ -360,12 +360,12 @@
             "tla": "AVS",
             "crest": "https://crests.football-data.org/10340.png"
           },
-          "playedGames": 15,
+          "playedGames": 16,
           "form": null,
           "won": 0,
-          "draw": 4,
+          "draw": 5,
           "lost": 11,
-          "points": 4,
+          "points": 5,
           "goalsFor": 11,
           "goalsAgainst": 39,
           "goalDifference": -28
