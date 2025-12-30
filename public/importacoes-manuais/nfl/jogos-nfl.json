@@ -2746,9 +2746,9 @@
       "strTime": "22:15:00",
       "strHomeTeam": "Atlanta Falcons",
       "strAwayTeam": "Los Angeles Rams",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "27",
+      "intAwayScore": "24",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424210",

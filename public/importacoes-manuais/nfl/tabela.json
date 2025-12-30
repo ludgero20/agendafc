@@ -317,10 +317,10 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png",
       "conference": "National Football Conference",
       "division": "NFC South",
-      "intWin": 6,
+      "intWin": 7,
       "intLoss": 9,
       "intTie": 0,
-      "strPercentage": ".400",
+      "strPercentage": ".438",
       "strStreak": "L1",
       "rank": "3"
     },
@@ -366,10 +366,10 @@
       "conference": "National Football Conference",
       "division": "NFC West",
       "intWin": 11,
-      "intLoss": 5,
+      "intLoss": 6,
       "intTie": 0,
-      "strPercentage": ".688",
-      "strStreak": "L2",
+      "strPercentage": ".647",
+      "strStreak": "L3",
       "rank": "3"
     },
     {
