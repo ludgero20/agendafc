@@ -7,9 +7,9 @@
       "rank": "1",
       "conference": "Leste",
       "intWin": 20,
-      "intLoss": 7,
-      "strPercentage": ".741",
-      "strStreak": "L1"
+      "intLoss": 8,
+      "strPercentage": ".714",
+      "strStreak": "L2"
     },
     {
       "teamId": "15",
@@ -50,10 +50,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/71545f1518464849.png",
       "rank": "5",
       "conference": "Leste",
-      "intWin": 15,
+      "intWin": 16,
       "intLoss": 12,
-      "strPercentage": ".556",
-      "strStreak": "W1"
+      "strPercentage": ".571",
+      "strStreak": "W2"
     },
     {
       "teamId": "9",
@@ -61,10 +61,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/5v67x51547214763.png",
       "rank": "6",
       "conference": "Leste",
-      "intWin": 16,
+      "intWin": 17,
       "intLoss": 13,
-      "strPercentage": ".552",
-      "strStreak": "W3"
+      "strPercentage": ".567",
+      "strStreak": "W4"
     },
     {
       "teamId": "10",
@@ -139,9 +139,9 @@
       "rank": "13",
       "conference": "Leste",
       "intWin": 9,
-      "intLoss": 19,
-      "strPercentage": ".321",
-      "strStreak": "L1"
+      "intLoss": 20,
+      "strPercentage": ".310",
+      "strStreak": "L2"
     },
     {
       "teamId": "6",
@@ -193,10 +193,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yezpho1597486052.png",
       "rank": "3",
       "conference": "Oeste",
-      "intWin": 18,
+      "intWin": 19,
       "intLoss": 7,
-      "strPercentage": ".720",
-      "strStreak": "W4"
+      "strPercentage": ".731",
+      "strStreak": "W5"
     },
     {
       "teamId": "22",
@@ -276,26 +276,26 @@
       "strStreak": "L1"
     },
     {
-      "teamId": "29",
-      "teamName": "Dallas Mavericks",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yqrxrs1420568796.png",
-      "rank": "11",
-      "conference": "Oeste",
-      "intWin": 10,
-      "intLoss": 18,
-      "strPercentage": ".357",
-      "strStreak": "L2"
-    },
-    {
       "teamId": "21",
       "teamName": "Utah Jazz",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/9v9c5p1751703267.png",
-      "rank": "12",
+      "rank": "11",
       "conference": "Oeste",
       "intWin": 9,
       "intLoss": 17,
       "strPercentage": ".346",
       "strStreak": "L1"
+    },
+    {
+      "teamId": "29",
+      "teamName": "Dallas Mavericks",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yqrxrs1420568796.png",
+      "rank": "12",
+      "conference": "Oeste",
+      "intWin": 10,
+      "intLoss": 19,
+      "strPercentage": ".345",
+      "strStreak": "L3"
     },
     {
       "teamId": "16",
