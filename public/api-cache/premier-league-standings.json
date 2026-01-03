@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 58,
+            "name": "Aston Villa FC",
+            "shortName": "Aston Villa",
+            "tla": "AVL",
+            "crest": "https://crests.football-data.org/58.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 13,
+          "draw": 3,
+          "lost": 4,
+          "points": 42,
+          "goalsFor": 32,
+          "goalsAgainst": 24,
+          "goalDifference": 8
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -65,25 +84,6 @@
           "goalsFor": 43,
           "goalsAgainst": 17,
           "goalDifference": 26
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 58,
-            "name": "Aston Villa FC",
-            "shortName": "Aston Villa",
-            "tla": "AVL",
-            "crest": "https://crests.football-data.org/58.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 12,
-          "draw": 4,
-          "lost": 4,
-          "points": 40,
-          "goalsFor": 30,
-          "goalsAgainst": 23,
-          "goalDifference": 7
         },
         {
           "position": 4,
@@ -344,12 +344,12 @@
           "playedGames": 20,
           "form": null,
           "won": 5,
-          "draw": 4,
-          "lost": 11,
-          "points": 19,
-          "goalsFor": 18,
-          "goalsAgainst": 30,
-          "goalDifference": -12
+          "draw": 3,
+          "lost": 12,
+          "points": 18,
+          "goalsFor": 19,
+          "goalsAgainst": 32,
+          "goalDifference": -13
         },
         {
           "position": 18,
