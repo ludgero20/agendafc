@@ -75,12 +75,12 @@
             "tla": "AVL",
             "crest": "https://crests.football-data.org/58.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 12,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 39,
+          "points": 40,
           "goalsFor": 30,
           "goalsAgainst": 23,
           "goalDifference": 7
@@ -341,12 +341,12 @@
             "tla": "NOT",
             "crest": "https://crests.football-data.org/351.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 5,
-          "draw": 3,
+          "draw": 4,
           "lost": 11,
-          "points": 18,
+          "points": 19,
           "goalsFor": 18,
           "goalsAgainst": 30,
           "goalDifference": -12
