@@ -2779,9 +2779,9 @@
       "strTime": "02:00:00",
       "strHomeTeam": "San Francisco 49ers",
       "strAwayTeam": "Seattle Seahawks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "3",
+      "intAwayScore": "13",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "424214",

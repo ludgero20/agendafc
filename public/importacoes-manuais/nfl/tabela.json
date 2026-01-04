@@ -341,11 +341,11 @@
       "teamLogo": "https://r2.thesportsdb.com/images/media/team/badge/wwuqyr1421434817.png",
       "conference": "National Football Conference",
       "division": "NFC West",
-      "intWin": 12,
+      "intWin": 13,
       "intLoss": 3,
       "intTie": 0,
-      "strPercentage": ".800",
-      "strStreak": "W5",
+      "strPercentage": ".813",
+      "strStreak": "W6",
       "rank": "1"
     },
     {
@@ -354,10 +354,10 @@
       "conference": "National Football Conference",
       "division": "NFC West",
       "intWin": 12,
-      "intLoss": 4,
+      "intLoss": 5,
       "intTie": 0,
-      "strPercentage": ".750",
-      "strStreak": "W6",
+      "strPercentage": ".706",
+      "strStreak": "L1",
       "rank": "2"
     },
     {
