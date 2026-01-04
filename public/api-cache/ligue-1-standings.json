@@ -56,12 +56,12 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 11,
-          "draw": 3,
+          "draw": 4,
           "lost": 2,
-          "points": 36,
+          "points": 37,
           "goalsFor": 35,
           "goalsAgainst": 14,
           "goalDifference": 21
@@ -303,12 +303,12 @@
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 4,
-          "draw": 4,
+          "draw": 5,
           "lost": 8,
-          "points": 16,
+          "points": 17,
           "goalsFor": 21,
           "goalsAgainst": 29,
           "goalDifference": -8

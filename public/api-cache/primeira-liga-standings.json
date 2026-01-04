@@ -39,13 +39,13 @@
           },
           "playedGames": 17,
           "form": null,
-          "won": 15,
-          "draw": 2,
+          "won": 16,
+          "draw": 1,
           "lost": 0,
-          "points": 47,
-          "goalsFor": 35,
+          "points": 49,
+          "goalsFor": 36,
           "goalsAgainst": 4,
-          "goalDifference": 31
+          "goalDifference": 32
         },
         {
           "position": 2,
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 5531,
+            "name": "FC Famalicão",
+            "shortName": "Famalicão",
+            "tla": "FAM",
+            "crest": "https://crests.football-data.org/5531.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 6,
+          "draw": 6,
+          "lost": 5,
+          "points": 24,
+          "goalsFor": 20,
+          "goalsAgainst": 13,
+          "goalDifference": 7
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 583,
             "name": "Moreirense FC",
             "shortName": "Moreirense",
@@ -160,25 +179,6 @@
           "goalsFor": 23,
           "goalsAgainst": 24,
           "goalDifference": -1
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 5531,
-            "name": "FC Famalicão",
-            "shortName": "Famalicão",
-            "tla": "FAM",
-            "crest": "https://crests.football-data.org/5531.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 5,
-          "points": 23,
-          "goalsFor": 20,
-          "goalsAgainst": 13,
-          "goalDifference": 7
         },
         {
           "position": 9,
@@ -240,43 +240,24 @@
         {
           "position": 12,
           "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 7,
-          "points": 17,
-          "goalsFor": 11,
-          "goalsAgainst": 15,
-          "goalDifference": -4
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 7822,
             "name": "FC Alverca",
             "shortName": "Alverca",
             "tla": "ALV",
             "crest": "https://crests.football-data.org/7822.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 5,
-          "draw": 2,
+          "draw": 3,
           "lost": 9,
-          "points": 17,
+          "points": 18,
           "goalsFor": 16,
           "goalsAgainst": 27,
           "goalDifference": -11
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -292,6 +273,25 @@
           "points": 16,
           "goalsFor": 18,
           "goalsAgainst": 23,
+          "goalDifference": -5
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 16,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 8,
+          "points": 16,
+          "goalsFor": 11,
+          "goalsAgainst": 16,
           "goalDifference": -5
         },
         {
