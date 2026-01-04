@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 8,
+          "draw": 7,
+          "lost": 5,
+          "points": 31,
+          "goalsFor": 33,
+          "goalsAgainst": 29,
+          "goalDifference": 4
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -122,25 +141,6 @@
           "goalsFor": 32,
           "goalsAgainst": 21,
           "goalDifference": 11
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 19,
-          "form": null,
-          "won": 8,
-          "draw": 6,
-          "lost": 5,
-          "points": 30,
-          "goalsFor": 33,
-          "goalsAgainst": 29,
-          "goalDifference": 4
         },
         {
           "position": 7,
@@ -322,12 +322,12 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 5,
-          "draw": 6,
+          "draw": 7,
           "lost": 8,
-          "points": 21,
+          "points": 22,
           "goalsFor": 25,
           "goalsAgainst": 32,
           "goalDifference": -7
