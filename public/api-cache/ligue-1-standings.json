@@ -75,12 +75,12 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 10,
-          "draw": 2,
+          "draw": 3,
           "lost": 4,
-          "points": 32,
+          "points": 33,
           "goalsFor": 36,
           "goalsAgainst": 15,
           "goalDifference": 21
@@ -341,12 +341,12 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 2,
-          "draw": 5,
+          "draw": 6,
           "lost": 9,
-          "points": 11,
+          "points": 12,
           "goalsFor": 14,
           "goalsAgainst": 28,
           "goalDifference": -14
