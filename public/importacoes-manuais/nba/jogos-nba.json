@@ -5156,9 +5156,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Charlotte Hornets",
       "strAwayTeam": "Indiana Pacers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "112",
+      "intAwayScore": "114",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447344",
@@ -5166,9 +5166,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Minnesota Timberwolves",
       "strAwayTeam": "Cleveland Cavaliers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "131",
+      "intAwayScore": "122",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447345",
@@ -5176,9 +5176,9 @@
       "strTime": "23:00:00",
       "strHomeTeam": "Utah Jazz",
       "strAwayTeam": "Dallas Mavericks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "116",
+      "intAwayScore": "114",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447343",
