@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 13,
+          "draw": 0,
+          "lost": 7,
+          "points": 39,
+          "goalsFor": 24,
+          "goalsAgainst": 12,
+          "goalDifference": 12
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 113,
             "name": "SSC Napoli",
             "shortName": "Napoli",
@@ -84,25 +103,6 @@
           "goalsFor": 28,
           "goalsAgainst": 15,
           "goalDifference": 13
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 12,
-          "draw": 1,
-          "lost": 7,
-          "points": 37,
-          "goalsFor": 22,
-          "goalsAgainst": 12,
-          "goalDifference": 10
         },
         {
           "position": 5,
@@ -151,15 +151,15 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 7,
           "lost": 5,
-          "points": 28,
-          "goalsFor": 23,
+          "points": 31,
+          "goalsFor": 24,
           "goalsAgainst": 19,
-          "goalDifference": 4
+          "goalDifference": 5
         },
         {
           "position": 8,
@@ -230,12 +230,12 @@
           "playedGames": 20,
           "form": null,
           "won": 6,
-          "draw": 6,
-          "lost": 8,
-          "points": 24,
+          "draw": 5,
+          "lost": 9,
+          "points": 23,
           "goalsFor": 23,
-          "goalsAgainst": 25,
-          "goalDifference": -2
+          "goalsAgainst": 27,
+          "goalDifference": -4
         },
         {
           "position": 12,
@@ -246,15 +246,15 @@
             "tla": "TOR",
             "crest": "https://crests.football-data.org/586.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 6,
           "draw": 5,
-          "lost": 8,
+          "lost": 9,
           "points": 23,
           "goalsFor": 21,
-          "goalsAgainst": 30,
-          "goalDifference": -9
+          "goalsAgainst": 31,
+          "goalDifference": -10
         },
         {
           "position": 13,
