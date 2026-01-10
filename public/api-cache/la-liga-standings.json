@@ -132,12 +132,12 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 4,
-          "points": 28,
+          "points": 29,
           "goalsFor": 30,
           "goalsAgainst": 24,
           "goalDifference": 6
@@ -398,12 +398,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 2,
-          "draw": 6,
+          "draw": 7,
           "lost": 10,
-          "points": 12,
+          "points": 13,
           "goalsFor": 8,
           "goalsAgainst": 27,
           "goalDifference": -19
