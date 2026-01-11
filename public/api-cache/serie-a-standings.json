@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 5890,
+            "name": "US Lecce",
+            "shortName": "Lecce",
+            "tla": "USL",
+            "crest": "https://crests.football-data.org/5890.png"
+          },
+          "playedGames": 19,
+          "form": null,
+          "won": 5,
+          "draw": 5,
+          "lost": 9,
+          "points": 20,
+          "goalsFor": 13,
+          "goalsAgainst": 25,
+          "goalDifference": -12
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 104,
             "name": "Cagliari Calcio",
             "shortName": "Cagliari",
@@ -295,7 +314,7 @@
           "goalDifference": -6
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -303,34 +322,15 @@
             "tla": "PAR",
             "crest": "https://crests.football-data.org/112.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 4,
           "draw": 6,
-          "lost": 8,
+          "lost": 9,
           "points": 18,
           "goalsFor": 12,
-          "goalsAgainst": 21,
-          "goalDifference": -9
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 5890,
-            "name": "US Lecce",
-            "shortName": "Lecce",
-            "tla": "USL",
-            "crest": "https://crests.football-data.org/5890.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 9,
-          "points": 17,
-          "goalsFor": 12,
-          "goalsAgainst": 25,
-          "goalDifference": -13
+          "goalsAgainst": 22,
+          "goalDifference": -10
         },
         {
           "position": 17,
