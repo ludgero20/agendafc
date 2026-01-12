@@ -303,18 +303,37 @@
             "tla": "CAG",
             "crest": "https://crests.football-data.org/104.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 4,
           "draw": 7,
-          "lost": 8,
+          "lost": 9,
           "points": 19,
           "goalsFor": 21,
-          "goalsAgainst": 27,
-          "goalDifference": -6
+          "goalsAgainst": 28,
+          "goalDifference": -7
         },
         {
           "position": 16,
+          "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 4,
+          "draw": 7,
+          "lost": 9,
+          "points": 19,
+          "goalsFor": 20,
+          "goalsAgainst": 29,
+          "goalDifference": -9
+        },
+        {
+          "position": 17,
           "team": {
             "id": 5890,
             "name": "US Lecce",
@@ -331,25 +350,6 @@
           "goalsFor": 13,
           "goalsAgainst": 27,
           "goalDifference": -14
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 19,
-          "form": null,
-          "won": 3,
-          "draw": 7,
-          "lost": 9,
-          "points": 16,
-          "goalsFor": 19,
-          "goalsAgainst": 29,
-          "goalDifference": -10
         },
         {
           "position": 18,
