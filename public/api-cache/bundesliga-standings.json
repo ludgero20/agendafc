@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 10,
+          "draw": 2,
+          "lost": 5,
+          "points": 32,
+          "goalsFor": 31,
+          "goalsAgainst": 24,
+          "goalDifference": 7
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -86,7 +105,7 @@
           "goalDifference": 11
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
@@ -103,25 +122,6 @@
           "goalsFor": 34,
           "goalsAgainst": 24,
           "goalDifference": 10
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 9,
-          "draw": 2,
-          "lost": 5,
-          "points": 29,
-          "goalsFor": 29,
-          "goalsAgainst": 23,
-          "goalDifference": 6
         },
         {
           "position": 6,
@@ -151,15 +151,15 @@
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 16,
+          "playedGames": 17,
           "form": null,
           "won": 7,
           "draw": 5,
-          "lost": 4,
+          "lost": 5,
           "points": 26,
-          "goalsFor": 33,
-          "goalsAgainst": 33,
-          "goalDifference": 0
+          "goalsFor": 34,
+          "goalsAgainst": 35,
+          "goalDifference": -1
         },
         {
           "position": 8,
