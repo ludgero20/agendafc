@@ -5656,9 +5656,9 @@
       "strTime": "21:30:00",
       "strHomeTeam": "Houston Rockets",
       "strAwayTeam": "Oklahoma City Thunder",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "91",
+      "intAwayScore": "111",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447400",
@@ -5676,9 +5676,9 @@
       "strTime": "22:30:00",
       "strHomeTeam": "Dallas Mavericks",
       "strAwayTeam": "Utah Jazz",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "144",
+      "intAwayScore": "122",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447396",
@@ -5686,9 +5686,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "San Antonio Spurs",
       "strAwayTeam": "Milwaukee Bucks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "119",
+      "intAwayScore": "101",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447394",
@@ -5696,9 +5696,9 @@
       "strTime": "21:30:00",
       "strHomeTeam": "Miami Heat",
       "strAwayTeam": "Boston Celtics",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "114",
+      "intAwayScore": "119",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447393",
@@ -5706,9 +5706,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Detroit Pistons",
       "strAwayTeam": "Phoenix Suns",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "108",
+      "intAwayScore": "105",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447398",
@@ -5736,9 +5736,9 @@
       "strTime": "16:00:00",
       "strHomeTeam": "Orlando Magic",
       "strAwayTeam": "Memphis Grizzlies",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "118",
+      "intAwayScore": "111",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447405",
