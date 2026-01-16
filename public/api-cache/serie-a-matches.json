@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 180,
+    "count": 179,
     "first": "2026-01-16",
     "last": "2026-05-24",
     "played": 0
@@ -1948,65 +1948,6 @@
         "shortName": "Torino",
         "tla": "TOR",
         "crest": "https://crests.football-data.org/586.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 21,
-        "winner": null
-      },
-      "id": 537046,
-      "utcDate": "2026-02-08T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 24,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-07-04T12:08:05Z",
-      "homeTeam": {
-        "id": 98,
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/98.png"
-      },
-      "awayTeam": {
-        "id": 7397,
-        "name": "Como 1907",
-        "shortName": "Como 1907",
-        "tla": "COM",
-        "crest": "https://crests.football-data.org/7397.png"
       },
       "score": {
         "winner": null,
