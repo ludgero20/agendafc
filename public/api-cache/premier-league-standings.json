@@ -63,8 +63,8 @@
           "lost": 5,
           "points": 43,
           "goalsFor": 45,
-          "goalsAgainst": 20,
-          "goalDifference": 25
+          "goalsAgainst": 21,
+          "goalDifference": 24
         },
         {
           "position": 3,
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 10,
+          "draw": 6,
+          "lost": 6,
+          "points": 36,
+          "goalsFor": 33,
+          "goalsAgainst": 29,
+          "goalDifference": 4
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 66,
             "name": "Manchester United FC",
             "shortName": "Man United",
@@ -100,31 +119,31 @@
           "draw": 8,
           "lost": 5,
           "points": 35,
-          "goalsFor": 37,
+          "goalsFor": 38,
           "goalsAgainst": 32,
-          "goalDifference": 5
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 10,
-          "draw": 5,
-          "lost": 6,
-          "points": 35,
-          "goalsFor": 32,
-          "goalsAgainst": 28,
-          "goalDifference": 4
+          "goalDifference": 6
         },
         {
           "position": 6,
+          "team": {
+            "id": 61,
+            "name": "Chelsea FC",
+            "shortName": "Chelsea",
+            "tla": "CHE",
+            "crest": "https://crests.football-data.org/61.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 9,
+          "draw": 7,
+          "lost": 6,
+          "points": 34,
+          "goalsFor": 35,
+          "goalsAgainst": 24,
+          "goalDifference": 11
+        },
+        {
+          "position": 7,
           "team": {
             "id": 402,
             "name": "Brentford FC",
@@ -132,18 +151,18 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/402.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 10,
           "draw": 3,
-          "lost": 8,
+          "lost": 9,
           "points": 33,
           "goalsFor": 35,
-          "goalsAgainst": 28,
-          "goalDifference": 7
+          "goalsAgainst": 29,
+          "goalDifference": 6
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -162,25 +181,6 @@
           "goalDifference": 5
         },
         {
-          "position": 8,
-          "team": {
-            "id": 61,
-            "name": "Chelsea FC",
-            "shortName": "Chelsea",
-            "tla": "CHE",
-            "crest": "https://crests.football-data.org/61.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 6,
-          "points": 31,
-          "goalsFor": 34,
-          "goalsAgainst": 24,
-          "goalDifference": 10
-        },
-        {
           "position": 9,
           "team": {
             "id": 63,
@@ -189,12 +189,12 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 9,
-          "draw": 4,
+          "draw": 5,
           "lost": 8,
-          "points": 31,
+          "points": 32,
           "goalsFor": 30,
           "goalsAgainst": 30,
           "goalDifference": 0
@@ -208,14 +208,14 @@
             "tla": "SUN",
             "crest": "https://crests.football-data.org/71.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 7,
-          "draw": 9,
+          "draw": 10,
           "lost": 5,
-          "points": 30,
-          "goalsFor": 21,
-          "goalsAgainst": 22,
+          "points": 31,
+          "goalsFor": 22,
+          "goalsAgainst": 23,
           "goalDifference": -1
         },
         {
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 7,
+          "draw": 8,
+          "lost": 7,
+          "points": 29,
+          "goalsFor": 23,
+          "goalsAgainst": 24,
+          "goalDifference": -1
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 62,
             "name": "Everton FC",
             "shortName": "Everton",
@@ -257,25 +276,6 @@
           "goalDifference": -2
         },
         {
-          "position": 13,
-          "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 7,
-          "draw": 7,
-          "lost": 7,
-          "points": 28,
-          "goalsFor": 22,
-          "goalsAgainst": 23,
-          "goalDifference": -1
-        },
-        {
           "position": 14,
           "team": {
             "id": 73,
@@ -284,14 +284,14 @@
             "tla": "TOT",
             "crest": "https://crests.football-data.org/73.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 7,
-          "draw": 6,
+          "draw": 7,
           "lost": 8,
-          "points": 27,
-          "goalsFor": 30,
-          "goalsAgainst": 27,
+          "points": 28,
+          "goalsFor": 31,
+          "goalsAgainst": 28,
           "goalDifference": 3
         },
         {
@@ -322,12 +322,12 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 5,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 22,
+          "points": 23,
           "goalsFor": 29,
           "goalsAgainst": 37,
           "goalDifference": -8
@@ -360,14 +360,14 @@
             "tla": "WHU",
             "crest": "https://crests.football-data.org/563.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 13,
-          "points": 14,
-          "goalsFor": 22,
-          "goalsAgainst": 43,
+          "points": 15,
+          "goalsFor": 23,
+          "goalsAgainst": 44,
           "goalDifference": -21
         },
         {
@@ -379,14 +379,14 @@
             "tla": "BUR",
             "crest": "https://crests.football-data.org/328.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 3,
-          "draw": 4,
+          "draw": 5,
           "lost": 14,
-          "points": 13,
-          "goalsFor": 22,
-          "goalsAgainst": 41,
+          "points": 14,
+          "goalsFor": 23,
+          "goalsAgainst": 42,
           "goalDifference": -19
         },
         {
