@@ -37,12 +37,12 @@
             "tla": "INT",
             "crest": "https://crests.football-data.org/108.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 15,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 46,
+          "points": 47,
           "goalsFor": 43,
           "goalsAgainst": 17,
           "goalDifference": 26
@@ -208,12 +208,12 @@
             "tla": "UDI",
             "crest": "https://crests.football-data.org/115.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 7,
-          "draw": 5,
+          "draw": 6,
           "lost": 8,
-          "points": 26,
+          "points": 27,
           "goalsFor": 22,
           "goalsAgainst": 32,
           "goalDifference": -10

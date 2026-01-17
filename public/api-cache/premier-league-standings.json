@@ -59,12 +59,12 @@
           "playedGames": 22,
           "form": null,
           "won": 13,
-          "draw": 5,
-          "lost": 4,
-          "points": 44,
+          "draw": 4,
+          "lost": 5,
+          "points": 43,
           "goalsFor": 45,
-          "goalsAgainst": 19,
-          "goalDifference": 26
+          "goalsAgainst": 20,
+          "goalDifference": 25
         },
         {
           "position": 3,
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 9,
+          "draw": 8,
+          "lost": 5,
+          "points": 35,
+          "goalsFor": 37,
+          "goalsAgainst": 32,
+          "goalDifference": 5
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 64,
             "name": "Liverpool FC",
             "shortName": "Liverpool",
@@ -105,7 +124,7 @@
           "goalDifference": 4
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 402,
             "name": "Brentford FC",
@@ -122,25 +141,6 @@
           "goalsFor": 35,
           "goalsAgainst": 28,
           "goalDifference": 7
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 8,
-          "draw": 9,
-          "lost": 5,
-          "points": 33,
-          "goalsFor": 36,
-          "goalsAgainst": 32,
-          "goalDifference": 4
         },
         {
           "position": 7,
