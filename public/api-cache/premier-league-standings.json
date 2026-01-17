@@ -56,12 +56,12 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 13,
-          "draw": 4,
+          "draw": 5,
           "lost": 4,
-          "points": 43,
+          "points": 44,
           "goalsFor": 45,
           "goalsAgainst": 19,
           "goalDifference": 26
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 66,
+            "name": "Manchester United FC",
+            "shortName": "Man United",
+            "tla": "MUN",
+            "crest": "https://crests.football-data.org/66.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 8,
+          "draw": 9,
+          "lost": 5,
+          "points": 33,
+          "goalsFor": 36,
+          "goalsAgainst": 32,
+          "goalDifference": 4
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 67,
             "name": "Newcastle United FC",
             "shortName": "Newcastle",
@@ -141,25 +160,6 @@
           "goalsFor": 32,
           "goalsAgainst": 27,
           "goalDifference": 5
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 66,
-            "name": "Manchester United FC",
-            "shortName": "Man United",
-            "tla": "MUN",
-            "crest": "https://crests.football-data.org/66.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 8,
-          "draw": 8,
-          "lost": 5,
-          "points": 32,
-          "goalsFor": 36,
-          "goalsAgainst": 32,
-          "goalDifference": 4
         },
         {
           "position": 8,
