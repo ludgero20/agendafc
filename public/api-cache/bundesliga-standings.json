@@ -37,15 +37,15 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 15,
           "draw": 2,
-          "lost": 0,
+          "lost": 1,
           "points": 47,
           "goalsFor": 66,
-          "goalsAgainst": 13,
-          "goalDifference": 53
+          "goalsAgainst": 14,
+          "goalDifference": 52
         },
         {
           "position": 2,
@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 721,
+            "name": "RB Leipzig",
+            "shortName": "RB Leipzig",
+            "tla": "RBL",
+            "crest": "https://crests.football-data.org/721.png"
+          },
+          "playedGames": 17,
+          "form": null,
+          "won": 11,
+          "draw": 2,
+          "lost": 4,
+          "points": 35,
+          "goalsFor": 33,
+          "goalsAgainst": 19,
+          "goalDifference": 14
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
             "shortName": "Hoffenheim",
@@ -84,25 +103,6 @@
           "goalsFor": 35,
           "goalsAgainst": 21,
           "goalDifference": 14
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 721,
-            "name": "RB Leipzig",
-            "shortName": "RB Leipzig",
-            "tla": "RBL",
-            "crest": "https://crests.football-data.org/721.png"
-          },
-          "playedGames": 16,
-          "form": null,
-          "won": 10,
-          "draw": 2,
-          "lost": 4,
-          "points": 32,
-          "goalsFor": 32,
-          "goalsAgainst": 19,
-          "goalDifference": 13
         },
         {
           "position": 5,
