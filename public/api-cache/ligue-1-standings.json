@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
+          },
+          "playedGames": 18,
+          "form": null,
+          "won": 8,
+          "draw": 7,
+          "lost": 3,
+          "points": 31,
+          "goalsFor": 29,
+          "goalsAgainst": 24,
+          "goalDifference": 5
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
             "shortName": "Olympique Lyon",
@@ -124,26 +143,26 @@
           "goalDifference": 8
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 8,
-          "draw": 6,
-          "lost": 3,
-          "points": 30,
-          "goalsFor": 29,
-          "goalsAgainst": 24,
-          "goalDifference": 5
+          "draw": 3,
+          "lost": 7,
+          "points": 27,
+          "goalsFor": 28,
+          "goalsAgainst": 22,
+          "goalDifference": 6
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 511,
             "name": "Toulouse FC",
@@ -160,25 +179,6 @@
           "goalsFor": 29,
           "goalsAgainst": 23,
           "goalDifference": 6
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 7,
-          "draw": 4,
-          "lost": 7,
-          "points": 25,
-          "goalsFor": 26,
-          "goalsAgainst": 21,
-          "goalDifference": 5
         },
         {
           "position": 9,
@@ -259,24 +259,43 @@
         {
           "position": 13,
           "team": {
+            "id": 1045,
+            "name": "Paris FC",
+            "shortName": "Paris FC",
+            "tla": "PFC",
+            "crest": "https://crests.football-data.org/1045.png"
+          },
+          "playedGames": 18,
+          "form": null,
+          "won": 5,
+          "draw": 4,
+          "lost": 9,
+          "points": 19,
+          "goalsFor": 23,
+          "goalsAgainst": 31,
+          "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 533,
             "name": "Le Havre AC",
             "shortName": "Le Havre",
             "tla": "HAC",
             "crest": "https://crests.football-data.org/533.png"
           },
-          "playedGames": 17,
+          "playedGames": 18,
           "form": null,
           "won": 4,
-          "draw": 6,
+          "draw": 7,
           "lost": 7,
-          "points": 18,
+          "points": 19,
           "goalsFor": 15,
           "goalsAgainst": 23,
           "goalDifference": -8
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 522,
             "name": "OGC Nice",
@@ -295,25 +314,6 @@
           "goalDifference": -14
         },
         {
-          "position": 15,
-          "team": {
-            "id": 1045,
-            "name": "Paris FC",
-            "shortName": "Paris FC",
-            "tla": "PFC",
-            "crest": "https://crests.football-data.org/1045.png"
-          },
-          "playedGames": 17,
-          "form": null,
-          "won": 4,
-          "draw": 4,
-          "lost": 9,
-          "points": 16,
-          "goalsFor": 22,
-          "goalsAgainst": 31,
-          "goalDifference": -9
-        },
-        {
           "position": 16,
           "team": {
             "id": 543,
@@ -322,37 +322,18 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 17,
-          "form": null,
-          "won": 3,
-          "draw": 5,
-          "lost": 9,
-          "points": 14,
-          "goalsFor": 16,
-          "goalsAgainst": 28,
-          "goalDifference": -12
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 545,
-            "name": "FC Metz",
-            "shortName": "FC Metz",
-            "tla": "FCM",
-            "crest": "https://crests.football-data.org/545.png"
-          },
           "playedGames": 18,
           "form": null,
           "won": 3,
-          "draw": 4,
-          "lost": 11,
-          "points": 13,
-          "goalsFor": 18,
-          "goalsAgainst": 38,
-          "goalDifference": -20
+          "draw": 5,
+          "lost": 10,
+          "points": 14,
+          "goalsFor": 16,
+          "goalsAgainst": 29,
+          "goalDifference": -13
         },
         {
-          "position": 18,
+          "position": 17,
           "team": {
             "id": 519,
             "name": "AJ Auxerre",
@@ -369,6 +350,25 @@
           "goalsFor": 14,
           "goalsAgainst": 28,
           "goalDifference": -14
+        },
+        {
+          "position": 18,
+          "team": {
+            "id": 545,
+            "name": "FC Metz",
+            "shortName": "FC Metz",
+            "tla": "FCM",
+            "crest": "https://crests.football-data.org/545.png"
+          },
+          "playedGames": 18,
+          "form": null,
+          "won": 3,
+          "draw": 3,
+          "lost": 12,
+          "points": 12,
+          "goalsFor": 19,
+          "goalsAgainst": 40,
+          "goalDifference": -21
         }
       ]
     }

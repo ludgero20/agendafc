@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 58,
+            "name": "Aston Villa FC",
+            "shortName": "Aston Villa",
+            "tla": "AVL",
+            "crest": "https://crests.football-data.org/58.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 13,
+          "draw": 5,
+          "lost": 4,
+          "points": 44,
+          "goalsFor": 33,
+          "goalsAgainst": 24,
+          "goalDifference": 9
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 65,
             "name": "Manchester City FC",
             "shortName": "Man City",
@@ -65,25 +84,6 @@
           "goalsFor": 45,
           "goalsAgainst": 21,
           "goalDifference": 24
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 58,
-            "name": "Aston Villa FC",
-            "shortName": "Aston Villa",
-            "tla": "AVL",
-            "crest": "https://crests.football-data.org/58.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 13,
-          "draw": 4,
-          "lost": 4,
-          "points": 43,
-          "goalsFor": 33,
-          "goalsAgainst": 24,
-          "goalDifference": 9
         },
         {
           "position": 4,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 62,
+            "name": "Everton FC",
+            "shortName": "Everton",
+            "tla": "EVE",
+            "crest": "https://crests.football-data.org/62.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 8,
+          "draw": 6,
+          "lost": 8,
+          "points": 30,
+          "goalsFor": 23,
+          "goalsAgainst": 25,
+          "goalDifference": -2
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
             "shortName": "Brighton Hove",
@@ -236,25 +255,6 @@
           "goalsFor": 31,
           "goalsAgainst": 28,
           "goalDifference": 3
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 62,
-            "name": "Everton FC",
-            "shortName": "Everton",
-            "tla": "EVE",
-            "crest": "https://crests.football-data.org/62.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 8,
-          "draw": 5,
-          "lost": 8,
-          "points": 29,
-          "goalsFor": 23,
-          "goalsAgainst": 25,
-          "goalDifference": -2
         },
         {
           "position": 13,
