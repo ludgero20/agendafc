@@ -56,12 +56,12 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 12,
-          "draw": 7,
+          "draw": 8,
           "lost": 1,
-          "points": 43,
+          "points": 44,
           "goalsFor": 33,
           "goalsAgainst": 16,
           "goalDifference": 17
@@ -100,9 +100,9 @@
           "draw": 0,
           "lost": 7,
           "points": 42,
-          "goalsFor": 25,
+          "goalsFor": 26,
           "goalsAgainst": 12,
-          "goalDifference": 13
+          "goalDifference": 14
         },
         {
           "position": 5,
@@ -272,8 +272,8 @@
           "lost": 10,
           "points": 23,
           "goalsFor": 21,
-          "goalsAgainst": 33,
-          "goalDifference": -12
+          "goalsAgainst": 34,
+          "goalDifference": -13
         },
         {
           "position": 14,
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 5890,
+            "name": "US Lecce",
+            "shortName": "Lecce",
+            "tla": "USL",
+            "crest": "https://crests.football-data.org/5890.png"
+          },
+          "playedGames": 21,
+          "form": null,
+          "won": 4,
+          "draw": 6,
+          "lost": 11,
+          "points": 18,
+          "goalsFor": 13,
+          "goalsAgainst": 28,
+          "goalDifference": -15
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 99,
             "name": "ACF Fiorentina",
             "shortName": "Fiorentina",
@@ -350,25 +369,6 @@
           "goalsFor": 23,
           "goalsAgainst": 32,
           "goalDifference": -9
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 5890,
-            "name": "US Lecce",
-            "shortName": "Lecce",
-            "tla": "USL",
-            "crest": "https://crests.football-data.org/5890.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 11,
-          "points": 17,
-          "goalsFor": 13,
-          "goalsAgainst": 28,
-          "goalDifference": -15
         },
         {
           "position": 19,
