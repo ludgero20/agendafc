@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 21,
+          "form": null,
+          "won": 14,
+          "draw": 0,
+          "lost": 7,
+          "points": 42,
+          "goalsFor": 25,
+          "goalsAgainst": 12,
+          "goalDifference": 13
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 109,
             "name": "Juventus FC",
             "shortName": "Juventus",
@@ -103,25 +122,6 @@
           "goalsFor": 32,
           "goalsAgainst": 17,
           "goalDifference": 15
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 13,
-          "draw": 0,
-          "lost": 7,
-          "points": 39,
-          "goalsFor": 24,
-          "goalsAgainst": 12,
-          "goalDifference": 12
         },
         {
           "position": 6,
@@ -265,15 +265,15 @@
             "tla": "TOR",
             "crest": "https://crests.football-data.org/586.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 6,
           "draw": 5,
-          "lost": 9,
+          "lost": 10,
           "points": 23,
           "goalsFor": 21,
-          "goalsAgainst": 32,
-          "goalDifference": -11
+          "goalsAgainst": 33,
+          "goalDifference": -12
         },
         {
           "position": 14,
