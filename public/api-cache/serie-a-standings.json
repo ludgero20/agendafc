@@ -170,12 +170,12 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 8,
-          "draw": 6,
+          "draw": 7,
           "lost": 6,
-          "points": 30,
+          "points": 31,
           "goalsFor": 29,
           "goalsAgainst": 22,
           "goalDifference": 7
@@ -360,12 +360,12 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 2,
-          "draw": 8,
+          "draw": 9,
           "lost": 10,
-          "points": 14,
+          "points": 15,
           "goalsFor": 21,
           "goalsAgainst": 31,
           "goalDifference": -10
