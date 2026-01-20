@@ -430,6 +430,25 @@
         {
           "position": 22,
           "team": {
+            "id": 851,
+            "name": "Club Brugge KV",
+            "shortName": "Club Brugge",
+            "tla": "BRU",
+            "crest": "https://crests.football-data.org/851.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 4,
+          "points": 7,
+          "goalsFor": 10,
+          "goalsAgainst": 16,
+          "goalDifference": -6
+        },
+        {
+          "position": 23,
+          "team": {
             "id": 611,
             "name": "Qarabağ Ağdam FK",
             "shortName": "Qarabağ Ağdam",
@@ -447,7 +466,7 @@
           "goalDifference": -3
         },
         {
-          "position": 23,
+          "position": 24,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -466,7 +485,7 @@
           "goalDifference": -5
         },
         {
-          "position": 24,
+          "position": 25,
           "team": {
             "id": 1876,
             "name": "FC København",
@@ -485,7 +504,7 @@
           "goalDifference": -6
         },
         {
-          "position": 25,
+          "position": 26,
           "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
@@ -504,7 +523,7 @@
           "goalDifference": -2
         },
         {
-          "position": 26,
+          "position": 27,
           "team": {
             "id": 11034,
             "name": "Paphos FC",
@@ -523,7 +542,7 @@
           "goalDifference": -5
         },
         {
-          "position": 27,
+          "position": 28,
           "team": {
             "id": 3929,
             "name": "Royale Union Saint-Gilloise",
@@ -542,7 +561,7 @@
           "goalDifference": -8
         },
         {
-          "position": 28,
+          "position": 29,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -561,7 +580,7 @@
           "goalDifference": -5
         },
         {
-          "position": 29,
+          "position": 30,
           "team": {
             "id": 654,
             "name": "PAE Olympiakos SFP",
@@ -580,32 +599,13 @@
           "goalDifference": -7
         },
         {
-          "position": 30,
+          "position": 31,
           "team": {
             "id": 19,
             "name": "Eintracht Frankfurt",
             "shortName": "Frankfurt",
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 1,
-          "draw": 1,
-          "lost": 4,
-          "points": 4,
-          "goalsFor": 8,
-          "goalsAgainst": 16,
-          "goalDifference": -8
-        },
-        {
-          "position": 31,
-          "team": {
-            "id": 851,
-            "name": "Club Brugge KV",
-            "shortName": "Club Brugge",
-            "tla": "BRU",
-            "crest": "https://crests.football-data.org/851.png"
           },
           "playedGames": 6,
           "form": null,
@@ -702,15 +702,15 @@
             "tla": "KAI",
             "crest": "https://crests.football-data.org/10601.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 0,
           "draw": 1,
-          "lost": 5,
+          "lost": 6,
           "points": 1,
           "goalsFor": 4,
-          "goalsAgainst": 15,
-          "goalDifference": -11
+          "goalsAgainst": 17,
+          "goalDifference": -13
         }
       ]
     }

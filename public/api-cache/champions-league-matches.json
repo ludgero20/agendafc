@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 81,
+    "count": 80,
     "first": "2026-01-20",
     "last": "2026-05-30",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/CL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2077,
-        "name": "Europe",
-        "code": "EUR",
-        "flag": "https://crests.football-data.org/EUR.svg"
-      },
-      "competition": {
-        "id": 2001,
-        "name": "UEFA Champions League",
-        "code": "CL",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CL.png"
-      },
-      "season": {
-        "id": 2454,
-        "startDate": "2025-09-16",
-        "endDate": "2026-05-30",
-        "currentMatchday": 7,
-        "winner": null
-      },
-      "id": 551996,
-      "utcDate": "2026-01-20T15:30:00Z",
-      "status": "TIMED",
-      "matchday": 7,
-      "stage": "LEAGUE_STAGE",
-      "group": null,
-      "lastUpdated": "2026-01-14T01:32:01Z",
-      "homeTeam": {
-        "id": 10601,
-        "name": "FK Kairat",
-        "shortName": "FK Kairat",
-        "tla": "KAI",
-        "crest": "https://crests.football-data.org/10601.png"
-      },
-      "awayTeam": {
-        "id": 851,
-        "name": "Club Brugge KV",
-        "shortName": "Club Brugge",
-        "tla": "BRU",
-        "crest": "https://crests.football-data.org/851.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 43952,
-          "name": "Donatas Rumšas",
-          "type": "REFEREE",
-          "nationality": "Lithuania"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2077,
@@ -142,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15824,
+          "name": "Sven Jablonski",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
