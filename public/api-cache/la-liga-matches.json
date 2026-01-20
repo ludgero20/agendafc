@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 180,
+    "count": 181,
     "first": "2026-01-23",
     "last": "2026-05-24",
     "played": 0
@@ -46,7 +46,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T01:32:01Z",
+      "lastUpdated": "2026-01-20T01:32:00Z",
       "homeTeam": {
         "id": 88,
         "name": "Levante UD",
@@ -223,7 +223,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T01:32:01Z",
+      "lastUpdated": "2026-01-20T01:32:01Z",
       "homeTeam": {
         "id": 559,
         "name": "Sevilla FC",
@@ -282,7 +282,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 94,
         "name": "Villarreal CF",
@@ -459,7 +459,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T01:32:02Z",
+      "lastUpdated": "2026-01-20T01:32:02Z",
       "homeTeam": {
         "id": 92,
         "name": "Real Sociedad de Fútbol",
@@ -577,7 +577,7 @@
       "matchday": 21,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-05T20:21:02Z",
+      "lastUpdated": "2026-01-20T01:32:03Z",
       "homeTeam": {
         "id": 298,
         "name": "Girona FC",
@@ -931,7 +931,7 @@
       "matchday": 22,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -1698,7 +1698,7 @@
       "matchday": 23,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 95,
         "name": "Valencia CF",
@@ -1993,7 +1993,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -2361,6 +2361,65 @@
         "shortName": "Celta",
         "tla": "CEL",
         "crest": "https://crests.football-data.org/558.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2224,
+        "name": "Spain",
+        "code": "ESP",
+        "flag": "https://crests.football-data.org/760.svg"
+      },
+      "competition": {
+        "id": 2014,
+        "name": "Primera Division",
+        "code": "PD",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/laliga.png"
+      },
+      "season": {
+        "id": 2429,
+        "startDate": "2025-08-17",
+        "endDate": "2026-05-24",
+        "currentMatchday": 20,
+        "winner": null
+      },
+      "id": 544364,
+      "utcDate": "2026-02-18T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 16,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-01-20T00:20:54Z",
+      "homeTeam": {
+        "id": 88,
+        "name": "Levante UD",
+        "shortName": "Levante",
+        "tla": "LEV",
+        "crest": "https://crests.football-data.org/88.png"
+      },
+      "awayTeam": {
+        "id": 94,
+        "name": "Villarreal CF",
+        "shortName": "Villarreal",
+        "tla": "VIL",
+        "crest": "https://crests.football-data.org/94.png"
       },
       "score": {
         "winner": null,
@@ -2819,7 +2878,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 79,
         "name": "CA Osasuna",
@@ -3468,7 +3527,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -3704,7 +3763,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 558,
         "name": "RC Celta de Vigo",
@@ -4530,7 +4589,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -5179,7 +5238,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -5592,7 +5651,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 89,
         "name": "RCD Mallorca",
@@ -6418,7 +6477,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -6595,7 +6654,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 90,
         "name": "Real Betis Balompié",
@@ -7421,7 +7480,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -7893,7 +7952,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 80,
         "name": "RCD Espanyol de Barcelona",
@@ -8424,7 +8483,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 81,
         "name": "FC Barcelona",
@@ -9427,7 +9486,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -10017,7 +10076,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 559,
         "name": "Sevilla FC",
@@ -10430,7 +10489,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-01-19T00:20:55Z",
+      "lastUpdated": "2026-01-20T00:20:54Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
