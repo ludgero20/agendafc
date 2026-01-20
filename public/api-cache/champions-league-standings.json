@@ -94,15 +94,15 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 6,
+          "playedGames": 7,
           "form": null,
           "won": 4,
           "draw": 1,
-          "lost": 1,
+          "lost": 2,
           "points": 13,
           "goalsFor": 12,
-          "goalsAgainst": 6,
-          "goalDifference": 6
+          "goalsAgainst": 8,
+          "goalDifference": 4
         },
         {
           "position": 5,
@@ -442,9 +442,9 @@
           "draw": 1,
           "lost": 4,
           "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 16,
-          "goalDifference": -6
+          "goalsFor": 12,
+          "goalsAgainst": 17,
+          "goalDifference": -5
         },
         {
           "position": 23,
@@ -506,6 +506,25 @@
         {
           "position": 26,
           "team": {
+            "id": 5721,
+            "name": "FK Bodø/Glimt",
+            "shortName": "Bodø/Glimt",
+            "tla": "FK",
+            "crest": "https://crests.football-data.org/5721.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 1,
+          "draw": 3,
+          "lost": 3,
+          "points": 6,
+          "goalsFor": 11,
+          "goalsAgainst": 13,
+          "goalDifference": -2
+        },
+        {
+          "position": 27,
+          "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
             "shortName": "SL Benfica",
@@ -523,7 +542,7 @@
           "goalDifference": -2
         },
         {
-          "position": 27,
+          "position": 28,
           "team": {
             "id": 11034,
             "name": "Paphos FC",
@@ -542,7 +561,7 @@
           "goalDifference": -5
         },
         {
-          "position": 28,
+          "position": 29,
           "team": {
             "id": 3929,
             "name": "Royale Union Saint-Gilloise",
@@ -561,7 +580,7 @@
           "goalDifference": -8
         },
         {
-          "position": 29,
+          "position": 30,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -580,7 +599,7 @@
           "goalDifference": -5
         },
         {
-          "position": 30,
+          "position": 31,
           "team": {
             "id": 654,
             "name": "PAE Olympiakos SFP",
@@ -599,7 +618,7 @@
           "goalDifference": -7
         },
         {
-          "position": 31,
+          "position": 32,
           "team": {
             "id": 19,
             "name": "Eintracht Frankfurt",
@@ -616,25 +635,6 @@
           "goalsFor": 8,
           "goalsAgainst": 16,
           "goalDifference": -8
-        },
-        {
-          "position": 32,
-          "team": {
-            "id": 5721,
-            "name": "FK Bodø/Glimt",
-            "shortName": "Bodø/Glimt",
-            "tla": "FK",
-            "crest": "https://crests.football-data.org/5721.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 0,
-          "draw": 3,
-          "lost": 3,
-          "points": 3,
-          "goalsFor": 9,
-          "goalsAgainst": 13,
-          "goalDifference": -4
         },
         {
           "position": 33,
@@ -708,9 +708,9 @@
           "draw": 1,
           "lost": 6,
           "points": 1,
-          "goalsFor": 4,
-          "goalsAgainst": 17,
-          "goalDifference": -13
+          "goalsFor": 5,
+          "goalsAgainst": 19,
+          "goalDifference": -14
         }
       ]
     }
