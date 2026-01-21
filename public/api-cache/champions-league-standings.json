@@ -373,25 +373,6 @@
         {
           "position": 19,
           "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 3,
-          "lost": 2,
-          "points": 9,
-          "goalsFor": 8,
-          "goalsAgainst": 14,
-          "goalDifference": -6
-        },
-        {
-          "position": 20,
-          "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
             "shortName": "Leverkusen",
@@ -407,6 +388,25 @@
           "goalsFor": 10,
           "goalsAgainst": 14,
           "goalDifference": -4
+        },
+        {
+          "position": 20,
+          "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 2,
+          "draw": 3,
+          "lost": 2,
+          "points": 9,
+          "goalsFor": 8,
+          "goalsAgainst": 14,
+          "goalDifference": -6
         },
         {
           "position": 21,
@@ -487,25 +487,6 @@
         {
           "position": 25,
           "team": {
-            "id": 851,
-            "name": "Club Brugge KV",
-            "shortName": "Club Brugge",
-            "tla": "BRU",
-            "crest": "https://crests.football-data.org/851.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 4,
-          "points": 7,
-          "goalsFor": 12,
-          "goalsAgainst": 17,
-          "goalDifference": -5
-        },
-        {
-          "position": 26,
-          "team": {
             "id": 611,
             "name": "Qarabağ Ağdam FK",
             "shortName": "Qarabağ Ağdam",
@@ -521,6 +502,25 @@
           "goalsFor": 10,
           "goalsAgainst": 13,
           "goalDifference": -3
+        },
+        {
+          "position": 26,
+          "team": {
+            "id": 851,
+            "name": "Club Brugge KV",
+            "shortName": "Club Brugge",
+            "tla": "BRU",
+            "crest": "https://crests.football-data.org/851.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 4,
+          "points": 7,
+          "goalsFor": 12,
+          "goalsAgainst": 17,
+          "goalDifference": -5
         },
         {
           "position": 27,
