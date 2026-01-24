@@ -132,12 +132,12 @@
             "tla": "COM",
             "crest": "https://crests.football-data.org/7397.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 10,
-          "draw": 7,
+          "draw": 8,
           "lost": 4,
-          "points": 37,
+          "points": 38,
           "goalsFor": 31,
           "goalsAgainst": 16,
           "goalDifference": 15
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 586,
+            "name": "Torino FC",
+            "shortName": "Torino",
+            "tla": "TOR",
+            "crest": "https://crests.football-data.org/586.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 6,
+          "draw": 6,
+          "lost": 10,
+          "points": 24,
+          "goalsFor": 21,
+          "goalsAgainst": 34,
+          "goalDifference": -13
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 471,
             "name": "US Sassuolo Calcio",
             "shortName": "Sassuolo",
@@ -238,7 +257,7 @@
           "goalDifference": -5
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 457,
             "name": "US Cremonese",
@@ -257,7 +276,7 @@
           "goalDifference": -8
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -274,25 +293,6 @@
           "goalsFor": 14,
           "goalsAgainst": 22,
           "goalDifference": -8
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 586,
-            "name": "Torino FC",
-            "shortName": "Torino",
-            "tla": "TOR",
-            "crest": "https://crests.football-data.org/586.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 10,
-          "points": 23,
-          "goalsFor": 21,
-          "goalsAgainst": 34,
-          "goalDifference": -13
         },
         {
           "position": 15,
