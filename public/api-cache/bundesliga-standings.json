@@ -56,15 +56,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 6,
           "lost": 1,
-          "points": 39,
-          "goalsFor": 35,
+          "points": 42,
+          "goalsFor": 36,
           "goalsAgainst": 17,
-          "goalDifference": 18
+          "goalDifference": 19
         },
         {
           "position": 3,
@@ -189,15 +189,15 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 6,
           "draw": 6,
-          "lost": 6,
+          "lost": 7,
           "points": 24,
           "goalsFor": 24,
-          "goalsAgainst": 27,
-          "goalDifference": -3
+          "goalsAgainst": 28,
+          "goalDifference": -4
         },
         {
           "position": 10,

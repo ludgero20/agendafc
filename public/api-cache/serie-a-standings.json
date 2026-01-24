@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 104,
+            "name": "Cagliari Calcio",
+            "shortName": "Cagliari",
+            "tla": "CAG",
+            "crest": "https://crests.football-data.org/104.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 6,
+          "draw": 7,
+          "lost": 9,
+          "points": 25,
+          "goalsFor": 24,
+          "goalsAgainst": 30,
+          "goalDifference": -6
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 471,
             "name": "US Sassuolo Calcio",
             "shortName": "Sassuolo",
@@ -238,7 +257,7 @@
           "goalDifference": -5
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 457,
             "name": "US Cremonese",
@@ -257,7 +276,7 @@
           "goalDifference": -8
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
@@ -276,7 +295,7 @@
           "goalDifference": -8
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -293,25 +312,6 @@
           "goalsFor": 21,
           "goalsAgainst": 40,
           "goalDifference": -19
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 104,
-            "name": "Cagliari Calcio",
-            "shortName": "Cagliari",
-            "tla": "CAG",
-            "crest": "https://crests.football-data.org/104.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 5,
-          "draw": 7,
-          "lost": 9,
-          "points": 22,
-          "goalsFor": 22,
-          "goalsAgainst": 30,
-          "goalDifference": -8
         },
         {
           "position": 16,
@@ -341,15 +341,15 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 3,
           "draw": 8,
-          "lost": 10,
+          "lost": 11,
           "points": 17,
           "goalsFor": 23,
-          "goalsAgainst": 32,
-          "goalDifference": -9
+          "goalsAgainst": 34,
+          "goalDifference": -11
         },
         {
           "position": 18,

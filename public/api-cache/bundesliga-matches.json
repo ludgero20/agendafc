@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 141,
-    "first": "2026-01-24",
+    "count": 140,
+    "first": "2026-01-25",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/BL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 19,
-        "winner": null
-      },
-      "id": 540568,
-      "utcDate": "2026-01-24T17:30:00Z",
-      "status": "TIMED",
-      "matchday": 19,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-01-18T01:32:02Z",
-      "homeTeam": {
-        "id": 28,
-        "name": "1. FC Union Berlin",
-        "shortName": "Union Berlin",
-        "tla": "UNB",
-        "crest": "https://crests.football-data.org/28.png"
-      },
-      "awayTeam": {
-        "id": 4,
-        "name": "Borussia Dortmund",
-        "shortName": "Dortmund",
-        "tla": "BVB",
-        "crest": "https://crests.football-data.org/4.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57504,
-          "name": "Robert Hartmann",
-          "type": "REFEREE",
-          "nationality": "Germany"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2088,

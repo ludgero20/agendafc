@@ -56,12 +56,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 14,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 45,
+          "points": 46,
           "goalsFor": 50,
           "goalsAgainst": 9,
           "goalDifference": 41
@@ -134,13 +134,13 @@
           },
           "playedGames": 19,
           "form": null,
-          "won": 8,
-          "draw": 4,
+          "won": 9,
+          "draw": 3,
           "lost": 7,
-          "points": 28,
-          "goalsFor": 25,
+          "points": 30,
+          "goalsFor": 26,
           "goalsAgainst": 26,
-          "goalDifference": -1
+          "goalDifference": 0
         },
         {
           "position": 7,
@@ -259,11 +259,11 @@
         {
           "position": 13,
           "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
+            "id": 712,
+            "name": "FC Arouca",
+            "shortName": "Arouca",
+            "tla": "FCA",
+            "crest": "https://crests.football-data.org/712.png"
           },
           "playedGames": 19,
           "form": null,
@@ -271,9 +271,9 @@
           "draw": 6,
           "lost": 9,
           "points": 18,
-          "goalsFor": 14,
-          "goalsAgainst": 20,
-          "goalDifference": -6
+          "goalsFor": 19,
+          "goalsAgainst": 42,
+          "goalDifference": -23
         },
         {
           "position": 14,
@@ -297,21 +297,21 @@
         {
           "position": 15,
           "team": {
-            "id": 712,
-            "name": "FC Arouca",
-            "shortName": "Arouca",
-            "tla": "FCA",
-            "crest": "https://crests.football-data.org/712.png"
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 4,
           "draw": 5,
-          "lost": 9,
+          "lost": 10,
           "points": 17,
-          "goalsFor": 19,
-          "goalsAgainst": 42,
-          "goalDifference": -23
+          "goalsFor": 14,
+          "goalsAgainst": 21,
+          "goalDifference": -7
         },
         {
           "position": 16,
