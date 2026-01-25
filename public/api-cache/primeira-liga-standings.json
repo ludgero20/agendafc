@@ -221,24 +221,43 @@
         {
           "position": 11,
           "team": {
+            "id": 5529,
+            "name": "CD Nacional",
+            "shortName": "CD Nacional",
+            "tla": "CDN",
+            "crest": "https://crests.football-data.org/5529.png"
+          },
+          "playedGames": 19,
+          "form": null,
+          "won": 5,
+          "draw": 5,
+          "lost": 9,
+          "points": 20,
+          "goalsFor": 23,
+          "goalsAgainst": 28,
+          "goalDifference": -5
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 496,
             "name": "Rio Ave FC",
             "shortName": "Rio Ave",
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 4,
           "draw": 8,
-          "lost": 6,
+          "lost": 7,
           "points": 20,
           "goalsFor": 22,
-          "goalsAgainst": 31,
-          "goalDifference": -9
+          "goalsAgainst": 32,
+          "goalDifference": -10
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -255,25 +274,6 @@
           "goalsFor": 23,
           "goalsAgainst": 32,
           "goalDifference": -9
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 5529,
-            "name": "CD Nacional",
-            "shortName": "CD Nacional",
-            "tla": "CDN",
-            "crest": "https://crests.football-data.org/5529.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 9,
-          "points": 17,
-          "goalsFor": 22,
-          "goalsAgainst": 28,
-          "goalDifference": -6
         },
         {
           "position": 14,
