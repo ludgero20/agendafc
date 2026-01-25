@@ -75,12 +75,12 @@
             "tla": "BEN",
             "crest": "https://crests.football-data.org/1903.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 12,
-          "draw": 6,
+          "draw": 7,
           "lost": 0,
-          "points": 42,
+          "points": 43,
           "goalsFor": 38,
           "goalsAgainst": 11,
           "goalDifference": 27
@@ -151,12 +151,12 @@
             "tla": "FAM",
             "crest": "https://crests.football-data.org/5531.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 7,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 26,
+          "points": 27,
           "goalsFor": 21,
           "goalsAgainst": 14,
           "goalDifference": 7
@@ -233,12 +233,31 @@
           "draw": 5,
           "lost": 9,
           "points": 20,
-          "goalsFor": 23,
+          "goalsFor": 26,
           "goalsAgainst": 28,
-          "goalDifference": -5
+          "goalDifference": -2
         },
         {
           "position": 12,
+          "team": {
+            "id": 9136,
+            "name": "CF Estrela da Amadora",
+            "shortName": "Amadora",
+            "tla": "AMA",
+            "crest": "https://crests.football-data.org/9136.png"
+          },
+          "playedGames": 19,
+          "form": null,
+          "won": 4,
+          "draw": 8,
+          "lost": 7,
+          "points": 20,
+          "goalsFor": 23,
+          "goalsAgainst": 32,
+          "goalDifference": -9
+        },
+        {
+          "position": 13,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -253,27 +272,8 @@
           "lost": 7,
           "points": 20,
           "goalsFor": 22,
-          "goalsAgainst": 32,
-          "goalDifference": -10
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 9136,
-            "name": "CF Estrela da Amadora",
-            "shortName": "Amadora",
-            "tla": "AMA",
-            "crest": "https://crests.football-data.org/9136.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 4,
-          "draw": 7,
-          "lost": 7,
-          "points": 19,
-          "goalsFor": 23,
-          "goalsAgainst": 32,
-          "goalDifference": -9
+          "goalsAgainst": 35,
+          "goalDifference": -13
         },
         {
           "position": 14,
@@ -341,12 +341,12 @@
             "tla": "TON",
             "crest": "https://crests.football-data.org/1049.png"
           },
-          "playedGames": 18,
+          "playedGames": 19,
           "form": null,
           "won": 3,
-          "draw": 3,
+          "draw": 4,
           "lost": 12,
-          "points": 12,
+          "points": 13,
           "goalsFor": 12,
           "goalsAgainst": 30,
           "goalDifference": -18

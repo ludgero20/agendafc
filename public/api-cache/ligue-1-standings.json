@@ -100,9 +100,9 @@
           "draw": 3,
           "lost": 5,
           "points": 36,
-          "goalsFor": 28,
-          "goalsAgainst": 18,
-          "goalDifference": 10
+          "goalsFor": 32,
+          "goalsAgainst": 20,
+          "goalDifference": 12
         },
         {
           "position": 5,
@@ -153,13 +153,13 @@
           },
           "playedGames": 19,
           "form": null,
-          "won": 7,
-          "draw": 6,
+          "won": 8,
+          "draw": 5,
           "lost": 6,
-          "points": 27,
-          "goalsFor": 29,
+          "points": 29,
+          "goalsFor": 31,
           "goalsAgainst": 23,
-          "goalDifference": 6
+          "goalDifference": 8
         },
         {
           "position": 8,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 512,
-            "name": "Stade Brestois 29",
-            "shortName": "Brest",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/512.png"
-          },
-          "playedGames": 19,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 8,
-          "points": 23,
-          "goalsFor": 24,
-          "goalsAgainst": 29,
-          "goalDifference": -5
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 532,
             "name": "Angers SCO",
             "shortName": "Angers SCO",
@@ -255,6 +236,25 @@
           "goalsFor": 20,
           "goalsAgainst": 25,
           "goalDifference": -5
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 512,
+            "name": "Stade Brestois 29",
+            "shortName": "Brest",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/512.png"
+          },
+          "playedGames": 19,
+          "form": null,
+          "won": 6,
+          "draw": 4,
+          "lost": 9,
+          "points": 22,
+          "goalsFor": 24,
+          "goalsAgainst": 31,
+          "goalDifference": -7
         },
         {
           "position": 13,
@@ -366,9 +366,9 @@
           "draw": 3,
           "lost": 13,
           "points": 12,
-          "goalsFor": 19,
-          "goalsAgainst": 41,
-          "goalDifference": -22
+          "goalsFor": 21,
+          "goalsAgainst": 45,
+          "goalDifference": -24
         }
       ]
     }
