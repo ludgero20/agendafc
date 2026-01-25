@@ -56,18 +56,37 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 13,
-          "draw": 7,
+          "draw": 8,
           "lost": 1,
-          "points": 46,
+          "points": 47,
           "goalsFor": 34,
           "goalsAgainst": 16,
           "goalDifference": 18
         },
         {
           "position": 3,
+          "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 14,
+          "draw": 1,
+          "lost": 7,
+          "points": 43,
+          "goalsFor": 26,
+          "goalsAgainst": 12,
+          "goalDifference": 14
+        },
+        {
+          "position": 4,
           "team": {
             "id": 113,
             "name": "SSC Napoli",
@@ -82,11 +101,11 @@
           "lost": 5,
           "points": 43,
           "goalsFor": 31,
-          "goalsAgainst": 18,
-          "goalDifference": 13
+          "goalsAgainst": 20,
+          "goalDifference": 11
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 109,
             "name": "Juventus FC",
@@ -100,28 +119,9 @@
           "draw": 6,
           "lost": 4,
           "points": 42,
-          "goalsFor": 33,
+          "goalsFor": 35,
           "goalsAgainst": 17,
-          "goalDifference": 16
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 14,
-          "draw": 0,
-          "lost": 7,
-          "points": 42,
-          "goalsFor": 26,
-          "goalsAgainst": 12,
-          "goalDifference": 14
+          "goalDifference": 18
         },
         {
           "position": 6,
