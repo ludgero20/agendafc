@@ -6406,9 +6406,9 @@
       "strTime": "22:00:00",
       "strHomeTeam": "Phoenix Suns",
       "strAwayTeam": "Miami Heat",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "102",
+      "intAwayScore": "111",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447470",
@@ -6436,9 +6436,9 @@
       "strTime": "17:00:00",
       "strHomeTeam": "Detroit Pistons",
       "strAwayTeam": "Sacramento Kings",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "139",
+      "intAwayScore": "116",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447472",
@@ -6446,9 +6446,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "San Antonio Spurs",
       "strAwayTeam": "New Orleans Pelicans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "95",
+      "intAwayScore": "104",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447471",
@@ -6456,9 +6456,9 @@
       "strTime": "21:00:00",
       "strHomeTeam": "Oklahoma City Thunder",
       "strAwayTeam": "Toronto Raptors",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "101",
+      "intAwayScore": "103",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447474",
@@ -6466,9 +6466,9 @@
       "strTime": "23:00:00",
       "strHomeTeam": "LA Clippers",
       "strAwayTeam": "Brooklyn Nets",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "126",
+      "intAwayScore": "89",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447475",
