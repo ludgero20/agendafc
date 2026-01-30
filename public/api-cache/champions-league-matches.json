@@ -7,7 +7,7 @@
   },
   "resultSet": {
     "count": 45,
-    "first": "2026-02-17",
+    "first": "2026-02-18",
     "last": "2026-05-30",
     "played": 0
   },
@@ -41,12 +41,12 @@
         "winner": null
       },
       "id": 552052,
-      "utcDate": "2026-02-17T00:00:00Z",
+      "utcDate": "2026-02-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -100,12 +100,12 @@
         "winner": null
       },
       "id": 552053,
-      "utcDate": "2026-02-17T00:00:00Z",
+      "utcDate": "2026-02-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -159,12 +159,12 @@
         "winner": null
       },
       "id": 552054,
-      "utcDate": "2026-02-17T00:00:00Z",
+      "utcDate": "2026-02-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -218,12 +218,12 @@
         "winner": null
       },
       "id": 552055,
-      "utcDate": "2026-02-17T00:00:00Z",
+      "utcDate": "2026-02-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -513,12 +513,12 @@
         "winner": null
       },
       "id": 552060,
-      "utcDate": "2026-02-24T00:00:00Z",
+      "utcDate": "2026-02-25T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -572,12 +572,12 @@
         "winner": null
       },
       "id": 552061,
-      "utcDate": "2026-02-24T00:00:00Z",
+      "utcDate": "2026-02-25T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -631,12 +631,12 @@
         "winner": null
       },
       "id": 552062,
-      "utcDate": "2026-02-24T00:00:00Z",
+      "utcDate": "2026-02-25T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -690,12 +690,12 @@
         "winner": null
       },
       "id": 552063,
-      "utcDate": "2026-02-24T00:00:00Z",
+      "utcDate": "2026-02-25T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "PLAYOFFS",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:25Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -985,12 +985,12 @@
         "winner": null
       },
       "id": 552068,
-      "utcDate": "2026-03-10T00:00:00Z",
+      "utcDate": "2026-03-11T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1044,12 +1044,12 @@
         "winner": null
       },
       "id": 552069,
-      "utcDate": "2026-03-10T00:00:00Z",
+      "utcDate": "2026-03-11T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:10Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1103,12 +1103,12 @@
         "winner": null
       },
       "id": 552070,
-      "utcDate": "2026-03-10T00:00:00Z",
+      "utcDate": "2026-03-11T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:11Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1162,12 +1162,12 @@
         "winner": null
       },
       "id": 552071,
-      "utcDate": "2026-03-10T00:00:00Z",
+      "utcDate": "2026-03-11T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 1,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:11Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1457,12 +1457,12 @@
         "winner": null
       },
       "id": 552076,
-      "utcDate": "2026-03-17T00:00:00Z",
+      "utcDate": "2026-03-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:12Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1516,12 +1516,12 @@
         "winner": null
       },
       "id": 552077,
-      "utcDate": "2026-03-17T00:00:00Z",
+      "utcDate": "2026-03-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:12Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1575,12 +1575,12 @@
         "winner": null
       },
       "id": 552078,
-      "utcDate": "2026-03-17T00:00:00Z",
+      "utcDate": "2026-03-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:12Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -1634,12 +1634,12 @@
         "winner": null
       },
       "id": 552079,
-      "utcDate": "2026-03-17T00:00:00Z",
+      "utcDate": "2026-03-18T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 2,
       "stage": "LAST_16",
       "group": null,
-      "lastUpdated": "2025-08-29T05:43:26Z",
+      "lastUpdated": "2026-01-30T14:25:12Z",
       "homeTeam": {
         "id": null,
         "name": null,
