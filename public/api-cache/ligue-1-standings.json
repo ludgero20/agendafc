@@ -75,15 +75,15 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
-          "won": 12,
+          "won": 13,
           "draw": 2,
           "lost": 5,
-          "points": 38,
-          "goalsFor": 44,
+          "points": 41,
+          "goalsFor": 45,
           "goalsAgainst": 20,
-          "goalDifference": 24
+          "goalDifference": 25
         },
         {
           "position": 4,
@@ -284,15 +284,15 @@
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 5,
           "draw": 5,
-          "lost": 9,
+          "lost": 10,
           "points": 20,
           "goalsFor": 24,
-          "goalsAgainst": 32,
-          "goalDifference": -8
+          "goalsAgainst": 33,
+          "goalDifference": -9
         },
         {
           "position": 15,
