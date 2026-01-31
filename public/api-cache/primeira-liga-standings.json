@@ -208,37 +208,18 @@
             "tla": "ALV",
             "crest": "https://crests.football-data.org/7822.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 7,
-          "draw": 2,
+          "draw": 3,
           "lost": 10,
-          "points": 23,
+          "points": 24,
           "goalsFor": 19,
           "goalsAgainst": 33,
           "goalDifference": -14
         },
         {
           "position": 11,
-          "team": {
-            "id": 496,
-            "name": "Rio Ave FC",
-            "shortName": "Rio Ave",
-            "tla": "RIO",
-            "crest": "https://crests.football-data.org/496.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 4,
-          "draw": 9,
-          "lost": 7,
-          "points": 21,
-          "goalsFor": 22,
-          "goalsAgainst": 35,
-          "goalDifference": -13
-        },
-        {
-          "position": 12,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -257,7 +238,7 @@
           "goalDifference": -2
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -265,15 +246,34 @@
             "tla": "AMA",
             "crest": "https://crests.football-data.org/9136.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 4,
-          "draw": 7,
+          "draw": 8,
           "lost": 8,
-          "points": 19,
+          "points": 20,
           "goalsFor": 23,
           "goalsAgainst": 36,
           "goalDifference": -13
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 496,
+            "name": "Rio Ave FC",
+            "shortName": "Rio Ave",
+            "tla": "RIO",
+            "crest": "https://crests.football-data.org/496.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 4,
+          "draw": 8,
+          "lost": 8,
+          "points": 20,
+          "goalsFor": 22,
+          "goalsAgainst": 38,
+          "goalDifference": -16
         },
         {
           "position": 14,
@@ -286,13 +286,13 @@
           },
           "playedGames": 20,
           "form": null,
-          "won": 4,
-          "draw": 6,
+          "won": 5,
+          "draw": 5,
           "lost": 10,
-          "points": 18,
-          "goalsFor": 20,
+          "points": 20,
+          "goalsFor": 23,
           "goalsAgainst": 44,
-          "goalDifference": -24
+          "goalDifference": -21
         },
         {
           "position": 15,

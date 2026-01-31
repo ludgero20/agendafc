@@ -37,15 +37,15 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
-          "won": 17,
+          "won": 18,
           "draw": 1,
           "lost": 3,
-          "points": 52,
-          "goalsFor": 57,
+          "points": 55,
+          "goalsFor": 58,
           "goalsAgainst": 22,
-          "goalDifference": 35
+          "goalDifference": 36
         },
         {
           "position": 2,
@@ -246,15 +246,15 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 5,
           "draw": 9,
-          "lost": 7,
+          "lost": 8,
           "points": 24,
           "goalsFor": 29,
-          "goalsAgainst": 29,
-          "goalDifference": 0
+          "goalsAgainst": 30,
+          "goalDifference": -1
         },
         {
           "position": 13,
