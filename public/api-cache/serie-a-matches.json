@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 159,
+    "count": 158,
     "first": "2026-01-31",
     "last": "2026-05-24",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/c111.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 23,
-        "winner": null
-      },
-      "id": 537041,
-      "utcDate": "2026-01-31T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-01-27T01:32:01Z",
-      "homeTeam": {
-        "id": 487,
-        "name": "AC Pisa 1909",
-        "shortName": "AC Pisa",
-        "tla": "PIS",
-        "crest": "https://crests.football-data.org/487.png"
-      },
-      "awayTeam": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 135544,
-          "name": "Alberto Arena",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
