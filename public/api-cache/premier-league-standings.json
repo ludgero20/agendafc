@@ -43,9 +43,9 @@
           "draw": 5,
           "lost": 3,
           "points": 53,
-          "goalsFor": 45,
+          "goalsFor": 46,
           "goalsAgainst": 17,
-          "goalDifference": 28
+          "goalDifference": 29
         },
         {
           "position": 2,
@@ -113,15 +113,15 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 10,
           "draw": 7,
-          "lost": 6,
+          "lost": 7,
           "points": 37,
           "goalsFor": 39,
-          "goalsAgainst": 25,
-          "goalDifference": 14
+          "goalsAgainst": 27,
+          "goalDifference": 12
         },
         {
           "position": 6,
@@ -176,8 +176,8 @@
           "draw": 7,
           "lost": 8,
           "points": 34,
-          "goalsFor": 25,
-          "goalsAgainst": 26,
+          "goalsFor": 26,
+          "goalsAgainst": 27,
           "goalDifference": -1
         },
         {
@@ -252,9 +252,9 @@
           "draw": 9,
           "lost": 7,
           "points": 33,
-          "goalsFor": 39,
+          "goalsFor": 40,
           "goalsAgainst": 43,
-          "goalDifference": -4
+          "goalDifference": -3
         },
         {
           "position": 13,
@@ -271,8 +271,8 @@
           "draw": 10,
           "lost": 7,
           "points": 31,
-          "goalsFor": 33,
-          "goalsAgainst": 31,
+          "goalsFor": 34,
+          "goalsAgainst": 32,
           "goalDifference": 2
         },
         {
@@ -329,8 +329,8 @@
           "lost": 10,
           "points": 26,
           "goalsFor": 31,
-          "goalsAgainst": 41,
-          "goalDifference": -10
+          "goalsAgainst": 42,
+          "goalDifference": -11
         },
         {
           "position": 17,
@@ -360,15 +360,15 @@
             "tla": "WHU",
             "crest": "https://crests.football-data.org/563.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 5,
           "lost": 13,
-          "points": 20,
-          "goalsFor": 27,
+          "points": 23,
+          "goalsFor": 29,
           "goalsAgainst": 45,
-          "goalDifference": -18
+          "goalDifference": -16
         },
         {
           "position": 19,
@@ -405,8 +405,8 @@
           "lost": 18,
           "points": 8,
           "goalsFor": 15,
-          "goalsAgainst": 44,
-          "goalDifference": -29
+          "goalsAgainst": 45,
+          "goalDifference": -30
         }
       ]
     }

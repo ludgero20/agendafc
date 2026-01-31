@@ -77,13 +77,13 @@
           },
           "playedGames": 20,
           "form": null,
-          "won": 13,
-          "draw": 2,
+          "won": 12,
+          "draw": 3,
           "lost": 5,
-          "points": 41,
-          "goalsFor": 45,
-          "goalsAgainst": 20,
-          "goalDifference": 25
+          "points": 39,
+          "goalsFor": 46,
+          "goalsAgainst": 22,
+          "goalDifference": 24
         },
         {
           "position": 4,
@@ -189,12 +189,12 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 6,
-          "draw": 7,
+          "draw": 8,
           "lost": 6,
-          "points": 25,
+          "points": 26,
           "goalsFor": 25,
           "goalsAgainst": 30,
           "goalDifference": -5
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 1045,
+            "name": "Paris FC",
+            "shortName": "Paris FC",
+            "tla": "PFC",
+            "crest": "https://crests.football-data.org/1045.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 5,
+          "draw": 6,
+          "lost": 9,
+          "points": 21,
+          "goalsFor": 26,
+          "goalsAgainst": 34,
+          "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 522,
             "name": "OGC Nice",
             "shortName": "Nice",
@@ -274,25 +293,6 @@
           "goalsFor": 25,
           "goalsAgainst": 36,
           "goalDifference": -11
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 1045,
-            "name": "Paris FC",
-            "shortName": "Paris FC",
-            "tla": "PFC",
-            "crest": "https://crests.football-data.org/1045.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 5,
-          "draw": 5,
-          "lost": 10,
-          "points": 20,
-          "goalsFor": 24,
-          "goalsAgainst": 33,
-          "goalDifference": -9
         },
         {
           "position": 15,
@@ -322,12 +322,12 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 3,
-          "draw": 5,
+          "draw": 6,
           "lost": 11,
-          "points": 14,
+          "points": 15,
           "goalsFor": 18,
           "goalsAgainst": 34,
           "goalDifference": -16

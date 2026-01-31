@@ -37,14 +37,14 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 16,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 50,
-          "goalsFor": 72,
-          "goalsAgainst": 16,
+          "points": 51,
+          "goalsFor": 73,
+          "goalsAgainst": 17,
           "goalDifference": 56
         },
         {
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 7,
+            "name": "Hamburger SV",
+            "shortName": "HSV",
+            "tla": "HSV",
+            "crest": "https://crests.football-data.org/7.png"
+          },
+          "playedGames": 19,
+          "form": null,
+          "won": 4,
+          "draw": 7,
+          "lost": 8,
+          "points": 19,
+          "goalsFor": 18,
+          "goalsAgainst": 28,
+          "goalDifference": -10
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 11,
             "name": "VfL Wolfsburg",
             "shortName": "Wolfsburg",
@@ -276,7 +295,7 @@
           "goalDifference": -14
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 12,
             "name": "SV Werder Bremen",
@@ -295,7 +314,7 @@
           "goalDifference": -16
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 15,
             "name": "1. FSV Mainz 05",
@@ -311,25 +330,6 @@
           "points": 18,
           "goalsFor": 23,
           "goalsAgainst": 33,
-          "goalDifference": -10
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 7,
-            "name": "Hamburger SV",
-            "shortName": "HSV",
-            "tla": "HSV",
-            "crest": "https://crests.football-data.org/7.png"
-          },
-          "playedGames": 18,
-          "form": null,
-          "won": 4,
-          "draw": 6,
-          "lost": 8,
-          "points": 18,
-          "goalsFor": 17,
-          "goalsAgainst": 27,
           "goalDifference": -10
         },
         {
