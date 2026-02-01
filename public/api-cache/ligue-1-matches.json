@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 131,
+    "count": 130,
     "first": "2026-02-01",
     "last": "2026-05-16",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/FL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 20,
-        "winner": null
-      },
-      "id": 542582,
-      "utcDate": "2026-02-01T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 20,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-01-26T01:32:02Z",
-      "homeTeam": {
-        "id": 523,
-        "name": "Olympique Lyonnais",
-        "shortName": "Olympique Lyon",
-        "tla": "LYO",
-        "crest": "https://crests.football-data.org/523.png"
-      },
-      "awayTeam": {
-        "id": 521,
-        "name": "Lille OSC",
-        "shortName": "Lille",
-        "tla": "LIL",
-        "crest": "https://crests.football-data.org/521.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 43918,
-          "name": "François Letexier",
-          "type": "REFEREE",
-          "nationality": "France"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2081,
@@ -142,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57087,
+          "name": "Romain Lissorgue",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -201,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 25786,
+          "name": "Stéphanie Frappart",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -260,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15545,
+          "name": "Benoît Millot",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {

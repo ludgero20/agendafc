@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 11,
+          "draw": 4,
+          "lost": 5,
+          "points": 37,
+          "goalsFor": 36,
+          "goalsAgainst": 26,
+          "goalDifference": 10
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -103,25 +122,6 @@
           "goalsFor": 38,
           "goalsAgainst": 27,
           "goalDifference": 11
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 19,
-          "form": null,
-          "won": 11,
-          "draw": 3,
-          "lost": 5,
-          "points": 36,
-          "goalsFor": 36,
-          "goalsAgainst": 26,
-          "goalDifference": 10
         },
         {
           "position": 6,
@@ -151,12 +151,12 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 7,
-          "draw": 6,
+          "draw": 7,
           "lost": 6,
-          "points": 27,
+          "points": 28,
           "goalsFor": 31,
           "goalsAgainst": 32,
           "goalDifference": -1
