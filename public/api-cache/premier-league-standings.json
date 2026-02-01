@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 14,
+          "draw": 5,
+          "lost": 5,
+          "points": 47,
+          "goalsFor": 47,
+          "goalsAgainst": 21,
+          "goalDifference": 26
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 58,
             "name": "Aston Villa FC",
             "shortName": "Aston Villa",
@@ -59,31 +78,12 @@
           "playedGames": 24,
           "form": null,
           "won": 14,
-          "draw": 5,
-          "lost": 5,
-          "points": 47,
-          "goalsFor": 35,
-          "goalsAgainst": 25,
-          "goalDifference": 10
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 65,
-            "name": "Manchester City FC",
-            "shortName": "Man City",
-            "tla": "MCI",
-            "crest": "https://crests.football-data.org/65.png"
-          },
-          "playedGames": 23,
-          "form": null,
-          "won": 14,
           "draw": 4,
-          "lost": 5,
+          "lost": 6,
           "points": 46,
-          "goalsFor": 47,
-          "goalsAgainst": 21,
-          "goalDifference": 26
+          "goalsFor": 35,
+          "goalsAgainst": 26,
+          "goalDifference": 9
         },
         {
           "position": 4,
@@ -100,8 +100,8 @@
           "draw": 8,
           "lost": 5,
           "points": 41,
-          "goalsFor": 42,
-          "goalsAgainst": 34,
+          "goalsFor": 44,
+          "goalsAgainst": 36,
           "goalDifference": 8
         },
         {
@@ -153,13 +153,13 @@
           },
           "playedGames": 24,
           "form": null,
-          "won": 10,
-          "draw": 4,
+          "won": 11,
+          "draw": 3,
           "lost": 10,
-          "points": 34,
-          "goalsFor": 35,
+          "points": 36,
+          "goalsFor": 36,
           "goalsAgainst": 32,
-          "goalDifference": 3
+          "goalDifference": 4
         },
         {
           "position": 8,
@@ -176,8 +176,8 @@
           "draw": 4,
           "lost": 10,
           "points": 34,
-          "goalsFor": 32,
-          "goalsAgainst": 33,
+          "goalsFor": 34,
+          "goalsAgainst": 35,
           "goalDifference": -1
         },
         {
@@ -284,12 +284,12 @@
             "tla": "TOT",
             "crest": "https://crests.football-data.org/73.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 28,
+          "points": 29,
           "goalsFor": 33,
           "goalsAgainst": 31,
           "goalDifference": 2
@@ -306,34 +306,15 @@
           "playedGames": 24,
           "form": null,
           "won": 7,
-          "draw": 7,
-          "lost": 10,
-          "points": 28,
-          "goalsFor": 24,
+          "draw": 8,
+          "lost": 9,
+          "points": 29,
+          "goalsFor": 25,
           "goalsAgainst": 29,
-          "goalDifference": -5
+          "goalDifference": -4
         },
         {
           "position": 16,
-          "team": {
-            "id": 351,
-            "name": "Nottingham Forest FC",
-            "shortName": "Nottingham",
-            "tla": "NOT",
-            "crest": "https://crests.football-data.org/351.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 8,
-          "draw": 4,
-          "lost": 12,
-          "points": 28,
-          "goalsFor": 24,
-          "goalsAgainst": 34,
-          "goalDifference": -10
-        },
-        {
-          "position": 17,
           "team": {
             "id": 341,
             "name": "Leeds United FC",
@@ -349,6 +330,25 @@
           "points": 26,
           "goalsFor": 31,
           "goalsAgainst": 42,
+          "goalDifference": -11
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 7,
+          "draw": 5,
+          "lost": 12,
+          "points": 26,
+          "goalsFor": 24,
+          "goalsAgainst": 35,
           "goalDifference": -11
         },
         {

@@ -56,12 +56,12 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 12,
-          "draw": 6,
+          "draw": 7,
           "lost": 1,
-          "points": 42,
+          "points": 43,
           "goalsFor": 38,
           "goalsAgainst": 17,
           "goalDifference": 21
@@ -96,13 +96,13 @@
           },
           "playedGames": 20,
           "form": null,
-          "won": 11,
-          "draw": 4,
+          "won": 12,
+          "draw": 3,
           "lost": 5,
-          "points": 37,
-          "goalsFor": 36,
+          "points": 39,
+          "goalsFor": 37,
           "goalsAgainst": 26,
-          "goalDifference": 10
+          "goalDifference": 11
         },
         {
           "position": 5,
@@ -154,12 +154,12 @@
           "playedGames": 20,
           "form": null,
           "won": 7,
-          "draw": 7,
-          "lost": 6,
-          "points": 28,
+          "draw": 6,
+          "lost": 7,
+          "points": 27,
           "goalsFor": 31,
-          "goalsAgainst": 32,
-          "goalDifference": -1
+          "goalsAgainst": 33,
+          "goalDifference": -2
         },
         {
           "position": 8,
@@ -360,12 +360,12 @@
             "tla": "HEI",
             "crest": "https://crests.football-data.org/44.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 3,
-          "draw": 4,
+          "draw": 5,
           "lost": 12,
-          "points": 13,
+          "points": 14,
           "goalsFor": 17,
           "goalsAgainst": 42,
           "goalDifference": -25
