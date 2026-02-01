@@ -56,12 +56,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 15,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 48,
+          "points": 49,
           "goalsFor": 52,
           "goalsAgainst": 10,
           "goalDifference": 42
@@ -100,9 +100,9 @@
           "draw": 7,
           "lost": 4,
           "points": 34,
-          "goalsFor": 25,
+          "goalsFor": 29,
           "goalsAgainst": 16,
-          "goalDifference": 9
+          "goalDifference": 13
         },
         {
           "position": 5,
@@ -145,25 +145,6 @@
         {
           "position": 7,
           "team": {
-            "id": 5531,
-            "name": "FC Famalicão",
-            "shortName": "Famalicão",
-            "tla": "FAM",
-            "crest": "https://crests.football-data.org/5531.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 8,
-          "draw": 5,
-          "lost": 7,
-          "points": 29,
-          "goalsFor": 24,
-          "goalsAgainst": 15,
-          "goalDifference": 9
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 582,
             "name": "GD Estoril Praia",
             "shortName": "Estoril Praia",
@@ -179,6 +160,25 @@
           "goalsFor": 41,
           "goalsAgainst": 33,
           "goalDifference": 8
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 5531,
+            "name": "FC Famalicão",
+            "shortName": "Famalicão",
+            "tla": "FAM",
+            "crest": "https://crests.football-data.org/5531.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 8,
+          "draw": 5,
+          "lost": 7,
+          "points": 29,
+          "goalsFor": 24,
+          "goalsAgainst": 19,
+          "goalDifference": 5
         },
         {
           "position": 9,
@@ -227,12 +227,12 @@
             "tla": "CDN",
             "crest": "https://crests.football-data.org/5529.png"
           },
-          "playedGames": 19,
+          "playedGames": 20,
           "form": null,
           "won": 5,
-          "draw": 5,
+          "draw": 6,
           "lost": 9,
-          "points": 20,
+          "points": 21,
           "goalsFor": 26,
           "goalsAgainst": 28,
           "goalDifference": -2
