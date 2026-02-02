@@ -297,25 +297,6 @@
         {
           "position": 15,
           "team": {
-            "id": 82,
-            "name": "Getafe CF",
-            "shortName": "Getafe",
-            "tla": "GET",
-            "crest": "https://crests.football-data.org/82.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 6,
-          "draw": 5,
-          "lost": 11,
-          "points": 23,
-          "goalsFor": 16,
-          "goalsAgainst": 27,
-          "goalDifference": -11
-        },
-        {
-          "position": 16,
-          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -331,6 +312,25 @@
           "goalsFor": 23,
           "goalsAgainst": 35,
           "goalDifference": -12
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 82,
+            "name": "Getafe CF",
+            "shortName": "Getafe",
+            "tla": "GET",
+            "crest": "https://crests.football-data.org/82.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 6,
+          "draw": 5,
+          "lost": 11,
+          "points": 23,
+          "goalsFor": 16,
+          "goalsAgainst": 27,
+          "goalDifference": -11
         },
         {
           "position": 17,
