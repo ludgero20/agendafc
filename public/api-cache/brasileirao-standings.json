@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 1765,
+            "name": "Fluminense FC",
+            "shortName": "Fluminense",
+            "tla": "FLU",
+            "crest": "https://crests.football-data.org/1765.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "goalDifference": 2
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 4286,
             "name": "RB Bragantino",
             "shortName": "Bragantino",
@@ -48,7 +67,7 @@
           "goalDifference": 2
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 1769,
             "name": "SE Palmeiras",
@@ -67,7 +86,7 @@
           "goalDifference": 4
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 4364,
             "name": "Mirassol FC",
@@ -86,7 +105,7 @@
           "goalDifference": 1
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 1776,
             "name": "São Paulo FC",
@@ -105,7 +124,7 @@
           "goalDifference": 1
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 1770,
             "name": "Botafogo FR",
@@ -124,7 +143,7 @@
           "goalDifference": 2
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 1772,
             "name": "Chapecoense AF",
@@ -143,7 +162,7 @@
           "goalDifference": 2
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
@@ -162,45 +181,7 @@
           "goalDifference": 1
         },
         {
-          "position": 8,
-          "team": {
-            "id": 1777,
-            "name": "EC Bahia",
-            "shortName": "Bahia",
-            "tla": "BAH",
-            "crest": "https://crests.football-data.org/1777.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 1765,
-            "name": "Fluminense FC",
-            "shortName": "Fluminense",
-            "tla": "FLU",
-            "crest": "https://crests.football-data.org/1765.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 2,
-          "goalsAgainst": 1,
-          "goalDifference": 1
-        },
-        {
-          "position": 10,
+          "position": 9,
           "team": {
             "id": 1768,
             "name": "CA Paranaense",
@@ -217,6 +198,25 @@
           "goalsFor": 1,
           "goalsAgainst": 0,
           "goalDifference": 1
+        },
+        {
+          "position": 10,
+          "team": {
+            "id": 1777,
+            "name": "EC Bahia",
+            "shortName": "Bahia",
+            "tla": "BAH",
+            "crest": "https://crests.football-data.org/1777.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 1,
+          "points": 3,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDifference": 0
         },
         {
           "position": 11,
