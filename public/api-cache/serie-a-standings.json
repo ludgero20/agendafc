@@ -77,13 +77,13 @@
           },
           "playedGames": 24,
           "form": null,
-          "won": 14,
-          "draw": 5,
+          "won": 15,
+          "draw": 4,
           "lost": 5,
-          "points": 47,
-          "goalsFor": 35,
+          "points": 49,
+          "goalsFor": 36,
           "goalsAgainst": 23,
-          "goalDifference": 12
+          "goalDifference": 13
         },
         {
           "position": 4,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 586,
+            "name": "Torino FC",
+            "shortName": "Torino",
+            "tla": "TOR",
+            "crest": "https://crests.football-data.org/586.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 8,
+          "draw": 5,
+          "lost": 11,
+          "points": 29,
+          "goalsFor": 23,
+          "goalsAgainst": 40,
+          "goalDifference": -17
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 104,
             "name": "Cagliari Calcio",
             "shortName": "Cagliari",
@@ -257,25 +276,6 @@
           "goalDifference": -3
         },
         {
-          "position": 13,
-          "team": {
-            "id": 586,
-            "name": "Torino FC",
-            "shortName": "Torino",
-            "tla": "TOR",
-            "crest": "https://crests.football-data.org/586.png"
-          },
-          "playedGames": 23,
-          "form": null,
-          "won": 7,
-          "draw": 5,
-          "lost": 11,
-          "points": 26,
-          "goalsFor": 22,
-          "goalsAgainst": 40,
-          "goalDifference": -18
-        },
-        {
           "position": 14,
           "team": {
             "id": 107,
@@ -287,12 +287,12 @@
           "playedGames": 24,
           "form": null,
           "won": 5,
-          "draw": 9,
-          "lost": 10,
-          "points": 24,
+          "draw": 8,
+          "lost": 11,
+          "points": 23,
           "goalsFor": 29,
-          "goalsAgainst": 36,
-          "goalDifference": -7
+          "goalsAgainst": 37,
+          "goalDifference": -8
         },
         {
           "position": 15,
@@ -360,15 +360,15 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 3,
           "draw": 8,
-          "lost": 12,
+          "lost": 13,
           "points": 17,
           "goalsFor": 25,
-          "goalsAgainst": 36,
-          "goalDifference": -11
+          "goalsAgainst": 37,
+          "goalDifference": -12
         },
         {
           "position": 19,

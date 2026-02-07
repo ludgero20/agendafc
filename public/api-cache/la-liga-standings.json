@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 8,
+          "draw": 7,
+          "lost": 8,
+          "points": 31,
+          "goalsFor": 31,
+          "goalsAgainst": 30,
+          "goalDifference": 1
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 79,
             "name": "CA Osasuna",
             "shortName": "Osasuna",
@@ -178,25 +197,6 @@
           "points": 29,
           "goalsFor": 28,
           "goalsAgainst": 28,
-          "goalDifference": 0
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 7,
-          "draw": 7,
-          "lost": 8,
-          "points": 28,
-          "goalsFor": 30,
-          "goalsAgainst": 30,
           "goalDifference": 0
         },
         {
@@ -265,15 +265,15 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 5,
           "draw": 9,
-          "lost": 8,
+          "lost": 9,
           "points": 24,
           "goalsFor": 30,
-          "goalsAgainst": 32,
-          "goalDifference": -2
+          "goalsAgainst": 33,
+          "goalDifference": -3
         },
         {
           "position": 14,
