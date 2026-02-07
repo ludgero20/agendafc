@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 20,
+          "form": null,
+          "won": 11,
+          "draw": 3,
+          "lost": 6,
+          "points": 36,
+          "goalsFor": 39,
+          "goalsAgainst": 27,
+          "goalDifference": 12
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -122,25 +141,6 @@
           "goalsFor": 38,
           "goalsAgainst": 27,
           "goalDifference": 11
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 19,
-          "form": null,
-          "won": 11,
-          "draw": 2,
-          "lost": 6,
-          "points": 35,
-          "goalsFor": 38,
-          "goalsAgainst": 26,
-          "goalDifference": 12
         },
         {
           "position": 7,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 18,
+            "name": "Borussia Mönchengladbach",
+            "shortName": "M'gladbach",
+            "tla": "BMG",
+            "crest": "https://crests.football-data.org/18.png"
+          },
+          "playedGames": 21,
+          "form": null,
+          "won": 5,
+          "draw": 7,
+          "lost": 9,
+          "points": 22,
+          "goalsFor": 25,
+          "goalsAgainst": 34,
+          "goalDifference": -9
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 16,
             "name": "FC Augsburg",
             "shortName": "Augsburg",
@@ -257,7 +276,7 @@
           "goalDifference": -15
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 15,
             "name": "1. FSV Mainz 05",
@@ -274,25 +293,6 @@
           "goalsFor": 25,
           "goalsAgainst": 33,
           "goalDifference": -8
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 18,
-            "name": "Borussia Mönchengladbach",
-            "shortName": "M'gladbach",
-            "tla": "BMG",
-            "crest": "https://crests.football-data.org/18.png"
-          },
-          "playedGames": 20,
-          "form": null,
-          "won": 5,
-          "draw": 6,
-          "lost": 9,
-          "points": 21,
-          "goalsFor": 24,
-          "goalsAgainst": 33,
-          "goalDifference": -9
         },
         {
           "position": 15,
