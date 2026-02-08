@@ -265,12 +265,12 @@
             "tla": "CDN",
             "crest": "https://crests.football-data.org/5529.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 5,
-          "draw": 5,
+          "draw": 6,
           "lost": 10,
-          "points": 20,
+          "points": 21,
           "goalsFor": 27,
           "goalsAgainst": 30,
           "goalDifference": -3
@@ -303,12 +303,12 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 20,
+          "playedGames": 21,
           "form": null,
           "won": 4,
-          "draw": 6,
+          "draw": 7,
           "lost": 10,
-          "points": 18,
+          "points": 19,
           "goalsFor": 22,
           "goalsAgainst": 39,
           "goalDifference": -17

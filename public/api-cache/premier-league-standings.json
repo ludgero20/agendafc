@@ -56,12 +56,12 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 14,
-          "draw": 5,
+          "draw": 6,
           "lost": 5,
-          "points": 47,
+          "points": 48,
           "goalsFor": 49,
           "goalsAgainst": 23,
           "goalDifference": 26
@@ -132,12 +132,12 @@
             "tla": "LIV",
             "crest": "https://crests.football-data.org/64.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 11,
-          "draw": 6,
+          "draw": 7,
           "lost": 7,
-          "points": 39,
+          "points": 40,
           "goalsFor": 39,
           "goalsAgainst": 33,
           "goalDifference": 6
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 25,
+          "form": null,
+          "won": 8,
+          "draw": 8,
+          "lost": 9,
+          "points": 32,
+          "goalsFor": 26,
+          "goalsAgainst": 29,
+          "goalDifference": -3
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
             "shortName": "Brighton Hove",
@@ -268,31 +287,12 @@
           "playedGames": 25,
           "form": null,
           "won": 7,
-          "draw": 11,
-          "lost": 7,
-          "points": 32,
+          "draw": 10,
+          "lost": 8,
+          "points": 31,
           "goalsFor": 34,
-          "goalsAgainst": 32,
-          "goalDifference": 2
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 7,
-          "draw": 9,
-          "lost": 9,
-          "points": 30,
-          "goalsFor": 25,
-          "goalsAgainst": 29,
-          "goalDifference": -4
+          "goalsAgainst": 33,
+          "goalDifference": 1
         },
         {
           "position": 15,
