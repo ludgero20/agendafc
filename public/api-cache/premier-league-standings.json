@@ -62,9 +62,9 @@
           "draw": 5,
           "lost": 5,
           "points": 50,
-          "goalsFor": 52,
+          "goalsFor": 51,
           "goalsAgainst": 24,
-          "goalDifference": 28
+          "goalDifference": 27
         },
         {
           "position": 3,
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 25,
+          "form": null,
+          "won": 11,
+          "draw": 6,
+          "lost": 8,
+          "points": 39,
+          "goalsFor": 40,
+          "goalsAgainst": 35,
+          "goalDifference": 5
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -141,25 +160,6 @@
           "goalsFor": 39,
           "goalsAgainst": 34,
           "goalDifference": 5
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 11,
-          "draw": 6,
-          "lost": 8,
-          "points": 39,
-          "goalsFor": 40,
-          "goalsAgainst": 36,
-          "goalDifference": 4
         },
         {
           "position": 8,

@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 17,
-          "draw": 3,
+          "draw": 4,
           "lost": 2,
-          "points": 54,
+          "points": 55,
           "goalsFor": 47,
           "goalsAgainst": 18,
           "goalDifference": 29
@@ -341,12 +341,12 @@
             "tla": "VAL",
             "crest": "https://crests.football-data.org/95.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 5,
-          "draw": 8,
+          "draw": 9,
           "lost": 9,
-          "points": 23,
+          "points": 24,
           "goalsFor": 23,
           "goalsAgainst": 35,
           "goalDifference": -12
