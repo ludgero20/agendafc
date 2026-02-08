@@ -265,18 +265,37 @@
             "tla": "BHA",
             "crest": "https://crests.football-data.org/397.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 7,
-          "draw": 10,
+          "draw": 11,
           "lost": 7,
-          "points": 31,
+          "points": 32,
           "goalsFor": 34,
           "goalsAgainst": 32,
           "goalDifference": 2
         },
         {
           "position": 14,
+          "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 25,
+          "form": null,
+          "won": 7,
+          "draw": 9,
+          "lost": 9,
+          "points": 30,
+          "goalsFor": 25,
+          "goalsAgainst": 29,
+          "goalDifference": -4
+        },
+        {
+          "position": 15,
           "team": {
             "id": 73,
             "name": "Tottenham Hotspur FC",
@@ -293,25 +312,6 @@
           "goalsFor": 35,
           "goalsAgainst": 35,
           "goalDifference": 0
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 7,
-          "draw": 8,
-          "lost": 9,
-          "points": 29,
-          "goalsFor": 25,
-          "goalsAgainst": 29,
-          "goalDifference": -4
         },
         {
           "position": 16,
