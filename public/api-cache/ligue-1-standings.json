@@ -37,15 +37,15 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 16,
           "draw": 3,
-          "lost": 2,
+          "lost": 3,
           "points": 51,
           "goalsFor": 48,
-          "goalsAgainst": 16,
-          "goalDifference": 32
+          "goalsAgainst": 17,
+          "goalDifference": 31
         },
         {
           "position": 2,
@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 9,
+          "draw": 7,
+          "lost": 6,
+          "points": 34,
+          "goalsFor": 32,
+          "goalsAgainst": 34,
+          "goalDifference": -2
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -122,25 +141,6 @@
           "goalsFor": 34,
           "goalsAgainst": 30,
           "goalDifference": 4
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 6,
-          "points": 31,
-          "goalsFor": 31,
-          "goalsAgainst": 34,
-          "goalDifference": -3
         },
         {
           "position": 7,
