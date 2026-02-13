@@ -7786,9 +7786,9 @@
       "strTime": "23:00:00",
       "strHomeTeam": "Utah Jazz",
       "strAwayTeam": "Portland Trail Blazers",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "119",
+      "intAwayScore": "135",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447609",
@@ -7806,9 +7806,9 @@
       "strTime": "21:30:00",
       "strHomeTeam": "Oklahoma City Thunder",
       "strAwayTeam": "Milwaukee Bucks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "93",
+      "intAwayScore": "110",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447610",

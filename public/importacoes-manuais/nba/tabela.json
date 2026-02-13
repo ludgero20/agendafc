@@ -111,26 +111,26 @@
       "strStreak": "L3"
     },
     {
+      "teamId": "5",
+      "teamName": "Milwaukee Bucks",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/olhug01621594702.png",
+      "rank": "11",
+      "conference": "Leste",
+      "intWin": 20,
+      "intLoss": 28,
+      "strPercentage": ".417",
+      "strStreak": "W2"
+    },
+    {
       "teamId": "2",
       "teamName": "Chicago Bulls",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yk7swg1547214677.png",
-      "rank": "11",
+      "rank": "12",
       "conference": "Leste",
       "intWin": 20,
       "intLoss": 29,
       "strPercentage": ".408",
       "strStreak": "L8"
-    },
-    {
-      "teamId": "5",
-      "teamName": "Milwaukee Bucks",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/olhug01621594702.png",
-      "rank": "12",
-      "conference": "Leste",
-      "intWin": 19,
-      "intLoss": 28,
-      "strPercentage": ".404",
-      "strStreak": "W1"
     },
     {
       "teamId": "1",
@@ -172,9 +172,9 @@
       "rank": "1",
       "conference": "Oeste",
       "intWin": 33,
-      "intLoss": 11,
-      "strPercentage": ".750",
-      "strStreak": "W1"
+      "intLoss": 12,
+      "strPercentage": ".733",
+      "strStreak": "L1"
     },
     {
       "teamId": "30",
@@ -259,10 +259,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/ljkd1r1696445959.png",
       "rank": "9",
       "conference": "Oeste",
-      "intWin": 12,
+      "intWin": 13,
       "intLoss": 17,
-      "strPercentage": ".414",
-      "strStreak": "L1"
+      "strPercentage": ".433",
+      "strStreak": "W1"
     },
     {
       "teamId": "28",
@@ -293,9 +293,9 @@
       "rank": "12",
       "conference": "Oeste",
       "intWin": 15,
-      "intLoss": 30,
-      "strPercentage": ".333",
-      "strStreak": "W2"
+      "intLoss": 31,
+      "strPercentage": ".326",
+      "strStreak": "L1"
     },
     {
       "teamId": "27",
