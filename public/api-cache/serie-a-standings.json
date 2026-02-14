@@ -37,14 +37,14 @@
             "tla": "INT",
             "crest": "https://crests.football-data.org/108.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 19,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 58,
-          "goalsFor": 57,
-          "goalsAgainst": 19,
+          "points": 59,
+          "goalsFor": 58,
+          "goalsAgainst": 20,
           "goalDifference": 38
         },
         {
@@ -94,14 +94,14 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 13,
-          "draw": 7,
+          "draw": 8,
           "lost": 4,
-          "points": 46,
-          "goalsFor": 41,
-          "goalsAgainst": 20,
+          "points": 47,
+          "goalsFor": 42,
+          "goalsAgainst": 21,
           "goalDifference": 21
         },
         {
