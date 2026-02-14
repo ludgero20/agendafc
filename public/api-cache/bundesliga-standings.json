@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 13,
+          "draw": 3,
+          "lost": 6,
+          "points": 42,
+          "goalsFor": 39,
+          "goalsAgainst": 28,
+          "goalDifference": 11
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
             "shortName": "Leverkusen",
@@ -105,7 +124,7 @@
           "goalDifference": 16
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 721,
             "name": "RB Leipzig",
@@ -122,25 +141,6 @@
           "goalsFor": 40,
           "goalsAgainst": 28,
           "goalDifference": 12
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 12,
-          "draw": 3,
-          "lost": 6,
-          "points": 39,
-          "goalsFor": 38,
-          "goalsAgainst": 28,
-          "goalDifference": 10
         },
         {
           "position": 7,
@@ -227,15 +227,15 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 6,
           "draw": 5,
-          "lost": 10,
+          "lost": 11,
           "points": 23,
           "goalsFor": 30,
-          "goalsAgainst": 34,
-          "goalDifference": -4
+          "goalsAgainst": 35,
+          "goalDifference": -5
         },
         {
           "position": 12,
