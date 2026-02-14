@@ -246,18 +246,37 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/712.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 6,
           "draw": 5,
-          "lost": 10,
+          "lost": 11,
           "points": 23,
-          "goalsFor": 26,
-          "goalsAgainst": 46,
-          "goalDifference": -20
+          "goalsFor": 28,
+          "goalsAgainst": 49,
+          "goalDifference": -21
         },
         {
           "position": 13,
+          "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 5,
+          "draw": 7,
+          "lost": 10,
+          "points": 22,
+          "goalsFor": 25,
+          "goalsAgainst": 41,
+          "goalDifference": -16
+        },
+        {
+          "position": 14,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -276,7 +295,7 @@
           "goalDifference": -3
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -293,25 +312,6 @@
           "goalsFor": 22,
           "goalsAgainst": 41,
           "goalDifference": -19
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 4,
-          "draw": 7,
-          "lost": 10,
-          "points": 19,
-          "goalsFor": 22,
-          "goalsAgainst": 39,
-          "goalDifference": -17
         },
         {
           "position": 16,
