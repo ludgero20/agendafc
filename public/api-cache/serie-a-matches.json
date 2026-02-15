@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 137,
+    "count": 136,
     "first": "2026-02-15",
     "last": "2026-05-24",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/c111.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 25,
-        "winner": null
-      },
-      "id": 537063,
-      "utcDate": "2026-02-15T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 25,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-09T01:32:03Z",
-      "homeTeam": {
-        "id": 115,
-        "name": "Udinese Calcio",
-        "shortName": "Udinese",
-        "tla": "UDI",
-        "crest": "https://crests.football-data.org/115.png"
-      },
-      "awayTeam": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 212567,
-          "name": "Maria Caputi",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2114,
@@ -142,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11002,
+          "name": "Luca Pairetto",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -201,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57826,
+          "name": "Simone Sozza",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
