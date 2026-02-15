@@ -227,14 +227,14 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 8,
-          "draw": 6,
+          "draw": 7,
           "lost": 10,
-          "points": 30,
-          "goalsFor": 32,
-          "goalsAgainst": 31,
+          "points": 31,
+          "goalsFor": 33,
+          "goalsAgainst": 32,
           "goalDifference": 1
         },
         {
@@ -284,14 +284,14 @@
             "tla": "TOR",
             "crest": "https://crests.football-data.org/586.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 7,
-          "draw": 6,
+          "draw": 7,
           "lost": 11,
-          "points": 27,
-          "goalsFor": 24,
-          "goalsAgainst": 42,
+          "points": 28,
+          "goalsFor": 25,
+          "goalsAgainst": 43,
           "goalDifference": -18
         },
         {
