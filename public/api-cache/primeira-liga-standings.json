@@ -56,12 +56,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 16,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 52,
+          "points": 53,
           "goalsFor": 55,
           "goalsAgainst": 12,
           "goalDifference": 43
@@ -132,37 +132,18 @@
             "tla": "FAM",
             "crest": "https://crests.football-data.org/5531.png"
           },
-          "playedGames": 21,
+          "playedGames": 22,
           "form": null,
           "won": 9,
-          "draw": 5,
+          "draw": 6,
           "lost": 7,
-          "points": 32,
+          "points": 33,
           "goalsFor": 27,
           "goalsAgainst": 20,
           "goalDifference": 7
         },
         {
           "position": 7,
-          "team": {
-            "id": 582,
-            "name": "GD Estoril Praia",
-            "shortName": "Estoril Praia",
-            "tla": "EST",
-            "crest": "https://crests.football-data.org/582.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 7,
-          "points": 31,
-          "goalsFor": 43,
-          "goalsAgainst": 35,
-          "goalDifference": 8
-        },
-        {
-          "position": 8,
           "team": {
             "id": 5543,
             "name": "Vitória SC",
@@ -179,6 +160,25 @@
           "goalsFor": 25,
           "goalsAgainst": 31,
           "goalDifference": -6
+        },
+        {
+          "position": 8,
+          "team": {
+            "id": 582,
+            "name": "GD Estoril Praia",
+            "shortName": "Estoril Praia",
+            "tla": "EST",
+            "crest": "https://crests.football-data.org/582.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 8,
+          "draw": 6,
+          "lost": 8,
+          "points": 30,
+          "goalsFor": 43,
+          "goalsAgainst": 38,
+          "goalDifference": 5
         },
         {
           "position": 9,
@@ -362,13 +362,13 @@
           },
           "playedGames": 22,
           "form": null,
-          "won": 0,
-          "draw": 6,
+          "won": 1,
+          "draw": 5,
           "lost": 16,
-          "points": 6,
-          "goalsFor": 15,
+          "points": 8,
+          "goalsFor": 18,
           "goalsAgainst": 54,
-          "goalDifference": -39
+          "goalDifference": -36
         }
       ]
     }

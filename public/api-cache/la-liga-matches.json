@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 144,
-    "first": "2026-02-15",
+    "count": 143,
+    "first": "2026-02-16",
     "last": "2026-05-24",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/laliga.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 544449,
-      "utcDate": "2026-02-15T20:00:00Z",
-      "status": "TIMED",
-      "matchday": 24,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-09T01:32:04Z",
-      "homeTeam": {
-        "id": 89,
-        "name": "RCD Mallorca",
-        "shortName": "Mallorca",
-        "tla": "MAL",
-        "crest": "https://crests.football-data.org/89.png"
-      },
-      "awayTeam": {
-        "id": 90,
-        "name": "Real Betis Balompié",
-        "shortName": "Real Betis",
-        "tla": "BET",
-        "crest": "https://crests.football-data.org/90.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57930,
-          "name": "Isidro Díaz de Mera",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2224,
