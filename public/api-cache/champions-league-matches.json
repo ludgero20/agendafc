@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 45,
+    "count": 44,
     "first": "2026-02-17",
     "last": "2026-05-30",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/CL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2077,
-        "name": "Europe",
-        "code": "EUR",
-        "flag": "https://crests.football-data.org/EUR.svg"
-      },
-      "competition": {
-        "id": 2001,
-        "name": "UEFA Champions League",
-        "code": "CL",
-        "type": "CUP",
-        "emblem": "https://crests.football-data.org/CL.png"
-      },
-      "season": {
-        "id": 2454,
-        "startDate": "2025-09-16",
-        "endDate": "2026-05-30",
-        "currentMatchday": 8,
-        "winner": null
-      },
-      "id": 552055,
-      "utcDate": "2026-02-17T17:45:00Z",
-      "status": "TIMED",
-      "matchday": 1,
-      "stage": "PLAYOFFS",
-      "group": null,
-      "lastUpdated": "2026-02-11T01:32:03Z",
-      "homeTeam": {
-        "id": 610,
-        "name": "Galatasaray SK",
-        "shortName": "Galatasaray",
-        "tla": "GAL",
-        "crest": "https://crests.football-data.org/610.png"
-      },
-      "awayTeam": {
-        "id": 109,
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/109.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 43899,
-          "name": "Danny Makkelie",
-          "type": "REFEREE",
-          "nationality": "Netherlands"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2077,
@@ -142,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43918,
+          "name": "François Letexier",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -201,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 206211,
+          "name": "Jesús Gil Manzano",
+          "type": "REFEREE",
+          "nationality": "Spain"
+        }
+      ]
     },
     {
       "area": {
@@ -260,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43858,
+          "name": "Serdar Gözübüyük",
+          "type": "REFEREE",
+          "nationality": "Netherlands"
+        }
+      ]
     },
     {
       "area": {
