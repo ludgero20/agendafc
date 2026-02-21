@@ -37,12 +37,12 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 18,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 57,
+          "points": 58,
           "goalsFor": 82,
           "goalsAgainst": 19,
           "goalDifference": 63
@@ -75,12 +75,12 @@
             "tla": "TSG",
             "crest": "https://crests.football-data.org/2.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 14,
-          "draw": 3,
+          "draw": 4,
           "lost": 5,
-          "points": 45,
+          "points": 46,
           "goalsFor": 47,
           "goalsAgainst": 28,
           "goalDifference": 19
@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 3,
+            "name": "Bayer 04 Leverkusen",
+            "shortName": "Leverkusen",
+            "tla": "B04",
+            "crest": "https://crests.football-data.org/3.png"
+          },
+          "playedGames": 22,
+          "form": null,
+          "won": 12,
+          "draw": 4,
+          "lost": 6,
+          "points": 40,
+          "goalsFor": 43,
+          "goalsAgainst": 27,
+          "goalDifference": 16
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -124,25 +143,6 @@
           "goalDifference": 12
         },
         {
-          "position": 6,
-          "team": {
-            "id": 3,
-            "name": "Bayer 04 Leverkusen",
-            "shortName": "Leverkusen",
-            "tla": "B04",
-            "crest": "https://crests.football-data.org/3.png"
-          },
-          "playedGames": 21,
-          "form": null,
-          "won": 12,
-          "draw": 3,
-          "lost": 6,
-          "points": 39,
-          "goalsFor": 43,
-          "goalsAgainst": 27,
-          "goalDifference": 16
-        },
-        {
           "position": 7,
           "team": {
             "id": 19,
@@ -151,12 +151,12 @@
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 8,
-          "draw": 7,
+          "draw": 8,
           "lost": 7,
-          "points": 31,
+          "points": 32,
           "goalsFor": 44,
           "goalsAgainst": 46,
           "goalDifference": -2
@@ -208,12 +208,12 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 6,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 25,
+          "points": 26,
           "goalsFor": 28,
           "goalsAgainst": 37,
           "goalDifference": -9
@@ -227,12 +227,12 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/16.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 7,
-          "draw": 4,
+          "draw": 5,
           "lost": 11,
-          "points": 25,
+          "points": 26,
           "goalsFor": 25,
           "goalsAgainst": 39,
           "goalDifference": -14
@@ -246,12 +246,12 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 6,
-          "draw": 5,
+          "draw": 6,
           "lost": 11,
-          "points": 23,
+          "points": 24,
           "goalsFor": 31,
           "goalsAgainst": 37,
           "goalDifference": -6
@@ -303,12 +303,12 @@
             "tla": "WOB",
             "crest": "https://crests.football-data.org/11.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 5,
-          "draw": 5,
+          "draw": 6,
           "lost": 12,
-          "points": 20,
+          "points": 21,
           "goalsFor": 31,
           "goalsAgainst": 46,
           "goalDifference": -15

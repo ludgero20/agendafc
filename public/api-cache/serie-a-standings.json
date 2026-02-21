@@ -113,15 +113,15 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 13,
           "draw": 7,
-          "lost": 5,
+          "lost": 6,
           "points": 46,
           "goalsFor": 43,
-          "goalsAgainst": 23,
-          "goalDifference": 20
+          "goalsAgainst": 24,
+          "goalDifference": 19
         },
         {
           "position": 6,
@@ -132,15 +132,15 @@
             "tla": "COM",
             "crest": "https://crests.football-data.org/7397.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 9,
           "lost": 5,
-          "points": 42,
-          "goalsFor": 39,
+          "points": 45,
+          "goalsFor": 40,
           "goalsAgainst": 19,
-          "goalDifference": 20
+          "goalDifference": 21
         },
         {
           "position": 7,
