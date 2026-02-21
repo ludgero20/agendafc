@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 524,
+            "name": "Paris Saint-Germain FC",
+            "shortName": "PSG",
+            "tla": "PSG",
+            "crest": "https://crests.football-data.org/524.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 17,
+          "draw": 3,
+          "lost": 3,
+          "points": 54,
+          "goalsFor": 50,
+          "goalsAgainst": 19,
+          "goalDifference": 31
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 546,
             "name": "Racing Club de Lens",
             "shortName": "RC Lens",
@@ -46,25 +65,6 @@
           "goalsFor": 44,
           "goalsAgainst": 20,
           "goalDifference": 24
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 524,
-            "name": "Paris Saint-Germain FC",
-            "shortName": "PSG",
-            "tla": "PSG",
-            "crest": "https://crests.football-data.org/524.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 16,
-          "draw": 3,
-          "lost": 3,
-          "points": 51,
-          "goalsFor": 49,
-          "goalsAgainst": 19,
-          "goalDifference": 30
         },
         {
           "position": 3,
@@ -195,8 +195,8 @@
           "draw": 7,
           "lost": 8,
           "points": 31,
-          "goalsFor": 32,
-          "goalsAgainst": 26,
+          "goalsFor": 33,
+          "goalsAgainst": 27,
           "goalDifference": 6
         },
         {
@@ -295,7 +295,7 @@
           "goalDifference": -13
         },
         {
-          "position": 15,
+          "position": 14,
           "team": {
             "id": 1045,
             "name": "Paris FC",
@@ -309,8 +309,8 @@
           "draw": 8,
           "lost": 10,
           "points": 23,
-          "goalsFor": 26,
-          "goalsAgainst": 39,
+          "goalsFor": 27,
+          "goalsAgainst": 40,
           "goalDifference": -13
         },
         {
@@ -360,15 +360,15 @@
             "tla": "FCM",
             "crest": "https://crests.football-data.org/545.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 3,
           "draw": 4,
-          "lost": 15,
+          "lost": 16,
           "points": 13,
           "goalsFor": 22,
-          "goalsAgainst": 49,
-          "goalDifference": -27
+          "goalsAgainst": 50,
+          "goalDifference": -28
         }
       ]
     }

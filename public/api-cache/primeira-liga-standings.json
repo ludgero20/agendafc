@@ -58,13 +58,13 @@
           },
           "playedGames": 23,
           "form": null,
-          "won": 17,
-          "draw": 5,
+          "won": 18,
+          "draw": 4,
           "lost": 1,
-          "points": 56,
-          "goalsFor": 56,
+          "points": 58,
+          "goalsFor": 59,
           "goalsAgainst": 12,
-          "goalDifference": 44
+          "goalDifference": 47
         },
         {
           "position": 3,
@@ -81,12 +81,31 @@
           "draw": 7,
           "lost": 0,
           "points": 55,
-          "goalsFor": 47,
+          "goalsFor": 49,
           "goalsAgainst": 13,
-          "goalDifference": 34
+          "goalDifference": 36
         },
         {
           "position": 4,
+          "team": {
+            "id": 5613,
+            "name": "Sporting Clube de Braga",
+            "shortName": "Braga",
+            "tla": "SCB",
+            "crest": "https://crests.football-data.org/5613.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 11,
+          "draw": 7,
+          "lost": 5,
+          "points": 40,
+          "goalsFor": 45,
+          "goalsAgainst": 20,
+          "goalDifference": 25
+        },
+        {
+          "position": 5,
           "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
@@ -105,25 +124,6 @@
           "goalDifference": 15
         },
         {
-          "position": 5,
-          "team": {
-            "id": 5613,
-            "name": "Sporting Clube de Braga",
-            "shortName": "Braga",
-            "tla": "SCB",
-            "crest": "https://crests.football-data.org/5613.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 11,
-          "draw": 6,
-          "lost": 5,
-          "points": 39,
-          "goalsFor": 45,
-          "goalsAgainst": 20,
-          "goalDifference": 25
-        },
-        {
           "position": 6,
           "team": {
             "id": 583,
@@ -135,12 +135,12 @@
           "playedGames": 23,
           "form": null,
           "won": 10,
-          "draw": 4,
-          "lost": 9,
-          "points": 34,
+          "draw": 3,
+          "lost": 10,
+          "points": 33,
           "goalsFor": 29,
-          "goalsAgainst": 30,
-          "goalDifference": -1
+          "goalsAgainst": 33,
+          "goalDifference": -4
         },
         {
           "position": 7,
@@ -170,12 +170,12 @@
             "tla": "GUI",
             "crest": "https://crests.football-data.org/5543.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 9,
-          "draw": 4,
+          "draw": 5,
           "lost": 9,
-          "points": 31,
+          "points": 32,
           "goalsFor": 25,
           "goalsAgainst": 31,
           "goalDifference": -6
@@ -367,8 +367,8 @@
           "lost": 17,
           "points": 8,
           "goalsFor": 18,
-          "goalsAgainst": 55,
-          "goalDifference": -37
+          "goalsAgainst": 57,
+          "goalDifference": -39
         }
       ]
     }
