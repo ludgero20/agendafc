@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 107,
+    "count": 105,
     "first": "2026-02-21",
     "last": "2026-05-17",
     "played": 0
@@ -19,138 +19,6 @@
     "emblem": "https://crests.football-data.org/PPL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 23,
-        "winner": null
-      },
-      "id": 545902,
-      "utcDate": "2026-02-21T15:30:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-21T01:32:01Z",
-      "homeTeam": {
-        "id": 7822,
-        "name": "FC Alverca",
-        "shortName": "Alverca",
-        "tla": "ALV",
-        "crest": "https://crests.football-data.org/7822.png"
-      },
-      "awayTeam": {
-        "id": 5530,
-        "name": "CD Santa Clara",
-        "shortName": "Santa Clara",
-        "tla": "CD ",
-        "crest": "https://crests.football-data.org/5530.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 220533,
-          "name": "Hélder Carvalho",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 23,
-        "winner": null
-      },
-      "id": 545903,
-      "utcDate": "2026-02-21T15:30:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-15T01:32:03Z",
-      "homeTeam": {
-        "id": 712,
-        "name": "FC Arouca",
-        "shortName": "Arouca",
-        "tla": "FCA",
-        "crest": "https://crests.football-data.org/712.png"
-      },
-      "awayTeam": {
-        "id": 5529,
-        "name": "CD Nacional",
-        "shortName": "CD Nacional",
-        "tla": "CDN",
-        "crest": "https://crests.football-data.org/5529.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 291275,
-          "name": "Luí­s Carlos Mateus Filipe",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2187,
@@ -208,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 242513,
+          "name": "Miguel Fonseca",
+          "type": "REFEREE",
+          "nationality": "Portugal"
+        }
+      ]
     },
     {
       "area": {
@@ -267,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 220513,
+          "name": "Bruno Costa",
+          "type": "REFEREE",
+          "nationality": "Portugal"
+        }
+      ]
     },
     {
       "area": {

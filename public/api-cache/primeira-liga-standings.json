@@ -208,18 +208,37 @@
             "tla": "ALV",
             "crest": "https://crests.football-data.org/7822.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 4,
           "lost": 11,
-          "points": 25,
-          "goalsFor": 22,
+          "points": 28,
+          "goalsFor": 23,
           "goalsAgainst": 37,
-          "goalDifference": -15
+          "goalDifference": -14
         },
         {
           "position": 11,
+          "team": {
+            "id": 712,
+            "name": "FC Arouca",
+            "shortName": "Arouca",
+            "tla": "FCA",
+            "crest": "https://crests.football-data.org/712.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 6,
+          "draw": 6,
+          "lost": 11,
+          "points": 24,
+          "goalsFor": 28,
+          "goalsAgainst": 49,
+          "goalDifference": -21
+        },
+        {
+          "position": 12,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -238,26 +257,26 @@
           "goalDifference": -15
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
-            "id": 712,
-            "name": "FC Arouca",
-            "shortName": "Arouca",
-            "tla": "FCA",
-            "crest": "https://crests.football-data.org/712.png"
+            "id": 5529,
+            "name": "CD Nacional",
+            "shortName": "CD Nacional",
+            "tla": "CDN",
+            "crest": "https://crests.football-data.org/5529.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
-          "won": 6,
-          "draw": 5,
+          "won": 5,
+          "draw": 7,
           "lost": 11,
-          "points": 23,
-          "goalsFor": 28,
-          "goalsAgainst": 49,
-          "goalDifference": -21
+          "points": 22,
+          "goalsFor": 27,
+          "goalsAgainst": 31,
+          "goalDifference": -4
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 6618,
             "name": "Casa Pia AC",
@@ -274,25 +293,6 @@
           "goalsFor": 25,
           "goalsAgainst": 41,
           "goalDifference": -16
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 5529,
-            "name": "CD Nacional",
-            "shortName": "CD Nacional",
-            "tla": "CDN",
-            "crest": "https://crests.football-data.org/5529.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 5,
-          "draw": 6,
-          "lost": 11,
-          "points": 21,
-          "goalsFor": 27,
-          "goalsAgainst": 31,
-          "goalDifference": -4
         },
         {
           "position": 15,
@@ -341,15 +341,15 @@
             "tla": "CD ",
             "crest": "https://crests.football-data.org/5530.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 4,
           "draw": 5,
-          "lost": 13,
+          "lost": 14,
           "points": 17,
           "goalsFor": 17,
-          "goalsAgainst": 28,
-          "goalDifference": -11
+          "goalsAgainst": 29,
+          "goalDifference": -12
         },
         {
           "position": 18,
