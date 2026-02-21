@@ -189,12 +189,12 @@
             "tla": "RSO",
             "crest": "https://crests.football-data.org/92.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 8,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 31,
+          "points": 32,
           "goalsFor": 34,
           "goalsAgainst": 35,
           "goalDifference": -1
@@ -398,12 +398,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 3,
-          "draw": 7,
+          "draw": 8,
           "lost": 13,
-          "points": 16,
+          "points": 17,
           "goalsFor": 13,
           "goalsAgainst": 36,
           "goalDifference": -23
