@@ -56,15 +56,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 15,
           "draw": 6,
-          "lost": 1,
+          "lost": 2,
           "points": 51,
           "goalsFor": 47,
-          "goalsAgainst": 20,
-          "goalDifference": 27
+          "goalsAgainst": 22,
+          "goalDifference": 25
         },
         {
           "position": 3,
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 721,
+            "name": "RB Leipzig",
+            "shortName": "RB Leipzig",
+            "tla": "RBL",
+            "crest": "https://crests.football-data.org/721.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 13,
+          "draw": 4,
+          "lost": 6,
+          "points": 43,
+          "goalsFor": 44,
+          "goalsAgainst": 30,
+          "goalDifference": 14
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 10,
             "name": "VfB Stuttgart",
             "shortName": "Stuttgart",
@@ -102,25 +121,6 @@
           "points": 42,
           "goalsFor": 41,
           "goalsAgainst": 29,
-          "goalDifference": 12
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 721,
-            "name": "RB Leipzig",
-            "shortName": "RB Leipzig",
-            "tla": "RBL",
-            "crest": "https://crests.football-data.org/721.png"
-          },
-          "playedGames": 22,
-          "form": null,
-          "won": 12,
-          "draw": 4,
-          "lost": 6,
-          "points": 40,
-          "goalsFor": 42,
-          "goalsAgainst": 30,
           "goalDifference": 12
         },
         {
