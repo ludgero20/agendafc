@@ -43,9 +43,9 @@
           "draw": 1,
           "lost": 4,
           "points": 61,
-          "goalsFor": 66,
+          "goalsFor": 67,
           "goalsAgainst": 25,
-          "goalDifference": 41
+          "goalDifference": 42
         },
         {
           "position": 2,
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 558,
+            "name": "RC Celta de Vigo",
+            "shortName": "Celta",
+            "tla": "CEL",
+            "crest": "https://crests.football-data.org/558.png"
+          },
+          "playedGames": 25,
+          "form": null,
+          "won": 8,
+          "draw": 11,
+          "lost": 6,
+          "points": 35,
+          "goalsFor": 32,
+          "goalsAgainst": 27,
+          "goalDifference": 5
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
             "shortName": "Espanyol",
@@ -141,25 +160,6 @@
           "goalsFor": 31,
           "goalsAgainst": 37,
           "goalDifference": -6
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 558,
-            "name": "RC Celta de Vigo",
-            "shortName": "Celta",
-            "tla": "CEL",
-            "crest": "https://crests.football-data.org/558.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 8,
-          "draw": 10,
-          "lost": 6,
-          "points": 34,
-          "goalsFor": 32,
-          "goalsAgainst": 27,
-          "goalDifference": 5
         },
         {
           "position": 8,
@@ -360,12 +360,12 @@
             "tla": "MAL",
             "crest": "https://crests.football-data.org/89.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 6,
-          "draw": 6,
+          "draw": 7,
           "lost": 12,
-          "points": 24,
+          "points": 25,
           "goalsFor": 29,
           "goalsAgainst": 39,
           "goalDifference": -10
@@ -386,8 +386,8 @@
           "lost": 15,
           "points": 18,
           "goalsFor": 26,
-          "goalsAgainst": 43,
-          "goalDifference": -17
+          "goalsAgainst": 44,
+          "goalDifference": -18
         },
         {
           "position": 20,
