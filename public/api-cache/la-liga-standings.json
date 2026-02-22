@@ -227,12 +227,12 @@
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 8,
-          "draw": 5,
+          "draw": 6,
           "lost": 11,
-          "points": 29,
+          "points": 30,
           "goalsFor": 20,
           "goalsAgainst": 28,
           "goalDifference": -8
@@ -265,12 +265,12 @@
             "tla": "SEV",
             "crest": "https://crests.football-data.org/559.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 7,
-          "draw": 5,
+          "draw": 6,
           "lost": 12,
-          "points": 26,
+          "points": 27,
           "goalsFor": 31,
           "goalsAgainst": 39,
           "goalDifference": -8

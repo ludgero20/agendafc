@@ -278,40 +278,40 @@
         {
           "position": 14,
           "team": {
-            "id": 586,
-            "name": "Torino FC",
-            "shortName": "Torino",
-            "tla": "TOR",
-            "crest": "https://crests.football-data.org/586.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 7,
-          "draw": 6,
-          "lost": 12,
-          "points": 27,
-          "goalsFor": 25,
-          "goalsAgainst": 44,
-          "goalDifference": -19
-        },
-        {
-          "position": 15,
-          "team": {
             "id": 107,
             "name": "Genoa CFC",
             "shortName": "Genoa",
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 9,
           "lost": 11,
-          "points": 24,
-          "goalsFor": 29,
+          "points": 27,
+          "goalsFor": 31,
           "goalsAgainst": 37,
-          "goalDifference": -8
+          "goalDifference": -6
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 586,
+            "name": "Torino FC",
+            "shortName": "Torino",
+            "tla": "TOR",
+            "crest": "https://crests.football-data.org/586.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 7,
+          "draw": 6,
+          "lost": 13,
+          "points": 27,
+          "goalsFor": 25,
+          "goalsAgainst": 46,
+          "goalDifference": -21
         },
         {
           "position": 16,
