@@ -37,12 +37,12 @@
             "tla": "FCP",
             "crest": "https://crests.football-data.org/503.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 19,
-          "draw": 2,
+          "draw": 3,
           "lost": 1,
-          "points": 59,
+          "points": 60,
           "goalsFor": 43,
           "goalsAgainst": 7,
           "goalDifference": 36
@@ -116,15 +116,34 @@
           "playedGames": 23,
           "form": null,
           "won": 11,
-          "draw": 8,
-          "lost": 4,
-          "points": 41,
+          "draw": 7,
+          "lost": 5,
+          "points": 40,
           "goalsFor": 34,
-          "goalsAgainst": 19,
-          "goalDifference": 15
+          "goalsAgainst": 21,
+          "goalDifference": 13
         },
         {
           "position": 6,
+          "team": {
+            "id": 582,
+            "name": "GD Estoril Praia",
+            "shortName": "Estoril Praia",
+            "tla": "EST",
+            "crest": "https://crests.football-data.org/582.png"
+          },
+          "playedGames": 23,
+          "form": null,
+          "won": 9,
+          "draw": 6,
+          "lost": 8,
+          "points": 33,
+          "goalsFor": 46,
+          "goalsAgainst": 39,
+          "goalDifference": 7
+        },
+        {
+          "position": 7,
           "team": {
             "id": 583,
             "name": "Moreirense FC",
@@ -143,7 +162,7 @@
           "goalDifference": -4
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 5531,
             "name": "FC Famalicão",
@@ -160,25 +179,6 @@
           "goalsFor": 27,
           "goalsAgainst": 21,
           "goalDifference": 6
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 582,
-            "name": "GD Estoril Praia",
-            "shortName": "Estoril Praia",
-            "tla": "EST",
-            "crest": "https://crests.football-data.org/582.png"
-          },
-          "playedGames": 23,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 8,
-          "points": 31,
-          "goalsFor": 44,
-          "goalsAgainst": 39,
-          "goalDifference": 5
         },
         {
           "position": 9,
@@ -303,12 +303,12 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 22,
+          "playedGames": 23,
           "form": null,
           "won": 4,
-          "draw": 8,
+          "draw": 9,
           "lost": 10,
-          "points": 20,
+          "points": 21,
           "goalsFor": 23,
           "goalsAgainst": 43,
           "goalDifference": -20

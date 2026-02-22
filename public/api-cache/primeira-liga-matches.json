@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 101,
-    "first": "2026-02-22",
+    "count": 100,
+    "first": "2026-02-23",
     "last": "2026-05-17",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/PPL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 23,
-        "winner": null
-      },
-      "id": 545904,
-      "utcDate": "2026-02-22T20:30:00Z",
-      "status": "TIMED",
-      "matchday": 23,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-22T00:20:56Z",
-      "homeTeam": {
-        "id": 503,
-        "name": "FC Porto",
-        "shortName": "Porto",
-        "tla": "FCP",
-        "crest": "https://crests.football-data.org/503.png"
-      },
-      "awayTeam": {
-        "id": 496,
-        "name": "Rio Ave FC",
-        "shortName": "Rio Ave",
-        "tla": "RIO",
-        "crest": "https://crests.football-data.org/496.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 98928,
-          "name": "David Silva",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2187,
