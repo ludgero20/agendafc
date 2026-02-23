@@ -316,6 +316,25 @@
         {
           "position": 16,
           "team": {
+            "id": 99,
+            "name": "ACF Fiorentina",
+            "shortName": "Fiorentina",
+            "tla": "FIO",
+            "crest": "https://crests.football-data.org/99.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 5,
+          "draw": 9,
+          "lost": 12,
+          "points": 24,
+          "goalsFor": 30,
+          "goalsAgainst": 39,
+          "goalDifference": -9
+        },
+        {
+          "position": 17,
+          "team": {
             "id": 457,
             "name": "US Cremonese",
             "shortName": "Cremonese",
@@ -333,7 +352,7 @@
           "goalDifference": -15
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 5890,
             "name": "US Lecce",
@@ -352,25 +371,6 @@
           "goalDifference": -16
         },
         {
-          "position": 18,
-          "team": {
-            "id": 99,
-            "name": "ACF Fiorentina",
-            "shortName": "Fiorentina",
-            "tla": "FIO",
-            "crest": "https://crests.football-data.org/99.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 4,
-          "draw": 9,
-          "lost": 12,
-          "points": 21,
-          "goalsFor": 29,
-          "goalsAgainst": 39,
-          "goalDifference": -10
-        },
-        {
           "position": 19,
           "team": {
             "id": 487,
@@ -379,15 +379,15 @@
             "tla": "PIS",
             "crest": "https://crests.football-data.org/487.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 1,
           "draw": 12,
-          "lost": 12,
+          "lost": 13,
           "points": 15,
           "goalsFor": 20,
-          "goalsAgainst": 42,
-          "goalDifference": -22
+          "goalsAgainst": 43,
+          "goalDifference": -23
         },
         {
           "position": 20,
