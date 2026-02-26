@@ -6,10 +6,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/lg7qrc1621594751.png",
       "rank": "1",
       "conference": "Leste",
-      "intWin": 35,
+      "intWin": 36,
       "intLoss": 12,
-      "strPercentage": ".745",
-      "strStreak": "L1"
+      "strPercentage": ".750",
+      "strStreak": "W1"
     },
     {
       "teamId": "11",
@@ -40,9 +40,9 @@
       "rank": "4",
       "conference": "Leste",
       "intWin": 33,
-      "intLoss": 20,
-      "strPercentage": ".623",
-      "strStreak": "W1"
+      "intLoss": 21,
+      "strPercentage": ".611",
+      "strStreak": "L1"
     },
     {
       "teamId": "13",
@@ -51,9 +51,9 @@
       "rank": "5",
       "conference": "Leste",
       "intWin": 30,
-      "intLoss": 21,
-      "strPercentage": ".588",
-      "strStreak": "L1"
+      "intLoss": 22,
+      "strPercentage": ".577",
+      "strStreak": "L2"
     },
     {
       "teamId": "12",
@@ -116,10 +116,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/olhug01621594702.png",
       "rank": "11",
       "conference": "Leste",
-      "intWin": 22,
+      "intWin": 23,
       "intLoss": 29,
-      "strPercentage": ".431",
-      "strStreak": "W1"
+      "strPercentage": ".442",
+      "strStreak": "W2"
     },
     {
       "teamId": "2",
@@ -172,9 +172,9 @@
       "rank": "1",
       "conference": "Oeste",
       "intWin": 36,
-      "intLoss": 12,
-      "strPercentage": ".750",
-      "strStreak": "W3"
+      "intLoss": 13,
+      "strPercentage": ".735",
+      "strStreak": "L1"
     },
     {
       "teamId": "30",
@@ -182,10 +182,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/obucan1611859537.png",
       "rank": "2",
       "conference": "Oeste",
-      "intWin": 35,
+      "intWin": 36,
       "intLoss": 14,
-      "strPercentage": ".714",
-      "strStreak": "W7"
+      "strPercentage": ".720",
+      "strStreak": "W8"
     },
     {
       "teamId": "26",
@@ -193,10 +193,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yezpho1597486052.png",
       "rank": "3",
       "conference": "Oeste",
-      "intWin": 32,
+      "intWin": 33,
       "intLoss": 15,
-      "strPercentage": ".681",
-      "strStreak": "W1"
+      "strPercentage": ".688",
+      "strStreak": "W2"
     },
     {
       "teamId": "17",
@@ -232,26 +232,26 @@
       "strStreak": "L2"
     },
     {
+      "teamId": "20",
+      "teamName": "Golden State Warriors",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/irobi61565197527.png",
+      "rank": "7",
+      "conference": "Oeste",
+      "intWin": 18,
+      "intLoss": 14,
+      "strPercentage": ".563",
+      "strStreak": "W1"
+    },
+    {
       "teamId": "18",
       "teamName": "Phoenix Suns",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/qrtuxq1422919040.png",
-      "rank": "7",
+      "rank": "8",
       "conference": "Oeste",
       "intWin": 27,
       "intLoss": 21,
       "strPercentage": ".563",
       "strStreak": "L2"
-    },
-    {
-      "teamId": "20",
-      "teamName": "Golden State Warriors",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/irobi61565197527.png",
-      "rank": "8",
-      "conference": "Oeste",
-      "intWin": 17,
-      "intLoss": 14,
-      "strPercentage": ".548",
-      "strStreak": "L1"
     },
     {
       "teamId": "23",
@@ -265,26 +265,26 @@
       "strStreak": "W2"
     },
     {
-      "teamId": "28",
-      "teamName": "Memphis Grizzlies",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/m64v461565196789.png",
-      "rank": "10",
-      "conference": "Oeste",
-      "intWin": 17,
-      "intLoss": 29,
-      "strPercentage": ".370",
-      "strStreak": "L2"
-    },
-    {
       "teamId": "29",
       "teamName": "Dallas Mavericks",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yqrxrs1420568796.png",
-      "rank": "11",
+      "rank": "10",
       "conference": "Oeste",
       "intWin": 18,
       "intLoss": 31,
       "strPercentage": ".367",
       "strStreak": "W2"
+    },
+    {
+      "teamId": "28",
+      "teamName": "Memphis Grizzlies",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/m64v461565196789.png",
+      "rank": "11",
+      "conference": "Oeste",
+      "intWin": 17,
+      "intLoss": 30,
+      "strPercentage": ".362",
+      "strStreak": "L3"
     },
     {
       "teamId": "21",
@@ -315,9 +315,9 @@
       "rank": "14",
       "conference": "Oeste",
       "intWin": 6,
-      "intLoss": 26,
-      "strPercentage": ".188",
-      "strStreak": "W1"
+      "intLoss": 27,
+      "strPercentage": ".182",
+      "strStreak": "L1"
     },
     {
       "teamId": "19",
