@@ -59,12 +59,12 @@
           "playedGames": 24,
           "form": null,
           "won": 17,
-          "draw": 1,
-          "lost": 6,
-          "points": 52,
-          "goalsFor": 44,
+          "draw": 2,
+          "lost": 5,
+          "points": 53,
+          "goalsFor": 45,
           "goalsAgainst": 21,
-          "goalDifference": 23
+          "goalDifference": 24
         },
         {
           "position": 3,
@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 576,
-            "name": "RC Strasbourg Alsace",
-            "shortName": "Strasbourg",
-            "tla": "RC ",
-            "crest": "https://crests.football-data.org/576.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 11,
-          "draw": 4,
-          "lost": 9,
-          "points": 37,
-          "goalsFor": 40,
-          "goalsAgainst": 30,
-          "goalDifference": 10
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 521,
             "name": "Lille OSC",
             "shortName": "Lille",
@@ -143,7 +124,7 @@
           "goalDifference": 5
         },
         {
-          "position": 7,
+          "position": 6,
           "team": {
             "id": 529,
             "name": "Stade Rennais FC 1901",
@@ -160,6 +141,25 @@
           "goalsFor": 37,
           "goalsAgainst": 35,
           "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
+            "id": 576,
+            "name": "RC Strasbourg Alsace",
+            "shortName": "Strasbourg",
+            "tla": "RC ",
+            "crest": "https://crests.football-data.org/576.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 10,
+          "draw": 5,
+          "lost": 9,
+          "points": 35,
+          "goalsFor": 40,
+          "goalsAgainst": 31,
+          "goalDifference": 9
         },
         {
           "position": 8,
