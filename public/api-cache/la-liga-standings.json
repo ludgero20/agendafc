@@ -94,12 +94,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 14,
-          "draw": 6,
+          "draw": 7,
           "lost": 5,
-          "points": 48,
+          "points": 49,
           "goalsFor": 42,
           "goalsAgainst": 23,
           "goalDifference": 19
@@ -398,12 +398,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 3,
-          "draw": 8,
+          "draw": 9,
           "lost": 13,
-          "points": 17,
+          "points": 18,
           "goalsFor": 16,
           "goalsAgainst": 39,
           "goalDifference": -23

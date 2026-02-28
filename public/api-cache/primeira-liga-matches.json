@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 97,
+    "count": 96,
     "first": "2026-02-28",
     "last": "2026-05-17",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/PPL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 545914,
-      "utcDate": "2026-02-28T15:30:00Z",
-      "status": "TIMED",
-      "matchday": 24,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-22T01:32:04Z",
-      "homeTeam": {
-        "id": 10340,
-        "name": "AVS",
-        "shortName": "AVS",
-        "tla": "AVS",
-        "crest": "https://crests.football-data.org/10340.png"
-      },
-      "awayTeam": {
-        "id": 9136,
-        "name": "CF Estrela da Amadora",
-        "shortName": "Amadora",
-        "tla": "AMA",
-        "crest": "https://crests.football-data.org/9136.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 220533,
-          "name": "Hélder Carvalho",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2187,
@@ -834,7 +768,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 1903,
         "name": "Sport Lisboa e Benfica",
@@ -1247,7 +1181,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -1955,7 +1889,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 5613,
         "name": "Sporting Clube de Braga",
@@ -2250,7 +2184,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -2781,7 +2715,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
@@ -3548,7 +3482,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -3961,7 +3895,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -4315,7 +4249,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -4905,7 +4839,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 10340,
         "name": "AVS",
@@ -5436,7 +5370,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-28T00:20:53Z",
+      "lastUpdated": "2026-02-28T10:21:02Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
