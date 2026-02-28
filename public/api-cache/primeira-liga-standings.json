@@ -94,15 +94,15 @@
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
-          "won": 12,
+          "won": 13,
           "draw": 6,
           "lost": 5,
-          "points": 42,
-          "goalsFor": 48,
+          "points": 45,
+          "goalsFor": 49,
           "goalsAgainst": 22,
-          "goalDifference": 26
+          "goalDifference": 27
         },
         {
           "position": 5,
@@ -284,15 +284,15 @@
             "tla": "CDN",
             "crest": "https://crests.football-data.org/5529.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 5,
           "draw": 6,
-          "lost": 12,
+          "lost": 13,
           "points": 21,
           "goalsFor": 27,
-          "goalsAgainst": 34,
-          "goalDifference": -7
+          "goalsAgainst": 35,
+          "goalDifference": -8
         },
         {
           "position": 15,

@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP",
+            "crest": "https://crests.football-data.org/113.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 15,
+          "draw": 6,
+          "lost": 6,
+          "points": 51,
+          "goalsFor": 40,
+          "goalsAgainst": 28,
+          "goalDifference": 12
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 100,
             "name": "AS Roma",
             "shortName": "Roma",
@@ -84,25 +103,6 @@
           "goalsFor": 34,
           "goalsAgainst": 16,
           "goalDifference": 18
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 113,
-            "name": "SSC Napoli",
-            "shortName": "Napoli",
-            "tla": "NAP",
-            "crest": "https://crests.football-data.org/113.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 15,
-          "draw": 5,
-          "lost": 6,
-          "points": 50,
-          "goalsFor": 39,
-          "goalsAgainst": 27,
-          "goalDifference": 12
         },
         {
           "position": 5,
@@ -373,6 +373,25 @@
         {
           "position": 19,
           "team": {
+            "id": 450,
+            "name": "Hellas Verona FC",
+            "shortName": "Verona",
+            "tla": "HVE",
+            "crest": "https://crests.football-data.org/450.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 2,
+          "draw": 10,
+          "lost": 15,
+          "points": 16,
+          "goalsFor": 20,
+          "goalsAgainst": 47,
+          "goalDifference": -27
+        },
+        {
+          "position": 20,
+          "team": {
             "id": 487,
             "name": "AC Pisa 1909",
             "shortName": "AC Pisa",
@@ -388,25 +407,6 @@
           "goalsFor": 20,
           "goalsAgainst": 43,
           "goalDifference": -23
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 450,
-            "name": "Hellas Verona FC",
-            "shortName": "Verona",
-            "tla": "HVE",
-            "crest": "https://crests.football-data.org/450.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 2,
-          "draw": 9,
-          "lost": 15,
-          "points": 15,
-          "goalsFor": 19,
-          "goalsAgainst": 46,
-          "goalDifference": -27
         }
       ]
     }
