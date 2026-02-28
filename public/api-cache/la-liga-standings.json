@@ -170,15 +170,15 @@
             "tla": "ATH",
             "crest": "https://crests.football-data.org/77.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 10,
           "draw": 4,
-          "lost": 11,
+          "lost": 12,
           "points": 34,
           "goalsFor": 29,
-          "goalsAgainst": 35,
-          "goalDifference": -6
+          "goalsAgainst": 36,
+          "goalDifference": -7
         },
         {
           "position": 9,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 87,
+            "name": "Rayo Vallecano de Madrid",
+            "shortName": "Rayo Vallecano",
+            "tla": "RAY",
+            "crest": "https://crests.football-data.org/87.png"
+          },
+          "playedGames": 25,
+          "form": null,
+          "won": 7,
+          "draw": 8,
+          "lost": 10,
+          "points": 29,
+          "goalsFor": 23,
+          "goalsAgainst": 31,
+          "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 82,
             "name": "Getafe CF",
             "shortName": "Getafe",
@@ -276,7 +295,7 @@
           "goalDifference": -9
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 263,
             "name": "Deportivo Alavés",
@@ -293,25 +312,6 @@
           "goalsFor": 23,
           "goalsAgainst": 34,
           "goalDifference": -11
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 87,
-            "name": "Rayo Vallecano de Madrid",
-            "shortName": "Rayo Vallecano",
-            "tla": "RAY",
-            "crest": "https://crests.football-data.org/87.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 6,
-          "draw": 8,
-          "lost": 10,
-          "points": 26,
-          "goalsFor": 22,
-          "goalsAgainst": 31,
-          "goalDifference": -9
         },
         {
           "position": 16,
