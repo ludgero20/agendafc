@@ -170,12 +170,12 @@
             "tla": "BOU",
             "crest": "https://crests.football-data.org/bournemouth.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 9,
-          "draw": 11,
+          "draw": 12,
           "lost": 7,
-          "points": 38,
+          "points": 39,
           "goalsFor": 43,
           "goalsAgainst": 45,
           "goalDifference": -2
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 71,
+            "name": "Sunderland AFC",
+            "shortName": "Sunderland",
+            "tla": "SUN",
+            "crest": "https://crests.football-data.org/71.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 9,
+          "draw": 10,
+          "lost": 9,
+          "points": 37,
+          "goalsFor": 28,
+          "goalsAgainst": 33,
+          "goalDifference": -5
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 67,
             "name": "Newcastle United FC",
             "shortName": "Newcastle",
@@ -236,25 +255,6 @@
           "goalsFor": 38,
           "goalsAgainst": 39,
           "goalDifference": -1
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 71,
-            "name": "Sunderland AFC",
-            "shortName": "Sunderland",
-            "tla": "SUN",
-            "crest": "https://crests.football-data.org/71.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 9,
-          "points": 36,
-          "goalsFor": 28,
-          "goalsAgainst": 33,
-          "goalDifference": -5
         },
         {
           "position": 13,
