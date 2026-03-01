@@ -69,25 +69,6 @@
         {
           "position": 3,
           "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 17,
-          "draw": 2,
-          "lost": 8,
-          "points": 53,
-          "goalsFor": 35,
-          "goalsAgainst": 16,
-          "goalDifference": 19
-        },
-        {
-          "position": 4,
-          "team": {
             "id": 113,
             "name": "SSC Napoli",
             "shortName": "Napoli",
@@ -103,6 +84,25 @@
           "goalsFor": 41,
           "goalsAgainst": 28,
           "goalDifference": 13
+        },
+        {
+          "position": 4,
+          "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 16,
+          "draw": 3,
+          "lost": 8,
+          "points": 51,
+          "goalsFor": 37,
+          "goalsAgainst": 19,
+          "goalDifference": 18
         },
         {
           "position": 5,
@@ -135,12 +135,12 @@
           "playedGames": 27,
           "form": null,
           "won": 13,
-          "draw": 7,
-          "lost": 7,
-          "points": 46,
-          "goalsFor": 43,
-          "goalsAgainst": 26,
-          "goalDifference": 17
+          "draw": 8,
+          "lost": 6,
+          "points": 47,
+          "goalsFor": 46,
+          "goalsAgainst": 28,
+          "goalDifference": 18
         },
         {
           "position": 7,
