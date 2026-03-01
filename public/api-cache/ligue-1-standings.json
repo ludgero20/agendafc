@@ -75,15 +75,15 @@
             "tla": "LYO",
             "crest": "https://crests.football-data.org/523.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
-          "won": 14,
+          "won": 15,
           "draw": 3,
           "lost": 6,
-          "points": 45,
-          "goalsFor": 37,
+          "points": 48,
+          "goalsFor": 38,
           "goalsAgainst": 23,
-          "goalDifference": 14
+          "goalDifference": 15
         },
         {
           "position": 4,
@@ -94,15 +94,15 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 12,
           "draw": 4,
-          "lost": 7,
+          "lost": 8,
           "points": 40,
           "goalsFor": 48,
-          "goalsAgainst": 31,
-          "goalDifference": 17
+          "goalsAgainst": 32,
+          "goalDifference": 16
         },
         {
           "position": 5,
