@@ -278,40 +278,40 @@
         {
           "position": 14,
           "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 23,
-          "form": null,
-          "won": 6,
-          "draw": 6,
-          "lost": 11,
-          "points": 24,
-          "goalsFor": 30,
-          "goalsAgainst": 43,
-          "goalDifference": -13
-        },
-        {
-          "position": 15,
-          "team": {
             "id": 1045,
             "name": "Paris FC",
             "shortName": "Paris FC",
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 8,
           "lost": 10,
-          "points": 23,
-          "goalsFor": 27,
+          "points": 26,
+          "goalsFor": 28,
           "goalsAgainst": 40,
-          "goalDifference": -13
+          "goalDifference": -12
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 6,
+          "draw": 6,
+          "lost": 12,
+          "points": 24,
+          "goalsFor": 30,
+          "goalsAgainst": 44,
+          "goalDifference": -14
         },
         {
           "position": 16,

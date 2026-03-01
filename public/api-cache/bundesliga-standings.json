@@ -94,12 +94,12 @@
             "tla": "VFB",
             "crest": "https://crests.football-data.org/10.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 13,
-          "draw": 4,
+          "draw": 5,
           "lost": 6,
-          "points": 43,
+          "points": 44,
           "goalsFor": 44,
           "goalsAgainst": 32,
           "goalDifference": 12
@@ -341,12 +341,12 @@
             "tla": "WOB",
             "crest": "https://crests.football-data.org/11.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 5,
-          "draw": 5,
+          "draw": 6,
           "lost": 13,
-          "points": 20,
+          "points": 21,
           "goalsFor": 33,
           "goalsAgainst": 49,
           "goalDifference": -16

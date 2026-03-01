@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 116,
+    "count": 115,
     "first": "2026-03-01",
     "last": "2026-05-24",
     "played": 0
@@ -40,79 +40,13 @@
         "currentMatchday": 27,
         "winner": null
       },
-      "id": 537084,
-      "utcDate": "2026-03-01T11:30:00Z",
-      "status": "TIMED",
-      "matchday": 27,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-24T01:32:03Z",
-      "homeTeam": {
-        "id": 457,
-        "name": "US Cremonese",
-        "shortName": "Cremonese",
-        "tla": "CRE",
-        "crest": "https://crests.football-data.org/457.png"
-      },
-      "awayTeam": {
-        "id": 98,
-        "name": "AC Milan",
-        "shortName": "Milan",
-        "tla": "MIL",
-        "crest": "https://crests.football-data.org/98.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 11029,
-          "name": "Davide Massa",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 27,
-        "winner": null
-      },
       "id": 537082,
       "utcDate": "2026-03-01T14:00:00Z",
       "status": "TIMED",
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-02-24T01:32:03Z",
+      "lastUpdated": "2026-03-01T14:30:13Z",
       "homeTeam": {
         "id": 471,
         "name": "US Sassuolo Calcio",
@@ -128,15 +62,27 @@
         "crest": "https://crests.football-data.org/102.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
+        },
+        "regularTime": {
+          "home": 0,
+          "away": 0
+        },
+        "extraTime": {
+          "home": 0,
+          "away": 0
+        },
+        "penalties": {
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {
