@@ -113,15 +113,15 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 9,
           "lost": 5,
-          "points": 42,
-          "goalsFor": 40,
+          "points": 45,
+          "goalsFor": 42,
           "goalsAgainst": 30,
-          "goalDifference": 10
+          "goalDifference": 12
         },
         {
           "position": 6,
@@ -211,12 +211,12 @@
           "playedGames": 26,
           "form": null,
           "won": 9,
-          "draw": 7,
-          "lost": 10,
-          "points": 34,
+          "draw": 6,
+          "lost": 11,
+          "points": 33,
           "goalsFor": 30,
-          "goalsAgainst": 29,
-          "goalDifference": 1
+          "goalsAgainst": 30,
+          "goalDifference": 0
         },
         {
           "position": 11,
@@ -246,15 +246,15 @@
             "tla": "SEV",
             "crest": "https://crests.football-data.org/559.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 8,
           "draw": 5,
-          "lost": 12,
+          "lost": 13,
           "points": 29,
           "goalsFor": 32,
-          "goalsAgainst": 39,
-          "goalDifference": -7
+          "goalsAgainst": 41,
+          "goalDifference": -9
         },
         {
           "position": 13,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 7,
+          "draw": 8,
+          "lost": 11,
+          "points": 29,
+          "goalsFor": 27,
+          "goalsAgainst": 39,
+          "goalDifference": -12
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
             "shortName": "Rayo Vallecano",
@@ -295,7 +314,7 @@
           "goalDifference": -9
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 263,
             "name": "Deportivo Alavés",
@@ -312,25 +331,6 @@
           "goalsFor": 23,
           "goalsAgainst": 34,
           "goalDifference": -11
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 6,
-          "draw": 9,
-          "lost": 11,
-          "points": 27,
-          "goalsFor": 26,
-          "goalsAgainst": 39,
-          "goalDifference": -13
         },
         {
           "position": 17,

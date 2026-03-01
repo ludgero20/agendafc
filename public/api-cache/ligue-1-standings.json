@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL",
+            "crest": "https://crests.football-data.org/521.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 12,
+          "draw": 4,
+          "lost": 8,
+          "points": 40,
+          "goalsFor": 37,
+          "goalsAgainst": 31,
+          "goalDifference": 6
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 529,
             "name": "Stade Rennais FC 1901",
             "shortName": "Stade Rennais",
@@ -122,25 +141,6 @@
           "goalsFor": 38,
           "goalsAgainst": 35,
           "goalDifference": 3
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 521,
-            "name": "Lille OSC",
-            "shortName": "Lille",
-            "tla": "LIL",
-            "crest": "https://crests.football-data.org/521.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 11,
-          "draw": 5,
-          "lost": 8,
-          "points": 38,
-          "goalsFor": 36,
-          "goalsAgainst": 31,
-          "goalDifference": 5
         },
         {
           "position": 7,
@@ -183,6 +183,25 @@
         {
           "position": 9,
           "team": {
+            "id": 512,
+            "name": "Stade Brestois 29",
+            "shortName": "Brest",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/512.png"
+          },
+          "playedGames": 24,
+          "form": null,
+          "won": 9,
+          "draw": 6,
+          "lost": 9,
+          "points": 33,
+          "goalsFor": 32,
+          "goalsAgainst": 34,
+          "goalDifference": -2
+        },
+        {
+          "position": 10,
+          "team": {
             "id": 525,
             "name": "FC Lorient",
             "shortName": "Lorient",
@@ -192,15 +211,15 @@
           "playedGames": 24,
           "form": null,
           "won": 8,
-          "draw": 8,
-          "lost": 8,
-          "points": 32,
-          "goalsFor": 32,
-          "goalsAgainst": 37,
-          "goalDifference": -5
+          "draw": 9,
+          "lost": 7,
+          "points": 33,
+          "goalsFor": 34,
+          "goalsAgainst": 38,
+          "goalDifference": -4
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 511,
             "name": "Toulouse FC",
@@ -217,25 +236,6 @@
           "goalsFor": 33,
           "goalsAgainst": 28,
           "goalDifference": 5
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 512,
-            "name": "Stade Brestois 29",
-            "shortName": "Brest",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/512.png"
-          },
-          "playedGames": 24,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 9,
-          "points": 31,
-          "goalsFor": 31,
-          "goalsAgainst": 34,
-          "goalDifference": -3
         },
         {
           "position": 12,
@@ -324,13 +324,13 @@
           },
           "playedGames": 24,
           "form": null,
-          "won": 5,
-          "draw": 5,
+          "won": 4,
+          "draw": 6,
           "lost": 14,
-          "points": 20,
-          "goalsFor": 18,
-          "goalsAgainst": 33,
-          "goalDifference": -15
+          "points": 18,
+          "goalsFor": 19,
+          "goalsAgainst": 35,
+          "goalDifference": -16
         },
         {
           "position": 17,
@@ -344,12 +344,12 @@
           "playedGames": 24,
           "form": null,
           "won": 4,
-          "draw": 6,
-          "lost": 14,
-          "points": 18,
+          "draw": 5,
+          "lost": 15,
+          "points": 17,
           "goalsFor": 22,
-          "goalsAgainst": 40,
-          "goalDifference": -18
+          "goalsAgainst": 41,
+          "goalDifference": -19
         },
         {
           "position": 18,
@@ -363,12 +363,12 @@
           "playedGames": 24,
           "form": null,
           "won": 3,
-          "draw": 5,
-          "lost": 16,
-          "points": 14,
+          "draw": 4,
+          "lost": 17,
+          "points": 13,
           "goalsFor": 22,
-          "goalsAgainst": 52,
-          "goalDifference": -30
+          "goalsAgainst": 53,
+          "goalDifference": -31
         }
       ]
     }
