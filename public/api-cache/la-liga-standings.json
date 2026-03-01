@@ -126,25 +126,6 @@
         {
           "position": 6,
           "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 11,
-          "draw": 5,
-          "lost": 10,
-          "points": 38,
-          "goalsFor": 33,
-          "goalsAgainst": 38,
-          "goalDifference": -5
-        },
-        {
-          "position": 7,
-          "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
             "shortName": "Celta",
@@ -160,6 +141,25 @@
           "goalsFor": 34,
           "goalsAgainst": 27,
           "goalDifference": 7
+        },
+        {
+          "position": 7,
+          "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 10,
+          "draw": 6,
+          "lost": 10,
+          "points": 36,
+          "goalsFor": 33,
+          "goalsAgainst": 39,
+          "goalDifference": -6
         },
         {
           "position": 8,
@@ -208,12 +208,12 @@
             "tla": "OSA",
             "crest": "https://crests.football-data.org/79.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 9,
-          "draw": 6,
+          "draw": 7,
           "lost": 10,
-          "points": 33,
+          "points": 34,
           "goalsFor": 30,
           "goalsAgainst": 29,
           "goalDifference": 1
@@ -322,12 +322,12 @@
             "tla": "VAL",
             "crest": "https://crests.football-data.org/95.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 6,
-          "draw": 8,
+          "draw": 9,
           "lost": 11,
-          "points": 26,
+          "points": 27,
           "goalsFor": 26,
           "goalsAgainst": 39,
           "goalDifference": -13
@@ -344,12 +344,12 @@
           "playedGames": 26,
           "form": null,
           "won": 5,
-          "draw": 10,
-          "lost": 11,
-          "points": 25,
-          "goalsFor": 33,
+          "draw": 11,
+          "lost": 10,
+          "points": 26,
+          "goalsFor": 34,
           "goalsAgainst": 39,
-          "goalDifference": -6
+          "goalDifference": -5
         },
         {
           "position": 18,

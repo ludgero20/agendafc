@@ -96,13 +96,13 @@
           },
           "playedGames": 24,
           "form": null,
-          "won": 13,
-          "draw": 5,
+          "won": 14,
+          "draw": 4,
           "lost": 6,
-          "points": 44,
-          "goalsFor": 44,
+          "points": 46,
+          "goalsFor": 48,
           "goalsAgainst": 32,
-          "goalDifference": 12
+          "goalDifference": 16
         },
         {
           "position": 5,
@@ -151,12 +151,12 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 9,
-          "draw": 6,
+          "draw": 7,
           "lost": 8,
-          "points": 33,
+          "points": 34,
           "goalsFor": 34,
           "goalsAgainst": 37,
           "goalDifference": -3
@@ -170,12 +170,12 @@
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 23,
+          "playedGames": 24,
           "form": null,
           "won": 8,
-          "draw": 7,
+          "draw": 8,
           "lost": 8,
-          "points": 31,
+          "points": 32,
           "goalsFor": 46,
           "goalsAgainst": 49,
           "goalDifference": -3
@@ -344,12 +344,12 @@
           "playedGames": 24,
           "form": null,
           "won": 5,
-          "draw": 6,
-          "lost": 13,
-          "points": 21,
+          "draw": 5,
+          "lost": 14,
+          "points": 20,
           "goalsFor": 33,
-          "goalsAgainst": 49,
-          "goalDifference": -16
+          "goalsAgainst": 53,
+          "goalDifference": -20
         },
         {
           "position": 18,
