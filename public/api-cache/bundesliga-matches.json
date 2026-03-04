@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 91,
-    "first": "2026-03-04",
+    "count": 90,
+    "first": "2026-03-06",
     "last": "2026-05-16",
     "played": 0
   },
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/BL1.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2088,
-        "name": "Germany",
-        "code": "DEU",
-        "flag": "https://crests.football-data.org/759.svg"
-      },
-      "competition": {
-        "id": 2002,
-        "name": "Bundesliga",
-        "code": "BL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/BL1.png"
-      },
-      "season": {
-        "id": 2414,
-        "startDate": "2025-08-22",
-        "endDate": "2026-05-16",
-        "currentMatchday": 24,
-        "winner": null
-      },
-      "id": 540558,
-      "utcDate": "2026-03-04T19:30:00Z",
-      "status": "TIMED",
-      "matchday": 17,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-02-26T01:32:04Z",
-      "homeTeam": {
-        "id": 7,
-        "name": "Hamburger SV",
-        "shortName": "HSV",
-        "tla": "HSV",
-        "crest": "https://crests.football-data.org/7.png"
-      },
-      "awayTeam": {
-        "id": 3,
-        "name": "Bayer 04 Leverkusen",
-        "shortName": "Leverkusen",
-        "tla": "B04",
-        "crest": "https://crests.football-data.org/3.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57515,
-          "name": "Sören Storks",
-          "type": "REFEREE",
-          "nationality": "Germany"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2088,
