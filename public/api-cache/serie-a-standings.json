@@ -132,12 +132,12 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 13,
-          "draw": 8,
+          "draw": 9,
           "lost": 6,
-          "points": 47,
+          "points": 48,
           "goalsFor": 46,
           "goalsAgainst": 28,
           "goalDifference": 18
@@ -154,12 +154,12 @@
           "playedGames": 28,
           "form": null,
           "won": 12,
-          "draw": 9,
-          "lost": 7,
-          "points": 45,
-          "goalsFor": 37,
+          "draw": 10,
+          "lost": 6,
+          "points": 46,
+          "goalsFor": 39,
           "goalsAgainst": 26,
-          "goalDifference": 11
+          "goalDifference": 13
         },
         {
           "position": 8,
@@ -210,13 +210,13 @@
           },
           "playedGames": 28,
           "form": null,
-          "won": 11,
-          "draw": 5,
+          "won": 10,
+          "draw": 6,
           "lost": 12,
-          "points": 38,
+          "points": 36,
           "goalsFor": 33,
-          "goalsAgainst": 39,
-          "goalDifference": -6
+          "goalsAgainst": 41,
+          "goalDifference": -8
         },
         {
           "position": 11,
@@ -379,12 +379,12 @@
             "tla": "PIS",
             "crest": "https://crests.football-data.org/487.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 1,
-          "draw": 12,
+          "draw": 13,
           "lost": 14,
-          "points": 15,
+          "points": 16,
           "goalsFor": 20,
           "goalsAgainst": 44,
           "goalDifference": -24

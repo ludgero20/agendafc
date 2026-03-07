@@ -37,12 +37,12 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 21,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 64,
+          "points": 65,
           "goalsFor": 71,
           "goalsAgainst": 26,
           "goalDifference": 45
@@ -77,13 +77,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 15,
-          "draw": 7,
+          "won": 16,
+          "draw": 6,
           "lost": 5,
-          "points": 52,
-          "goalsFor": 44,
-          "goalsAgainst": 24,
-          "goalDifference": 20
+          "points": 54,
+          "goalsFor": 46,
+          "goalsAgainst": 25,
+          "goalDifference": 21
         },
         {
           "position": 4,
@@ -145,25 +145,6 @@
         {
           "position": 7,
           "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 9,
-          "points": 36,
-          "goalsFor": 39,
-          "goalsAgainst": 39,
-          "goalDifference": 0
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
             "shortName": "Espanyol",
@@ -181,7 +162,7 @@
           "goalDifference": -6
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -189,15 +170,34 @@
             "tla": "ATH",
             "crest": "https://crests.football-data.org/77.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 10,
-          "draw": 5,
+          "draw": 6,
           "lost": 11,
-          "points": 35,
+          "points": 36,
           "goalsFor": 30,
           "goalsAgainst": 36,
           "goalDifference": -6
+        },
+        {
+          "position": 9,
+          "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 9,
+          "draw": 8,
+          "lost": 10,
+          "points": 35,
+          "goalsFor": 40,
+          "goalsAgainst": 41,
+          "goalDifference": -1
         },
         {
           "position": 10,
