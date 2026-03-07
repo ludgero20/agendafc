@@ -211,12 +211,12 @@
           "playedGames": 27,
           "form": null,
           "won": 9,
-          "draw": 6,
-          "lost": 12,
-          "points": 33,
-          "goalsFor": 30,
+          "draw": 7,
+          "lost": 11,
+          "points": 34,
+          "goalsFor": 32,
           "goalsAgainst": 32,
-          "goalDifference": -2
+          "goalDifference": 0
         },
         {
           "position": 11,
@@ -284,15 +284,15 @@
             "tla": "GIR",
             "crest": "https://crests.football-data.org/298.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 7,
           "draw": 9,
-          "lost": 10,
+          "lost": 11,
           "points": 30,
           "goalsFor": 27,
-          "goalsAgainst": 42,
-          "goalDifference": -15
+          "goalsAgainst": 43,
+          "goalDifference": -16
         },
         {
           "position": 15,
@@ -316,25 +316,6 @@
         {
           "position": 16,
           "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 7,
-          "draw": 6,
-          "lost": 14,
-          "points": 27,
-          "goalsFor": 31,
-          "goalsAgainst": 42,
-          "goalDifference": -11
-        },
-        {
-          "position": 17,
-          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -352,7 +333,7 @@
           "goalDifference": -11
         },
         {
-          "position": 18,
+          "position": 17,
           "team": {
             "id": 285,
             "name": "Elche CF",
@@ -371,6 +352,25 @@
           "goalDifference": -5
         },
         {
+          "position": 18,
+          "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 6,
+          "draw": 7,
+          "lost": 14,
+          "points": 25,
+          "goalsFor": 31,
+          "goalsAgainst": 44,
+          "goalDifference": -13
+        },
+        {
           "position": 19,
           "team": {
             "id": 88,
@@ -379,15 +379,15 @@
             "tla": "LEV",
             "crest": "https://crests.football-data.org/88.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 6,
           "lost": 15,
-          "points": 21,
-          "goalsFor": 28,
+          "points": 24,
+          "goalsFor": 29,
           "goalsAgainst": 44,
-          "goalDifference": -16
+          "goalDifference": -15
         },
         {
           "position": 20,
