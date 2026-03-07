@@ -56,15 +56,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
-          "won": 15,
+          "won": 16,
           "draw": 7,
           "lost": 2,
-          "points": 52,
-          "goalsFor": 51,
+          "points": 55,
+          "goalsFor": 52,
           "goalsAgainst": 25,
-          "goalDifference": 26
+          "goalDifference": 27
         },
         {
           "position": 3,
@@ -265,15 +265,15 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 6,
           "draw": 6,
-          "lost": 12,
+          "lost": 13,
           "points": 24,
           "goalsFor": 33,
-          "goalsAgainst": 41,
-          "goalDifference": -8
+          "goalsAgainst": 42,
+          "goalDifference": -9
         },
         {
           "position": 14,

@@ -56,15 +56,15 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
-          "won": 19,
+          "won": 20,
           "draw": 4,
           "lost": 1,
-          "points": 61,
-          "goalsFor": 62,
+          "points": 64,
+          "goalsFor": 63,
           "goalsAgainst": 12,
-          "goalDifference": 50
+          "goalDifference": 51
         },
         {
           "position": 3,
@@ -94,15 +94,15 @@
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 13,
           "draw": 6,
-          "lost": 5,
+          "lost": 6,
           "points": 45,
           "goalsFor": 50,
-          "goalsAgainst": 23,
-          "goalDifference": 27
+          "goalsAgainst": 24,
+          "goalDifference": 26
         },
         {
           "position": 5,
@@ -153,13 +153,13 @@
           },
           "playedGames": 25,
           "form": null,
-          "won": 11,
-          "draw": 4,
+          "won": 10,
+          "draw": 5,
           "lost": 10,
-          "points": 37,
+          "points": 35,
           "goalsFor": 31,
-          "goalsAgainst": 34,
-          "goalDifference": -3
+          "goalsAgainst": 35,
+          "goalDifference": -4
         },
         {
           "position": 8,
@@ -287,12 +287,12 @@
           "playedGames": 25,
           "form": null,
           "won": 5,
-          "draw": 6,
-          "lost": 14,
-          "points": 21,
-          "goalsFor": 28,
+          "draw": 7,
+          "lost": 13,
+          "points": 22,
+          "goalsFor": 29,
           "goalsAgainst": 37,
-          "goalDifference": -9
+          "goalDifference": -8
         },
         {
           "position": 15,
