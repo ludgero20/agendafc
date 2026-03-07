@@ -208,12 +208,12 @@
             "tla": "OSA",
             "crest": "https://crests.football-data.org/79.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 9,
-          "draw": 6,
+          "draw": 7,
           "lost": 11,
-          "points": 33,
+          "points": 34,
           "goalsFor": 30,
           "goalsAgainst": 30,
           "goalDifference": 0
@@ -360,12 +360,12 @@
             "tla": "MAL",
             "crest": "https://crests.football-data.org/89.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 6,
-          "draw": 6,
+          "draw": 7,
           "lost": 14,
-          "points": 24,
+          "points": 25,
           "goalsFor": 29,
           "goalsAgainst": 42,
           "goalDifference": -13
