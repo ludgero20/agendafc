@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 16,
+          "draw": 4,
+          "lost": 8,
+          "points": 52,
+          "goalsFor": 38,
+          "goalsAgainst": 20,
+          "goalDifference": 18
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -103,25 +122,6 @@
           "goalsFor": 46,
           "goalsAgainst": 21,
           "goalDifference": 25
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 16,
-          "draw": 3,
-          "lost": 8,
-          "points": 51,
-          "goalsFor": 37,
-          "goalsAgainst": 19,
-          "goalDifference": 18
         },
         {
           "position": 6,
@@ -303,14 +303,14 @@
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 6,
-          "draw": 9,
+          "draw": 10,
           "lost": 12,
-          "points": 27,
-          "goalsFor": 32,
-          "goalsAgainst": 39,
+          "points": 28,
+          "goalsFor": 33,
+          "goalsAgainst": 40,
           "goalDifference": -7
         },
         {
