@@ -37,15 +37,15 @@
             "tla": "INT",
             "crest": "https://crests.football-data.org/108.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 22,
           "draw": 1,
-          "lost": 4,
+          "lost": 5,
           "points": 67,
           "goalsFor": 64,
-          "goalsAgainst": 21,
-          "goalDifference": 43
+          "goalsAgainst": 22,
+          "goalDifference": 42
         },
         {
           "position": 2,
@@ -56,15 +56,15 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 16,
+          "won": 17,
           "draw": 9,
           "lost": 2,
-          "points": 57,
-          "goalsFor": 43,
+          "points": 60,
+          "goalsFor": 44,
           "goalsAgainst": 20,
-          "goalDifference": 23
+          "goalDifference": 24
         },
         {
           "position": 3,
@@ -88,25 +88,6 @@
         {
           "position": 4,
           "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 16,
-          "draw": 4,
-          "lost": 8,
-          "points": 52,
-          "goalsFor": 38,
-          "goalsAgainst": 20,
-          "goalDifference": 18
-        },
-        {
-          "position": 5,
-          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -122,6 +103,25 @@
           "goalsFor": 46,
           "goalsAgainst": 21,
           "goalDifference": 25
+        },
+        {
+          "position": 5,
+          "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 16,
+          "draw": 3,
+          "lost": 9,
+          "points": 51,
+          "goalsFor": 38,
+          "goalsAgainst": 21,
+          "goalDifference": 17
         },
         {
           "position": 6,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 7,
+          "draw": 9,
+          "lost": 12,
+          "points": 30,
+          "goalsFor": 34,
+          "goalsAgainst": 40,
+          "goalDifference": -6
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 104,
             "name": "Cagliari Calcio",
             "shortName": "Cagliari",
@@ -276,7 +295,7 @@
           "goalDifference": -8
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 586,
             "name": "Torino FC",
@@ -293,25 +312,6 @@
           "goalsFor": 28,
           "goalsAgainst": 49,
           "goalDifference": -21
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 6,
-          "draw": 10,
-          "lost": 12,
-          "points": 28,
-          "goalsFor": 33,
-          "goalsAgainst": 40,
-          "goalDifference": -7
         },
         {
           "position": 16,
