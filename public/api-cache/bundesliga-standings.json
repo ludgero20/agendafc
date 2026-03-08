@@ -227,12 +227,12 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 10,
-          "points": 28,
+          "points": 29,
           "goalsFor": 29,
           "goalsAgainst": 38,
           "goalDifference": -9
@@ -322,12 +322,12 @@
             "tla": "SVW",
             "crest": "https://crests.football-data.org/12.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 5,
-          "draw": 7,
+          "draw": 8,
           "lost": 12,
-          "points": 22,
+          "points": 23,
           "goalsFor": 25,
           "goalsAgainst": 44,
           "goalDifference": -19

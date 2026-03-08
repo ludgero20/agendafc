@@ -113,15 +113,15 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 7,
           "lost": 6,
-          "points": 40,
-          "goalsFor": 35,
+          "points": 43,
+          "goalsFor": 36,
           "goalsAgainst": 23,
-          "goalDifference": 12
+          "goalDifference": 13
         },
         {
           "position": 6,
@@ -246,15 +246,15 @@
             "tla": "AMA",
             "crest": "https://crests.football-data.org/9136.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 5,
           "draw": 9,
-          "lost": 10,
+          "lost": 11,
           "points": 24,
           "goalsFor": 26,
-          "goalsAgainst": 41,
-          "goalDifference": -15
+          "goalsAgainst": 42,
+          "goalDifference": -16
         },
         {
           "position": 13,
