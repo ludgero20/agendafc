@@ -151,12 +151,12 @@
             "tla": "SGE",
             "crest": "https://crests.football-data.org/19.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 9,
-          "draw": 7,
+          "draw": 8,
           "lost": 8,
-          "points": 34,
+          "points": 35,
           "goalsFor": 48,
           "goalsAgainst": 49,
           "goalDifference": -1
@@ -303,12 +303,12 @@
             "tla": "STP",
             "crest": "https://crests.football-data.org/20.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 6,
-          "draw": 5,
+          "draw": 6,
           "lost": 13,
-          "points": 23,
+          "points": 24,
           "goalsFor": 23,
           "goalsAgainst": 40,
           "goalDifference": -17

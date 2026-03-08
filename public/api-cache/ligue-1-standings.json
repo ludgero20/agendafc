@@ -56,12 +56,12 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 17,
-          "draw": 2,
+          "draw": 3,
           "lost": 5,
-          "points": 53,
+          "points": 54,
           "goalsFor": 45,
           "goalsAgainst": 21,
           "goalDifference": 24
@@ -360,12 +360,12 @@
             "tla": "FCM",
             "crest": "https://crests.football-data.org/545.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 3,
-          "draw": 4,
+          "draw": 5,
           "lost": 17,
-          "points": 13,
+          "points": 14,
           "goalsFor": 22,
           "goalsAgainst": 53,
           "goalDifference": -31
