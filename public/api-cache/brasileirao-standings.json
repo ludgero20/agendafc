@@ -37,12 +37,12 @@
             "tla": "PAL",
             "crest": "https://crests.football-data.org/1769.png"
           },
-          "playedGames": 4,
+          "playedGames": 5,
           "form": null,
           "won": 3,
-          "draw": 1,
+          "draw": 2,
           "lost": 0,
-          "points": 10,
+          "points": 11,
           "goalsFor": 12,
           "goalsAgainst": 5,
           "goalDifference": 7
@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 1765,
+            "name": "Fluminense FC",
+            "shortName": "Fluminense",
+            "tla": "FLU",
+            "crest": "https://crests.football-data.org/1765.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 3,
+          "draw": 1,
+          "lost": 1,
+          "points": 10,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "goalDifference": 2
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 1777,
             "name": "EC Bahia",
             "shortName": "Bahia",
@@ -86,7 +105,7 @@
           "goalDifference": 2
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 1783,
             "name": "CR Flamengo",
@@ -105,7 +124,7 @@
           "goalDifference": 2
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 4241,
             "name": "Coritiba FBC",
@@ -121,25 +140,6 @@
           "points": 7,
           "goalsFor": 7,
           "goalsAgainst": 6,
-          "goalDifference": 1
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 1765,
-            "name": "Fluminense FC",
-            "shortName": "Fluminense",
-            "tla": "FLU",
-            "crest": "https://crests.football-data.org/1765.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 1,
-          "points": 7,
-          "goalsFor": 5,
-          "goalsAgainst": 4,
           "goalDifference": 1
         },
         {
@@ -341,18 +341,37 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/4287.png"
           },
-          "playedGames": 4,
+          "playedGames": 5,
           "form": null,
           "won": 0,
           "draw": 3,
-          "lost": 1,
+          "lost": 2,
           "points": 3,
           "goalsFor": 6,
-          "goalsAgainst": 8,
-          "goalDifference": -2
+          "goalsAgainst": 9,
+          "goalDifference": -3
         },
         {
           "position": 18,
+          "team": {
+            "id": 1780,
+            "name": "CR Vasco da Gama",
+            "shortName": "Vasco da Gama",
+            "tla": "VAS",
+            "crest": "https://crests.football-data.org/1780.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 3,
+          "points": 2,
+          "goalsFor": 3,
+          "goalsAgainst": 6,
+          "goalDifference": -3
+        },
+        {
+          "position": 19,
           "team": {
             "id": 6684,
             "name": "SC Internacional",
@@ -371,7 +390,7 @@
           "goalDifference": -4
         },
         {
-          "position": 19,
+          "position": 20,
           "team": {
             "id": 1771,
             "name": "Cruzeiro EC",
@@ -388,25 +407,6 @@
           "goalsFor": 4,
           "goalsAgainst": 11,
           "goalDifference": -7
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 1780,
-            "name": "CR Vasco da Gama",
-            "shortName": "Vasco da Gama",
-            "tla": "VAS",
-            "crest": "https://crests.football-data.org/1780.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 3,
-          "points": 1,
-          "goalsFor": 3,
-          "goalsAgainst": 6,
-          "goalDifference": -3
         }
       ]
     }
