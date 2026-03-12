@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 1783,
+            "name": "CR Flamengo",
+            "shortName": "Flamengo",
+            "tla": "FLA",
+            "crest": "https://crests.football-data.org/1783.png"
+          },
+          "playedGames": 4,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 1,
+          "points": 7,
+          "goalsFor": 6,
+          "goalsAgainst": 4,
+          "goalDifference": 2
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 4241,
             "name": "Coritiba FBC",
             "shortName": "Coritiba",
@@ -105,26 +124,7 @@
           "goalDifference": 1
         },
         {
-          "position": 5,
-          "team": {
-            "id": 1783,
-            "name": "CR Flamengo",
-            "shortName": "Flamengo",
-            "tla": "FLA",
-            "crest": "https://crests.football-data.org/1783.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 2,
-          "draw": 1,
-          "lost": 1,
-          "points": 7,
-          "goalsFor": 5,
-          "goalsAgainst": 4,
-          "goalDifference": 1
-        },
-        {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 1765,
             "name": "Fluminense FC",
@@ -386,8 +386,8 @@
           "lost": 3,
           "points": 2,
           "goalsFor": 4,
-          "goalsAgainst": 10,
-          "goalDifference": -6
+          "goalsAgainst": 11,
+          "goalDifference": -7
         },
         {
           "position": 20,
