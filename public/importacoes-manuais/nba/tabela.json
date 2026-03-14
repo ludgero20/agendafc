@@ -6,10 +6,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/lg7qrc1621594751.png",
       "rank": "1",
       "conference": "Leste",
-      "intWin": 40,
+      "intWin": 41,
       "intLoss": 15,
-      "strPercentage": ".727",
-      "strStreak": "W2"
+      "strPercentage": ".732",
+      "strStreak": "W3"
     },
     {
       "teamId": "11",
@@ -28,10 +28,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/wyhpuf1511810435.png",
       "rank": "3",
       "conference": "Leste",
-      "intWin": 38,
+      "intWin": 39,
       "intLoss": 22,
-      "strPercentage": ".633",
-      "strStreak": "W1"
+      "strPercentage": ".639",
+      "strStreak": "W2"
     },
     {
       "teamId": "3",
@@ -39,10 +39,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/tys75k1664478652.png",
       "rank": "4",
       "conference": "Leste",
-      "intWin": 35,
+      "intWin": 36,
       "intLoss": 24,
-      "strPercentage": ".593",
-      "strStreak": "L1"
+      "strPercentage": ".600",
+      "strStreak": "W1"
     },
     {
       "teamId": "9",
@@ -61,10 +61,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/ax36vz1635070057.png",
       "rank": "6",
       "conference": "Leste",
-      "intWin": 32,
+      "intWin": 33,
       "intLoss": 25,
-      "strPercentage": ".561",
-      "strStreak": "L2"
+      "strPercentage": ".569",
+      "strStreak": "W1"
     },
     {
       "teamId": "12",
@@ -161,9 +161,9 @@
       "rank": "15",
       "conference": "Leste",
       "intWin": 15,
-      "intLoss": 46,
-      "strPercentage": ".246",
-      "strStreak": "L9"
+      "intLoss": 47,
+      "strPercentage": ".242",
+      "strStreak": "L10"
     },
     {
       "teamId": "24",
@@ -204,10 +204,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yezpho1597486052.png",
       "rank": "4",
       "conference": "Oeste",
-      "intWin": 37,
+      "intWin": 38,
       "intLoss": 19,
-      "strPercentage": ".661",
-      "strStreak": "L1"
+      "strPercentage": ".667",
+      "strStreak": "W1"
     },
     {
       "teamId": "25",
@@ -215,10 +215,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/5xpgjg1621594771.png",
       "rank": "5",
       "conference": "Oeste",
-      "intWin": 34,
+      "intWin": 35,
       "intLoss": 20,
-      "strPercentage": ".630",
-      "strStreak": "L1"
+      "strPercentage": ".636",
+      "strStreak": "W1"
     },
     {
       "teamId": "18",
@@ -227,9 +227,9 @@
       "rank": "6",
       "conference": "Oeste",
       "intWin": 32,
-      "intLoss": 22,
-      "strPercentage": ".593",
-      "strStreak": "W4"
+      "intLoss": 23,
+      "strPercentage": ".582",
+      "strStreak": "L1"
     },
     {
       "teamId": "22",
@@ -249,9 +249,9 @@
       "rank": "8",
       "conference": "Oeste",
       "intWin": 19,
-      "intLoss": 18,
-      "strPercentage": ".514",
-      "strStreak": "L3"
+      "intLoss": 19,
+      "strPercentage": ".500",
+      "strStreak": "L4"
     },
     {
       "teamId": "23",
@@ -259,10 +259,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/ljkd1r1696445959.png",
       "rank": "9",
       "conference": "Oeste",
-      "intWin": 17,
+      "intWin": 18,
       "intLoss": 21,
-      "strPercentage": ".447",
-      "strStreak": "L1"
+      "strPercentage": ".462",
+      "strStreak": "W1"
     },
     {
       "teamId": "28",
@@ -271,9 +271,9 @@
       "rank": "10",
       "conference": "Oeste",
       "intWin": 19,
-      "intLoss": 34,
-      "strPercentage": ".358",
-      "strStreak": "L4"
+      "intLoss": 35,
+      "strPercentage": ".352",
+      "strStreak": "L5"
     },
     {
       "teamId": "29",
@@ -282,9 +282,9 @@
       "rank": "11",
       "conference": "Oeste",
       "intWin": 18,
-      "intLoss": 38,
-      "strPercentage": ".321",
-      "strStreak": "L7"
+      "intLoss": 39,
+      "strPercentage": ".316",
+      "strStreak": "L8"
     },
     {
       "teamId": "27",
@@ -293,9 +293,9 @@
       "rank": "12",
       "conference": "Oeste",
       "intWin": 19,
-      "intLoss": 41,
-      "strPercentage": ".317",
-      "strStreak": "W2"
+      "intLoss": 42,
+      "strPercentage": ".311",
+      "strStreak": "L1"
     },
     {
       "teamId": "21",
@@ -304,9 +304,9 @@
       "rank": "13",
       "conference": "Oeste",
       "intWin": 17,
-      "intLoss": 39,
-      "strPercentage": ".304",
-      "strStreak": "L1"
+      "intLoss": 40,
+      "strPercentage": ".298",
+      "strStreak": "L2"
     },
     {
       "teamId": "16",
