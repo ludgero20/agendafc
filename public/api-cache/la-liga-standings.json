@@ -265,15 +265,15 @@
             "tla": "VAL",
             "crest": "https://crests.football-data.org/95.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 8,
           "draw": 8,
-          "lost": 11,
+          "lost": 12,
           "points": 32,
           "goalsFor": 30,
-          "goalsAgainst": 41,
-          "goalDifference": -11
+          "goalsAgainst": 42,
+          "goalDifference": -12
         },
         {
           "position": 14,
@@ -398,15 +398,15 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 3,
+          "won": 4,
           "draw": 9,
           "lost": 15,
-          "points": 18,
-          "goalsFor": 17,
+          "points": 21,
+          "goalsFor": 18,
           "goalsAgainst": 44,
-          "goalDifference": -27
+          "goalDifference": -26
         }
       ]
     }
