@@ -43,9 +43,9 @@
           "draw": 1,
           "lost": 4,
           "points": 70,
-          "goalsFor": 75,
-          "goalsAgainst": 27,
-          "goalDifference": 48
+          "goalsFor": 77,
+          "goalsAgainst": 28,
+          "goalDifference": 49
         },
         {
           "position": 2,
@@ -107,39 +107,39 @@
         {
           "position": 5,
           "team": {
-            "id": 90,
-            "name": "Real Betis Balompié",
-            "shortName": "Real Betis",
-            "tla": "BET",
-            "crest": "https://crests.football-data.org/90.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 11,
-          "draw": 10,
-          "lost": 6,
-          "points": 43,
-          "goalsFor": 42,
-          "goalsAgainst": 34,
-          "goalDifference": 8
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 558,
             "name": "RC Celta de Vigo",
             "shortName": "Celta",
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 10,
           "lost": 7,
-          "points": 40,
-          "goalsFor": 37,
+          "points": 43,
+          "goalsFor": 38,
           "goalsAgainst": 30,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
+            "id": 90,
+            "name": "Real Betis Balompié",
+            "shortName": "Real Betis",
+            "tla": "BET",
+            "crest": "https://crests.football-data.org/90.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 11,
+          "draw": 10,
+          "lost": 7,
+          "points": 43,
+          "goalsFor": 42,
+          "goalsAgainst": 35,
           "goalDifference": 7
         },
         {
@@ -290,9 +290,9 @@
           "draw": 7,
           "lost": 13,
           "points": 31,
-          "goalsFor": 36,
-          "goalsAgainst": 45,
-          "goalDifference": -9
+          "goalsFor": 37,
+          "goalsAgainst": 47,
+          "goalDifference": -10
         },
         {
           "position": 15,

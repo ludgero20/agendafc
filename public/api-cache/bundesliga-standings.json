@@ -94,12 +94,12 @@
             "tla": "VFB",
             "crest": "https://crests.football-data.org/10.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 14,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 47,
+          "points": 48,
           "goalsFor": 50,
           "goalsAgainst": 34,
           "goalDifference": 16
@@ -113,12 +113,12 @@
             "tla": "RBL",
             "crest": "https://crests.football-data.org/721.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 14,
-          "draw": 5,
+          "draw": 6,
           "lost": 6,
-          "points": 47,
+          "points": 48,
           "goalsFor": 48,
           "goalsAgainst": 34,
           "goalDifference": 14
@@ -173,15 +173,34 @@
           "playedGames": 26,
           "form": null,
           "won": 9,
-          "draw": 8,
-          "lost": 9,
-          "points": 35,
+          "draw": 7,
+          "lost": 10,
+          "points": 34,
           "goalsFor": 37,
-          "goalsAgainst": 42,
-          "goalDifference": -5
+          "goalsAgainst": 43,
+          "goalDifference": -6
         },
         {
           "position": 9,
+          "team": {
+            "id": 28,
+            "name": "1. FC Union Berlin",
+            "shortName": "Union Berlin",
+            "tla": "UNB",
+            "crest": "https://crests.football-data.org/28.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 8,
+          "draw": 7,
+          "lost": 11,
+          "points": 31,
+          "goalsFor": 31,
+          "goalsAgainst": 42,
+          "goalDifference": -11
+        },
+        {
+          "position": 10,
           "team": {
             "id": 16,
             "name": "FC Augsburg",
@@ -200,7 +219,7 @@
           "goalDifference": -14
         },
         {
-          "position": 10,
+          "position": 11,
           "team": {
             "id": 7,
             "name": "Hamburger SV",
@@ -217,25 +236,6 @@
           "goalsFor": 29,
           "goalsAgainst": 37,
           "goalDifference": -8
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 28,
-            "name": "1. FC Union Berlin",
-            "shortName": "Union Berlin",
-            "tla": "UNB",
-            "crest": "https://crests.football-data.org/28.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 7,
-          "draw": 8,
-          "lost": 11,
-          "points": 29,
-          "goalsFor": 30,
-          "goalsAgainst": 42,
-          "goalDifference": -12
         },
         {
           "position": 12,
