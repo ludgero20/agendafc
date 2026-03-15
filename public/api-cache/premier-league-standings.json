@@ -77,13 +77,13 @@
           },
           "playedGames": 30,
           "form": null,
-          "won": 14,
-          "draw": 10,
+          "won": 15,
+          "draw": 9,
           "lost": 6,
-          "points": 52,
-          "goalsFor": 51,
-          "goalsAgainst": 40,
-          "goalDifference": 11
+          "points": 54,
+          "goalsFor": 54,
+          "goalsAgainst": 41,
+          "goalDifference": 13
         },
         {
           "position": 4,
@@ -97,15 +97,34 @@
           "playedGames": 30,
           "form": null,
           "won": 15,
-          "draw": 7,
-          "lost": 8,
-          "points": 52,
-          "goalsFor": 39,
-          "goalsAgainst": 34,
-          "goalDifference": 5
+          "draw": 6,
+          "lost": 9,
+          "points": 51,
+          "goalsFor": 40,
+          "goalsAgainst": 37,
+          "goalDifference": 3
         },
         {
           "position": 5,
+          "team": {
+            "id": 64,
+            "name": "Liverpool FC",
+            "shortName": "Liverpool",
+            "tla": "LIV",
+            "crest": "https://crests.football-data.org/64.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 14,
+          "draw": 7,
+          "lost": 9,
+          "points": 49,
+          "goalsFor": 48,
+          "goalsAgainst": 39,
+          "goalDifference": 9
+        },
+        {
+          "position": 6,
           "team": {
             "id": 61,
             "name": "Chelsea FC",
@@ -122,25 +141,6 @@
           "goalsFor": 53,
           "goalsAgainst": 35,
           "goalDifference": 18
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 64,
-            "name": "Liverpool FC",
-            "shortName": "Liverpool",
-            "tla": "LIV",
-            "crest": "https://crests.football-data.org/64.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 14,
-          "draw": 6,
-          "lost": 9,
-          "points": 48,
-          "goalsFor": 48,
-          "goalsAgainst": 39,
-          "goalDifference": 9
         },
         {
           "position": 7,
@@ -322,12 +322,12 @@
             "tla": "TOT",
             "crest": "https://crests.football-data.org/73.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 7,
-          "draw": 8,
+          "draw": 9,
           "lost": 14,
-          "points": 29,
+          "points": 30,
           "goalsFor": 39,
           "goalsAgainst": 46,
           "goalDifference": -7

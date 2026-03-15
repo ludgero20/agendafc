@@ -170,12 +170,12 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 9,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 34,
+          "points": 35,
           "goalsFor": 37,
           "goalsAgainst": 42,
           "goalDifference": -5
@@ -227,12 +227,12 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 11,
-          "points": 28,
+          "points": 29,
           "goalsFor": 30,
           "goalsAgainst": 42,
           "goalDifference": -12
@@ -259,21 +259,21 @@
         {
           "position": 13,
           "team": {
-            "id": 12,
-            "name": "SV Werder Bremen",
-            "shortName": "Bremen",
-            "tla": "SVW",
-            "crest": "https://crests.football-data.org/12.png"
+            "id": 15,
+            "name": "1. FSV Mainz 05",
+            "shortName": "Mainz",
+            "tla": "M05",
+            "crest": "https://crests.football-data.org/15.png"
           },
           "playedGames": 26,
           "form": null,
           "won": 6,
-          "draw": 8,
-          "lost": 12,
-          "points": 26,
-          "goalsFor": 29,
-          "goalsAgainst": 45,
-          "goalDifference": -16
+          "draw": 9,
+          "lost": 11,
+          "points": 27,
+          "goalsFor": 31,
+          "goalsAgainst": 41,
+          "goalDifference": -10
         },
         {
           "position": 14,
@@ -297,21 +297,21 @@
         {
           "position": 15,
           "team": {
-            "id": 15,
-            "name": "1. FSV Mainz 05",
-            "shortName": "Mainz",
-            "tla": "M05",
-            "crest": "https://crests.football-data.org/15.png"
+            "id": 12,
+            "name": "SV Werder Bremen",
+            "shortName": "Bremen",
+            "tla": "SVW",
+            "crest": "https://crests.football-data.org/12.png"
           },
           "playedGames": 26,
           "form": null,
-          "won": 5,
-          "draw": 10,
-          "lost": 11,
+          "won": 6,
+          "draw": 7,
+          "lost": 13,
           "points": 25,
           "goalsFor": 29,
-          "goalsAgainst": 41,
-          "goalDifference": -12
+          "goalsAgainst": 47,
+          "goalDifference": -18
         },
         {
           "position": 16,
