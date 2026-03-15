@@ -37,12 +37,12 @@
             "tla": "FCP",
             "crest": "https://crests.football-data.org/503.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 21,
-          "draw": 3,
+          "draw": 4,
           "lost": 1,
-          "points": 66,
+          "points": 67,
           "goalsFor": 49,
           "goalsAgainst": 10,
           "goalDifference": 39
@@ -170,12 +170,12 @@
             "tla": "MOR",
             "crest": "https://crests.football-data.org/583.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 10,
-          "draw": 5,
+          "draw": 6,
           "lost": 10,
-          "points": 35,
+          "points": 36,
           "goalsFor": 31,
           "goalsAgainst": 35,
           "goalDifference": -4
@@ -233,8 +233,8 @@
           "draw": 9,
           "lost": 11,
           "points": 27,
-          "goalsFor": 25,
-          "goalsAgainst": 44,
+          "goalsFor": 26,
+          "goalsAgainst": 45,
           "goalDifference": -19
         },
         {
@@ -290,8 +290,8 @@
           "draw": 10,
           "lost": 11,
           "points": 25,
-          "goalsFor": 28,
-          "goalsAgainst": 44,
+          "goalsFor": 29,
+          "goalsAgainst": 45,
           "goalDifference": -16
         },
         {

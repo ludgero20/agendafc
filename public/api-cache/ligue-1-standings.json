@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL",
+            "crest": "https://crests.football-data.org/521.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 13,
+          "draw": 5,
+          "lost": 8,
+          "points": 44,
+          "goalsFor": 39,
+          "goalsAgainst": 32,
+          "goalDifference": 7
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -124,7 +143,7 @@
           "goalDifference": 8
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 529,
             "name": "Stade Rennais FC 1901",
@@ -132,33 +151,14 @@
             "tla": "REN",
             "crest": "https://crests.football-data.org/529.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 12,
           "draw": 7,
-          "lost": 6,
+          "lost": 7,
           "points": 43,
           "goalsFor": 42,
-          "goalsAgainst": 35,
-          "goalDifference": 7
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 521,
-            "name": "Lille OSC",
-            "shortName": "Lille",
-            "tla": "LIL",
-            "crest": "https://crests.football-data.org/521.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 12,
-          "draw": 5,
-          "lost": 8,
-          "points": 41,
-          "goalsFor": 38,
-          "goalsAgainst": 32,
+          "goalsAgainst": 36,
           "goalDifference": 6
         },
         {

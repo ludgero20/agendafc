@@ -107,25 +107,6 @@
         {
           "position": 5,
           "team": {
-            "id": 558,
-            "name": "RC Celta de Vigo",
-            "shortName": "Celta",
-            "tla": "CEL",
-            "crest": "https://crests.football-data.org/558.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 11,
-          "draw": 10,
-          "lost": 7,
-          "points": 43,
-          "goalsFor": 38,
-          "goalsAgainst": 30,
-          "goalDifference": 8
-        },
-        {
-          "position": 6,
-          "team": {
             "id": 90,
             "name": "Real Betis Balompié",
             "shortName": "Real Betis",
@@ -135,15 +116,53 @@
           "playedGames": 28,
           "form": null,
           "won": 11,
-          "draw": 10,
-          "lost": 7,
-          "points": 43,
-          "goalsFor": 42,
+          "draw": 11,
+          "lost": 6,
+          "points": 44,
+          "goalsFor": 43,
           "goalsAgainst": 35,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
+            "id": 558,
+            "name": "RC Celta de Vigo",
+            "shortName": "Celta",
+            "tla": "CEL",
+            "crest": "https://crests.football-data.org/558.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 10,
+          "draw": 11,
+          "lost": 7,
+          "points": 41,
+          "goalsFor": 38,
+          "goalsAgainst": 31,
           "goalDifference": 7
         },
         {
           "position": 7,
+          "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 10,
+          "draw": 8,
+          "lost": 10,
+          "points": 38,
+          "goalsFor": 41,
+          "goalsAgainst": 41,
+          "goalDifference": 0
+        },
+        {
+          "position": 8,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -160,25 +179,6 @@
           "goalsFor": 35,
           "goalsAgainst": 42,
           "goalDifference": -7
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 9,
-          "draw": 8,
-          "lost": 10,
-          "points": 35,
-          "goalsFor": 40,
-          "goalsAgainst": 41,
-          "goalDifference": -1
         },
         {
           "position": 9,
@@ -227,15 +227,15 @@
             "tla": "OSA",
             "crest": "https://crests.football-data.org/79.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 9,
           "draw": 7,
-          "lost": 11,
+          "lost": 12,
           "points": 34,
           "goalsFor": 32,
-          "goalsAgainst": 32,
-          "goalDifference": 0
+          "goalsAgainst": 33,
+          "goalDifference": -1
         },
         {
           "position": 12,
