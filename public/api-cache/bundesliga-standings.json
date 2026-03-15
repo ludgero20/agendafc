@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 12,
+            "name": "SV Werder Bremen",
+            "shortName": "Bremen",
+            "tla": "SVW",
+            "crest": "https://crests.football-data.org/12.png"
+          },
+          "playedGames": 26,
+          "form": null,
+          "won": 6,
+          "draw": 8,
+          "lost": 12,
+          "points": 26,
+          "goalsFor": 29,
+          "goalsAgainst": 45,
+          "goalDifference": -16
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 1,
             "name": "1. FC Köln",
             "shortName": "1. FC Köln",
@@ -276,25 +295,6 @@
           "goalDifference": -9
         },
         {
-          "position": 14,
-          "team": {
-            "id": 12,
-            "name": "SV Werder Bremen",
-            "shortName": "Bremen",
-            "tla": "SVW",
-            "crest": "https://crests.football-data.org/12.png"
-          },
-          "playedGames": 25,
-          "form": null,
-          "won": 6,
-          "draw": 7,
-          "lost": 12,
-          "points": 25,
-          "goalsFor": 29,
-          "goalsAgainst": 45,
-          "goalDifference": -16
-        },
-        {
           "position": 15,
           "team": {
             "id": 15,
@@ -303,12 +303,12 @@
             "tla": "M05",
             "crest": "https://crests.football-data.org/15.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 5,
-          "draw": 9,
+          "draw": 10,
           "lost": 11,
-          "points": 24,
+          "points": 25,
           "goalsFor": 29,
           "goalsAgainst": 41,
           "goalDifference": -12

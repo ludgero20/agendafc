@@ -75,12 +75,12 @@
             "tla": "MUN",
             "crest": "https://crests.football-data.org/66.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 14,
-          "draw": 9,
+          "draw": 10,
           "lost": 6,
-          "points": 51,
+          "points": 52,
           "goalsFor": 51,
           "goalsAgainst": 40,
           "goalDifference": 11
@@ -94,12 +94,12 @@
             "tla": "AVL",
             "crest": "https://crests.football-data.org/58.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 15,
-          "draw": 6,
+          "draw": 7,
           "lost": 8,
-          "points": 51,
+          "points": 52,
           "goalsFor": 39,
           "goalsAgainst": 34,
           "goalDifference": 5
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 12,
+          "draw": 5,
+          "lost": 13,
+          "points": 41,
+          "goalsFor": 40,
+          "goalsAgainst": 43,
+          "goalDifference": -3
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
             "shortName": "Brighton Hove",
@@ -236,25 +255,6 @@
           "goalsFor": 39,
           "goalsAgainst": 36,
           "goalDifference": 3
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 63,
-            "name": "Fulham FC",
-            "shortName": "Fulham",
-            "tla": "FUL",
-            "crest": "https://crests.football-data.org/63.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 12,
-          "draw": 4,
-          "lost": 13,
-          "points": 40,
-          "goalsFor": 40,
-          "goalsAgainst": 43,
-          "goalDifference": -3
         },
         {
           "position": 13,
@@ -284,12 +284,12 @@
             "tla": "CRY",
             "crest": "https://crests.football-data.org/354.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 10,
-          "draw": 8,
+          "draw": 9,
           "lost": 11,
-          "points": 38,
+          "points": 39,
           "goalsFor": 33,
           "goalsAgainst": 35,
           "goalDifference": -2
@@ -303,12 +303,12 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 7,
-          "draw": 10,
+          "draw": 11,
           "lost": 12,
-          "points": 31,
+          "points": 32,
           "goalsFor": 37,
           "goalsAgainst": 48,
           "goalDifference": -11
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 351,
+            "name": "Nottingham Forest FC",
+            "shortName": "Nottingham",
+            "tla": "NOT",
+            "crest": "https://crests.football-data.org/351.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 7,
+          "draw": 8,
+          "lost": 15,
+          "points": 29,
+          "goalsFor": 28,
+          "goalsAgainst": 43,
+          "goalDifference": -15
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 563,
             "name": "West Ham United FC",
             "shortName": "West Ham",
@@ -350,25 +369,6 @@
           "goalsFor": 36,
           "goalsAgainst": 55,
           "goalDifference": -19
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 351,
-            "name": "Nottingham Forest FC",
-            "shortName": "Nottingham",
-            "tla": "NOT",
-            "crest": "https://crests.football-data.org/351.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 7,
-          "draw": 7,
-          "lost": 15,
-          "points": 28,
-          "goalsFor": 28,
-          "goalsAgainst": 43,
-          "goalDifference": -15
         },
         {
           "position": 19,
