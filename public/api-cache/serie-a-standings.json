@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 8,
+          "draw": 9,
+          "lost": 12,
+          "points": 33,
+          "goalsFor": 35,
+          "goalsAgainst": 40,
+          "goalDifference": -5
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 586,
             "name": "Torino FC",
             "shortName": "Torino",
@@ -274,25 +293,6 @@
           "goalsFor": 32,
           "goalsAgainst": 50,
           "goalDifference": -18
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 7,
-          "draw": 9,
-          "lost": 12,
-          "points": 30,
-          "goalsFor": 34,
-          "goalsAgainst": 40,
-          "goalDifference": -6
         },
         {
           "position": 15,
@@ -379,15 +379,15 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 3,
           "draw": 9,
-          "lost": 16,
+          "lost": 17,
           "points": 18,
           "goalsFor": 22,
-          "goalsAgainst": 49,
-          "goalDifference": -27
+          "goalsAgainst": 50,
+          "goalDifference": -28
         },
         {
           "position": 20,
