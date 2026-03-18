@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43918,
+          "name": "François Letexier",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43888,
+          "name": "Szymon Marciniak",
+          "type": "REFEREE",
+          "nationality": "Poland"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43926,
+          "name": "Benoît Bastien",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15408,
+          "name": "Daniel Siebert",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -282,13 +310,13 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T12:46:28Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "awayTeam": {
         "id": null,
@@ -341,13 +369,13 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T12:46:28Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
       },
       "awayTeam": {
         "id": null,
@@ -459,20 +487,20 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T12:46:28Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
       },
       "score": {
         "winner": null,
@@ -518,7 +546,7 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T15:20:50Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -527,11 +555,11 @@
         "crest": null
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "score": {
         "winner": null,
@@ -577,7 +605,7 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T15:20:50Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
         "id": null,
         "name": null,
@@ -586,11 +614,11 @@
         "crest": null
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 86,
+        "name": "Real Madrid CF",
+        "shortName": "Real Madrid",
+        "tla": "RMA",
+        "crest": "https://crests.football-data.org/86.png"
       },
       "score": {
         "winner": null,
@@ -695,20 +723,20 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T15:20:50Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 57,
+        "name": "Arsenal FC",
+        "shortName": "Arsenal",
+        "tla": "ARS",
+        "crest": "https://crests.football-data.org/57.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
       },
       "score": {
         "winner": null,
@@ -990,7 +1018,7 @@
       "matchday": null,
       "stage": "FINAL",
       "group": null,
-      "lastUpdated": "2026-03-17T00:21:05Z",
+      "lastUpdated": "2026-03-18T00:21:01Z",
       "homeTeam": {
         "id": null,
         "name": null,
