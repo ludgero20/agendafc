@@ -46,7 +46,7 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
         "id": 524,
         "name": "Paris Saint-Germain FC",
@@ -55,11 +55,11 @@
         "crest": "https://crests.football-data.org/524.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "score": {
         "winner": null,
@@ -105,7 +105,7 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -114,11 +114,11 @@
         "crest": "https://crests.football-data.org/86.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
       },
       "score": {
         "winner": null,
@@ -164,20 +164,20 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T12:46:28Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
       },
       "score": {
         "winner": null,
@@ -223,7 +223,7 @@
       "matchday": 1,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-18T05:21:11Z",
       "homeTeam": {
         "id": 498,
         "name": "Sporting Clube de Portugal",
@@ -282,13 +282,13 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
       },
       "awayTeam": {
         "id": 524,
@@ -341,13 +341,13 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 5,
+        "name": "FC Bayern München",
+        "shortName": "Bayern",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/5.png"
       },
       "awayTeam": {
         "id": 86,
@@ -400,20 +400,20 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-02-27T15:20:50Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 78,
+        "name": "Club Atlético de Madrid",
+        "shortName": "Atleti",
+        "tla": "ATL",
+        "crest": "https://crests.football-data.org/78.png"
       },
       "awayTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 81,
+        "name": "FC Barcelona",
+        "shortName": "Barça",
+        "tla": "FCB",
+        "crest": "https://crests.football-data.org/81.png"
       },
       "score": {
         "winner": null,
@@ -459,7 +459,7 @@
       "matchday": 2,
       "stage": "QUARTER_FINALS",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-18T15:21:02Z",
       "homeTeam": {
         "id": 57,
         "name": "Arsenal FC",
@@ -754,7 +754,7 @@
       "matchday": null,
       "stage": "FINAL",
       "group": null,
-      "lastUpdated": "2026-03-18T00:21:01Z",
+      "lastUpdated": "2026-03-19T00:21:05Z",
       "homeTeam": {
         "id": null,
         "name": null,
