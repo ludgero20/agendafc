@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 1767,
+            "name": "Grêmio FBPA",
+            "shortName": "Grêmio",
+            "tla": "FBP",
+            "crest": "https://crests.football-data.org/1767.png"
+          },
+          "playedGames": 7,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 2,
+          "points": 11,
+          "goalsFor": 11,
+          "goalsAgainst": 10,
+          "goalDifference": 1
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 1783,
             "name": "CR Flamengo",
             "shortName": "Flamengo",
@@ -143,7 +162,7 @@
           "goalDifference": 5
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 1768,
             "name": "CA Paranaense",
@@ -160,25 +179,6 @@
           "goalsFor": 8,
           "goalsAgainst": 7,
           "goalDifference": 1
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 1767,
-            "name": "Grêmio FBPA",
-            "shortName": "Grêmio",
-            "tla": "FBP",
-            "crest": "https://crests.football-data.org/1767.png"
-          },
-          "playedGames": 6,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 2,
-          "points": 8,
-          "goalsFor": 10,
-          "goalsAgainst": 10,
-          "goalDifference": 0
         },
         {
           "position": 9,
@@ -265,15 +265,15 @@
             "tla": "VIT",
             "crest": "https://crests.football-data.org/1782.png"
           },
-          "playedGames": 5,
+          "playedGames": 6,
           "form": null,
           "won": 2,
           "draw": 1,
-          "lost": 2,
+          "lost": 3,
           "points": 7,
           "goalsFor": 7,
-          "goalsAgainst": 8,
-          "goalDifference": -1
+          "goalsAgainst": 9,
+          "goalDifference": -2
         },
         {
           "position": 14,
