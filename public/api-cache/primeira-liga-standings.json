@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 9136,
+            "name": "CF Estrela da Amadora",
+            "shortName": "Amadora",
+            "tla": "AMA",
+            "crest": "https://crests.football-data.org/9136.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 6,
+          "draw": 10,
+          "lost": 11,
+          "points": 28,
+          "goalsFor": 33,
+          "goalsAgainst": 45,
+          "goalDifference": -12
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 496,
             "name": "Rio Ave FC",
             "shortName": "Rio Ave",
@@ -236,25 +255,6 @@
           "goalsFor": 26,
           "goalsAgainst": 45,
           "goalDifference": -19
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 9136,
-            "name": "CF Estrela da Amadora",
-            "shortName": "Amadora",
-            "tla": "AMA",
-            "crest": "https://crests.football-data.org/9136.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 5,
-          "draw": 11,
-          "lost": 11,
-          "points": 26,
-          "goalsFor": 29,
-          "goalsAgainst": 45,
-          "goalDifference": -16
         },
         {
           "position": 13,
@@ -306,12 +306,12 @@
           "playedGames": 26,
           "form": null,
           "won": 5,
-          "draw": 10,
-          "lost": 11,
-          "points": 25,
+          "draw": 9,
+          "lost": 12,
+          "points": 24,
           "goalsFor": 26,
-          "goalsAgainst": 44,
-          "goalDifference": -18
+          "goalsAgainst": 48,
+          "goalDifference": -22
         },
         {
           "position": 16,
