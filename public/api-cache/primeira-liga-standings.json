@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 9136,
+            "name": "CF Estrela da Amadora",
+            "shortName": "Amadora",
+            "tla": "AMA",
+            "crest": "https://crests.football-data.org/9136.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 5,
+          "draw": 11,
+          "lost": 11,
+          "points": 26,
+          "goalsFor": 29,
+          "goalsAgainst": 45,
+          "goalDifference": -16
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 712,
             "name": "FC Arouca",
             "shortName": "Arouca",
@@ -257,7 +276,7 @@
           "goalDifference": -22
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -276,25 +295,6 @@
           "goalDifference": -8
         },
         {
-          "position": 14,
-          "team": {
-            "id": 9136,
-            "name": "CF Estrela da Amadora",
-            "shortName": "Amadora",
-            "tla": "AMA",
-            "crest": "https://crests.football-data.org/9136.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 5,
-          "draw": 10,
-          "lost": 11,
-          "points": 25,
-          "goalsFor": 29,
-          "goalsAgainst": 45,
-          "goalDifference": -16
-        },
-        {
           "position": 15,
           "team": {
             "id": 6618,
@@ -303,12 +303,12 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 5,
-          "draw": 9,
+          "draw": 10,
           "lost": 11,
-          "points": 24,
+          "points": 25,
           "goalsFor": 26,
           "goalsAgainst": 44,
           "goalDifference": -18
