@@ -56,12 +56,12 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 18,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 57,
+          "points": 58,
           "goalsFor": 54,
           "goalsAgainst": 22,
           "goalDifference": 32
@@ -234,8 +234,8 @@
           "lost": 11,
           "points": 36,
           "goalsFor": 34,
-          "goalsAgainst": 37,
-          "goalDifference": -3
+          "goalsAgainst": 39,
+          "goalDifference": -5
         },
         {
           "position": 12,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 522,
+            "name": "OGC Nice",
+            "shortName": "Nice",
+            "tla": "NIC",
+            "crest": "https://crests.football-data.org/522.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 7,
+          "draw": 7,
+          "lost": 13,
+          "points": 28,
+          "goalsFor": 32,
+          "goalsAgainst": 48,
+          "goalDifference": -16
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 533,
             "name": "Le Havre AC",
             "shortName": "Le Havre",
@@ -295,25 +314,6 @@
           "goalDifference": -12
         },
         {
-          "position": 15,
-          "team": {
-            "id": 522,
-            "name": "OGC Nice",
-            "shortName": "Nice",
-            "tla": "NIC",
-            "crest": "https://crests.football-data.org/522.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 7,
-          "draw": 6,
-          "lost": 13,
-          "points": 27,
-          "goalsFor": 32,
-          "goalsAgainst": 48,
-          "goalDifference": -16
-        },
-        {
           "position": 16,
           "team": {
             "id": 519,
@@ -328,9 +328,9 @@
           "draw": 7,
           "lost": 15,
           "points": 22,
-          "goalsFor": 20,
+          "goalsFor": 22,
           "goalsAgainst": 36,
-          "goalDifference": -16
+          "goalDifference": -14
         },
         {
           "position": 17,

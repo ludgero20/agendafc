@@ -139,11 +139,30 @@
           "lost": 9,
           "points": 48,
           "goalsFor": 53,
-          "goalsAgainst": 36,
-          "goalDifference": 17
+          "goalsAgainst": 38,
+          "goalDifference": 15
         },
         {
           "position": 7,
+          "team": {
+            "id": 402,
+            "name": "Brentford FC",
+            "shortName": "Brentford",
+            "tla": "BRE",
+            "crest": "https://crests.football-data.org/402.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 13,
+          "draw": 7,
+          "lost": 11,
+          "points": 46,
+          "goalsFor": 46,
+          "goalsAgainst": 42,
+          "goalDifference": 4
+        },
+        {
+          "position": 8,
           "team": {
             "id": 62,
             "name": "Everton FC",
@@ -157,28 +176,9 @@
           "draw": 7,
           "lost": 11,
           "points": 46,
-          "goalsFor": 35,
+          "goalsFor": 37,
           "goalsAgainst": 35,
-          "goalDifference": 0
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 402,
-            "name": "Brentford FC",
-            "shortName": "Brentford",
-            "tla": "BRE",
-            "crest": "https://crests.football-data.org/402.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 13,
-          "draw": 6,
-          "lost": 11,
-          "points": 45,
-          "goalsFor": 46,
-          "goalsAgainst": 42,
-          "goalDifference": 4
+          "goalDifference": 2
         },
         {
           "position": 9,
@@ -303,12 +303,12 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 7,
-          "draw": 11,
+          "draw": 12,
           "lost": 12,
-          "points": 32,
+          "points": 33,
           "goalsFor": 37,
           "goalsAgainst": 48,
           "goalDifference": -11
