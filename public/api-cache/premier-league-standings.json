@@ -113,12 +113,12 @@
             "tla": "LIV",
             "crest": "https://crests.football-data.org/64.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 14,
-          "draw": 7,
+          "draw": 8,
           "lost": 9,
-          "points": 49,
+          "points": 50,
           "goalsFor": 49,
           "goalsAgainst": 40,
           "goalDifference": 9
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA",
+            "crest": "https://crests.football-data.org/397.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 10,
+          "draw": 11,
+          "lost": 10,
+          "points": 41,
+          "goalsFor": 39,
+          "goalsAgainst": 36,
+          "goalDifference": 3
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 63,
             "name": "Fulham FC",
             "shortName": "Fulham",
@@ -236,25 +255,6 @@
           "goalsFor": 40,
           "goalsAgainst": 43,
           "goalDifference": -3
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 397,
-            "name": "Brighton & Hove Albion FC",
-            "shortName": "Brighton Hove",
-            "tla": "BHA",
-            "crest": "https://crests.football-data.org/397.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 10,
-          "draw": 10,
-          "lost": 10,
-          "points": 40,
-          "goalsFor": 39,
-          "goalsAgainst": 36,
-          "goalDifference": 3
         },
         {
           "position": 13,

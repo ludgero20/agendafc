@@ -322,12 +322,12 @@
             "tla": "MAL",
             "crest": "https://crests.football-data.org/89.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 14,
-          "points": 28,
+          "points": 29,
           "goalsFor": 33,
           "goalsAgainst": 45,
           "goalDifference": -12
@@ -360,12 +360,12 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 5,
-          "draw": 11,
+          "draw": 12,
           "lost": 12,
-          "points": 26,
+          "points": 27,
           "goalsFor": 36,
           "goalsAgainst": 45,
           "goalDifference": -9
