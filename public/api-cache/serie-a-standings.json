@@ -88,25 +88,6 @@
         {
           "position": 4,
           "team": {
-            "id": 109,
-            "name": "Juventus FC",
-            "shortName": "Juventus",
-            "tla": "JUV",
-            "crest": "https://crests.football-data.org/109.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 16,
-          "draw": 8,
-          "lost": 6,
-          "points": 56,
-          "goalsFor": 52,
-          "goalsAgainst": 28,
-          "goalDifference": 24
-        },
-        {
-          "position": 5,
-          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -122,6 +103,25 @@
           "goalsFor": 48,
           "goalsAgainst": 22,
           "goalDifference": 26
+        },
+        {
+          "position": 5,
+          "team": {
+            "id": 109,
+            "name": "Juventus FC",
+            "shortName": "Juventus",
+            "tla": "JUV",
+            "crest": "https://crests.football-data.org/109.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 15,
+          "draw": 9,
+          "lost": 6,
+          "points": 54,
+          "goalsFor": 52,
+          "goalsAgainst": 29,
+          "goalDifference": 23
         },
         {
           "position": 6,
@@ -202,6 +202,25 @@
         {
           "position": 10,
           "team": {
+            "id": 471,
+            "name": "US Sassuolo Calcio",
+            "shortName": "Sassuolo",
+            "tla": "SAS",
+            "crest": "https://crests.football-data.org/471.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 11,
+          "draw": 6,
+          "lost": 13,
+          "points": 39,
+          "goalsFor": 36,
+          "goalsAgainst": 40,
+          "goalDifference": -4
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 115,
             "name": "Udinese Calcio",
             "shortName": "Udinese",
@@ -217,25 +236,6 @@
           "goalsFor": 35,
           "goalsAgainst": 42,
           "goalDifference": -7
-        },
-        {
-          "position": 11,
-          "team": {
-            "id": 471,
-            "name": "US Sassuolo Calcio",
-            "shortName": "Sassuolo",
-            "tla": "SAS",
-            "crest": "https://crests.football-data.org/471.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 11,
-          "draw": 5,
-          "lost": 14,
-          "points": 38,
-          "goalsFor": 35,
-          "goalsAgainst": 40,
-          "goalDifference": -5
         },
         {
           "position": 12,
