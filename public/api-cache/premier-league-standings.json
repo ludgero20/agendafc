@@ -246,14 +246,14 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 12,
-          "draw": 5,
+          "draw": 6,
           "lost": 13,
-          "points": 41,
-          "goalsFor": 40,
-          "goalsAgainst": 43,
+          "points": 42,
+          "goalsFor": 41,
+          "goalsAgainst": 44,
           "goalDifference": -3
         },
         {
@@ -379,14 +379,14 @@
             "tla": "BUR",
             "crest": "https://crests.football-data.org/328.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 4,
-          "draw": 8,
+          "draw": 9,
           "lost": 18,
-          "points": 20,
-          "goalsFor": 32,
-          "goalsAgainst": 58,
+          "points": 21,
+          "goalsFor": 33,
+          "goalsAgainst": 59,
           "goalDifference": -26
         },
         {

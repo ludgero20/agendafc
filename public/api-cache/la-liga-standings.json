@@ -164,40 +164,40 @@
         {
           "position": 8,
           "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 10,
-          "draw": 7,
-          "lost": 11,
-          "points": 37,
-          "goalsFor": 35,
-          "goalsAgainst": 42,
-          "goalDifference": -7
-        },
-        {
-          "position": 9,
-          "team": {
             "id": 82,
             "name": "Getafe CF",
             "shortName": "Getafe",
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 5,
           "lost": 13,
-          "points": 35,
-          "goalsFor": 23,
+          "points": 38,
+          "goalsFor": 25,
           "goalsAgainst": 30,
-          "goalDifference": -7
+          "goalDifference": -5
+        },
+        {
+          "position": 9,
+          "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 10,
+          "draw": 7,
+          "lost": 12,
+          "points": 37,
+          "goalsFor": 35,
+          "goalsAgainst": 44,
+          "goalDifference": -9
         },
         {
           "position": 10,
