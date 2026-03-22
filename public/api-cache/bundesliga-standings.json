@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 15,
+          "draw": 6,
+          "lost": 6,
+          "points": 51,
+          "goalsFor": 51,
+          "goalsAgainst": 34,
+          "goalDifference": 17
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 721,
             "name": "RB Leipzig",
             "shortName": "RB Leipzig",
@@ -84,25 +103,6 @@
           "goalsFor": 53,
           "goalsAgainst": 35,
           "goalDifference": 18
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 15,
-          "draw": 5,
-          "lost": 6,
-          "points": 50,
-          "goalsFor": 51,
-          "goalsAgainst": 34,
-          "goalDifference": 17
         },
         {
           "position": 5,
@@ -172,13 +172,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 9,
-          "draw": 8,
+          "won": 10,
+          "draw": 7,
           "lost": 10,
-          "points": 35,
-          "goalsFor": 37,
-          "goalsAgainst": 43,
-          "goalDifference": -6
+          "points": 37,
+          "goalsFor": 39,
+          "goalsAgainst": 44,
+          "goalDifference": -5
         },
         {
           "position": 9,
@@ -189,12 +189,12 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/16.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 9,
-          "draw": 4,
+          "draw": 5,
           "lost": 13,
-          "points": 31,
+          "points": 32,
           "goalsFor": 31,
           "goalsAgainst": 45,
           "goalDifference": -14
@@ -325,12 +325,12 @@
           "playedGames": 27,
           "form": null,
           "won": 6,
-          "draw": 7,
-          "lost": 14,
-          "points": 25,
-          "goalsFor": 23,
-          "goalsAgainst": 42,
-          "goalDifference": -19
+          "draw": 6,
+          "lost": 15,
+          "points": 24,
+          "goalsFor": 24,
+          "goalsAgainst": 44,
+          "goalDifference": -20
         },
         {
           "position": 17,

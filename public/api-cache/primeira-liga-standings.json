@@ -75,12 +75,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 19,
-          "draw": 5,
+          "draw": 6,
           "lost": 1,
-          "points": 62,
+          "points": 63,
           "goalsFor": 64,
           "goalsAgainst": 14,
           "goalDifference": 50
@@ -153,13 +153,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 11,
+          "won": 10,
           "draw": 7,
-          "lost": 9,
-          "points": 40,
+          "lost": 10,
+          "points": 37,
           "goalsFor": 48,
-          "goalsAgainst": 42,
-          "goalDifference": 6
+          "goalsAgainst": 44,
+          "goalDifference": 4
         },
         {
           "position": 8,
@@ -208,18 +208,37 @@
             "tla": "ALV",
             "crest": "https://crests.football-data.org/7822.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 7,
-          "draw": 8,
+          "draw": 9,
           "lost": 11,
-          "points": 29,
+          "points": 30,
           "goalsFor": 26,
           "goalsAgainst": 41,
           "goalDifference": -15
         },
         {
           "position": 11,
+          "team": {
+            "id": 496,
+            "name": "Rio Ave FC",
+            "shortName": "Rio Ave",
+            "tla": "RIO",
+            "crest": "https://crests.football-data.org/496.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 7,
+          "draw": 9,
+          "lost": 11,
+          "points": 30,
+          "goalsFor": 28,
+          "goalsAgainst": 46,
+          "goalDifference": -18
+        },
+        {
+          "position": 12,
           "team": {
             "id": 712,
             "name": "FC Arouca",
@@ -238,7 +257,7 @@
           "goalDifference": -21
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -257,7 +276,7 @@
           "goalDifference": -7
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -274,25 +293,6 @@
           "goalsFor": 33,
           "goalsAgainst": 45,
           "goalDifference": -12
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 496,
-            "name": "Rio Ave FC",
-            "shortName": "Rio Ave",
-            "tla": "RIO",
-            "crest": "https://crests.football-data.org/496.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 6,
-          "draw": 9,
-          "lost": 12,
-          "points": 27,
-          "goalsFor": 26,
-          "goalsAgainst": 46,
-          "goalDifference": -20
         },
         {
           "position": 15,

@@ -78,12 +78,12 @@
           "playedGames": 27,
           "form": null,
           "won": 15,
-          "draw": 5,
-          "lost": 7,
-          "points": 50,
-          "goalsFor": 53,
-          "goalsAgainst": 33,
-          "goalDifference": 20
+          "draw": 4,
+          "lost": 8,
+          "points": 49,
+          "goalsFor": 54,
+          "goalsAgainst": 35,
+          "goalDifference": 19
         },
         {
           "position": 4,
@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL",
+            "crest": "https://crests.football-data.org/521.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 14,
+          "draw": 5,
+          "lost": 8,
+          "points": 47,
+          "goalsFor": 42,
+          "goalsAgainst": 34,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -122,25 +141,6 @@
           "goalsFor": 47,
           "goalsAgainst": 38,
           "goalDifference": 9
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 521,
-            "name": "Lille OSC",
-            "shortName": "Lille",
-            "tla": "LIL",
-            "crest": "https://crests.football-data.org/521.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 13,
-          "draw": 6,
-          "lost": 8,
-          "points": 45,
-          "goalsFor": 40,
-          "goalsAgainst": 33,
-          "goalDifference": 7
         },
         {
           "position": 7,
@@ -267,13 +267,13 @@
           },
           "playedGames": 27,
           "form": null,
-          "won": 6,
-          "draw": 11,
+          "won": 7,
+          "draw": 10,
           "lost": 10,
-          "points": 29,
-          "goalsFor": 29,
-          "goalsAgainst": 41,
-          "goalDifference": -12
+          "points": 31,
+          "goalsFor": 32,
+          "goalsAgainst": 43,
+          "goalDifference": -11
         },
         {
           "position": 14,
@@ -287,12 +287,12 @@
           "playedGames": 27,
           "form": null,
           "won": 6,
-          "draw": 10,
-          "lost": 11,
-          "points": 28,
-          "goalsFor": 20,
-          "goalsAgainst": 32,
-          "goalDifference": -12
+          "draw": 9,
+          "lost": 12,
+          "points": 27,
+          "goalsFor": 22,
+          "goalsAgainst": 35,
+          "goalDifference": -13
         },
         {
           "position": 15,
