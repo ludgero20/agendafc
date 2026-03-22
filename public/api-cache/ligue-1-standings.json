@@ -94,18 +94,37 @@
             "tla": "LYO",
             "crest": "https://crests.football-data.org/523.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 14,
-          "draw": 5,
+          "draw": 6,
           "lost": 7,
-          "points": 47,
+          "points": 48,
           "goalsFor": 40,
           "goalsAgainst": 27,
           "goalDifference": 13
         },
         {
           "position": 5,
+          "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 13,
+          "draw": 5,
+          "lost": 9,
+          "points": 44,
+          "goalsFor": 45,
+          "goalsAgainst": 37,
+          "goalDifference": 8
+        },
+        {
+          "position": 6,
           "team": {
             "id": 521,
             "name": "Lille OSC",
@@ -122,25 +141,6 @@
           "goalsFor": 40,
           "goalsAgainst": 33,
           "goalDifference": 7
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 26,
-          "form": null,
-          "won": 13,
-          "draw": 4,
-          "lost": 9,
-          "points": 43,
-          "goalsFor": 45,
-          "goalsAgainst": 37,
-          "goalDifference": 8
         },
         {
           "position": 7,
