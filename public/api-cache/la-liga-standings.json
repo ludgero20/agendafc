@@ -56,18 +56,37 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 21,
-          "draw": 3,
+          "draw": 4,
           "lost": 4,
-          "points": 66,
+          "points": 67,
           "goalsFor": 60,
           "goalsAgainst": 24,
           "goalDifference": 36
         },
         {
           "position": 3,
+          "team": {
+            "id": 78,
+            "name": "Club Atlético de Madrid",
+            "shortName": "Atleti",
+            "tla": "ATL",
+            "crest": "https://crests.football-data.org/78.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 17,
+          "draw": 7,
+          "lost": 5,
+          "points": 58,
+          "goalsFor": 47,
+          "goalsAgainst": 25,
+          "goalDifference": 22
+        },
+        {
+          "position": 4,
           "team": {
             "id": 94,
             "name": "Villarreal CF",
@@ -86,25 +105,6 @@
           "goalDifference": 20
         },
         {
-          "position": 4,
-          "team": {
-            "id": 78,
-            "name": "Club Atlético de Madrid",
-            "shortName": "Atleti",
-            "tla": "ATL",
-            "crest": "https://crests.football-data.org/78.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 17,
-          "draw": 6,
-          "lost": 5,
-          "points": 57,
-          "goalsFor": 47,
-          "goalsAgainst": 25,
-          "goalDifference": 22
-        },
-        {
           "position": 5,
           "team": {
             "id": 90,
@@ -119,9 +119,9 @@
           "draw": 11,
           "lost": 7,
           "points": 44,
-          "goalsFor": 43,
+          "goalsFor": 44,
           "goalsAgainst": 37,
-          "goalDifference": 6
+          "goalDifference": 7
         },
         {
           "position": 6,
@@ -196,8 +196,8 @@
           "lost": 13,
           "points": 38,
           "goalsFor": 32,
-          "goalsAgainst": 40,
-          "goalDifference": -8
+          "goalsAgainst": 41,
+          "goalDifference": -9
         },
         {
           "position": 10,
