@@ -154,12 +154,12 @@
           "playedGames": 27,
           "form": null,
           "won": 10,
-          "draw": 9,
-          "lost": 8,
-          "points": 39,
-          "goalsFor": 49,
-          "goalsAgainst": 49,
-          "goalDifference": 0
+          "draw": 8,
+          "lost": 9,
+          "points": 38,
+          "goalsFor": 50,
+          "goalsAgainst": 51,
+          "goalDifference": -1
         },
         {
           "position": 8,
@@ -170,12 +170,12 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 9,
-          "draw": 7,
+          "draw": 8,
           "lost": 10,
-          "points": 34,
+          "points": 35,
           "goalsFor": 37,
           "goalsAgainst": 43,
           "goalDifference": -6
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 15,
+            "name": "1. FSV Mainz 05",
+            "shortName": "Mainz",
+            "tla": "M05",
+            "crest": "https://crests.football-data.org/15.png"
+          },
+          "playedGames": 27,
+          "form": null,
+          "won": 7,
+          "draw": 9,
+          "lost": 11,
+          "points": 30,
+          "goalsFor": 33,
+          "goalsAgainst": 42,
+          "goalDifference": -9
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 7,
             "name": "Hamburger SV",
             "shortName": "HSV",
@@ -238,7 +257,7 @@
           "goalDifference": -9
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 18,
             "name": "Borussia Mönchengladbach",
@@ -255,25 +274,6 @@
           "goalsFor": 33,
           "goalsAgainst": 46,
           "goalDifference": -13
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 15,
-            "name": "1. FSV Mainz 05",
-            "shortName": "Mainz",
-            "tla": "M05",
-            "crest": "https://crests.football-data.org/15.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 6,
-          "draw": 10,
-          "lost": 11,
-          "points": 28,
-          "goalsFor": 31,
-          "goalsAgainst": 41,
-          "goalDifference": -10
         },
         {
           "position": 14,
@@ -322,12 +322,12 @@
             "tla": "STP",
             "crest": "https://crests.football-data.org/20.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 6,
-          "draw": 6,
+          "draw": 7,
           "lost": 14,
-          "points": 24,
+          "points": 25,
           "goalsFor": 23,
           "goalsAgainst": 42,
           "goalDifference": -19

@@ -151,15 +151,15 @@
             "tla": "EST",
             "crest": "https://crests.football-data.org/582.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 7,
           "lost": 9,
-          "points": 37,
-          "goalsFor": 47,
+          "points": 40,
+          "goalsFor": 48,
           "goalsAgainst": 42,
-          "goalDifference": 5
+          "goalDifference": 6
         },
         {
           "position": 8,
@@ -284,15 +284,15 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
           "won": 6,
           "draw": 9,
-          "lost": 11,
+          "lost": 12,
           "points": 27,
           "goalsFor": 26,
-          "goalsAgainst": 45,
-          "goalDifference": -19
+          "goalsAgainst": 46,
+          "goalDifference": -20
         },
         {
           "position": 15,
