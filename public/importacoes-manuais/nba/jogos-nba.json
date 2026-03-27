@@ -10446,9 +10446,9 @@
       "strTime": "20:00:00",
       "strHomeTeam": "Charlotte Hornets",
       "strAwayTeam": "New York Knicks",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "114",
+      "intAwayScore": "103",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447882",
@@ -10456,9 +10456,9 @@
       "strTime": "20:00:00",
       "strHomeTeam": "Detroit Pistons",
       "strAwayTeam": "New Orleans Pelicans",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "129",
+      "intAwayScore": "108",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447883",
@@ -10466,9 +10466,9 @@
       "strTime": "20:00:00",
       "strHomeTeam": "Orlando Magic",
       "strAwayTeam": "Sacramento Kings",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "121",
+      "intAwayScore": "117",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447885",
