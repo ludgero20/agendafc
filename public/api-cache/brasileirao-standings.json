@@ -202,6 +202,25 @@
         {
           "position": 10,
           "team": {
+            "id": 1766,
+            "name": "CA Mineiro",
+            "shortName": "Mineiro",
+            "tla": "CAM",
+            "crest": "https://crests.football-data.org/1766.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 4,
+          "points": 11,
+          "goalsFor": 9,
+          "goalsAgainst": 11,
+          "goalDifference": -2
+        },
+        {
+          "position": 11,
+          "team": {
             "id": 1782,
             "name": "EC Vitória",
             "shortName": "Vitória",
@@ -219,7 +238,7 @@
           "goalDifference": -5
         },
         {
-          "position": 11,
+          "position": 12,
           "team": {
             "id": 1779,
             "name": "SC Corinthians Paulista",
@@ -238,7 +257,7 @@
           "goalDifference": -2
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1770,
             "name": "Botafogo FR",
@@ -257,7 +276,7 @@
           "goalDifference": -4
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 6684,
             "name": "SC Internacional",
@@ -274,25 +293,6 @@
           "goalsFor": 8,
           "goalsAgainst": 10,
           "goalDifference": -2
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 1766,
-            "name": "CA Mineiro",
-            "shortName": "Mineiro",
-            "tla": "CAM",
-            "crest": "https://crests.football-data.org/1766.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 4,
-          "points": 8,
-          "goalsFor": 8,
-          "goalsAgainst": 11,
-          "goalDifference": -3
         },
         {
           "position": 15,
@@ -316,30 +316,30 @@
         {
           "position": 16,
           "team": {
-            "id": 1772,
-            "name": "Chapecoense AF",
-            "shortName": "Chapecoense",
-            "tla": "CHA",
-            "crest": "https://crests.football-data.org/1772_large.png"
-          },
-          "playedGames": 7,
-          "form": null,
-          "won": 1,
-          "draw": 4,
-          "lost": 2,
-          "points": 7,
-          "goalsFor": 9,
-          "goalsAgainst": 11,
-          "goalDifference": -2
-        },
-        {
-          "position": 17,
-          "team": {
             "id": 6685,
             "name": "Santos FC",
             "shortName": "Santos",
             "tla": "SAN",
             "crest": "https://crests.football-data.org/6685.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 1,
+          "draw": 5,
+          "lost": 3,
+          "points": 8,
+          "goalsFor": 10,
+          "goalsAgainst": 13,
+          "goalDifference": -3
+        },
+        {
+          "position": 17,
+          "team": {
+            "id": 1772,
+            "name": "Chapecoense AF",
+            "shortName": "Chapecoense",
+            "tla": "CHA",
+            "crest": "https://crests.football-data.org/1772_large.png"
           },
           "playedGames": 8,
           "form": null,
@@ -347,8 +347,8 @@
           "draw": 4,
           "lost": 3,
           "points": 7,
-          "goalsFor": 10,
-          "goalsAgainst": 13,
+          "goalsFor": 9,
+          "goalsAgainst": 12,
           "goalDifference": -3
         },
         {
@@ -373,6 +373,25 @@
         {
           "position": 19,
           "team": {
+            "id": 4287,
+            "name": "Clube do Remo",
+            "shortName": "Clube do Remo",
+            "tla": "CRE",
+            "crest": "https://crests.football-data.org/4287.png"
+          },
+          "playedGames": 9,
+          "form": null,
+          "won": 1,
+          "draw": 4,
+          "lost": 4,
+          "points": 7,
+          "goalsFor": 10,
+          "goalsAgainst": 15,
+          "goalDifference": -5
+        },
+        {
+          "position": 20,
+          "team": {
             "id": 4364,
             "name": "Mirassol FC",
             "shortName": "Mirassol",
@@ -388,25 +407,6 @@
           "goalsFor": 10,
           "goalsAgainst": 13,
           "goalDifference": -3
-        },
-        {
-          "position": 20,
-          "team": {
-            "id": 4287,
-            "name": "Clube do Remo",
-            "shortName": "Clube do Remo",
-            "tla": "CRE",
-            "crest": "https://crests.football-data.org/4287.png"
-          },
-          "playedGames": 8,
-          "form": null,
-          "won": 1,
-          "draw": 3,
-          "lost": 4,
-          "points": 6,
-          "goalsFor": 10,
-          "goalsAgainst": 15,
-          "goalDifference": -5
         }
       ]
     }
