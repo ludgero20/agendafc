@@ -56,15 +56,15 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 26,
+          "playedGames": 27,
           "form": null,
-          "won": 20,
+          "won": 21,
           "draw": 5,
           "lost": 1,
-          "points": 65,
-          "goalsFor": 68,
-          "goalsAgainst": 15,
-          "goalDifference": 53
+          "points": 68,
+          "goalsFor": 71,
+          "goalsAgainst": 16,
+          "goalDifference": 55
         },
         {
           "position": 3,
@@ -265,15 +265,15 @@
             "tla": "CD ",
             "crest": "https://crests.football-data.org/5530.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 7,
           "draw": 7,
-          "lost": 13,
+          "lost": 14,
           "points": 28,
-          "goalsFor": 24,
-          "goalsAgainst": 31,
-          "goalDifference": -7
+          "goalsFor": 25,
+          "goalsAgainst": 34,
+          "goalDifference": -9
         },
         {
           "position": 14,
