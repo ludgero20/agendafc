@@ -39,13 +39,13 @@
           },
           "playedGames": 28,
           "form": null,
-          "won": 24,
-          "draw": 3,
+          "won": 23,
+          "draw": 4,
           "lost": 1,
-          "points": 75,
-          "goalsFor": 55,
-          "goalsAgainst": 11,
-          "goalDifference": 44
+          "points": 73,
+          "goalsFor": 56,
+          "goalsAgainst": 13,
+          "goalDifference": 43
         },
         {
           "position": 2,
@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 5531,
+            "name": "FC Famalicão",
+            "shortName": "Famalicão",
+            "tla": "FAM",
+            "crest": "https://crests.football-data.org/5531.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 13,
+          "draw": 7,
+          "lost": 8,
+          "points": 46,
+          "goalsFor": 35,
+          "goalsAgainst": 24,
+          "goalDifference": 11
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
             "shortName": "Gil Vicente",
@@ -122,25 +141,6 @@
           "goalsFor": 42,
           "goalsAgainst": 28,
           "goalDifference": 14
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 5531,
-            "name": "FC Famalicão",
-            "shortName": "Famalicão",
-            "tla": "FAM",
-            "crest": "https://crests.football-data.org/5531.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 13,
-          "draw": 6,
-          "lost": 9,
-          "points": 45,
-          "goalsFor": 33,
-          "goalsAgainst": 23,
-          "goalDifference": 10
         },
         {
           "position": 7,
