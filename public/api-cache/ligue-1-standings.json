@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 13,
+          "draw": 8,
+          "lost": 7,
+          "points": 47,
+          "goalsFor": 46,
+          "goalsAgainst": 39,
+          "goalDifference": 7
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 548,
             "name": "AS Monaco FC",
             "shortName": "Monaco",
@@ -143,25 +162,6 @@
           "goalDifference": 9
         },
         {
-          "position": 7,
-          "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 12,
-          "draw": 8,
-          "lost": 7,
-          "points": 44,
-          "goalsFor": 43,
-          "goalsAgainst": 37,
-          "goalDifference": 6
-        },
-        {
           "position": 8,
           "team": {
             "id": 576,
@@ -177,8 +177,8 @@
           "lost": 9,
           "points": 43,
           "goalsFor": 46,
-          "goalsAgainst": 33,
-          "goalDifference": 13
+          "goalsAgainst": 34,
+          "goalDifference": 12
         },
         {
           "position": 9,
@@ -227,15 +227,15 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/512.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 10,
           "draw": 6,
-          "lost": 11,
+          "lost": 12,
           "points": 36,
-          "goalsFor": 34,
-          "goalsAgainst": 39,
-          "goalDifference": -5
+          "goalsFor": 36,
+          "goalsAgainst": 42,
+          "goalDifference": -6
         },
         {
           "position": 12,
@@ -309,9 +309,9 @@
           "draw": 6,
           "lost": 15,
           "points": 27,
-          "goalsFor": 32,
+          "goalsFor": 33,
           "goalsAgainst": 55,
-          "goalDifference": -23
+          "goalDifference": -22
         },
         {
           "position": 16,
