@@ -151,15 +151,15 @@
             "tla": "RSO",
             "crest": "https://crests.football-data.org/92.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 8,
           "lost": 11,
-          "points": 38,
-          "goalsFor": 44,
+          "points": 41,
+          "goalsFor": 45,
           "goalsAgainst": 45,
-          "goalDifference": -1
+          "goalDifference": 0
         },
         {
           "position": 8,
@@ -379,15 +379,15 @@
             "tla": "LEV",
             "crest": "https://crests.football-data.org/88.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 6,
           "draw": 8,
-          "lost": 15,
+          "lost": 16,
           "points": 26,
           "goalsFor": 34,
-          "goalsAgainst": 48,
-          "goalDifference": -14
+          "goalsAgainst": 49,
+          "goalDifference": -15
         },
         {
           "position": 20,

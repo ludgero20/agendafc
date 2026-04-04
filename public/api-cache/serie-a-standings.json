@@ -208,12 +208,12 @@
             "tla": "SAS",
             "crest": "https://crests.football-data.org/471.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 11,
-          "draw": 6,
+          "draw": 7,
           "lost": 13,
-          "points": 39,
+          "points": 40,
           "goalsFor": 36,
           "goalsAgainst": 40,
           "goalDifference": -4
@@ -303,12 +303,12 @@
             "tla": "CAG",
             "crest": "https://crests.football-data.org/104.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 7,
-          "draw": 9,
+          "draw": 10,
           "lost": 14,
-          "points": 30,
+          "points": 31,
           "goalsFor": 31,
           "goalsAgainst": 42,
           "goalDifference": -11
