@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 61,
+    "count": 60,
     "first": "2026-04-04",
     "last": "2026-05-17",
     "played": 0
@@ -19,72 +19,6 @@
     "emblem": "https://crests.football-data.org/PPL.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 28,
-        "winner": null
-      },
-      "id": 545944,
-      "utcDate": "2026-04-04T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 28,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-03-29T01:32:02Z",
-      "homeTeam": {
-        "id": 5529,
-        "name": "CD Nacional",
-        "shortName": "CD Nacional",
-        "tla": "CDN",
-        "crest": "https://crests.football-data.org/5529.png"
-      },
-      "awayTeam": {
-        "id": 9136,
-        "name": "CF Estrela da Amadora",
-        "shortName": "Amadora",
-        "tla": "AMA",
-        "crest": "https://crests.football-data.org/9136.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 220577,
-          "name": "João Gonçalves",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
     {
       "area": {
         "id": 2187,
