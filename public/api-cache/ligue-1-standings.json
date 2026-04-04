@@ -170,15 +170,15 @@
             "tla": "RC ",
             "crest": "https://crests.football-data.org/576.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 7,
           "lost": 9,
-          "points": 40,
-          "goalsFor": 43,
+          "points": 43,
+          "goalsFor": 46,
           "goalsAgainst": 33,
-          "goalDifference": 10
+          "goalDifference": 13
         },
         {
           "position": 9,
@@ -303,15 +303,15 @@
             "tla": "NIC",
             "crest": "https://crests.football-data.org/522.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 7,
           "draw": 6,
-          "lost": 14,
+          "lost": 15,
           "points": 27,
           "goalsFor": 32,
-          "goalsAgainst": 52,
-          "goalDifference": -20
+          "goalsAgainst": 55,
+          "goalDifference": -23
         },
         {
           "position": 16,
