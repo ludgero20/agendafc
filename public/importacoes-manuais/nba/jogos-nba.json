@@ -11106,9 +11106,9 @@
       "strTime": "20:00:00",
       "strHomeTeam": "Philadelphia 76ers",
       "strAwayTeam": "Detroit Pistons",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "93",
+      "intAwayScore": "116",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447948",
@@ -11116,9 +11116,9 @@
       "strTime": "16:00:00",
       "strHomeTeam": "Denver Nuggets",
       "strAwayTeam": "San Antonio Spurs",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "136",
+      "intAwayScore": "134",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447947",
@@ -11126,9 +11126,9 @@
       "strTime": "16:00:00",
       "strHomeTeam": "Miami Heat",
       "strAwayTeam": "Washington Wizards",
-      "intHomeScore": null,
-      "intAwayScore": null,
-      "strStatus": "Not Started"
+      "intHomeScore": "152",
+      "intAwayScore": "136",
+      "strStatus": "Match Finished"
     },
     {
       "idEvent": "18447957",
