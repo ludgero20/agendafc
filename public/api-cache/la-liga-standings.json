@@ -170,15 +170,15 @@
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 5,
           "lost": 13,
-          "points": 38,
-          "goalsFor": 25,
+          "points": 41,
+          "goalsFor": 26,
           "goalsAgainst": 31,
-          "goalDifference": -6
+          "goalDifference": -5
         },
         {
           "position": 9,
@@ -208,15 +208,15 @@
             "tla": "ATH",
             "crest": "https://crests.football-data.org/77.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 11,
           "draw": 5,
-          "lost": 13,
+          "lost": 14,
           "points": 38,
           "goalsFor": 32,
-          "goalsAgainst": 41,
-          "goalDifference": -9
+          "goalsAgainst": 42,
+          "goalDifference": -10
         },
         {
           "position": 11,

@@ -189,12 +189,12 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 12,
-          "draw": 6,
+          "draw": 7,
           "lost": 12,
-          "points": 42,
+          "points": 43,
           "goalsFor": 38,
           "goalsAgainst": 36,
           "goalDifference": 2
@@ -341,12 +341,12 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/457.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 6,
-          "draw": 9,
+          "draw": 10,
           "lost": 15,
-          "points": 27,
+          "points": 28,
           "goalsFor": 25,
           "goalsAgainst": 44,
           "goalDifference": -19
