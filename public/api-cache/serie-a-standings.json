@@ -37,15 +37,15 @@
             "tla": "INT",
             "crest": "https://crests.football-data.org/108.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
-          "won": 22,
+          "won": 23,
           "draw": 3,
           "lost": 5,
-          "points": 69,
-          "goalsFor": 66,
-          "goalsAgainst": 24,
-          "goalDifference": 42
+          "points": 72,
+          "goalsFor": 71,
+          "goalsAgainst": 26,
+          "goalDifference": 45
         },
         {
           "position": 2,
@@ -132,15 +132,15 @@
             "tla": "ROM",
             "crest": "https://crests.football-data.org/100.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 17,
           "draw": 3,
-          "lost": 10,
+          "lost": 11,
           "points": 54,
-          "goalsFor": 40,
-          "goalsAgainst": 23,
-          "goalDifference": 17
+          "goalsFor": 42,
+          "goalsAgainst": 28,
+          "goalDifference": 14
         },
         {
           "position": 7,

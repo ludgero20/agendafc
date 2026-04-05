@@ -94,18 +94,37 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
           "won": 15,
           "draw": 4,
-          "lost": 8,
+          "lost": 9,
           "points": 49,
           "goalsFor": 54,
-          "goalsAgainst": 35,
-          "goalDifference": 19
+          "goalsAgainst": 37,
+          "goalDifference": 17
         },
         {
           "position": 5,
+          "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 15,
+          "draw": 4,
+          "lost": 9,
+          "points": 49,
+          "goalsFor": 49,
+          "goalsAgainst": 38,
+          "goalDifference": 11
+        },
+        {
+          "position": 6,
           "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
@@ -124,7 +143,7 @@
           "goalDifference": 12
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 529,
             "name": "Stade Rennais FC 1901",
@@ -141,25 +160,6 @@
           "goalsFor": 47,
           "goalsAgainst": 40,
           "goalDifference": 7
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 14,
-          "draw": 4,
-          "lost": 9,
-          "points": 46,
-          "goalsFor": 47,
-          "goalsAgainst": 38,
-          "goalDifference": 9
         },
         {
           "position": 8,
