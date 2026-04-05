@@ -132,12 +132,12 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 10,
-          "draw": 11,
+          "draw": 12,
           "lost": 8,
-          "points": 41,
+          "points": 42,
           "goalsFor": 41,
           "goalsAgainst": 35,
           "goalDifference": 6
@@ -176,9 +176,9 @@
           "draw": 5,
           "lost": 13,
           "points": 41,
-          "goalsFor": 26,
+          "goalsFor": 27,
           "goalsAgainst": 31,
-          "goalDifference": -5
+          "goalDifference": -4
         },
         {
           "position": 9,
@@ -215,8 +215,8 @@
           "lost": 14,
           "points": 38,
           "goalsFor": 32,
-          "goalsAgainst": 42,
-          "goalDifference": -10
+          "goalsAgainst": 43,
+          "goalDifference": -11
         },
         {
           "position": 11,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 12,
+          "points": 36,
+          "goalsFor": 32,
+          "goalsAgainst": 42,
+          "goalDifference": -10
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
             "shortName": "Rayo Vallecano",
@@ -255,25 +274,6 @@
           "goalsFor": 29,
           "goalsAgainst": 35,
           "goalDifference": -6
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 9,
-          "draw": 8,
-          "lost": 12,
-          "points": 35,
-          "goalsFor": 32,
-          "goalsAgainst": 42,
-          "goalDifference": -10
         },
         {
           "position": 14,
