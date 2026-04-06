@@ -151,12 +151,12 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 13,
-          "draw": 11,
+          "draw": 12,
           "lost": 6,
-          "points": 50,
+          "points": 51,
           "goalsFor": 41,
           "goalsAgainst": 27,
           "goalDifference": 14
@@ -341,12 +341,12 @@
             "tla": "USL",
             "crest": "https://crests.football-data.org/5890.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 7,
-          "draw": 6,
+          "draw": 7,
           "lost": 17,
-          "points": 27,
+          "points": 28,
           "goalsFor": 21,
           "goalsAgainst": 40,
           "goalDifference": -19
