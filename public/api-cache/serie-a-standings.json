@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 113,
+            "name": "SSC Napoli",
+            "shortName": "Napoli",
+            "tla": "NAP",
+            "crest": "https://crests.football-data.org/113.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 20,
+          "draw": 5,
+          "lost": 6,
+          "points": 65,
+          "goalsFor": 47,
+          "goalsAgainst": 30,
+          "goalDifference": 17
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 98,
             "name": "AC Milan",
             "shortName": "Milan",
@@ -59,31 +78,12 @@
           "playedGames": 31,
           "form": null,
           "won": 18,
-          "draw": 10,
-          "lost": 3,
-          "points": 64,
-          "goalsFor": 47,
-          "goalsAgainst": 23,
-          "goalDifference": 24
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 113,
-            "name": "SSC Napoli",
-            "shortName": "Napoli",
-            "tla": "NAP",
-            "crest": "https://crests.football-data.org/113.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 19,
-          "draw": 6,
-          "lost": 6,
+          "draw": 9,
+          "lost": 4,
           "points": 63,
-          "goalsFor": 46,
-          "goalsAgainst": 30,
-          "goalDifference": 16
+          "goalsFor": 47,
+          "goalsAgainst": 24,
+          "goalDifference": 23
         },
         {
           "position": 4,
