@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57087,
+          "name": "Romain Lissorgue",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 25786,
+          "name": "Stéphanie Frappart",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57042,
+          "name": "Willy Delajod",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57054,
+          "name": "Mathieu Vernice",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -312,7 +340,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57063,
+          "name": "Hakim Ben El Hadj Salem",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -371,7 +406,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57501,
+          "name": "Abdelatif Kherradji",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -430,7 +472,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43926,
+          "name": "Benoît Bastien",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
