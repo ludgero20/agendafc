@@ -18,9 +18,9 @@
       "rank": "2",
       "conference": "Leste",
       "intWin": 50,
-      "intLoss": 22,
-      "strPercentage": ".694",
-      "strStreak": "W4"
+      "intLoss": 23,
+      "strPercentage": ".685",
+      "strStreak": "L1"
     },
     {
       "teamId": "15",
@@ -28,10 +28,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/wyhpuf1511810435.png",
       "rank": "3",
       "conference": "Leste",
-      "intWin": 46,
+      "intWin": 47,
       "intLoss": 25,
-      "strPercentage": ".648",
-      "strStreak": "W2"
+      "strPercentage": ".653",
+      "strStreak": "W3"
     },
     {
       "teamId": "3",
@@ -50,10 +50,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/ax36vz1635070057.png",
       "rank": "5",
       "conference": "Leste",
-      "intWin": 40,
+      "intWin": 41,
       "intLoss": 30,
-      "strPercentage": ".571",
-      "strStreak": "W1"
+      "strPercentage": ".577",
+      "strStreak": "W2"
     },
     {
       "teamId": "8",
@@ -73,9 +73,9 @@
       "rank": "7",
       "conference": "Leste",
       "intWin": 39,
-      "intLoss": 31,
-      "strPercentage": ".557",
-      "strStreak": "L2"
+      "intLoss": 32,
+      "strPercentage": ".549",
+      "strStreak": "L3"
     },
     {
       "teamId": "7",
@@ -95,9 +95,9 @@
       "rank": "9",
       "conference": "Leste",
       "intWin": 36,
-      "intLoss": 33,
-      "strPercentage": ".522",
-      "strStreak": "L1"
+      "intLoss": 34,
+      "strPercentage": ".514",
+      "strStreak": "L2"
     },
     {
       "teamId": "10",
@@ -127,32 +127,32 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yk7swg1547214677.png",
       "rank": "12",
       "conference": "Leste",
-      "intWin": 26,
+      "intWin": 27,
       "intLoss": 46,
-      "strPercentage": ".361",
-      "strStreak": "W1"
-    },
-    {
-      "teamId": "14",
-      "teamName": "Brooklyn Nets",
-      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/hkafe61739948361.png",
-      "rank": "13",
-      "conference": "Leste",
-      "intWin": 19,
-      "intLoss": 55,
-      "strPercentage": ".257",
+      "strPercentage": ".370",
       "strStreak": "W2"
     },
     {
       "teamId": "1",
       "teamName": "Indiana Pacers",
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/v6jzgm1503741821.png/medium",
+      "rank": "13",
+      "conference": "Leste",
+      "intWin": 19,
+      "intLoss": 55,
+      "strPercentage": ".257",
+      "strStreak": "W1"
+    },
+    {
+      "teamId": "14",
+      "teamName": "Brooklyn Nets",
+      "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/hkafe61739948361.png",
       "rank": "14",
       "conference": "Leste",
-      "intWin": 18,
-      "intLoss": 55,
-      "strPercentage": ".247",
-      "strStreak": "L3"
+      "intWin": 19,
+      "intLoss": 56,
+      "strPercentage": ".253",
+      "strStreak": "L1"
     },
     {
       "teamId": "6",
@@ -161,9 +161,9 @@
       "rank": "15",
       "conference": "Leste",
       "intWin": 16,
-      "intLoss": 55,
-      "strPercentage": ".225",
-      "strStreak": "L7"
+      "intLoss": 56,
+      "strPercentage": ".222",
+      "strStreak": "L8"
     },
     {
       "teamId": "24",
@@ -193,10 +193,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/d8uoxw1714254511.png",
       "rank": "3",
       "conference": "Oeste",
-      "intWin": 34,
+      "intWin": 35,
       "intLoss": 16,
-      "strPercentage": ".680",
-      "strStreak": "L3"
+      "strPercentage": ".686",
+      "strStreak": "W1"
     },
     {
       "teamId": "26",
@@ -204,10 +204,10 @@
       "teamBadge": "https://r2.thesportsdb.com/images/media/team/badge/yezpho1597486052.png",
       "rank": "4",
       "conference": "Oeste",
-      "intWin": 46,
+      "intWin": 47,
       "intLoss": 23,
-      "strPercentage": ".667",
-      "strStreak": "W6"
+      "strPercentage": ".671",
+      "strStreak": "W7"
     },
     {
       "teamId": "22",
@@ -260,9 +260,9 @@
       "rank": "9",
       "conference": "Oeste",
       "intWin": 24,
-      "intLoss": 27,
-      "strPercentage": ".471",
-      "strStreak": "W1"
+      "intLoss": 28,
+      "strPercentage": ".462",
+      "strStreak": "L1"
     },
     {
       "teamId": "29",
