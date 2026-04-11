@@ -37,14 +37,14 @@
             "tla": "ARS",
             "crest": "https://crests.football-data.org/57.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 21,
-          "draw": 7,
+          "draw": 8,
           "lost": 3,
-          "points": 70,
-          "goalsFor": 61,
-          "goalsAgainst": 22,
+          "points": 71,
+          "goalsFor": 62,
+          "goalsAgainst": 23,
           "goalDifference": 39
         },
         {
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 1044,
+            "name": "AFC Bournemouth",
+            "shortName": "Bournemouth",
+            "tla": "BOU",
+            "crest": "https://crests.football-data.org/bournemouth.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 9,
+          "draw": 16,
+          "lost": 7,
+          "points": 43,
+          "goalsFor": 47,
+          "goalsAgainst": 49,
+          "goalDifference": -2
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 71,
             "name": "Sunderland AFC",
             "shortName": "Sunderland",
@@ -238,7 +257,7 @@
           "goalDifference": -4
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 67,
             "name": "Newcastle United FC",
@@ -255,25 +274,6 @@
           "goalsFor": 44,
           "goalsAgainst": 45,
           "goalDifference": -1
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 1044,
-            "name": "AFC Bournemouth",
-            "shortName": "Bournemouth",
-            "tla": "BOU",
-            "crest": "https://crests.football-data.org/bournemouth.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 9,
-          "draw": 15,
-          "lost": 7,
-          "points": 42,
-          "goalsFor": 46,
-          "goalsAgainst": 48,
-          "goalDifference": -2
         },
         {
           "position": 14,
