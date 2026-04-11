@@ -94,15 +94,15 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 17,
           "draw": 6,
-          "lost": 7,
+          "lost": 8,
           "points": 57,
-          "goalsFor": 50,
-          "goalsAgainst": 30,
-          "goalDifference": 20
+          "goalsFor": 51,
+          "goalsAgainst": 32,
+          "goalDifference": 19
         },
         {
           "position": 5,
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 559,
+            "name": "Sevilla FC",
+            "shortName": "Sevilla FC",
+            "tla": "SEV",
+            "crest": "https://crests.football-data.org/559.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 9,
+          "draw": 7,
+          "lost": 15,
+          "points": 34,
+          "goalsFor": 39,
+          "goalsAgainst": 51,
+          "goalDifference": -12
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -314,7 +333,7 @@
           "goalDifference": -11
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 285,
             "name": "Elche CF",
@@ -333,7 +352,7 @@
           "goalDifference": -8
         },
         {
-          "position": 17,
+          "position": 18,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -350,25 +369,6 @@
           "goalsFor": 36,
           "goalsAgainst": 48,
           "goalDifference": -12
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 559,
-            "name": "Sevilla FC",
-            "shortName": "Sevilla FC",
-            "tla": "SEV",
-            "crest": "https://crests.football-data.org/559.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 8,
-          "draw": 7,
-          "lost": 15,
-          "points": 31,
-          "goalsFor": 37,
-          "goalsAgainst": 50,
-          "goalDifference": -13
         },
         {
           "position": 19,
