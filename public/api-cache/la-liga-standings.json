@@ -157,8 +157,8 @@
           "draw": 9,
           "lost": 11,
           "points": 42,
-          "goalsFor": 48,
-          "goalsAgainst": 47,
+          "goalsFor": 49,
+          "goalsAgainst": 48,
           "goalDifference": 1
         },
         {
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 13,
+          "points": 36,
+          "goalsFor": 34,
+          "goalsAgainst": 45,
+          "goalDifference": -11
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
             "shortName": "Rayo Vallecano",
@@ -276,25 +295,6 @@
           "goalDifference": -6
         },
         {
-          "position": 14,
-          "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 9,
-          "draw": 8,
-          "lost": 13,
-          "points": 35,
-          "goalsFor": 34,
-          "goalsAgainst": 45,
-          "goalDifference": -11
-        },
-        {
           "position": 15,
           "team": {
             "id": 263,
@@ -309,8 +309,8 @@
           "draw": 9,
           "lost": 14,
           "points": 33,
-          "goalsFor": 34,
-          "goalsAgainst": 45,
+          "goalsFor": 35,
+          "goalsAgainst": 46,
           "goalDifference": -11
         },
         {
@@ -360,12 +360,12 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 6,
-          "draw": 11,
+          "draw": 12,
           "lost": 13,
-          "points": 29,
+          "points": 30,
           "goalsFor": 38,
           "goalsAgainst": 47,
           "goalDifference": -9
