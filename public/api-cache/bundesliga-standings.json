@@ -37,12 +37,12 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 23,
-          "draw": 4,
+          "draw": 5,
           "lost": 1,
-          "points": 73,
+          "points": 74,
           "goalsFor": 100,
           "goalsAgainst": 27,
           "goalDifference": 73
@@ -77,13 +77,13 @@
           },
           "playedGames": 29,
           "form": null,
-          "won": 16,
-          "draw": 6,
+          "won": 17,
+          "draw": 5,
           "lost": 7,
-          "points": 54,
-          "goalsFor": 55,
+          "points": 56,
+          "goalsFor": 56,
           "goalsAgainst": 36,
-          "goalDifference": 19
+          "goalDifference": 20
         },
         {
           "position": 4,
@@ -158,8 +158,8 @@
           "lost": 9,
           "points": 42,
           "goalsFor": 54,
-          "goalsAgainst": 53,
-          "goalDifference": 1
+          "goalsAgainst": 54,
+          "goalDifference": 0
         },
         {
           "position": 8,
@@ -233,8 +233,8 @@
           "draw": 8,
           "lost": 13,
           "points": 32,
-          "goalsFor": 32,
-          "goalsAgainst": 49,
+          "goalsFor": 33,
+          "goalsAgainst": 50,
           "goalDifference": -17
         },
         {
@@ -268,12 +268,12 @@
           "playedGames": 29,
           "form": null,
           "won": 7,
-          "draw": 10,
-          "lost": 12,
-          "points": 31,
+          "draw": 9,
+          "lost": 13,
+          "points": 30,
           "goalsFor": 35,
-          "goalsAgainst": 48,
-          "goalDifference": -13
+          "goalsAgainst": 49,
+          "goalDifference": -14
         },
         {
           "position": 14,
@@ -322,12 +322,12 @@
             "tla": "STP",
             "crest": "https://crests.football-data.org/20.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 6,
-          "draw": 7,
+          "draw": 8,
           "lost": 15,
-          "points": 25,
+          "points": 26,
           "goalsFor": 25,
           "goalsAgainst": 45,
           "goalDifference": -20
@@ -347,9 +347,9 @@
           "draw": 6,
           "lost": 18,
           "points": 21,
-          "goalsFor": 38,
+          "goalsFor": 39,
           "goalsAgainst": 65,
-          "goalDifference": -27
+          "goalDifference": -26
         },
         {
           "position": 18,
@@ -366,8 +366,8 @@
           "draw": 7,
           "lost": 18,
           "points": 19,
-          "goalsFor": 31,
-          "goalsAgainst": 63,
+          "goalsFor": 32,
+          "goalsAgainst": 64,
           "goalDifference": -32
         }
       ]
