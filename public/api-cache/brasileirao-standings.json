@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 1768,
+            "name": "CA Paranaense",
+            "shortName": "Paranaense",
+            "tla": "CAP",
+            "crest": "https://crests.football-data.org/1768.png"
+          },
+          "playedGames": 11,
+          "form": null,
+          "won": 6,
+          "draw": 1,
+          "lost": 4,
+          "points": 19,
+          "goalsFor": 17,
+          "goalsAgainst": 13,
+          "goalDifference": 4
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 1783,
             "name": "CR Flamengo",
             "shortName": "Flamengo",
@@ -122,25 +141,6 @@
           "goalsFor": 16,
           "goalsAgainst": 9,
           "goalDifference": 7
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 1768,
-            "name": "CA Paranaense",
-            "shortName": "Paranaense",
-            "tla": "CAP",
-            "crest": "https://crests.football-data.org/1768.png"
-          },
-          "playedGames": 11,
-          "form": null,
-          "won": 5,
-          "draw": 2,
-          "lost": 4,
-          "points": 17,
-          "goalsFor": 15,
-          "goalsAgainst": 13,
-          "goalDifference": 2
         },
         {
           "position": 7,
@@ -335,25 +335,6 @@
         {
           "position": 17,
           "team": {
-            "id": 1772,
-            "name": "Chapecoense AF",
-            "shortName": "Chapecoense",
-            "tla": "CHA",
-            "crest": "https://crests.football-data.org/1772_large.png"
-          },
-          "playedGames": 10,
-          "form": null,
-          "won": 1,
-          "draw": 6,
-          "lost": 3,
-          "points": 9,
-          "goalsFor": 10,
-          "goalsAgainst": 16,
-          "goalDifference": -6
-        },
-        {
-          "position": 18,
-          "team": {
             "id": 4287,
             "name": "Clube do Remo",
             "shortName": "Clube do Remo",
@@ -369,6 +350,25 @@
           "goalsFor": 11,
           "goalsAgainst": 18,
           "goalDifference": -7
+        },
+        {
+          "position": 18,
+          "team": {
+            "id": 1772,
+            "name": "Chapecoense AF",
+            "shortName": "Chapecoense",
+            "tla": "CHA",
+            "crest": "https://crests.football-data.org/1772_large.png"
+          },
+          "playedGames": 10,
+          "form": null,
+          "won": 1,
+          "draw": 5,
+          "lost": 4,
+          "points": 8,
+          "goalsFor": 10,
+          "goalsAgainst": 18,
+          "goalDifference": -8
         },
         {
           "position": 19,

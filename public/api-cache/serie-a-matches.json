@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 63,
+    "count": 62,
     "first": "2026-04-12",
     "last": "2026-05-24",
     "played": 0
@@ -40,79 +40,13 @@
         "currentMatchday": 32,
         "winner": null
       },
-      "id": 537132,
-      "utcDate": "2026-04-12T16:00:00Z",
-      "status": "TIMED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-07T01:32:03Z",
-      "homeTeam": {
-        "id": 103,
-        "name": "Bologna FC 1909",
-        "shortName": "Bologna",
-        "tla": "BOL",
-        "crest": "https://crests.football-data.org/103.png"
-      },
-      "awayTeam": {
-        "id": 5890,
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "tla": "USL",
-        "crest": "https://crests.football-data.org/5890.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57878,
-          "name": "Andrea Colombo",
-          "type": "REFEREE",
-          "nationality": "Italy"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 32,
-        "winner": null
-      },
       "id": 537131,
       "utcDate": "2026-04-12T18:45:00Z",
       "status": "TIMED",
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:01Z",
+      "lastUpdated": "2026-04-06T01:32:05Z",
       "homeTeam": {
         "id": 7397,
         "name": "Como 1907",
@@ -178,7 +112,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:01Z",
+      "lastUpdated": "2026-04-07T01:32:04Z",
       "homeTeam": {
         "id": 99,
         "name": "ACF Fiorentina",
@@ -244,7 +178,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:02Z",
+      "lastUpdated": "2026-04-11T01:32:03Z",
       "homeTeam": {
         "id": 471,
         "name": "US Sassuolo Calcio",
@@ -303,7 +237,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:03Z",
+      "lastUpdated": "2026-04-11T01:32:04Z",
       "homeTeam": {
         "id": 108,
         "name": "FC Internazionale Milano",
@@ -362,7 +296,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:03Z",
+      "lastUpdated": "2026-03-22T00:20:54Z",
       "homeTeam": {
         "id": 115,
         "name": "Udinese Calcio",
@@ -421,7 +355,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:04Z",
+      "lastUpdated": "2026-03-22T00:20:54Z",
       "homeTeam": {
         "id": 113,
         "name": "SSC Napoli",
@@ -480,7 +414,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:04Z",
+      "lastUpdated": "2026-03-22T00:20:54Z",
       "homeTeam": {
         "id": 100,
         "name": "AS Roma",

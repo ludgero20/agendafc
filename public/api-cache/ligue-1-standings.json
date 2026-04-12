@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 521,
+            "name": "Lille OSC",
+            "shortName": "Lille",
+            "tla": "LIL",
+            "crest": "https://crests.football-data.org/521.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 16,
+          "draw": 5,
+          "lost": 8,
+          "points": 53,
+          "goalsFor": 47,
+          "goalsAgainst": 34,
+          "goalDifference": 13
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 516,
             "name": "Olympique de Marseille",
             "shortName": "Marseille",
@@ -84,25 +103,6 @@
           "goalsFor": 58,
           "goalsAgainst": 38,
           "goalDifference": 20
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 521,
-            "name": "Lille OSC",
-            "shortName": "Lille",
-            "tla": "LIL",
-            "crest": "https://crests.football-data.org/521.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 15,
-          "draw": 5,
-          "lost": 8,
-          "points": 50,
-          "goalsFor": 45,
-          "goalsAgainst": 34,
-          "goalDifference": 11
         },
         {
           "position": 5,
@@ -208,15 +208,15 @@
             "tla": "TOU",
             "crest": "https://crests.football-data.org/511.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 10,
           "draw": 7,
-          "lost": 11,
+          "lost": 12,
           "points": 37,
           "goalsFor": 39,
-          "goalsAgainst": 35,
-          "goalDifference": 4
+          "goalsAgainst": 37,
+          "goalDifference": 2
         },
         {
           "position": 11,
@@ -284,15 +284,15 @@
             "tla": "HAC",
             "crest": "https://crests.football-data.org/533.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 6,
+          "won": 7,
           "draw": 10,
           "lost": 12,
-          "points": 28,
-          "goalsFor": 23,
+          "points": 31,
+          "goalsFor": 24,
           "goalsAgainst": 36,
-          "goalDifference": -13
+          "goalDifference": -12
         },
         {
           "position": 15,
@@ -303,15 +303,15 @@
             "tla": "NIC",
             "crest": "https://crests.football-data.org/522.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 7,
           "draw": 6,
-          "lost": 15,
+          "lost": 16,
           "points": 27,
           "goalsFor": 33,
-          "goalsAgainst": 55,
-          "goalDifference": -22
+          "goalsAgainst": 56,
+          "goalDifference": -23
         },
         {
           "position": 16,

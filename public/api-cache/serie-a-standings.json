@@ -170,15 +170,15 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
-          "won": 13,
+          "won": 14,
           "draw": 6,
           "lost": 12,
-          "points": 45,
-          "goalsFor": 40,
+          "points": 48,
+          "goalsFor": 41,
           "goalsAgainst": 37,
-          "goalDifference": 3
+          "goalDifference": 4
         },
         {
           "position": 9,
@@ -360,15 +360,15 @@
             "tla": "USL",
             "crest": "https://crests.football-data.org/5890.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 7,
           "draw": 6,
-          "lost": 18,
+          "lost": 19,
           "points": 27,
           "goalsFor": 21,
-          "goalsAgainst": 43,
-          "goalDifference": -22
+          "goalsAgainst": 44,
+          "goalDifference": -23
         },
         {
           "position": 19,

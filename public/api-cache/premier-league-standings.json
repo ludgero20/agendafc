@@ -56,12 +56,12 @@
             "tla": "MCI",
             "crest": "https://crests.football-data.org/65.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 18,
-          "draw": 7,
+          "draw": 8,
           "lost": 5,
-          "points": 61,
+          "points": 62,
           "goalsFor": 60,
           "goalsAgainst": 28,
           "goalDifference": 32
@@ -132,12 +132,12 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 13,
-          "draw": 9,
+          "draw": 10,
           "lost": 9,
-          "points": 48,
+          "points": 49,
           "goalsFor": 53,
           "goalsAgainst": 38,
           "goalDifference": 15
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 67,
-            "name": "Newcastle United FC",
-            "shortName": "Newcastle",
-            "tla": "NEW",
-            "crest": "https://crests.football-data.org/67.png"
-          },
-          "playedGames": 32,
-          "form": null,
-          "won": 13,
-          "draw": 6,
-          "lost": 13,
-          "points": 45,
-          "goalsFor": 45,
-          "goalsAgainst": 45,
-          "goalDifference": 0
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 1044,
             "name": "AFC Bournemouth",
             "shortName": "Bournemouth",
@@ -257,7 +238,7 @@
           "goalDifference": -1
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 63,
             "name": "Fulham FC",
@@ -276,7 +257,7 @@
           "goalDifference": -3
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 354,
             "name": "Crystal Palace FC",
@@ -286,13 +267,32 @@
           },
           "playedGames": 31,
           "form": null,
-          "won": 10,
+          "won": 11,
           "draw": 9,
-          "lost": 12,
-          "points": 39,
-          "goalsFor": 33,
+          "lost": 11,
+          "points": 42,
+          "goalsFor": 35,
           "goalsAgainst": 36,
-          "goalDifference": -3
+          "goalDifference": -1
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW",
+            "crest": "https://crests.football-data.org/67.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 12,
+          "draw": 6,
+          "lost": 14,
+          "points": 42,
+          "goalsFor": 45,
+          "goalsAgainst": 47,
+          "goalDifference": -2
         },
         {
           "position": 15,
