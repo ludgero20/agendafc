@@ -75,15 +75,15 @@
             "tla": "BEN",
             "crest": "https://crests.football-data.org/1903.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 19,
+          "won": 20,
           "draw": 9,
           "lost": 0,
-          "points": 66,
-          "goalsFor": 59,
+          "points": 69,
+          "goalsFor": 61,
           "goalsAgainst": 18,
-          "goalDifference": 41
+          "goalDifference": 43
         },
         {
           "position": 4,
@@ -94,15 +94,15 @@
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
           },
-          "playedGames": 27,
+          "playedGames": 28,
           "form": null,
-          "won": 14,
+          "won": 15,
           "draw": 7,
           "lost": 6,
-          "points": 49,
-          "goalsFor": 54,
+          "points": 52,
+          "goalsFor": 55,
           "goalsAgainst": 27,
-          "goalDifference": 27
+          "goalDifference": 28
         },
         {
           "position": 5,
@@ -246,15 +246,15 @@
             "tla": "FCA",
             "crest": "https://crests.football-data.org/712.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 9,
           "draw": 5,
-          "lost": 14,
+          "lost": 15,
           "points": 32,
           "goalsFor": 37,
-          "goalsAgainst": 57,
-          "goalDifference": -20
+          "goalsAgainst": 58,
+          "goalDifference": -21
         },
         {
           "position": 13,
@@ -303,15 +303,15 @@
             "tla": "CDN",
             "crest": "https://crests.football-data.org/5529.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 6,
           "draw": 7,
-          "lost": 15,
+          "lost": 16,
           "points": 25,
           "goalsFor": 31,
-          "goalsAgainst": 39,
-          "goalDifference": -8
+          "goalsAgainst": 41,
+          "goalDifference": -10
         },
         {
           "position": 16,
