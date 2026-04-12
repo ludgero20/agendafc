@@ -75,15 +75,15 @@
             "tla": "VIL",
             "crest": "https://crests.football-data.org/94.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
-          "won": 18,
+          "won": 19,
           "draw": 4,
           "lost": 8,
-          "points": 58,
-          "goalsFor": 54,
+          "points": 61,
+          "goalsFor": 56,
           "goalsAgainst": 35,
-          "goalDifference": 19
+          "goalDifference": 21
         },
         {
           "position": 4,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 77,
-            "name": "Athletic Club",
-            "shortName": "Athletic",
-            "tla": "ATH",
-            "crest": "https://crests.football-data.org/77.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 11,
-          "draw": 5,
-          "lost": 14,
-          "points": 38,
-          "goalsFor": 32,
-          "goalsAgainst": 43,
-          "goalDifference": -11
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 298,
             "name": "Girona FC",
             "shortName": "Girona",
@@ -255,6 +236,25 @@
           "goalsFor": 33,
           "goalsAgainst": 45,
           "goalDifference": -12
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 77,
+            "name": "Athletic Club",
+            "shortName": "Athletic",
+            "tla": "ATH",
+            "crest": "https://crests.football-data.org/77.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 11,
+          "draw": 5,
+          "lost": 15,
+          "points": 38,
+          "goalsFor": 32,
+          "goalsAgainst": 45,
+          "goalDifference": -13
         },
         {
           "position": 13,

@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
+          },
+          "playedGames": 29,
+          "form": null,
+          "won": 15,
+          "draw": 6,
+          "lost": 8,
+          "points": 51,
+          "goalsFor": 43,
+          "goalsAgainst": 29,
+          "goalDifference": 14
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 529,
             "name": "Stade Rennais FC 1901",
             "shortName": "Stade Rennais",
@@ -124,7 +143,7 @@
           "goalDifference": 8
         },
         {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 548,
             "name": "AS Monaco FC",
@@ -141,25 +160,6 @@
           "goalsFor": 50,
           "goalsAgainst": 43,
           "goalDifference": 7
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
-          },
-          "playedGames": 28,
-          "form": null,
-          "won": 14,
-          "draw": 6,
-          "lost": 8,
-          "points": 48,
-          "goalsFor": 41,
-          "goalsAgainst": 29,
-          "goalDifference": 12
         },
         {
           "position": 8,
@@ -189,15 +189,15 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 9,
           "draw": 11,
-          "lost": 8,
+          "lost": 9,
           "points": 38,
           "goalsFor": 38,
-          "goalsAgainst": 42,
-          "goalDifference": -4
+          "goalsAgainst": 44,
+          "goalDifference": -6
         },
         {
           "position": 10,
