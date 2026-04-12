@@ -113,14 +113,14 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 11,
-          "draw": 12,
+          "draw": 13,
           "lost": 7,
-          "points": 45,
-          "goalsFor": 44,
-          "goalsAgainst": 37,
+          "points": 46,
+          "goalsFor": 45,
+          "goalsAgainst": 38,
           "goalDifference": 7
         },
         {
@@ -189,14 +189,14 @@
             "tla": "OSA",
             "crest": "https://crests.football-data.org/79.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 10,
-          "draw": 8,
+          "draw": 9,
           "lost": 12,
-          "points": 38,
-          "goalsFor": 36,
-          "goalsAgainst": 37,
+          "points": 39,
+          "goalsFor": 37,
+          "goalsAgainst": 38,
           "goalDifference": -1
         },
         {
