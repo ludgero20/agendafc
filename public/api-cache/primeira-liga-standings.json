@@ -227,12 +227,12 @@
             "tla": "ALV",
             "crest": "https://crests.football-data.org/7822.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 8,
-          "draw": 8,
+          "draw": 9,
           "lost": 12,
-          "points": 32,
+          "points": 33,
           "goalsFor": 29,
           "goalsAgainst": 46,
           "goalDifference": -17
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 28,
+          "form": null,
+          "won": 5,
+          "draw": 11,
+          "lost": 12,
+          "points": 26,
+          "goalsFor": 27,
+          "goalsAgainst": 49,
+          "goalDifference": -22
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 5529,
             "name": "CD Nacional",
             "shortName": "CD Nacional",
@@ -312,25 +331,6 @@
           "goalsFor": 31,
           "goalsAgainst": 39,
           "goalDifference": -8
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 27,
-          "form": null,
-          "won": 5,
-          "draw": 10,
-          "lost": 12,
-          "points": 25,
-          "goalsFor": 27,
-          "goalsAgainst": 49,
-          "goalDifference": -22
         },
         {
           "position": 17,

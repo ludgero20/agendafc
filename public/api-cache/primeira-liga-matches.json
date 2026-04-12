@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 51,
+    "count": 50,
     "first": "2026-04-12",
     "last": "2026-05-17",
     "played": 0
@@ -40,79 +40,13 @@
         "currentMatchday": 29,
         "winner": null
       },
-      "id": 545957,
-      "utcDate": "2026-04-12T14:30:00Z",
-      "status": "TIMED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-12T01:32:00Z",
-      "homeTeam": {
-        "id": 7822,
-        "name": "FC Alverca",
-        "shortName": "Alverca",
-        "tla": "ALV",
-        "crest": "https://crests.football-data.org/7822.png"
-      },
-      "awayTeam": {
-        "id": 6618,
-        "name": "Casa Pia AC",
-        "shortName": "Casa Pia",
-        "tla": "CAS",
-        "crest": "https://crests.football-data.org/6618.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 291275,
-          "name": "Luí­s Carlos Mateus Filipe",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 29,
-        "winner": null
-      },
       "id": 545952,
       "utcDate": "2026-04-12T17:00:00Z",
       "status": "TIMED",
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:01Z",
+      "lastUpdated": "2026-04-07T01:32:03Z",
       "homeTeam": {
         "id": 5613,
         "name": "Sporting Clube de Braga",
@@ -230,7 +164,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
@@ -348,7 +282,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:03Z",
+      "lastUpdated": "2026-04-11T01:32:04Z",
       "homeTeam": {
         "id": 496,
         "name": "Rio Ave FC",
@@ -407,7 +341,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:04Z",
+      "lastUpdated": "2026-03-24T10:21:05Z",
       "homeTeam": {
         "id": 5529,
         "name": "CD Nacional",
@@ -466,7 +400,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:04Z",
+      "lastUpdated": "2026-03-24T10:21:05Z",
       "homeTeam": {
         "id": 6618,
         "name": "Casa Pia AC",
@@ -525,7 +459,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T01:32:04Z",
+      "lastUpdated": "2026-03-24T10:21:05Z",
       "homeTeam": {
         "id": 5533,
         "name": "Gil Vicente FC",
@@ -702,7 +636,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -1233,7 +1167,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -1587,7 +1521,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -2177,7 +2111,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 10340,
         "name": "AVS",
@@ -2708,7 +2642,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-12T00:20:59Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",

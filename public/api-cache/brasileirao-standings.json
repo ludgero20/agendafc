@@ -132,12 +132,12 @@
             "tla": "CAP",
             "crest": "https://crests.football-data.org/1768.png"
           },
-          "playedGames": 10,
+          "playedGames": 11,
           "form": null,
           "won": 5,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 16,
+          "points": 17,
           "goalsFor": 15,
           "goalsAgainst": 13,
           "goalDifference": 2
@@ -341,12 +341,12 @@
             "tla": "CHA",
             "crest": "https://crests.football-data.org/1772_large.png"
           },
-          "playedGames": 9,
+          "playedGames": 10,
           "form": null,
           "won": 1,
-          "draw": 5,
+          "draw": 6,
           "lost": 3,
-          "points": 8,
+          "points": 9,
           "goalsFor": 10,
           "goalsAgainst": 16,
           "goalDifference": -6
