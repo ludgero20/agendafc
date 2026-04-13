@@ -75,12 +75,12 @@
             "tla": "MUN",
             "crest": "https://crests.football-data.org/66.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 15,
-          "draw": 10,
+          "draw": 11,
           "lost": 6,
-          "points": 55,
+          "points": 56,
           "goalsFor": 56,
           "goalsAgainst": 43,
           "goalDifference": 13
@@ -303,12 +303,12 @@
             "tla": "LEE",
             "crest": "https://crests.football-data.org/341.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 7,
-          "draw": 12,
+          "draw": 13,
           "lost": 12,
-          "points": 33,
+          "points": 34,
           "goalsFor": 37,
           "goalsAgainst": 48,
           "goalDifference": -11
