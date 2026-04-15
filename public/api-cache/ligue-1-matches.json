@@ -2346,12 +2346,12 @@
         "winner": null
       },
       "id": 542665,
-      "utcDate": "2026-05-13T18:00:00Z",
-      "status": "TIMED",
+      "utcDate": "2026-05-13T00:00:00Z",
+      "status": "SCHEDULED",
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-10T15:21:23Z",
+      "lastUpdated": "2026-04-15T13:25:22Z",
       "homeTeam": {
         "id": 512,
         "name": "Stade Brestois 29",
