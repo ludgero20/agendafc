@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 58,
+    "count": 57,
     "first": "2026-04-18",
     "last": "2026-05-24",
     "played": 0
@@ -1355,65 +1355,6 @@
         "shortName": "Fiorentina",
         "tla": "FIO",
         "crest": "https://crests.football-data.org/99.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 33,
-        "winner": null
-      },
-      "id": 537156,
-      "utcDate": "2026-05-03T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 35,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-07-04T12:08:07Z",
-      "homeTeam": {
-        "id": 102,
-        "name": "Atalanta BC",
-        "shortName": "Atalanta",
-        "tla": "ATA",
-        "crest": "https://crests.football-data.org/102.png"
-      },
-      "awayTeam": {
-        "id": 107,
-        "name": "Genoa CFC",
-        "shortName": "Genoa",
-        "tla": "GEN",
-        "crest": "https://crests.football-data.org/107.png"
       },
       "score": {
         "winner": null,
