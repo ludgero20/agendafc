@@ -227,12 +227,12 @@
             "tla": "UDI",
             "crest": "https://crests.football-data.org/115.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 7,
+          "draw": 8,
           "lost": 13,
-          "points": 43,
+          "points": 44,
           "goalsFor": 38,
           "goalsAgainst": 42,
           "goalDifference": -4
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 112,
+            "name": "Parma Calcio 1913",
+            "shortName": "Parma",
+            "tla": "PAR",
+            "crest": "https://crests.football-data.org/112.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 8,
+          "draw": 13,
+          "lost": 12,
+          "points": 37,
+          "goalsFor": 23,
+          "goalsAgainst": 40,
+          "goalDifference": -17
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 107,
             "name": "Genoa CFC",
             "shortName": "Genoa",
@@ -274,25 +293,6 @@
           "goalsFor": 38,
           "goalsAgainst": 45,
           "goalDifference": -7
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 112,
-            "name": "Parma Calcio 1913",
-            "shortName": "Parma",
-            "tla": "PAR",
-            "crest": "https://crests.football-data.org/112.png"
-          },
-          "playedGames": 32,
-          "form": null,
-          "won": 8,
-          "draw": 12,
-          "lost": 12,
-          "points": 36,
-          "goalsFor": 23,
-          "goalsAgainst": 40,
-          "goalDifference": -17
         },
         {
           "position": 15,

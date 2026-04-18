@@ -151,12 +151,12 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/402.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 13,
-          "draw": 8,
+          "draw": 9,
           "lost": 11,
-          "points": 47,
+          "points": 48,
           "goalsFor": 48,
           "goalsAgainst": 44,
           "goalDifference": 4
@@ -246,12 +246,12 @@
             "tla": "FUL",
             "crest": "https://crests.football-data.org/63.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 13,
-          "draw": 5,
+          "draw": 6,
           "lost": 14,
-          "points": 44,
+          "points": 45,
           "goalsFor": 43,
           "goalsAgainst": 46,
           "goalDifference": -3
