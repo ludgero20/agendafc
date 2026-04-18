@@ -94,15 +94,15 @@
             "tla": "MAR",
             "crest": "https://crests.football-data.org/516.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 16,
           "draw": 4,
-          "lost": 9,
+          "lost": 10,
           "points": 52,
           "goalsFor": 58,
-          "goalsAgainst": 38,
-          "goalDifference": 20
+          "goalsAgainst": 40,
+          "goalDifference": 18
         },
         {
           "position": 5,
@@ -189,15 +189,15 @@
             "tla": "FCL",
             "crest": "https://crests.football-data.org/525.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
-          "won": 9,
+          "won": 10,
           "draw": 11,
           "lost": 9,
-          "points": 38,
-          "goalsFor": 38,
+          "points": 41,
+          "goalsFor": 40,
           "goalsAgainst": 44,
-          "goalDifference": -6
+          "goalDifference": -4
         },
         {
           "position": 10,
