@@ -75,12 +75,12 @@
             "tla": "MUN",
             "crest": "https://crests.football-data.org/66.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 15,
-          "draw": 10,
+          "draw": 11,
           "lost": 7,
-          "points": 55,
+          "points": 56,
           "goalsFor": 57,
           "goalsAgainst": 45,
           "goalDifference": 12
@@ -132,12 +132,12 @@
             "tla": "CHE",
             "crest": "https://crests.football-data.org/61.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 13,
-          "draw": 9,
+          "draw": 10,
           "lost": 10,
-          "points": 48,
+          "points": 49,
           "goalsFor": 53,
           "goalsAgainst": 41,
           "goalDifference": 12
@@ -195,8 +195,8 @@
           "draw": 11,
           "lost": 10,
           "points": 47,
-          "goalsFor": 43,
-          "goalsAgainst": 37,
+          "goalsFor": 45,
+          "goalsAgainst": 39,
           "goalDifference": 6
         },
         {
@@ -366,8 +366,8 @@
           "draw": 10,
           "lost": 16,
           "points": 31,
-          "goalsFor": 40,
-          "goalsAgainst": 51,
+          "goalsFor": 42,
+          "goalsAgainst": 53,
           "goalDifference": -11
         },
         {

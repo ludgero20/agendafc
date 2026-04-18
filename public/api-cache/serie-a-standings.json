@@ -63,8 +63,8 @@
           "lost": 7,
           "points": 66,
           "goalsFor": 48,
-          "goalsAgainst": 32,
-          "goalDifference": 16
+          "goalsAgainst": 33,
+          "goalDifference": 15
         },
         {
           "position": 3,
@@ -132,15 +132,15 @@
             "tla": "ROM",
             "crest": "https://crests.football-data.org/100.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 18,
           "draw": 3,
-          "lost": 11,
+          "lost": 12,
           "points": 57,
           "goalsFor": 45,
-          "goalsAgainst": 28,
-          "goalDifference": 17
+          "goalsAgainst": 29,
+          "goalDifference": 16
         },
         {
           "position": 7,
@@ -151,15 +151,15 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
-          "won": 14,
+          "won": 15,
           "draw": 11,
           "lost": 7,
-          "points": 53,
-          "goalsFor": 44,
+          "points": 56,
+          "goalsFor": 45,
           "goalsAgainst": 28,
-          "goalDifference": 16
+          "goalDifference": 17
         },
         {
           "position": 8,
@@ -195,9 +195,9 @@
           "draw": 11,
           "lost": 10,
           "points": 47,
-          "goalsFor": 33,
+          "goalsFor": 34,
           "goalsAgainst": 30,
-          "goalDifference": 3
+          "goalDifference": 4
         },
         {
           "position": 10,

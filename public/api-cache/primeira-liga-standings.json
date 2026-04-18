@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 7,
+          "draw": 8,
+          "lost": 15,
+          "points": 29,
+          "goalsFor": 26,
+          "goalsAgainst": 37,
+          "goalDifference": -11
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 5529,
             "name": "CD Nacional",
             "shortName": "CD Nacional",
@@ -274,25 +293,6 @@
           "goalsFor": 32,
           "goalsAgainst": 41,
           "goalDifference": -9
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 7,
-          "draw": 7,
-          "lost": 15,
-          "points": 28,
-          "goalsFor": 26,
-          "goalsAgainst": 37,
-          "goalDifference": -11
         },
         {
           "position": 15,
@@ -322,12 +322,12 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 5,
-          "draw": 10,
+          "draw": 11,
           "lost": 13,
-          "points": 25,
+          "points": 26,
           "goalsFor": 28,
           "goalsAgainst": 52,
           "goalDifference": -24
