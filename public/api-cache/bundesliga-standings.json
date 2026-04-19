@@ -211,34 +211,15 @@
           "playedGames": 30,
           "form": null,
           "won": 8,
-          "draw": 9,
-          "lost": 13,
-          "points": 33,
-          "goalsFor": 35,
+          "draw": 10,
+          "lost": 12,
+          "points": 34,
+          "goalsFor": 36,
           "goalsAgainst": 45,
-          "goalDifference": -10
+          "goalDifference": -9
         },
         {
           "position": 11,
-          "team": {
-            "id": 18,
-            "name": "Borussia Mönchengladbach",
-            "shortName": "M'gladbach",
-            "tla": "BMG",
-            "crest": "https://crests.football-data.org/18.png"
-          },
-          "playedGames": 30,
-          "form": null,
-          "won": 8,
-          "draw": 9,
-          "lost": 13,
-          "points": 33,
-          "goalsFor": 36,
-          "goalsAgainst": 49,
-          "goalDifference": -13
-        },
-        {
-          "position": 12,
           "team": {
             "id": 28,
             "name": "1. FC Union Berlin",
@@ -257,7 +238,7 @@
           "goalDifference": -18
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 1,
             "name": "1. FC Köln",
@@ -274,6 +255,25 @@
           "goalsFor": 44,
           "goalsAgainst": 51,
           "goalDifference": -7
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 18,
+            "name": "Borussia Mönchengladbach",
+            "shortName": "M'gladbach",
+            "tla": "BMG",
+            "crest": "https://crests.football-data.org/18.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 7,
+          "draw": 10,
+          "lost": 13,
+          "points": 31,
+          "goalsFor": 36,
+          "goalsAgainst": 50,
+          "goalDifference": -14
         },
         {
           "position": 14,
