@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 15,
+          "draw": 8,
+          "lost": 7,
+          "points": 53,
+          "goalsFor": 52,
+          "goalsAgainst": 41,
+          "goalDifference": 11
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 516,
             "name": "Olympique de Marseille",
             "shortName": "Marseille",
@@ -105,7 +124,7 @@
           "goalDifference": 18
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
@@ -122,25 +141,6 @@
           "goalsFor": 43,
           "goalsAgainst": 29,
           "goalDifference": 14
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 14,
-          "draw": 8,
-          "lost": 7,
-          "points": 50,
-          "goalsFor": 49,
-          "goalsAgainst": 41,
-          "goalDifference": 8
         },
         {
           "position": 7,
@@ -170,15 +170,15 @@
             "tla": "RC ",
             "crest": "https://crests.football-data.org/576.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 12,
           "draw": 7,
-          "lost": 9,
+          "lost": 10,
           "points": 43,
           "goalsFor": 46,
-          "goalsAgainst": 34,
-          "goalDifference": 12
+          "goalsAgainst": 37,
+          "goalDifference": 9
         },
         {
           "position": 9,
@@ -227,15 +227,15 @@
             "tla": "BRE",
             "crest": "https://crests.football-data.org/512.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 10,
           "draw": 6,
-          "lost": 12,
+          "lost": 13,
           "points": 36,
           "goalsFor": 37,
-          "goalsAgainst": 43,
-          "goalDifference": -6
+          "goalsAgainst": 44,
+          "goalDifference": -7
         },
         {
           "position": 12,
@@ -246,14 +246,14 @@
             "tla": "PFC",
             "crest": "https://crests.football-data.org/1045.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 8,
-          "draw": 11,
+          "draw": 12,
           "lost": 10,
-          "points": 35,
-          "goalsFor": 37,
-          "goalsAgainst": 45,
+          "points": 36,
+          "goalsFor": 38,
+          "goalsAgainst": 46,
           "goalDifference": -8
         },
         {
@@ -341,15 +341,15 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
-          "won": 4,
+          "won": 5,
           "draw": 7,
           "lost": 17,
-          "points": 19,
-          "goalsFor": 24,
+          "points": 22,
+          "goalsFor": 25,
           "goalsAgainst": 45,
-          "goalDifference": -21
+          "goalDifference": -20
         },
         {
           "position": 18,
@@ -360,14 +360,14 @@
             "tla": "FCM",
             "crest": "https://crests.football-data.org/545.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 3,
-          "draw": 6,
+          "draw": 7,
           "lost": 20,
-          "points": 15,
-          "goalsFor": 26,
-          "goalsAgainst": 63,
+          "points": 16,
+          "goalsFor": 27,
+          "goalsAgainst": 64,
           "goalDifference": -37
         }
       ]

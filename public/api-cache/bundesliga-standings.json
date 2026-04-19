@@ -37,15 +37,15 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/5.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
-          "won": 24,
+          "won": 25,
           "draw": 4,
           "lost": 1,
-          "points": 76,
-          "goalsFor": 105,
-          "goalsAgainst": 27,
-          "goalDifference": 78
+          "points": 79,
+          "goalsFor": 108,
+          "goalsAgainst": 28,
+          "goalDifference": 80
         },
         {
           "position": 2,
@@ -94,15 +94,15 @@
             "tla": "VFB",
             "crest": "https://crests.football-data.org/10.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 17,
           "draw": 5,
-          "lost": 7,
+          "lost": 8,
           "points": 56,
-          "goalsFor": 60,
-          "goalsAgainst": 38,
-          "goalDifference": 22
+          "goalsFor": 61,
+          "goalsAgainst": 41,
+          "goalDifference": 20
         },
         {
           "position": 5,
@@ -157,8 +157,8 @@
           "draw": 7,
           "lost": 11,
           "points": 43,
-          "goalsFor": 43,
-          "goalsAgainst": 47,
+          "goalsFor": 44,
+          "goalsAgainst": 48,
           "goalDifference": -4
         },
         {
@@ -366,8 +366,8 @@
           "draw": 7,
           "lost": 19,
           "points": 19,
-          "goalsFor": 32,
-          "goalsAgainst": 65,
+          "goalsFor": 33,
+          "goalsAgainst": 66,
           "goalDifference": -33
         }
       ]
