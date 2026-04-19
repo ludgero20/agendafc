@@ -75,12 +75,12 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 18,
-          "draw": 9,
+          "draw": 10,
           "lost": 5,
-          "points": 63,
+          "points": 64,
           "goalsFor": 47,
           "goalsAgainst": 27,
           "goalDifference": 20
@@ -379,12 +379,12 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 3,
-          "draw": 9,
+          "draw": 10,
           "lost": 20,
-          "points": 18,
+          "points": 19,
           "goalsFor": 23,
           "goalsAgainst": 55,
           "goalDifference": -32

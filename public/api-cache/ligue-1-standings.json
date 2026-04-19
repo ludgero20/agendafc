@@ -151,12 +151,12 @@
             "tla": "ASM",
             "crest": "https://crests.football-data.org/548.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 15,
-          "draw": 4,
+          "draw": 5,
           "lost": 10,
-          "points": 49,
+          "points": 50,
           "goalsFor": 50,
           "goalsAgainst": 43,
           "goalDifference": 7
@@ -322,12 +322,12 @@
             "tla": "AJA",
             "crest": "https://crests.football-data.org/519.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 5,
-          "draw": 9,
+          "draw": 10,
           "lost": 15,
-          "points": 24,
+          "points": 25,
           "goalsFor": 23,
           "goalsAgainst": 37,
           "goalDifference": -14
