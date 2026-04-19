@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 586,
+            "name": "Torino FC",
+            "shortName": "Torino",
+            "tla": "TOR",
+            "crest": "https://crests.football-data.org/586.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 11,
+          "draw": 7,
+          "lost": 15,
+          "points": 40,
+          "goalsFor": 37,
+          "goalsAgainst": 54,
+          "goalDifference": -17
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
             "shortName": "Parma",
@@ -255,25 +274,6 @@
           "goalsFor": 24,
           "goalsAgainst": 40,
           "goalDifference": -16
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 586,
-            "name": "Torino FC",
-            "shortName": "Torino",
-            "tla": "TOR",
-            "crest": "https://crests.football-data.org/586.png"
-          },
-          "playedGames": 32,
-          "form": null,
-          "won": 11,
-          "draw": 6,
-          "lost": 15,
-          "points": 39,
-          "goalsFor": 37,
-          "goalsAgainst": 54,
-          "goalDifference": -17
         },
         {
           "position": 14,
@@ -341,12 +341,12 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/457.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 6,
-          "draw": 9,
+          "draw": 10,
           "lost": 17,
-          "points": 27,
+          "points": 28,
           "goalsFor": 26,
           "goalsAgainst": 47,
           "goalDifference": -21
