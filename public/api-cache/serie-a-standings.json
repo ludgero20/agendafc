@@ -94,15 +94,15 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
-          "won": 17,
+          "won": 18,
           "draw": 9,
           "lost": 6,
-          "points": 60,
-          "goalsFor": 55,
+          "points": 63,
+          "goalsFor": 56,
           "goalsAgainst": 29,
-          "goalDifference": 26
+          "goalDifference": 27
         },
         {
           "position": 5,
@@ -170,15 +170,15 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 14,
           "draw": 6,
-          "lost": 12,
+          "lost": 13,
           "points": 48,
           "goalsFor": 42,
-          "goalsAgainst": 37,
-          "goalDifference": 5
+          "goalsAgainst": 38,
+          "goalDifference": 4
         },
         {
           "position": 9,
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 107,
+            "name": "Genoa CFC",
+            "shortName": "Genoa",
+            "tla": "GEN",
+            "crest": "https://crests.football-data.org/107.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 14,
+          "points": 39,
+          "goalsFor": 40,
+          "goalsAgainst": 46,
+          "goalDifference": -6
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 112,
             "name": "Parma Calcio 1913",
             "shortName": "Parma",
@@ -274,25 +293,6 @@
           "goalsFor": 24,
           "goalsAgainst": 40,
           "goalDifference": -16
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 107,
-            "name": "Genoa CFC",
-            "shortName": "Genoa",
-            "tla": "GEN",
-            "crest": "https://crests.football-data.org/107.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 9,
-          "draw": 9,
-          "lost": 15,
-          "points": 36,
-          "goalsFor": 38,
-          "goalsAgainst": 46,
-          "goalDifference": -8
         },
         {
           "position": 15,
@@ -373,25 +373,6 @@
         {
           "position": 19,
           "team": {
-            "id": 487,
-            "name": "AC Pisa 1909",
-            "shortName": "AC Pisa",
-            "tla": "PIS",
-            "crest": "https://crests.football-data.org/487.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 3,
-          "draw": 12,
-          "lost": 18,
-          "points": 21,
-          "goalsFor": 24,
-          "goalsAgainst": 58,
-          "goalDifference": -34
-        },
-        {
-          "position": 20,
-          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -407,6 +388,25 @@
           "goalsFor": 23,
           "goalsAgainst": 56,
           "goalDifference": -33
+        },
+        {
+          "position": 20,
+          "team": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS",
+            "crest": "https://crests.football-data.org/487.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 2,
+          "draw": 12,
+          "lost": 19,
+          "points": 18,
+          "goalsFor": 24,
+          "goalsAgainst": 60,
+          "goalDifference": -36
         }
       ]
     }

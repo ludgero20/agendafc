@@ -43,8 +43,8 @@
           "draw": 4,
           "lost": 1,
           "points": 79,
-          "goalsFor": 108,
-          "goalsAgainst": 28,
+          "goalsFor": 109,
+          "goalsAgainst": 29,
           "goalDifference": 80
         },
         {
@@ -100,8 +100,8 @@
           "draw": 5,
           "lost": 8,
           "points": 56,
-          "goalsFor": 61,
-          "goalsAgainst": 41,
+          "goalsFor": 62,
+          "goalsAgainst": 42,
           "goalDifference": 20
         },
         {
@@ -208,18 +208,37 @@
             "tla": "M05",
             "crest": "https://crests.football-data.org/15.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 8,
           "draw": 9,
-          "lost": 12,
+          "lost": 13,
           "points": 33,
           "goalsFor": 35,
-          "goalsAgainst": 44,
-          "goalDifference": -9
+          "goalsAgainst": 45,
+          "goalDifference": -10
         },
         {
           "position": 11,
+          "team": {
+            "id": 18,
+            "name": "Borussia Mönchengladbach",
+            "shortName": "M'gladbach",
+            "tla": "BMG",
+            "crest": "https://crests.football-data.org/18.png"
+          },
+          "playedGames": 30,
+          "form": null,
+          "won": 8,
+          "draw": 9,
+          "lost": 13,
+          "points": 33,
+          "goalsFor": 36,
+          "goalsAgainst": 49,
+          "goalDifference": -13
+        },
+        {
+          "position": 12,
           "team": {
             "id": 28,
             "name": "1. FC Union Berlin",
@@ -238,7 +257,7 @@
           "goalDifference": -18
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 1,
             "name": "1. FC Köln",
@@ -257,7 +276,7 @@
           "goalDifference": -7
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 7,
             "name": "Hamburger SV",
@@ -276,7 +295,7 @@
           "goalDifference": -15
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 12,
             "name": "SV Werder Bremen",
@@ -293,25 +312,6 @@
           "goalsFor": 35,
           "goalsAgainst": 53,
           "goalDifference": -18
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 18,
-            "name": "Borussia Mönchengladbach",
-            "shortName": "M'gladbach",
-            "tla": "BMG",
-            "crest": "https://crests.football-data.org/18.png"
-          },
-          "playedGames": 29,
-          "form": null,
-          "won": 7,
-          "draw": 9,
-          "lost": 13,
-          "points": 30,
-          "goalsFor": 35,
-          "goalsAgainst": 49,
-          "goalDifference": -14
         },
         {
           "position": 16,

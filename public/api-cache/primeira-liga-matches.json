@@ -37,73 +37,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
-        "winner": null
-      },
-      "id": 545965,
-      "utcDate": "2026-04-19T17:15:00Z",
-      "status": "TIMED",
-      "matchday": 30,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-19T16:26:44Z",
-      "homeTeam": {
-        "id": 498,
-        "name": "Sporting Clube de Portugal",
-        "shortName": "Sporting CP",
-        "tla": "SPO",
-        "crest": "https://crests.football-data.org/498.png"
-      },
-      "awayTeam": {
-        "id": 1903,
-        "name": "Sport Lisboa e Benfica",
-        "shortName": "SL Benfica",
-        "tla": "BEN",
-        "crest": "https://crests.football-data.org/1903.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 38806,
-          "name": "João Pinheiro",
-          "type": "REFEREE",
-          "nationality": "Portugal"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2187,
-        "name": "Portugal",
-        "code": "POR",
-        "flag": "https://crests.football-data.org/765.svg"
-      },
-      "competition": {
-        "id": 2017,
-        "name": "Primeira Liga",
-        "code": "PPL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PPL.png"
-      },
-      "season": {
-        "id": 2433,
-        "startDate": "2025-08-08",
-        "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545968,
@@ -112,7 +46,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:13Z",
+      "lastUpdated": "2026-04-19T00:21:00Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -142,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 176741,
+          "name": "Claudio Pereira",
+          "type": "REFEREE",
+          "nationality": null
+        }
+      ]
     },
     {
       "area": {
@@ -162,7 +103,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545969,
@@ -171,7 +112,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-24T10:21:05Z",
+      "lastUpdated": "2026-04-13T01:32:05Z",
       "homeTeam": {
         "id": 5613,
         "name": "Sporting Clube de Braga",
@@ -201,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 98928,
+          "name": "David Silva",
+          "type": "REFEREE",
+          "nationality": "Portugal"
+        }
+      ]
     },
     {
       "area": {
@@ -221,7 +169,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545962,
@@ -230,7 +178,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-24T10:21:05Z",
+      "lastUpdated": "2026-04-19T01:32:01Z",
       "homeTeam": {
         "id": 583,
         "name": "Moreirense FC",
@@ -280,7 +228,66 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
+        "winner": null
+      },
+      "id": 545930,
+      "utcDate": "2026-04-23T19:15:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-04-17T01:32:04Z",
+      "homeTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "awayTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2433,
+        "startDate": "2025-08-08",
+        "endDate": "2026-05-17",
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545970,
@@ -289,7 +296,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:37:06Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 5533,
         "name": "Gil Vicente FC",
@@ -339,7 +346,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545971,
@@ -348,7 +355,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:38:48Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 1049,
         "name": "CD Tondela",
@@ -398,7 +405,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545972,
@@ -407,7 +414,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:37:06Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 5530,
         "name": "CD Santa Clara",
@@ -457,7 +464,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545973,
@@ -466,7 +473,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:37:05Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 10340,
         "name": "AVS",
@@ -516,7 +523,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545974,
@@ -525,7 +532,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:37:06Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
@@ -575,7 +582,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545975,
@@ -584,7 +591,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:13Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -634,7 +641,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545976,
@@ -643,7 +650,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:38:47Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 7822,
         "name": "FC Alverca",
@@ -693,7 +700,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545977,
@@ -702,7 +709,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-29T05:20:57Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 1903,
         "name": "Sport Lisboa e Benfica",
@@ -752,7 +759,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545978,
@@ -761,7 +768,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2025-08-15T13:37:07Z",
+      "lastUpdated": "2026-04-19T01:32:05Z",
       "homeTeam": {
         "id": 5543,
         "name": "Vitória SC",
@@ -811,7 +818,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545979,
@@ -870,7 +877,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545980,
@@ -929,7 +936,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545981,
@@ -938,7 +945,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:13Z",
+      "lastUpdated": "2026-04-19T00:21:00Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -988,7 +995,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545982,
@@ -1047,7 +1054,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545983,
@@ -1106,7 +1113,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545984,
@@ -1165,7 +1172,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545985,
@@ -1224,7 +1231,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545986,
@@ -1283,7 +1290,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545987,
@@ -1342,7 +1349,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545988,
@@ -1401,7 +1408,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545989,
@@ -1460,7 +1467,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545990,
@@ -1519,7 +1526,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545991,
@@ -1528,7 +1535,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:13Z",
+      "lastUpdated": "2026-04-19T00:21:00Z",
       "homeTeam": {
         "id": 10340,
         "name": "AVS",
@@ -1578,7 +1585,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545992,
@@ -1637,7 +1644,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545993,
@@ -1696,7 +1703,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545994,
@@ -1755,7 +1762,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545995,
@@ -1814,7 +1821,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545996,
@@ -1873,7 +1880,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545997,
@@ -1932,7 +1939,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545998,
@@ -1991,7 +1998,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 545999,
@@ -2050,7 +2057,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546000,
@@ -2059,7 +2066,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:13Z",
+      "lastUpdated": "2026-04-19T00:21:00Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -2109,7 +2116,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546001,
@@ -2168,7 +2175,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546002,
@@ -2227,7 +2234,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546003,
@@ -2286,7 +2293,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546004,
@@ -2345,7 +2352,7 @@
         "id": 2433,
         "startDate": "2025-08-08",
         "endDate": "2026-05-17",
-        "currentMatchday": 29,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 546005,
