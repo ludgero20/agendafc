@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 397,
+            "name": "Brighton & Hove Albion FC",
+            "shortName": "Brighton Hove",
+            "tla": "BHA",
+            "crest": "https://crests.football-data.org/397.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 13,
+          "draw": 11,
+          "lost": 10,
+          "points": 50,
+          "goalsFor": 47,
+          "goalsAgainst": 39,
+          "goalDifference": 8
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 61,
             "name": "Chelsea FC",
             "shortName": "Chelsea",
@@ -135,31 +154,12 @@
           "playedGames": 34,
           "form": null,
           "won": 13,
-          "draw": 10,
-          "lost": 11,
-          "points": 49,
-          "goalsFor": 53,
-          "goalsAgainst": 42,
-          "goalDifference": 11
-        },
-        {
-          "position": 7,
-          "team": {
-            "id": 397,
-            "name": "Brighton & Hove Albion FC",
-            "shortName": "Brighton Hove",
-            "tla": "BHA",
-            "crest": "https://crests.football-data.org/397.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 12,
-          "draw": 12,
-          "lost": 10,
+          "draw": 9,
+          "lost": 12,
           "points": 48,
-          "goalsFor": 45,
-          "goalsAgainst": 39,
-          "goalDifference": 6
+          "goalsFor": 53,
+          "goalsAgainst": 44,
+          "goalDifference": 9
         },
         {
           "position": 8,
