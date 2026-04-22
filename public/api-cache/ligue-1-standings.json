@@ -37,12 +37,12 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 28,
+          "playedGames": 29,
           "form": null,
           "won": 20,
-          "draw": 3,
+          "draw": 4,
           "lost": 5,
-          "points": 63,
+          "points": 64,
           "goalsFor": 62,
           "goalsAgainst": 25,
           "goalDifference": 37
@@ -341,12 +341,12 @@
             "tla": "NAN",
             "crest": "https://crests.football-data.org/543.png"
           },
-          "playedGames": 29,
+          "playedGames": 30,
           "form": null,
           "won": 4,
-          "draw": 8,
+          "draw": 9,
           "lost": 17,
-          "points": 20,
+          "points": 21,
           "goalsFor": 25,
           "goalsAgainst": 46,
           "goalDifference": -21
