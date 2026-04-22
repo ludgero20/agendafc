@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 65,
+            "name": "Manchester City FC",
+            "shortName": "Man City",
+            "tla": "MCI",
+            "crest": "https://crests.football-data.org/65.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 21,
+          "draw": 7,
+          "lost": 5,
+          "points": 70,
+          "goalsFor": 66,
+          "goalsAgainst": 29,
+          "goalDifference": 37
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 57,
             "name": "Arsenal FC",
             "shortName": "Arsenal",
@@ -46,25 +65,6 @@
           "goalsFor": 63,
           "goalsAgainst": 26,
           "goalDifference": 37
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 65,
-            "name": "Manchester City FC",
-            "shortName": "Man City",
-            "tla": "MCI",
-            "crest": "https://crests.football-data.org/65.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 20,
-          "draw": 8,
-          "lost": 5,
-          "points": 68,
-          "goalsFor": 65,
-          "goalsAgainst": 29,
-          "goalDifference": 36
         },
         {
           "position": 3,
@@ -157,8 +157,8 @@
           "draw": 16,
           "lost": 7,
           "points": 49,
-          "goalsFor": 50,
-          "goalsAgainst": 50,
+          "goalsFor": 52,
+          "goalsAgainst": 52,
           "goalDifference": 0
         },
         {
@@ -309,8 +309,8 @@
           "draw": 13,
           "lost": 12,
           "points": 40,
-          "goalsFor": 42,
-          "goalsAgainst": 49,
+          "goalsFor": 44,
+          "goalsAgainst": 51,
           "goalDifference": -7
         },
         {
@@ -382,12 +382,12 @@
           "playedGames": 34,
           "form": null,
           "won": 4,
-          "draw": 9,
-          "lost": 21,
-          "points": 21,
+          "draw": 8,
+          "lost": 22,
+          "points": 20,
           "goalsFor": 34,
-          "goalsAgainst": 67,
-          "goalDifference": -33
+          "goalsAgainst": 68,
+          "goalDifference": -34
         },
         {
           "position": 20,
