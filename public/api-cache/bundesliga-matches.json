@@ -37,7 +37,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540682,
@@ -46,7 +46,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-22T06:00:56Z",
       "homeTeam": {
         "id": 721,
         "name": "RB Leipzig",
@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15824,
+          "name": "Sven Jablonski",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -96,7 +103,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540676,
@@ -105,7 +112,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-19T01:32:04Z",
       "homeTeam": {
         "id": 15,
         "name": "1. FSV Mainz 05",
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15825,
+          "name": "Martin Petersen",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -155,7 +169,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540677,
@@ -164,7 +178,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-19T01:32:04Z",
       "homeTeam": {
         "id": 1,
         "name": "1. FC Köln",
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57504,
+          "name": "Robert Hartmann",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -214,7 +235,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540678,
@@ -223,7 +244,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-20T01:32:03Z",
       "homeTeam": {
         "id": 16,
         "name": "FC Augsburg",
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 253,
+          "name": "Harm Osmers",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -273,7 +301,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540681,
@@ -282,7 +310,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -312,7 +340,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43943,
+          "name": "Tobias Stieler",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -332,7 +367,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540683,
@@ -341,7 +376,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-19T01:32:04Z",
       "homeTeam": {
         "id": 44,
         "name": "1. FC Heidenheim 1846",
@@ -371,7 +406,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43878,
+          "name": "Felix Zwayer",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -391,7 +433,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540684,
@@ -400,7 +442,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-20T01:32:03Z",
       "homeTeam": {
         "id": 7,
         "name": "Hamburger SV",
@@ -430,7 +472,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57519,
+          "name": "Robert Schröder",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -450,7 +499,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540680,
@@ -459,7 +508,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -489,7 +538,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57526,
+          "name": "Christian Dingert",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -509,7 +565,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540679,
@@ -518,7 +574,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-03-27T15:21:10Z",
+      "lastUpdated": "2026-04-20T01:32:04Z",
       "homeTeam": {
         "id": 4,
         "name": "Borussia Dortmund",
@@ -548,7 +604,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 65424,
+          "name": "Robin Braun",
+          "type": "REFEREE",
+          "nationality": "Germany"
+        }
+      ]
     },
     {
       "area": {
@@ -568,7 +631,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540688,
@@ -577,7 +640,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -627,7 +690,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540690,
@@ -636,7 +699,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -686,7 +749,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540691,
@@ -745,7 +808,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540692,
@@ -804,7 +867,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540693,
@@ -863,7 +926,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540687,
@@ -922,7 +985,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540686,
@@ -981,7 +1044,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540685,
@@ -1040,7 +1103,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540689,
@@ -1049,7 +1112,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 17,
         "name": "SC Freiburg",
@@ -1099,7 +1162,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540696,
@@ -1158,7 +1221,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540695,
@@ -1167,7 +1230,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 10,
         "name": "VfB Stuttgart",
@@ -1217,7 +1280,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540698,
@@ -1226,7 +1289,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 2,
         "name": "TSG 1899 Hoffenheim",
@@ -1276,7 +1339,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540699,
@@ -1335,7 +1398,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540701,
@@ -1394,7 +1457,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540694,
@@ -1403,7 +1466,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 11,
         "name": "VfL Wolfsburg",
@@ -1453,7 +1516,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540697,
@@ -1512,7 +1575,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540702,
@@ -1571,7 +1634,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540700,
@@ -1630,7 +1693,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540703,
@@ -1639,7 +1702,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 12,
         "name": "SV Werder Bremen",
@@ -1689,7 +1752,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540704,
@@ -1748,7 +1811,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540705,
@@ -1807,7 +1870,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540706,
@@ -1816,7 +1879,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 19,
         "name": "Eintracht Frankfurt",
@@ -1866,7 +1929,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540707,
@@ -1875,7 +1938,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-11T10:21:12Z",
+      "lastUpdated": "2026-04-23T00:21:09Z",
       "homeTeam": {
         "id": 20,
         "name": "FC St. Pauli 1910",
@@ -1925,7 +1988,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540708,
@@ -1984,7 +2047,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540709,
@@ -2043,7 +2106,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540710,
@@ -2102,7 +2165,7 @@
         "id": 2414,
         "startDate": "2025-08-22",
         "endDate": "2026-05-16",
-        "currentMatchday": 29,
+        "currentMatchday": 31,
         "winner": null
       },
       "id": 540711,
