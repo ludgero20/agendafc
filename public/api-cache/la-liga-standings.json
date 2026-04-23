@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 13,
+          "points": 39,
+          "goalsFor": 37,
+          "goalsAgainst": 48,
+          "goalDifference": -11
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 298,
             "name": "Girona FC",
             "shortName": "Girona",
@@ -236,25 +255,6 @@
           "goalsFor": 35,
           "goalsAgainst": 48,
           "goalDifference": -13
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 10,
-          "draw": 8,
-          "lost": 13,
-          "points": 38,
-          "goalsFor": 37,
-          "goalsAgainst": 48,
-          "goalDifference": -11
         },
         {
           "position": 13,
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 87,
+            "name": "Rayo Vallecano de Madrid",
+            "shortName": "Rayo Vallecano",
+            "tla": "RAY",
+            "crest": "https://crests.football-data.org/87.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 8,
+          "draw": 12,
+          "lost": 12,
+          "points": 36,
+          "goalsFor": 29,
+          "goalsAgainst": 38,
+          "goalDifference": -9
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 89,
             "name": "RCD Mallorca",
             "shortName": "Mallorca",
@@ -295,7 +314,7 @@
           "goalDifference": -9
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 285,
             "name": "Elche CF",
@@ -314,25 +333,6 @@
           "goalDifference": -7
         },
         {
-          "position": 16,
-          "team": {
-            "id": 87,
-            "name": "Rayo Vallecano de Madrid",
-            "shortName": "Rayo Vallecano",
-            "tla": "RAY",
-            "crest": "https://crests.football-data.org/87.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 8,
-          "draw": 11,
-          "lost": 12,
-          "points": 35,
-          "goalsFor": 29,
-          "goalsAgainst": 38,
-          "goalDifference": -9
-        },
-        {
           "position": 17,
           "team": {
             "id": 559,
@@ -341,15 +341,15 @@
             "tla": "SEV",
             "crest": "https://crests.football-data.org/559.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 9,
           "draw": 7,
-          "lost": 15,
+          "lost": 16,
           "points": 34,
           "goalsFor": 39,
-          "goalsAgainst": 51,
-          "goalDifference": -12
+          "goalsAgainst": 52,
+          "goalDifference": -13
         },
         {
           "position": 18,
@@ -379,15 +379,15 @@
             "tla": "LEV",
             "crest": "https://crests.football-data.org/88.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
-          "won": 7,
+          "won": 8,
           "draw": 8,
           "lost": 16,
-          "points": 29,
-          "goalsFor": 35,
+          "points": 32,
+          "goalsFor": 36,
           "goalsAgainst": 50,
-          "goalDifference": -15
+          "goalDifference": -14
         },
         {
           "position": 20,
