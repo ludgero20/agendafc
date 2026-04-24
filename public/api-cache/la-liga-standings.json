@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 23,
-          "draw": 4,
+          "draw": 5,
           "lost": 5,
-          "points": 73,
+          "points": 74,
           "goalsFor": 67,
           "goalsAgainst": 30,
           "goalDifference": 37
@@ -113,12 +113,12 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 13,
+          "draw": 14,
           "lost": 7,
-          "points": 49,
+          "points": 50,
           "goalsFor": 48,
           "goalsAgainst": 40,
           "goalDifference": 8

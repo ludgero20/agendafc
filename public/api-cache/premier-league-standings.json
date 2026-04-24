@@ -227,12 +227,12 @@
             "tla": "SUN",
             "crest": "https://crests.football-data.org/71.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 12,
-          "draw": 10,
+          "draw": 11,
           "lost": 11,
-          "points": 46,
+          "points": 47,
           "goalsFor": 36,
           "goalsAgainst": 40,
           "goalDifference": -4
@@ -322,12 +322,12 @@
             "tla": "NOT",
             "crest": "https://crests.football-data.org/351.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 9,
-          "draw": 9,
+          "draw": 10,
           "lost": 15,
-          "points": 36,
+          "points": 37,
           "goalsFor": 36,
           "goalsAgainst": 45,
           "goalDifference": -9
