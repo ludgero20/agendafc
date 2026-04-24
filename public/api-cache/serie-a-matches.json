@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 50,
+    "count": 46,
     "first": "2026-04-24",
     "last": "2026-05-24",
     "played": 0
@@ -37,7 +37,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537154,
@@ -76,7 +76,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11065,
+          "name": "Daniele Doveri",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -96,7 +103,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537153,
@@ -135,7 +142,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 160813,
+          "name": "Andrea Calzavara",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -155,7 +169,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537149,
@@ -194,7 +208,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11060,
+          "name": "Marco Di Bello",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -214,7 +235,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537151,
@@ -253,7 +274,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11029,
+          "name": "Davide Massa",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -273,7 +301,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537145,
@@ -312,7 +340,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11119,
+          "name": "Livio Marinelli",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -332,7 +367,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537148,
@@ -371,7 +406,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 10980,
+          "name": "Federico La Penna",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -391,7 +433,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537150,
@@ -430,7 +472,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11043,
+          "name": "Maurizio Mariani",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -450,7 +499,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537146,
@@ -489,7 +538,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57826,
+          "name": "Simone Sozza",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -509,7 +565,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537147,
@@ -548,7 +604,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 206189,
+          "name": "Juan Luca Sacchi",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -568,7 +631,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537152,
@@ -607,7 +670,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 188502,
+          "name": "Kevin Bonacina",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -627,7 +697,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537161,
@@ -686,7 +756,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537163,
@@ -745,7 +815,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537157,
@@ -804,7 +874,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537156,
@@ -863,7 +933,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537158,
@@ -922,7 +992,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537162,
@@ -981,7 +1051,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537160,
@@ -1040,7 +1110,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537159,
@@ -1099,7 +1169,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537164,
@@ -1158,7 +1228,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537155,
@@ -1217,243 +1287,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 537168,
-      "utcDate": "2026-05-08T18:45:00Z",
-      "status": "TIMED",
-      "matchday": 36,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-23T20:21:10Z",
-      "homeTeam": {
-        "id": 586,
-        "name": "Torino FC",
-        "shortName": "Torino",
-        "tla": "TOR",
-        "crest": "https://crests.football-data.org/586.png"
-      },
-      "awayTeam": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 537167,
-      "utcDate": "2026-05-09T13:00:00Z",
-      "status": "TIMED",
-      "matchday": 36,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-23T20:21:10Z",
-      "homeTeam": {
-        "id": 104,
-        "name": "Cagliari Calcio",
-        "shortName": "Cagliari",
-        "tla": "CAG",
-        "crest": "https://crests.football-data.org/104.png"
-      },
-      "awayTeam": {
-        "id": 115,
-        "name": "Udinese Calcio",
-        "shortName": "Udinese",
-        "tla": "UDI",
-        "crest": "https://crests.football-data.org/115.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 537170,
-      "utcDate": "2026-05-09T16:00:00Z",
-      "status": "TIMED",
-      "matchday": 36,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-23T20:21:10Z",
-      "homeTeam": {
-        "id": 110,
-        "name": "SS Lazio",
-        "shortName": "Lazio",
-        "tla": "LAZ",
-        "crest": "https://crests.football-data.org/110.png"
-      },
-      "awayTeam": {
-        "id": 108,
-        "name": "FC Internazionale Milano",
-        "shortName": "Inter",
-        "tla": "INT",
-        "crest": "https://crests.football-data.org/108.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 537174,
-      "utcDate": "2026-05-09T18:45:00Z",
-      "status": "TIMED",
-      "matchday": 36,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-23T20:21:10Z",
-      "homeTeam": {
-        "id": 5890,
-        "name": "US Lecce",
-        "shortName": "Lecce",
-        "tla": "USL",
-        "crest": "https://crests.football-data.org/5890.png"
-      },
-      "awayTeam": {
-        "id": 109,
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/109.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2395,
-        "startDate": "2025-08-24",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537165,
@@ -1512,7 +1346,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537166,
@@ -1571,7 +1405,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537169,
@@ -1630,7 +1464,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537171,
@@ -1689,7 +1523,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537172,
@@ -1748,7 +1582,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537173,
@@ -1807,7 +1641,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537175,
@@ -1866,7 +1700,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537176,
@@ -1925,7 +1759,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537177,
@@ -1984,7 +1818,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537178,
@@ -2043,7 +1877,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537179,
@@ -2102,7 +1936,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537180,
@@ -2161,7 +1995,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537181,
@@ -2220,7 +2054,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537182,
@@ -2279,7 +2113,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537183,
@@ -2338,7 +2172,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537184,
@@ -2397,7 +2231,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537185,
@@ -2456,7 +2290,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537186,
@@ -2515,7 +2349,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537187,
@@ -2574,7 +2408,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537188,
@@ -2633,7 +2467,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537189,
@@ -2692,7 +2526,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537190,
@@ -2751,7 +2585,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537191,
@@ -2810,7 +2644,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537192,
@@ -2869,7 +2703,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537193,
@@ -2928,7 +2762,7 @@
         "id": 2395,
         "startDate": "2025-08-24",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 537194,
