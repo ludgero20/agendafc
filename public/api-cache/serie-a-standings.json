@@ -62,9 +62,9 @@
           "draw": 6,
           "lost": 7,
           "points": 69,
-          "goalsFor": 49,
+          "goalsFor": 52,
           "goalsAgainst": 33,
-          "goalDifference": 16
+          "goalDifference": 19
         },
         {
           "position": 3,
@@ -335,25 +335,6 @@
         {
           "position": 17,
           "team": {
-            "id": 457,
-            "name": "US Cremonese",
-            "shortName": "Cremonese",
-            "tla": "CRE",
-            "crest": "https://crests.football-data.org/457.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 6,
-          "draw": 10,
-          "lost": 18,
-          "points": 28,
-          "goalsFor": 26,
-          "goalsAgainst": 48,
-          "goalDifference": -22
-        },
-        {
-          "position": 18,
-          "team": {
             "id": 5890,
             "name": "US Lecce",
             "shortName": "Lecce",
@@ -369,6 +350,25 @@
           "goalsFor": 22,
           "goalsAgainst": 46,
           "goalDifference": -24
+        },
+        {
+          "position": 18,
+          "team": {
+            "id": 457,
+            "name": "US Cremonese",
+            "shortName": "Cremonese",
+            "tla": "CRE",
+            "crest": "https://crests.football-data.org/457.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 6,
+          "draw": 10,
+          "lost": 18,
+          "points": 28,
+          "goalsFor": 26,
+          "goalsAgainst": 51,
+          "goalDifference": -25
         },
         {
           "position": 19,
