@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 19,
+          "draw": 4,
+          "lost": 11,
+          "points": 61,
+          "goalsFor": 47,
+          "goalsAgainst": 29,
+          "goalDifference": 18
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 7397,
             "name": "Como 1907",
             "shortName": "Como 1907",
@@ -122,25 +141,6 @@
           "goalsFor": 57,
           "goalsAgainst": 28,
           "goalDifference": 29
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 18,
-          "draw": 4,
-          "lost": 11,
-          "points": 58,
-          "goalsFor": 46,
-          "goalsAgainst": 29,
-          "goalDifference": 17
         },
         {
           "position": 7,
@@ -170,15 +170,15 @@
             "tla": "BOL",
             "crest": "https://crests.football-data.org/103.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 14,
           "draw": 6,
-          "lost": 13,
+          "lost": 14,
           "points": 48,
           "goalsFor": 42,
-          "goalsAgainst": 39,
-          "goalDifference": 3
+          "goalsAgainst": 40,
+          "goalDifference": 2
         },
         {
           "position": 9,
@@ -248,13 +248,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 9,
-          "draw": 13,
+          "won": 10,
+          "draw": 12,
           "lost": 12,
-          "points": 40,
-          "goalsFor": 24,
+          "points": 42,
+          "goalsFor": 25,
           "goalsAgainst": 40,
-          "goalDifference": -16
+          "goalDifference": -15
         },
         {
           "position": 13,
@@ -373,25 +373,6 @@
         {
           "position": 19,
           "team": {
-            "id": 487,
-            "name": "AC Pisa 1909",
-            "shortName": "AC Pisa",
-            "tla": "PIS",
-            "crest": "https://crests.football-data.org/487.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 2,
-          "draw": 13,
-          "lost": 19,
-          "points": 19,
-          "goalsFor": 24,
-          "goalsAgainst": 60,
-          "goalDifference": -36
-        },
-        {
-          "position": 20,
-          "team": {
             "id": 450,
             "name": "Hellas Verona FC",
             "shortName": "Verona",
@@ -407,6 +388,25 @@
           "goalsFor": 23,
           "goalsAgainst": 56,
           "goalDifference": -33
+        },
+        {
+          "position": 20,
+          "team": {
+            "id": 487,
+            "name": "AC Pisa 1909",
+            "shortName": "AC Pisa",
+            "tla": "PIS",
+            "crest": "https://crests.football-data.org/487.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 2,
+          "draw": 12,
+          "lost": 20,
+          "points": 18,
+          "goalsFor": 24,
+          "goalsAgainst": 61,
+          "goalDifference": -37
         }
       ]
     }
