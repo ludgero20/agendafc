@@ -39,13 +39,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 21,
-          "draw": 8,
+          "won": 22,
+          "draw": 7,
           "lost": 5,
-          "points": 71,
-          "goalsFor": 63,
+          "points": 73,
+          "goalsFor": 64,
           "goalsAgainst": 26,
-          "goalDifference": 37
+          "goalDifference": 38
         },
         {
           "position": 2,
@@ -259,25 +259,6 @@
         {
           "position": 13,
           "team": {
-            "id": 67,
-            "name": "Newcastle United FC",
-            "shortName": "Newcastle",
-            "tla": "NEW",
-            "crest": "https://crests.football-data.org/67.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 12,
-          "draw": 7,
-          "lost": 15,
-          "points": 43,
-          "goalsFor": 46,
-          "goalsAgainst": 49,
-          "goalDifference": -3
-        },
-        {
-          "position": 14,
-          "team": {
             "id": 354,
             "name": "Crystal Palace FC",
             "shortName": "Crystal Palace",
@@ -293,6 +274,25 @@
           "goalsFor": 36,
           "goalsAgainst": 39,
           "goalDifference": -3
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 67,
+            "name": "Newcastle United FC",
+            "shortName": "Newcastle",
+            "tla": "NEW",
+            "crest": "https://crests.football-data.org/67.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 12,
+          "draw": 6,
+          "lost": 16,
+          "points": 42,
+          "goalsFor": 46,
+          "goalsAgainst": 50,
+          "goalDifference": -4
         },
         {
           "position": 15,

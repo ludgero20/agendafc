@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 2,
+            "name": "TSG 1899 Hoffenheim",
+            "shortName": "Hoffenheim",
+            "tla": "TSG",
+            "crest": "https://crests.football-data.org/2.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 17,
+          "draw": 6,
+          "lost": 8,
+          "points": 57,
+          "goalsFor": 61,
+          "goalsAgainst": 45,
+          "goalDifference": 16
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 10,
             "name": "VfB Stuttgart",
             "shortName": "Stuttgart",
@@ -105,7 +124,7 @@
           "goalDifference": 20
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
@@ -122,25 +141,6 @@
           "goalsFor": 62,
           "goalsAgainst": 42,
           "goalDifference": 20
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 2,
-            "name": "TSG 1899 Hoffenheim",
-            "shortName": "Hoffenheim",
-            "tla": "TSG",
-            "crest": "https://crests.football-data.org/2.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 16,
-          "draw": 7,
-          "lost": 8,
-          "points": 55,
-          "goalsFor": 59,
-          "goalsAgainst": 44,
-          "goalDifference": 15
         },
         {
           "position": 7,
@@ -240,25 +240,6 @@
         {
           "position": 12,
           "team": {
-            "id": 7,
-            "name": "Hamburger SV",
-            "shortName": "HSV",
-            "tla": "HSV",
-            "crest": "https://crests.football-data.org/7.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 7,
-          "draw": 11,
-          "lost": 13,
-          "points": 32,
-          "goalsFor": 33,
-          "goalsAgainst": 48,
-          "goalDifference": -15
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 28,
             "name": "1. FC Union Berlin",
             "shortName": "Union Berlin",
@@ -276,7 +257,7 @@
           "goalDifference": -20
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 1,
             "name": "1. FC Köln",
@@ -293,6 +274,25 @@
           "goalsFor": 45,
           "goalsAgainst": 53,
           "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 7,
+            "name": "Hamburger SV",
+            "shortName": "HSV",
+            "tla": "HSV",
+            "crest": "https://crests.football-data.org/7.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 7,
+          "draw": 10,
+          "lost": 14,
+          "points": 31,
+          "goalsFor": 34,
+          "goalsAgainst": 50,
+          "goalDifference": -16
         },
         {
           "position": 15,

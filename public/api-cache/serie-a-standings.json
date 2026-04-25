@@ -119,9 +119,9 @@
           "draw": 4,
           "lost": 11,
           "points": 61,
-          "goalsFor": 47,
+          "goalsFor": 48,
           "goalsAgainst": 29,
-          "goalDifference": 18
+          "goalDifference": 19
         },
         {
           "position": 6,
@@ -177,8 +177,8 @@
           "lost": 14,
           "points": 48,
           "goalsFor": 42,
-          "goalsAgainst": 40,
-          "goalDifference": 2
+          "goalsAgainst": 41,
+          "goalDifference": 1
         },
         {
           "position": 9,
@@ -341,12 +341,12 @@
             "tla": "USL",
             "crest": "https://crests.football-data.org/5890.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 7,
-          "draw": 7,
+          "draw": 8,
           "lost": 19,
-          "points": 28,
+          "points": 29,
           "goalsFor": 22,
           "goalsAgainst": 46,
           "goalDifference": -24
@@ -379,12 +379,12 @@
             "tla": "HVE",
             "crest": "https://crests.football-data.org/450.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 3,
-          "draw": 9,
+          "draw": 10,
           "lost": 21,
-          "points": 18,
+          "points": 19,
           "goalsFor": 23,
           "goalsAgainst": 56,
           "goalDifference": -33
