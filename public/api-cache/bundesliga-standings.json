@@ -56,15 +56,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
-          "won": 19,
+          "won": 20,
           "draw": 7,
           "lost": 4,
-          "points": 64,
-          "goalsFor": 61,
+          "points": 67,
+          "goalsFor": 64,
           "goalsAgainst": 31,
-          "goalDifference": 30
+          "goalDifference": 33
         },
         {
           "position": 3,
@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 17,
+          "draw": 6,
+          "lost": 8,
+          "points": 57,
+          "goalsFor": 63,
+          "goalsAgainst": 43,
+          "goalDifference": 20
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
             "shortName": "Hoffenheim",
@@ -103,25 +122,6 @@
           "goalsFor": 61,
           "goalsAgainst": 45,
           "goalDifference": 16
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 17,
-          "draw": 5,
-          "lost": 9,
-          "points": 56,
-          "goalsFor": 62,
-          "goalsAgainst": 43,
-          "goalDifference": 19
         },
         {
           "position": 6,
@@ -170,15 +170,15 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 12,
           "draw": 7,
-          "lost": 11,
+          "lost": 12,
           "points": 43,
           "goalsFor": 44,
-          "goalsAgainst": 48,
-          "goalDifference": -4
+          "goalsAgainst": 51,
+          "goalDifference": -7
         },
         {
           "position": 9,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 12,
-            "name": "SV Werder Bremen",
-            "shortName": "Bremen",
-            "tla": "SVW",
-            "crest": "https://crests.football-data.org/12.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 9,
-          "draw": 7,
-          "lost": 15,
-          "points": 34,
-          "goalsFor": 36,
-          "goalsAgainst": 53,
-          "goalDifference": -17
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 18,
             "name": "Borussia Mönchengladbach",
             "shortName": "M'gladbach",
@@ -255,6 +236,25 @@
           "goalsFor": 36,
           "goalsAgainst": 50,
           "goalDifference": -14
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 12,
+            "name": "SV Werder Bremen",
+            "shortName": "Bremen",
+            "tla": "SVW",
+            "crest": "https://crests.football-data.org/12.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 8,
+          "draw": 8,
+          "lost": 15,
+          "points": 32,
+          "goalsFor": 36,
+          "goalsAgainst": 54,
+          "goalDifference": -18
         },
         {
           "position": 13,
