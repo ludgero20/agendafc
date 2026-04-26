@@ -176,8 +176,8 @@
           "draw": 10,
           "lost": 12,
           "points": 43,
-          "goalsFor": 50,
-          "goalsAgainst": 50,
+          "goalsFor": 52,
+          "goalsAgainst": 52,
           "goalDifference": 0
         },
         {
@@ -252,8 +252,8 @@
           "draw": 12,
           "lost": 12,
           "points": 39,
-          "goalsFor": 31,
-          "goalsAgainst": 39,
+          "goalsFor": 33,
+          "goalsAgainst": 41,
           "goalDifference": -8
         },
         {
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 285,
+            "name": "Elche CF",
+            "shortName": "Elche",
+            "tla": "ELC",
+            "crest": "https://crests.football-data.org/285.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 9,
+          "draw": 11,
+          "lost": 13,
+          "points": 38,
+          "goalsFor": 43,
+          "goalsAgainst": 49,
+          "goalDifference": -6
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 263,
             "name": "Deportivo Alavés",
             "shortName": "Alavés",
@@ -314,7 +333,7 @@
           "goalDifference": -11
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -331,25 +350,6 @@
           "goalsFor": 41,
           "goalsAgainst": 51,
           "goalDifference": -10
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 285,
-            "name": "Elche CF",
-            "shortName": "Elche",
-            "tla": "ELC",
-            "crest": "https://crests.football-data.org/285.png"
-          },
-          "playedGames": 32,
-          "form": null,
-          "won": 8,
-          "draw": 11,
-          "lost": 13,
-          "points": 35,
-          "goalsFor": 42,
-          "goalsAgainst": 49,
-          "goalDifference": -7
         },
         {
           "position": 18,
@@ -398,15 +398,15 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 6,
           "draw": 10,
-          "lost": 16,
+          "lost": 17,
           "points": 28,
           "goalsFor": 25,
-          "goalsAgainst": 49,
-          "goalDifference": -24
+          "goalsAgainst": 50,
+          "goalDifference": -25
         }
       ]
     }

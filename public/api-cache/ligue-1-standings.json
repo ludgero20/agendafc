@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 525,
+            "name": "FC Lorient",
+            "shortName": "Lorient",
+            "tla": "FCL",
+            "crest": "https://crests.football-data.org/525.png"
+          },
+          "playedGames": 31,
+          "form": null,
+          "won": 11,
+          "draw": 11,
+          "lost": 9,
+          "points": 44,
+          "goalsFor": 42,
+          "goalsAgainst": 45,
+          "goalDifference": -3
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 576,
             "name": "RC Strasbourg Alsace",
             "shortName": "Strasbourg",
@@ -173,31 +192,12 @@
           "playedGames": 30,
           "form": null,
           "won": 12,
-          "draw": 8,
-          "lost": 10,
-          "points": 44,
-          "goalsFor": 46,
-          "goalsAgainst": 37,
-          "goalDifference": 9
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 525,
-            "name": "FC Lorient",
-            "shortName": "Lorient",
-            "tla": "FCL",
-            "crest": "https://crests.football-data.org/525.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 10,
-          "draw": 12,
-          "lost": 9,
-          "points": 42,
-          "goalsFor": 40,
-          "goalsAgainst": 44,
-          "goalDifference": -4
+          "draw": 7,
+          "lost": 11,
+          "points": 43,
+          "goalsFor": 47,
+          "goalsAgainst": 39,
+          "goalDifference": 8
         },
         {
           "position": 10,
