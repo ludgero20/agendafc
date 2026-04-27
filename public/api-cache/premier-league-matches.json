@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 41,
+    "count": 39,
     "first": "2026-04-27",
     "last": "2026-05-24",
     "played": 0
@@ -1286,65 +1286,6 @@
         "currentMatchday": 34,
         "winner": null
       },
-      "id": 538145,
-      "utcDate": "2026-05-17T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 37,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-27T00:21:06Z",
-      "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2403,
-        "startDate": "2025-08-15",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
       "id": 538146,
       "utcDate": "2026-05-17T14:00:00Z",
       "status": "TIMED",
@@ -1483,65 +1424,6 @@
         "shortName": "Crystal Palace",
         "tla": "CRY",
         "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2403,
-        "startDate": "2025-08-15",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 538149,
-      "utcDate": "2026-05-17T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 37,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2025-12-29T15:20:57Z",
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
       },
       "score": {
         "winner": null,
