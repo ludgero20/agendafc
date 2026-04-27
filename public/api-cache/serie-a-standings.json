@@ -151,15 +151,15 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 14,
           "draw": 12,
-          "lost": 7,
+          "lost": 8,
           "points": 54,
           "goalsFor": 45,
-          "goalsAgainst": 29,
-          "goalDifference": 16
+          "goalsAgainst": 31,
+          "goalDifference": 14
         },
         {
           "position": 8,
@@ -322,15 +322,15 @@
             "tla": "CAG",
             "crest": "https://crests.football-data.org/104.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
-          "won": 8,
+          "won": 9,
           "draw": 9,
           "lost": 16,
-          "points": 33,
-          "goalsFor": 33,
+          "points": 36,
+          "goalsFor": 35,
           "goalsAgainst": 47,
-          "goalDifference": -14
+          "goalDifference": -12
         },
         {
           "position": 17,
