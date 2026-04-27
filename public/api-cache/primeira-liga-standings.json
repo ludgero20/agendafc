@@ -132,12 +132,12 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 12,
-          "draw": 10,
+          "draw": 11,
           "lost": 8,
-          "points": 46,
+          "points": 47,
           "goalsFor": 44,
           "goalsAgainst": 31,
           "goalDifference": 13
@@ -322,12 +322,12 @@
             "tla": "CAS",
             "crest": "https://crests.football-data.org/6618.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 5,
-          "draw": 11,
+          "draw": 12,
           "lost": 14,
-          "points": 26,
+          "points": 27,
           "goalsFor": 28,
           "goalsAgainst": 53,
           "goalDifference": -25
