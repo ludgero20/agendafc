@@ -75,12 +75,12 @@
             "tla": "SPO",
             "crest": "https://crests.football-data.org/498.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 22,
-          "draw": 6,
+          "draw": 7,
           "lost": 2,
-          "points": 72,
+          "points": 73,
           "goalsFor": 75,
           "goalsAgainst": 20,
           "goalDifference": 55
@@ -341,12 +341,12 @@
             "tla": "TON",
             "crest": "https://crests.football-data.org/1049.png"
           },
-          "playedGames": 30,
+          "playedGames": 31,
           "form": null,
           "won": 4,
-          "draw": 9,
+          "draw": 10,
           "lost": 17,
-          "points": 21,
+          "points": 22,
           "goalsFor": 21,
           "goalsAgainst": 50,
           "goalDifference": -29
