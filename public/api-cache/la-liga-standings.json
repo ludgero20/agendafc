@@ -278,25 +278,6 @@
         {
           "position": 14,
           "team": {
-            "id": 298,
-            "name": "Girona FC",
-            "shortName": "Girona",
-            "tla": "GIR",
-            "crest": "https://crests.football-data.org/298.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 9,
-          "draw": 12,
-          "lost": 13,
-          "points": 39,
-          "goalsFor": 36,
-          "goalsAgainst": 50,
-          "goalDifference": -14
-        },
-        {
-          "position": 15,
-          "team": {
             "id": 285,
             "name": "Elche CF",
             "shortName": "Elche",
@@ -314,7 +295,7 @@
           "goalDifference": -6
         },
         {
-          "position": 16,
+          "position": 15,
           "team": {
             "id": 89,
             "name": "RCD Mallorca",
@@ -324,13 +305,32 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 9,
-          "draw": 9,
+          "won": 10,
+          "draw": 8,
           "lost": 16,
-          "points": 36,
-          "goalsFor": 41,
+          "points": 38,
+          "goalsFor": 42,
           "goalsAgainst": 51,
-          "goalDifference": -10
+          "goalDifference": -9
+        },
+        {
+          "position": 16,
+          "team": {
+            "id": 298,
+            "name": "Girona FC",
+            "shortName": "Girona",
+            "tla": "GIR",
+            "crest": "https://crests.football-data.org/298.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 9,
+          "draw": 11,
+          "lost": 14,
+          "points": 38,
+          "goalsFor": 36,
+          "goalsAgainst": 51,
+          "goalDifference": -15
         },
         {
           "position": 17,
