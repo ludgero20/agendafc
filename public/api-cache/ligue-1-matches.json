@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 27,
-    "first": "2026-05-02",
+    "count": 23,
+    "first": "2026-05-03",
     "last": "2026-05-17",
     "played": 0
   },
@@ -37,139 +37,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 542686,
-      "utcDate": "2026-05-02T17:00:00Z",
-      "status": "TIMED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-10T15:21:23Z",
-      "homeTeam": {
-        "id": 545,
-        "name": "FC Metz",
-        "shortName": "FC Metz",
-        "tla": "FCM",
-        "crest": "https://crests.football-data.org/545.png"
-      },
-      "awayTeam": {
-        "id": 548,
-        "name": "AS Monaco FC",
-        "shortName": "Monaco",
-        "tla": "ASM",
-        "crest": "https://crests.football-data.org/548.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 43886,
-          "name": "Ruddy Buquet",
-          "type": "REFEREE",
-          "nationality": "France"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 542689,
-      "utcDate": "2026-05-02T19:05:00Z",
-      "status": "TIMED",
-      "matchday": 32,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-10T15:21:23Z",
-      "homeTeam": {
-        "id": 522,
-        "name": "OGC Nice",
-        "shortName": "Nice",
-        "tla": "NIC",
-        "crest": "https://crests.football-data.org/522.png"
-      },
-      "awayTeam": {
-        "id": 546,
-        "name": "Racing Club de Lens",
-        "shortName": "RC Lens",
-        "tla": "RCL",
-        "crest": "https://crests.football-data.org/546.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57039,
-          "name": "Thomas Léonard",
-          "type": "REFEREE",
-          "nationality": "France"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542691,
@@ -235,7 +103,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542685,
@@ -301,7 +169,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542688,
@@ -367,7 +235,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542693,
@@ -433,7 +301,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542690,
@@ -499,7 +367,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542700,
@@ -508,7 +376,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-20T15:21:11Z",
+      "lastUpdated": "2026-04-20T13:25:23Z",
       "homeTeam": {
         "id": 546,
         "name": "Racing Club de Lens",
@@ -558,7 +426,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542694,
@@ -617,7 +485,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542695,
@@ -676,7 +544,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542696,
@@ -735,7 +603,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542697,
@@ -794,7 +662,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542698,
@@ -853,7 +721,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542699,
@@ -912,7 +780,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542701,
@@ -971,7 +839,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542702,
@@ -1030,125 +898,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 542665,
-      "utcDate": "2026-05-13T17:00:00Z",
-      "status": "TIMED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-20T15:21:11Z",
-      "homeTeam": {
-        "id": 512,
-        "name": "Stade Brestois 29",
-        "shortName": "Brest",
-        "tla": "BRE",
-        "crest": "https://crests.football-data.org/512.png"
-      },
-      "awayTeam": {
-        "id": 576,
-        "name": "RC Strasbourg Alsace",
-        "shortName": "Strasbourg",
-        "tla": "RC ",
-        "crest": "https://crests.football-data.org/576.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 30,
-        "winner": null
-      },
-      "id": 542664,
-      "utcDate": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 29,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-20T15:21:11Z",
-      "homeTeam": {
-        "id": 546,
-        "name": "Racing Club de Lens",
-        "shortName": "RC Lens",
-        "tla": "RCL",
-        "crest": "https://crests.football-data.org/546.png"
-      },
-      "awayTeam": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542703,
@@ -1207,7 +957,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542704,
@@ -1266,7 +1016,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542705,
@@ -1325,7 +1075,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542706,
@@ -1384,7 +1134,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542707,
@@ -1443,7 +1193,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542708,
@@ -1502,7 +1252,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542709,
@@ -1561,7 +1311,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542710,
@@ -1620,7 +1370,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 30,
+        "currentMatchday": 29,
         "winner": null
       },
       "id": 542711,
