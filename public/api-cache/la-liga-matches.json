@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 49,
+    "count": 48,
     "first": "2026-05-02",
     "last": "2026-05-24",
     "played": 0
@@ -37,73 +37,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
-        "winner": null
-      },
-      "id": 544549,
-      "utcDate": "2026-05-02T12:00:00Z",
-      "status": "TIMED",
-      "matchday": 34,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-26T01:32:03Z",
-      "homeTeam": {
-        "id": 94,
-        "name": "Villarreal CF",
-        "shortName": "Villarreal",
-        "tla": "VIL",
-        "crest": "https://crests.football-data.org/94.png"
-      },
-      "awayTeam": {
-        "id": 88,
-        "name": "Levante UD",
-        "shortName": "Levante",
-        "tla": "LEV",
-        "crest": "https://crests.football-data.org/88.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 206208,
-          "name": "Alejandro Hernández Hernández",
-          "type": "REFEREE",
-          "nationality": "Spain"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2429,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544547,
@@ -112,7 +46,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-27T01:32:02Z",
+      "lastUpdated": "2026-04-16T15:21:19Z",
       "homeTeam": {
         "id": 95,
         "name": "Valencia CF",
@@ -169,7 +103,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544541,
@@ -178,7 +112,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T01:32:01Z",
+      "lastUpdated": "2026-04-12T00:20:59Z",
       "homeTeam": {
         "id": 263,
         "name": "Deportivo Alavés",
@@ -235,7 +169,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544548,
@@ -244,7 +178,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-27T01:32:02Z",
+      "lastUpdated": "2026-04-16T15:21:19Z",
       "homeTeam": {
         "id": 79,
         "name": "CA Osasuna",
@@ -301,7 +235,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544543,
@@ -310,7 +244,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-28T01:32:02Z",
+      "lastUpdated": "2026-04-12T00:20:59Z",
       "homeTeam": {
         "id": 558,
         "name": "RC Celta de Vigo",
@@ -360,7 +294,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544545,
@@ -369,7 +303,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-27T01:32:03Z",
+      "lastUpdated": "2026-04-12T00:20:59Z",
       "homeTeam": {
         "id": 82,
         "name": "Getafe CF",
@@ -419,7 +353,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544542,
@@ -428,7 +362,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-27T01:32:03Z",
+      "lastUpdated": "2026-04-12T00:20:59Z",
       "homeTeam": {
         "id": 90,
         "name": "Real Betis Balompié",
@@ -478,7 +412,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544544,
@@ -487,7 +421,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T00:21:11Z",
+      "lastUpdated": "2026-04-21T05:21:07Z",
       "homeTeam": {
         "id": 80,
         "name": "RCD Espanyol de Barcelona",
@@ -537,7 +471,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544550,
@@ -546,7 +480,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-28T01:32:03Z",
+      "lastUpdated": "2026-04-12T00:20:59Z",
       "homeTeam": {
         "id": 559,
         "name": "Sevilla FC",
@@ -596,7 +530,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544554,
@@ -605,7 +539,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T01:32:03Z",
+      "lastUpdated": "2026-04-20T15:21:11Z",
       "homeTeam": {
         "id": 88,
         "name": "Levante UD",
@@ -655,7 +589,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544556,
@@ -714,7 +648,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544558,
@@ -773,7 +707,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544552,
@@ -832,7 +766,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544557,
@@ -891,7 +825,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544555,
@@ -950,7 +884,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544551,
@@ -1009,7 +943,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544559,
@@ -1068,7 +1002,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544553,
@@ -1077,7 +1011,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T00:21:11Z",
+      "lastUpdated": "2026-04-21T05:21:07Z",
       "homeTeam": {
         "id": 81,
         "name": "FC Barcelona",
@@ -1127,7 +1061,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544560,
@@ -1186,7 +1120,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544563,
@@ -1245,7 +1179,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544562,
@@ -1304,7 +1238,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544567,
@@ -1363,7 +1297,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544566,
@@ -1422,7 +1356,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544569,
@@ -1481,7 +1415,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544561,
@@ -1540,7 +1474,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544564,
@@ -1599,7 +1533,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544568,
@@ -1658,7 +1592,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544565,
@@ -1717,7 +1651,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544570,
@@ -1726,7 +1660,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T00:21:11Z",
+      "lastUpdated": "2026-04-21T05:21:07Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -1776,7 +1710,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544571,
@@ -1835,7 +1769,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544572,
@@ -1894,7 +1828,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544573,
@@ -1953,7 +1887,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544574,
@@ -2012,7 +1946,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544575,
@@ -2071,7 +2005,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544576,
@@ -2130,7 +2064,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544577,
@@ -2189,7 +2123,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544578,
@@ -2248,7 +2182,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544579,
@@ -2307,7 +2241,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544580,
@@ -2316,7 +2250,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T00:21:11Z",
+      "lastUpdated": "2026-04-21T05:21:07Z",
       "homeTeam": {
         "id": 559,
         "name": "Sevilla FC",
@@ -2366,7 +2300,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544581,
@@ -2425,7 +2359,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544582,
@@ -2484,7 +2418,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544583,
@@ -2543,7 +2477,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544584,
@@ -2602,7 +2536,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544585,
@@ -2661,7 +2595,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544586,
@@ -2720,7 +2654,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544587,
@@ -2729,7 +2663,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-02T00:21:11Z",
+      "lastUpdated": "2026-04-21T05:21:07Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -2779,7 +2713,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544588,
@@ -2838,7 +2772,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544589,
@@ -2897,7 +2831,7 @@
         "id": 2429,
         "startDate": "2025-08-17",
         "endDate": "2026-05-24",
-        "currentMatchday": 34,
+        "currentMatchday": 33,
         "winner": null
       },
       "id": 544590,
