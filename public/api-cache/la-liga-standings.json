@@ -96,13 +96,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 18,
-          "draw": 7,
+          "won": 19,
+          "draw": 6,
           "lost": 9,
-          "points": 61,
-          "goalsFor": 56,
+          "points": 63,
+          "goalsFor": 58,
           "goalsAgainst": 37,
-          "goalDifference": 19
+          "goalDifference": 21
         },
         {
           "position": 5,
@@ -208,37 +208,18 @@
             "tla": "ATH",
             "crest": "https://crests.football-data.org/77.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 12,
-          "draw": 5,
+          "draw": 6,
           "lost": 16,
-          "points": 41,
+          "points": 42,
           "goalsFor": 36,
           "goalsAgainst": 48,
           "goalDifference": -12
         },
         {
           "position": 11,
-          "team": {
-            "id": 95,
-            "name": "Valencia CF",
-            "shortName": "Valencia",
-            "tla": "VAL",
-            "crest": "https://crests.football-data.org/95.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 10,
-          "draw": 10,
-          "lost": 14,
-          "points": 40,
-          "goalsFor": 37,
-          "goalsAgainst": 48,
-          "goalDifference": -11
-        },
-        {
-          "position": 12,
           "team": {
             "id": 87,
             "name": "Rayo Vallecano de Madrid",
@@ -255,6 +236,25 @@
           "goalsFor": 33,
           "goalsAgainst": 41,
           "goalDifference": -8
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 95,
+            "name": "Valencia CF",
+            "shortName": "Valencia",
+            "tla": "VAL",
+            "crest": "https://crests.football-data.org/95.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 15,
+          "points": 39,
+          "goalsFor": 37,
+          "goalsAgainst": 50,
+          "goalDifference": -13
         },
         {
           "position": 13,
@@ -341,12 +341,12 @@
             "tla": "ALA",
             "crest": "https://crests.football-data.org/263.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 9,
-          "draw": 9,
+          "draw": 10,
           "lost": 15,
-          "points": 36,
+          "points": 37,
           "goalsFor": 38,
           "goalsAgainst": 49,
           "goalDifference": -11

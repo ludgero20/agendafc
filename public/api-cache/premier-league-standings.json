@@ -37,12 +37,12 @@
             "tla": "ARS",
             "crest": "https://crests.football-data.org/57.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 22,
-          "draw": 7,
+          "draw": 8,
           "lost": 5,
-          "points": 73,
+          "points": 74,
           "goalsFor": 64,
           "goalsAgainst": 26,
           "goalDifference": 38
@@ -138,9 +138,9 @@
           "draw": 9,
           "lost": 12,
           "points": 51,
-          "goalsFor": 50,
+          "goalsFor": 52,
           "goalsAgainst": 46,
-          "goalDifference": 4
+          "goalDifference": 6
         },
         {
           "position": 7,
@@ -157,8 +157,8 @@
           "draw": 11,
           "lost": 11,
           "points": 50,
-          "goalsFor": 48,
-          "goalsAgainst": 41,
+          "goalsFor": 49,
+          "goalsAgainst": 42,
           "goalDifference": 7
         },
         {
@@ -183,21 +183,21 @@
         {
           "position": 9,
           "team": {
-            "id": 71,
-            "name": "Sunderland AFC",
-            "shortName": "Sunderland",
-            "tla": "SUN",
-            "crest": "https://crests.football-data.org/71.png"
+            "id": 63,
+            "name": "Fulham FC",
+            "shortName": "Fulham",
+            "tla": "FUL",
+            "crest": "https://crests.football-data.org/63.png"
           },
           "playedGames": 35,
           "form": null,
-          "won": 13,
-          "draw": 10,
-          "lost": 12,
+          "won": 14,
+          "draw": 7,
+          "lost": 14,
           "points": 49,
-          "goalsFor": 37,
-          "goalsAgainst": 45,
-          "goalDifference": -8
+          "goalsFor": 44,
+          "goalsAgainst": 46,
+          "goalDifference": -2
         },
         {
           "position": 10,
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 63,
-            "name": "Fulham FC",
-            "shortName": "Fulham",
-            "tla": "FUL",
-            "crest": "https://crests.football-data.org/63.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 14,
-          "draw": 6,
-          "lost": 14,
-          "points": 48,
-          "goalsFor": 44,
-          "goalsAgainst": 46,
-          "goalDifference": -2
-        },
-        {
-          "position": 12,
-          "team": {
             "id": 62,
             "name": "Everton FC",
             "shortName": "Everton",
@@ -257,6 +238,25 @@
           "goalDifference": 0
         },
         {
+          "position": 12,
+          "team": {
+            "id": 71,
+            "name": "Sunderland AFC",
+            "shortName": "Sunderland",
+            "tla": "SUN",
+            "crest": "https://crests.football-data.org/71.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 12,
+          "draw": 11,
+          "lost": 12,
+          "points": 47,
+          "goalsFor": 37,
+          "goalsAgainst": 46,
+          "goalDifference": -9
+        },
+        {
           "position": 13,
           "team": {
             "id": 67,
@@ -271,8 +271,8 @@
           "draw": 6,
           "lost": 16,
           "points": 45,
-          "goalsFor": 48,
-          "goalsAgainst": 50,
+          "goalsFor": 49,
+          "goalsAgainst": 51,
           "goalDifference": -2
         },
         {
@@ -348,8 +348,8 @@
           "lost": 17,
           "points": 36,
           "goalsFor": 42,
-          "goalsAgainst": 59,
-          "goalDifference": -17
+          "goalsAgainst": 61,
+          "goalDifference": -19
         },
         {
           "position": 18,
@@ -401,12 +401,12 @@
           "playedGames": 35,
           "form": null,
           "won": 3,
-          "draw": 8,
-          "lost": 24,
-          "points": 17,
-          "goalsFor": 24,
+          "draw": 9,
+          "lost": 23,
+          "points": 18,
+          "goalsFor": 25,
           "goalsAgainst": 63,
-          "goalDifference": -39
+          "goalDifference": -38
         }
       ]
     }
