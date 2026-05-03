@@ -113,12 +113,12 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 12,
-          "draw": 14,
+          "draw": 15,
           "lost": 7,
-          "points": 50,
+          "points": 51,
           "goalsFor": 49,
           "goalsAgainst": 41,
           "goalDifference": 8
@@ -154,12 +154,12 @@
           "playedGames": 34,
           "form": null,
           "won": 13,
-          "draw": 6,
-          "lost": 15,
-          "points": 45,
+          "draw": 5,
+          "lost": 16,
+          "points": 44,
           "goalsFor": 28,
-          "goalsAgainst": 34,
-          "goalDifference": -6
+          "goalsAgainst": 36,
+          "goalDifference": -8
         },
         {
           "position": 8,
@@ -229,13 +229,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 9,
-          "draw": 13,
+          "won": 10,
+          "draw": 12,
           "lost": 12,
-          "points": 40,
-          "goalsFor": 33,
+          "points": 42,
+          "goalsFor": 35,
           "goalsAgainst": 41,
-          "goalDifference": -8
+          "goalDifference": -6
         },
         {
           "position": 12,
@@ -398,12 +398,12 @@
             "tla": "OVI",
             "crest": "https://crests.football-data.org/1048.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 6,
-          "draw": 10,
+          "draw": 11,
           "lost": 17,
-          "points": 28,
+          "points": 29,
           "goalsFor": 26,
           "goalsAgainst": 51,
           "goalDifference": -25

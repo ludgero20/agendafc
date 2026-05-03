@@ -56,12 +56,12 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 20,
-          "draw": 7,
+          "draw": 8,
           "lost": 4,
-          "points": 67,
+          "points": 68,
           "goalsFor": 65,
           "goalsAgainst": 31,
           "goalDifference": 34
@@ -215,8 +215,8 @@
           "lost": 13,
           "points": 37,
           "goalsFor": 41,
-          "goalsAgainst": 49,
-          "goalDifference": -8
+          "goalsAgainst": 50,
+          "goalDifference": -9
         },
         {
           "position": 11,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 18,
+            "name": "Borussia Mönchengladbach",
+            "shortName": "M'gladbach",
+            "tla": "BMG",
+            "crest": "https://crests.football-data.org/18.png"
+          },
+          "playedGames": 32,
+          "form": null,
+          "won": 7,
+          "draw": 12,
+          "lost": 13,
+          "points": 33,
+          "goalsFor": 36,
+          "goalsAgainst": 50,
+          "goalDifference": -14
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 28,
             "name": "1. FC Union Berlin",
             "shortName": "Union Berlin",
@@ -257,7 +276,7 @@
           "goalDifference": -20
         },
         {
-          "position": 13,
+          "position": 14,
           "team": {
             "id": 1,
             "name": "1. FC Köln",
@@ -274,25 +293,6 @@
           "goalsFor": 47,
           "goalsAgainst": 55,
           "goalDifference": -8
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 18,
-            "name": "Borussia Mönchengladbach",
-            "shortName": "M'gladbach",
-            "tla": "BMG",
-            "crest": "https://crests.football-data.org/18.png"
-          },
-          "playedGames": 31,
-          "form": null,
-          "won": 7,
-          "draw": 11,
-          "lost": 13,
-          "points": 32,
-          "goalsFor": 36,
-          "goalsAgainst": 50,
-          "goalDifference": -14
         },
         {
           "position": 15,
@@ -328,9 +328,9 @@
           "draw": 8,
           "lost": 18,
           "points": 26,
-          "goalsFor": 26,
+          "goalsFor": 27,
           "goalsAgainst": 55,
-          "goalDifference": -29
+          "goalDifference": -28
         },
         {
           "position": 17,
