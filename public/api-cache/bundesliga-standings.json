@@ -208,15 +208,15 @@
             "tla": "M05",
             "crest": "https://crests.football-data.org/15.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
-          "won": 8,
+          "won": 9,
           "draw": 10,
           "lost": 13,
-          "points": 34,
-          "goalsFor": 39,
+          "points": 37,
+          "goalsFor": 41,
           "goalsAgainst": 49,
-          "goalDifference": -10
+          "goalDifference": -8
         },
         {
           "position": 11,
@@ -322,15 +322,15 @@
             "tla": "STP",
             "crest": "https://crests.football-data.org/20.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 6,
           "draw": 8,
-          "lost": 17,
+          "lost": 18,
           "points": 26,
           "goalsFor": 26,
-          "goalsAgainst": 53,
-          "goalDifference": -27
+          "goalsAgainst": 55,
+          "goalDifference": -29
         },
         {
           "position": 17,

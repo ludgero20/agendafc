@@ -138,8 +138,8 @@
           "draw": 11,
           "lost": 11,
           "points": 47,
-          "goalsFor": 47,
-          "goalsAgainst": 43,
+          "goalsFor": 48,
+          "goalsAgainst": 44,
           "goalDifference": 4
         },
         {
@@ -151,12 +151,12 @@
             "tla": "GET",
             "crest": "https://crests.football-data.org/82.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 13,
-          "draw": 5,
+          "draw": 6,
           "lost": 15,
-          "points": 44,
+          "points": 45,
           "goalsFor": 28,
           "goalsAgainst": 34,
           "goalDifference": -6
@@ -227,12 +227,12 @@
             "tla": "RAY",
             "crest": "https://crests.football-data.org/87.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 9,
-          "draw": 12,
+          "draw": 13,
           "lost": 12,
-          "points": 39,
+          "points": 40,
           "goalsFor": 33,
           "goalsAgainst": 41,
           "goalDifference": -8
@@ -290,8 +290,8 @@
           "draw": 11,
           "lost": 14,
           "points": 38,
-          "goalsFor": 44,
-          "goalsAgainst": 52,
+          "goalsFor": 45,
+          "goalsAgainst": 53,
           "goalDifference": -8
         },
         {

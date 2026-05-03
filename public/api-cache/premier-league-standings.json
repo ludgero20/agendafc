@@ -75,12 +75,12 @@
             "tla": "MUN",
             "crest": "https://crests.football-data.org/66.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 17,
-          "draw": 10,
+          "draw": 11,
           "lost": 7,
-          "points": 61,
+          "points": 62,
           "goalsFor": 60,
           "goalsAgainst": 46,
           "goalDifference": 14
@@ -94,12 +94,12 @@
             "tla": "LIV",
             "crest": "https://crests.football-data.org/64.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 17,
-          "draw": 7,
+          "draw": 8,
           "lost": 10,
-          "points": 58,
+          "points": 59,
           "goalsFor": 57,
           "goalsAgainst": 44,
           "goalDifference": 13
@@ -126,6 +126,25 @@
         {
           "position": 6,
           "team": {
+            "id": 1044,
+            "name": "AFC Bournemouth",
+            "shortName": "Bournemouth",
+            "tla": "BOU",
+            "crest": "https://crests.football-data.org/bournemouth.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 12,
+          "draw": 16,
+          "lost": 7,
+          "points": 52,
+          "goalsFor": 54,
+          "goalsAgainst": 52,
+          "goalDifference": 2
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 402,
             "name": "Brentford FC",
             "shortName": "Brentford",
@@ -143,7 +162,7 @@
           "goalDifference": 6
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 397,
             "name": "Brighton & Hove Albion FC",
@@ -160,25 +179,6 @@
           "goalsFor": 49,
           "goalsAgainst": 42,
           "goalDifference": 7
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 1044,
-            "name": "AFC Bournemouth",
-            "shortName": "Bournemouth",
-            "tla": "BOU",
-            "crest": "https://crests.football-data.org/bournemouth.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 11,
-          "draw": 17,
-          "lost": 7,
-          "points": 50,
-          "goalsFor": 52,
-          "goalsAgainst": 52,
-          "goalDifference": 0
         },
         {
           "position": 9,
@@ -278,25 +278,6 @@
         {
           "position": 14,
           "team": {
-            "id": 354,
-            "name": "Crystal Palace FC",
-            "shortName": "Crystal Palace",
-            "tla": "CRY",
-            "crest": "https://crests.football-data.org/354.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 11,
-          "draw": 11,
-          "lost": 12,
-          "points": 44,
-          "goalsFor": 36,
-          "goalsAgainst": 39,
-          "goalDifference": -3
-        },
-        {
-          "position": 15,
-          "team": {
             "id": 341,
             "name": "Leeds United FC",
             "shortName": "Leeds United",
@@ -311,6 +292,25 @@
           "points": 43,
           "goalsFor": 47,
           "goalsAgainst": 52,
+          "goalDifference": -5
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 354,
+            "name": "Crystal Palace FC",
+            "shortName": "Crystal Palace",
+            "tla": "CRY",
+            "crest": "https://crests.football-data.org/354.png"
+          },
+          "playedGames": 34,
+          "form": null,
+          "won": 11,
+          "draw": 10,
+          "lost": 13,
+          "points": 43,
+          "goalsFor": 36,
+          "goalsAgainst": 41,
           "goalDifference": -5
         },
         {
