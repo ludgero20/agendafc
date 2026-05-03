@@ -132,15 +132,15 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
-          "won": 11,
+          "won": 12,
           "draw": 11,
           "lost": 11,
-          "points": 44,
-          "goalsFor": 45,
+          "points": 47,
+          "goalsFor": 47,
           "goalsAgainst": 43,
-          "goalDifference": 2
+          "goalDifference": 4
         },
         {
           "position": 7,
@@ -284,15 +284,15 @@
             "tla": "ELC",
             "crest": "https://crests.football-data.org/285.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 9,
           "draw": 11,
-          "lost": 13,
+          "lost": 14,
           "points": 38,
           "goalsFor": 44,
-          "goalsAgainst": 50,
-          "goalDifference": -6
+          "goalsAgainst": 52,
+          "goalDifference": -8
         },
         {
           "position": 15,
