@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 23,
-          "draw": 5,
+          "draw": 6,
           "lost": 5,
-          "points": 74,
+          "points": 75,
           "goalsFor": 68,
           "goalsAgainst": 31,
           "goalDifference": 37
@@ -115,13 +115,13 @@
           },
           "playedGames": 34,
           "form": null,
-          "won": 12,
-          "draw": 15,
+          "won": 13,
+          "draw": 14,
           "lost": 7,
-          "points": 51,
-          "goalsFor": 49,
+          "points": 53,
+          "goalsFor": 52,
           "goalsAgainst": 41,
-          "goalDifference": 8
+          "goalDifference": 11
         },
         {
           "position": 6,
@@ -246,12 +246,12 @@
             "tla": "ESP",
             "crest": "https://crests.football-data.org/80.png"
           },
-          "playedGames": 33,
+          "playedGames": 34,
           "form": null,
           "won": 10,
-          "draw": 9,
+          "draw": 10,
           "lost": 14,
-          "points": 39,
+          "points": 40,
           "goalsFor": 37,
           "goalsAgainst": 49,
           "goalDifference": -12
@@ -401,12 +401,12 @@
           "playedGames": 34,
           "form": null,
           "won": 6,
-          "draw": 11,
-          "lost": 17,
-          "points": 29,
+          "draw": 10,
+          "lost": 18,
+          "points": 28,
           "goalsFor": 26,
-          "goalsAgainst": 51,
-          "goalDifference": -25
+          "goalsAgainst": 54,
+          "goalDifference": -28
         }
       ]
     }

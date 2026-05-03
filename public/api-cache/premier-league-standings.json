@@ -113,15 +113,15 @@
             "tla": "AVL",
             "crest": "https://crests.football-data.org/58.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 17,
           "draw": 7,
-          "lost": 10,
+          "lost": 11,
           "points": 58,
           "goalsFor": 47,
-          "goalsAgainst": 42,
-          "goalDifference": 5
+          "goalsAgainst": 44,
+          "goalDifference": 3
         },
         {
           "position": 6,
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 73,
+            "name": "Tottenham Hotspur FC",
+            "shortName": "Tottenham",
+            "tla": "TOT",
+            "crest": "https://crests.football-data.org/73.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 9,
+          "draw": 10,
+          "lost": 16,
+          "points": 37,
+          "goalsFor": 45,
+          "goalsAgainst": 53,
+          "goalDifference": -8
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 563,
             "name": "West Ham United FC",
             "shortName": "West Ham",
@@ -350,25 +369,6 @@
           "goalsFor": 42,
           "goalsAgainst": 61,
           "goalDifference": -19
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 73,
-            "name": "Tottenham Hotspur FC",
-            "shortName": "Tottenham",
-            "tla": "TOT",
-            "crest": "https://crests.football-data.org/73.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 8,
-          "draw": 10,
-          "lost": 16,
-          "points": 34,
-          "goalsFor": 43,
-          "goalsAgainst": 53,
-          "goalDifference": -10
         },
         {
           "position": 19,
