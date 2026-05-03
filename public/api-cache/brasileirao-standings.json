@@ -58,13 +58,13 @@
           },
           "playedGames": 13,
           "form": null,
-          "won": 8,
-          "draw": 3,
+          "won": 9,
+          "draw": 2,
           "lost": 2,
-          "points": 27,
-          "goalsFor": 24,
+          "points": 29,
+          "goalsFor": 26,
           "goalsAgainst": 10,
-          "goalDifference": 14
+          "goalDifference": 16
         },
         {
           "position": 3,
@@ -100,8 +100,8 @@
           "draw": 3,
           "lost": 4,
           "points": 24,
-          "goalsFor": 17,
-          "goalsAgainst": 11,
+          "goalsFor": 18,
+          "goalsAgainst": 12,
           "goalDifference": 6
         },
         {
@@ -138,8 +138,8 @@
           "draw": 4,
           "lost": 3,
           "points": 22,
-          "goalsFor": 17,
-          "goalsAgainst": 14,
+          "goalsFor": 18,
+          "goalsAgainst": 15,
           "goalDifference": 3
         },
         {
@@ -240,25 +240,6 @@
         {
           "position": 12,
           "team": {
-            "id": 1780,
-            "name": "CR Vasco da Gama",
-            "shortName": "Vasco da Gama",
-            "tla": "VAS",
-            "crest": "https://crests.football-data.org/1780.png"
-          },
-          "playedGames": 14,
-          "form": null,
-          "won": 4,
-          "draw": 5,
-          "lost": 5,
-          "points": 17,
-          "goalsFor": 18,
-          "goalsAgainst": 19,
-          "goalDifference": -1
-        },
-        {
-          "position": 13,
-          "team": {
             "id": 1767,
             "name": "Grêmio FBPA",
             "shortName": "Grêmio",
@@ -274,6 +255,25 @@
           "goalsFor": 15,
           "goalsAgainst": 16,
           "goalDifference": -1
+        },
+        {
+          "position": 13,
+          "team": {
+            "id": 1780,
+            "name": "CR Vasco da Gama",
+            "shortName": "Vasco da Gama",
+            "tla": "VAS",
+            "crest": "https://crests.football-data.org/1780.png"
+          },
+          "playedGames": 14,
+          "form": null,
+          "won": 4,
+          "draw": 4,
+          "lost": 6,
+          "points": 16,
+          "goalsFor": 18,
+          "goalsAgainst": 21,
+          "goalDifference": -3
         },
         {
           "position": 14,

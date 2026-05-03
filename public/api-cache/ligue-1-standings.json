@@ -69,21 +69,21 @@
         {
           "position": 3,
           "team": {
-            "id": 529,
-            "name": "Stade Rennais FC 1901",
-            "shortName": "Stade Rennais",
-            "tla": "REN",
-            "crest": "https://crests.football-data.org/529.png"
+            "id": 523,
+            "name": "Olympique Lyonnais",
+            "shortName": "Olympique Lyon",
+            "tla": "LYO",
+            "crest": "https://crests.football-data.org/523.png"
           },
           "playedGames": 32,
           "form": null,
-          "won": 17,
-          "draw": 8,
-          "lost": 7,
-          "points": 59,
-          "goalsFor": 55,
-          "goalsAgainst": 42,
-          "goalDifference": 13
+          "won": 18,
+          "draw": 6,
+          "lost": 8,
+          "points": 60,
+          "goalsFor": 52,
+          "goalsAgainst": 34,
+          "goalDifference": 18
         },
         {
           "position": 4,
@@ -107,21 +107,21 @@
         {
           "position": 5,
           "team": {
-            "id": 523,
-            "name": "Olympique Lyonnais",
-            "shortName": "Olympique Lyon",
-            "tla": "LYO",
-            "crest": "https://crests.football-data.org/523.png"
+            "id": 529,
+            "name": "Stade Rennais FC 1901",
+            "shortName": "Stade Rennais",
+            "tla": "REN",
+            "crest": "https://crests.football-data.org/529.png"
           },
           "playedGames": 32,
           "form": null,
-          "won": 17,
-          "draw": 6,
-          "lost": 9,
-          "points": 57,
-          "goalsFor": 48,
-          "goalsAgainst": 33,
-          "goalDifference": 15
+          "won": 16,
+          "draw": 8,
+          "lost": 8,
+          "points": 56,
+          "goalsFor": 56,
+          "goalsAgainst": 46,
+          "goalDifference": 10
         },
         {
           "position": 6,

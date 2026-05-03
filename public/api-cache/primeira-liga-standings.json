@@ -132,12 +132,12 @@
             "tla": "GIL",
             "crest": "https://crests.football-data.org/5533.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 13,
-          "draw": 10,
+          "draw": 11,
           "lost": 8,
-          "points": 49,
+          "points": 50,
           "goalsFor": 46,
           "goalsAgainst": 32,
           "goalDifference": 14
@@ -246,12 +246,12 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 31,
+          "playedGames": 32,
           "form": null,
           "won": 8,
-          "draw": 10,
+          "draw": 11,
           "lost": 13,
-          "points": 34,
+          "points": 35,
           "goalsFor": 33,
           "goalsAgainst": 52,
           "goalDifference": -19
