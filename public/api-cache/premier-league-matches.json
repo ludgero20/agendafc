@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 33,
+    "count": 30,
     "first": "2026-05-04",
     "last": "2026-05-24",
     "played": 0
@@ -37,7 +37,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538129,
@@ -46,7 +46,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-03T01:32:01Z",
+      "lastUpdated": "2026-03-28T15:20:56Z",
       "homeTeam": {
         "id": 61,
         "name": "Chelsea FC",
@@ -103,7 +103,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538130,
@@ -112,7 +112,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 62,
         "name": "Everton FC",
@@ -169,7 +169,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538140,
@@ -178,7 +178,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-03T01:32:02Z",
+      "lastUpdated": "2026-04-02T15:21:07Z",
       "homeTeam": {
         "id": 64,
         "name": "Liverpool FC",
@@ -228,7 +228,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538135,
@@ -237,7 +237,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 71,
         "name": "Sunderland AFC",
@@ -287,7 +287,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538136,
@@ -296,7 +296,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:01Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -346,7 +346,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538139,
@@ -355,7 +355,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:01Z",
+      "lastUpdated": "2025-12-29T15:20:57Z",
       "homeTeam": {
         "id": 63,
         "name": "Fulham FC",
@@ -405,7 +405,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538141,
@@ -414,7 +414,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:01Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 65,
         "name": "Manchester City FC",
@@ -464,7 +464,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538137,
@@ -473,7 +473,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-18T22:25:26Z",
       "homeTeam": {
         "id": 354,
         "name": "Crystal Palace FC",
@@ -523,7 +523,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538138,
@@ -532,7 +532,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-18T22:25:26Z",
       "homeTeam": {
         "id": 328,
         "name": "Burnley FC",
@@ -582,7 +582,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538142,
@@ -591,7 +591,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-02T15:21:07Z",
       "homeTeam": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -641,7 +641,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538144,
@@ -650,7 +650,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-02T15:21:07Z",
       "homeTeam": {
         "id": 563,
         "name": "West Ham United FC",
@@ -700,7 +700,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538143,
@@ -709,7 +709,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 73,
         "name": "Tottenham Hotspur FC",
@@ -759,66 +759,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
-        "winner": null
-      },
-      "id": 538091,
-      "utcDate": "2026-05-13T19:00:00Z",
-      "status": "TIMED",
-      "matchday": 31,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
-      "homeTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "awayTeam": {
-        "id": 354,
-        "name": "Crystal Palace FC",
-        "shortName": "Crystal Palace",
-        "tla": "CRY",
-        "crest": "https://crests.football-data.org/354.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2403,
-        "startDate": "2025-08-15",
-        "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538146,
@@ -827,7 +768,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-29T15:21:22Z",
+      "lastUpdated": "2026-04-29T13:25:33Z",
       "homeTeam": {
         "id": 58,
         "name": "Aston Villa FC",
@@ -877,7 +818,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538152,
@@ -886,7 +827,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-29T13:25:33Z",
       "homeTeam": {
         "id": 66,
         "name": "Manchester United FC",
@@ -936,7 +877,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538148,
@@ -995,7 +936,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538150,
@@ -1054,7 +995,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538151,
@@ -1063,7 +1004,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 341,
         "name": "Leeds United FC",
@@ -1113,7 +1054,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538154,
@@ -1122,7 +1063,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 76,
         "name": "Wolverhampton Wanderers FC",
@@ -1172,7 +1113,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538153,
@@ -1181,7 +1122,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-29T15:21:22Z",
+      "lastUpdated": "2026-04-29T13:25:33Z",
       "homeTeam": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -1231,7 +1172,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538147,
@@ -1240,7 +1181,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-29T15:21:22Z",
+      "lastUpdated": "2026-04-29T13:25:33Z",
       "homeTeam": {
         "id": 57,
         "name": "Arsenal FC",
@@ -1290,125 +1231,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
-        "winner": null
-      },
-      "id": 538145,
-      "utcDate": "2026-05-19T18:30:00Z",
-      "status": "TIMED",
-      "matchday": 37,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
-      "homeTeam": {
-        "id": 1044,
-        "name": "AFC Bournemouth",
-        "shortName": "Bournemouth",
-        "tla": "BOU",
-        "crest": "https://crests.football-data.org/bournemouth.png"
-      },
-      "awayTeam": {
-        "id": 65,
-        "name": "Manchester City FC",
-        "shortName": "Man City",
-        "tla": "MCI",
-        "crest": "https://crests.football-data.org/65.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2403,
-        "startDate": "2025-08-15",
-        "endDate": "2026-05-24",
-        "currentMatchday": 35,
-        "winner": null
-      },
-      "id": 538149,
-      "utcDate": "2026-05-19T19:15:00Z",
-      "status": "TIMED",
-      "matchday": 37,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-04-29T15:21:22Z",
-      "homeTeam": {
-        "id": 61,
-        "name": "Chelsea FC",
-        "shortName": "Chelsea",
-        "tla": "CHE",
-        "crest": "https://crests.football-data.org/61.png"
-      },
-      "awayTeam": {
-        "id": 73,
-        "name": "Tottenham Hotspur FC",
-        "shortName": "Tottenham",
-        "tla": "TOT",
-        "crest": "https://crests.football-data.org/73.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2403,
-        "startDate": "2025-08-15",
-        "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538155,
@@ -1467,7 +1290,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538156,
@@ -1476,7 +1299,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -1526,7 +1349,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538157,
@@ -1585,7 +1408,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538158,
@@ -1594,7 +1417,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 328,
         "name": "Burnley FC",
@@ -1644,7 +1467,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538159,
@@ -1703,7 +1526,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538160,
@@ -1762,7 +1585,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538161,
@@ -1771,7 +1594,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 65,
         "name": "Manchester City FC",
@@ -1821,7 +1644,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538162,
@@ -1880,7 +1703,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538163,
@@ -1939,7 +1762,7 @@
         "id": 2403,
         "startDate": "2025-08-15",
         "endDate": "2026-05-24",
-        "currentMatchday": 35,
+        "currentMatchday": 32,
         "winner": null
       },
       "id": 538164,
@@ -1948,7 +1771,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T00:21:07Z",
+      "lastUpdated": "2026-04-11T10:21:13Z",
       "homeTeam": {
         "id": 563,
         "name": "West Ham United FC",
