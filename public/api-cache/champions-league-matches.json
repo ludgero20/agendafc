@@ -46,13 +46,13 @@
       "matchday": null,
       "stage": "FINAL",
       "group": null,
-      "lastUpdated": "2026-05-06T00:21:09Z",
+      "lastUpdated": "2026-05-07T00:21:08Z",
       "homeTeam": {
-        "id": null,
-        "name": null,
-        "shortName": null,
-        "tla": null,
-        "crest": null
+        "id": 524,
+        "name": "Paris Saint-Germain FC",
+        "shortName": "PSG",
+        "tla": "PSG",
+        "crest": "https://crests.football-data.org/524.png"
       },
       "awayTeam": {
         "id": 57,
