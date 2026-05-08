@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 20,
-    "first": "2026-05-08",
+    "count": 19,
+    "first": "2026-05-10",
     "last": "2026-05-17",
     "played": 0
   },
@@ -37,73 +37,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
-        "winner": null
-      },
-      "id": 542700,
-      "utcDate": "2026-05-08T18:45:00Z",
-      "status": "TIMED",
-      "matchday": 33,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-05-02T01:32:03Z",
-      "homeTeam": {
-        "id": 546,
-        "name": "Racing Club de Lens",
-        "shortName": "RC Lens",
-        "tla": "RCL",
-        "crest": "https://crests.football-data.org/546.png"
-      },
-      "awayTeam": {
-        "id": 543,
-        "name": "FC Nantes",
-        "shortName": "Nantes",
-        "tla": "NAN",
-        "crest": "https://crests.football-data.org/543.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": [
-        {
-          "id": 57054,
-          "name": "Mathieu Vernice",
-          "type": "REFEREE",
-          "nationality": "France"
-        }
-      ]
-    },
-    {
-      "area": {
-        "id": 2081,
-        "name": "France",
-        "code": "FRA",
-        "flag": "https://crests.football-data.org/773.svg"
-      },
-      "competition": {
-        "id": 2015,
-        "name": "Ligue 1",
-        "code": "FL1",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/FL1.png"
-      },
-      "season": {
-        "id": 2420,
-        "startDate": "2025-08-17",
-        "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542694,
@@ -112,7 +46,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 533,
         "name": "Le Havre AC",
@@ -169,7 +103,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542695,
@@ -178,7 +112,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 519,
         "name": "AJ Auxerre",
@@ -235,7 +169,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542696,
@@ -244,7 +178,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 548,
         "name": "AS Monaco FC",
@@ -301,7 +235,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542697,
@@ -310,7 +244,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 545,
         "name": "FC Metz",
@@ -367,7 +301,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542698,
@@ -376,7 +310,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 511,
         "name": "Toulouse FC",
@@ -433,7 +367,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542699,
@@ -442,7 +376,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 524,
         "name": "Paris Saint-Germain FC",
@@ -499,7 +433,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542701,
@@ -508,7 +442,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 532,
         "name": "Angers SCO",
@@ -565,7 +499,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542702,
@@ -574,7 +508,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-04T01:32:02Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 529,
         "name": "Stade Rennais FC 1901",
@@ -631,7 +565,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542665,
@@ -640,7 +574,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-07T01:32:02Z",
+      "lastUpdated": "2026-04-20T15:21:11Z",
       "homeTeam": {
         "id": 512,
         "name": "Stade Brestois 29",
@@ -690,7 +624,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542664,
@@ -699,7 +633,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-05-07T01:32:02Z",
+      "lastUpdated": "2026-04-20T15:21:11Z",
       "homeTeam": {
         "id": 546,
         "name": "Racing Club de Lens",
@@ -749,7 +683,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542703,
@@ -758,7 +692,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 525,
         "name": "FC Lorient",
@@ -808,7 +742,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542704,
@@ -817,7 +751,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 543,
         "name": "FC Nantes",
@@ -867,7 +801,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542705,
@@ -876,7 +810,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 1045,
         "name": "Paris FC",
@@ -926,7 +860,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542706,
@@ -935,7 +869,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 522,
         "name": "OGC Nice",
@@ -985,7 +919,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542707,
@@ -994,7 +928,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 523,
         "name": "Olympique Lyonnais",
@@ -1044,7 +978,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542708,
@@ -1053,7 +987,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 516,
         "name": "Olympique de Marseille",
@@ -1103,7 +1037,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542709,
@@ -1112,7 +1046,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 521,
         "name": "Lille OSC",
@@ -1162,7 +1096,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542710,
@@ -1171,7 +1105,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 576,
         "name": "RC Strasbourg Alsace",
@@ -1221,7 +1155,7 @@
         "id": 2420,
         "startDate": "2025-08-17",
         "endDate": "2026-05-16",
-        "currentMatchday": 33,
+        "currentMatchday": 30,
         "winner": null
       },
       "id": 542711,
@@ -1230,7 +1164,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-04-21T15:21:14Z",
+      "lastUpdated": "2026-04-21T13:25:22Z",
       "homeTeam": {
         "id": 512,
         "name": "Stade Brestois 29",

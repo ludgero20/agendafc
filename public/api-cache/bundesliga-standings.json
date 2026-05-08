@@ -56,15 +56,15 @@
             "tla": "BVB",
             "crest": "https://crests.football-data.org/4.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 20,
           "draw": 7,
-          "lost": 5,
+          "lost": 6,
           "points": 67,
           "goalsFor": 65,
-          "goalsAgainst": 32,
-          "goalDifference": 33
+          "goalsAgainst": 33,
+          "goalDifference": 32
         },
         {
           "position": 3,
@@ -145,6 +145,25 @@
         {
           "position": 7,
           "team": {
+            "id": 19,
+            "name": "Eintracht Frankfurt",
+            "shortName": "Frankfurt",
+            "tla": "SGE",
+            "crest": "https://crests.football-data.org/19.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 12,
+          "draw": 10,
+          "lost": 11,
+          "points": 46,
+          "goalsFor": 58,
+          "goalsAgainst": 60,
+          "goalDifference": -2
+        },
+        {
+          "position": 8,
+          "team": {
             "id": 17,
             "name": "SC Freiburg",
             "shortName": "Freiburg",
@@ -160,25 +179,6 @@
           "goalsFor": 45,
           "goalsAgainst": 53,
           "goalDifference": -8
-        },
-        {
-          "position": 8,
-          "team": {
-            "id": 19,
-            "name": "Eintracht Frankfurt",
-            "shortName": "Frankfurt",
-            "tla": "SGE",
-            "crest": "https://crests.football-data.org/19.png"
-          },
-          "playedGames": 32,
-          "form": null,
-          "won": 11,
-          "draw": 10,
-          "lost": 11,
-          "points": 43,
-          "goalsFor": 57,
-          "goalsAgainst": 60,
-          "goalDifference": -3
         },
         {
           "position": 9,
