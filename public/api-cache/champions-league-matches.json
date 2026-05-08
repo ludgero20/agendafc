@@ -46,20 +46,20 @@
       "matchday": null,
       "stage": "FINAL",
       "group": null,
-      "lastUpdated": "2026-05-08T00:21:17Z",
+      "lastUpdated": "2026-04-21T05:21:06Z",
       "homeTeam": {
-        "id": 524,
-        "name": "Paris Saint-Germain FC",
-        "shortName": "PSG",
-        "tla": "PSG",
-        "crest": "https://crests.football-data.org/524.png"
+        "id": null,
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
       },
       "awayTeam": {
-        "id": 57,
-        "name": "Arsenal FC",
-        "shortName": "Arsenal",
-        "tla": "ARS",
-        "crest": "https://crests.football-data.org/57.png"
+        "id": null,
+        "name": null,
+        "shortName": null,
+        "tla": null,
+        "crest": null
       },
       "score": {
         "winner": null,
