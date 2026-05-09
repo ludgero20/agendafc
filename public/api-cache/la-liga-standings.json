@@ -94,12 +94,12 @@
             "tla": "ATL",
             "crest": "https://crests.football-data.org/78.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 19,
-          "draw": 6,
+          "draw": 7,
           "lost": 9,
-          "points": 63,
+          "points": 64,
           "goalsFor": 58,
           "goalsAgainst": 37,
           "goalDifference": 21
@@ -132,12 +132,12 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 12,
-          "draw": 11,
+          "draw": 12,
           "lost": 11,
-          "points": 47,
+          "points": 48,
           "goalsFor": 48,
           "goalsAgainst": 44,
           "goalDifference": 4
@@ -240,21 +240,21 @@
         {
           "position": 12,
           "team": {
-            "id": 80,
-            "name": "RCD Espanyol de Barcelona",
-            "shortName": "Espanyol",
-            "tla": "ESP",
-            "crest": "https://crests.football-data.org/80.png"
+            "id": 559,
+            "name": "Sevilla FC",
+            "shortName": "Sevilla FC",
+            "tla": "SEV",
+            "crest": "https://crests.football-data.org/559.png"
           },
           "playedGames": 35,
           "form": null,
-          "won": 10,
-          "draw": 10,
-          "lost": 15,
+          "won": 11,
+          "draw": 7,
+          "lost": 17,
           "points": 40,
-          "goalsFor": 37,
-          "goalsAgainst": 51,
-          "goalDifference": -14
+          "goalsFor": 43,
+          "goalsAgainst": 56,
+          "goalDifference": -13
         },
         {
           "position": 13,
@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 80,
+            "name": "RCD Espanyol de Barcelona",
+            "shortName": "Espanyol",
+            "tla": "ESP",
+            "crest": "https://crests.football-data.org/80.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 16,
+          "points": 39,
+          "goalsFor": 38,
+          "goalsAgainst": 53,
+          "goalDifference": -15
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 89,
             "name": "RCD Mallorca",
             "shortName": "Mallorca",
@@ -312,25 +331,6 @@
           "goalsFor": 42,
           "goalsAgainst": 51,
           "goalDifference": -9
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 559,
-            "name": "Sevilla FC",
-            "shortName": "Sevilla FC",
-            "tla": "SEV",
-            "crest": "https://crests.football-data.org/559.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 10,
-          "draw": 8,
-          "lost": 17,
-          "points": 38,
-          "goalsFor": 41,
-          "goalsAgainst": 55,
-          "goalDifference": -14
         },
         {
           "position": 17,
