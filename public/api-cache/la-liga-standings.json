@@ -115,13 +115,13 @@
           },
           "playedGames": 35,
           "form": null,
-          "won": 13,
-          "draw": 15,
+          "won": 14,
+          "draw": 14,
           "lost": 7,
-          "points": 54,
-          "goalsFor": 52,
+          "points": 56,
+          "goalsFor": 54,
           "goalsAgainst": 41,
-          "goalDifference": 11
+          "goalDifference": 13
         },
         {
           "position": 6,
@@ -145,25 +145,6 @@
         {
           "position": 7,
           "team": {
-            "id": 92,
-            "name": "Real Sociedad de Fútbol",
-            "shortName": "Real Sociedad",
-            "tla": "RSO",
-            "crest": "https://crests.football-data.org/92.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 11,
-          "draw": 11,
-          "lost": 13,
-          "points": 44,
-          "goalsFor": 52,
-          "goalsAgainst": 53,
-          "goalDifference": -1
-        },
-        {
-          "position": 8,
-          "team": {
             "id": 82,
             "name": "Getafe CF",
             "shortName": "Getafe",
@@ -181,7 +162,7 @@
           "goalDifference": -8
         },
         {
-          "position": 9,
+          "position": 8,
           "team": {
             "id": 77,
             "name": "Athletic Club",
@@ -198,6 +179,25 @@
           "goalsFor": 40,
           "goalsAgainst": 50,
           "goalDifference": -10
+        },
+        {
+          "position": 9,
+          "team": {
+            "id": 92,
+            "name": "Real Sociedad de Fútbol",
+            "shortName": "Real Sociedad",
+            "tla": "RSO",
+            "crest": "https://crests.football-data.org/92.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 11,
+          "draw": 10,
+          "lost": 14,
+          "points": 43,
+          "goalsFor": 52,
+          "goalsAgainst": 55,
+          "goalDifference": -3
         },
         {
           "position": 10,
