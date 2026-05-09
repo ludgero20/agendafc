@@ -43,9 +43,9 @@
           "draw": 4,
           "lost": 5,
           "points": 85,
-          "goalsFor": 84,
+          "goalsFor": 85,
           "goalsAgainst": 31,
-          "goalDifference": 53
+          "goalDifference": 54
         },
         {
           "position": 2,
@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 109,
+            "name": "Juventus FC",
+            "shortName": "Juventus",
+            "tla": "JUV",
+            "crest": "https://crests.football-data.org/109.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 19,
+          "draw": 11,
+          "lost": 6,
+          "points": 68,
+          "goalsFor": 59,
+          "goalsAgainst": 30,
+          "goalDifference": 29
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 98,
             "name": "AC Milan",
             "shortName": "Milan",
@@ -84,25 +103,6 @@
           "goalsFor": 48,
           "goalsAgainst": 29,
           "goalDifference": 19
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 109,
-            "name": "Juventus FC",
-            "shortName": "Juventus",
-            "tla": "JUV",
-            "crest": "https://crests.football-data.org/109.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 18,
-          "draw": 11,
-          "lost": 6,
-          "points": 65,
-          "goalsFor": 58,
-          "goalsAgainst": 30,
-          "goalDifference": 28
         },
         {
           "position": 5,
@@ -177,8 +177,8 @@
           "lost": 11,
           "points": 51,
           "goalsFor": 39,
-          "goalsAgainst": 36,
-          "goalDifference": 3
+          "goalsAgainst": 37,
+          "goalDifference": 2
         },
         {
           "position": 9,
@@ -341,15 +341,15 @@
             "tla": "USL",
             "crest": "https://crests.football-data.org/5890.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 8,
           "draw": 8,
-          "lost": 19,
+          "lost": 20,
           "points": 32,
           "goalsFor": 24,
-          "goalsAgainst": 47,
-          "goalDifference": -23
+          "goalsAgainst": 48,
+          "goalDifference": -24
         },
         {
           "position": 18,
