@@ -211,12 +211,12 @@
           "playedGames": 33,
           "form": null,
           "won": 9,
-          "draw": 11,
-          "lost": 13,
-          "points": 38,
+          "draw": 10,
+          "lost": 14,
+          "points": 37,
           "goalsFor": 42,
-          "goalsAgainst": 51,
-          "goalDifference": -9
+          "goalsAgainst": 53,
+          "goalDifference": -11
         },
         {
           "position": 11,
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 28,
+            "name": "1. FC Union Berlin",
+            "shortName": "Union Berlin",
+            "tla": "UNB",
+            "crest": "https://crests.football-data.org/28.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 9,
+          "draw": 9,
+          "lost": 15,
+          "points": 36,
+          "goalsFor": 40,
+          "goalsAgainst": 58,
+          "goalDifference": -18
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 18,
             "name": "Borussia Mönchengladbach",
             "shortName": "M'gladbach",
@@ -255,25 +274,6 @@
           "goalsFor": 38,
           "goalsAgainst": 53,
           "goalDifference": -15
-        },
-        {
-          "position": 13,
-          "team": {
-            "id": 28,
-            "name": "1. FC Union Berlin",
-            "shortName": "Union Berlin",
-            "tla": "UNB",
-            "crest": "https://crests.football-data.org/28.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 8,
-          "draw": 10,
-          "lost": 15,
-          "points": 34,
-          "goalsFor": 38,
-          "goalsAgainst": 58,
-          "goalDifference": -20
         },
         {
           "position": 14,
