@@ -154,12 +154,12 @@
           "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 9,
-          "lost": 12,
-          "points": 45,
-          "goalsFor": 45,
-          "goalsAgainst": 53,
-          "goalDifference": -8
+          "draw": 8,
+          "lost": 13,
+          "points": 44,
+          "goalsFor": 46,
+          "goalsAgainst": 56,
+          "goalDifference": -10
         },
         {
           "position": 8,
@@ -221,6 +221,25 @@
         {
           "position": 11,
           "team": {
+            "id": 7,
+            "name": "Hamburger SV",
+            "shortName": "HSV",
+            "tla": "HSV",
+            "crest": "https://crests.football-data.org/7.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 9,
+          "draw": 10,
+          "lost": 14,
+          "points": 37,
+          "goalsFor": 39,
+          "goalsAgainst": 52,
+          "goalDifference": -13
+        },
+        {
+          "position": 12,
+          "team": {
             "id": 18,
             "name": "Borussia Mönchengladbach",
             "shortName": "M'gladbach",
@@ -235,25 +254,6 @@
           "points": 35,
           "goalsFor": 38,
           "goalsAgainst": 53,
-          "goalDifference": -15
-        },
-        {
-          "position": 12,
-          "team": {
-            "id": 7,
-            "name": "Hamburger SV",
-            "shortName": "HSV",
-            "tla": "HSV",
-            "crest": "https://crests.football-data.org/7.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 8,
-          "draw": 11,
-          "lost": 14,
-          "points": 35,
-          "goalsFor": 36,
-          "goalsAgainst": 51,
           "goalDifference": -15
         },
         {
