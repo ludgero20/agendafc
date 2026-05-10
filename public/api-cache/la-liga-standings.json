@@ -75,14 +75,14 @@
             "tla": "VIL",
             "crest": "https://crests.football-data.org/94.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 21,
-          "draw": 5,
+          "draw": 6,
           "lost": 8,
-          "points": 68,
-          "goalsFor": 64,
-          "goalsAgainst": 39,
+          "points": 69,
+          "goalsFor": 65,
+          "goalsAgainst": 40,
           "goalDifference": 25
         },
         {
@@ -278,6 +278,25 @@
         {
           "position": 14,
           "team": {
+            "id": 89,
+            "name": "RCD Mallorca",
+            "shortName": "Mallorca",
+            "tla": "MAL",
+            "crest": "https://crests.football-data.org/89.png"
+          },
+          "playedGames": 35,
+          "form": null,
+          "won": 10,
+          "draw": 9,
+          "lost": 16,
+          "points": 39,
+          "goalsFor": 43,
+          "goalsAgainst": 52,
+          "goalDifference": -9
+        },
+        {
+          "position": 15,
+          "team": {
             "id": 95,
             "name": "Valencia CF",
             "shortName": "Valencia",
@@ -295,7 +314,7 @@
           "goalDifference": -13
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 80,
             "name": "RCD Espanyol de Barcelona",
@@ -312,25 +331,6 @@
           "goalsFor": 38,
           "goalsAgainst": 53,
           "goalDifference": -15
-        },
-        {
-          "position": 16,
-          "team": {
-            "id": 89,
-            "name": "RCD Mallorca",
-            "shortName": "Mallorca",
-            "tla": "MAL",
-            "crest": "https://crests.football-data.org/89.png"
-          },
-          "playedGames": 34,
-          "form": null,
-          "won": 10,
-          "draw": 8,
-          "lost": 16,
-          "points": 38,
-          "goalsFor": 42,
-          "goalsAgainst": 51,
-          "goalDifference": -9
         },
         {
           "position": 17,

@@ -107,6 +107,25 @@
         {
           "position": 5,
           "team": {
+            "id": 7397,
+            "name": "Como 1907",
+            "shortName": "Como 1907",
+            "tla": "COM",
+            "crest": "https://crests.football-data.org/7397.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 18,
+          "draw": 11,
+          "lost": 7,
+          "points": 65,
+          "goalsFor": 60,
+          "goalsAgainst": 28,
+          "goalDifference": 32
+        },
+        {
+          "position": 6,
+          "team": {
             "id": 100,
             "name": "AS Roma",
             "shortName": "Roma",
@@ -122,25 +141,6 @@
           "goalsFor": 52,
           "goalsAgainst": 29,
           "goalDifference": 23
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 7397,
-            "name": "Como 1907",
-            "shortName": "Como 1907",
-            "tla": "COM",
-            "crest": "https://crests.football-data.org/7397.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 17,
-          "draw": 12,
-          "lost": 7,
-          "points": 63,
-          "goalsFor": 59,
-          "goalsAgainst": 28,
-          "goalDifference": 31
         },
         {
           "position": 7,
@@ -284,12 +284,12 @@
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 10,
-          "draw": 10,
+          "draw": 11,
           "lost": 15,
-          "points": 40,
+          "points": 41,
           "goalsFor": 40,
           "goalsAgainst": 48,
           "goalDifference": -8
@@ -303,12 +303,12 @@
             "tla": "FIO",
             "crest": "https://crests.football-data.org/99.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 8,
-          "draw": 13,
+          "draw": 14,
           "lost": 14,
-          "points": 37,
+          "points": 38,
           "goalsFor": 38,
           "goalsAgainst": 49,
           "goalDifference": -11
@@ -360,12 +360,12 @@
             "tla": "CRE",
             "crest": "https://crests.football-data.org/457.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 6,
-          "draw": 10,
+          "draw": 11,
           "lost": 19,
-          "points": 28,
+          "points": 29,
           "goalsFor": 27,
           "goalsAgainst": 53,
           "goalDifference": -26
@@ -382,12 +382,12 @@
           "playedGames": 36,
           "form": null,
           "won": 3,
-          "draw": 12,
-          "lost": 21,
-          "points": 21,
+          "draw": 11,
+          "lost": 22,
+          "points": 20,
           "goalsFor": 24,
-          "goalsAgainst": 57,
-          "goalDifference": -33
+          "goalsAgainst": 58,
+          "goalDifference": -34
         },
         {
           "position": 20,
@@ -398,12 +398,12 @@
             "tla": "PIS",
             "crest": "https://crests.football-data.org/487.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 2,
-          "draw": 12,
+          "draw": 13,
           "lost": 21,
-          "points": 18,
+          "points": 19,
           "goalsFor": 25,
           "goalsAgainst": 63,
           "goalDifference": -38

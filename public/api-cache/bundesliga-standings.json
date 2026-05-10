@@ -151,12 +151,12 @@
             "tla": "SCF",
             "crest": "https://crests.football-data.org/17.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 12,
-          "draw": 8,
+          "draw": 9,
           "lost": 12,
-          "points": 44,
+          "points": 45,
           "goalsFor": 45,
           "goalsAgainst": 53,
           "goalDifference": -8
@@ -246,12 +246,12 @@
             "tla": "HSV",
             "crest": "https://crests.football-data.org/7.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 8,
-          "draw": 10,
+          "draw": 11,
           "lost": 14,
-          "points": 34,
+          "points": 35,
           "goalsFor": 36,
           "goalsAgainst": 51,
           "goalDifference": -15
