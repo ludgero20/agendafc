@@ -88,6 +88,25 @@
         {
           "position": 4,
           "team": {
+            "id": 100,
+            "name": "AS Roma",
+            "shortName": "Roma",
+            "tla": "ROM",
+            "crest": "https://crests.football-data.org/100.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 21,
+          "draw": 4,
+          "lost": 11,
+          "points": 67,
+          "goalsFor": 53,
+          "goalsAgainst": 29,
+          "goalDifference": 24
+        },
+        {
+          "position": 5,
+          "team": {
             "id": 98,
             "name": "AC Milan",
             "shortName": "Milan",
@@ -105,7 +124,7 @@
           "goalDifference": 19
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 7397,
             "name": "Como 1907",
@@ -122,25 +141,6 @@
           "goalsFor": 60,
           "goalsAgainst": 28,
           "goalDifference": 32
-        },
-        {
-          "position": 6,
-          "team": {
-            "id": 100,
-            "name": "AS Roma",
-            "shortName": "Roma",
-            "tla": "ROM",
-            "crest": "https://crests.football-data.org/100.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 20,
-          "draw": 4,
-          "lost": 11,
-          "points": 64,
-          "goalsFor": 52,
-          "goalsAgainst": 29,
-          "goalDifference": 23
         },
         {
           "position": 7,
@@ -265,15 +265,15 @@
             "tla": "PAR",
             "crest": "https://crests.football-data.org/112.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 10,
           "draw": 12,
-          "lost": 13,
+          "lost": 14,
           "points": 42,
           "goalsFor": 25,
-          "goalsAgainst": 42,
-          "goalDifference": -17
+          "goalsAgainst": 43,
+          "goalDifference": -18
         },
         {
           "position": 14,
@@ -366,9 +366,9 @@
           "draw": 10,
           "lost": 19,
           "points": 31,
-          "goalsFor": 29,
+          "goalsFor": 30,
           "goalsAgainst": 53,
-          "goalDifference": -24
+          "goalDifference": -23
         },
         {
           "position": 19,
@@ -405,8 +405,8 @@
           "lost": 22,
           "points": 18,
           "goalsFor": 25,
-          "goalsAgainst": 65,
-          "goalDifference": -40
+          "goalsAgainst": 66,
+          "goalDifference": -41
         }
       ]
     }

@@ -157,9 +157,9 @@
           "draw": 8,
           "lost": 13,
           "points": 44,
-          "goalsFor": 46,
+          "goalsFor": 47,
           "goalsAgainst": 56,
-          "goalDifference": -10
+          "goalDifference": -9
         },
         {
           "position": 8,
@@ -234,8 +234,8 @@
           "lost": 14,
           "points": 37,
           "goalsFor": 39,
-          "goalsAgainst": 52,
-          "goalDifference": -13
+          "goalsAgainst": 53,
+          "goalDifference": -14
         },
         {
           "position": 12,
@@ -284,15 +284,15 @@
             "tla": "KOE",
             "crest": "https://crests.football-data.org/1.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 7,
           "draw": 11,
-          "lost": 14,
+          "lost": 15,
           "points": 32,
-          "goalsFor": 47,
-          "goalsAgainst": 55,
-          "goalDifference": -8
+          "goalsFor": 48,
+          "goalsAgainst": 57,
+          "goalDifference": -9
         },
         {
           "position": 15,
@@ -360,15 +360,15 @@
             "tla": "HEI",
             "crest": "https://crests.football-data.org/44.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
-          "won": 5,
+          "won": 6,
           "draw": 8,
           "lost": 19,
-          "points": 23,
-          "goalsFor": 38,
-          "goalsAgainst": 69,
-          "goalDifference": -31
+          "points": 26,
+          "goalsFor": 40,
+          "goalsAgainst": 70,
+          "goalDifference": -30
         }
       ]
     }
