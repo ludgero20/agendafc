@@ -40,12 +40,12 @@
           "playedGames": 33,
           "form": null,
           "won": 27,
-          "draw": 5,
-          "lost": 1,
-          "points": 86,
-          "goalsFor": 64,
-          "goalsAgainst": 15,
-          "goalDifference": 49
+          "draw": 4,
+          "lost": 2,
+          "points": 85,
+          "goalsFor": 65,
+          "goalsAgainst": 18,
+          "goalDifference": 47
         },
         {
           "position": 2,
@@ -362,13 +362,13 @@
           },
           "playedGames": 33,
           "form": null,
-          "won": 2,
-          "draw": 12,
+          "won": 3,
+          "draw": 11,
           "lost": 19,
-          "points": 18,
-          "goalsFor": 24,
-          "goalsAgainst": 66,
-          "goalDifference": -42
+          "points": 20,
+          "goalsFor": 27,
+          "goalsAgainst": 67,
+          "goalDifference": -40
         }
       ]
     }

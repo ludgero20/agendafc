@@ -37,12 +37,12 @@
             "tla": "FCB",
             "crest": "https://crests.football-data.org/81.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 29,
-          "draw": 1,
+          "draw": 2,
           "lost": 4,
-          "points": 88,
+          "points": 89,
           "goalsFor": 89,
           "goalsAgainst": 31,
           "goalDifference": 58
@@ -56,12 +56,12 @@
             "tla": "RMA",
             "crest": "https://crests.football-data.org/86.png"
           },
-          "playedGames": 34,
+          "playedGames": 35,
           "form": null,
           "won": 24,
-          "draw": 5,
+          "draw": 6,
           "lost": 5,
-          "points": 77,
+          "points": 78,
           "goalsFor": 70,
           "goalsAgainst": 31,
           "goalDifference": 39

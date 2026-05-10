@@ -208,14 +208,14 @@
             "tla": "M05",
             "crest": "https://crests.football-data.org/15.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 9,
-          "draw": 10,
+          "draw": 11,
           "lost": 13,
-          "points": 37,
-          "goalsFor": 41,
-          "goalsAgainst": 50,
+          "points": 38,
+          "goalsFor": 42,
+          "goalsAgainst": 51,
           "goalDifference": -9
         },
         {
@@ -265,14 +265,14 @@
             "tla": "UNB",
             "crest": "https://crests.football-data.org/28.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 8,
-          "draw": 9,
+          "draw": 10,
           "lost": 15,
-          "points": 33,
-          "goalsFor": 37,
-          "goalsAgainst": 57,
+          "points": 34,
+          "goalsFor": 38,
+          "goalsAgainst": 58,
           "goalDifference": -20
         },
         {
@@ -291,8 +291,8 @@
           "lost": 15,
           "points": 32,
           "goalsFor": 48,
-          "goalsAgainst": 57,
-          "goalDifference": -9
+          "goalsAgainst": 58,
+          "goalDifference": -10
         },
         {
           "position": 15,
@@ -335,6 +335,25 @@
         {
           "position": 17,
           "team": {
+            "id": 44,
+            "name": "1. FC Heidenheim 1846",
+            "shortName": "Heidenheim",
+            "tla": "HEI",
+            "crest": "https://crests.football-data.org/44.png"
+          },
+          "playedGames": 33,
+          "form": null,
+          "won": 6,
+          "draw": 8,
+          "lost": 19,
+          "points": 26,
+          "goalsFor": 41,
+          "goalsAgainst": 70,
+          "goalDifference": -29
+        },
+        {
+          "position": 18,
+          "team": {
             "id": 20,
             "name": "FC St. Pauli 1910",
             "shortName": "St. Pauli",
@@ -350,25 +369,6 @@
           "goalsFor": 28,
           "goalsAgainst": 57,
           "goalDifference": -29
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 44,
-            "name": "1. FC Heidenheim 1846",
-            "shortName": "Heidenheim",
-            "tla": "HEI",
-            "crest": "https://crests.football-data.org/44.png"
-          },
-          "playedGames": 33,
-          "form": null,
-          "won": 6,
-          "draw": 8,
-          "lost": 19,
-          "points": 26,
-          "goalsFor": 40,
-          "goalsAgainst": 70,
-          "goalDifference": -30
         }
       ]
     }
