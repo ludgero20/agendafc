@@ -113,12 +113,12 @@
             "tla": "BET",
             "crest": "https://crests.football-data.org/90.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 13,
-          "draw": 15,
+          "draw": 16,
           "lost": 7,
-          "points": 54,
+          "points": 55,
           "goalsFor": 54,
           "goalsAgainst": 43,
           "goalDifference": 11
@@ -132,14 +132,14 @@
             "tla": "CEL",
             "crest": "https://crests.football-data.org/558.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 13,
-          "draw": 11,
+          "draw": 12,
           "lost": 11,
-          "points": 50,
-          "goalsFor": 49,
-          "goalsAgainst": 44,
+          "points": 51,
+          "goalsFor": 50,
+          "goalsAgainst": 45,
           "goalDifference": 5
         },
         {
@@ -259,6 +259,25 @@
         {
           "position": 13,
           "team": {
+            "id": 285,
+            "name": "Elche CF",
+            "shortName": "Elche",
+            "tla": "ELC",
+            "crest": "https://crests.football-data.org/285.png"
+          },
+          "playedGames": 36,
+          "form": null,
+          "won": 9,
+          "draw": 13,
+          "lost": 14,
+          "points": 40,
+          "goalsFor": 46,
+          "goalsAgainst": 54,
+          "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
             "id": 559,
             "name": "Sevilla FC",
             "shortName": "Sevilla FC",
@@ -274,25 +293,6 @@
           "goalsFor": 43,
           "goalsAgainst": 56,
           "goalDifference": -13
-        },
-        {
-          "position": 14,
-          "team": {
-            "id": 285,
-            "name": "Elche CF",
-            "shortName": "Elche",
-            "tla": "ELC",
-            "crest": "https://crests.football-data.org/285.png"
-          },
-          "playedGames": 35,
-          "form": null,
-          "won": 9,
-          "draw": 12,
-          "lost": 14,
-          "points": 39,
-          "goalsFor": 46,
-          "goalsAgainst": 54,
-          "goalDifference": -8
         },
         {
           "position": 15,
@@ -379,14 +379,14 @@
             "tla": "LEV",
             "crest": "https://crests.football-data.org/88.png"
           },
-          "playedGames": 35,
+          "playedGames": 36,
           "form": null,
           "won": 9,
-          "draw": 9,
+          "draw": 10,
           "lost": 17,
-          "points": 36,
-          "goalsFor": 41,
-          "goalsAgainst": 57,
+          "points": 37,
+          "goalsFor": 42,
+          "goalsAgainst": 58,
           "goalDifference": -16
         },
         {
