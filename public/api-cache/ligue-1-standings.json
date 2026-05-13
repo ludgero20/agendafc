@@ -37,15 +37,15 @@
             "tla": "PSG",
             "crest": "https://crests.football-data.org/524.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
-          "won": 23,
+          "won": 24,
           "draw": 4,
           "lost": 5,
-          "points": 73,
-          "goalsFor": 71,
+          "points": 76,
+          "goalsFor": 73,
           "goalsAgainst": 27,
-          "goalDifference": 44
+          "goalDifference": 46
         },
         {
           "position": 2,
@@ -56,15 +56,15 @@
             "tla": "RCL",
             "crest": "https://crests.football-data.org/546.png"
           },
-          "playedGames": 32,
+          "playedGames": 33,
           "form": null,
           "won": 21,
           "draw": 4,
-          "lost": 7,
+          "lost": 8,
           "points": 67,
           "goalsFor": 62,
-          "goalsAgainst": 33,
-          "goalDifference": 29
+          "goalsAgainst": 35,
+          "goalDifference": 27
         },
         {
           "position": 3,
