@@ -56,15 +56,15 @@
             "tla": "NAP",
             "crest": "https://crests.football-data.org/113.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
-          "won": 21,
+          "won": 22,
           "draw": 7,
           "lost": 8,
-          "points": 70,
-          "goalsFor": 54,
+          "points": 73,
+          "goalsFor": 57,
           "goalsAgainst": 36,
-          "goalDifference": 18
+          "goalDifference": 21
         },
         {
           "position": 3,
@@ -75,15 +75,15 @@
             "tla": "JUV",
             "crest": "https://crests.football-data.org/109.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 19,
           "draw": 11,
-          "lost": 6,
+          "lost": 7,
           "points": 68,
           "goalsFor": 59,
-          "goalsAgainst": 30,
-          "goalDifference": 29
+          "goalsAgainst": 32,
+          "goalDifference": 27
         },
         {
           "position": 4,
@@ -94,12 +94,12 @@
             "tla": "MIL",
             "crest": "https://crests.football-data.org/98.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 19,
-          "draw": 10,
+          "draw": 11,
           "lost": 7,
-          "points": 67,
+          "points": 68,
           "goalsFor": 50,
           "goalsAgainst": 32,
           "goalDifference": 18
@@ -113,12 +113,12 @@
             "tla": "ROM",
             "crest": "https://crests.football-data.org/100.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 21,
-          "draw": 4,
+          "draw": 5,
           "lost": 11,
-          "points": 67,
+          "points": 68,
           "goalsFor": 55,
           "goalsAgainst": 31,
           "goalDifference": 24
@@ -132,12 +132,12 @@
             "tla": "COM",
             "crest": "https://crests.football-data.org/7397.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 18,
-          "draw": 11,
+          "draw": 12,
           "lost": 7,
-          "points": 65,
+          "points": 66,
           "goalsFor": 60,
           "goalsAgainst": 28,
           "goalDifference": 32
@@ -164,6 +164,25 @@
         {
           "position": 8,
           "team": {
+            "id": 110,
+            "name": "SS Lazio",
+            "shortName": "Lazio",
+            "tla": "LAZ",
+            "crest": "https://crests.football-data.org/110.png"
+          },
+          "playedGames": 37,
+          "form": null,
+          "won": 13,
+          "draw": 13,
+          "lost": 11,
+          "points": 52,
+          "goalsFor": 39,
+          "goalsAgainst": 37,
+          "goalDifference": 2
+        },
+        {
+          "position": 9,
+          "team": {
             "id": 103,
             "name": "Bologna FC 1909",
             "shortName": "Bologna",
@@ -178,25 +197,6 @@
           "points": 52,
           "goalsFor": 45,
           "goalsAgainst": 43,
-          "goalDifference": 2
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 110,
-            "name": "SS Lazio",
-            "shortName": "Lazio",
-            "tla": "LAZ",
-            "crest": "https://crests.football-data.org/110.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 13,
-          "draw": 12,
-          "lost": 11,
-          "points": 51,
-          "goalsFor": 39,
-          "goalsAgainst": 37,
           "goalDifference": 2
         },
         {
@@ -246,12 +246,12 @@
             "tla": "PAR",
             "crest": "https://crests.football-data.org/112.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 10,
-          "draw": 12,
+          "draw": 13,
           "lost": 14,
-          "points": 42,
+          "points": 43,
           "goalsFor": 27,
           "goalsAgainst": 45,
           "goalDifference": -18
@@ -265,15 +265,34 @@
             "tla": "GEN",
             "crest": "https://crests.football-data.org/107.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 10,
-          "draw": 11,
+          "draw": 12,
           "lost": 15,
-          "points": 41,
+          "points": 42,
           "goalsFor": 40,
           "goalsAgainst": 48,
           "goalDifference": -8
+        },
+        {
+          "position": 14,
+          "team": {
+            "id": 99,
+            "name": "ACF Fiorentina",
+            "shortName": "Fiorentina",
+            "tla": "FIO",
+            "crest": "https://crests.football-data.org/99.png"
+          },
+          "playedGames": 37,
+          "form": null,
+          "won": 9,
+          "draw": 14,
+          "lost": 14,
+          "points": 41,
+          "goalsFor": 40,
+          "goalsAgainst": 49,
+          "goalDifference": -9
         },
         {
           "position": 14,
@@ -293,25 +312,6 @@
           "goalsFor": 39,
           "goalsAgainst": 58,
           "goalDifference": -19
-        },
-        {
-          "position": 15,
-          "team": {
-            "id": 99,
-            "name": "ACF Fiorentina",
-            "shortName": "Fiorentina",
-            "tla": "FIO",
-            "crest": "https://crests.football-data.org/99.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 8,
-          "draw": 14,
-          "lost": 14,
-          "points": 38,
-          "goalsFor": 38,
-          "goalsAgainst": 49,
-          "goalDifference": -11
         },
         {
           "position": 16,
@@ -398,15 +398,15 @@
             "tla": "PIS",
             "crest": "https://crests.football-data.org/487.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 2,
           "draw": 12,
-          "lost": 22,
+          "lost": 23,
           "points": 18,
           "goalsFor": 25,
-          "goalsAgainst": 66,
-          "goalDifference": -41
+          "goalsAgainst": 69,
+          "goalDifference": -44
         }
       ]
     }
