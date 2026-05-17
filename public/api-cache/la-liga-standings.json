@@ -297,6 +297,25 @@
         {
           "position": 15,
           "team": {
+            "id": 88,
+            "name": "Levante UD",
+            "shortName": "Levante",
+            "tla": "LEV",
+            "crest": "https://crests.football-data.org/88.png"
+          },
+          "playedGames": 37,
+          "form": null,
+          "won": 11,
+          "draw": 9,
+          "lost": 17,
+          "points": 42,
+          "goalsFor": 46,
+          "goalsAgainst": 59,
+          "goalDifference": -13
+        },
+        {
+          "position": 16,
+          "team": {
             "id": 79,
             "name": "CA Osasuna",
             "shortName": "Osasuna",
@@ -314,7 +333,7 @@
           "goalDifference": -5
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 285,
             "name": "Elche CF",
@@ -331,25 +350,6 @@
           "goalsFor": 48,
           "goalsAgainst": 56,
           "goalDifference": -8
-        },
-        {
-          "position": 17,
-          "team": {
-            "id": 88,
-            "name": "Levante UD",
-            "shortName": "Levante",
-            "tla": "LEV",
-            "crest": "https://crests.football-data.org/88.png"
-          },
-          "playedGames": 37,
-          "form": null,
-          "won": 11,
-          "draw": 9,
-          "lost": 17,
-          "points": 42,
-          "goalsFor": 46,
-          "goalsAgainst": 59,
-          "goalDifference": -13
         },
         {
           "position": 18,
