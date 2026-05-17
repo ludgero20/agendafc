@@ -151,18 +151,37 @@
             "tla": "ATA",
             "crest": "https://crests.football-data.org/102.png"
           },
-          "playedGames": 36,
+          "playedGames": 37,
           "form": null,
           "won": 15,
           "draw": 13,
-          "lost": 8,
+          "lost": 9,
           "points": 58,
           "goalsFor": 50,
-          "goalsAgainst": 34,
-          "goalDifference": 16
+          "goalsAgainst": 35,
+          "goalDifference": 15
         },
         {
           "position": 8,
+          "team": {
+            "id": 103,
+            "name": "Bologna FC 1909",
+            "shortName": "Bologna",
+            "tla": "BOL",
+            "crest": "https://crests.football-data.org/103.png"
+          },
+          "playedGames": 37,
+          "form": null,
+          "won": 16,
+          "draw": 7,
+          "lost": 14,
+          "points": 55,
+          "goalsFor": 46,
+          "goalsAgainst": 43,
+          "goalDifference": 3
+        },
+        {
+          "position": 9,
           "team": {
             "id": 110,
             "name": "SS Lazio",
@@ -178,25 +197,6 @@
           "points": 52,
           "goalsFor": 39,
           "goalsAgainst": 37,
-          "goalDifference": 2
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 103,
-            "name": "Bologna FC 1909",
-            "shortName": "Bologna",
-            "tla": "BOL",
-            "crest": "https://crests.football-data.org/103.png"
-          },
-          "playedGames": 36,
-          "form": null,
-          "won": 15,
-          "draw": 7,
-          "lost": 14,
-          "points": 52,
-          "goalsFor": 45,
-          "goalsAgainst": 43,
           "goalDifference": 2
         },
         {
