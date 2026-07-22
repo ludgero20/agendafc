@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 196,
-    "first": "2026-07-22",
+    "count": 195,
+    "first": "2026-07-23",
     "last": "2026-12-02",
     "played": 0
   },
@@ -19,65 +19,6 @@
     "emblem": "https://crests.football-data.org/bsa.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2032,
-        "name": "Brazil",
-        "code": "BRA",
-        "flag": "https://crests.football-data.org/764.svg"
-      },
-      "competition": {
-        "id": 2013,
-        "name": "Campeonato Brasileiro Série A",
-        "code": "BSA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/bsa.png"
-      },
-      "season": {
-        "id": 2474,
-        "startDate": "2026-01-28",
-        "endDate": "2026-12-02",
-        "currentMatchday": 19,
-        "winner": null
-      },
-      "id": 554924,
-      "utcDate": "2026-07-22T22:30:00Z",
-      "status": "TIMED",
-      "matchday": 19,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-07-22T05:20:04Z",
-      "homeTeam": {
-        "id": 4241,
-        "name": "Coritiba FBC",
-        "shortName": "Coritiba",
-        "tla": "COR",
-        "crest": "https://crests.football-data.org/4241.png"
-      },
-      "awayTeam": {
-        "id": 1769,
-        "name": "SE Palmeiras",
-        "shortName": "Palmeiras",
-        "tla": "PAL",
-        "crest": "https://crests.football-data.org/1769.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
     {
       "area": {
         "id": 2032,
