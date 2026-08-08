@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 5575,
+            "name": "CS Marítimo",
+            "shortName": "Marítimo",
+            "tla": "CSM",
+            "crest": "https://crests.football-data.org/5575.png"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 1,
+          "draw": 0,
+          "lost": 0,
+          "points": 3,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 5531,
             "name": "FC Famalicão",
             "shortName": "Famalicão",
@@ -48,7 +67,7 @@
           "goalDifference": 0
         },
         {
-          "position": 1,
+          "position": 2,
           "team": {
             "id": 582,
             "name": "GD Estoril Praia",
@@ -67,45 +86,7 @@
           "goalDifference": 0
         },
         {
-          "position": 3,
-          "team": {
-            "id": 6618,
-            "name": "Casa Pia AC",
-            "shortName": "Casa Pia",
-            "tla": "CAS",
-            "crest": "https://crests.football-data.org/6618.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 5575,
-            "name": "CS Marítimo",
-            "shortName": "Marítimo",
-            "tla": "CSM",
-            "crest": "https://crests.football-data.org/5575.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5527,
             "name": "Académico de Viseu FC",
@@ -124,7 +105,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -143,7 +124,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -162,7 +143,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -181,7 +162,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 7822,
             "name": "FC Alverca",
@@ -200,7 +181,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 712,
             "name": "FC Arouca",
@@ -219,7 +200,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 503,
             "name": "FC Porto",
@@ -238,7 +219,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
@@ -257,7 +238,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 583,
             "name": "Moreirense FC",
@@ -276,7 +257,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -295,7 +276,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
@@ -314,7 +295,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5613,
             "name": "Sporting Clube de Braga",
@@ -333,7 +314,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
@@ -352,7 +333,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 4,
           "team": {
             "id": 5543,
             "name": "Vitória SC",
@@ -369,6 +350,25 @@
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0
+        },
+        {
+          "position": 18,
+          "team": {
+            "id": 6618,
+            "name": "Casa Pia AC",
+            "shortName": "Casa Pia",
+            "tla": "CAS",
+            "crest": "https://crests.football-data.org/6618.png"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 0,
+          "lost": 1,
+          "points": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1
         }
       ]
     }
