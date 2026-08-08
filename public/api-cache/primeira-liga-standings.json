@@ -107,6 +107,44 @@
         {
           "position": 5,
           "team": {
+            "id": 9136,
+            "name": "CF Estrela da Amadora",
+            "shortName": "Amadora",
+            "tla": "AMA",
+            "crest": "https://crests.football-data.org/9136.png"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0
+        },
+        {
+          "position": 5,
+          "team": {
+            "id": 498,
+            "name": "Sporting Clube de Portugal",
+            "shortName": "Sporting CP",
+            "tla": "SPO",
+            "crest": "https://crests.football-data.org/498.png"
+          },
+          "playedGames": 1,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 0,
+          "points": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0
+        },
+        {
+          "position": 7,
+          "team": {
             "id": 5527,
             "name": "Académico de Viseu FC",
             "shortName": "Acad. Viseu",
@@ -124,7 +162,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -143,7 +181,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -162,26 +200,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
-          "team": {
-            "id": 9136,
-            "name": "CF Estrela da Amadora",
-            "shortName": "Amadora",
-            "tla": "AMA",
-            "crest": "https://crests.football-data.org/9136.png"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 7822,
             "name": "FC Alverca",
@@ -200,7 +219,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 503,
             "name": "FC Porto",
@@ -219,7 +238,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
@@ -238,7 +257,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 583,
             "name": "Moreirense FC",
@@ -257,7 +276,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 496,
             "name": "Rio Ave FC",
@@ -276,7 +295,7 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
@@ -295,32 +314,13 @@
           "goalDifference": 0
         },
         {
-          "position": 5,
+          "position": 7,
           "team": {
             "id": 5613,
             "name": "Sporting Clube de Braga",
             "shortName": "Braga",
             "tla": "SCB",
             "crest": "https://crests.football-data.org/5613.png"
-          },
-          "playedGames": 0,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 0,
-          "points": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 498,
-            "name": "Sporting Clube de Portugal",
-            "shortName": "Sporting CP",
-            "tla": "SPO",
-            "crest": "https://crests.football-data.org/498.png"
           },
           "playedGames": 0,
           "form": null,
