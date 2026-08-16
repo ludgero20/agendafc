@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 712,
+            "name": "FC Arouca",
+            "shortName": "Arouca",
+            "tla": "FCA",
+            "crest": "https://crests.football-data.org/712.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 2,
+          "draw": 0,
+          "lost": 0,
+          "points": 6,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "goalDifference": 4
+        },
+        {
+          "position": 1,
+          "team": {
             "id": 503,
             "name": "FC Porto",
             "shortName": "Porto",
@@ -48,7 +67,7 @@
           "goalDifference": 4
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 5529,
             "name": "CD Nacional",
@@ -67,7 +86,7 @@
           "goalDifference": 2
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
@@ -86,7 +105,7 @@
           "goalDifference": 1
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -105,7 +124,7 @@
           "goalDifference": 1
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 5575,
             "name": "CS Marítimo",
@@ -124,26 +143,7 @@
           "goalDifference": 1
         },
         {
-          "position": 5,
-          "team": {
-            "id": 712,
-            "name": "FC Arouca",
-            "shortName": "Arouca",
-            "tla": "FCA",
-            "crest": "https://crests.football-data.org/712.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 1,
-          "goalsAgainst": 0,
-          "goalDifference": 1
-        },
-        {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
@@ -178,25 +178,6 @@
           "points": 2,
           "goalsFor": 4,
           "goalsAgainst": 4,
-          "goalDifference": 0
-        },
-        {
-          "position": 9,
-          "team": {
-            "id": 583,
-            "name": "Moreirense FC",
-            "shortName": "Moreirense",
-            "tla": "MOR",
-            "crest": "https://crests.football-data.org/583.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
           "goalDifference": 0
         },
         {
@@ -238,7 +219,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
+          "position": 11,
           "team": {
             "id": 5531,
             "name": "FC Famalicão",
@@ -257,7 +238,7 @@
           "goalDifference": 0
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 5527,
             "name": "Académico de Viseu FC",
@@ -276,7 +257,7 @@
           "goalDifference": -1
         },
         {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 7822,
             "name": "FC Alverca",
@@ -295,7 +276,7 @@
           "goalDifference": -2
         },
         {
-          "position": 15,
+          "position": 14,
           "team": {
             "id": 582,
             "name": "GD Estoril Praia",
@@ -312,6 +293,25 @@
           "goalsFor": 1,
           "goalsAgainst": 3,
           "goalDifference": -2
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 583,
+            "name": "Moreirense FC",
+            "shortName": "Moreirense",
+            "tla": "MOR",
+            "crest": "https://crests.football-data.org/583.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 5,
+          "goalDifference": -3
         },
         {
           "position": 16,
