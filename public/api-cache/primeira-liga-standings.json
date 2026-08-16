@@ -50,6 +50,25 @@
         {
           "position": 2,
           "team": {
+            "id": 5529,
+            "name": "CD Nacional",
+            "shortName": "CD Nacional",
+            "tla": "CDN",
+            "crest": "https://crests.football-data.org/5529.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDifference": 2
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
             "shortName": "Sporting CP",
@@ -67,7 +86,7 @@
           "goalDifference": 1
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -86,7 +105,7 @@
           "goalDifference": 1
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 5575,
             "name": "CS Marítimo",
@@ -105,7 +124,7 @@
           "goalDifference": 1
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 712,
             "name": "FC Arouca",
@@ -124,7 +143,7 @@
           "goalDifference": 1
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 5533,
             "name": "Gil Vicente FC",
@@ -143,7 +162,7 @@
           "goalDifference": 1
         },
         {
-          "position": 7,
+          "position": 8,
           "team": {
             "id": 9136,
             "name": "CF Estrela da Amadora",
@@ -162,26 +181,7 @@
           "goalDifference": 0
         },
         {
-          "position": 8,
-          "team": {
-            "id": 5529,
-            "name": "CD Nacional",
-            "shortName": "CD Nacional",
-            "tla": "CDN",
-            "crest": "https://crests.football-data.org/5529.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 2,
-          "goalDifference": 0
-        },
-        {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 583,
             "name": "Moreirense FC",
@@ -200,7 +200,7 @@
           "goalDifference": 0
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
@@ -219,7 +219,7 @@
           "goalDifference": 0
         },
         {
-          "position": 8,
+          "position": 9,
           "team": {
             "id": 5613,
             "name": "Sporting Clube de Braga",
@@ -257,26 +257,7 @@
           "goalDifference": 0
         },
         {
-          "position": 12,
-          "team": {
-            "id": 582,
-            "name": "GD Estoril Praia",
-            "shortName": "Estoril Praia",
-            "tla": "EST",
-            "crest": "https://crests.football-data.org/582.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 1,
-          "lost": 0,
-          "points": 1,
-          "goalsFor": 1,
-          "goalsAgainst": 1,
-          "goalDifference": 0
-        },
-        {
-          "position": 14,
+          "position": 13,
           "team": {
             "id": 5527,
             "name": "Académico de Viseu FC",
@@ -295,7 +276,7 @@
           "goalDifference": -1
         },
         {
-          "position": 15,
+          "position": 14,
           "team": {
             "id": 7822,
             "name": "FC Alverca",
@@ -311,6 +292,25 @@
           "points": 1,
           "goalsFor": 2,
           "goalsAgainst": 4,
+          "goalDifference": -2
+        },
+        {
+          "position": 15,
+          "team": {
+            "id": 582,
+            "name": "GD Estoril Praia",
+            "shortName": "Estoril Praia",
+            "tla": "EST",
+            "crest": "https://crests.football-data.org/582.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 3,
           "goalDifference": -2
         },
         {
