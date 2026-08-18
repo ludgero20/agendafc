@@ -1987,6 +1987,65 @@
         "currentMatchday": 1,
         "winner": null
       },
+      "id": 558608,
+      "utcDate": "2026-09-12T16:00:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T22:25:12Z",
+      "homeTeam": {
+        "id": 471,
+        "name": "US Sassuolo Calcio",
+        "shortName": "Sassuolo",
+        "tla": "SAS",
+        "crest": "https://crests.football-data.org/471.png"
+      },
+      "awayTeam": {
+        "id": 109,
+        "name": "Juventus FC",
+        "shortName": "Juventus",
+        "tla": "JUV",
+        "crest": "https://crests.football-data.org/109.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2114,
+        "name": "Italy",
+        "code": "ITA",
+        "flag": "https://crests.football-data.org/784.svg"
+      },
+      "competition": {
+        "id": 2019,
+        "name": "Serie A",
+        "code": "SA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/c111.png"
+      },
+      "season": {
+        "id": 2494,
+        "startDate": "2026-08-23",
+        "endDate": "2027-05-30",
+        "currentMatchday": 1,
+        "winner": null
+      },
       "id": 558607,
       "utcDate": "2026-09-12T18:45:00Z",
       "status": "TIMED",
@@ -2243,65 +2302,6 @@
         "shortName": "Bologna",
         "tla": "BOL",
         "crest": "https://crests.football-data.org/103.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2114,
-        "name": "Italy",
-        "code": "ITA",
-        "flag": "https://crests.football-data.org/784.svg"
-      },
-      "competition": {
-        "id": 2019,
-        "name": "Serie A",
-        "code": "SA",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/c111.png"
-      },
-      "season": {
-        "id": 2494,
-        "startDate": "2026-08-23",
-        "endDate": "2027-05-30",
-        "currentMatchday": 1,
-        "winner": null
-      },
-      "id": 558608,
-      "utcDate": "2026-09-13T18:45:00Z",
-      "status": "TIMED",
-      "matchday": 4,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-08-18T05:20:29Z",
-      "homeTeam": {
-        "id": 471,
-        "name": "US Sassuolo Calcio",
-        "shortName": "Sassuolo",
-        "tla": "SAS",
-        "crest": "https://crests.football-data.org/471.png"
-      },
-      "awayTeam": {
-        "id": 109,
-        "name": "Juventus FC",
-        "shortName": "Juventus",
-        "tla": "JUV",
-        "crest": "https://crests.football-data.org/109.png"
       },
       "score": {
         "winner": null,
