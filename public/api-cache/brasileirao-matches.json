@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 137,
+    "count": 150,
     "first": "2026-08-22",
     "last": "2026-12-02",
     "played": 0
@@ -46,7 +46,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -105,7 +105,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -164,7 +164,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -223,7 +223,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -282,7 +282,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -341,7 +341,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -400,7 +400,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -459,7 +459,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -518,7 +518,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -577,7 +577,7 @@
       "matchday": 24,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -636,7 +636,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -695,7 +695,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -754,7 +754,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -807,13 +807,426 @@
         "currentMatchday": 23,
         "winner": null
       },
+      "id": 554980,
+      "utcDate": "2026-08-30T14:00:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1768,
+        "name": "CA Paranaense",
+        "shortName": "Paranaense",
+        "tla": "CAP",
+        "crest": "https://crests.football-data.org/1768.png"
+      },
+      "awayTeam": {
+        "id": 1765,
+        "name": "Fluminense FC",
+        "shortName": "Fluminense",
+        "tla": "FLU",
+        "crest": "https://crests.football-data.org/1765.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554983,
+      "utcDate": "2026-08-30T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "awayTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554984,
+      "utcDate": "2026-08-30T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
+      "awayTeam": {
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554985,
+      "utcDate": "2026-08-30T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "awayTeam": {
+        "id": 1772,
+        "name": "Chapecoense AF",
+        "shortName": "Chapecoense",
+        "tla": "CHA",
+        "crest": "https://crests.football-data.org/1772_large.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554982,
+      "utcDate": "2026-08-30T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1777,
+        "name": "EC Bahia",
+        "shortName": "Bahia",
+        "tla": "BAH",
+        "crest": "https://crests.football-data.org/1777.png"
+      },
+      "awayTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554986,
+      "utcDate": "2026-08-30T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 4364,
+        "name": "Mirassol FC",
+        "shortName": "Mirassol",
+        "tla": "MIR",
+        "crest": "https://crests.football-data.org/4364.png"
+      },
+      "awayTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554987,
+      "utcDate": "2026-08-31T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 25,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 4287,
+        "name": "Clube do Remo",
+        "shortName": "Clube do Remo",
+        "tla": "CRE",
+        "crest": "https://crests.football-data.org/4287.png"
+      },
+      "awayTeam": {
+        "id": 4241,
+        "name": "Coritiba FBC",
+        "shortName": "Coritiba",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/4241.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
       "id": 554991,
       "utcDate": "2026-09-05T19:00:00Z",
       "status": "TIMED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -872,7 +1285,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -931,7 +1344,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -990,7 +1403,7 @@
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -1043,13 +1456,367 @@
         "currentMatchday": 23,
         "winner": null
       },
+      "id": 554994,
+      "utcDate": "2026-09-06T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1771,
+        "name": "Cruzeiro EC",
+        "shortName": "Cruzeiro",
+        "tla": "CRU",
+        "crest": "https://crests.football-data.org/1771.png"
+      },
+      "awayTeam": {
+        "id": 1768,
+        "name": "CA Paranaense",
+        "shortName": "Paranaense",
+        "tla": "CAP",
+        "crest": "https://crests.football-data.org/1768.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554996,
+      "utcDate": "2026-09-06T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 6684,
+        "name": "SC Internacional",
+        "shortName": "Internacional",
+        "tla": "SCI",
+        "crest": "https://crests.football-data.org/6684.png"
+      },
+      "awayTeam": {
+        "id": 6685,
+        "name": "Santos FC",
+        "shortName": "Santos",
+        "tla": "SAN",
+        "crest": "https://crests.football-data.org/6685.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554997,
+      "utcDate": "2026-09-06T19:00:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 4287,
+        "name": "Clube do Remo",
+        "shortName": "Clube do Remo",
+        "tla": "CRE",
+        "crest": "https://crests.football-data.org/4287.png"
+      },
+      "awayTeam": {
+        "id": 1783,
+        "name": "CR Flamengo",
+        "shortName": "Flamengo",
+        "tla": "FLA",
+        "crest": "https://crests.football-data.org/1783.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554990,
+      "utcDate": "2026-09-06T21:30:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1770,
+        "name": "Botafogo FR",
+        "shortName": "Botafogo",
+        "tla": "BOT",
+        "crest": "https://crests.football-data.org/1770.png"
+      },
+      "awayTeam": {
+        "id": 1769,
+        "name": "SE Palmeiras",
+        "shortName": "Palmeiras",
+        "tla": "PAL",
+        "crest": "https://crests.football-data.org/1769.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554992,
+      "utcDate": "2026-09-06T22:30:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1779,
+        "name": "SC Corinthians Paulista",
+        "shortName": "Corinthians",
+        "tla": "COR",
+        "crest": "https://crests.football-data.org/1779.png"
+      },
+      "awayTeam": {
+        "id": 1772,
+        "name": "Chapecoense AF",
+        "shortName": "Chapecoense",
+        "tla": "CHA",
+        "crest": "https://crests.football-data.org/1772_large.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
+      "id": 554999,
+      "utcDate": "2026-09-07T23:00:00Z",
+      "status": "TIMED",
+      "matchday": 26,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-18T05:20:28Z",
+      "homeTeam": {
+        "id": 1782,
+        "name": "EC Vitória",
+        "shortName": "Vitória",
+        "tla": "VIT",
+        "crest": "https://crests.football-data.org/1782.png"
+      },
+      "awayTeam": {
+        "id": 1767,
+        "name": "Grêmio FBPA",
+        "shortName": "Grêmio",
+        "tla": "FBP",
+        "crest": "https://crests.football-data.org/1767.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2032,
+        "name": "Brazil",
+        "code": "BRA",
+        "flag": "https://crests.football-data.org/764.svg"
+      },
+      "competition": {
+        "id": 2013,
+        "name": "Campeonato Brasileiro Série A",
+        "code": "BSA",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/bsa.png"
+      },
+      "season": {
+        "id": 2474,
+        "startDate": "2026-01-28",
+        "endDate": "2026-12-02",
+        "currentMatchday": 23,
+        "winner": null
+      },
       "id": 555008,
       "utcDate": "2026-09-12T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -1108,7 +1875,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -1167,7 +1934,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -1226,7 +1993,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -1285,7 +2052,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -1344,7 +2111,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -1403,7 +2170,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -1462,7 +2229,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -1521,7 +2288,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -1580,7 +2347,7 @@
       "matchday": 27,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -1639,7 +2406,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -1698,7 +2465,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -1757,7 +2524,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -1816,7 +2583,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -1875,7 +2642,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -1934,7 +2701,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -1993,7 +2760,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -2052,7 +2819,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -2111,7 +2878,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -2170,7 +2937,7 @@
       "matchday": 28,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -2229,7 +2996,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -2288,7 +3055,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -2347,7 +3114,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -2406,7 +3173,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -2465,7 +3232,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -2524,7 +3291,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -2583,7 +3350,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -2642,7 +3409,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -2701,7 +3468,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -2760,7 +3527,7 @@
       "matchday": 29,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -2819,7 +3586,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -2878,7 +3645,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -2937,7 +3704,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -2996,7 +3763,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -3055,7 +3822,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -3114,7 +3881,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -3173,7 +3940,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -3232,7 +3999,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -3291,7 +4058,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -3350,7 +4117,7 @@
       "matchday": 30,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -3409,7 +4176,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -3468,7 +4235,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -3527,7 +4294,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -3586,7 +4353,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -3645,7 +4412,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -3704,7 +4471,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -3763,7 +4530,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -3822,7 +4589,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -3881,7 +4648,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -3940,7 +4707,7 @@
       "matchday": 31,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -3999,7 +4766,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -4058,7 +4825,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -4117,7 +4884,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -4176,7 +4943,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -4235,7 +5002,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -4294,7 +5061,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -4353,7 +5120,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -4412,7 +5179,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -4471,7 +5238,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -4530,7 +5297,7 @@
       "matchday": 32,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -4589,7 +5356,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -4648,7 +5415,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -4707,7 +5474,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -4766,7 +5533,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -4825,7 +5592,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -4884,7 +5651,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -4943,7 +5710,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -5002,7 +5769,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -5061,7 +5828,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -5120,7 +5887,7 @@
       "matchday": 33,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -5179,7 +5946,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -5238,7 +6005,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -5297,7 +6064,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -5356,7 +6123,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -5415,7 +6182,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -5474,7 +6241,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -5533,7 +6300,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -5592,7 +6359,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -5651,7 +6418,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -5710,7 +6477,7 @@
       "matchday": 34,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -5769,7 +6536,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -5828,7 +6595,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -5887,7 +6654,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -5946,7 +6713,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -6005,7 +6772,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -6064,7 +6831,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -6123,7 +6890,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -6182,7 +6949,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -6241,7 +7008,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
@@ -6300,7 +7067,7 @@
       "matchday": 35,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -6359,7 +7126,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -6418,7 +7185,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -6477,7 +7244,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -6536,7 +7303,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -6595,7 +7362,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -6654,7 +7421,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -6713,7 +7480,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -6772,7 +7539,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -6831,7 +7598,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -6890,7 +7657,7 @@
       "matchday": 36,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -6949,7 +7716,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1766,
         "name": "CA Mineiro",
@@ -7008,7 +7775,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1770,
         "name": "Botafogo FR",
@@ -7067,7 +7834,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1772,
         "name": "Chapecoense AF",
@@ -7126,7 +7893,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1779,
         "name": "SC Corinthians Paulista",
@@ -7185,7 +7952,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -7244,7 +8011,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1765,
         "name": "Fluminense FC",
@@ -7303,7 +8070,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -7362,7 +8129,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4364,
         "name": "Mirassol FC",
@@ -7421,7 +8188,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -7480,7 +8247,7 @@
       "matchday": 37,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1782,
         "name": "EC Vitória",
@@ -7539,7 +8306,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1768,
         "name": "CA Paranaense",
@@ -7598,7 +8365,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1777,
         "name": "EC Bahia",
@@ -7657,7 +8424,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -7716,7 +8483,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -7775,7 +8542,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1783,
         "name": "CR Flamengo",
@@ -7834,7 +8601,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -7893,7 +8660,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1769,
         "name": "SE Palmeiras",
@@ -7952,7 +8719,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -8011,7 +8778,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 6685,
         "name": "Santos FC",
@@ -8070,7 +8837,7 @@
       "matchday": 38,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-17T05:20:34Z",
+      "lastUpdated": "2026-08-18T05:20:28Z",
       "homeTeam": {
         "id": 1780,
         "name": "CR Vasco da Gama",
