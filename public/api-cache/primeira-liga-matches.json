@@ -6,8 +6,8 @@
     ]
   },
   "resultSet": {
-    "count": 234,
-    "first": "2026-10-25",
+    "count": 288,
+    "first": "2026-08-22",
     "last": "2027-05-16",
     "played": 0
   },
@@ -37,7 +37,3193 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567283,
+      "utcDate": "2026-08-22T14:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "awayTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567279,
+      "utcDate": "2026-08-22T17:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "awayTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567275,
+      "utcDate": "2026-08-22T19:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567278,
+      "utcDate": "2026-08-23T14:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "awayTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567281,
+      "utcDate": "2026-08-23T17:00:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "awayTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567280,
+      "utcDate": "2026-08-23T19:30:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "awayTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567277,
+      "utcDate": "2026-08-24T19:15:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "awayTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567291,
+      "utcDate": "2026-08-28T19:15:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "awayTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567285,
+      "utcDate": "2026-08-29T14:30:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "awayTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567287,
+      "utcDate": "2026-08-29T14:30:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "awayTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567289,
+      "utcDate": "2026-08-29T17:00:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "awayTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567286,
+      "utcDate": "2026-08-30T14:30:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "awayTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567290,
+      "utcDate": "2026-08-30T17:00:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "awayTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567284,
+      "utcDate": "2026-08-30T19:30:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "awayTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567288,
+      "utcDate": "2026-08-31T17:45:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567292,
+      "utcDate": "2026-08-31T19:45:00Z",
+      "status": "TIMED",
+      "matchday": 4,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "awayTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567296,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "awayTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567297,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "awayTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567298,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567299,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "awayTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567300,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "awayTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567301,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "awayTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567293,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "awayTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567294,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "awayTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567295,
+      "utcDate": "2026-09-05T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 5,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "awayTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567282,
+      "utcDate": "2026-09-09T19:15:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "awayTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567276,
+      "utcDate": "2026-09-10T19:15:00Z",
+      "status": "TIMED",
+      "matchday": 3,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "awayTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567302,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "awayTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567303,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "awayTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567304,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567305,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "awayTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567306,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "awayTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567307,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "awayTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567308,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "awayTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567309,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "awayTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567310,
+      "utcDate": "2026-09-12T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 6,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-21T05:20:47Z",
+      "homeTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "awayTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567311,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "awayTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567312,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "awayTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567313,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "awayTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567314,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "awayTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567315,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "awayTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567316,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "awayTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567317,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "awayTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567318,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "awayTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567319,
+      "utcDate": "2026-09-20T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 7,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "awayTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567320,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 1903,
+        "name": "Sport Lisboa e Benfica",
+        "shortName": "SL Benfica",
+        "tla": "BEN",
+        "crest": "https://crests.football-data.org/1903.png"
+      },
+      "awayTeam": {
+        "id": 5543,
+        "name": "Vitória SC",
+        "shortName": "Vitória SC",
+        "tla": "GUI",
+        "crest": "https://crests.football-data.org/5543.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567321,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 6618,
+        "name": "Casa Pia AC",
+        "shortName": "Casa Pia",
+        "tla": "CAS",
+        "crest": "https://crests.football-data.org/6618.png"
+      },
+      "awayTeam": {
+        "id": 5530,
+        "name": "CD Santa Clara",
+        "shortName": "Santa Clara",
+        "tla": "CD ",
+        "crest": "https://crests.football-data.org/5530.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567322,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5527,
+        "name": "Académico de Viseu FC",
+        "shortName": "Acad. Viseu",
+        "tla": "ACV",
+        "crest": "https://crests.football-data.org/5527.png"
+      },
+      "awayTeam": {
+        "id": 582,
+        "name": "GD Estoril Praia",
+        "shortName": "Estoril Praia",
+        "tla": "EST",
+        "crest": "https://crests.football-data.org/582.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567323,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5575,
+        "name": "CS Marítimo",
+        "shortName": "Marítimo",
+        "tla": "CSM",
+        "crest": "https://crests.football-data.org/5575.png"
+      },
+      "awayTeam": {
+        "id": 503,
+        "name": "FC Porto",
+        "shortName": "Porto",
+        "tla": "FCP",
+        "crest": "https://crests.football-data.org/503.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567324,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 712,
+        "name": "FC Arouca",
+        "shortName": "Arouca",
+        "tla": "FCA",
+        "crest": "https://crests.football-data.org/712.png"
+      },
+      "awayTeam": {
+        "id": 9136,
+        "name": "CF Estrela da Amadora",
+        "shortName": "Amadora",
+        "tla": "AMA",
+        "crest": "https://crests.football-data.org/9136.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567325,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5531,
+        "name": "FC Famalicão",
+        "shortName": "Famalicão",
+        "tla": "FAM",
+        "crest": "https://crests.football-data.org/5531.png"
+      },
+      "awayTeam": {
+        "id": 7822,
+        "name": "FC Alverca",
+        "shortName": "Alverca",
+        "tla": "ALV",
+        "crest": "https://crests.football-data.org/7822.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567326,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 5613,
+        "name": "Sporting Clube de Braga",
+        "shortName": "Braga",
+        "tla": "SCB",
+        "crest": "https://crests.football-data.org/5613.png"
+      },
+      "awayTeam": {
+        "id": 498,
+        "name": "Sporting Clube de Portugal",
+        "shortName": "Sporting CP",
+        "tla": "SPO",
+        "crest": "https://crests.football-data.org/498.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567327,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 583,
+        "name": "Moreirense FC",
+        "shortName": "Moreirense",
+        "tla": "MOR",
+        "crest": "https://crests.football-data.org/583.png"
+      },
+      "awayTeam": {
+        "id": 5533,
+        "name": "Gil Vicente FC",
+        "shortName": "Gil Vicente",
+        "tla": "GIL",
+        "crest": "https://crests.football-data.org/5533.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
+        "winner": null
+      },
+      "id": 567328,
+      "utcDate": "2026-10-11T00:00:00Z",
+      "status": "SCHEDULED",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-08-08T15:16:32Z",
+      "homeTeam": {
+        "id": 496,
+        "name": "Rio Ave FC",
+        "shortName": "Rio Ave",
+        "tla": "RIO",
+        "crest": "https://crests.football-data.org/496.png"
+      },
+      "awayTeam": {
+        "id": 5529,
+        "name": "CD Nacional",
+        "shortName": "CD Nacional",
+        "tla": "CDN",
+        "crest": "https://crests.football-data.org/5529.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2187,
+        "name": "Portugal",
+        "code": "POR",
+        "flag": "https://crests.football-data.org/765.svg"
+      },
+      "competition": {
+        "id": 2017,
+        "name": "Primeira Liga",
+        "code": "PPL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PPL.png"
+      },
+      "season": {
+        "id": 2526,
+        "startDate": "2026-08-08",
+        "endDate": "2027-05-16",
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567329,
@@ -96,7 +3282,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567330,
@@ -155,7 +3341,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567331,
@@ -214,7 +3400,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567332,
@@ -273,7 +3459,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567333,
@@ -332,7 +3518,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567334,
@@ -391,7 +3577,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567335,
@@ -450,7 +3636,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567336,
@@ -509,7 +3695,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567337,
@@ -568,7 +3754,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567338,
@@ -627,7 +3813,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567339,
@@ -686,7 +3872,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567340,
@@ -745,7 +3931,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567341,
@@ -804,7 +3990,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567342,
@@ -863,7 +4049,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567343,
@@ -922,7 +4108,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567344,
@@ -981,7 +4167,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567345,
@@ -1040,7 +4226,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567346,
@@ -1099,7 +4285,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567347,
@@ -1158,7 +4344,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567348,
@@ -1217,7 +4403,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567349,
@@ -1276,7 +4462,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567350,
@@ -1335,7 +4521,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567351,
@@ -1394,7 +4580,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567352,
@@ -1453,7 +4639,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567353,
@@ -1512,7 +4698,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567354,
@@ -1571,7 +4757,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567355,
@@ -1630,7 +4816,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567356,
@@ -1689,7 +4875,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567357,
@@ -1748,7 +4934,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567358,
@@ -1807,7 +4993,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567359,
@@ -1866,7 +5052,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567360,
@@ -1925,7 +5111,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567361,
@@ -1984,7 +5170,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567362,
@@ -2043,7 +5229,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567363,
@@ -2102,7 +5288,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567364,
@@ -2161,7 +5347,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567365,
@@ -2220,7 +5406,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567366,
@@ -2279,7 +5465,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567367,
@@ -2338,7 +5524,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567368,
@@ -2397,7 +5583,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567369,
@@ -2456,7 +5642,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567370,
@@ -2515,7 +5701,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567371,
@@ -2574,7 +5760,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567372,
@@ -2633,7 +5819,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567373,
@@ -2692,7 +5878,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567374,
@@ -2751,7 +5937,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567375,
@@ -2810,7 +5996,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567376,
@@ -2869,7 +6055,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567377,
@@ -2928,7 +6114,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567378,
@@ -2987,7 +6173,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567379,
@@ -3046,7 +6232,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567380,
@@ -3105,7 +6291,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567381,
@@ -3164,7 +6350,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567382,
@@ -3223,7 +6409,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567383,
@@ -3282,7 +6468,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567384,
@@ -3341,7 +6527,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567385,
@@ -3400,7 +6586,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567386,
@@ -3459,7 +6645,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567387,
@@ -3518,7 +6704,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567388,
@@ -3577,7 +6763,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567389,
@@ -3636,7 +6822,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567390,
@@ -3695,7 +6881,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567391,
@@ -3754,7 +6940,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567392,
@@ -3813,7 +6999,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567393,
@@ -3872,7 +7058,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567394,
@@ -3931,7 +7117,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567395,
@@ -3990,7 +7176,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567396,
@@ -4049,7 +7235,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567397,
@@ -4108,7 +7294,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567398,
@@ -4167,7 +7353,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567399,
@@ -4226,7 +7412,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567400,
@@ -4285,7 +7471,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567401,
@@ -4344,7 +7530,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567402,
@@ -4403,7 +7589,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567403,
@@ -4462,7 +7648,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567404,
@@ -4521,7 +7707,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567405,
@@ -4580,7 +7766,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567406,
@@ -4639,7 +7825,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567407,
@@ -4698,7 +7884,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567408,
@@ -4757,7 +7943,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567409,
@@ -4816,7 +8002,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567410,
@@ -4875,7 +8061,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567411,
@@ -4934,7 +8120,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567412,
@@ -4993,7 +8179,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567413,
@@ -5052,7 +8238,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567414,
@@ -5111,7 +8297,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567415,
@@ -5170,7 +8356,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567416,
@@ -5229,7 +8415,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567417,
@@ -5288,7 +8474,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567418,
@@ -5347,7 +8533,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567419,
@@ -5406,7 +8592,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567420,
@@ -5465,7 +8651,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567421,
@@ -5524,7 +8710,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567422,
@@ -5583,7 +8769,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567423,
@@ -5642,7 +8828,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567424,
@@ -5701,7 +8887,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567425,
@@ -5760,7 +8946,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567426,
@@ -5819,7 +9005,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567427,
@@ -5878,7 +9064,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567428,
@@ -5937,7 +9123,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567429,
@@ -5996,7 +9182,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567430,
@@ -6055,7 +9241,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567431,
@@ -6114,7 +9300,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567432,
@@ -6173,7 +9359,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567433,
@@ -6232,7 +9418,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567434,
@@ -6291,7 +9477,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567435,
@@ -6350,7 +9536,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567436,
@@ -6409,7 +9595,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567437,
@@ -6468,7 +9654,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567438,
@@ -6527,7 +9713,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567439,
@@ -6586,7 +9772,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567440,
@@ -6645,7 +9831,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567441,
@@ -6704,7 +9890,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567442,
@@ -6763,7 +9949,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567443,
@@ -6822,7 +10008,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567444,
@@ -6881,7 +10067,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567445,
@@ -6940,7 +10126,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567446,
@@ -6999,7 +10185,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567447,
@@ -7058,7 +10244,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567448,
@@ -7117,7 +10303,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567449,
@@ -7176,7 +10362,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567450,
@@ -7235,7 +10421,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567451,
@@ -7294,7 +10480,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567452,
@@ -7353,7 +10539,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567453,
@@ -7412,7 +10598,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567454,
@@ -7471,7 +10657,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567455,
@@ -7530,7 +10716,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567456,
@@ -7589,7 +10775,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567457,
@@ -7648,7 +10834,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567458,
@@ -7707,7 +10893,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567459,
@@ -7766,7 +10952,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567460,
@@ -7825,7 +11011,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567461,
@@ -7884,7 +11070,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567462,
@@ -7943,7 +11129,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567463,
@@ -8002,7 +11188,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567464,
@@ -8061,7 +11247,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567465,
@@ -8120,7 +11306,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567466,
@@ -8179,7 +11365,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567467,
@@ -8238,7 +11424,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567468,
@@ -8297,7 +11483,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567469,
@@ -8356,7 +11542,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567470,
@@ -8415,7 +11601,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567471,
@@ -8474,7 +11660,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567472,
@@ -8533,7 +11719,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567473,
@@ -8592,7 +11778,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567474,
@@ -8651,7 +11837,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567475,
@@ -8710,7 +11896,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567476,
@@ -8769,7 +11955,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567477,
@@ -8828,7 +12014,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567478,
@@ -8887,7 +12073,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567479,
@@ -8946,7 +12132,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567480,
@@ -9005,7 +12191,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567481,
@@ -9064,7 +12250,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567482,
@@ -9123,7 +12309,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567483,
@@ -9182,7 +12368,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567484,
@@ -9241,7 +12427,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567485,
@@ -9300,7 +12486,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567486,
@@ -9359,7 +12545,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567487,
@@ -9418,7 +12604,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567488,
@@ -9477,7 +12663,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567489,
@@ -9536,7 +12722,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567490,
@@ -9595,7 +12781,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567491,
@@ -9654,7 +12840,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567492,
@@ -9713,7 +12899,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567493,
@@ -9772,7 +12958,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567494,
@@ -9831,7 +13017,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567495,
@@ -9890,7 +13076,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567496,
@@ -9949,7 +13135,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567497,
@@ -10008,7 +13194,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567498,
@@ -10067,7 +13253,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567499,
@@ -10126,7 +13312,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567500,
@@ -10185,7 +13371,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567501,
@@ -10244,7 +13430,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567502,
@@ -10303,7 +13489,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567503,
@@ -10362,7 +13548,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567504,
@@ -10421,7 +13607,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567505,
@@ -10480,7 +13666,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567506,
@@ -10539,7 +13725,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567507,
@@ -10598,7 +13784,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567508,
@@ -10657,7 +13843,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567509,
@@ -10716,7 +13902,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567510,
@@ -10775,7 +13961,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567511,
@@ -10834,7 +14020,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567512,
@@ -10893,7 +14079,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567513,
@@ -10952,7 +14138,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567514,
@@ -11011,7 +14197,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567515,
@@ -11070,7 +14256,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567516,
@@ -11129,7 +14315,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567517,
@@ -11188,7 +14374,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567518,
@@ -11247,7 +14433,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567519,
@@ -11306,7 +14492,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567520,
@@ -11365,7 +14551,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567521,
@@ -11424,7 +14610,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567522,
@@ -11483,7 +14669,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567523,
@@ -11542,7 +14728,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567524,
@@ -11601,7 +14787,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567525,
@@ -11660,7 +14846,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567526,
@@ -11719,7 +14905,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567527,
@@ -11778,7 +14964,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567528,
@@ -11837,7 +15023,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567529,
@@ -11896,7 +15082,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567530,
@@ -11955,7 +15141,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567531,
@@ -12014,7 +15200,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567532,
@@ -12073,7 +15259,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567533,
@@ -12132,7 +15318,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567534,
@@ -12191,7 +15377,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567535,
@@ -12250,7 +15436,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567536,
@@ -12309,7 +15495,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567537,
@@ -12368,7 +15554,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567538,
@@ -12427,7 +15613,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567539,
@@ -12486,7 +15672,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567540,
@@ -12545,7 +15731,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567541,
@@ -12604,7 +15790,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567542,
@@ -12663,7 +15849,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567543,
@@ -12722,7 +15908,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567544,
@@ -12781,7 +15967,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567552,
@@ -12840,7 +16026,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567553,
@@ -12899,7 +16085,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567545,
@@ -12958,7 +16144,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567546,
@@ -13017,7 +16203,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567547,
@@ -13076,7 +16262,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567548,
@@ -13135,7 +16321,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567549,
@@ -13194,7 +16380,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567550,
@@ -13253,7 +16439,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567551,
@@ -13312,7 +16498,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567554,
@@ -13371,7 +16557,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567555,
@@ -13430,7 +16616,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567556,
@@ -13489,7 +16675,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567557,
@@ -13548,7 +16734,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567558,
@@ -13607,7 +16793,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567559,
@@ -13666,7 +16852,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567560,
@@ -13725,7 +16911,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567561,
@@ -13784,7 +16970,7 @@
         "id": 2526,
         "startDate": "2026-08-08",
         "endDate": "2027-05-16",
-        "currentMatchday": 2,
+        "currentMatchday": 3,
         "winner": null
       },
       "id": 567562,
