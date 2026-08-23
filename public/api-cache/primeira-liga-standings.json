@@ -31,6 +31,44 @@
         {
           "position": 1,
           "team": {
+            "id": 712,
+            "name": "FC Arouca",
+            "shortName": "Arouca",
+            "tla": "FCA",
+            "crest": "https://crests.football-data.org/712.png"
+          },
+          "playedGames": 3,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 0,
+          "points": 7,
+          "goalsFor": 5,
+          "goalsAgainst": 0,
+          "goalDifference": 5
+        },
+        {
+          "position": 2,
+          "team": {
+            "id": 503,
+            "name": "FC Porto",
+            "shortName": "Porto",
+            "tla": "FCP",
+            "crest": "https://crests.football-data.org/503.png"
+          },
+          "playedGames": 3,
+          "form": null,
+          "won": 2,
+          "draw": 1,
+          "lost": 0,
+          "points": 7,
+          "goalsFor": 4,
+          "goalsAgainst": 0,
+          "goalDifference": 4
+        },
+        {
+          "position": 3,
+          "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
             "shortName": "Sporting CP",
@@ -48,7 +86,7 @@
           "goalDifference": 3
         },
         {
-          "position": 2,
+          "position": 4,
           "team": {
             "id": 5575,
             "name": "CS Marítimo",
@@ -67,7 +105,7 @@
           "goalDifference": 2
         },
         {
-          "position": 3,
+          "position": 5,
           "team": {
             "id": 5530,
             "name": "CD Santa Clara",
@@ -84,44 +122,6 @@
           "goalsFor": 4,
           "goalsAgainst": 2,
           "goalDifference": 2
-        },
-        {
-          "position": 4,
-          "team": {
-            "id": 712,
-            "name": "FC Arouca",
-            "shortName": "Arouca",
-            "tla": "FCA",
-            "crest": "https://crests.football-data.org/712.png"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 5,
-          "goalsAgainst": 0,
-          "goalDifference": 5
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 503,
-            "name": "FC Porto",
-            "shortName": "Porto",
-            "tla": "FCP",
-            "crest": "https://crests.football-data.org/503.png"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 4,
-          "goalsAgainst": 0,
-          "goalDifference": 4
         },
         {
           "position": 6,
