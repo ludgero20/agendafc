@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 366,
+    "count": 365,
     "first": "2026-08-24",
     "last": "2027-05-30",
     "played": 0
@@ -19,65 +19,6 @@
     "emblem": "https://crests.football-data.org/laliga.png"
   },
   "matches": [
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2518,
-        "startDate": "2026-08-16",
-        "endDate": "2027-05-30",
-        "currentMatchday": 2,
-        "winner": null
-      },
-      "id": 564639,
-      "utcDate": "2026-08-24T17:30:00Z",
-      "status": "TIMED",
-      "matchday": 2,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-08-24T05:20:36Z",
-      "homeTeam": {
-        "id": 79,
-        "name": "CA Osasuna",
-        "shortName": "Osasuna",
-        "tla": "OSA",
-        "crest": "https://crests.football-data.org/79.png"
-      },
-      "awayTeam": {
-        "id": 88,
-        "name": "Levante UD",
-        "shortName": "Levante",
-        "tla": "LEV",
-        "crest": "https://crests.football-data.org/88.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
     {
       "area": {
         "id": 2224,
