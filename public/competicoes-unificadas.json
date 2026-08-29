@@ -390,7 +390,7 @@
       "tipo": "Basquete",
       "descricao": "Acompanhe as tabelas de classificação e os jogos da NBA.",
       "ordem": 7,
-      "ativo": true,
+      "ativo": false,
       "bandeiraEmoji": "🏀"
     },
     {
@@ -400,7 +400,7 @@
       "tipo": "Mundial",
       "descricao": "Seleções já classificadas, grupos, jogos e tabela de classificação da Copa do Mundo FIFA 2026.",
       "ordem": 2,
-      "ativo": true,
+      "ativo": false,
       "bandeiraEmoji": "⚽"
     }
   ],
