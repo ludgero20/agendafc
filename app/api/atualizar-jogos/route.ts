@@ -19,19 +19,45 @@ const dicionarioCampeonatos: Record<string, string> = {
   "copa libertadores": "Copa Libertadores da América"
 };
 
+// Função auxiliar para limpar tags HTML e pegar apenas o texto
+function extrairTextoHtml(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export async function GET(request: Request) {
   try {
-    if (!process.env.GEMINI_API_KEY) {
-      return NextResponse.json({ success: false, error: "GEMINI_API_KEY não encontrada." }, { status: 500 });
-    }
-    if (!process.env.GITHUB_TOKEN) {
-      return NextResponse.json({ success: false, error: "GITHUB_TOKEN não encontrada." }, { status: 500 });
+    if (!process.env.GEMINI_API_KEY || !process.env.GITHUB_TOKEN) {
+      return NextResponse.json({ success: false, error: "Chaves de ambiente não configuradas na Vercel." }, { status: 500 });
     }
 
     const hoje = new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
 
-    const prompt = `Hoje é dia ${hoje}. Pesquise no Google em tempo real a agenda completa de transmissões de jogos de futebol do Brasil e internacionais para HOJE e para os PRÓXIMOS 3 DIAS. 
-    Retorne EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem markdown (sem crases de código).
+    // 1. FAZ O DOWNLOAD DA PROGRAMAÇÃO DO GOAL.COM
+    const goalUrl = "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315";
+    const goalResponse = await fetch(goalUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      },
+      next: { revalidate: 0 } // não usar cache velho
+    });
+
+    if (!goalResponse.ok) {
+      throw new Error(`Falha ao acessar o Goal.com (Status: ${goalResponse.status})`);
+    }
+
+    const htmlGoal = await goalResponse.text();
+    const textoLimpo = extrairTextoHtml(htmlGoal);
+
+    // 2. MONTA O PROMPT PARA O GEMINI FREE TIER
+    const prompt = `Hoje é dia ${hoje}. Aja como um extrator de dados de futebol.
+    
+    Analise o texto abaixo retirado da programação do Goal.com e extraia os jogos de futebol com transmissão.
+    Retorne EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown:
 
     REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
     - Campeonato Italiano -> Use "Serie A"
@@ -50,22 +76,25 @@ export async function GET(request: Request) {
     REGRAS PARA DIVISÃO E FASE:
     - Se for "Brasileirão Série B", coloque "campeonato": "Brasileirão" e "divisao": "Série B".
     - Se for "Brasileirão Série C", coloque "campeonato": "Brasileirão" e "divisao": "Série C".
-    - Para campeonatos de mata-mata, extraia a fase no campo "fase" (ex: "oitavas", "quartas", "semifinal", "final"). Se for pontos corridos, "fase": null.
+    - Para campeonatos de mata-mata, extraia a fase no campo "fase" (ex: "oitavas", "quartas", "semifinal", "final"). Se for pontos corridos normais, deixe "fase": null.
 
     ESTRUTURA DO OBJETO JSON:
-    - id: numero aleatorio inteiro
+    - id: gere um numero aleatorio inteiro
     - data: formato YYYY-MM-DD
-    - hora: formato HHhMM (ex: 16h00)
+    - hora: formato HHhMM (com h minúsculo, ex: 16h00)
     - campeonato: nome normalizado
-    - canal: canais separados por virgula (ex: "TV Globo, Premiere, SporTV")
-    - time1: time mandante
-    - time2: time visitante
-    - divisao: nome da divisão ou null
+    - canal: canais separados por virgula
+    - time1: mandante
+    - time2: visitante
+    - divisao: nome da divisao ou null
     - fase: nome da fase ou null
     - evento_nome: null
-    - evento_descricao: null`;
+    - evento_descricao: null
 
-    // CHAMA O GEMINI COM PESQUISA EM TEMPO REAL (GOOGLE SEARCH GROUNDING)
+    TEXTO DA PROGRAMAÇÃO ESPORTIVA:
+    ${textoLimpo.slice(0, 40000)}`;
+
+    // 3. CHAMA O GEMINI 3.6 FLASH NO PLANO 100% GRATUITO
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     
     const geminiResponse = await fetch(geminiUrl, {
@@ -73,7 +102,7 @@ export async function GET(request: Request) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        tools: [{ googleSearch: {} }] // 🔍 Busca no Google ativada
+        generationConfig: { responseMimeType: "application/json" }
       })
     });
 
@@ -84,17 +113,15 @@ export async function GET(request: Request) {
     }
 
     if (!geminiData.candidates || geminiData.candidates.length === 0) {
-      return NextResponse.json({ success: false, error: "O Gemini não retornou respostas.", detalhe: geminiData }, { status: 400 });
+      return NextResponse.json({ success: false, error: "O Gemini não retornou candidatos de resposta." }, { status: 400 });
     }
 
     let textoGerado = geminiData.candidates[0].content.parts[0].text;
-    
-    // Limpeza de marcações markdown caso a IA inclua ```json
     textoGerado = textoGerado.replace(/```json/g, '').replace(/```/g, '').trim();
 
     let jogosGerados = JSON.parse(textoGerado);
 
-    // FILTROS DE NORMALIZAÇÃO E ANTI-DUPLICAÇÃO
+    // 4. FILTROS JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
     const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
@@ -118,9 +145,9 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // SALVANDO NO REPOSITÓRIO DO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO DO GITHUB
-    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
+    // 5. COMMIT DIRETO NO GITHUB
+    const githubOwner = "ludgero20"; // 🔴 COLOQUE SEU USUÁRIO GITHUB
+    const githubRepo = "agendafc"; // 🔴 COLOQUE SEU REPOSITÓRIO GITHUB
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
@@ -134,14 +161,14 @@ export async function GET(request: Request) {
     const repoInfo = await repoInfoResponse.json();
 
     if (!repoInfo.sha) {
-      return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no GitHub.", detalheGithub: repoInfo }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Não foi possível encontrar public/jogos.json no repositório.", detalheGithub: repoInfo }, { status: 400 });
     }
 
     const commitResponse = await fetch(githubUrl, {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: "🤖 Atualização automática da agenda via Gemini (Busca em Tempo Real)",
+        message: "🤖 Atualização automática da agenda via Goal.com + Gemini",
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -154,7 +181,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: "Jogos atualizados com sucesso via busca Google!", 
+      message: "Jogos atualizados com sucesso via Goal.com!", 
       quantidade: jogosLimpos.length 
     });
 
