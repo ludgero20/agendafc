@@ -21,18 +21,17 @@ const dicionarioCampeonatos: Record<string, string> = {
 
 export async function GET(request: Request) {
   try {
-    // 1. VERIFICAÇÃO DE VARIÁVEIS DE AMBIENTE
     if (!process.env.GEMINI_API_KEY) {
-      return NextResponse.json({ success: false, error: "A variável GEMINI_API_KEY não foi configurada na Vercel." }, { status: 500 });
+      return NextResponse.json({ success: false, error: "GEMINI_API_KEY não encontrada." }, { status: 500 });
     }
     if (!process.env.GITHUB_TOKEN) {
-      return NextResponse.json({ success: false, error: "A variável GITHUB_TOKEN não foi configurada na Vercel." }, { status: 500 });
+      return NextResponse.json({ success: false, error: "GITHUB_TOKEN não encontrada." }, { status: 500 });
     }
 
     const hoje = new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
 
-    const prompt = `Hoje é dia ${hoje}. Pesquise na internet a agenda de jogos de futebol do Brasil e internacionais para HOJE e para os PRÓXIMOS 3 DIAS. 
-    Retorne EXCLUSIVAMENTE um array JSON puro (sem markdown, sem blocos de código com crases) contendo um objeto para cada jogo.
+    const prompt = `Hoje é dia ${hoje}. Pesquise no Google em tempo real a agenda completa de transmissões de jogos de futebol do Brasil e internacionais para HOJE e para os PRÓXIMOS 3 DIAS. 
+    Retorne EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem markdown (sem crases de código).
 
     REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
     - Campeonato Italiano -> Use "Serie A"
@@ -51,14 +50,14 @@ export async function GET(request: Request) {
     REGRAS PARA DIVISÃO E FASE:
     - Se for "Brasileirão Série B", coloque "campeonato": "Brasileirão" e "divisao": "Série B".
     - Se for "Brasileirão Série C", coloque "campeonato": "Brasileirão" e "divisao": "Série C".
-    - Para campeonatos de mata-mata, extraia a fase no campo "fase" (ex: "oitavas", "quartas", "semifinal", "final"). Se for pontos corridos normais, deixe "fase": null.
+    - Para campeonatos de mata-mata, extraia a fase no campo "fase" (ex: "oitavas", "quartas", "semifinal", "final"). Se for pontos corridos, "fase": null.
 
     ESTRUTURA DO OBJETO JSON:
     - id: numero aleatorio inteiro
     - data: formato YYYY-MM-DD
     - hora: formato HHhMM (ex: 16h00)
     - campeonato: nome normalizado
-    - canal: canais separados por virgula
+    - canal: canais separados por virgula (ex: "TV Globo, Premiere, SporTV")
     - time1: time mandante
     - time2: time visitante
     - divisao: nome da divisão ou null
@@ -66,7 +65,7 @@ export async function GET(request: Request) {
     - evento_nome: null
     - evento_descricao: null`;
 
-    // 2. CHAMA O GEMINI
+    // CHAMA O GEMINI COM PESQUISA EM TEMPO REAL (GOOGLE SEARCH GROUNDING)
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     
     const geminiResponse = await fetch(geminiUrl, {
@@ -74,29 +73,28 @@ export async function GET(request: Request) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        tools: [{ googleSearch: {} }]
+        tools: [{ googleSearch: {} }] // 🔍 Busca no Google ativada
       })
     });
 
     const geminiData = await geminiResponse.json();
 
-    // Se o Google retornou erro, mostramos o erro exato do Google
     if (geminiData.error) {
       return NextResponse.json({ success: false, error: `Erro da API do Gemini: ${geminiData.error.message}` }, { status: 400 });
     }
 
     if (!geminiData.candidates || geminiData.candidates.length === 0) {
-      return NextResponse.json({ success: false, error: "O Gemini não retornou nenhum candidato de resposta.", detalhe: geminiData }, { status: 400 });
+      return NextResponse.json({ success: false, error: "O Gemini não retornou respostas.", detalhe: geminiData }, { status: 400 });
     }
 
     let textoGerado = geminiData.candidates[0].content.parts[0].text;
     
-    // Limpeza de crases markdown se a IA colocar (ex: ```json ... ```)
+    // Limpeza de marcações markdown caso a IA inclua ```json
     textoGerado = textoGerado.replace(/```json/g, '').replace(/```/g, '').trim();
 
     let jogosGerados = JSON.parse(textoGerado);
 
-    // 3. FILTROS DE SEGURANÇA (Anti-Duplicação e Normalização)
+    // FILTROS DE NORMALIZAÇÃO E ANTI-DUPLICAÇÃO
     const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
@@ -120,9 +118,9 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // 4. SALVANDO NO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 CONFIRME SEU USUÁRIO GITHUB
-    const githubRepo = "agendafc"; // 🔴 CONFIRME SEU REPOSITÓRIO GITHUB
+    // SALVANDO NO REPOSITÓRIO DO GITHUB
+    const githubOwner = "SEU_USUARIO_AQUI"; // 🔴 SEU USUÁRIO DO GITHUB
+    const githubRepo = "SEU_REPOSITORIO_AQUI"; // 🔴 SEU REPOSITÓRIO
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
@@ -136,14 +134,14 @@ export async function GET(request: Request) {
     const repoInfo = await repoInfoResponse.json();
 
     if (!repoInfo.sha) {
-      return NextResponse.json({ success: false, error: "Não foi possível encontrar o arquivo public/jogos.json no repositório do GitHub.", detalheGithub: repoInfo }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no GitHub.", detalheGithub: repoInfo }, { status: 400 });
     }
 
     const commitResponse = await fetch(githubUrl, {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: "🤖 Atualização automática da agenda via Gemini",
+        message: "🤖 Atualização automática da agenda via Gemini (Busca em Tempo Real)",
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -151,12 +149,12 @@ export async function GET(request: Request) {
 
     if (!commitResponse.ok) {
       const commitError = await commitResponse.json();
-      return NextResponse.json({ success: false, error: "Erro ao fazer commit no GitHub.", detalhe: commitError }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Erro ao commitar no GitHub.", detalhe: commitError }, { status: 400 });
     }
 
     return NextResponse.json({ 
       success: true, 
-      message: "Jogos atualizados com sucesso!", 
+      message: "Jogos atualizados com sucesso via busca Google!", 
       quantidade: jogosLimpos.length 
     });
 
