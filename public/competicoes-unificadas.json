@@ -386,7 +386,7 @@
     {
      "id": 35,
       "nome": "NBA",
-      "slug": "nba",
+      //"slug": "nba",
       "pais": "Estados Unidos",
       "tipo": "Basquete",
       "descricao": "Acompanhe as tabelas de classificação e os jogos da NBA.",
@@ -397,7 +397,7 @@
     {
      "id": 36,
       "nome": "Copa do Mundo FIFA 2026",
-      "slug": "copa-do-mundo-2026",
+      //"slug": "copa-do-mundo-2026",
       "pais": "Estados Unidos, Canadá e México",
       "tipo": "Mundial",
       "descricao": "Seleções já classificadas, grupos, jogos e tabela de classificação da Copa do Mundo FIFA 2026.",
