@@ -119,8 +119,8 @@ export async function GET(request: Request) {
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
     // SALVANDO NO REPOSITÓRIO DO GITHUB
-    const githubOwner = "SEU_USUARIO_AQUI"; // 🔴 SEU USUÁRIO DO GITHUB
-    const githubRepo = "SEU_REPOSITORIO_AQUI"; // 🔴 SEU REPOSITÓRIO
+    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO DO GITHUB
+    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
