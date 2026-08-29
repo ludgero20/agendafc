@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 503,
+            "name": "FC Porto",
+            "shortName": "Porto",
+            "tla": "FCP",
+            "crest": "https://crests.football-data.org/503.png"
+          },
+          "playedGames": 4,
+          "form": null,
+          "won": 4,
+          "draw": 0,
+          "lost": 0,
+          "points": 12,
+          "goalsFor": 9,
+          "goalsAgainst": 0,
+          "goalDifference": 9
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 498,
             "name": "Sporting Clube de Portugal",
             "shortName": "Sporting CP",
@@ -46,25 +65,6 @@
           "goalsFor": 12,
           "goalsAgainst": 5,
           "goalDifference": 7
-        },
-        {
-          "position": 2,
-          "team": {
-            "id": 503,
-            "name": "FC Porto",
-            "shortName": "Porto",
-            "tla": "FCP",
-            "crest": "https://crests.football-data.org/503.png"
-          },
-          "playedGames": 3,
-          "form": null,
-          "won": 3,
-          "draw": 0,
-          "lost": 0,
-          "points": 9,
-          "goalsFor": 6,
-          "goalsAgainst": 0,
-          "goalDifference": 6
         },
         {
           "position": 3,
@@ -246,18 +246,18 @@
             "tla": "ACV",
             "crest": "https://crests.football-data.org/5527.png"
           },
-          "playedGames": 3,
+          "playedGames": 4,
           "form": null,
           "won": 0,
           "draw": 2,
-          "lost": 1,
+          "lost": 2,
           "points": 2,
           "goalsFor": 4,
-          "goalsAgainst": 5,
-          "goalDifference": -1
+          "goalsAgainst": 8,
+          "goalDifference": -4
         },
         {
-          "position": 13,
+          "position": 12,
           "team": {
             "id": 7822,
             "name": "FC Alverca",
