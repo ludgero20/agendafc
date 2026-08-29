@@ -13,14 +13,18 @@ async function carregarDadosDosJogos() {
   try {
     const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
+    const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json"); // NOVO: Caminho do arquivo manual
 
-    const [competicoesFile, jogosFile] = await Promise.all([
+    // NOVO: Lê os 3 arquivos. O .catch garante que não quebre se o manual não existir ainda.
+    const [competicoesFile, jogosFile, jogosManuaisFile] = await Promise.all([
       fs.readFile(competicoesPath, "utf-8"),
       fs.readFile(jogosPath, "utf-8"),
+      fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}') 
     ]);
 
     const competicoesData = JSON.parse(competicoesFile);
     const jogosData = JSON.parse(jogosFile);
+    const jogosManuaisData = JSON.parse(jogosManuaisFile); // NOVO: Parse do manual
 
     const competicoesAtivas: Record<string, CompeticaoInfo> = 
       competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
@@ -39,7 +43,12 @@ async function carregarDadosDosJogos() {
     const hojeDateObj = new Date(hojeStr + 'T12:00:00Z');
     const amanhaDateObj = new Date(amanhaStr + 'T12:00:00Z');
 
-    const todosOsJogos: JogoSemana[] = jogosData.jogosSemana || [];
+    // NOVO: Juntando os jogos gerados pela IA com os seus jogos manuais
+    const todosOsJogos: JogoSemana[] = [
+      ...(jogosData.jogosSemana || []),
+      ...(jogosManuaisData.jogosSemana || [])
+    ];
+
     const jogosDeHoje = todosOsJogos.filter(jogo => jogo.data === hojeStr);
     const jogosDeAmanha = todosOsJogos.filter(jogo => jogo.data === amanhaStr);
 

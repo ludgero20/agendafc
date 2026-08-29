@@ -2,6 +2,7 @@ import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
 import SemanaListClient from '../components/SemanaListClient';
+
 export const revalidate = 3600;
 
 // Tipos
@@ -29,14 +30,18 @@ async function carregarDadosDaSemana() {
   try {
     const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
+    const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json"); // NOVO
 
-    const [competicoesFile, jogosFile] = await Promise.all([
+    // NOVO: Lê os 3 arquivos simultaneamente
+    const [competicoesFile, jogosFile, jogosManuaisFile] = await Promise.all([
       fs.readFile(competicoesPath, "utf-8"),
       fs.readFile(jogosPath, "utf-8"),
+      fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}') // NOVO
     ]);
 
     const competicoesData = JSON.parse(competicoesFile);
     const jogosData = JSON.parse(jogosFile);
+    const jogosManuaisData = JSON.parse(jogosManuaisFile); // NOVO
 
     const competicoesAtivas: Record<string, CompeticaoInfo> = 
       competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
@@ -48,7 +53,11 @@ async function carregarDadosDaSemana() {
     const hojeDate = new Date(agora.toLocaleString("en-US", {timeZone: "America/Sao_Paulo"}));
     const hojeStr = hojeDate.toISOString().split('T')[0];
 
-    const todosOsJogos: JogoSemana[] = jogosData.jogosSemana || [];
+    // NOVO: Junta os jogos automáticos da IA com os jogos inseridos manualmente
+    const todosOsJogos: JogoSemana[] = [
+      ...(jogosData.jogosSemana || []),
+      ...(jogosManuaisData.jogosSemana || [])
+    ];
 
     const jogosDaSemanaFiltrados = todosOsJogos
       .map(jogo => ({...jogo, data: jogo.data.includes('/') ? `${hojeDate.getFullYear()}-${jogo.data.split('/')[1]}-${jogo.data.split('/')[0]}` : jogo.data }))
