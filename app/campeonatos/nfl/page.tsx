@@ -9,9 +9,8 @@ export const metadata: Metadata = {
   description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências e divisões.",
 };
 
-export const revalidate = 3600; // Atualiza sozinho a cada 1 hora
+export const revalidate = 3600;
 
-// Tipos 100% compatíveis com a sua estrutura atual
 type TimeTabelaNFL = {
   teamName: string;      
   teamLogo: string;      
@@ -36,7 +35,7 @@ type JogoNFL = {
   strStatus: string;
 };
 
-// 1. BUSCA CLASSIFICAÇÃO DA NFL DIRETO NA API DA ESPN
+// 1. TABELA DA NFL (ESPN)
 async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   try {
     const res = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
@@ -47,7 +46,6 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
     const data = await res.json();
     const timesFormatados: TimeTabelaNFL[] = [];
 
-    // A ESPN organiza por Conferências (AFC/NFC) e Divisões (East, North, South, West)
     const conferencias = data?.children || [];
     conferencias.forEach((conf: any) => {
       const nomeConferencia = conf.name || (conf.abbreviation === 'AFC' ? 'American Football Conference' : 'National Football Conference');
@@ -86,7 +84,6 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
     throw new Error("Lista vazia da ESPN");
 
   } catch (error) {
-    // Fallback para arquivo local se a API estiver fora
     try {
       const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
       const jsonData = await fs.readFile(filePath, "utf-8");
@@ -97,10 +94,9 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. BUSCA JOGOS E PLACARES DE TODAS AS SEMANAS NA API DA ESPN
+// 2. JOGOS DA NFL COM FUSO HORÁRIO DE BRASÍLIA CORRIGIDO
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
-    // Busca a temporada completa (semanas 1 a 18 + pós-temporada)
     const res = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=1000", {
       next: { revalidate: 3600 }
     });
@@ -109,21 +105,26 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
     const data = await res.json();
     const eventos = data?.events || [];
 
+    // Formatador infalível que converte para o dia real no Brasil
+    const dateFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+
     const jogosFormatados: JogoNFL[] = eventos.map((ev: any) => {
       const comp = ev.competitions?.[0];
       const home = comp?.competitors?.find((c: any) => c.homeAway === 'home');
       const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
 
-      const dataISO = ev.date ? new Date(ev.date) : new Date();
-      const dateEvent = dataISO.toISOString().split('T')[0];
-      const strTime = dataISO.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+      const dataObj = ev.date ? new Date(ev.date) : new Date();
+      
+      // 🎯 CORREÇÃO: Garante YYYY-MM-DD e HH:MM no fuso de Brasília!
+      const dateEvent = dateFormatter.format(dataObj); 
+      const strTime = dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
 
       const finalizado = ev.status?.type?.completed;
       const emAndamento = ev.status?.type?.state === 'in';
 
       return {
         idEvent: String(ev.id),
-        intRound: String(ev.week?.number || '1'), // Número da semana da NFL (1 a 18)
+        intRound: String(ev.week?.number || '1'),
         dateEvent: dateEvent,
         strTime: strTime,
         strHomeTeam: home?.team?.displayName || 'Casa',
@@ -163,7 +164,7 @@ export default async function NFLPage() {
     );
   }
 
-  // Identifica a rodada atual (semana atual)
+  // Identifica a rodada atual
   const jogosNaoFinalizados = todosOsJogos
     .filter(j => j.strStatus !== 'Match Finished')
     .sort((a, b) => a.dateEvent.localeCompare(b.dateEvent));
@@ -245,7 +246,6 @@ export default async function NFLPage() {
           ))}
         </div>
 
-        {/* Componente Interativo de Rodadas da NFL */}
         <RodadaNFLClient 
           todosOsJogos={todosOsJogos} 
           rodadaInicial={rodadaInicial}
