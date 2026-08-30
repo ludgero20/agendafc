@@ -13,18 +13,38 @@ async function carregarDadosDosJogos() {
   try {
     const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
-    const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json"); // NOVO: Caminho do arquivo manual
+    const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json"); 
+    const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    // NOVO: Lê os 3 arquivos. O .catch garante que não quebre se o manual não existir ainda.
-    const [competicoesFile, jogosFile, jogosManuaisFile] = await Promise.all([
+    // Lê os 4 arquivos. O .catch garante que não quebre se o manual não existir ainda.
+    const [competicoesFile, jogosFile, jogosManuaisFile, f1File] = await Promise.all([
       fs.readFile(competicoesPath, "utf-8"),
       fs.readFile(jogosPath, "utf-8"),
-      fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}') 
+      fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
+      fs.readFile(f1Path, "utf-8").catch(() => '[]') 
     ]);
 
     const competicoesData = JSON.parse(competicoesFile);
     const jogosData = JSON.parse(jogosFile);
-    const jogosManuaisData = JSON.parse(jogosManuaisFile); // NOVO: Parse do manual
+    const jogosManuaisData = JSON.parse(jogosManuaisFile);
+    const f1Data = JSON.parse(f1File);
+
+    // 🏎️ TRANSFORMAÇÃO AUTOMÁTICA DAS SESSÕES DA F1 NA GRADE DE TV:
+const sessoesF1ComoJogos: JogoSemana[] = (Array.isArray(f1Data) ? f1Data : []).flatMap((gp: any, gpIndex: number) => 
+  (gp.sessoes || []).map((sessao: any, sessaoIndex: number) => ({
+    id: 90000 + (gpIndex * 10) + sessaoIndex,
+    data: sessao.data,
+    hora: (sessao.hora || '').replace(':', 'h'), // Garante formato 15h30
+    campeonato: "Fórmula 1",
+    canal: Array.isArray(sessao.transmissao) ? sessao.transmissao.join(', ') : sessao.transmissao,
+    time1: null,
+    time2: null,
+    divisao: null,
+    fase: null,
+    evento_nome: sessao.nome,
+    evento_descricao: gp.raceName
+  }))
+);
 
     const competicoesAtivas: Record<string, CompeticaoInfo> = 
       competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
@@ -46,7 +66,8 @@ async function carregarDadosDosJogos() {
     // NOVO: Juntando os jogos gerados pela IA com os seus jogos manuais
     const todosOsJogos: JogoSemana[] = [
       ...(jogosData.jogosSemana || []),
-      ...(jogosManuaisData.jogosSemana || [])
+      ...(jogosManuaisData.jogosSemana || []),
+      ...sessoesF1ComoJogos
     ];
 
     const jogosDeHoje = todosOsJogos.filter(jogo => jogo.data === hojeStr);
