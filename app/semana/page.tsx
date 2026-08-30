@@ -5,7 +5,7 @@ import SemanaListClient from '../components/SemanaListClient';
 
 export const revalidate = 3600;
 
-// Tipos 100% idênticos aos do seu SemanaListClient
+// Tipos 100% alinhados com o SemanaListClient
 type JogoSemana = {
   id: number;
   data: string;
@@ -27,6 +27,49 @@ type CompeticaoInfo = {
   ativo: boolean; 
 };
 
+// 📱 LEITOR DA SUA PLANILHA DO GOOGLE SHEETS
+async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
+  try {
+    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
+    const res = await fetch(sheetUrl, { next: { revalidate: 3600 } });
+    if (!res.ok) return [];
+
+    const tsvText = await res.text();
+    const linhas = tsvText.split('\n').map(l => l.trim()).filter(Boolean);
+    if (linhas.length <= 1) return [];
+
+    return linhas.slice(1).map((linha, index) => {
+      const colunas = linha.split('\t');
+      const [data, hora, campeonato, time1, time2, canal, divisao, fase, evento_nome, evento_descricao] = colunas;
+
+      let dataNormalizada = (data || '').trim();
+      if (dataNormalizada.includes('/')) {
+        const partes = dataNormalizada.split('/');
+        if (partes.length === 3) {
+          dataNormalizada = `${partes[2]}-${partes[1].padStart(2, '0')}-${partes[0].padStart(2, '0')}`;
+        }
+      }
+
+      return {
+        id: 70000 + index,
+        data: dataNormalizada,
+        hora: (hora || '').replace(':', 'h').trim(),
+        campeonato: (campeonato || '').trim(),
+        canal: (canal || '').trim(),
+        time1: time1?.trim() || null,
+        time2: time2?.trim() || null,
+        divisao: divisao?.trim() || undefined,
+        fase: fase?.trim() || undefined,
+        evento_nome: evento_nome?.trim() || null,
+        evento_descricao: evento_descricao?.trim() || null,
+      };
+    });
+  } catch (error) {
+    console.error("Erro ao ler Google Sheets na página da semana:", error);
+    return [];
+  }
+}
+
 async function carregarDadosDaSemana() {
   try {
     const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
@@ -34,12 +77,13 @@ async function carregarDadosDaSemana() {
     const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json");
     const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    // 1. Lê os 4 arquivos em paralelo com proteção contra falhas
-    const [competicoesFile, jogosFile, jogosManuaisFile, f1File] = await Promise.all([
+    // Lê os 4 arquivos e o Google Sheets simultaneamente
+    const [competicoesFile, jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
       fs.readFile(competicoesPath, "utf-8").catch(() => '{"competicoes": []}'),
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
-      fs.readFile(f1Path, "utf-8").catch(() => '[]')
+      fs.readFile(f1Path, "utf-8").catch(() => '[]'),
+      getJogosDoGoogleSheets()
     ]);
 
     const competicoesData = JSON.parse(competicoesFile);
@@ -47,7 +91,7 @@ async function carregarDadosDaSemana() {
     const jogosManuaisData = JSON.parse(jogosManuaisFile);
     const f1Data = JSON.parse(f1File);
 
-    // 2. Converte sessões da F1 mantendo time1 como null para o SemanaListClient reconhecer como evento
+    // Converte sessões da F1
     const sessoesF1ComoJogos: JogoSemana[] = (Array.isArray(f1Data) ? f1Data : []).flatMap((gp: any, gpIndex: number) => 
       (gp.sessoes || []).map((sessao: any, sessaoIndex: number) => ({
         id: 90000 + (gpIndex * 10) + sessaoIndex,
@@ -71,10 +115,10 @@ async function carregarDadosDaSemana() {
         return acc;
       }, {});
 
-    // Data de hoje em Brasília (mesmo padrão seguro da Home)
+    // Data de hoje no fuso de Brasília
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const hojeStr = formatter.format(agora).trim(); // "YYYY-MM-DD"
+    const hojeStr = formatter.format(agora).trim();
 
     const listaJogosIA = jogosData.jogosSemana || (Array.isArray(jogosData) ? jogosData : []);
     const listaJogosManuais = jogosManuaisData.jogosSemana || (Array.isArray(jogosManuaisData) ? jogosManuaisData : []);
@@ -82,10 +126,11 @@ async function carregarDadosDaSemana() {
     const todosOsJogosBrutos = [
       ...listaJogosIA,
       ...listaJogosManuais,
+      ...jogosDoSheets, // 📱 Jogos cadastrados pelo celular
       ...sessoesF1ComoJogos
     ];
 
-    // 3. Normalização de datas e filtro (Hoje + Próximos dias)
+    // Sanitização e filtro de datas (Hoje + Próximos dias)
     const jogosDaSemanaFiltrados: JogoSemana[] = todosOsJogosBrutos
       .map((jogo: any) => {
         let d = (jogo.data || '').trim();
@@ -114,7 +159,7 @@ async function carregarDadosDaSemana() {
 
     const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].filter(Boolean).sort();
 
-    // 4. Agrupamento por Data e Campeonato
+    // Agrupamento por Data e Campeonato
     const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
@@ -124,7 +169,7 @@ async function carregarDadosDaSemana() {
       return acc;
     }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-    // 5. Ordenação de horários
+    // Ordenação por horário
     Object.values(jogosPorData).forEach(campeonatos => {
       Object.values(campeonatos).forEach(jogos => {
         jogos.sort((a, b) => a.hora.localeCompare(b.hora));
@@ -153,7 +198,7 @@ export default async function Semana() {
           Agenda da Semana: Jogos e Corridas na TV
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Acompanhe a programação completa de jogos de futebol e as corridas de Fórmula 1 para os próximos dias. Veja todos os horários e canais de transmissão para não perder nada.
+          Acompanhe a programação completa de jogos de futebol, NFL e as corridas de Fórmula 1 para os próximos dias. Veja todos os horários e canais de transmissão para não perder nada.
         </p>
       </div>
 
