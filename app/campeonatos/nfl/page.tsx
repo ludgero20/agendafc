@@ -6,12 +6,12 @@ import RodadaNFLClient from '@/app/components/RodadaNFLClient';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NFL | Classificação e Rodadas | Agenda FC",
-  description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências.",
+  description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências e divisões.",
 };
 
-// ==========================================================
-// Atualiza o 'type' 
-// ==========================================================
+export const revalidate = 3600; // Atualiza sozinho a cada 1 hora
+
+// Tipos 100% compatíveis com a sua estrutura atual
 type TimeTabelaNFL = {
   teamName: string;      
   teamLogo: string;      
@@ -23,45 +23,131 @@ type TimeTabelaNFL = {
   intTie: string;
   strPercentage: string;
 };
-// ==========================================================
 
 type JogoNFL = {
-  idEvent: string; intRound: string; dateEvent: string; strTime: string; strHomeTeam: string;
-  strAwayTeam: string; intHomeScore: string | null; intAwayScore: string | null; strStatus: string;
+  idEvent: string; 
+  intRound: string; 
+  dateEvent: string; 
+  strTime: string; 
+  strHomeTeam: string;
+  strAwayTeam: string; 
+  intHomeScore: string | null; 
+  intAwayScore: string | null; 
+  strStatus: string;
 };
 
-// Funções de busca de dados
+// 1. BUSCA CLASSIFICAÇÃO DA NFL DIRETO NA API DA ESPN
 async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   try {
-    const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
-    const jsonData = await fs.readFile(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
+    const res = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
+      next: { revalidate: 3600 }
+    });
+    
+    if (!res.ok) throw new Error("Falha ao buscar tabela na ESPN");
+    const data = await res.json();
+    const timesFormatados: TimeTabelaNFL[] = [];
 
-    // ==========================================================
-    // Lê 'data.standings''
-    // ==========================================================
-    return data.standings;
-    // ==========================================================
+    // A ESPN organiza por Conferências (AFC/NFC) e Divisões (East, North, South, West)
+    const conferencias = data?.children || [];
+    conferencias.forEach((conf: any) => {
+      const nomeConferencia = conf.name || (conf.abbreviation === 'AFC' ? 'American Football Conference' : 'National Football Conference');
+      const divisoes = conf.children || [];
+
+      divisoes.forEach((div: any) => {
+        const nomeDivisao = div.name || div.shortName || '';
+        const times = div?.standings?.entries || [];
+
+        times.forEach((entry: any, index: number) => {
+          const stats = entry.stats || [];
+          const getStat = (name: string) => stats.find((s: any) => s.name === name)?.value ?? 0;
+          const getStatDisplay = (name: string) => stats.find((s: any) => s.name === name)?.displayValue ?? '0.000';
+
+          const vitorias = getStat('wins');
+          const derrotas = getStat('losses');
+          const empates = getStat('ties');
+          const pct = getStatDisplay('winPercent');
+
+          timesFormatados.push({
+            teamName: entry.team?.displayName || entry.team?.name || 'Time',
+            teamLogo: entry.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nfl.png',
+            rank: String(index + 1),
+            conference: nomeConferencia,
+            division: nomeDivisao,
+            intWin: String(vitorias),
+            intLoss: String(derrotas),
+            intTie: String(empates),
+            strPercentage: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct)
+          });
+        });
+      });
+    });
+
+    if (timesFormatados.length > 0) return timesFormatados;
+    throw new Error("Lista vazia da ESPN");
 
   } catch (error) {
-    console.error("🚨 ERRO AO LER ARQUIVO da tabela da NFL:", error);
-    return null;
+    // Fallback para arquivo local se a API estiver fora
+    try {
+      const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
+      const jsonData = await fs.readFile(filePath, "utf-8");
+      return JSON.parse(jsonData).standings || [];
+    } catch {
+      return null;
+    }
   }
 }
 
+// 2. BUSCA JOGOS E PLACARES DE TODAS AS SEMANAS NA API DA ESPN
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
-    const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/jogos-nfl.json");
-    const jsonData = await fs.readFile(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-    return data.events;
+    // Busca a temporada completa (semanas 1 a 18 + pós-temporada)
+    const res = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=1000", {
+      next: { revalidate: 3600 }
+    });
+
+    if (!res.ok) throw new Error("Falha ao buscar jogos na ESPN");
+    const data = await res.json();
+    const eventos = data?.events || [];
+
+    const jogosFormatados: JogoNFL[] = eventos.map((ev: any) => {
+      const comp = ev.competitions?.[0];
+      const home = comp?.competitors?.find((c: any) => c.homeAway === 'home');
+      const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
+
+      const dataISO = ev.date ? new Date(ev.date) : new Date();
+      const dateEvent = dataISO.toISOString().split('T')[0];
+      const strTime = dataISO.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+
+      const finalizado = ev.status?.type?.completed;
+      const emAndamento = ev.status?.type?.state === 'in';
+
+      return {
+        idEvent: String(ev.id),
+        intRound: String(ev.week?.number || '1'), // Número da semana da NFL (1 a 18)
+        dateEvent: dateEvent,
+        strTime: strTime,
+        strHomeTeam: home?.team?.displayName || 'Casa',
+        strAwayTeam: away?.team?.displayName || 'Visitante',
+        intHomeScore: finalizado || emAndamento ? String(home?.score || '0') : null,
+        intAwayScore: finalizado || emAndamento ? String(away?.score || '0') : null,
+        strStatus: finalizado ? 'Match Finished' : (emAndamento ? 'In Progress' : 'Not Started')
+      };
+    });
+
+    if (jogosFormatados.length > 0) return jogosFormatados;
+    throw new Error("Nenhum evento na ESPN");
+
   } catch (error) {
-    console.error("🚨 ERRO AO LER ARQUIVO de jogos da NFL:", error);
-    return null;
+    try {
+      const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/jogos-nfl.json");
+      const jsonData = await fs.readFile(filePath, "utf-8");
+      return JSON.parse(jsonData).events || [];
+    } catch {
+      return null;
+    }
   }
 }
 
-// Componente da Página
 export default async function NFLPage() {
   const [tabelaCompleta, todosOsJogos] = await Promise.all([
     getTabelaNFL(),
@@ -70,26 +156,26 @@ export default async function NFLPage() {
 
   if (!tabelaCompleta || !todosOsJogos) {
     return (
-        <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-6 rounded-lg text-center">
-          <h2 className="font-bold text-lg mb-2">Dados da NFL Indisponíveis</h2>
-          <p>Os dados de classificação ou jogos estão sendo atualizados. Por favor, volte mais tarde.</p>
-        </div>
+      <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-6 rounded-lg text-center">
+        <h2 className="font-bold text-lg mb-2">Dados da NFL Indisponíveis</h2>
+        <p>Os dados de classificação ou jogos estão sendo atualizados. Por favor, volte mais tarde.</p>
+      </div>
     );
   }
 
-  // Lógica para encontrar a rodada atual
-  const jogosNaoFinalizados = todosOsJogos.filter(j => j.strStatus !== 'Match Finished').sort((a, b) => a.dateEvent.localeCompare(b.dateEvent));
+  // Identifica a rodada atual (semana atual)
+  const jogosNaoFinalizados = todosOsJogos
+    .filter(j => j.strStatus !== 'Match Finished')
+    .sort((a, b) => a.dateEvent.localeCompare(b.dateEvent));
+
   let rodadaInicial = 1;
   if (jogosNaoFinalizados.length > 0) {
     rodadaInicial = parseInt(jogosNaoFinalizados[0].intRound);
   } else if (todosOsJogos.length > 0) {
-    // Se a temporada acabou, mostra a última rodada
     rodadaInicial = todosOsJogos.reduce((max, jogo) => Math.max(max, parseInt(jogo.intRound)), 0);
   }
 
-  // ==========================================================
-  // Agrupa usando os nomes 'conference' e 'division'
-  // ==========================================================
+  // Agrupamento por Conferência e Divisão
   const tabelasPorConferencia = tabelaCompleta.reduce((acc, time) => {
     const conferencia = time.conference.includes("American") ? "AFC" : "NFC";
     const divisao = time.division;
@@ -98,7 +184,6 @@ export default async function NFLPage() {
     acc[conferencia][divisao].push(time);
     return acc;
   }, {} as Record<string, Record<string, TimeTabelaNFL[]>>);
-  // ==========================================================
 
   return (
     <div>
@@ -115,7 +200,9 @@ export default async function NFLPage() {
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                 {Object.entries(divisoes).map(([divisao, tabela]) => (
                   <div key={divisao}>
-                    <h3 className="text-xl font-semibold mb-3">{divisao.replace("AFC ", "").replace("NFC ", "")}</h3>
+                    <h3 className="text-xl font-semibold mb-3">
+                      {divisao.replace("AFC ", "").replace("NFC ", "")}
+                    </h3>
                     <div className="overflow-x-auto bg-white rounded-lg shadow-md">
                       <table className="min-w-full text-sm">
                         <thead className="bg-gray-100">
@@ -128,22 +215,26 @@ export default async function NFLPage() {
                           </tr>
                         </thead>
                         <tbody>
-                          {/* ========================================================== */}
-                          {/* Renderiza usando os novos nomes das propriedades */}
-                          {/* ========================================================== */}
-                          {tabela.sort((a,b) => parseInt(a.rank) - parseInt(b.rank)).map((time) => (
-                            <tr key={time.teamName} className="border-t">
-                              <td className="px-3 py-2 flex items-center">
-                                <Image src={time.teamLogo} alt={time.teamName} width={20} height={20} className="w-5 h-5 mr-2" />
-                                <span className="font-medium">{time.teamName}</span>
-                              </td>
-                              <td className="px-3 py-2 text-center font-bold">{time.intWin}</td>
-                              <td className="px-3 py-2 text-center">{time.intLoss}</td>
-                              <td className="px-3 py-2 text-center">{time.intTie}</td>
-                              <td className="px-3 py-2 text-center font-bold">{time.strPercentage}</td>
-                            </tr>
-                          ))}
-                          {/* ========================================================== */}
+                          {tabela
+                            .sort((a, b) => parseInt(a.rank) - parseInt(b.rank))
+                            .map((time) => (
+                              <tr key={time.teamName} className="border-t hover:bg-gray-50">
+                                <td className="px-3 py-2 flex items-center">
+                                  <Image 
+                                    src={time.teamLogo} 
+                                    alt={time.teamName} 
+                                    width={20} 
+                                    height={20} 
+                                    className="w-5 h-5 mr-2 object-contain" 
+                                  />
+                                  <span className="font-medium">{time.teamName}</span>
+                                </td>
+                                <td className="px-3 py-2 text-center font-bold">{time.intWin}</td>
+                                <td className="px-3 py-2 text-center">{time.intLoss}</td>
+                                <td className="px-3 py-2 text-center">{time.intTie}</td>
+                                <td className="px-3 py-2 text-center font-bold text-blue-600">{time.strPercentage}</td>
+                              </tr>
+                            ))}
                         </tbody>
                       </table>
                     </div>
@@ -154,6 +245,7 @@ export default async function NFLPage() {
           ))}
         </div>
 
+        {/* Componente Interativo de Rodadas da NFL */}
         <RodadaNFLClient 
           todosOsJogos={todosOsJogos} 
           rodadaInicial={rodadaInicial}
