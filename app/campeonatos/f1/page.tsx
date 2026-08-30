@@ -55,7 +55,7 @@ const bandeirasNacionalidade: Record<string, string> = {
   "New Zealander": "🇳🇿"
 };
 
-// 1. PILOTOS
+// 1. PILOTOS NA API JOLPICA
 async function getPilotosF1(): Promise<Piloto[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/driverStandings.json", {
@@ -86,7 +86,7 @@ async function getPilotosF1(): Promise<Piloto[]> {
   }
 }
 
-// 2. EQUIPES
+// 2. EQUIPES NA API JOLPICA
 async function getEquipesF1(): Promise<Equipe[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/constructorStandings.json", {
@@ -113,21 +113,39 @@ async function getEquipesF1(): Promise<Equipe[]> {
   }
 }
 
-// 3. CALENDÁRIO COM LIMITE EXPANDIDO E DETECÇÃO DE POLE POSITION
+// 3. CALENDÁRIO COM PAGINAÇÃO PARALELA (SEM LIMITE DE 4 CORRIDAS)
 async function getCalendarioF1(): Promise<Corrida[]> {
   const localFile = await fs.readFile(path.join(process.cwd(), "public/importacoes-manuais/f1/calendario.json"), "utf-8").catch(() => '[]');
   let corridasRaw = Array.isArray(JSON.parse(localFile)) ? JSON.parse(localFile) : JSON.parse(localFile)?.races || [];
 
-  let apiRaces: any[] = [];
+  // 🔍 Busca todas as páginas da API em paralelo (offsets 0 a 500)
+  const offsets = [0, 100, 200, 300, 400, 500];
+  const apiRacesMap: Record<number, any> = {};
+
   try {
-    // 🔍 A MÁGICA: ?limit=1000 traz a temporada inteira sem cortar!
-    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/results.json?limit=1000", {
-      next: { revalidate: 3600 }
+    const responses = await Promise.all(
+      offsets.map(offset =>
+        fetch(`https://api.jolpi.ca/ergast/f1/current/results.json?limit=100&offset=${offset}`, {
+          next: { revalidate: 3600 }
+        })
+          .then(res => res.ok ? res.json() : null)
+          .catch(() => null)
+      )
+    );
+
+    // Une todas as páginas de resultados
+    responses.forEach(data => {
+      const races = data?.MRData?.RaceTable?.Races || [];
+      races.forEach((race: any) => {
+        const round = parseInt(race.round);
+        if (!apiRacesMap[round]) {
+          apiRacesMap[round] = { ...race, Results: [] };
+        }
+        if (race.Results) {
+          apiRacesMap[round].Results.push(...race.Results);
+        }
+      });
     });
-    if (res.ok) {
-      const data = await res.json();
-      apiRaces = data?.MRData?.RaceTable?.Races || [];
-    }
   } catch (error) {
     console.error("Erro ao buscar resultados da F1:", error);
   }
@@ -138,8 +156,9 @@ async function getCalendarioF1(): Promise<Corrida[]> {
     return `${inicial} ${driver.familyName}`;
   };
 
+  // Mapeia todas as corridas da temporada
   const corridasFormatadas: Corrida[] = corridasRaw.map((corrida: any) => {
-    const apiRace = apiRaces.find((r: any) => parseInt(r.round) === corrida.round);
+    const apiRace = apiRacesMap[corrida.round];
     
     let finalResults: RaceResults | undefined = undefined;
 
@@ -149,7 +168,7 @@ async function getCalendarioF1(): Promise<Corrida[]> {
       const p2 = resultsArray.find((r: any) => r.position === "2") || resultsArray[1];
       const p3 = resultsArray.find((r: any) => r.position === "3") || resultsArray[2];
       
-      // 🏎️ O Pole Position é o piloto que largou na posição 1 do grid (grid: "1")
+      // 🏎️ Pole Position: piloto que largou na posição 1 (grid: "1")
       const poleDriver = resultsArray.find((r: any) => r.grid === "1");
 
       const p1Nome = formatarNomePiloto(p1?.Driver);
@@ -172,7 +191,6 @@ async function getCalendarioF1(): Promise<Corrida[]> {
       };
     }
 
-    // Se a corrida não aconteceu ainda na API, verifica se você colocou algo manual no JSON
     if (corrida.results && typeof corrida.results === 'object') {
       finalResults = {
         pole: String(corrida.results.pole || "-"),
