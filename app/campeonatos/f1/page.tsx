@@ -29,6 +29,7 @@ type Corrida = {
   winner?: string | null; 
   sessoes: Sessao[]; 
   results?: RaceResults; 
+  sprintResults?: RaceResults; // 🏎️ Suporte a resultados de Sprint
 };
 
 type Piloto = { position: number; name: string; nationality: string; team: string; points: number; wins: number; podiums: number; };
@@ -55,7 +56,7 @@ const bandeirasNacionalidade: Record<string, string> = {
   "New Zealander": "🇳🇿"
 };
 
-// 1. PILOTOS NA API JOLPICA
+// 1. PILOTOS
 async function getPilotosF1(): Promise<Piloto[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/driverStandings.json", {
@@ -86,7 +87,7 @@ async function getPilotosF1(): Promise<Piloto[]> {
   }
 }
 
-// 2. EQUIPES NA API JOLPICA
+// 2. EQUIPES
 async function getEquipesF1(): Promise<Equipe[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/constructorStandings.json", {
@@ -113,28 +114,36 @@ async function getEquipesF1(): Promise<Equipe[]> {
   }
 }
 
-// 3. CALENDÁRIO COM PAGINAÇÃO PARALELA (SEM LIMITE DE 4 CORRIDAS)
+// 3. CALENDÁRIO COM CORRIDAS PRINCIPAIS E SPRINTS
 async function getCalendarioF1(): Promise<Corrida[]> {
   const localFile = await fs.readFile(path.join(process.cwd(), "public/importacoes-manuais/f1/calendario.json"), "utf-8").catch(() => '[]');
   let corridasRaw = Array.isArray(JSON.parse(localFile)) ? JSON.parse(localFile) : JSON.parse(localFile)?.races || [];
 
-  // 🔍 Busca todas as páginas da API em paralelo (offsets 0 a 500)
   const offsets = [0, 100, 200, 300, 400, 500];
   const apiRacesMap: Record<number, any> = {};
+  const apiSprintsMap: Record<number, any> = {};
 
   try {
-    const responses = await Promise.all(
-      offsets.map(offset =>
-        fetch(`https://api.jolpi.ca/ergast/f1/current/results.json?limit=100&offset=${offset}`, {
-          next: { revalidate: 3600 }
-        })
-          .then(res => res.ok ? res.json() : null)
-          .catch(() => null)
+    // 🏎️ Busca os resultados das Corridas Principais E das Sprints em paralelo
+    const [responsesRaces, responsesSprints] = await Promise.all([
+      Promise.all(
+        offsets.map(offset =>
+          fetch(`https://api.jolpi.ca/ergast/f1/current/results.json?limit=100&offset=${offset}`, {
+            next: { revalidate: 3600 }
+          }).then(res => res.ok ? res.json() : null).catch(() => null)
+        )
+      ),
+      Promise.all(
+        [0, 100].map(offset =>
+          fetch(`https://api.jolpi.ca/ergast/f1/current/sprint.json?limit=100&offset=${offset}`, {
+            next: { revalidate: 3600 }
+          }).then(res => res.ok ? res.json() : null).catch(() => null)
+        )
       )
-    );
+    ]);
 
-    // Une todas as páginas de resultados
-    responses.forEach(data => {
+    // Mapeia Corridas Principais
+    responsesRaces.forEach(data => {
       const races = data?.MRData?.RaceTable?.Races || [];
       races.forEach((race: any) => {
         const round = parseInt(race.round);
@@ -143,6 +152,20 @@ async function getCalendarioF1(): Promise<Corrida[]> {
         }
         if (race.Results) {
           apiRacesMap[round].Results.push(...race.Results);
+        }
+      });
+    });
+
+    // Mapeia Corridas Sprint
+    responsesSprints.forEach(data => {
+      const races = data?.MRData?.RaceTable?.Races || [];
+      races.forEach((race: any) => {
+        const round = parseInt(race.round);
+        if (!apiSprintsMap[round]) {
+          apiSprintsMap[round] = { ...race, SprintResults: [] };
+        }
+        if (race.SprintResults) {
+          apiSprintsMap[round].SprintResults.push(...race.SprintResults);
         }
       });
     });
@@ -156,19 +179,19 @@ async function getCalendarioF1(): Promise<Corrida[]> {
     return `${inicial} ${driver.familyName}`;
   };
 
-  // Mapeia todas as corridas da temporada
   const corridasFormatadas: Corrida[] = corridasRaw.map((corrida: any) => {
     const apiRace = apiRacesMap[corrida.round];
+    const apiSprint = apiSprintsMap[corrida.round];
     
     let finalResults: RaceResults | undefined = undefined;
+    let finalSprintResults: RaceResults | undefined = undefined;
 
+    // 1. Processa Resultado da Corrida Principal
     if (apiRace && apiRace.Results && apiRace.Results.length > 0) {
       const resultsArray = apiRace.Results;
       const p1 = resultsArray.find((r: any) => r.position === "1") || resultsArray[0];
       const p2 = resultsArray.find((r: any) => r.position === "2") || resultsArray[1];
       const p3 = resultsArray.find((r: any) => r.position === "3") || resultsArray[2];
-      
-      // 🏎️ Pole Position: piloto que largou na posição 1 (grid: "1")
       const poleDriver = resultsArray.find((r: any) => r.grid === "1");
 
       const p1Nome = formatarNomePiloto(p1?.Driver);
@@ -182,16 +205,7 @@ async function getCalendarioF1(): Promise<Corrida[]> {
         p2: p2Nome !== "-" ? p2Nome : String(corrida.results?.p2 || "-"),
         p3: p3Nome !== "-" ? p3Nome : String(corrida.results?.p3 || "-")
       };
-
-      return {
-        ...corrida,
-        status: "Finalizado",
-        winner: p1Nome !== "-" ? p1Nome : (corrida.winner || null),
-        results: finalResults
-      };
-    }
-
-    if (corrida.results && typeof corrida.results === 'object') {
+    } else if (corrida.results && typeof corrida.results === 'object') {
       finalResults = {
         pole: String(corrida.results.pole || "-"),
         p1: String(corrida.results.p1 || "-"),
@@ -200,10 +214,40 @@ async function getCalendarioF1(): Promise<Corrida[]> {
       };
     }
 
+    // 2. Processa Resultado da Corrida Sprint
+    if (apiSprint && apiSprint.SprintResults && apiSprint.SprintResults.length > 0) {
+      const sprintArray = apiSprint.SprintResults;
+      const sp1 = sprintArray.find((r: any) => r.position === "1") || sprintArray[0];
+      const sp2 = sprintArray.find((r: any) => r.position === "2") || sprintArray[1];
+      const sp3 = sprintArray.find((r: any) => r.position === "3") || sprintArray[2];
+      const sprintPoleDriver = sprintArray.find((r: any) => r.grid === "1");
+
+      const sp1Nome = formatarNomePiloto(sp1?.Driver);
+      const sp2Nome = formatarNomePiloto(sp2?.Driver);
+      const sp3Nome = formatarNomePiloto(sp3?.Driver);
+      const sprintPoleNome = formatarNomePiloto(sprintPoleDriver?.Driver);
+
+      finalSprintResults = {
+        pole: sprintPoleNome !== "-" ? sprintPoleNome : String(corrida.sprintResults?.pole || "-"),
+        p1: sp1Nome !== "-" ? sp1Nome : String(corrida.sprintResults?.p1 || "-"),
+        p2: sp2Nome !== "-" ? sp2Nome : String(corrida.sprintResults?.p2 || "-"),
+        p3: sp3Nome !== "-" ? sp3Nome : String(corrida.sprintResults?.p3 || "-")
+      };
+    } else if (corrida.sprintResults && typeof corrida.sprintResults === 'object') {
+      finalSprintResults = {
+        pole: String(corrida.sprintResults.pole || "-"),
+        p1: String(corrida.sprintResults.p1 || "-"),
+        p2: String(corrida.sprintResults.p2 || "-"),
+        p3: String(corrida.sprintResults.p3 || "-")
+      };
+    }
+
     return {
       ...corrida,
-      winner: corrida.winner || null,
-      results: finalResults
+      status: finalResults ? "Finalizado" : corrida.status,
+      winner: finalResults?.p1 !== "-" ? finalResults?.p1 : (corrida.winner || null),
+      results: finalResults,
+      sprintResults: finalSprintResults
     };
   });
 
