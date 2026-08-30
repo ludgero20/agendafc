@@ -5,17 +5,19 @@ import SemanaListClient from '../components/SemanaListClient';
 
 export const revalidate = 3600;
 
-// Tipos 100% compatíveis com o seu SemanaListClient
+// Tipos 100% idênticos aos do seu SemanaListClient
 type JogoSemana = {
   id: number;
   data: string;
   campeonato: string;
-  time1: string;
-  time2: string;
   hora: string;
   canal: string;
+  time1?: string | null;
+  time2?: string | null;
   divisao?: string;
   fase?: string;
+  evento_nome?: string | null;
+  evento_descricao?: string | null;
 };
 
 type CompeticaoInfo = { 
@@ -32,10 +34,10 @@ async function carregarDadosDaSemana() {
     const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json");
     const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    // Lê os 4 arquivos em paralelo
+    // 1. Lê os 4 arquivos em paralelo com proteção contra falhas
     const [competicoesFile, jogosFile, jogosManuaisFile, f1File] = await Promise.all([
-      fs.readFile(competicoesPath, "utf-8"),
-      fs.readFile(jogosPath, "utf-8"),
+      fs.readFile(competicoesPath, "utf-8").catch(() => '{"competicoes": []}'),
+      fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(f1Path, "utf-8").catch(() => '[]')
     ]);
@@ -45,63 +47,74 @@ async function carregarDadosDaSemana() {
     const jogosManuaisData = JSON.parse(jogosManuaisFile);
     const f1Data = JSON.parse(f1File);
 
-    // Converte sessões da F1 no formato exato de JogoSemana
+    // 2. Converte sessões da F1 mantendo time1 como null para o SemanaListClient reconhecer como evento
     const sessoesF1ComoJogos: JogoSemana[] = (Array.isArray(f1Data) ? f1Data : []).flatMap((gp: any, gpIndex: number) => 
       (gp.sessoes || []).map((sessao: any, sessaoIndex: number) => ({
         id: 90000 + (gpIndex * 10) + sessaoIndex,
-        data: sessao.data,
-        hora: (sessao.hora || '').replace(':', 'h'),
+        data: (sessao.data || '').trim(),
+        hora: (sessao.hora || '').replace(':', 'h').trim(),
         campeonato: "Fórmula 1",
         canal: Array.isArray(sessao.transmissao) ? sessao.transmissao.join(', ') : (sessao.transmissao || ''),
-        time1: sessao.nome || "",
-        time2: gp.raceName || "",
+        time1: null,
+        time2: null,
         divisao: undefined,
-        fase: undefined
+        fase: undefined,
+        evento_nome: sessao.nome,
+        evento_descricao: gp.raceName
       }))
     );
 
+    const listaCompeticoes = competicoesData.competicoes || (Array.isArray(competicoesData) ? competicoesData : []);
     const competicoesAtivas: Record<string, CompeticaoInfo> = 
-      competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
+      listaCompeticoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
         if (comp.ativo) acc[comp.nome] = comp;
         return acc;
       }, {});
 
+    // Data de hoje em Brasília (mesmo padrão seguro da Home)
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const hojeStr = formatter.format(agora);
+    const hojeStr = formatter.format(agora).trim(); // "YYYY-MM-DD"
 
-    // Junta tudo e higieniza os dados para não passar null para o componente
-    const todosOsJogos: JogoSemana[] = [
-      ...(jogosData.jogosSemana || []),
-      ...(jogosManuaisData.jogosSemana || []),
+    const listaJogosIA = jogosData.jogosSemana || (Array.isArray(jogosData) ? jogosData : []);
+    const listaJogosManuais = jogosManuaisData.jogosSemana || (Array.isArray(jogosManuaisData) ? jogosManuaisData : []);
+
+    const todosOsJogosBrutos = [
+      ...listaJogosIA,
+      ...listaJogosManuais,
       ...sessoesF1ComoJogos
-    ].map((jogo: any) => ({
-      id: jogo.id || Math.floor(Math.random() * 10000),
-      data: jogo.data,
-      hora: jogo.hora,
-      campeonato: jogo.campeonato,
-      canal: jogo.canal,
-      time1: jogo.time1 ?? (jogo.evento_nome || ""),
-      time2: jogo.time2 ?? (jogo.evento_descricao || ""),
-      divisao: jogo.divisao || undefined,
-      fase: jogo.fase || undefined
-    }));
+    ];
 
-    // Filtra jogos de hoje em diante (sem excluir o dia de hoje)
-    const jogosDaSemanaFiltrados = todosOsJogos
-      .map(jogo => {
-        let dataNormalizada = jogo.data;
-        if (dataNormalizada && dataNormalizada.includes('/')) {
-          const partes = dataNormalizada.split('/');
-          dataNormalizada = `${agora.getFullYear()}-${partes[1]}-${partes[0]}`;
+    // 3. Normalização de datas e filtro (Hoje + Próximos dias)
+    const jogosDaSemanaFiltrados: JogoSemana[] = todosOsJogosBrutos
+      .map((jogo: any) => {
+        let d = (jogo.data || '').trim();
+        if (d.includes('/')) {
+          const partes = d.split('/');
+          if (partes.length === 3) {
+            d = `${partes[2]}-${partes[1].padStart(2, '0')}-${partes[0].padStart(2, '0')}`;
+          }
         }
-        return { ...jogo, data: dataNormalizada };
+
+        return {
+          id: jogo.id || Math.floor(Math.random() * 100000),
+          data: d,
+          hora: (jogo.hora || '').trim(),
+          campeonato: (jogo.campeonato || '').trim(),
+          canal: (jogo.canal || '').trim(),
+          time1: jogo.time1 !== undefined ? jogo.time1 : null,
+          time2: jogo.time2 !== undefined ? jogo.time2 : null,
+          divisao: jogo.divisao || undefined,
+          fase: jogo.fase || undefined,
+          evento_nome: jogo.evento_nome || null,
+          evento_descricao: jogo.evento_descricao || null
+        };
       })
       .filter(jogo => Boolean(jogo.data) && jogo.data >= hojeStr);
 
-    const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].sort();
+    const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].filter(Boolean).sort();
 
-    // Agrupa por data e campeonato
+    // 4. Agrupamento por Data e Campeonato
     const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
@@ -111,7 +124,7 @@ async function carregarDadosDaSemana() {
       return acc;
     }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-    // Ordenação por horário
+    // 5. Ordenação de horários
     Object.values(jogosPorData).forEach(campeonatos => {
       Object.values(campeonatos).forEach(jogos => {
         jogos.sort((a, b) => a.hora.localeCompare(b.hora));
