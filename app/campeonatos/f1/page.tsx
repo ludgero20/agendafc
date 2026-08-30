@@ -55,7 +55,7 @@ const bandeirasNacionalidade: Record<string, string> = {
   "New Zealander": "🇳🇿"
 };
 
-// 1. PILOTOS NA API JOLPICA OFICIAL (api.jolpi.ca)
+// 1. PILOTOS
 async function getPilotosF1(): Promise<Piloto[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/driverStandings.json", {
@@ -86,7 +86,7 @@ async function getPilotosF1(): Promise<Piloto[]> {
   }
 }
 
-// 2. EQUIPES NA API JOLPICA OFICIAL (api.jolpi.ca)
+// 2. EQUIPES
 async function getEquipesF1(): Promise<Equipe[]> {
   try {
     const res = await fetch("https://api.jolpi.ca/ergast/f1/current/constructorStandings.json", {
@@ -113,14 +113,15 @@ async function getEquipesF1(): Promise<Equipe[]> {
   }
 }
 
-// 3. CALENDÁRIO COM RESULTADOS OFICIAIS (api.jolpi.ca)
+// 3. CALENDÁRIO COM LIMITE EXPANDIDO E DETECÇÃO DE POLE POSITION
 async function getCalendarioF1(): Promise<Corrida[]> {
   const localFile = await fs.readFile(path.join(process.cwd(), "public/importacoes-manuais/f1/calendario.json"), "utf-8").catch(() => '[]');
   let corridasRaw = Array.isArray(JSON.parse(localFile)) ? JSON.parse(localFile) : JSON.parse(localFile)?.races || [];
 
   let apiRaces: any[] = [];
   try {
-    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/results.json", {
+    // 🔍 A MÁGICA: ?limit=1000 traz a temporada inteira sem cortar!
+    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/results.json?limit=1000", {
       next: { revalidate: 3600 }
     });
     if (res.ok) {
@@ -131,22 +132,36 @@ async function getCalendarioF1(): Promise<Corrida[]> {
     console.error("Erro ao buscar resultados da F1:", error);
   }
 
+  const formatarNomePiloto = (driver: any) => {
+    if (!driver) return "-";
+    const inicial = driver.givenName ? `${driver.givenName.charAt(0)}.` : '';
+    return `${inicial} ${driver.familyName}`;
+  };
+
   const corridasFormatadas: Corrida[] = corridasRaw.map((corrida: any) => {
     const apiRace = apiRaces.find((r: any) => parseInt(r.round) === corrida.round);
     
     let finalResults: RaceResults | undefined = undefined;
 
     if (apiRace && apiRace.Results && apiRace.Results.length > 0) {
-      const p1 = apiRace.Results[0];
-      const p2 = apiRace.Results[1];
-      const p3 = apiRace.Results[2];
-      const p1Nome = p1 ? `${p1.Driver.givenName.charAt(0)}. ${p1.Driver.familyName}` : "-";
+      const resultsArray = apiRace.Results;
+      const p1 = resultsArray.find((r: any) => r.position === "1") || resultsArray[0];
+      const p2 = resultsArray.find((r: any) => r.position === "2") || resultsArray[1];
+      const p3 = resultsArray.find((r: any) => r.position === "3") || resultsArray[2];
+      
+      // 🏎️ O Pole Position é o piloto que largou na posição 1 do grid (grid: "1")
+      const poleDriver = resultsArray.find((r: any) => r.grid === "1");
+
+      const p1Nome = formatarNomePiloto(p1?.Driver);
+      const p2Nome = formatarNomePiloto(p2?.Driver);
+      const p3Nome = formatarNomePiloto(p3?.Driver);
+      const poleNome = formatarNomePiloto(poleDriver?.Driver);
 
       finalResults = {
-        pole: String(corrida.results?.pole || "-"),
-        p1: p1Nome,
-        p2: p2 ? `${p2.Driver.givenName.charAt(0)}. ${p2.Driver.familyName}` : "-",
-        p3: p3 ? `${p3.Driver.givenName.charAt(0)}. ${p3.Driver.familyName}` : "-"
+        pole: poleNome !== "-" ? poleNome : String(corrida.results?.pole || "-"),
+        p1: p1Nome !== "-" ? p1Nome : String(corrida.results?.p1 || "-"),
+        p2: p2Nome !== "-" ? p2Nome : String(corrida.results?.p2 || "-"),
+        p3: p3Nome !== "-" ? p3Nome : String(corrida.results?.p3 || "-")
       };
 
       return {
@@ -157,6 +172,7 @@ async function getCalendarioF1(): Promise<Corrida[]> {
       };
     }
 
+    // Se a corrida não aconteceu ainda na API, verifica se você colocou algo manual no JSON
     if (corrida.results && typeof corrida.results === 'object') {
       finalResults = {
         pole: String(corrida.results.pole || "-"),
@@ -222,7 +238,7 @@ export default async function F1Page() {
           </div>
         </section>
 
-        {/* Tabela de Equipes da Formula 1 */}
+        {/* Tabela de Equipes */}
         <section className="lg:col-span-2">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">Classificação de Equipes</h2>
           <div className="overflow-x-auto bg-white rounded-lg shadow-md">
