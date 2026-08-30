@@ -222,7 +222,7 @@ export default async function F1Page() {
           </div>
         </section>
 
-        {/* Tabela de Equipes */}
+        {/* Tabela de Equipes da Formula 1 */}
         <section className="lg:col-span-2">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">Classificação de Equipes</h2>
           <div className="overflow-x-auto bg-white rounded-lg shadow-md">
