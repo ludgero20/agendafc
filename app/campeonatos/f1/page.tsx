@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export const revalidate = 3600;
 
-// Tipos 100% idênticos ao CalendarioF1Client
+// Tipos
 type Sessao = { nome: string; data: string; hora: string; transmissao: string[]; };
 
 type RaceResults = { 
@@ -55,10 +55,10 @@ const bandeirasNacionalidade: Record<string, string> = {
   "New Zealander": "🇳🇿"
 };
 
-// 1. PILOTOS NA API JOLPICA
+// 1. PILOTOS NA API JOLPICA OFICIAL (api.jolpi.ca)
 async function getPilotosF1(): Promise<Piloto[]> {
   try {
-    const res = await fetch("https://api.jolpica.com/ergast/f1/current/driverStandings.json", {
+    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/driverStandings.json", {
       next: { revalidate: 3600 }
     });
     if (!res.ok) throw new Error("Erro na API de pilotos");
@@ -86,10 +86,10 @@ async function getPilotosF1(): Promise<Piloto[]> {
   }
 }
 
-// 2. EQUIPES NA API JOLPICA
+// 2. EQUIPES NA API JOLPICA OFICIAL (api.jolpi.ca)
 async function getEquipesF1(): Promise<Equipe[]> {
   try {
-    const res = await fetch("https://api.jolpica.com/ergast/f1/current/constructorStandings.json", {
+    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/constructorStandings.json", {
       next: { revalidate: 3600 }
     });
     if (!res.ok) throw new Error("Erro na API de construtores");
@@ -113,14 +113,14 @@ async function getEquipesF1(): Promise<Equipe[]> {
   }
 }
 
-// 3. CALENDÁRIO COM RESULTADOS
+// 3. CALENDÁRIO COM RESULTADOS OFICIAIS (api.jolpi.ca)
 async function getCalendarioF1(): Promise<Corrida[]> {
   const localFile = await fs.readFile(path.join(process.cwd(), "public/importacoes-manuais/f1/calendario.json"), "utf-8").catch(() => '[]');
   let corridasRaw = Array.isArray(JSON.parse(localFile)) ? JSON.parse(localFile) : JSON.parse(localFile)?.races || [];
 
   let apiRaces: any[] = [];
   try {
-    const res = await fetch("https://api.jolpica.com/ergast/f1/current/results.json", {
+    const res = await fetch("https://api.jolpi.ca/ergast/f1/current/results.json", {
       next: { revalidate: 3600 }
     });
     if (res.ok) {
@@ -131,7 +131,6 @@ async function getCalendarioF1(): Promise<Corrida[]> {
     console.error("Erro ao buscar resultados da F1:", error);
   }
 
-  // Monta as corridas garantindo que todos os 4 campos de RaceResults sejam strings válidas
   const corridasFormatadas: Corrida[] = corridasRaw.map((corrida: any) => {
     const apiRace = apiRaces.find((r: any) => parseInt(r.round) === corrida.round);
     
