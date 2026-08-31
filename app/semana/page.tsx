@@ -5,6 +5,9 @@ import SemanaListClient from '../components/SemanaListClient';
 
 export const revalidate = 3600;
 
+// ⚙️ CONFIGURE AQUI: Quantos dias para frente a página deve mostrar (ex: 5 dias a partir de hoje)
+const DIAS_A_EXIBIR = 5;
+
 // Tipos 100% alinhados com o SemanaListClient
 type JogoSemana = {
   id: number;
@@ -27,7 +30,7 @@ type CompeticaoInfo = {
   ativo: boolean; 
 };
 
-// 📱 LEITOR DA SUA PLANILHA DO GOOGLE SHEETS
+// 📱 LEITOR DA PLANILHA NO GOOGLE SHEETS
 async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
   try {
     const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
@@ -65,7 +68,7 @@ async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
       };
     });
   } catch (error) {
-    console.error("Erro ao ler Google Sheets na página da semana:", error);
+    console.error("Erro ao ler Google Sheets na semana:", error);
     return [];
   }
 }
@@ -77,7 +80,7 @@ async function carregarDadosDaSemana() {
     const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json");
     const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    // Lê os 4 arquivos e o Google Sheets simultaneamente
+    // Lê os 4 arquivos e a planilha em paralelo
     const [competicoesFile, jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
       fs.readFile(competicoesPath, "utf-8").catch(() => '{"competicoes": []}'),
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
@@ -115,10 +118,15 @@ async function carregarDadosDaSemana() {
         return acc;
       }, {});
 
-    // Data de hoje no fuso de Brasília
+    // 📅 CÁLCULO DA DATA DE HOJE E DA DATA LIMITE (Fuso de Brasília)
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const hojeStr = formatter.format(agora).trim();
+    const hojeStr = formatter.format(agora).trim(); // ex: "2026-08-31"
+
+    // Calcula a data limite somando DIAS_A_EXIBIR dias
+    const dataLimite = new Date(agora);
+    dataLimite.setDate(dataLimite.getDate() + DIAS_A_EXIBIR);
+    const limiteStr = formatter.format(dataLimite).trim(); // ex: "2026-09-05"
 
     const listaJogosIA = jogosData.jogosSemana || (Array.isArray(jogosData) ? jogosData : []);
     const listaJogosManuais = jogosManuaisData.jogosSemana || (Array.isArray(jogosManuaisData) ? jogosManuaisData : []);
@@ -126,11 +134,11 @@ async function carregarDadosDaSemana() {
     const todosOsJogosBrutos = [
       ...listaJogosIA,
       ...listaJogosManuais,
-      ...jogosDoSheets, // 📱 Jogos cadastrados pelo celular
+      ...jogosDoSheets,
       ...sessoesF1ComoJogos
     ];
 
-    // Sanitização e filtro de datas (Hoje + Próximos dias)
+    // 🎯 FILTRAGEM: Apenas jogos entre HOJE e a DATA LIMITE
     const jogosDaSemanaFiltrados: JogoSemana[] = todosOsJogosBrutos
       .map((jogo: any) => {
         let d = (jogo.data || '').trim();
@@ -155,11 +163,12 @@ async function carregarDadosDaSemana() {
           evento_descricao: jogo.evento_descricao || null
         };
       })
-      .filter(jogo => Boolean(jogo.data) && jogo.data >= hojeStr);
+      // 🌟 O FILTRO PRINCIPAL: Maior ou igual a hoje E Menor ou igual ao limite
+      .filter(jogo => Boolean(jogo.data) && jogo.data >= hojeStr && jogo.data <= limiteStr);
 
     const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].filter(Boolean).sort();
 
-    // Agrupamento por Data e Campeonato
+    // Agrupa por Data e Campeonato
     const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
