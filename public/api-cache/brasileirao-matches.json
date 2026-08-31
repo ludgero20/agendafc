@@ -46,7 +46,7 @@
       "matchday": 25,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-08-31T08:25:09Z",
+      "lastUpdated": "2026-08-31T18:25:07Z",
       "homeTeam": {
         "id": 1767,
         "name": "Grêmio FBPA",
@@ -62,15 +62,15 @@
         "crest": "https://crests.football-data.org/1772_large.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 3,
+          "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       },
       "odds": {
