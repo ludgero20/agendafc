@@ -402,6 +402,16 @@
       "ordem": 2,
       "ativo": false,
       "bandeiraEmoji": "⚽"
+    },
+    {
+     "id": 37,
+      "nome": "Championship",
+      "pais": "Inglaterra",
+      "tipo": "Liga Nacional",
+      "descricao": "Segunda divisão do futebol inglês, abaixo da Premier League.",
+      "ordem": 8,
+      "ativo": true,
+      "bandeiraEmoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
     }
   ],
   "grupos_prioridade": {
