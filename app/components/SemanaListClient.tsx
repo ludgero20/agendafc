@@ -4,7 +4,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 
 // Tipos 100% alinhados
-type JogoSemana = {
+export type JogoSemana = {
   id: number;
   data: string;
   campeonato: string;
@@ -18,14 +18,14 @@ type JogoSemana = {
   evento_descricao?: string | null;
 };
 
-type CompeticaoInfo = { 
+export type CompeticaoInfo = { 
   nome: string; 
   prioridade: number; 
   bandeiraEmoji: string; 
   ativo: boolean; 
 };
 
-type JogosPorData = Record<string, Record<string, JogoSemana[]>>;
+export type JogosPorData = Record<string, Record<string, JogoSemana[]>>;
 
 type Props = {
   jogosPorDataIniciais: JogosPorData;
@@ -42,10 +42,10 @@ export default function SemanaListClient({
   // --- ESTADOS ---
   const [jogosPorData, setJogosPorData] = useState(jogosPorDataIniciais);
   const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
-  const [filtroCanal, setFiltroCanal] = useState<string>("todos"); // 📺 ESTADO DO CANAL
+  const [filtroCanal, setFiltroCanal] = useState<string>("todos");
   const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
 
-  // 📺 EXTRAI CANAIS ÚNICOS DE TODA A SEMANA
+  // 📺 EXTRAI CANAIS ÚNICOS
   const canaisDisponiveis = useMemo(() => {
     const canaisSet = new Set<string>();
     Object.values(jogosPorDataIniciais).forEach(porCampeonato => {
@@ -98,10 +98,23 @@ export default function SemanaListClient({
     return nome;
   };
 
-  const formatarData = (data: string) => {
-    const [ano, mes, dia] = data.split('-');
-    const dataObj = new Date(parseInt(ano), parseInt(mes) - 1, parseInt(dia), 12);
-    return dataObj.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
+  // 📅 FORMATAÇÃO INTELIGENTE DO TÍTULO DA DATA (Hoje / Amanhã / Outros dias)
+  const formatarTituloData = (dataStr: string) => {
+    const agora = new Date();
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const hoje = formatter.format(agora);
+
+    const dataAmanha = new Date(agora);
+    dataAmanha.setDate(dataAmanha.getDate() + 1);
+    const amanha = formatter.format(dataAmanha);
+
+    const [ano, mes, dia] = dataStr.split('-').map(Number);
+    const dataObj = new Date(ano, mes - 1, dia, 12);
+    const textoData = dataObj.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' });
+
+    if (dataStr === hoje) return `📅 Hoje - ${textoData}`;
+    if (dataStr === amanha) return `📅 Amanhã - ${textoData}`;
+    return `📅 ${textoData}`;
   };
 
   const toggleCampeonato = (data: string, chave: string) => {
@@ -218,7 +231,7 @@ Confira a agenda completa em: https://agendafc.com.br`;
           {Object.keys(jogosPorData).sort().map((data) => (
             <section key={data}>
               <h2 className="text-3xl font-bold text-gray-800 capitalize mb-6 border-b pb-4">
-                📅 {formatarData(data)}
+                {formatarTituloData(data)}
               </h2>
               <div className="space-y-6">
                 {ordenarCampeonatos(Object.keys(jogosPorData[data]), jogosPorData[data]).map((chave) => {

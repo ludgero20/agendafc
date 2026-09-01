@@ -1,7 +1,7 @@
 import React from "react";
 import fs from "fs/promises";
 import path from "path";
-import JogoListClient from "./components/JogoListClient";
+import SemanaListClient from "./components/SemanaListClient";
 
 // Tipos
 type JogoSemana = { 
@@ -22,7 +22,7 @@ type CompeticaoInfo = { nome: string; prioridade: number; bandeiraEmoji: string;
 
 export const revalidate = 3600; 
 
-// 📱 LEITOR DA PLANILHA DO GOOGLE SHEETS
+// 📱 LEITOR DO GOOGLE SHEETS
 async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
   try {
     const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
@@ -60,7 +60,7 @@ async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
       };
     });
   } catch (error) {
-    console.error("Erro ao ler Google Sheets:", error);
+    console.error("Erro ao ler Google Sheets na Home:", error);
     return [];
   }
 }
@@ -109,14 +109,11 @@ async function carregarDadosDosJogos() {
 
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const hojeStr = formatter.format(agora);
+    const hojeStr = formatter.format(agora).trim();
 
-    const amanhaDate = new Date();
-    amanhaDate.setUTCDate(amanhaDate.getUTCDate() + 1);
-    const amanhaStr = formatter.format(amanhaDate);
-
-    const hojeDateObj = new Date(hojeStr + 'T12:00:00Z');
-    const amanhaDateObj = new Date(amanhaStr + 'T12:00:00Z');
+    const amanhaDate = new Date(agora);
+    amanhaDate.setDate(amanhaDate.getDate() + 1);
+    const amanhaStr = formatter.format(amanhaDate).trim();
 
     const todosOsJogosBrutos = [
       ...(jogosData.jogosSemana || (Array.isArray(jogosData) ? jogosData : [])),
@@ -125,76 +122,73 @@ async function carregarDadosDosJogos() {
       ...sessoesF1ComoJogos
     ];
 
-    const todosOsJogos: JogoSemana[] = todosOsJogosBrutos.map((jogo: any) => ({
-      id: jogo.id || Math.floor(Math.random() * 100000),
-      data: (jogo.data || '').trim(),
-      hora: (jogo.hora || '').trim(),
-      campeonato: (jogo.campeonato || '').trim(),
-      canal: (jogo.canal || '').trim(),
-      time1: jogo.time1 !== undefined ? jogo.time1 : null,
-      time2: jogo.time2 !== undefined ? jogo.time2 : null,
-      divisao: jogo.divisao || undefined,
-      fase: jogo.fase || undefined,
-      evento_nome: jogo.evento_nome || null,
-      evento_descricao: jogo.evento_descricao || null,
-    }));
+    // Filtra exclusivamente HOJE e AMANHÃ para a Home
+    const jogosHomeFiltrados: JogoSemana[] = todosOsJogosBrutos
+      .map((jogo: any) => {
+        let d = (jogo.data || '').trim();
+        if (d.includes('/')) {
+          const partes = d.split('/');
+          if (partes.length === 3) {
+            d = `${partes[2]}-${partes[1].padStart(2, '0')}-${partes[0].padStart(2, '0')}`;
+          }
+        }
 
-    const jogosDeHoje = todosOsJogos.filter(jogo => jogo.data === hojeStr);
-    const jogosDeAmanha = todosOsJogos.filter(jogo => jogo.data === amanhaStr);
+        return {
+          id: jogo.id || Math.floor(Math.random() * 100000),
+          data: d,
+          hora: (jogo.hora || '').trim(),
+          campeonato: (jogo.campeonato || '').trim(),
+          canal: (jogo.canal || '').trim(),
+          time1: jogo.time1 !== undefined ? jogo.time1 : null,
+          time2: jogo.time2 !== undefined ? jogo.time2 : null,
+          divisao: jogo.divisao || undefined,
+          fase: jogo.fase || undefined,
+          evento_nome: jogo.evento_nome || null,
+          evento_descricao: jogo.evento_descricao || null,
+        };
+      })
+      .filter(jogo => Boolean(jogo.data) && (jogo.data === hojeStr || jogo.data === amanhaStr));
 
-    const agruparJogos = (jogos: JogoSemana[]) => {
-      return jogos.reduce((acc: Record<string, JogoSemana[]>, jogo: JogoSemana) => {
-        const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
-        if (!acc[chave]) acc[chave] = [];
-        acc[chave].push(jogo);
-        return acc;
-      }, {});
-    };
+    const campeonatosDisponiveis = [...new Set(jogosHomeFiltrados.map(j => j.campeonato))].sort();
 
-    const jogosHojePorCampeonato = agruparJogos(jogosDeHoje);
-    const jogosAmanhaPorCampeonato = agruparJogos(jogosDeAmanha);
+    // Agrupa por Data e Campeonato
+    const jogosPorData = jogosHomeFiltrados.reduce((acc, jogo) => {
+      const data = jogo.data;
+      if (!acc[data]) acc[data] = {};
+      const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
+      if (!acc[data][chave]) acc[data][chave] = [];
+      acc[data][chave].push(jogo);
+      return acc;
+    }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-    Object.values(jogosHojePorCampeonato).forEach(grupo => grupo.sort((a, b) => a.hora.localeCompare(b.hora)));
-    Object.values(jogosAmanhaPorCampeonato).forEach(grupo => grupo.sort((a, b) => a.hora.localeCompare(b.hora)));
-
-    const campeonatosDisponiveis = [...new Set([...jogosDeHoje, ...jogosDeAmanha].map(j => j.campeonato))].sort();
+    Object.values(jogosPorData).forEach(campeonatos => {
+      Object.values(campeonatos).forEach(jogos => {
+        jogos.sort((a, b) => a.hora.localeCompare(b.hora));
+      });
+    });
 
     return { 
-      jogosHojePorCampeonato, 
-      jogosAmanhaPorCampeonato, 
+      jogosPorData, 
       campeonatosDisponiveis, 
-      competicoesAtivas, 
-      hojeDate: hojeDateObj, 
-      amanhaDate: amanhaDateObj 
+      competicoesAtivas 
     };
 
   } catch (error) {
-    console.error("🚨 ERRO AO CARREGAR DADOS DOS JOGOS:", error);
+    console.error("🚨 ERRO AO CARREGAR DADOS NA HOME:", error);
     return { 
-      jogosHojePorCampeonato: {}, 
-      jogosAmanhaPorCampeonato: {}, 
+      jogosPorData: {}, 
       campeonatosDisponiveis: [], 
-      competicoesAtivas: {}, 
-      hojeDate: new Date(), 
-      amanhaDate: new Date() 
+      competicoesAtivas: {}
     };
   }
 }
 
 export default async function Home() {
   const { 
-    jogosHojePorCampeonato, 
-    jogosAmanhaPorCampeonato, 
+    jogosPorData, 
     campeonatosDisponiveis, 
-    competicoesAtivas,
-    hojeDate,
-    amanhaDate
+    competicoesAtivas 
   } = await carregarDadosDosJogos();
-
-  const helpers = {
-    hoje: hojeDate,
-    amanha: amanhaDate,
-  };
 
   return (
     <div className="space-y-8">
@@ -210,12 +204,10 @@ export default async function Home() {
         </p>
       </div>
 
-      <JogoListClient 
-        jogosHoje={jogosHojePorCampeonato}
-        jogosAmanha={jogosAmanhaPorCampeonato}
+      <SemanaListClient 
+        jogosPorDataIniciais={jogosPorData}
         campeonatosDisponiveis={campeonatosDisponiveis}
         competicoesAtivas={competicoesAtivas}
-        helpers={helpers} 
       />
     </div>
   );
