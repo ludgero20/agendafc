@@ -1,202 +1,20 @@
 {
   "jogosSemana": [
     {
-      "id": 8412,
-      "data": "2026-08-31",
-      "hora": "13h30",
-      "campeonato": "Serie A",
-      "canal": "Disney+",
-      "time1": "Lecce",
-      "time2": "Roma",
+      "id": 1001,
+      "data": "2026-09-01",
+      "hora": "15h00",
+      "campeonato": "Saudi Pro League",
+      "canal": "Xports, BandSports, OneFootball",
+      "time1": "Al Hilal",
+      "time2": "Al Ahli",
       "divisao": null,
       "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
     {
-      "id": 4921,
-      "data": "2026-08-31",
-      "hora": "14h30",
-      "campeonato": "La Liga",
-      "canal": "CazéTV",
-      "time1": "Osasuna",
-      "time2": "Getafe",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 3719,
-      "data": "2026-08-31",
-      "hora": "15h30",
-      "campeonato": "Campeonato Turco",
-      "canal": "ESPN 3, Disney+",
-      "time1": "Amedspor",
-      "time2": "Trabzonspor",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 9182,
-      "data": "2026-08-31",
-      "hora": "15h30",
-      "campeonato": "Campeonato Turco",
-      "canal": "Disney+",
-      "time1": "Besiktas",
-      "time2": "Corum",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 6534,
-      "data": "2026-08-31",
-      "hora": "15h45",
-      "campeonato": "Serie A",
-      "canal": "Disney+",
-      "time1": "Atalanta",
-      "time2": "Bologna",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 2048,
-      "data": "2026-08-31",
-      "hora": "16h00",
-      "campeonato": "Premier League",
-      "canal": "ESPN, Disney+",
-      "time1": "Aston Villa",
-      "time2": "Arsenal",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 7301,
-      "data": "2026-08-31",
-      "hora": "16h00",
-      "campeonato": "Brasileirão Sub-17",
-      "canal": "SporTV",
-      "time1": "Grêmio",
-      "time2": "Internacional",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 5129,
-      "data": "2026-08-31",
-      "hora": "16h15",
-      "campeonato": "Primeira Liga",
-      "canal": "Disney+",
-      "time1": "Braga",
-      "time2": "Vitória de Guimarães",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 1493,
-      "data": "2026-08-31",
-      "hora": "16h15",
-      "campeonato": "Primeira Liga",
-      "canal": "ESPN 4, Disney+",
-      "time1": "Benfica",
-      "time2": "Estoril",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 8832,
-      "data": "2026-08-31",
-      "hora": "16h30",
-      "campeonato": "La Liga",
-      "canal": "CazéTV",
-      "time1": "Barcelona",
-      "time2": "Rayo Vallecano",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 6271,
-      "data": "2026-08-31",
-      "hora": "19h15",
-      "campeonato": "Brasileirão Feminino",
-      "canal": "SporTV",
-      "time1": "Cruzeiro",
-      "time2": "Corinthians",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 3940,
-      "data": "2026-08-31",
-      "hora": "19h30",
-      "campeonato": "Brasileirão",
-      "canal": "ESPN, Disney+",
-      "time1": "Fortaleza",
-      "time2": "Operário-PR",
-      "divisao": "Série B",
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 7823,
-      "data": "2026-08-31",
-      "hora": "20h00",
-      "campeonato": "Brasileirão",
-      "canal": "Premiere",
-      "time1": "Remo",
-      "time2": "Coritiba",
-      "divisao": "Série A",
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 4156,
-      "data": "2026-08-31",
-      "hora": "21h15",
-      "campeonato": "Campeonato Argentino",
-      "canal": "Disney+",
-      "time1": "Tigre",
-      "time2": "Barracas Central",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 9034,
-      "data": "2026-08-31",
-      "hora": "21h30",
-      "campeonato": "Brasileirão Feminino",
-      "canal": "SporTV, TV Brasil, NSports",
-      "time1": "Bahia",
-      "time2": "Palmeiras",
-      "divisao": null,
-      "fase": null,
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 2391,
+      "id": 1002,
       "data": "2026-09-01",
       "hora": "15h45",
       "campeonato": "Copa da Alemanha",
@@ -209,7 +27,7 @@
       "evento_descricao": null
     },
     {
-      "id": 6742,
+      "id": 1003,
       "data": "2026-09-01",
       "hora": "16h00",
       "campeonato": "Championship",
@@ -222,7 +40,7 @@
       "evento_descricao": null
     },
     {
-      "id": 1184,
+      "id": 1004,
       "data": "2026-09-01",
       "hora": "19h30",
       "campeonato": "Brasileirão",
@@ -235,7 +53,7 @@
       "evento_descricao": null
     },
     {
-      "id": 5930,
+      "id": 1005,
       "data": "2026-09-01",
       "hora": "20h00",
       "campeonato": "Caribbean Cup",
@@ -248,7 +66,7 @@
       "evento_descricao": null
     },
     {
-      "id": 8205,
+      "id": 1006,
       "data": "2026-09-01",
       "hora": "21h00",
       "campeonato": "Copa do Brasil",
@@ -261,7 +79,7 @@
       "evento_descricao": null
     },
     {
-      "id": 3417,
+      "id": 1007,
       "data": "2026-09-01",
       "hora": "A definir",
       "campeonato": "Leagues Cup",
@@ -274,7 +92,7 @@
       "evento_descricao": null
     },
     {
-      "id": 7619,
+      "id": 1008,
       "data": "2026-09-01",
       "hora": "A definir",
       "campeonato": "Leagues Cup",
@@ -287,7 +105,7 @@
       "evento_descricao": null
     },
     {
-      "id": 4820,
+      "id": 1009,
       "data": "2026-09-02",
       "hora": "15h45",
       "campeonato": "Copa da Alemanha",
@@ -300,7 +118,7 @@
       "evento_descricao": null
     },
     {
-      "id": 9512,
+      "id": 1010,
       "data": "2026-09-02",
       "hora": "16h00",
       "campeonato": "Championship",
@@ -313,11 +131,11 @@
       "evento_descricao": null
     },
     {
-      "id": 1673,
+      "id": 1011,
       "data": "2026-09-02",
       "hora": "19h00",
       "campeonato": "Brasileirão",
-      "canal": "Metrópoles Esportes",
+      "canal": "Metrópoles Esportes (YouTube)",
       "time1": "Goiatuba",
       "time2": "São José-RS",
       "divisao": "Série D",
@@ -326,7 +144,7 @@
       "evento_descricao": null
     },
     {
-      "id": 6049,
+      "id": 1012,
       "data": "2026-09-02",
       "hora": "19h00",
       "campeonato": "Caribbean Cup",
@@ -339,7 +157,7 @@
       "evento_descricao": null
     },
     {
-      "id": 3318,
+      "id": 1013,
       "data": "2026-09-02",
       "hora": "19h30",
       "campeonato": "Brasileirão",
@@ -352,7 +170,7 @@
       "evento_descricao": null
     },
     {
-      "id": 7481,
+      "id": 1014,
       "data": "2026-09-02",
       "hora": "21h00",
       "campeonato": "Caribbean Cup",
@@ -365,11 +183,11 @@
       "evento_descricao": null
     },
     {
-      "id": 2904,
+      "id": 1015,
       "data": "2026-09-02",
       "hora": "21h15",
       "campeonato": "Copa da Argentina",
-      "canal": "Xsports",
+      "canal": "Xports (TV e YouTube)",
       "time1": "Vélez",
       "time2": "Boca Juniors",
       "divisao": null,
@@ -378,7 +196,7 @@
       "evento_descricao": null
     },
     {
-      "id": 8593,
+      "id": 1016,
       "data": "2026-09-02",
       "hora": "21h30",
       "campeonato": "Copa do Brasil",
@@ -391,7 +209,7 @@
       "evento_descricao": null
     },
     {
-      "id": 4120,
+      "id": 1017,
       "data": "2026-09-02",
       "hora": "21h30",
       "campeonato": "Copa do Brasil",
@@ -404,7 +222,7 @@
       "evento_descricao": null
     },
     {
-      "id": 6739,
+      "id": 1018,
       "data": "2026-09-03",
       "hora": "15h45",
       "campeonato": "Ligue 1",
@@ -417,7 +235,7 @@
       "evento_descricao": null
     },
     {
-      "id": 1948,
+      "id": 1019,
       "data": "2026-09-03",
       "hora": "16h00",
       "campeonato": "La Liga",
@@ -430,7 +248,7 @@
       "evento_descricao": null
     },
     {
-      "id": 5291,
+      "id": 1020,
       "data": "2026-09-03",
       "hora": "20h00",
       "campeonato": "Copa do Brasil",
@@ -443,7 +261,7 @@
       "evento_descricao": null
     },
     {
-      "id": 8302,
+      "id": 1021,
       "data": "2026-09-03",
       "hora": "20h00",
       "campeonato": "Brasileirão",
@@ -456,11 +274,11 @@
       "evento_descricao": null
     },
     {
-      "id": 3614,
+      "id": 1022,
       "data": "2026-09-03",
       "hora": "20h00",
       "campeonato": "Brasileirão",
-      "canal": "Metrópoles Esportes",
+      "canal": "Metrópoles Esportes (YouTube)",
       "time1": "CSA",
       "time2": "Nacional-AM",
       "divisao": "Série D",
@@ -469,7 +287,7 @@
       "evento_descricao": null
     },
     {
-      "id": 7490,
+      "id": 1023,
       "data": "2026-09-04",
       "hora": "14h00",
       "campeonato": "Ligue 1",
@@ -482,11 +300,11 @@
       "evento_descricao": null
     },
     {
-      "id": 2183,
+      "id": 1024,
       "data": "2026-09-04",
       "hora": "15h00",
       "campeonato": "Campeonato Paulista Sub-20",
-      "canal": "Paulistão",
+      "canal": "Paulistão (YouTube)",
       "time1": "São Bento",
       "time2": "Corinthians",
       "divisao": null,
@@ -495,11 +313,11 @@
       "evento_descricao": null
     },
     {
-      "id": 9301,
+      "id": 1025,
       "data": "2026-09-04",
       "hora": "15h00",
       "campeonato": "Campeonato Paulista Sub-20",
-      "canal": "Paulistão",
+      "canal": "Paulistão (YouTube)",
       "time1": "Portuguesa Santista",
       "time2": "Santos",
       "divisao": null,
@@ -508,11 +326,11 @@
       "evento_descricao": null
     },
     {
-      "id": 4712,
+      "id": 1026,
       "data": "2026-09-04",
       "hora": "15h45",
       "campeonato": "Campeonato Paulista Sub-20",
-      "canal": "Paulistão",
+      "canal": "Paulistão (YouTube)",
       "time1": "Água Santa",
       "time2": "Palmeiras",
       "divisao": null,
@@ -521,7 +339,7 @@
       "evento_descricao": null
     },
     {
-      "id": 6824,
+      "id": 1027,
       "data": "2026-09-04",
       "hora": "15h45",
       "campeonato": "Serie A",
@@ -534,7 +352,7 @@
       "evento_descricao": null
     },
     {
-      "id": 1390,
+      "id": 1028,
       "data": "2026-09-04",
       "hora": "16h00",
       "campeonato": "Ligue 1",
@@ -547,7 +365,7 @@
       "evento_descricao": null
     },
     {
-      "id": 8041,
+      "id": 1029,
       "data": "2026-09-04",
       "hora": "16h00",
       "campeonato": "Premier League",
@@ -560,7 +378,7 @@
       "evento_descricao": null
     },
     {
-      "id": 5619,
+      "id": 1030,
       "data": "2026-09-04",
       "hora": "16h00",
       "campeonato": "La Liga",
@@ -573,7 +391,7 @@
       "evento_descricao": null
     },
     {
-      "id": 3128,
+      "id": 1031,
       "data": "2026-09-04",
       "hora": "16h00",
       "campeonato": "Brasileirão Sub-20",
@@ -586,7 +404,7 @@
       "evento_descricao": null
     },
     {
-      "id": 7934,
+      "id": 1032,
       "data": "2026-09-04",
       "hora": "16h15",
       "campeonato": "Primeira Liga",
@@ -599,7 +417,7 @@
       "evento_descricao": null
     },
     {
-      "id": 2409,
+      "id": 1033,
       "data": "2026-09-04",
       "hora": "16h15",
       "campeonato": "Primeira Liga",
@@ -612,7 +430,7 @@
       "evento_descricao": null
     },
     {
-      "id": 6518,
+      "id": 1034,
       "data": "2026-09-04",
       "hora": "19h00",
       "campeonato": "Campeonato Uruguaio",
@@ -625,7 +443,7 @@
       "evento_descricao": null
     },
     {
-      "id": 4031,
+      "id": 1035,
       "data": "2026-09-04",
       "hora": "19h30",
       "campeonato": "Brasileirão",
@@ -638,7 +456,7 @@
       "evento_descricao": null
     },
     {
-      "id": 8720,
+      "id": 1036,
       "data": "2026-09-04",
       "hora": "20h30",
       "campeonato": "MLS",
@@ -651,7 +469,7 @@
       "evento_descricao": null
     },
     {
-      "id": 1549,
+      "id": 1037,
       "data": "2026-09-04",
       "hora": "20h30",
       "campeonato": "Brasileirão",
@@ -664,11 +482,11 @@
       "evento_descricao": null
     },
     {
-      "id": 9283,
+      "id": 1038,
       "data": "2026-09-04",
       "hora": "21h30",
       "campeonato": "Brasileirão Feminino",
-      "canal": "SporTV, TV Brasil, Nsports",
+      "canal": "SporTV, TV Brasil, Nsports (TV e YouTube)",
       "time1": "Palmeiras",
       "time2": "Bahia",
       "divisao": null,
@@ -677,11 +495,11 @@
       "evento_descricao": null
     },
     {
-      "id": 3672,
+      "id": 1039,
       "data": "2026-09-04",
       "hora": "21h30",
       "campeonato": "Brasileirão",
-      "canal": "Xports, Sportynet, Disney+",
+      "canal": "Xports, Sportynet (TV e YouTube), Disney+",
       "time1": "CRB",
       "time2": "América-MG",
       "divisao": "Série B",
