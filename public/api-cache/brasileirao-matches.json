@@ -3,8 +3,13 @@
     "season": "2026"
   },
   "resultSet": {
+<<<<<<< HEAD
     "count": 380,
     "first": "2026-01-28",
+=======
+    "count": 119,
+    "first": "2026-09-02",
+>>>>>>> b8d939bdbdcfe50210524587883aab31a6a38c1c
     "last": "2026-12-02",
     "played": 245
   },
@@ -16562,6 +16567,7 @@
         "currentMatchday": 25,
         "winner": null
       },
+<<<<<<< HEAD
       "id": 555004,
       "utcDate": "2026-09-12T00:00:00Z",
       "status": "TIMED",
@@ -16621,6 +16627,8 @@
         "currentMatchday": 25,
         "winner": null
       },
+=======
+>>>>>>> b8d939bdbdcfe50210524587883aab31a6a38c1c
       "id": 555005,
       "utcDate": "2026-09-12T00:00:00Z",
       "status": "SCHEDULED",
