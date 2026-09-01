@@ -98,7 +98,7 @@ export default function SemanaListClient({
     return nome;
   };
 
-  // 📅 FORMATAÇÃO INTELIGENTE DO TÍTULO DA DATA (Hoje / Amanhã / Outros dias)
+  // 📅 FORMATAÇÃO DO TÍTULO DO CARD (Na tela)
   const formatarTituloData = (dataStr: string) => {
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
@@ -115,6 +115,28 @@ export default function SemanaListClient({
     if (dataStr === hoje) return `📅 Hoje - ${textoData}`;
     if (dataStr === amanha) return `📅 Amanhã - ${textoData}`;
     return `📅 ${textoData}`;
+  };
+
+  // 📲 FORMATAÇÃO DO DIA PARA O WHATSAPP (Hoje / Amanhã / Quarta-feira (02/09))
+  const formatarDiaParaWhatsApp = (dataStr: string) => {
+    const agora = new Date();
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const hoje = formatter.format(agora);
+
+    const dataAmanha = new Date(agora);
+    dataAmanha.setDate(dataAmanha.getDate() + 1);
+    const amanha = formatter.format(dataAmanha);
+
+    if (dataStr === hoje) return "Hoje";
+    if (dataStr === amanha) return "Amanhã";
+
+    const [ano, mes, dia] = dataStr.split('-').map(Number);
+    const dataObj = new Date(ano, mes - 1, dia, 12);
+    const diaSemana = dataObj.toLocaleDateString('pt-BR', { weekday: 'long' });
+    const diaMes = dataObj.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
+    const diaSemanaCap = diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1);
+
+    return `${diaSemanaCap} (${diaMes})`;
   };
 
   const toggleCampeonato = (data: string, chave: string) => {
@@ -135,16 +157,17 @@ export default function SemanaListClient({
     });
   };
 
-  // 📲 LINK DO WHATSAPP
+  // 📲 LINK DO WHATSAPP COM DIA E HORA
   const gerarLinkWhatsApp = (jogo: JogoSemana) => {
     const ehJogo = Boolean(jogo.time1);
     const titulo = ehJogo ? `⚽ ${jogo.time1} x ${jogo.time2}` : `🏁 ${jogo.evento_nome} (${jogo.evento_descricao || 'Fórmula 1'})`;
     const campeonato = jogo.divisao ? `${jogo.campeonato} ${jogo.divisao}` : jogo.campeonato;
     const fase = jogo.fase ? ` - ${jogo.fase}` : '';
+    const diaFormatado = formatarDiaParaWhatsApp(jogo.data);
 
     const mensagem = `${titulo}
 🏆 ${campeonato}${fase}
-🕒 ${jogo.hora}
+📅 ${diaFormatado} às ${jogo.hora}
 📺 ${jogo.canal}
 
 Confira a agenda completa em: https://agendafc.com.br`;
