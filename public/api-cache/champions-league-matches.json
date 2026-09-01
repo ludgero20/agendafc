@@ -1,9 +1,6 @@
 {
   "filters": {
-    "season": "2026",
-    "status": [
-      "SCHEDULED"
-    ]
+    "season": "2026"
   },
   "resultSet": {
     "count": 144,

@@ -54,7 +54,7 @@ async function main() {
     await fetchData(standingsUrl, standingsPath);
     await wait(7000); 
 
-    const matchesUrl = `https://api.football-data.org/v4/competitions/${league.code}/matches?status=SCHEDULED`;
+    const matchesUrl = `https://api.football-data.org/v4/competitions/${league.code}/matches`;
     const matchesPath = path.join(cacheDir, `${league.name}-matches.json`);
     await fetchData(matchesUrl, matchesPath);
     await wait(7000); 

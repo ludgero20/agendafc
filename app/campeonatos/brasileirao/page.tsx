@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
+import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
 
 export const metadata: Metadata = {
-  title: "Tabela e Jogos do Brasileirão Série A | Agenda FC",
-  description: "Tabela de classificação e os próximos jogos do Campeonato Brasileiro Série A.",
+  title: "Tabela e Jogos do Brasileirão Série A | Classificação e Rodadas | Agenda FC",
+  description: "Tabela de classificação completa e calendário de todas as rodadas com placares e jogos do Campeonato Brasileiro Série A.",
 };
 
-// --- Tipos para os dados da API ---
+export const revalidate = 3600;
 
 type TimeTabela = {
   position: number;
-  team: { id: number; name: string; crest: string; };
+  team: { id: number; name: string; shortName: string; crest: string; };
   points: number;
   playedGames: number;
   won: number;
@@ -22,111 +23,100 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
-type ProximoJogo = {
-  id: number;
-  utcDate: string;
-  matchday: number;
-  homeTeam: { name: string; crest: string; };
-  awayTeam: { name: string; crest: string; };
-};
-
-// --- Funções para buscar os dados da API ---
+// 1. BUSCA TABELA DE CLASSIFICAÇÃO
 async function getTabelaBrasileirao(): Promise<Tabela | null> {
-try {
+  try {
     const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-standings.json");
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
-    return data?.standings?.[0]?.table;
+    return data?.standings?.[0]?.table || null;
   } catch (error) {
-    console.error("ERRO AO LER ARQUIVO de cache da tabela (Brasileirão):", error);
+    console.error("ERRO AO LER tabela do Brasileirão:", error);
     return null;
   }
 }
 
-// 1. ADICIONAMOS A FUNÇÃO PARA BUSCAR OS PRÓXIMOS JOGOS
-async function getProximosJogosBrasileirao(): Promise<ProximoJogo[] | null> {
-try {
+// 2. BUSCA TODOS OS JOGOS DA TEMPORADA
+async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+  try {
     const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-matches.json");
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
-    return data?.matches;
+    
+    return {
+      matches: data?.matches || [],
+      currentMatchday: data?.season?.currentMatchday || data?.filters?.matchday || 1
+    };
   } catch (error) {
-    console.error("ERRO AO LER ARQUIVO de cache dos jogos (Brasileirão):", error);
+    console.error("ERRO AO LER jogos do Brasileirão:", error);
     return null;
   }
 }
 
-// --- Componente da Página ---
-
 export default async function BrasileiraoPage() {
-  // 2. CHAMAMOS AS DUAS FUNÇÕES EM PARALELO
-  const [tabela, proximosJogos] = await Promise.all([
+  const [tabela, jogosData] = await Promise.all([
     getTabelaBrasileirao(),
-    getProximosJogosBrasileirao()
+    getTodosJogosBrasileirao()
   ]);
 
-  if (!tabela) {
+  if (!tabela || !jogosData) {
     return (
-        <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg">
-            <h2 className="font-bold text-lg mb-2">Erro ao Carregar a Tabela</h2>
-            <p>Não foi possível buscar os dados da classificação do Brasileirão no momento.</p>
-        </div>
+      <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg text-center">
+        <h2 className="font-bold text-lg mb-2">Erro ao Carregar o Brasileirão</h2>
+        <p>Não foi possível carregar os dados no momento. Por favor, tente novamente mais tarde.</p>
+      </div>
     );
   }
 
-  const formatarDataJogo = (dataISO: string) => {
-    const data = new Date(dataISO);
-    return data.toLocaleDateString('pt-BR', {
-      day: '2-digit',
-      month: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit',
-      hour12: false,
-      timeZone: 'America/Sao_Paulo'
-    }).replace(',', ' às');
-  }
+  const { matches, currentMatchday } = jogosData;
+
+  // Identifica a rodada inicial ideal (a primeira rodada com jogos a acontecer ou a rodada atual da liga)
+  const primeiroJogoNaoFinalizado = matches.find(j => j.status !== 'FINISHED');
+  const rodadaInicial = primeiroJogoNaoFinalizado?.matchday || currentMatchday || 1;
 
   return (
-    <div>
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold">Brasileirão Série A</h1>
-        <p className="text-xl text-gray-600 mt-2">Campeonato Brasileiro</p>
+    <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">
+      <div className="text-center">
+        <h1 className="text-4xl font-extrabold text-gray-900">Brasileirão Série A</h1>
+        <p className="text-xl text-gray-600 mt-2">Classificação completa e calendário de rodadas</p>
       </div>
 
-      {/* 3. APLICAMOS O LAYOUT DE DUAS COLUNAS */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-        {/* Coluna da Esquerda: Tabela de Classificação */}
-        <div className="lg:col-span-2">
-          <h2 className="text-2xl font-bold mb-4">Classificação</h2>
-          <div className="overflow-x-auto">
-            <table className="min-w-full bg-white rounded-lg shadow-md">
-              <thead className="bg-gray-100">
+      {/* LAYOUT EM 2 COLUNAS (TABELA + RODADAS INTERATIVAS) */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        
+        {/* Coluna da Esquerda (2 colunas): Tabela de Classificação */}
+        <div className="lg:col-span-2 space-y-4">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            🏆 Classificação
+          </h2>
+          <div className="overflow-x-auto bg-white rounded-2xl shadow-sm border border-gray-200">
+            <table className="min-w-full text-sm">
+              <thead className="bg-gray-50 border-b border-gray-200">
                 <tr>
-                  <th className="px-3 py-2 text-left font-semibold text-gray-600">#</th>
-                  <th className="px-3 py-2 text-left font-semibold text-gray-600">Time</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">P</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">J</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">V</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">E</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">D</th>
-                  <th className="px-3 py-2 text-center font-semibold text-gray-600">SG</th>
+                  <th className="px-3 py-3 text-left font-semibold text-gray-600">#</th>
+                  <th className="px-3 py-3 text-left font-semibold text-gray-600">Time</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">P</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">J</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">V</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">E</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">D</th>
+                  <th className="px-3 py-3 text-center font-semibold text-gray-600">SG</th>
                 </tr>
               </thead>
               <tbody>
                 {tabela.map((time: TimeTabela) => (
-                  <tr key={time.team.id} className="border-t hover:bg-gray-50">
-                    <td className="px-3 py-2 font-bold">{time.position}</td>
-                    <td className="px-3 py-2 flex items-center">
-                      <img src={time.team.crest} alt={time.team.name} className="w-5 h-5 mr-2" />
-                      <span className="font-medium text-sm">{time.team.name}</span>
+                  <tr key={time.team.id} className="border-t hover:bg-gray-50 transition-colors">
+                    <td className="px-3 py-3 font-bold text-gray-700">{time.position}</td>
+                    <td className="px-3 py-3 flex items-center gap-2">
+                      <img src={time.team.crest} alt={time.team.name} className="w-5 h-5 object-contain" />
+                      <span className="font-medium text-gray-900">{time.team.shortName || time.team.name}</span>
                     </td>
-                    <td className="px-3 py-2 text-center font-bold">{time.points}</td>
-                    <td className="px-3 py-2 text-center">{time.playedGames}</td>
-                    <td className="px-3 py-2 text-center">{time.won}</td>
-                    <td className="px-3 py-2 text-center">{time.draw}</td>
-                    <td className="px-3 py-2 text-center">{time.lost}</td>
-                    <td className="px-3 py-2 text-center">{time.goalDifference}</td>
+                    <td className="px-3 py-3 text-center font-extrabold text-blue-600">{time.points}</td>
+                    <td className="px-3 py-3 text-center">{time.playedGames}</td>
+                    <td className="px-3 py-3 text-center">{time.won}</td>
+                    <td className="px-3 py-3 text-center">{time.draw}</td>
+                    <td className="px-3 py-3 text-center">{time.lost}</td>
+                    <td className="px-3 py-3 text-center font-medium">{time.goalDifference}</td>
                   </tr>
                 ))}
               </tbody>
@@ -134,35 +124,16 @@ export default async function BrasileiraoPage() {
           </div>
         </div>
 
-        {/* Coluna da Direita: Próximos Jogos */}
-        <div className="lg:col-span-1">
-          <h2 className="text-2xl font-bold mb-4">Próximos Jogos</h2>
-          {proximosJogos && proximosJogos.length > 0 ? (
-            <div className="space-y-4">
-              {proximosJogos.slice(0, 10).map((jogo: ProximoJogo) => (
-                <div key={jogo.id} className="bg-white p-4 rounded-lg shadow-md border">
-                  <p className="text-sm text-center text-gray-500 mb-2">
-                    Rodada {jogo.matchday} - {formatarDataJogo(jogo.utcDate)}
-                  </p>
-                  <div className="flex items-center justify-between text-sm font-medium">
-                    <span className="flex items-center gap-2 w-2/5 justify-end text-right">
-                      {jogo.homeTeam.name}
-                      <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5" />
-                    </span>
-                    <span className="text-gray-400 font-bold mx-2">vs</span>
-                    <span className="flex items-center gap-2 w-2/5">
-                      <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5" />
-                      {jogo.awayTeam.name}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="bg-white p-4 rounded-lg shadow-md border text-center">
-              <p className="text-gray-600">Aguardando definição dos próximos jogos.</p>
-            </div>
-          )}
+        {/* Coluna da Direita (1 coluna): Navegador de Rodadas Interativo */}
+        <div className="lg:col-span-1 space-y-4">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            ⚽ Jogos da Rodada
+          </h2>
+          <RodadaFutebolClient 
+            todosOsJogos={matches} 
+            rodadaInicial={rodadaInicial} 
+            tituloPrefixo="Rodada"
+          />
         </div>
 
       </div>
