@@ -33,6 +33,31 @@ type Props = {
   competicoesAtivas: Record<string, CompeticaoInfo>;
 };
 
+// 🛡️ EXTRATOR INTELIGENTE: Não quebra parênteses como (TV e YouTube)
+function extrairCanaisLimpos(canalStr: string): string[] {
+  if (!canalStr) return [];
+
+  // Substitui " e " ou " & " por vírgula APENAS se estiver FORA de parênteses
+  const normalizado = canalStr.replace(/\s+(e|&)\s+(?![^(]*\))/gi, ', ');
+
+  // Divide por vírgulas ou barras
+  const partes = normalizado.split(/[,/]/);
+
+  const canais: string[] = [];
+
+  partes.forEach(parte => {
+    let limpo = parte.trim();
+    // Remove parênteses soltos nas pontas se houver
+    limpo = limpo.replace(/^[\(\)]+|[\(\)]+$/g, '').trim();
+
+    if (limpo.length >= 2) {
+      canais.push(limpo);
+    }
+  });
+
+  return canais;
+}
+
 export default function SemanaListClient({ 
   jogosPorDataIniciais, 
   campeonatosDisponiveis, 
@@ -45,17 +70,14 @@ export default function SemanaListClient({
   const [filtroCanal, setFiltroCanal] = useState<string>("todos");
   const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
 
-  // 📺 EXTRAI CANAIS ÚNICOS
+  // 📺 EXTRAI CANAIS ÚNICOS DE FORMA SEGURA
   const canaisDisponiveis = useMemo(() => {
     const canaisSet = new Set<string>();
     Object.values(jogosPorDataIniciais).forEach(porCampeonato => {
       Object.values(porCampeonato).forEach(lista => {
         lista.forEach(jogo => {
           if (!jogo.canal) return;
-          jogo.canal.split(/,|\/|\be\b/gi).forEach(c => {
-            const canalLimpo = c.trim();
-            if (canalLimpo.length >= 2) canaisSet.add(canalLimpo);
-          });
+          extrairCanaisLimpos(jogo.canal).forEach(c => canaisSet.add(c));
         });
       });
     });
@@ -117,7 +139,7 @@ export default function SemanaListClient({
     return `📅 ${textoData}`;
   };
 
-  // 📲 FORMATAÇÃO DO DIA PARA O WHATSAPP (Hoje / Amanhã / Quarta-feira (02/09))
+  // 📲 FORMATAÇÃO DO DIA PARA O WHATSAPP
   const formatarDiaParaWhatsApp = (dataStr: string) => {
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
