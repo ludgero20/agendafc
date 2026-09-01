@@ -23,21 +23,59 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
-// 1. BUSCA TABELA DE CLASSIFICAÇÃO
+// 1. BUSCA TABELA (Tenta API ao vivo com fallback no cache local)
 async function getTabelaBrasileirao(): Promise<Tabela | null> {
+  // Tentativa 1: API direta
+  try {
+    if (process.env.API_FOOTBALLDATA_KEY) {
+      const res = await fetch("https://api.football-data.org/v4/competitions/BSA/standings", {
+        headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
+        next: { revalidate: 3600 }
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const table = data?.standings?.[0]?.table;
+        if (table && table.length > 0) return table;
+      }
+    }
+  } catch (e) {
+    console.log("Tentando ler tabela do cache local...");
+  }
+
+  // Tentativa 2: Cache local
   try {
     const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-standings.json");
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     return data?.standings?.[0]?.table || null;
   } catch (error) {
-    console.error("ERRO AO LER tabela do Brasileirão:", error);
+    console.error("ERRO AO LER tabela do Brasileirão no cache:", error);
     return null;
   }
 }
 
-// 2. BUSCA TODOS OS JOGOS DA TEMPORADA
+// 2. BUSCA TODOS OS JOGOS (Tenta API ao vivo com fallback no cache local)
 async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+  // Tentativa 1: API direta
+  try {
+    if (process.env.API_FOOTBALLDATA_KEY) {
+      const res = await fetch("https://api.football-data.org/v4/competitions/BSA/matches", {
+        headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
+        next: { revalidate: 3600 }
+      });
+      if (res.ok) {
+        const data = await res.json();
+        return {
+          matches: data?.matches || [],
+          currentMatchday: data?.season?.currentMatchday || data?.filters?.matchday || 1
+        };
+      }
+    }
+  } catch (e) {
+    console.log("Tentando ler jogos do cache local...");
+  }
+
+  // Tentativa 2: Cache local
   try {
     const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-matches.json");
     const jsonData = await fs.readFile(filePath, "utf-8");
@@ -48,7 +86,7 @@ async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; cur
       currentMatchday: data?.season?.currentMatchday || data?.filters?.matchday || 1
     };
   } catch (error) {
-    console.error("ERRO AO LER jogos do Brasileirão:", error);
+    console.error("ERRO AO LER jogos do Brasileirão no cache:", error);
     return null;
   }
 }
@@ -61,7 +99,7 @@ export default async function BrasileiraoPage() {
 
   if (!tabela || !jogosData) {
     return (
-      <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg text-center">
+      <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg text-center max-w-xl mx-auto my-12">
         <h2 className="font-bold text-lg mb-2">Erro ao Carregar o Brasileirão</h2>
         <p>Não foi possível carregar os dados no momento. Por favor, tente novamente mais tarde.</p>
       </div>
@@ -70,7 +108,7 @@ export default async function BrasileiraoPage() {
 
   const { matches, currentMatchday } = jogosData;
 
-  // Identifica a rodada inicial ideal (a primeira rodada com jogos a acontecer ou a rodada atual da liga)
+  // Identifica a rodada atual
   const primeiroJogoNaoFinalizado = matches.find(j => j.status !== 'FINISHED');
   const rodadaInicial = primeiroJogoNaoFinalizado?.matchday || currentMatchday || 1;
 
@@ -81,10 +119,9 @@ export default async function BrasileiraoPage() {
         <p className="text-xl text-gray-600 mt-2">Classificação completa e calendário de rodadas</p>
       </div>
 
-      {/* LAYOUT EM 2 COLUNAS (TABELA + RODADAS INTERATIVAS) */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         
-        {/* Coluna da Esquerda (2 colunas): Tabela de Classificação */}
+        {/* Coluna da Esquerda: Tabela de Classificação */}
         <div className="lg:col-span-2 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏆 Classificação
@@ -124,7 +161,7 @@ export default async function BrasileiraoPage() {
           </div>
         </div>
 
-        {/* Coluna da Direita (1 coluna): Navegador de Rodadas Interativo */}
+        {/* Coluna da Direita: Navegador de Rodadas Interativo */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             ⚽ Jogos da Rodada
