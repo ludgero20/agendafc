@@ -6,7 +6,7 @@
     ]
   },
   "resultSet": {
-    "count": 350,
+    "count": 348,
     "first": "2026-09-03",
     "last": "2027-05-30",
     "played": 0
@@ -2007,124 +2007,6 @@
         "shortName": "Barça",
         "tla": "FCB",
         "crest": "https://crests.football-data.org/81.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2518,
-        "startDate": "2026-08-16",
-        "endDate": "2027-05-30",
-        "currentMatchday": 3,
-        "winner": null
-      },
-      "id": 564689,
-      "utcDate": "2026-09-20T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 7,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-09-01T05:20:33Z",
-      "homeTeam": {
-        "id": 95,
-        "name": "Valencia CF",
-        "shortName": "Valencia",
-        "tla": "VAL",
-        "crest": "https://crests.football-data.org/95.png"
-      },
-      "awayTeam": {
-        "id": 92,
-        "name": "Real Sociedad de Fútbol",
-        "shortName": "Real Sociedad",
-        "tla": "RSO",
-        "crest": "https://crests.football-data.org/92.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2224,
-        "name": "Spain",
-        "code": "ESP",
-        "flag": "https://crests.football-data.org/760.svg"
-      },
-      "competition": {
-        "id": 2014,
-        "name": "Primera Division",
-        "code": "PD",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/laliga.png"
-      },
-      "season": {
-        "id": 2518,
-        "startDate": "2026-08-16",
-        "endDate": "2027-05-30",
-        "currentMatchday": 3,
-        "winner": null
-      },
-      "id": 564692,
-      "utcDate": "2026-09-20T00:00:00Z",
-      "status": "SCHEDULED",
-      "matchday": 7,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-09-01T05:20:33Z",
-      "homeTeam": {
-        "id": 80,
-        "name": "RCD Espanyol de Barcelona",
-        "shortName": "Espanyol",
-        "tla": "ESP",
-        "crest": "https://crests.football-data.org/80.png"
-      },
-      "awayTeam": {
-        "id": 285,
-        "name": "Elche CF",
-        "shortName": "Elche",
-        "tla": "ELC",
-        "crest": "https://crests.football-data.org/285.png"
       },
       "score": {
         "winner": null,
