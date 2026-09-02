@@ -4,23 +4,28 @@ export type TimeConfig = {
   slug: string;
   nome: string;
   nomeOficialAPI: string;
-  idAPI: number;
+  idAPI?: number;
+  esporte: 'futebol' | 'nfl';
   variacoesNome: string[];
   competicaoCodigo: string;
   competicaoNome: string;
-  arquivoStandings: string;
-  arquivoMatches: string;
+  divisaoNFL?: string;
+  arquivoStandings?: string;
+  arquivoMatches?: string;
   escudo: string;
   corPrimaria: string;
 };
 
 export const timesConfig: Record<string, TimeConfig> = {
-  // --- BRASILEIRÃO SÉRIE A ---
+  // ==========================================
+  // 🇧🇷 BRASILEIRÃO SÉRIE A
+  // ==========================================
   "flamengo": {
     slug: "flamengo",
     nome: "Flamengo",
     nomeOficialAPI: "CR Flamengo",
     idAPI: 1783,
+    esporte: "futebol",
     variacoesNome: ["Flamengo", "CR Flamengo", "Flamengo-RJ"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -34,6 +39,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Palmeiras",
     nomeOficialAPI: "SE Palmeiras",
     idAPI: 1769,
+    esporte: "futebol",
     variacoesNome: ["Palmeiras", "SE Palmeiras"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -47,6 +53,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Corinthians",
     nomeOficialAPI: "SC Corinthians Paulista",
     idAPI: 1779,
+    esporte: "futebol",
     variacoesNome: ["Corinthians", "SC Corinthians Paulista"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -60,6 +67,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "São Paulo",
     nomeOficialAPI: "São Paulo FC",
     idAPI: 1776,
+    esporte: "futebol",
     variacoesNome: ["São Paulo", "Sao Paulo", "São Paulo FC"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -73,6 +81,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Santos",
     nomeOficialAPI: "Santos FC",
     idAPI: 6685,
+    esporte: "futebol",
     variacoesNome: ["Santos", "Santos FC"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -86,6 +95,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Vasco da Gama",
     nomeOficialAPI: "CR Vasco da Gama",
     idAPI: 1780,
+    esporte: "futebol",
     variacoesNome: ["Vasco", "Vasco da Gama", "CR Vasco da Gama"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -99,6 +109,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Botafogo",
     nomeOficialAPI: "Botafogo FR",
     idAPI: 1770,
+    esporte: "futebol",
     variacoesNome: ["Botafogo", "Botafogo FR", "Botafogo-RJ"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -112,6 +123,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Fluminense",
     nomeOficialAPI: "Fluminense FC",
     idAPI: 1765,
+    esporte: "futebol",
     variacoesNome: ["Fluminense", "Fluminense FC"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -125,6 +137,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Grêmio",
     nomeOficialAPI: "Grêmio FBPA",
     idAPI: 1767,
+    esporte: "futebol",
     variacoesNome: ["Grêmio", "Gremio", "Grêmio FBPA"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -138,6 +151,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Internacional",
     nomeOficialAPI: "SC Internacional",
     idAPI: 6684,
+    esporte: "futebol",
     variacoesNome: ["Internacional", "Inter", "SC Internacional"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -151,6 +165,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Cruzeiro",
     nomeOficialAPI: "Cruzeiro EC",
     idAPI: 1771,
+    esporte: "futebol",
     variacoesNome: ["Cruzeiro", "Cruzeiro EC"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -164,6 +179,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Atlético-MG",
     nomeOficialAPI: "CA Mineiro",
     idAPI: 1766,
+    esporte: "futebol",
     variacoesNome: ["Atlético-MG", "Atletico-MG", "Atlético Mineiro", "CA Mineiro"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -177,6 +193,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Bahia",
     nomeOficialAPI: "EC Bahia",
     idAPI: 1777,
+    esporte: "futebol",
     variacoesNome: ["Bahia", "EC Bahia"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -190,6 +207,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Athletico-PR",
     nomeOficialAPI: "CA Paranaense",
     idAPI: 1768,
+    esporte: "futebol",
     variacoesNome: ["Athletico-PR", "Athletico PR", "CA Paranaense", "Athletico"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -203,6 +221,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "RB Bragantino",
     nomeOficialAPI: "RB Bragantino",
     idAPI: 4286,
+    esporte: "futebol",
     variacoesNome: ["RB Bragantino", "Bragantino", "Red Bull Bragantino"],
     competicaoCodigo: "BSA",
     competicaoNome: "Brasileirão Série A",
@@ -212,12 +231,15 @@ export const timesConfig: Record<string, TimeConfig> = {
     corPrimaria: "border-red-600 bg-gray-50"
   },
 
-  // --- GIGANTES DA EUROPA ---
+  // ==========================================
+  // 🌍 GIGANTES DA EUROPA
+  // ==========================================
   "real-madrid": {
     slug: "real-madrid",
     nome: "Real Madrid",
     nomeOficialAPI: "Real Madrid CF",
     idAPI: 86,
+    esporte: "futebol",
     variacoesNome: ["Real Madrid", "Real Madrid CF"],
     competicaoCodigo: "PD",
     competicaoNome: "La Liga",
@@ -231,6 +253,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Barcelona",
     nomeOficialAPI: "FC Barcelona",
     idAPI: 81,
+    esporte: "futebol",
     variacoesNome: ["Barcelona", "FC Barcelona"],
     competicaoCodigo: "PD",
     competicaoNome: "La Liga",
@@ -244,6 +267,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Manchester City",
     nomeOficialAPI: "Manchester City FC",
     idAPI: 65,
+    esporte: "futebol",
     variacoesNome: ["Manchester City", "Man City", "City"],
     competicaoCodigo: "PL",
     competicaoNome: "Premier League",
@@ -257,6 +281,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Liverpool",
     nomeOficialAPI: "Liverpool FC",
     idAPI: 64,
+    esporte: "futebol",
     variacoesNome: ["Liverpool", "Liverpool FC"],
     competicaoCodigo: "PL",
     competicaoNome: "Premier League",
@@ -270,6 +295,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     nome: "Arsenal",
     nomeOficialAPI: "Arsenal FC",
     idAPI: 57,
+    esporte: "futebol",
     variacoesNome: ["Arsenal", "Arsenal FC"],
     competicaoCodigo: "PL",
     competicaoNome: "Premier League",
@@ -277,5 +303,393 @@ export const timesConfig: Record<string, TimeConfig> = {
     arquivoMatches: "premier-league-matches.json",
     escudo: "https://crests.football-data.org/57.png",
     corPrimaria: "border-red-600 bg-red-50"
+  },
+
+  // ==========================================
+  // 🏈 NFL (32 FRANQUIAS COMPLETAS)
+  // ==========================================
+  "kansas-city-chiefs": {
+    slug: "kansas-city-chiefs",
+    nome: "Kansas City Chiefs",
+    nomeOficialAPI: "Kansas City Chiefs",
+    esporte: "nfl",
+    variacoesNome: ["Kansas City Chiefs", "Chiefs"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+    corPrimaria: "border-red-600 bg-red-50"
+  },
+  "philadelphia-eagles": {
+    slug: "philadelphia-eagles",
+    nome: "Philadelphia Eagles",
+    nomeOficialAPI: "Philadelphia Eagles",
+    esporte: "nfl",
+    variacoesNome: ["Philadelphia Eagles", "Eagles"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+    corPrimaria: "border-emerald-800 bg-emerald-50"
+  },
+  "san-francisco-49ers": {
+    slug: "san-francisco-49ers",
+    nome: "San Francisco 49ers",
+    nomeOficialAPI: "San Francisco 49ers",
+    esporte: "nfl",
+    variacoesNome: ["San Francisco 49ers", "49ers", "San Francisco"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+    corPrimaria: "border-red-700 bg-yellow-50"
+  },
+  "dallas-cowboys": {
+    slug: "dallas-cowboys",
+    nome: "Dallas Cowboys",
+    nomeOficialAPI: "Dallas Cowboys",
+    esporte: "nfl",
+    variacoesNome: ["Dallas Cowboys", "Cowboys"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    corPrimaria: "border-blue-900 bg-blue-50"
+  },
+  "baltimore-ravens": {
+    slug: "baltimore-ravens",
+    nome: "Baltimore Ravens",
+    nomeOficialAPI: "Baltimore Ravens",
+    esporte: "nfl",
+    variacoesNome: ["Baltimore Ravens", "Ravens"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+    corPrimaria: "border-purple-900 bg-purple-50"
+  },
+  "buffalo-bills": {
+    slug: "buffalo-bills",
+    nome: "Buffalo Bills",
+    nomeOficialAPI: "Buffalo Bills",
+    esporte: "nfl",
+    variacoesNome: ["Buffalo Bills", "Bills"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+    corPrimaria: "border-blue-700 bg-blue-50"
+  },
+  "green-bay-packers": {
+    slug: "green-bay-packers",
+    nome: "Green Bay Packers",
+    nomeOficialAPI: "Green Bay Packers",
+    esporte: "nfl",
+    variacoesNome: ["Green Bay Packers", "Packers"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+    corPrimaria: "border-green-800 bg-yellow-50"
+  },
+  "detroit-lions": {
+    slug: "detroit-lions",
+    nome: "Detroit Lions",
+    nomeOficialAPI: "Detroit Lions",
+    esporte: "nfl",
+    variacoesNome: ["Detroit Lions", "Lions"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+    corPrimaria: "border-sky-600 bg-blue-50"
+  },
+  "miami-dolphins": {
+    slug: "miami-dolphins",
+    nome: "Miami Dolphins",
+    nomeOficialAPI: "Miami Dolphins",
+    esporte: "nfl",
+    variacoesNome: ["Miami Dolphins", "Dolphins"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+    corPrimaria: "border-teal-600 bg-orange-50"
+  },
+  "new-england-patriots": {
+    slug: "new-england-patriots",
+    nome: "New England Patriots",
+    nomeOficialAPI: "New England Patriots",
+    esporte: "nfl",
+    variacoesNome: ["New England Patriots", "Patriots"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+    corPrimaria: "border-blue-950 bg-red-50"
+  },
+  "new-york-jets": {
+    slug: "new-york-jets",
+    nome: "New York Jets",
+    nomeOficialAPI: "New York Jets",
+    esporte: "nfl",
+    variacoesNome: ["New York Jets", "Jets"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+    corPrimaria: "border-emerald-800 bg-emerald-50"
+  },
+  "cincinnati-bengals": {
+    slug: "cincinnati-bengals",
+    nome: "Cincinnati Bengals",
+    nomeOficialAPI: "Cincinnati Bengals",
+    esporte: "nfl",
+    variacoesNome: ["Cincinnati Bengals", "Bengals"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+    corPrimaria: "border-orange-600 bg-gray-50"
+  },
+  "cleveland-browns": {
+    slug: "cleveland-browns",
+    nome: "Cleveland Browns",
+    nomeOficialAPI: "Cleveland Browns",
+    esporte: "nfl",
+    variacoesNome: ["Cleveland Browns", "Browns"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+    corPrimaria: "border-orange-700 bg-orange-50"
+  },
+  "pittsburgh-steelers": {
+    slug: "pittsburgh-steelers",
+    nome: "Pittsburgh Steelers",
+    nomeOficialAPI: "Pittsburgh Steelers",
+    esporte: "nfl",
+    variacoesNome: ["Pittsburgh Steelers", "Steelers"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+    corPrimaria: "border-yellow-500 bg-gray-100"
+  },
+  "houston-texans": {
+    slug: "houston-texans",
+    nome: "Houston Texans",
+    nomeOficialAPI: "Houston Texans",
+    esporte: "nfl",
+    variacoesNome: ["Houston Texans", "Texans"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+    corPrimaria: "border-blue-900 bg-red-50"
+  },
+  "indianapolis-colts": {
+    slug: "indianapolis-colts",
+    nome: "Indianapolis Colts",
+    nomeOficialAPI: "Indianapolis Colts",
+    esporte: "nfl",
+    variacoesNome: ["Indianapolis Colts", "Colts"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
+    corPrimaria: "border-blue-700 bg-blue-50"
+  },
+  "jacksonville-jaguars": {
+    slug: "jacksonville-jaguars",
+    nome: "Jacksonville Jaguars",
+    nomeOficialAPI: "Jacksonville Jaguars",
+    esporte: "nfl",
+    variacoesNome: ["Jacksonville Jaguars", "Jaguars"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+    corPrimaria: "border-teal-700 bg-amber-50"
+  },
+  "tennessee-titans": {
+    slug: "tennessee-titans",
+    nome: "Tennessee Titans",
+    nomeOficialAPI: "Tennessee Titans",
+    esporte: "nfl",
+    variacoesNome: ["Tennessee Titans", "Titans"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+    corPrimaria: "border-sky-700 bg-red-50"
+  },
+  "denver-broncos": {
+    slug: "denver-broncos",
+    nome: "Denver Broncos",
+    nomeOficialAPI: "Denver Broncos",
+    esporte: "nfl",
+    variacoesNome: ["Denver Broncos", "Broncos"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+    corPrimaria: "border-orange-600 bg-blue-50"
+  },
+  "las-vegas-raiders": {
+    slug: "las-vegas-raiders",
+    nome: "Las Vegas Raiders",
+    nomeOficialAPI: "Las Vegas Raiders",
+    esporte: "nfl",
+    variacoesNome: ["Las Vegas Raiders", "Raiders"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+    corPrimaria: "border-gray-900 bg-gray-100"
+  },
+  "los-angeles-chargers": {
+    slug: "los-angeles-chargers",
+    nome: "Los Angeles Chargers",
+    nomeOficialAPI: "Los Angeles Chargers",
+    esporte: "nfl",
+    variacoesNome: ["Los Angeles Chargers", "Chargers", "LA Chargers"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "AFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+    corPrimaria: "border-sky-500 bg-yellow-50"
+  },
+  "new-york-giants": {
+    slug: "new-york-giants",
+    nome: "New York Giants",
+    nomeOficialAPI: "New York Giants",
+    esporte: "nfl",
+    variacoesNome: ["New York Giants", "Giants"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+    corPrimaria: "border-blue-800 bg-red-50"
+  },
+  "washington-commanders": {
+    slug: "washington-commanders",
+    nome: "Washington Commanders",
+    nomeOficialAPI: "Washington Commanders",
+    esporte: "nfl",
+    variacoesNome: ["Washington Commanders", "Commanders"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC East",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+    corPrimaria: "border-amber-800 bg-amber-50"
+  },
+  "chicago-bears": {
+    slug: "chicago-bears",
+    nome: "Chicago Bears",
+    nomeOficialAPI: "Chicago Bears",
+    esporte: "nfl",
+    variacoesNome: ["Chicago Bears", "Bears"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+    corPrimaria: "border-blue-950 bg-orange-50"
+  },
+  "minnesota-vikings": {
+    slug: "minnesota-vikings",
+    nome: "Minnesota Vikings",
+    nomeOficialAPI: "Minnesota Vikings",
+    esporte: "nfl",
+    variacoesNome: ["Minnesota Vikings", "Vikings"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC North",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+    corPrimaria: "border-purple-800 bg-yellow-50"
+  },
+  "atlanta-falcons": {
+    slug: "atlanta-falcons",
+    nome: "Atlanta Falcons",
+    nomeOficialAPI: "Atlanta Falcons",
+    esporte: "nfl",
+    variacoesNome: ["Atlanta Falcons", "Falcons"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+    corPrimaria: "border-red-600 bg-gray-100"
+  },
+  "carolina-panthers": {
+    slug: "carolina-panthers",
+    nome: "Carolina Panthers",
+    nomeOficialAPI: "Carolina Panthers",
+    esporte: "nfl",
+    variacoesNome: ["Carolina Panthers", "Panthers"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+    corPrimaria: "border-cyan-600 bg-gray-100"
+  },
+  "new-orleans-saints": {
+    slug: "new-orleans-saints",
+    nome: "New Orleans Saints",
+    nomeOficialAPI: "New Orleans Saints",
+    esporte: "nfl",
+    variacoesNome: ["New Orleans Saints", "Saints"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+    corPrimaria: "border-amber-600 bg-gray-100"
+  },
+  "tampa-bay-buccaneers": {
+    slug: "tampa-bay-buccaneers",
+    nome: "Tampa Bay Buccaneers",
+    nomeOficialAPI: "Tampa Bay Buccaneers",
+    esporte: "nfl",
+    variacoesNome: ["Tampa Bay Buccaneers", "Buccaneers", "Bucs"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC South",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
+    corPrimaria: "border-red-700 bg-gray-100"
+  },
+  "arizona-cardinals": {
+    slug: "arizona-cardinals",
+    nome: "Arizona Cardinals",
+    nomeOficialAPI: "Arizona Cardinals",
+    esporte: "nfl",
+    variacoesNome: ["Arizona Cardinals", "Cardinals"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+    corPrimaria: "border-red-600 bg-yellow-50"
+  },
+  "los-angeles-rams": {
+    slug: "los-angeles-rams",
+    nome: "Los Angeles Rams",
+    nomeOficialAPI: "Los Angeles Rams",
+    esporte: "nfl",
+    variacoesNome: ["Los Angeles Rams", "Rams", "LA Rams"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+    corPrimaria: "border-blue-600 bg-yellow-50"
+  },
+  "seattle-seahawks": {
+    slug: "seattle-seahawks",
+    nome: "Seattle Seahawks",
+    nomeOficialAPI: "Seattle Seahawks",
+    esporte: "nfl",
+    variacoesNome: ["Seattle Seahawks", "Seahawks"],
+    competicaoCodigo: "NFL",
+    competicaoNome: "NFL",
+    divisaoNFL: "NFC West",
+    escudo: "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+    corPrimaria: "border-blue-900 bg-emerald-50"
   }
 };
