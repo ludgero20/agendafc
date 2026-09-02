@@ -1,4 +1,5 @@
 // lib/campeonatos.ts
+export { formatarNomeTime, nomesTimesBrasil } from '@/lib/times';
 
 export type CompeticaoInfo = {
   id: number;
@@ -12,13 +13,14 @@ export type CompeticaoInfo = {
   ordem?: number;
   ativo: boolean;
   bandeiraEmoji: string;
-  // Propriedades para ligas com API da football-data
   codigoAPI?: string;
   arquivoStandings?: string;
   arquivoMatches?: string;
 };
 
-// 🏆 TODAS AS COMPETIÇÕES DO SITE (Futebol, F1, NFL e Basquete)
+// Alias de compatibilidade
+export type LigaConfig = CompeticaoInfo;
+
 export const todasCompeticoes: CompeticaoInfo[] = [
   {
     id: 1,
@@ -216,24 +218,21 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Basquete",
     descricao: "A maior liga de basquete do planeta.",
     prioridade: 5,
-    ativo: false, // Pausada
+    ativo: false,
     bandeiraEmoji: "🏀"
   }
 ];
 
-// Mapa rápido por nome (para a Home e Semana filtrarem em memória)
 export const competicoesAtivasMap: Record<string, CompeticaoInfo> = todasCompeticoes.reduce((acc, comp) => {
   if (comp.ativo) acc[comp.nome] = comp;
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
 
-// Mapa por Slug das Ligas de Futebol (para a rota /campeonatos/[slug])
 export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
   if (comp.slug && comp.codigoAPI) acc[comp.slug] = comp;
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
 
-// 🤖 DICIONÁRIO PARA O ROBÔ DA IA (Gemini)
 export const dicionarioCampeonatos: Record<string, string> = {
   "campeonato italiano": "Serie A",
   "campeonato espanhol": "La Liga",

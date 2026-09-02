@@ -3,7 +3,8 @@ import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
-import { ligasFutebolConfig, LigaConfig, formatarNomeTime } from '@/lib/campeonatos';
+import { ligasFutebolConfig, CompeticaoInfo } from '@/lib/campeonatos';
+import { formatarNomeTime } from '@/lib/times';
 
 export const revalidate = 3600;
 
@@ -20,7 +21,6 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
-// 1. METADADOS AUTOMÁTICOS PARA O GOOGLE (SEO)
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const liga = ligasFutebolConfig[slug];
@@ -32,10 +32,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 2. BUSCA TABELA DE CLASSIFICAÇÃO
-async function getTabelaLiga(liga: LigaConfig): Promise<Tabela | null> {
+async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   try {
-    if (process.env.API_FOOTBALLDATA_KEY) {
+    if (process.env.API_FOOTBALLDATA_KEY && liga.codigoAPI) {
       const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/standings`, {
         headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
         next: { revalidate: 3600 }
@@ -49,7 +48,7 @@ async function getTabelaLiga(liga: LigaConfig): Promise<Tabela | null> {
   } catch (e) {}
 
   try {
-    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoStandings);
+    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoStandings || '');
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     return data?.standings?.[0]?.table || null;
@@ -59,10 +58,9 @@ async function getTabelaLiga(liga: LigaConfig): Promise<Tabela | null> {
   }
 }
 
-// 3. BUSCA JOGOS E PLACARES DA LIGA
-async function getJogosLiga(liga: LigaConfig): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
   try {
-    if (process.env.API_FOOTBALLDATA_KEY) {
+    if (process.env.API_FOOTBALLDATA_KEY && liga.codigoAPI) {
       const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/matches`, {
         headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
         next: { revalidate: 3600 }
@@ -78,7 +76,7 @@ async function getJogosLiga(liga: LigaConfig): Promise<{ matches: JogoFutebol[];
   } catch (e) {}
 
   try {
-    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoMatches);
+    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoMatches || '');
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     
@@ -119,18 +117,14 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
 
   return (
     <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">
-      {/* HEADER DA LIGA */}
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
-          <span>{liga.bandeira}</span> {liga.nome}
+          <span>{liga.bandeiraEmoji}</span> {liga.nome}
         </h1>
         <p className="text-xl text-gray-600 mt-2">{liga.subtitulo} - Classificação e Rodadas</p>
       </div>
 
-      {/* GRID DE DUAS COLUNAS: TABELA + NAVEGADOR DE RODADAS */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        
-        {/* TABELA DE CLASSIFICAÇÃO */}
         <div className="lg:col-span-2 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏆 Classificação
@@ -172,7 +166,6 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
           </div>
         </div>
 
-        {/* NAVEGADOR DE RODADAS INTERATIVO */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             ⚽ Jogos da Rodada
@@ -183,7 +176,6 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
             tituloPrefixo="Rodada"
           />
         </div>
-
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import { formatarNomeTime } from '@/lib/campeonatos';
+import { formatarNomeTime } from '@/lib/times';
 
 export type JogoFutebol = {
   id: number;

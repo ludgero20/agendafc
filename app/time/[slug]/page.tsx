@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import { timesConfig, TimeConfig } from '@/lib/times';
-import { formatarNomeTime } from '@/lib/campeonatos';
+import { formatarNomeTime } from '@/lib/times';
 
 export const revalidate = 3600;
 
