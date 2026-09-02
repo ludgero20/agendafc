@@ -20,6 +20,7 @@ export default function Header() {
     { href: '/', label: 'Início' },
     { href: '/semana', label: 'Agenda da semana' },
     { href: '/campeonatos', label: 'Tabelas' },
+    { href: '/time', label: 'Times' },
     { href: '/instalar', label: 'Baixe o App' }
   ];
 
