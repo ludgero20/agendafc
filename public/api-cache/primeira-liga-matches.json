@@ -2698,12 +2698,12 @@
         "winner": null
       },
       "id": 567295,
-      "utcDate": "2026-09-07T00:00:00Z",
-      "status": "SCHEDULED",
+      "utcDate": "2026-09-07T19:15:00Z",
+      "status": "TIMED",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
@@ -2875,12 +2875,12 @@
         "winner": null
       },
       "id": 567302,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 583,
         "name": "Moreirense FC",
@@ -2934,12 +2934,12 @@
         "winner": null
       },
       "id": 567303,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 496,
         "name": "Rio Ave FC",
@@ -2993,12 +2993,12 @@
         "winner": null
       },
       "id": 567304,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 1903,
         "name": "Sport Lisboa e Benfica",
@@ -3052,12 +3052,12 @@
         "winner": null
       },
       "id": 567305,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5531,
         "name": "FC Famalicão",
@@ -3111,12 +3111,12 @@
         "winner": null
       },
       "id": 567306,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5529,
         "name": "CD Nacional",
@@ -3170,12 +3170,12 @@
         "winner": null
       },
       "id": 567307,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 6618,
         "name": "Casa Pia AC",
@@ -3229,12 +3229,12 @@
         "winner": null
       },
       "id": 567308,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5613,
         "name": "Sporting Clube de Braga",
@@ -3288,12 +3288,12 @@
         "winner": null
       },
       "id": 567309,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5527,
         "name": "Académico de Viseu FC",
@@ -3347,12 +3347,12 @@
         "winner": null
       },
       "id": 567310,
-      "utcDate": "2026-09-12T00:00:00Z",
+      "utcDate": "2026-09-13T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 6,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 712,
         "name": "FC Arouca",
@@ -3406,12 +3406,12 @@
         "winner": null
       },
       "id": 567311,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5529,
         "name": "CD Nacional",
@@ -3465,12 +3465,12 @@
         "winner": null
       },
       "id": 567312,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5533,
         "name": "Gil Vicente FC",
@@ -3524,12 +3524,12 @@
         "winner": null
       },
       "id": 567313,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 498,
         "name": "Sporting Clube de Portugal",
@@ -3583,12 +3583,12 @@
         "winner": null
       },
       "id": 567314,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5530,
         "name": "CD Santa Clara",
@@ -3642,12 +3642,12 @@
         "winner": null
       },
       "id": 567315,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 5543,
         "name": "Vitória SC",
@@ -3701,12 +3701,12 @@
         "winner": null
       },
       "id": 567316,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -3760,12 +3760,12 @@
         "winner": null
       },
       "id": 567317,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 9136,
         "name": "CF Estrela da Amadora",
@@ -3819,12 +3819,12 @@
         "winner": null
       },
       "id": 567318,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 7822,
         "name": "FC Alverca",
@@ -3878,12 +3878,12 @@
         "winner": null
       },
       "id": 567319,
-      "utcDate": "2026-09-19T00:00:00Z",
+      "utcDate": "2026-09-20T00:00:00Z",
       "status": "SCHEDULED",
       "matchday": 7,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:25:13Z",
       "homeTeam": {
         "id": 582,
         "name": "GD Estoril Praia",
