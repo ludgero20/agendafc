@@ -7,11 +7,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-03-06", "hora": "22h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-03-07", "hora": "02h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-03-07", "hora": "22h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-03-08", "hora": "02h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-03-08", "hora": "01h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-03-05", "hora": "22h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-03-06", "hora": "02h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-03-06", "hora": "22h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-03-07", "hora": "02h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-03-08", "hora": "01h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -22,11 +22,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-03-13", "hora": "00h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-03-13", "hora": "04h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-03-14", "hora": "00h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-03-14", "hora": "04h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-03-15", "hora": "04h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-03-13", "hora": "00h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-03-13", "hora": "04h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-03-14", "hora": "00h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-03-14", "hora": "04h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-03-15", "hora": "04h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -37,11 +37,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-03-27", "hora": "23h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-03-28", "hora": "03h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-03-28", "hora": "23h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-03-29", "hora": "03h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-03-29", "hora": "02h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-03-26", "hora": "23h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-03-27", "hora": "03h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-03-27", "hora": "23h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-03-28", "hora": "03h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-03-29", "hora": "02h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -52,26 +52,26 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-05-01", "hora": "13h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-05-01", "hora": "17h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-05-02", "hora": "13h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-05-02", "hora": "17h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-05-03", "hora": "17h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-05-01", "hora": "13h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-05-01", "hora": "17h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-05-02", "hora": "13h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-05-02", "hora": "17h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-05-03", "hora": "17h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 5,
-    "raceName": "GP do Canadá",
+    "raceName": "GP do Canadá (Sprint)",
     "circuitName": "Circuit Gilles-Villeneuve",
     "country": "🇨🇦",
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-05-22", "hora": "14h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-05-22", "hora": "18h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-05-23", "hora": "13h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-05-23", "hora": "17h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-05-24", "hora": "15h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-05-22", "hora": "13h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-05-22", "hora": "17h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-05-23", "hora": "13h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-05-23", "hora": "17h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-05-24", "hora": "17h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -82,11 +82,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-06-05", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-06-05", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-06-06", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-06-06", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-06-07", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-06-05", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-06-05", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-06-06", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-06-06", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-06-07", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -97,56 +97,56 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-06-12", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-06-12", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-06-13", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-06-13", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-06-14", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-06-12", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-06-12", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-06-13", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-06-13", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-06-14", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 8,
-    "raceName": "GP da Áustria (Sprint)",
+    "raceName": "GP da Áustria",
     "circuitName": "Red Bull Ring",
     "country": "🇦🇹",
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-06-26", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-06-26", "hora": "12h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-06-27", "hora": "08h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-06-27", "hora": "11h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-06-28", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-06-26", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-06-26", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-06-27", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-06-27", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-06-28", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 9,
-    "raceName": "GP da Grã-Bretanha",
+    "raceName": "GP da Grã-Bretanha (Sprint)",
     "circuitName": "Silverstone Circuit",
     "country": "🇬🇧",
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-07-03", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-07-03", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-07-04", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-07-04", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-07-05", "hora": "11h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-07-03", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-07-03", "hora": "12h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-07-04", "hora": "08h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-07-04", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-07-05", "hora": "11h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 10,
-    "raceName": "GP da Bélgica (Sprint)",
+    "raceName": "GP da Bélgica",
     "circuitName": "Circuit de Spa-Francorchamps",
     "country": "🇧🇪",
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-07-17", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-07-17", "hora": "12h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-07-18", "hora": "08h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-07-18", "hora": "11h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-07-19", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-07-17", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-07-17", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-07-18", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-07-18", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-07-19", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -157,11 +157,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-07-24", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-07-24", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-07-25", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-07-25", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-07-26", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-07-24", "hora": "08h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-07-24", "hora": "12h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-07-25", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-07-25", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-07-26", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -172,11 +172,11 @@
     "status": "Finalizado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-08-21", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-08-21", "hora": "11h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-08-22", "hora": "07h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-08-22", "hora": "10h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-08-23", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-08-21", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-08-21", "hora": "11h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-08-22", "hora": "07h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-08-22", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-08-23", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -187,26 +187,26 @@
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-09-04", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-09-04", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-09-05", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-09-05", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-09-06", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-09-04", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-09-04", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-09-05", "hora": "07h30", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-09-05", "hora": "11h00", "transmissao": ["SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-09-06", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "SporTV 4K", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 14,
     "raceName": "GP de Madri",
-    "circuitName": "Circuito de Madring",
+    "circuitName": "Circuito de Madri",
     "country": "🇪🇸",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-09-11", "hora": "08h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-09-11", "hora": "12h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-09-12", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-09-12", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-09-13", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-09-11", "hora": "08h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-09-11", "hora": "12h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-09-12", "hora": "07h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-09-12", "hora": "11h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-09-13", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
@@ -217,116 +217,131 @@
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-09-24", "hora": "06h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-09-24", "hora": "10h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-09-25", "hora": "05h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-09-25", "hora": "09h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-09-26", "hora": "08h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-09-24", "hora": "05h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-09-24", "hora": "09h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-09-25", "hora": "05h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-09-25", "hora": "09h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-09-26", "hora": "08h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
     "round": 16,
-    "raceName": "GP de Singapura",
+    "raceName": "GP do Bahrein",
+    "circuitName": "Sepang Circuit",
+    "country": "🇧🇭",
+    "status": "Agendado",
+    "results": null,
+    "sessoes": [
+      { "nome": "Treino Livre 1", "data": "2026-10-02", "hora": "01h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-10-02", "hora": "05h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-10-03", "hora": "01h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-10-03", "hora": "05h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-10-04", "hora": "04h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] }
+    ]
+  },
+  {
+    "round": 17,
+    "raceName": "GP de Singapura (Sprint)",
     "circuitName": "Marina Bay Street Circuit",
     "country": "🇸🇬",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-10-09", "hora": "06h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-10-09", "hora": "10h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-10-10", "hora": "06h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-10-10", "hora": "10h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-10-11", "hora": "09h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-10-09", "hora": "06h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Qualificação Sprint", "data": "2026-10-09", "hora": "09h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Sprint", "data": "2026-10-10", "hora": "06h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-10-10", "hora": "10h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-10-11", "hora": "09h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 17,
-    "raceName": "GP dos Estados Unidos (Sprint)",
+    "round": 18,
+    "raceName": "GP dos Estados Unidos",
     "circuitName": "Circuit of the Americas",
     "country": "🇺🇸",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-10-23", "hora": "14h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-10-23", "hora": "18h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-10-24", "hora": "15h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-10-24", "hora": "19h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-10-25", "hora": "16h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-10-23", "hora": "14h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-10-23", "hora": "18h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-10-24", "hora": "14h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-10-24", "hora": "18h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-10-25", "hora": "17h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 18,
-    "raceName": "GP do México",
+    "round": 19,
+    "raceName": "GP da Cidade do México",
     "circuitName": "Autódromo Hermanos Rodríguez",
     "country": "🇲🇽",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-10-30", "hora": "15h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-10-30", "hora": "19h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-10-31", "hora": "14h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-10-31", "hora": "18h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-11-01", "hora": "17h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-10-30", "hora": "15h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-10-30", "hora": "19h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-10-31", "hora": "14h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-10-31", "hora": "18h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-11-01", "hora": "17h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 19,
-    "raceName": "GP de São Paulo (Sprint)",
+    "round": 20,
+    "raceName": "GP de São Paulo",
     "circuitName": "Autódromo de Interlagos",
     "country": "🇧🇷",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-11-06", "hora": "11h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-11-06", "hora": "15h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-11-07", "hora": "11h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-11-07", "hora": "15h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-11-08", "hora": "14h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-11-06", "hora": "12h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-11-06", "hora": "16h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-11-07", "hora": "11h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-11-07", "hora": "15h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-11-08", "hora": "14h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 20,
+    "round": 21,
     "raceName": "GP de Las Vegas",
     "circuitName": "Las Vegas Strip Circuit",
     "country": "🇺🇸",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-11-19", "hora": "23h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-11-20", "hora": "03h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-11-20", "hora": "23h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-11-21", "hora": "03h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-11-22", "hora": "03h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-11-19", "hora": "21h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-11-20", "hora": "01h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-11-20", "hora": "21h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-11-21", "hora": "01h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-11-22", "hora": "01h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 21,
-    "raceName": "GP do Catar (Sprint)",
+    "round": 22,
+    "raceName": "GP do Catar",
     "circuitName": "Lusail International Circuit",
     "country": "🇶🇦",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-11-27", "hora": "10h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Quali Sprint", "data": "2026-11-27", "hora": "14h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida Sprint", "data": "2026-11-28", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-11-28", "hora": "15h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-11-29", "hora": "14h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-11-27", "hora": "10h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-11-27", "hora": "14h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-11-28", "hora": "11h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-11-28", "hora": "15h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-11-29", "hora": "13h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   },
   {
-    "round": 22,
+    "round": 23,
     "raceName": "GP de Abu Dhabi",
     "circuitName": "Yas Marina Circuit",
     "country": "🇦🇪",
     "status": "Agendado",
     "results": null,
     "sessoes": [
-      { "nome": "Treino Livre 1", "data": "2026-12-04", "hora": "06h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 2", "data": "2026-12-04", "hora": "10h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Treino Livre 3", "data": "2026-12-05", "hora": "07h30", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Classificação", "data": "2026-12-05", "hora": "11h00", "transmissao": ["SporTV 3", "GE", "Globoplay"] },
-      { "nome": "Corrida", "data": "2026-12-06", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay"] }
+      { "nome": "Treino Livre 1", "data": "2026-12-04", "hora": "06h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 2", "data": "2026-12-04", "hora": "10h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Treino Livre 3", "data": "2026-12-05", "hora": "07h30", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Classificação", "data": "2026-12-05", "hora": "11h00", "transmissao": ["SporTV 3", "Globoplay", "F1 TV Pro"] },
+      { "nome": "Corrida", "data": "2026-12-06", "hora": "10h00", "transmissao": ["TV Globo", "SporTV 3", "Globoplay", "F1 TV Pro"] }
     ]
   }
 ]
