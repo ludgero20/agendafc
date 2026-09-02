@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
-import Image from 'next/image';
-import RodadaNFLClient from '@/app/components/RodadaNFLClient';
+import RodadaNFLClient, { JogoNFL } from '@/app/components/RodadaNFLClient';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NFL | Classificação e Rodadas | Agenda FC",
-  description: "Tabela de classificação e calendário de jogos e resultados da NFL, dividida por conferências e divisões.",
+  description: "Tabela de classificação completa e calendário de todas as rodadas com placares e jogos da NFL.",
 };
 
 export const revalidate = 3600;
@@ -21,18 +20,6 @@ type TimeTabelaNFL = {
   intLoss: string;
   intTie: string;
   strPercentage: string;
-};
-
-type JogoNFL = {
-  idEvent: string; 
-  intRound: string; 
-  dateEvent: string; 
-  strTime: string; 
-  strHomeTeam: string;
-  strAwayTeam: string; 
-  intHomeScore: string | null; 
-  intAwayScore: string | null; 
-  strStatus: string;
 };
 
 // 1. TABELA DA NFL (ESPN)
@@ -94,7 +81,7 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. JOGOS DA NFL COM FUSO HORÁRIO DE BRASÍLIA CORRIGIDO
+// 2. JOGOS DA NFL COM LOGOS E FUSO HORÁRIO DE BRASÍLIA
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
     const res = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=1000", {
@@ -105,7 +92,6 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
     const data = await res.json();
     const eventos = data?.events || [];
 
-    // Formatador infalível que converte para o dia real no Brasil
     const dateFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
 
     const jogosFormatados: JogoNFL[] = eventos.map((ev: any) => {
@@ -114,8 +100,6 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
       const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
 
       const dataObj = ev.date ? new Date(ev.date) : new Date();
-      
-      // 🎯 CORREÇÃO: Garante YYYY-MM-DD e HH:MM no fuso de Brasília!
       const dateEvent = dateFormatter.format(dataObj); 
       const strTime = dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
 
@@ -129,6 +113,8 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
         strTime: strTime,
         strHomeTeam: home?.team?.displayName || 'Casa',
         strAwayTeam: away?.team?.displayName || 'Visitante',
+        strHomeLogo: home?.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/nfl.png',
+        strAwayLogo: away?.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/nfl.png',
         intHomeScore: finalizado || emAndamento ? String(home?.score || '0') : null,
         intAwayScore: finalizado || emAndamento ? String(away?.score || '0') : null,
         strStatus: finalizado ? 'Match Finished' : (emAndamento ? 'In Progress' : 'Not Started')
@@ -157,7 +143,7 @@ export default async function NFLPage() {
 
   if (!tabelaCompleta || !todosOsJogos) {
     return (
-      <div className="bg-yellow-50 border border-yellow-200 text-yellow-800 p-6 rounded-lg text-center">
+      <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg text-center max-w-xl mx-auto my-12">
         <h2 className="font-bold text-lg mb-2">Dados da NFL Indisponíveis</h2>
         <p>Os dados de classificação ou jogos estão sendo atualizados. Por favor, volte mais tarde.</p>
       </div>
@@ -187,53 +173,56 @@ export default async function NFLPage() {
   }, {} as Record<string, Record<string, TimeTabelaNFL[]>>);
 
   return (
-    <div>
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold">NFL - National Football League</h1>
-        <p className="text-xl text-gray-600 mt-2">Temporada Regular</p>
+    <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">
+      <div className="text-center">
+        <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
+          <span>🏈</span> NFL - National Football League
+        </h1>
+        <p className="text-xl text-gray-600 mt-2">Temporada Regular - Classificação das Divisões e Rodadas</p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        {/* TABELAS DAS CONFERÊNCIAS E DIVISÕES */}
         <div className="lg:col-span-2 space-y-8">
           {Object.entries(tabelasPorConferencia).map(([conferencia, divisoes]) => (
-            <div key={conferencia}>
-              <h2 className="text-3xl font-bold mb-4">{conferencia}</h2>
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+            <div key={conferencia} className="space-y-4">
+              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2 border-b border-slate-200 pb-2">
+                🏆 {conferencia === 'AFC' ? 'American Football Conference (AFC)' : 'National Football Conference (NFC)'}
+              </h2>
+              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
                 {Object.entries(divisoes).map(([divisao, tabela]) => (
-                  <div key={divisao}>
-                    <h3 className="text-xl font-semibold mb-3">
-                      {divisao.replace("AFC ", "").replace("NFC ", "")}
+                  <div key={divisao} className="bg-white rounded-2xl shadow-xs border border-slate-200/90 p-4">
+                    <h3 className="text-sm font-bold text-blue-700 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                      <span>🏈</span> {divisao.replace("AFC ", "").replace("NFC ", "")}
                     </h3>
-                    <div className="overflow-x-auto bg-white rounded-lg shadow-md">
-                      <table className="min-w-full text-sm">
-                        <thead className="bg-gray-100">
+                    <div className="overflow-x-auto">
+                      <table className="min-w-full text-xs sm:text-sm">
+                        <thead className="bg-slate-50 border-b border-slate-200 text-slate-600">
                           <tr>
-                            <th className="px-3 py-2 text-left font-semibold text-gray-600">Time</th>
-                            <th className="px-3 py-2 text-center font-semibold text-gray-600">V</th>
-                            <th className="px-3 py-2 text-center font-semibold text-gray-600">D</th>
-                            <th className="px-3 py-2 text-center font-semibold text-gray-600">E</th>
-                            <th className="px-3 py-2 text-center font-semibold text-gray-600">%</th>
+                            <th className="px-3 py-2 text-left font-semibold">Time</th>
+                            <th className="px-2 py-2 text-center font-semibold">V</th>
+                            <th className="px-2 py-2 text-center font-semibold">D</th>
+                            <th className="px-2 py-2 text-center font-semibold">E</th>
+                            <th className="px-2 py-2 text-center font-semibold">%</th>
                           </tr>
                         </thead>
                         <tbody>
                           {tabela
                             .sort((a, b) => parseInt(a.rank) - parseInt(b.rank))
                             .map((time) => (
-                              <tr key={time.teamName} className="border-t hover:bg-gray-50">
-                                <td className="px-3 py-2 flex items-center">
-                                  <Image 
+                              <tr key={time.teamName} className="border-t border-slate-100 hover:bg-slate-50/60 transition-colors">
+                                <td className="px-3 py-2.5 flex items-center gap-2">
+                                  <img 
                                     src={time.teamLogo} 
                                     alt={time.teamName} 
-                                    width={20} 
-                                    height={20} 
-                                    className="w-5 h-5 mr-2 object-contain" 
+                                    className="w-5 h-5 object-contain flex-shrink-0" 
                                   />
-                                  <span className="font-medium">{time.teamName}</span>
+                                  <span className="font-semibold text-slate-900 truncate">{time.teamName}</span>
                                 </td>
-                                <td className="px-3 py-2 text-center font-bold">{time.intWin}</td>
-                                <td className="px-3 py-2 text-center">{time.intLoss}</td>
-                                <td className="px-3 py-2 text-center">{time.intTie}</td>
-                                <td className="px-3 py-2 text-center font-bold text-blue-600">{time.strPercentage}</td>
+                                <td className="px-2 py-2.5 text-center font-bold text-slate-900">{time.intWin}</td>
+                                <td className="px-2 py-2.5 text-center text-slate-600">{time.intLoss}</td>
+                                <td className="px-2 py-2.5 text-center text-slate-600">{time.intTie}</td>
+                                <td className="px-2 py-2.5 text-center font-extrabold text-blue-600">{time.strPercentage}</td>
                               </tr>
                             ))}
                         </tbody>
@@ -246,10 +235,16 @@ export default async function NFLPage() {
           ))}
         </div>
 
-        <RodadaNFLClient 
-          todosOsJogos={todosOsJogos} 
-          rodadaInicial={rodadaInicial}
-        />
+        {/* NAVEGADOR DE SEMANAS INTERATIVO COM PLACARES */}
+        <div className="lg:col-span-1 space-y-4">
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            🏈 Jogos da Semana
+          </h2>
+          <RodadaNFLClient 
+            todosOsJogos={todosOsJogos} 
+            rodadaInicial={rodadaInicial}
+          />
+        </div>
       </div>
     </div>
   );
