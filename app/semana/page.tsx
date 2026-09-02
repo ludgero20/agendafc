@@ -2,13 +2,12 @@ import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
 import SemanaListClient from '../components/SemanaListClient';
+import { competicoesAtivasMap } from '@/lib/campeonatos';
 
 export const revalidate = 3600;
 
-// ⚙️ CONFIGURE AQUI: Quantos dias para frente a página deve mostrar (ex: 5 dias a partir de hoje)
 const DIAS_A_EXIBIR = 5;
 
-// Tipos 100% alinhados com o SemanaListClient
 type JogoSemana = {
   id: number;
   data: string;
@@ -21,13 +20,6 @@ type JogoSemana = {
   fase?: string;
   evento_nome?: string | null;
   evento_descricao?: string | null;
-};
-
-type CompeticaoInfo = { 
-  nome: string; 
-  prioridade: number; 
-  bandeiraEmoji: string; 
-  ativo: boolean; 
 };
 
 // 📱 LEITOR DA PLANILHA NO GOOGLE SHEETS
@@ -75,26 +67,21 @@ async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
 
 async function carregarDadosDaSemana() {
   try {
-    const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
     const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json");
     const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    // Lê os 4 arquivos e a planilha em paralelo
-    const [competicoesFile, jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
-      fs.readFile(competicoesPath, "utf-8").catch(() => '{"competicoes": []}'),
+    const [jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(f1Path, "utf-8").catch(() => '[]'),
       getJogosDoGoogleSheets()
     ]);
 
-    const competicoesData = JSON.parse(competicoesFile);
     const jogosData = JSON.parse(jogosFile);
     const jogosManuaisData = JSON.parse(jogosManuaisFile);
     const f1Data = JSON.parse(f1File);
 
-    // Converte sessões da F1
     const sessoesF1ComoJogos: JogoSemana[] = (Array.isArray(f1Data) ? f1Data : []).flatMap((gp: any, gpIndex: number) => 
       (gp.sessoes || []).map((sessao: any, sessaoIndex: number) => ({
         id: 90000 + (gpIndex * 10) + sessaoIndex,
@@ -111,22 +98,13 @@ async function carregarDadosDaSemana() {
       }))
     );
 
-    const listaCompeticoes = competicoesData.competicoes || (Array.isArray(competicoesData) ? competicoesData : []);
-    const competicoesAtivas: Record<string, CompeticaoInfo> = 
-      listaCompeticoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
-        if (comp.ativo) acc[comp.nome] = comp;
-        return acc;
-      }, {});
-
-    // 📅 CÁLCULO DA DATA DE HOJE E DA DATA LIMITE (Fuso de Brasília)
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const hojeStr = formatter.format(agora).trim(); // ex: "2026-08-31"
+    const hojeStr = formatter.format(agora).trim();
 
-    // Calcula a data limite somando DIAS_A_EXIBIR dias
     const dataLimite = new Date(agora);
     dataLimite.setDate(dataLimite.getDate() + DIAS_A_EXIBIR);
-    const limiteStr = formatter.format(dataLimite).trim(); // ex: "2026-09-05"
+    const limiteStr = formatter.format(dataLimite).trim();
 
     const listaJogosIA = jogosData.jogosSemana || (Array.isArray(jogosData) ? jogosData : []);
     const listaJogosManuais = jogosManuaisData.jogosSemana || (Array.isArray(jogosManuaisData) ? jogosManuaisData : []);
@@ -138,7 +116,6 @@ async function carregarDadosDaSemana() {
       ...sessoesF1ComoJogos
     ];
 
-    // 🎯 FILTRAGEM: Apenas jogos entre HOJE e a DATA LIMITE
     const jogosDaSemanaFiltrados: JogoSemana[] = todosOsJogosBrutos
       .map((jogo: any) => {
         let d = (jogo.data || '').trim();
@@ -163,12 +140,10 @@ async function carregarDadosDaSemana() {
           evento_descricao: jogo.evento_descricao || null
         };
       })
-      // 🌟 O FILTRO PRINCIPAL: Maior ou igual a hoje E Menor ou igual ao limite
       .filter(jogo => Boolean(jogo.data) && jogo.data >= hojeStr && jogo.data <= limiteStr);
 
     const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].filter(Boolean).sort();
 
-    // Agrupa por Data e Campeonato
     const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
@@ -178,21 +153,24 @@ async function carregarDadosDaSemana() {
       return acc;
     }, {} as Record<string, Record<string, JogoSemana[]>>);
 
-    // Ordenação por horário
     Object.values(jogosPorData).forEach(campeonatos => {
       Object.values(campeonatos).forEach(jogos => {
         jogos.sort((a, b) => a.hora.localeCompare(b.hora));
       });
     });
 
-    return { jogosPorData, campeonatosDisponiveis, competicoesAtivas };
+    return { 
+      jogosPorData, 
+      campeonatosDisponiveis, 
+      competicoesAtivas: competicoesAtivasMap // ⚡ Em memória!
+    };
 
   } catch (error) {
     console.error("🚨 ERRO AO CARREGAR DADOS DA SEMANA:", error);
     return {
       jogosPorData: {},
       campeonatosDisponiveis: [],
-      competicoesAtivas: {}
+      competicoesAtivas: competicoesAtivasMap
     };
   }
 }

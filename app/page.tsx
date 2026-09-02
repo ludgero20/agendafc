@@ -2,6 +2,7 @@ import React from "react";
 import fs from "fs/promises";
 import path from "path";
 import SemanaListClient from "./components/SemanaListClient";
+import { competicoesAtivasMap } from "@/lib/campeonatos";
 
 // Tipos
 type JogoSemana = { 
@@ -17,8 +18,6 @@ type JogoSemana = {
   evento_nome?: string | null; 
   evento_descricao?: string | null; 
 };
-
-type CompeticaoInfo = { nome: string; prioridade: number; bandeiraEmoji: string; ativo: boolean; };
 
 export const revalidate = 3600; 
 
@@ -67,20 +66,18 @@ async function getJogosDoGoogleSheets(): Promise<JogoSemana[]> {
 
 async function carregarDadosDosJogos() {
   try {
-    const competicoesPath = path.join(process.cwd(), "public", "competicoes-unificadas.json");
     const jogosPath = path.join(process.cwd(), "public", "jogos.json");
     const jogosManuaisPath = path.join(process.cwd(), "public", "jogos_manuais.json");
     const f1Path = path.join(process.cwd(), "public", "importacoes-manuais", "f1", "calendario.json");
 
-    const [competicoesFile, jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
-      fs.readFile(competicoesPath, "utf-8").catch(() => '{"competicoes": []}'),
+    // Lê os arquivos locais e a planilha em paralelo (sem precisar ler mais o competicoes.json!)
+    const [jogosFile, jogosManuaisFile, f1File, jogosDoSheets] = await Promise.all([
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(jogosManuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(f1Path, "utf-8").catch(() => '[]'),
       getJogosDoGoogleSheets()
     ]);
 
-    const competicoesData = JSON.parse(competicoesFile);
     const jogosData = JSON.parse(jogosFile);
     const jogosManuaisData = JSON.parse(jogosManuaisFile);
     const f1Data = JSON.parse(f1File);
@@ -101,12 +98,6 @@ async function carregarDadosDosJogos() {
       }))
     );
 
-    const competicoesAtivas: Record<string, CompeticaoInfo> = 
-      competicoesData.competicoes.reduce((acc: Record<string, CompeticaoInfo>, comp: CompeticaoInfo) => {
-        if (comp.ativo) acc[comp.nome] = comp;
-        return acc;
-      }, {});
-
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
     const hojeStr = formatter.format(agora).trim();
@@ -122,7 +113,6 @@ async function carregarDadosDosJogos() {
       ...sessoesF1ComoJogos
     ];
 
-    // Filtra exclusivamente HOJE e AMANHÃ para a Home
     const jogosHomeFiltrados: JogoSemana[] = todosOsJogosBrutos
       .map((jogo: any) => {
         let d = (jogo.data || '').trim();
@@ -151,7 +141,6 @@ async function carregarDadosDosJogos() {
 
     const campeonatosDisponiveis = [...new Set(jogosHomeFiltrados.map(j => j.campeonato))].sort();
 
-    // Agrupa por Data e Campeonato
     const jogosPorData = jogosHomeFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
@@ -170,7 +159,7 @@ async function carregarDadosDosJogos() {
     return { 
       jogosPorData, 
       campeonatosDisponiveis, 
-      competicoesAtivas 
+      competicoesAtivas: competicoesAtivasMap // ⚡ Em memória, ultra rápido!
     };
 
   } catch (error) {
@@ -178,7 +167,7 @@ async function carregarDadosDosJogos() {
     return { 
       jogosPorData: {}, 
       campeonatosDisponiveis: [], 
-      competicoesAtivas: {}
+      competicoesAtivas: competicoesAtivasMap
     };
   }
 }

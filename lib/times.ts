@@ -16,10 +16,41 @@ export type TimeConfig = {
   corPrimaria: string;
 };
 
+// 🇧🇷 Dicionário de Nomes Amigáveis para Clubes Brasileiros
+export const nomesTimesBrasil: Record<string, string> = {
+  "CA Mineiro": "Atlético-MG",
+  "Mineiro": "Atlético-MG",
+  "CA Paranaense": "Athletico-PR",
+  "Paranaense": "Athletico-PR",
+  "CR Flamengo": "Flamengo",
+  "SE Palmeiras": "Palmeiras",
+  "SC Corinthians Paulista": "Corinthians",
+  "São Paulo FC": "São Paulo",
+  "Fluminense FC": "Fluminense",
+  "Botafogo FR": "Botafogo",
+  "CR Vasco da Gama": "Vasco",
+  "Grêmio FBPA": "Grêmio",
+  "SC Internacional": "Internacional",
+  "Cruzeiro EC": "Cruzeiro",
+  "EC Bahia": "Bahia",
+  "EC Vitória": "Vitória",
+  "Santos FC": "Santos",
+  "RB Bragantino": "Bragantino",
+  "Red Bull Bragantino": "Bragantino",
+  "Mirassol FC": "Mirassol",
+  "Coritiba FBC": "Coritiba",
+  "Clube do Remo": "Remo",
+  "Chapecoense AF": "Chapecoense"
+};
+
+export function formatarNomeTime(shortName?: string, fullName?: string): string {
+  if (shortName && nomesTimesBrasil[shortName]) return nomesTimesBrasil[shortName];
+  if (fullName && nomesTimesBrasil[fullName]) return nomesTimesBrasil[fullName];
+  return shortName || fullName || 'Time';
+}
+
 export const timesConfig: Record<string, TimeConfig> = {
-  // ==========================================
-  // 🇧🇷 BRASILEIRÃO SÉRIE A
-  // ==========================================
+  // --- FUTEBOL BRASILEIRO ---
   "flamengo": {
     slug: "flamengo",
     nome: "Flamengo",
@@ -231,9 +262,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     corPrimaria: "border-red-600 bg-gray-50"
   },
 
-  // ==========================================
-  // 🌍 GIGANTES DA EUROPA
-  // ==========================================
+  // --- EUROPA ---
   "real-madrid": {
     slug: "real-madrid",
     nome: "Real Madrid",
@@ -305,9 +334,7 @@ export const timesConfig: Record<string, TimeConfig> = {
     corPrimaria: "border-red-600 bg-red-50"
   },
 
-  // ==========================================
-  // 🏈 NFL (32 FRANQUIAS COMPLETAS)
-  // ==========================================
+  // --- NFL ---
   "kansas-city-chiefs": {
     slug: "kansas-city-chiefs",
     nome: "Kansas City Chiefs",

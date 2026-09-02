@@ -1,46 +1,19 @@
 import type { Metadata } from 'next';
-import fs from 'fs';
-import path from 'path';
 import Link from 'next/link';
+import { todasCompeticoes, CompeticaoInfo } from '@/lib/campeonatos';
 
 export const metadata: Metadata = {
   title: "Guias de Campeonatos | Tabelas e Jogos | Agenda FC",
   description: "Explore os guias completos com tabelas, classificações e calendários da Fórmula 1, NFL e das principais ligas de futebol do Brasil e do mundo.",
 };
 
-// Tipos
-type Competicao = {
-  id: number;
-  nome: string;
-  slug?: string;
-  pais: string;
-  tipo: string;
-  descricao: string;
-  prioridade: number;
-  ordem?: number;
-  ativo: boolean;
-  bandeiraEmoji: string;
-};
+export const revalidate = 3600;
 
-// A função que carerga os dados agora filtra e ordena as competições
-async function carregarCompeticoesComPagina() {
-  const filePath = path.join(process.cwd(), 'public', 'competicoes-unificadas.json');
-  const jsonData = fs.readFileSync(filePath, 'utf-8');
-  const data = JSON.parse(jsonData);
-
-  // Filtra por campeonatos que são ativos E que têm um slug válido
-  const competicoesComPagina: Competicao[] = data.competicoes.filter(
-    (comp: Competicao) => comp.ativo && comp.slug && comp.slug.trim() !== ""
-  );
-  
-  // Ordena a lista final pelo campo 'ordem'
-  competicoesComPagina.sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
-
-  return competicoesComPagina;
-}
-
-export default async function Competicoes() {
-  const competicoes = await carregarCompeticoesComPagina();
+export default async function CompeticoesPage() {
+  // Filtra as competições ativas que têm página dedicada e ordena
+  const competicoes = todasCompeticoes
+    .filter((comp: CompeticaoInfo) => comp.ativo && comp.slug && comp.slug.trim() !== "")
+    .sort((a, b) => (a.ordem || 999) - (b.ordem || 999));
 
   const getBadgeColor = (tipo: string) => {
     switch (tipo) {
@@ -56,45 +29,39 @@ export default async function Competicoes() {
   };
 
   return (
-    <div className="space-y-8">
-      <div className="text-center py-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">🏆 Guias de Campeonatos</h1>
-        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+    <div className="space-y-8 max-w-7xl mx-auto px-4 py-8">
+      <div className="text-center space-y-3">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">🏆 Guias de Campeonatos</h1>
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
           Explore os guias completos com tabelas, classificações e calendários dos seus esportes favoritos.
         </p>
       </div>
 
-      {/* MUDANÇA 2: Voltamos a ter uma única grade, sem as seções separadas */}
-      {competicoes.length === 0 ? (
-        <div className="bg-gray-100 rounded-xl p-8 text-center">
-          <p className="text-gray-600">Nenhum guia completo disponível no momento.</p>
-        </div>
-      ) : (
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {competicoes.map((comp) => (
-            <Link key={comp.id} href={`/campeonatos/${comp.slug}`}>
-              <div className="bg-white hover:bg-gray-50 h-full p-6 rounded-xl transition-all duration-200 border border-gray-200 shadow-sm flex flex-col">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {competicoes.map((comp) => (
+          <Link key={comp.id} href={`/campeonatos/${comp.slug}`}>
+            <div className="bg-white hover:bg-slate-50/80 h-full p-6 rounded-2xl transition-all duration-200 border border-slate-200/90 shadow-2xs hover:shadow-md flex flex-col justify-between gap-4">
+              <div>
                 <div className="flex justify-between items-start mb-3">
                   <div className="flex items-center gap-2">
-                    <span className="text-xl">{comp.bandeiraEmoji}</span>
-                    <h3 className="font-bold text-lg text-gray-800">{comp.nome}</h3>
+                    <span className="text-2xl">{comp.bandeiraEmoji}</span>
+                    <h3 className="font-bold text-lg text-slate-900">{comp.nome}</h3>
                   </div>
-                  <span className={`px-2 py-1 rounded-full text-xs font-medium ${getBadgeColor(comp.tipo)}`}>
+                  <span className={`px-2.5 py-1 rounded-full text-xs font-bold ${getBadgeColor(comp.tipo)}`}>
                     {comp.tipo}
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm mb-3 flex-grow">{comp.descricao}</p>
-                <div className="flex items-center justify-between text-sm">
-                  <div className="flex items-center text-gray-500">
-                    <span className="mr-1">📍</span>
-                    <span>{comp.pais}</span>
-                  </div>
-                </div>
+                <p className="text-slate-600 text-sm">{comp.descricao}</p>
               </div>
-            </Link>
-          ))}
-        </div>
-      )}
+
+              <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-600">
+                <span>📍 {comp.pais}</span>
+                <span>Ver tabela e rodadas →</span>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }
