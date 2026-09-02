@@ -1,12 +1,9 @@
 import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
+import { notFound } from 'next/navigation';
 import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
-
-export const metadata: Metadata = {
-  title: "Tabela e Jogos do Brasileirão Série A | Classificação e Rodadas | Agenda FC",
-  description: "Tabela de classificação completa e calendário de todas as rodadas com placares e jogos do Campeonato Brasileiro Série A.",
-};
+import { ligasFutebolConfig, LigaConfig, formatarNomeTime } from '@/lib/campeonatos';
 
 export const revalidate = 3600;
 
@@ -23,12 +20,23 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
-// 1. BUSCA TABELA (Tenta API ao vivo com fallback no cache local)
-async function getTabelaBrasileirao(): Promise<Tabela | null> {
-  // Tentativa 1: API direta
+// 1. METADADOS AUTOMÁTICOS PARA O GOOGLE (SEO)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const liga = ligasFutebolConfig[slug];
+  if (!liga) return { title: "Campeonato não encontrado | Agenda FC" };
+
+  return {
+    title: `Tabela e Jogos do ${liga.nome} | Classificação e Rodadas | Agenda FC`,
+    description: `Tabela de classificação completa, placares e calendário de todas as rodadas do ${liga.nome} (${liga.subtitulo}).`,
+  };
+}
+
+// 2. BUSCA TABELA DE CLASSIFICAÇÃO
+async function getTabelaLiga(liga: LigaConfig): Promise<Tabela | null> {
   try {
     if (process.env.API_FOOTBALLDATA_KEY) {
-      const res = await fetch("https://api.football-data.org/v4/competitions/BSA/standings", {
+      const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/standings`, {
         headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
         next: { revalidate: 3600 }
       });
@@ -38,28 +46,24 @@ async function getTabelaBrasileirao(): Promise<Tabela | null> {
         if (table && table.length > 0) return table;
       }
     }
-  } catch (e) {
-    console.log("Tentando ler tabela do cache local...");
-  }
+  } catch (e) {}
 
-  // Tentativa 2: Cache local
   try {
-    const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-standings.json");
+    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoStandings);
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     return data?.standings?.[0]?.table || null;
   } catch (error) {
-    console.error("ERRO AO LER tabela do Brasileirão no cache:", error);
+    console.error(`ERRO AO LER tabela de ${liga.nome}:`, error);
     return null;
   }
 }
 
-// 2. BUSCA TODOS OS JOGOS (Tenta API ao vivo com fallback no cache local)
-async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
-  // Tentativa 1: API direta
+// 3. BUSCA JOGOS E PLACARES DA LIGA
+async function getJogosLiga(liga: LigaConfig): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
   try {
     if (process.env.API_FOOTBALLDATA_KEY) {
-      const res = await fetch("https://api.football-data.org/v4/competitions/BSA/matches", {
+      const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/matches`, {
         headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
         next: { revalidate: 3600 }
       });
@@ -71,13 +75,10 @@ async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; cur
         };
       }
     }
-  } catch (e) {
-    console.log("Tentando ler jogos do cache local...");
-  }
+  } catch (e) {}
 
-  // Tentativa 2: Cache local
   try {
-    const filePath = path.join(process.cwd(), "public/api-cache/brasileirao-matches.json");
+    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoMatches);
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     
@@ -86,21 +87,26 @@ async function getTodosJogosBrasileirao(): Promise<{ matches: JogoFutebol[]; cur
       currentMatchday: data?.season?.currentMatchday || data?.filters?.matchday || 1
     };
   } catch (error) {
-    console.error("ERRO AO LER jogos do Brasileirão no cache:", error);
+    console.error(`ERRO AO LER jogos de ${liga.nome}:`, error);
     return null;
   }
 }
 
-export default async function BrasileiraoPage() {
+export default async function CampeonatoPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const liga = ligasFutebolConfig[slug];
+
+  if (!liga) notFound();
+
   const [tabela, jogosData] = await Promise.all([
-    getTabelaBrasileirao(),
-    getTodosJogosBrasileirao()
+    getTabelaLiga(liga),
+    getJogosLiga(liga)
   ]);
 
   if (!tabela || !jogosData) {
     return (
       <div className="bg-red-50 border border-red-200 text-red-800 p-6 rounded-lg text-center max-w-xl mx-auto my-12">
-        <h2 className="font-bold text-lg mb-2">Erro ao Carregar o Brasileirão</h2>
+        <h2 className="font-bold text-lg mb-2">Erro ao Carregar {liga.nome}</h2>
         <p>Não foi possível carregar os dados no momento. Por favor, tente novamente mais tarde.</p>
       </div>
     );
@@ -108,20 +114,23 @@ export default async function BrasileiraoPage() {
 
   const { matches, currentMatchday } = jogosData;
 
-  // Identifica a rodada atual
   const primeiroJogoNaoFinalizado = matches.find(j => j.status !== 'FINISHED');
   const rodadaInicial = primeiroJogoNaoFinalizado?.matchday || currentMatchday || 1;
 
   return (
     <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">
+      {/* HEADER DA LIGA */}
       <div className="text-center">
-        <h1 className="text-4xl font-extrabold text-gray-900">Brasileirão Série A</h1>
-        <p className="text-xl text-gray-600 mt-2">Classificação completa e calendário de rodadas</p>
+        <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
+          <span>{liga.bandeira}</span> {liga.nome}
+        </h1>
+        <p className="text-xl text-gray-600 mt-2">{liga.subtitulo} - Classificação e Rodadas</p>
       </div>
 
+      {/* GRID DE DUAS COLUNAS: TABELA + NAVEGADOR DE RODADAS */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         
-        {/* Coluna da Esquerda: Tabela de Classificação */}
+        {/* TABELA DE CLASSIFICAÇÃO */}
         <div className="lg:col-span-2 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏆 Classificação
@@ -146,7 +155,9 @@ export default async function BrasileiraoPage() {
                     <td className="px-3 py-3 font-bold text-gray-700">{time.position}</td>
                     <td className="px-3 py-3 flex items-center gap-2">
                       <img src={time.team.crest} alt={time.team.name} className="w-5 h-5 object-contain" />
-                      <span className="font-medium text-gray-900">{time.team.shortName || time.team.name}</span>
+                      <span className="font-medium text-gray-900">
+                        {formatarNomeTime(time.team.shortName, time.team.name)}
+                      </span>
                     </td>
                     <td className="px-3 py-3 text-center font-extrabold text-blue-600">{time.points}</td>
                     <td className="px-3 py-3 text-center">{time.playedGames}</td>
@@ -161,7 +172,7 @@ export default async function BrasileiraoPage() {
           </div>
         </div>
 
-        {/* Coluna da Direita: Navegador de Rodadas Interativo */}
+        {/* NAVEGADOR DE RODADAS INTERATIVO */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             ⚽ Jogos da Rodada

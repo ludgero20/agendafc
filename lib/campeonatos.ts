@@ -1,5 +1,90 @@
 // lib/campeonatos.ts
 
+export type LigaConfig = {
+  slug: string;
+  nome: string;
+  subtitulo: string;
+  codigoAPI: string;
+  arquivoStandings: string;
+  arquivoMatches: string;
+  bandeira: string;
+};
+
+export const ligasFutebolConfig: Record<string, LigaConfig> = {
+  "brasileirao": {
+    slug: "brasileirao",
+    nome: "Brasileirão Série A",
+    subtitulo: "Campeonato Brasileiro",
+    codigoAPI: "BSA",
+    arquivoStandings: "brasileirao-standings.json",
+    arquivoMatches: "brasileirao-matches.json",
+    bandeira: "🇧🇷"
+  },
+  "premier-league": {
+    slug: "premier-league",
+    nome: "Premier League",
+    subtitulo: "Campeonato Inglês",
+    codigoAPI: "PL",
+    arquivoStandings: "premier-league-standings.json",
+    arquivoMatches: "premier-league-matches.json",
+    bandeira: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  },
+  "la-liga": {
+    slug: "la-liga",
+    nome: "La Liga",
+    subtitulo: "Campeonato Espanhol",
+    codigoAPI: "PD",
+    arquivoStandings: "la-liga-standings.json",
+    arquivoMatches: "la-liga-matches.json",
+    bandeira: "🇪🇸"
+  },
+  "champions-league": {
+    slug: "champions-league",
+    nome: "Champions League",
+    subtitulo: "Liga dos Campeões da UEFA",
+    codigoAPI: "CL",
+    arquivoStandings: "champions-league-standings.json",
+    arquivoMatches: "champions-league-matches.json",
+    bandeira: "🏆"
+  },
+  "bundesliga": {
+    slug: "bundesliga",
+    nome: "Bundesliga",
+    subtitulo: "Campeonato Alemão",
+    codigoAPI: "BL1",
+    arquivoStandings: "bundesliga-standings.json",
+    arquivoMatches: "bundesliga-matches.json",
+    bandeira: "🇩🇪"
+  },
+  "serie-a": {
+    slug: "serie-a",
+    nome: "Serie A",
+    subtitulo: "Campeonato Italiano",
+    codigoAPI: "SA",
+    arquivoStandings: "serie-a-standings.json",
+    arquivoMatches: "serie-a-matches.json",
+    bandeira: "🇮🇹"
+  },
+  "ligue-1": {
+    slug: "ligue-1",
+    nome: "Ligue 1",
+    subtitulo: "Campeonato Francês",
+    codigoAPI: "FL1",
+    arquivoStandings: "ligue-1-standings.json",
+    arquivoMatches: "ligue-1-matches.json",
+    bandeira: "🇫🇷"
+  },
+  "primeira-liga": {
+    slug: "primeira-liga",
+    nome: "Primeira Liga",
+    subtitulo: "Campeonato Português",
+    codigoAPI: "PPL",
+    arquivoStandings: "primeira-liga-standings.json",
+    arquivoMatches: "primeira-liga-matches.json",
+    bandeira: "🇵🇹"
+  }
+};
+
 export const dicionarioCampeonatos: Record<string, string> = {
   "campeonato italiano": "Serie A",
   "campeonato espanhol": "La Liga",
@@ -19,7 +104,6 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "copa libertadores": "Copa Libertadores da América"
 };
 
-// 🇧🇷 Dicionário de Nomes Amigáveis para Clubes Brasileiros
 export const nomesTimesBrasil: Record<string, string> = {
   "CA Mineiro": "Atlético-MG",
   "Mineiro": "Atlético-MG",
