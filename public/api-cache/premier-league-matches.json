@@ -2952,11 +2952,11 @@
       },
       "id": 560585,
       "utcDate": "2026-09-20T13:00:00Z",
-      "status": "TIMED",
+      "status": "2026-09-19 13:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:42:20Z",
       "homeTeam": {
         "id": 341,
         "name": "Leeds United FC",
@@ -3011,11 +3011,11 @@
       },
       "id": 560590,
       "utcDate": "2026-09-20T13:00:00Z",
-      "status": "TIMED",
+      "status": "2026-09-19 13:00:00Z",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T08:42:20Z",
       "homeTeam": {
         "id": 65,
         "name": "Manchester City FC",
@@ -4425,65 +4425,6 @@
         "currentMatchday": 2,
         "winner": null
       },
-      "id": 560612,
-      "utcDate": "2026-10-24T14:00:00Z",
-      "status": "TIMED",
-      "matchday": 8,
-      "stage": "REGULAR_SEASON",
-      "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
-      "homeTeam": {
-        "id": 64,
-        "name": "Liverpool FC",
-        "shortName": "Liverpool",
-        "tla": "LIV",
-        "crest": "https://crests.football-data.org/64.png"
-      },
-      "awayTeam": {
-        "id": 397,
-        "name": "Brighton & Hove Albion FC",
-        "shortName": "Brighton Hove",
-        "tla": "BHA",
-        "crest": "https://crests.football-data.org/397.png"
-      },
-      "score": {
-        "winner": null,
-        "duration": "REGULAR",
-        "fullTime": {
-          "home": null,
-          "away": null
-        },
-        "halfTime": {
-          "home": null,
-          "away": null
-        }
-      },
-      "odds": {
-        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
-      },
-      "referees": []
-    },
-    {
-      "area": {
-        "id": 2072,
-        "name": "England",
-        "code": "ENG",
-        "flag": "https://crests.football-data.org/770.svg"
-      },
-      "competition": {
-        "id": 2021,
-        "name": "Premier League",
-        "code": "PL",
-        "type": "LEAGUE",
-        "emblem": "https://crests.football-data.org/PL.png"
-      },
-      "season": {
-        "id": 2502,
-        "startDate": "2026-08-21",
-        "endDate": "2027-05-30",
-        "currentMatchday": 2,
-        "winner": null
-      },
       "id": 560616,
       "utcDate": "2026-10-24T14:00:00Z",
       "status": "TIMED",
@@ -4622,6 +4563,65 @@
         "shortName": "Tottenham",
         "tla": "TOT",
         "crest": "https://crests.football-data.org/73.png"
+      },
+      "score": {
+        "winner": null,
+        "duration": "REGULAR",
+        "fullTime": {
+          "home": null,
+          "away": null
+        },
+        "halfTime": {
+          "home": null,
+          "away": null
+        }
+      },
+      "odds": {
+        "msg": "Activate Odds-Package in User-Panel to retrieve odds."
+      },
+      "referees": []
+    },
+    {
+      "area": {
+        "id": 2072,
+        "name": "England",
+        "code": "ENG",
+        "flag": "https://crests.football-data.org/770.svg"
+      },
+      "competition": {
+        "id": 2021,
+        "name": "Premier League",
+        "code": "PL",
+        "type": "LEAGUE",
+        "emblem": "https://crests.football-data.org/PL.png"
+      },
+      "season": {
+        "id": 2502,
+        "startDate": "2026-08-21",
+        "endDate": "2027-05-30",
+        "currentMatchday": 2,
+        "winner": null
+      },
+      "id": 560612,
+      "utcDate": "2026-10-25T14:00:00Z",
+      "status": "2026-10-24 13:00:00Z",
+      "matchday": 8,
+      "stage": "REGULAR_SEASON",
+      "group": null,
+      "lastUpdated": "2026-09-02T13:25:23Z",
+      "homeTeam": {
+        "id": 64,
+        "name": "Liverpool FC",
+        "shortName": "Liverpool",
+        "tla": "LIV",
+        "crest": "https://crests.football-data.org/64.png"
+      },
+      "awayTeam": {
+        "id": 397,
+        "name": "Brighton & Hove Albion FC",
+        "shortName": "Brighton Hove",
+        "tla": "BHA",
+        "crest": "https://crests.football-data.org/397.png"
       },
       "score": {
         "winner": null,
@@ -5311,12 +5311,12 @@
         "winner": null
       },
       "id": 560628,
-      "utcDate": "2026-11-01T14:00:00Z",
-      "status": "TIMED",
+      "utcDate": "2026-10-31T20:00:00Z",
+      "status": "2026-11-01 14:00:00Z",
       "matchday": 9,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-02T00:20:34Z",
+      "lastUpdated": "2026-09-02T13:25:23Z",
       "homeTeam": {
         "id": 58,
         "name": "Aston Villa FC",
