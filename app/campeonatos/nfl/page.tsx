@@ -5,7 +5,7 @@ import RodadaNFLClient, { JogoNFL } from '@/app/components/RodadaNFLClient';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NFL | Classificação e Rodadas | Agenda FC",
-  description: "Tabela de classificação completa e calendário de todas as rodadas com placares e jogos da NFL.",
+  description: "Tabela de classificação completa e calendário de todas as 18 semanas com placares e jogos da NFL.",
 };
 
 export const revalidate = 3600;
@@ -54,7 +54,7 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
 
           timesFormatados.push({
             teamName: entry.team?.displayName || entry.team?.name || 'Time',
-            teamLogo: entry.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/scoreboard/nfl.png',
+            teamLogo: entry.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${entry.team?.abbreviation?.toLowerCase() || 'nfl'}.png`,
             rank: String(index + 1),
             conference: nomeConferencia,
             division: nomeDivisao,
@@ -81,47 +81,62 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. JOGOS DA NFL COM LOGOS E FUSO HORÁRIO DE BRASÍLIA
+// 2. BUSCA TODAS AS 18 SEMANAS DA TEMPORADA REGULAR EM PARALELO
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
-    const res = await fetch("https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?limit=1000", {
-      next: { revalidate: 3600 }
-    });
-
-    if (!res.ok) throw new Error("Falha ao buscar jogos na ESPN");
-    const data = await res.json();
-    const eventos = data?.events || [];
+    const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
+    
+    // Busca as 18 semanas simultaneamente na ESPN
+    const responses = await Promise.all(
+      semanas.map(semana =>
+        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${semana}`, {
+          next: { revalidate: 3600 }
+        })
+          .then(res => res.ok ? res.json() : null)
+          .catch(() => null)
+      )
+    );
 
     const dateFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const todosJogos: JogoNFL[] = [];
 
-    const jogosFormatados: JogoNFL[] = eventos.map((ev: any) => {
-      const comp = ev.competitions?.[0];
-      const home = comp?.competitors?.find((c: any) => c.homeAway === 'home');
-      const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
+    responses.forEach((data, index) => {
+      const semanaNum = String(index + 1);
+      const eventos = data?.events || [];
 
-      const dataObj = ev.date ? new Date(ev.date) : new Date();
-      const dateEvent = dateFormatter.format(dataObj); 
-      const strTime = dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+      eventos.forEach((ev: any) => {
+        const comp = ev.competitions?.[0];
+        const home = comp?.competitors?.find((c: any) => c.homeAway === 'home');
+        const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
 
-      const finalizado = ev.status?.type?.completed;
-      const emAndamento = ev.status?.type?.state === 'in';
+        const dataObj = ev.date ? new Date(ev.date) : new Date();
+        const dateEvent = dateFormatter.format(dataObj);
+        const strTime = dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
 
-      return {
-        idEvent: String(ev.id),
-        intRound: String(ev.week?.number || '1'),
-        dateEvent: dateEvent,
-        strTime: strTime,
-        strHomeTeam: home?.team?.displayName || 'Casa',
-        strAwayTeam: away?.team?.displayName || 'Visitante',
-        strHomeLogo: home?.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/nfl.png',
-        strAwayLogo: away?.team?.logos?.[0]?.href || 'https://a.espncdn.com/i/teamlogos/nfl/500/nfl.png',
-        intHomeScore: finalizado || emAndamento ? String(home?.score || '0') : null,
-        intAwayScore: finalizado || emAndamento ? String(away?.score || '0') : null,
-        strStatus: finalizado ? 'Match Finished' : (emAndamento ? 'In Progress' : 'Not Started')
-      };
+        const finalizado = ev.status?.type?.completed;
+        const emAndamento = ev.status?.type?.state === 'in';
+
+        // 🎯 LOGO CORRETO DA ESPN: Leitura de team.logo direta
+        const logoHome = home?.team?.logo || home?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${home?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
+        const logoAway = away?.team?.logo || away?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${away?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
+
+        todosJogos.push({
+          idEvent: String(ev.id),
+          intRound: String(ev.week?.number || semanaNum),
+          dateEvent: dateEvent,
+          strTime: strTime,
+          strHomeTeam: home?.team?.displayName || 'Casa',
+          strAwayTeam: away?.team?.displayName || 'Visitante',
+          strHomeLogo: logoHome,
+          strAwayLogo: logoAway,
+          intHomeScore: finalizado || emAndamento ? String(home?.score || '0') : null,
+          intAwayScore: finalizado || emAndamento ? String(away?.score || '0') : null,
+          strStatus: finalizado ? 'Match Finished' : (emAndamento ? 'In Progress' : 'Not Started')
+        });
+      });
     });
 
-    if (jogosFormatados.length > 0) return jogosFormatados;
+    if (todosJogos.length > 0) return todosJogos;
     throw new Error("Nenhum evento na ESPN");
 
   } catch (error) {
@@ -235,7 +250,7 @@ export default async function NFLPage() {
           ))}
         </div>
 
-        {/* NAVEGADOR DE SEMANAS INTERATIVO COM PLACARES */}
+        {/* NAVEGADOR DE TODAS AS 18 SEMANAS */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏈 Jogos da Semana
