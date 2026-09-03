@@ -13,7 +13,6 @@ function extrairTextoHtml(html: string): string {
     .trim();
 }
 
-// 🛡️ REPARADOR AUTOMÁTICO DE JSON (Caso a resposta seja cortada no final)
 function repararJsonIncompleto(jsonStr: string): any[] {
   let limpo = jsonStr.replace(/```json/g, '').replace(/```/g, '').trim();
   
@@ -21,8 +20,6 @@ function repararJsonIncompleto(jsonStr: string): any[] {
     const parsed = JSON.parse(limpo);
     return Array.isArray(parsed) ? parsed : (parsed.jogosSemana || []);
   } catch (e) {
-    console.log("JSON cortado detectado. Reparando estrutura...");
-    // Encontra o último objeto completo '}'
     const ultimoFechamento = limpo.lastIndexOf('}');
     if (ultimoFechamento !== -1) {
       const jsonRecuperado = limpo.substring(0, ultimoFechamento + 1) + ']';
@@ -43,11 +40,16 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: false, error: "Chaves GEMINI_API_KEY ou GITHUB_TOKEN não configuradas." }, { status: 500 });
     }
 
+    // 1. CONFIGURAÇÃO DINÂMICA DO GITHUB (Sem precisar editar código!)
+    const githubOwner = process.env.GITHUB_OWNER || "ludgero20";
+    const githubRepo = process.env.GITHUB_REPO || "agendafc";
+    const filePath = "public/jogos.json";
+
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
     const hoje = formatter.format(agora).trim();
 
-    // 1. GERAÇÃO DINÂMICA DAS URLs DO OGOL (Hoje, D+1, D+2, D+3)
+    // 2. GERAÇÃO DINÂMICA DE DATAS (Hoje, D+1, D+2, D+3)
     const datasParaBuscar: string[] = [];
     const ogolUrls: string[] = [];
 
@@ -72,7 +74,7 @@ export async function GET(request: Request) {
       ? process.env.SCRAPE_URLS.split(',').map(url => url.trim()).filter(Boolean)
       : [...ogolUrls, ...fontesFixas];
 
-    // 2. BAIXA AS FONTES EM PARALELO
+    // 3. BAIXA AS FONTES EM PARALELO
     const resultados = await Promise.all(
       todasAsFontes.map(async (url) => {
         try {
@@ -106,7 +108,7 @@ export async function GET(request: Request) {
 
     const textoCompilado = textosValidos.join('\n\n');
 
-    // 3. PROMPT OTIMIZADO E FOCADO NAS PRINCIPAIS TRANSMISSÕES
+    // 4. PROMPT COM FOCO EM TODAS AS DATAS
     const prompt = `Hoje é dia ${hoje}. Aja como um compilador especialista em transmissões esportivas na TV e streaming no Brasil.
     
     Abaixo estão textos da programação de TV de múltiplos portais esportivos para as datas: ${datasParaBuscar.join(', ')}.
@@ -114,7 +116,7 @@ export async function GET(request: Request) {
 
     REGRAS ESSENCIAIS:
     1. COBERTURA: Extraia jogos de ${datasParaBuscar.join(', ')} (especialmente sábado e domingo).
-    2. RELEVÂNCIA: Foque em jogos com transmissão de TV e streaming (Brasileirão Séries A/B/C, Copa do Brasil, Libertadores, Sul-Americana, Champions, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, etc.). Ignore categorias de base sub-15 ou ligas amadoras sem relevância no Brasil.
+    2. RELEVÂNCIA: Foque em jogos com transmissão de TV e streaming (Brasileirão Séries A/B/C, Copa do Brasil, Libertadores, Sul-Americana, Champions, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, etc.). Ignore categorias de base sub-15 ou ligas amadoras sem transmissão real.
     3. UNIFICAÇÃO: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE. Junte os canais (ex: "TV Globo, SporTV, Premiere").
     4. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem markdown.
 
@@ -153,37 +155,52 @@ export async function GET(request: Request) {
     TEXTOS BRUTOS DAS FONTES ESPORTIVAS:
     ${textoCompilado}`;
 
-    // 4. CHAMA O GEMINI NO FREE TIER
+    // 5. CHAMA O GEMINI COM RETENTATIVA AUTOMÁTICA EM CASO DE PICO DE DEMANDA
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
-    
-    const geminiResponse = await fetch(geminiUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { 
-          responseMimeType: "application/json",
-          maxOutputTokens: 8192 
+    let geminiData: any = null;
+    let ultimoErro = "";
+
+    for (let tentativa = 1; tentativa <= 3; tentativa++) {
+      try {
+        const geminiResponse = await fetch(geminiUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { 
+              responseMimeType: "application/json",
+              maxOutputTokens: 8192 
+            }
+          })
+        });
+
+        const data = await geminiResponse.json();
+
+        if (data.error) {
+          ultimoErro = data.error.message;
+          console.log(`Tentativa ${tentativa} falhou: ${ultimoErro}. Aguardando 2s...`);
+          if (tentativa < 3) {
+            await new Promise(res => setTimeout(res, 2000));
+            continue;
+          }
+        } else if (data.candidates && data.candidates.length > 0) {
+          geminiData = data;
+          break; // Sucesso!
         }
-      })
-    });
-
-    const geminiData = await geminiResponse.json();
-
-    if (geminiData.error) {
-      return NextResponse.json({ success: false, error: `Erro da API do Gemini: ${geminiData.error.message}` }, { status: 400 });
+      } catch (err: any) {
+        ultimoErro = err.message;
+        if (tentativa < 3) await new Promise(res => setTimeout(res, 2000));
+      }
     }
 
-    if (!geminiData.candidates || geminiData.candidates.length === 0) {
-      return NextResponse.json({ success: false, error: "O Gemini não retornou candidatos de resposta." }, { status: 400 });
+    if (!geminiData) {
+      return NextResponse.json({ success: false, error: `Erro na API do Gemini após 3 tentativas: ${ultimoErro}` }, { status: 400 });
     }
 
     const textoGerado = geminiData.candidates[0].content.parts[0].text;
-    
-    // 🎯 PARSE SEGURO COM AUTO-HEALING
     let jogosGerados = repararJsonIncompleto(textoGerado);
 
-    // 5. FILTROS DE SEGURANÇA JS
+    // 6. FILTROS DE SEGURANÇA JS
     const jogosLimpos = jogosGerados
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
@@ -207,11 +224,7 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // 6. COMMIT DIRETO NO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO
-    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
-    const filePath = "public/jogos.json";
-    
+    // 7. COMMIT NO GITHUB (Usando as variáveis ou o valor padrão automático)
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
     const headersGithub = {
       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -223,14 +236,14 @@ export async function GET(request: Request) {
     const repoInfo = await repoInfoResponse.json();
 
     if (!repoInfo.sha) {
-      return NextResponse.json({ success: false, error: "Não foi possível encontrar public/jogos.json no repositório.", detalheGithub: repoInfo }, { status: 400 });
+      return NextResponse.json({ success: false, error: `Não foi possível encontrar ${filePath} no repositório ${githubOwner}/${githubRepo}.`, detalheGithub: repoInfo }, { status: 400 });
     }
 
     const commitResponse = await fetch(githubUrl, {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Atualização unificada de transmissões (${datasParaBuscar[0]} a ${datasParaBuscar[datasParaBuscar.length - 1]})`,
+        message: `🤖 Atualização de transmissões (${datasParaBuscar[0]} a ${datasParaBuscar[datasParaBuscar.length - 1]})`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -245,7 +258,8 @@ export async function GET(request: Request) {
       success: true, 
       message: `Jogos atualizados com sucesso para as datas: ${datasParaBuscar.join(', ')}!`, 
       fontesProcessadas: textosValidos.length,
-      quantidadeJogos: jogosLimpos.length 
+      quantidadeJogos: jogosLimpos.length,
+      repositorio: `${githubOwner}/${githubRepo}`
     });
 
   } catch (error: any) {
