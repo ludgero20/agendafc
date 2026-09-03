@@ -208,8 +208,8 @@ export async function GET(request: Request) {
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
     // 6. COMMIT DIRETO NO GITHUB
-    const githubOwner = "SEU_USUARIO_AQUI"; // 🔴 SEU USUÁRIO
-    const githubRepo = "SEU_REPOSITORIO_AQUI"; // 🔴 SEU REPOSITÓRIO
+    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO
+    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
