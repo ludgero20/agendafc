@@ -1,69 +1,81 @@
 import React from 'react';
-import Head from 'next/head';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Sobre o Agenda FC - Onde assistir futebol, F1, NFL e mais",
+  description: "Conheça a nossa história e missão. O Agenda FC é a sua plataforma completa para encontrar horários e canais de transmissão de futebol, Fórmula 1, NFL e outros esportes de forma fácil e rápida.",
+  keywords: "Agenda FC, sobre nós, missão, visão, futebol, NFL, fórmula 1, onde assistir, transmissão esportiva, canais de esporte",
+  authors: [{ name: "Agenda FC" }],
+};
 
 export default function Sobre() {
   return (
-    <>
-      <Head>
-        <title>Sobre o Agenda FC - Onde assistir futebol, NFL e mais</title>
-        <meta
-          name="description"
-          content="Conheça a nossa história e missão. O Agenda FC é a sua plataforma completa para encontrar horários e canais de transmissão de futebol, NFL e outros esportes de forma fácil e rápida."
-        />
-        <meta
-          name="keywords"
-          content="Agenda FC, sobre nós, missão, visão, futebol, NFL, onde assistir, transmissão esportiva, canais de esporte"
-        />
-        <meta name="author" content="Agenda FC" />
-      </Head>
+    <div className="space-y-12 max-w-5xl mx-auto py-6">
+      <div className="text-center py-6 space-y-3">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
+          ℹ️ Sobre o Agenda FC
+        </h1>
+        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          Mais do que um site, somos a sua bússola para não perder nenhum lance no mundo dos esportes.
+        </p>
+      </div>
 
-      <div className="space-y-12">
-        <div className="text-center py-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            ℹ️ Sobre o Agenda FC
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Mais do que um site, somos a sua bússola no mundo dos esportes.
+      <div className="grid md:grid-cols-2 gap-6">
+        {/* Nossa Missão */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-xs flex flex-col justify-between">
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <span>🎯</span> Nossa Missão
+            </h2>
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+              O <strong>Agenda FC</strong> nasceu de uma necessidade diária de todo fã de esportes: a dificuldade de saber, de forma rápida e confiável, onde e a que horas assistir às principais partidas e corridas. 
+            </p>
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Nossa missão é acabar com essa busca cansativa, compilando as informações oficiais sobre transmissões de <strong>Futebol, Fórmula 1, NFL</strong> e grandes eventos esportivos em um só lugar.
+            </p>
+          </div>
+          <div className="mt-6 pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600">
+            A parada obrigatória de quem ama esporte.
+          </div>
+        </div>
+
+        {/* O que Você Encontra Aqui */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-xs">
+          <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>✨</span> O que Você Encontra Aqui
+          </h2>
+          <ul className="space-y-3.5 text-sm sm:text-base text-slate-600">
+            <li className="flex items-start gap-2.5">
+              <span className="text-emerald-500 font-bold">✓</span>
+              <span>
+                <strong className="text-slate-900">Grade de Jogos Atualizada:</strong> Informações diárias sobre partidas do Brasil e do futebol internacional com canais verificados.
+              </span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="text-emerald-500 font-bold">✓</span>
+              <span>
+                <strong className="text-slate-900">Cobertura de Ligas e Modalidades:</strong> Acompanhamento do Brasileirão, Champions League, Premier League, La Liga, além de cobertura completa da Fórmula 1 e da NFL.
+              </span>
+            </li>
+            <li className="flex items-start gap-2.5">
+              <span className="text-emerald-500 font-bold">✓</span>
+              <span>
+                <strong className="text-slate-900">Agilidade e Simplicidade:</strong> Design limpo e intuitivo, feito para que você encontre a informação que precisa em poucos cliques, no celular ou no computador.
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Por que Confiar em Nós */}
+        <div className="bg-white rounded-2xl p-6 sm:p-8 col-span-full border border-slate-200/90 shadow-xs text-center space-y-3">
+          <h2 className="text-2xl font-bold text-slate-900 flex items-center justify-center gap-2">
+            <span>🛡️</span> Por que Confiar no Agenda FC?
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+            Nossa dedicação é total à <strong>precisão das informações</strong>. Os dados de transmissão são checados e compilados continuamente para garantir que você não perca nenhum evento ao vivo. O Agenda FC é feito por torcedores, para torcedores, com a convicção de que a emoção do jogo começa com a informação certa.
           </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Nova seção: Nossa História e Missão */}
-          <div className="bg-gray-100 rounded-xl p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">Nossa Missão</h2>
-            <p className="text-lg text-gray-600 mb-4">
-              O <strong>Agenda FC</strong> nasceu de uma necessidade comum: a dificuldade de saber, de forma rápida e confiável, onde e a que horas assistir aos principais jogos. Nossa missão é acabar com essa busca, compilando as informações mais importantes sobre transmissões de futebol, NFL e outros eventos esportivos em um só lugar.
-            </p>
-            <p className="text-lg text-gray-600">
-              Queremos ser a primeira e única parada para o torcedor que não quer perder um único lance.
-            </p>
-          </div>
-
-          {/* Nova seção: O que Oferecemos */}
-          <div className="bg-gray-100 rounded-xl p-8 shadow-sm">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">O que Você Encontra Aqui</h2>
-            <ul className="list-disc list-inside text-lg text-gray-600 space-y-3">
-              <li>
-                <strong>Grade de Jogos Atualizada:</strong> Informações diárias sobre partidas do Brasil, Europa e América, sempre com horários e canais de transmissão verificados.
-              </li>
-              <li>
-               <strong>Cobertura de Ligas e Campeonatos:</strong> Foco nos campeonatos mais importantes como Brasileirão, Copa do Brasil, Libertadores, Champions League, Premier League, La Liga, além de conteúdo exclusivo sobre a NFL.
-              </li>
-              <li>
-                <strong>Simplicidade e Facilidade:</strong> Um design limpo e intuitivo, feito para que você encontre a informação que precisa em poucos cliques, no celular ou no computador.
-              </li>
-            </ul>
-          </div>
-
-          {/* Nova seção: Por que Confiar em Nós */}
-          <div className="bg-gray-100 rounded-xl p-8 col-span-full shadow-sm">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Por que Confiar no Agenda FC?</h2>
-            <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">
-              Nossa dedicação é total à <strong>precisão</strong>. As informações de transmissão são cuidadosamente compiladas a partir de fontes oficiais para garantir que você não perca nenhum jogo. O Agenda FC é feito por fãs, para fãs, com a certeza de que a melhor experiência de torcedor começa com a informação certa.
-            </p>
-          </div>
-        </div>
       </div>
-    </>
+    </div>
   );
 }
