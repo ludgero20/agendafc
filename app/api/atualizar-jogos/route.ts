@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { dicionarioCampeonatos } from '@/lib/campeonatos';
 
-// 🧹 LIMPADOR INTELIGENTE: Preserva quebras de linha para a IA enxergar os blocos de sábado e domingo
 function extrairTextoHtml(html: string): string {
   return html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
@@ -20,39 +19,58 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: false, error: "Chaves GEMINI_API_KEY ou GITHUB_TOKEN não configuradas." }, { status: 500 });
     }
 
-    const fontesPadrao = [
-      "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315",
+    const agora = new Date();
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const hoje = formatter.format(agora).trim();
+
+    // 1. GERAÇÃO DINÂMICA DAS URLs DO OGOL (Hoje, D+1, D+2, D+3)
+    const datasParaBuscar: string[] = [];
+    const ogolUrls: string[] = [];
+
+    for (let i = 0; i <= 3; i++) {
+      const d = new Date(agora);
+      d.setDate(d.getDate() + i);
+      const dataIso = formatter.format(d).trim();
+      datasParaBuscar.push(dataIso);
+
+      const [ano, mes, dia] = dataIso.split('-').map(Number);
+      
+      // 🎯 URL exata do oGol com parâmetros de data
+      const urlOgol = `https://www.ogol.com.br/futebol/proximos-jogos?jogo_data_year=${ano}&jogo_data_month=${mes}&jogo_data_day=${dia}&jogo_estado=3&jogo_genero=0&id_pais=0&id_pais_equipas=0&fk_clube=0`;
+      ogolUrls.push(urlOgol);
+    }
+
+    const fontesFixas = [
+      "https://www.futebolnatv.com.br/",
       "https://www.futebolnatv.com.br/jogos-amanha",
-      "https://www.futebolnatv.com.br/"
+      "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315"
     ];
 
-    const fontesDisponiveis = process.env.SCRAPE_URLS 
+    const todasAsFontes = process.env.SCRAPE_URLS 
       ? process.env.SCRAPE_URLS.split(',').map(url => url.trim()).filter(Boolean)
-      : fontesPadrao;
+      : [...ogolUrls, ...fontesFixas];
 
-    const hoje = new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
-
-    // 1. BAIXA TODOS OS SITES EM PARALELO (COM CAPACIDADE AMPLIADA)
+    // 2. BAIXA TODAS AS FONTES EM PARALELO
     const resultados = await Promise.all(
-      fontesDisponiveis.map(async (url) => {
+      todasAsFontes.map(async (url) => {
         try {
           const res = await fetch(url, {
             headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
             },
             next: { revalidate: 0 }
           });
           if (res.ok) {
             const html = await res.text();
             const texto = extrairTextoHtml(html);
-            // 🎯 CAPACIDADE AMPLIADA: 60.000 caracteres para pegar todo o fim de semana!
-            if (texto.length > 500) {
+            if (texto.length > 300) {
               const hostname = new URL(url).hostname;
-              return `\n=== FONTE: ${hostname} ===\n${texto.slice(0, 60000)}`;
+              return `\n=== FONTE: ${hostname} (${url}) ===\n${texto.slice(0, 30000)}`;
             }
           }
         } catch (e) {
-          console.log(`Erro ao buscar fonte: ${url}`);
+          console.log(`Erro ao buscar: ${url}`);
         }
         return null;
       })
@@ -61,20 +79,20 @@ export async function GET(request: Request) {
     const textosValidos = resultados.filter(Boolean) as string[];
 
     if (textosValidos.length === 0) {
-      throw new Error("Nenhuma das fontes esportivas configuradas respondeu com sucesso.");
+      throw new Error("Nenhuma das fontes esportivas respondeu.");
     }
 
     const textoCompilado = textosValidos.join('\n\n');
 
-    // 2. PROMPT COM FOCO NO FIM DE SEMANA COMPLETO
-    const prompt = `Hoje é dia ${hoje}. Aja como um compilador e especialista em dados de transmissões esportivas.
+    // 3. PROMPT PARA O GEMINI COM FOCO EM TODAS AS DATAS
+    const prompt = `Hoje é dia ${hoje}. Aja como um compilador especialista em transmissões esportivas na TV e streaming no Brasil.
     
-    Abaixo estão textos da programação de TV retirados de MÚLTIPLOS portais de esportes.
-    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR TODOS os jogos de futebol disponíveis no texto (para HOJE, AMANHÃ, SÁBADO, DOMINGO e dias seguintes presentes no texto) em uma lista única e definitiva.
+    Abaixo estão textos da programação de TV de múltiplos portais esportivos para as datas: ${datasParaBuscar.join(', ')}.
+    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR TODOS os jogos de futebol para essas datas em uma lista única e definitiva.
 
-    REGRAS ESSENCIAIS DE COMPILAÇÃO:
-    1. VARREDURA COMPLETA: Não pare na sexta-feira. Percorra todo o texto e extraia TODOS os jogos de sábado, domingo e dias subsequentes que encontrar.
-    2. UNIFICAÇÃO INTELIGENTE: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE o jogo. Cruze as informações e junte todos os canais de transmissão citados (ex: "SporTV, Premiere").
+    REGRAS ESSENCIAIS:
+    1. COBERTURA TOTAL DAS DATAS: Extraia os jogos de ${datasParaBuscar.join(', ')}. Não deixe de incluir os jogos de sábado e domingo.
+    2. UNIFICAÇÃO INTELIGENTE: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE. Junte os canais citados (ex: "TV Globo, SporTV, Premiere").
     3. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown.
 
     REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
@@ -112,7 +130,7 @@ export async function GET(request: Request) {
     TEXTOS BRUTOS DAS FONTES ESPORTIVAS:
     ${textoCompilado}`;
 
-    // 3. CHAMA O GEMINI NO FREE TIER COM CAPACIDADE DE SAÍDA MÁXIMA
+    // 4. CHAMA O GEMINI NO PLANO GRATUITO
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     
     const geminiResponse = await fetch(geminiUrl, {
@@ -122,7 +140,7 @@ export async function GET(request: Request) {
         contents: [{ parts: [{ text: prompt }] }],
         generationConfig: { 
           responseMimeType: "application/json",
-          maxOutputTokens: 8192 // 🎯 Garante capacidade para centenas de jogos sem truncar
+          maxOutputTokens: 8192 
         }
       })
     });
@@ -142,7 +160,7 @@ export async function GET(request: Request) {
 
     let jogosGerados = JSON.parse(textoGerado);
 
-    // 4. FILTROS DE SEGURANÇA JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
+    // 5. FILTROS DE SEGURANÇA JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
     const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
@@ -166,9 +184,9 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // 5. COMMIT NO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO
-    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
+    // 6. COMMIT DIRETO NO GITHUB
+    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO GITHUB
+    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO GITHUB
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
@@ -189,7 +207,7 @@ export async function GET(request: Request) {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Compilação unificada de ${textosValidos.length} fontes esportivas (fim de semana)`,
+        message: `🤖 Atualização de transmissões (${datasParaBuscar[0]} a ${datasParaBuscar[datasParaBuscar.length - 1]})`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -202,7 +220,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: `Compilação de ${textosValidos.length} fontes concluída com sucesso!`, 
+      message: `Jogos atualizados com sucesso para as datas: ${datasParaBuscar.join(', ')}!`, 
       fontesProcessadas: textosValidos.length,
       quantidadeJogos: jogosLimpos.length 
     });
