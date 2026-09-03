@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import { timesConfig, TimeConfig } from '@/lib/times';
-import { formatarNomeTime } from '@/lib/times';
+import { formatarNomeTime } from '@/lib/campeonatos';
 
 export const revalidate = 3600;
 
@@ -32,7 +32,6 @@ type TimeTabela = {
   goalDifference?: number;
 };
 
-// 🎯 TIPO CORRIGIDO COM ID NO HOMETEAM E AWAYTEAM
 type JogoTemporada = {
   id: string | number;
   dateStr: string;
@@ -55,27 +54,87 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 1. TRANSMISSÕES DE TV
+// 📱 LEITOR DO GOOGLE SHEETS
+async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
+  try {
+    const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
+    const res = await fetch(sheetUrl, { next: { revalidate: 3600 } });
+    if (!res.ok) return [];
+
+    const tsvText = await res.text();
+    const linhas = tsvText.split('\n').map(l => l.trim()).filter(Boolean);
+    if (linhas.length <= 1) return [];
+
+    return linhas.slice(1).map((linha, index) => {
+      const colunas = linha.split('\t');
+      const [data, hora, campeonato, time1, time2, canal, divisao, fase] = colunas;
+
+      let dataNormalizada = (data || '').trim();
+      if (dataNormalizada.includes('/')) {
+        const partes = dataNormalizada.split('/');
+        if (partes.length === 3) {
+          dataNormalizada = `${partes[2]}-${partes[1].padStart(2, '0')}-${partes[0].padStart(2, '0')}`;
+        }
+      }
+
+      return {
+        id: 70000 + index,
+        data: dataNormalizada,
+        hora: (hora || '').replace(':', 'h').trim(),
+        campeonato: (campeonato || '').trim(),
+        canal: (canal || '').trim(),
+        time1: time1?.trim() || null,
+        time2: time2?.trim() || null,
+        divisao: divisao?.trim() || undefined,
+        fase: fase?.trim() || undefined,
+      };
+    });
+  } catch (error) {
+    return [];
+  }
+}
+
+// 1. TRANSMISSÕES DE TV (FILTRADAS DE HOJE EM DIANTE)
 async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]> {
   try {
     const jogosPath = path.join(process.cwd(), "public/jogos.json");
     const manuaisPath = path.join(process.cwd(), "public/jogos_manuais.json");
 
-    const [jogosFile, manuaisFile] = await Promise.all([
+    const [jogosFile, manuaisFile, jogosDoSheets] = await Promise.all([
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
-      fs.readFile(manuaisPath, "utf-8").catch(() => '{"jogosSemana": []}')
+      fs.readFile(manuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
+      getJogosDoGoogleSheets()
     ]);
 
     const jogosIA = JSON.parse(jogosFile).jogosSemana || [];
     const jogosManuais = JSON.parse(manuaisFile).jogosSemana || [];
 
-    const todos = [...jogosIA, ...jogosManuais];
+    const todos = [...jogosIA, ...jogosManuais, ...jogosDoSheets];
 
-    return todos.filter((jogo: JogoTransmissao) => {
-      const time1 = (jogo.time1 || '').toLowerCase();
-      const time2 = (jogo.time2 || '').toLowerCase();
-      return time.variacoesNome.some(v => time1.includes(v.toLowerCase()) || time2.includes(v.toLowerCase()));
-    });
+    // Data de hoje em Brasília
+    const agora = new Date();
+    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
+    const hojeStr = formatter.format(agora).trim();
+
+    return todos
+      .map((jogo: any) => {
+        let d = (jogo.data || '').trim();
+        if (d.includes('/')) {
+          const partes = d.split('/');
+          if (partes.length === 3) {
+            d = `${partes[2]}-${partes[1].padStart(2, '0')}-${partes[0].padStart(2, '0')}`;
+          }
+        }
+        return { ...jogo, data: d };
+      })
+      // 🎯 FILTRO: Apenas jogos onde o time participa E data de hoje em diante (sem jogos de ontem)
+      .filter((jogo: JogoTransmissao) => {
+        if (!jogo.data || jogo.data < hojeStr) return false;
+        const time1 = (jogo.time1 || '').toLowerCase();
+        const time2 = (jogo.time2 || '').toLowerCase();
+        return time.variacoesNome.some(v => time1.includes(v.toLowerCase()) || time2.includes(v.toLowerCase()));
+      })
+      .sort((a, b) => a.data.localeCompare(b.data) || a.hora.localeCompare(b.hora));
   } catch {
     return [];
   }
@@ -257,7 +316,9 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
     time.esporte === 'nfl' ? getDadosNFL(time) : getDadosFutebol(time)
   ]);
 
-  const formatarDiaParaWhatsApp = (dataStr: string) => {
+  // 📅 FORMATAÇÃO INTELIGENTE DO DIA (Hoje / Amanhã / Sáb, 05/09)
+  const formatarDiaCard = (dataStr: string) => {
+    if (!dataStr) return "";
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
     const hoje = formatter.format(agora);
@@ -271,18 +332,16 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
 
     const [ano, mes, dia] = dataStr.split('-').map(Number);
     const dataObj = new Date(ano, mes - 1, dia, 12);
-    const diaSemana = dataObj.toLocaleDateString('pt-BR', { weekday: 'long' });
+    const diaSemana = dataObj.toLocaleDateString('pt-BR', { weekday: 'short' });
     const diaMes = dataObj.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit' });
-    const diaSemanaCap = diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1);
-
-    return `${diaSemanaCap} (${diaMes})`;
+    return `${diaSemana}, ${diaMes}`;
   };
 
   const gerarLinkWhatsAppCard = (jogo: JogoTransmissao) => {
     const ehFutebol = time.esporte === 'futebol';
     const titulo = `${ehFutebol ? '⚽' : '🏈'} ${jogo.time1} x ${jogo.time2}`;
     const campeonato = jogo.divisao ? `${jogo.campeonato} ${jogo.divisao}` : jogo.campeonato;
-    const diaFormatado = formatarDiaParaWhatsApp(jogo.data);
+    const diaFormatado = formatarDiaCard(jogo.data);
 
     const mensagem = `${titulo}
 🏆 ${campeonato}
@@ -355,12 +414,22 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
           <div className="grid gap-4 md:grid-cols-2">
             {jogosTV.map((jogo) => (
               <div key={jogo.id} className="bg-white rounded-2xl p-5 shadow-xs hover:shadow-md transition-all border border-slate-200/90 flex flex-col justify-between gap-3">
-                <div className="flex justify-between items-center">
-                  <span className="text-xs font-bold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg border border-blue-200/60">{jogo.campeonato}</span>
-                  <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">🕒 {jogo.hora}</span>
+                {/* 🎯 DATA E HORÁRIO DESTACADOS NO TOPO DO CARD */}
+                <div className="flex justify-between items-center text-xs">
+                  <div className="flex items-center gap-2">
+                    <span className="font-bold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg border border-blue-200/60">
+                      {jogo.campeonato}
+                    </span>
+                    <span className="font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg border border-slate-200">
+                      📅 {formatarDiaCard(jogo.data)}
+                    </span>
+                  </div>
+                  <span className="font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+                    🕒 {jogo.hora}
+                  </span>
                 </div>
                 
-                <div className="py-2 flex items-center justify-between text-slate-900 font-bold text-base sm:text-lg">
+                <div className="py-2.5 flex items-center justify-between text-slate-900 font-bold text-base sm:text-lg">
                   <span className="w-[42%] text-right truncate">{jogo.time1}</span>
                   <span className="w-[16%] text-center text-xs font-extrabold uppercase text-slate-400 bg-slate-100 py-0.5 px-1.5 rounded border border-slate-200/80">vs</span>
                   <span className="w-[42%] text-left truncate">{jogo.time2}</span>
@@ -482,7 +551,6 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
       {/* BLOCO 3: HISTÓRICO E PRÓXIMOS CONFRONTOS */}
       <section className="grid md:grid-cols-2 gap-8">
-        {/* Últimos Resultados */}
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
             ⏮️ Últimos Resultados
@@ -503,7 +571,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -519,7 +587,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
@@ -532,7 +600,6 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
           )}
         </div>
 
-        {/* Próximas Semanas / Rodadas */}
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
             ⏭️ Próximos Jogos Agendados
@@ -551,7 +618,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -565,7 +632,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>

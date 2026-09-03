@@ -1,12 +1,16 @@
 import { NextResponse } from 'next/server';
-import { dicionarioCampeonatos } from '@/lib/campeonatos'; // 📦 Importa o dicionário modularizado
+import { dicionarioCampeonatos } from '@/lib/campeonatos';
 
+// 🧹 LIMPADOR INTELIGENTE: Preserva quebras de linha para a IA enxergar os blocos de sábado e domingo
 function extrairTextoHtml(html: string): string {
   return html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
     .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
+    .replace(/<br\s*[\/]?>/gi, '\n')
+    .replace(/<\/(p|div|h1|h2|h3|h4|li|tr)>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
-    .replace(/\s+/g, ' ')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/\n\s*\n+/g, '\n')
     .trim();
 }
 
@@ -16,7 +20,6 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: false, error: "Chaves GEMINI_API_KEY ou GITHUB_TOKEN não configuradas." }, { status: 500 });
     }
 
-    // Fontes padrão caso não haja nada na variável SCRAPE_URLS da Vercel
     const fontesPadrao = [
       "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315",
       "https://www.futebolnatv.com.br/jogos-amanha",
@@ -29,7 +32,7 @@ export async function GET(request: Request) {
 
     const hoje = new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
 
-    // 1. BAIXA TODAS AS FONTES EM PARALELO
+    // 1. BAIXA TODOS OS SITES EM PARALELO (COM CAPACIDADE AMPLIADA)
     const resultados = await Promise.all(
       fontesDisponiveis.map(async (url) => {
         try {
@@ -42,9 +45,10 @@ export async function GET(request: Request) {
           if (res.ok) {
             const html = await res.text();
             const texto = extrairTextoHtml(html);
+            // 🎯 CAPACIDADE AMPLIADA: 60.000 caracteres para pegar todo o fim de semana!
             if (texto.length > 500) {
               const hostname = new URL(url).hostname;
-              return `\n=== FONTE: ${hostname} ===\n${texto.slice(0, 15000)}`;
+              return `\n=== FONTE: ${hostname} ===\n${texto.slice(0, 60000)}`;
             }
           }
         } catch (e) {
@@ -62,15 +66,15 @@ export async function GET(request: Request) {
 
     const textoCompilado = textosValidos.join('\n\n');
 
-    // 2. PROMPT DE COMPILAÇÃO UNIFICADA
+    // 2. PROMPT COM FOCO NO FIM DE SEMANA COMPLETO
     const prompt = `Hoje é dia ${hoje}. Aja como um compilador e especialista em dados de transmissões esportivas.
     
     Abaixo estão textos da programação de TV retirados de MÚLTIPLOS portais de esportes.
-    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR todos os jogos de futebol para HOJE e para os PRÓXIMOS 3 DIAS em uma lista única e definitiva.
+    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR TODOS os jogos de futebol disponíveis no texto (para HOJE, AMANHÃ, SÁBADO, DOMINGO e dias seguintes presentes no texto) em uma lista única e definitiva.
 
     REGRAS ESSENCIAIS DE COMPILAÇÃO:
-    1. UNIFICAÇÃO INTELIGENTE: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE o jogo. Cruze as informações e junte todos os canais de transmissão citados (ex: se uma fonte diz "SporTV" e a outra diz "Premiere", o campo canal deve ser "SporTV, Premiere").
-    2. COBERTURA TOTAL: Se uma fonte trouxe um jogo que a outra não trouxe, inclua o jogo na lista.
+    1. VARREDURA COMPLETA: Não pare na sexta-feira. Percorra todo o texto e extraia TODOS os jogos de sábado, domingo e dias subsequentes que encontrar.
+    2. UNIFICAÇÃO INTELIGENTE: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE o jogo. Cruze as informações e junte todos os canais de transmissão citados (ex: "SporTV, Premiere").
     3. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown.
 
     REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
@@ -108,7 +112,7 @@ export async function GET(request: Request) {
     TEXTOS BRUTOS DAS FONTES ESPORTIVAS:
     ${textoCompilado}`;
 
-    // 3. CHAMA O GEMINI 3.6 FLASH NO FREE TIER
+    // 3. CHAMA O GEMINI NO FREE TIER COM CAPACIDADE DE SAÍDA MÁXIMA
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     
     const geminiResponse = await fetch(geminiUrl, {
@@ -116,7 +120,10 @@ export async function GET(request: Request) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { responseMimeType: "application/json" }
+        generationConfig: { 
+          responseMimeType: "application/json",
+          maxOutputTokens: 8192 // 🎯 Garante capacidade para centenas de jogos sem truncar
+        }
       })
     });
 
@@ -135,7 +142,7 @@ export async function GET(request: Request) {
 
     let jogosGerados = JSON.parse(textoGerado);
 
-    // 4. FILTROS DE SEGURANÇA JS
+    // 4. FILTROS DE SEGURANÇA JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
     const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
@@ -160,8 +167,8 @@ export async function GET(request: Request) {
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
     // 5. COMMIT NO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 COLOQUE SEU USUÁRIO GITHUB
-    const githubRepo = "agendafc"; // 🔴 COLOQUE SEU REPOSITÓRIO GITHUB
+    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO
+    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
@@ -182,7 +189,7 @@ export async function GET(request: Request) {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Compilação unificada de ${textosValidos.length} fontes esportivas`,
+        message: `🤖 Compilação unificada de ${textosValidos.length} fontes esportivas (fim de semana)`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
