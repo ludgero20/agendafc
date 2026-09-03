@@ -5,148 +5,109 @@ function extrairTextoHtml(html: string): string {
   return html
     .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
     .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '')
-    .replace(/<br\s*[\/]?>/gi, '\n')
-    .replace(/<\/(p|div|h1|h2|h3|h4|li|tr)>/gi, '\n')
     .replace(/<[^>]+>/g, ' ')
-    .replace(/[ \t]+/g, ' ')
-    .replace(/\n\s*\n+/g, '\n')
+    .replace(/\s+/g, ' ')
     .trim();
-}
-
-function repararJsonIncompleto(jsonStr: string): any[] {
-  let limpo = jsonStr.replace(/```json/g, '').replace(/```/g, '').trim();
-  
-  try {
-    const parsed = JSON.parse(limpo);
-    return Array.isArray(parsed) ? parsed : (parsed.jogosSemana || []);
-  } catch (e) {
-    const ultimoFechamento = limpo.lastIndexOf('}');
-    if (ultimoFechamento !== -1) {
-      const jsonRecuperado = limpo.substring(0, ultimoFechamento + 1) + ']';
-      try {
-        const parsedRecuperado = JSON.parse(jsonRecuperado);
-        return Array.isArray(parsedRecuperado) ? parsedRecuperado : (parsedRecuperado.jogosSemana || []);
-      } catch (e2) {
-        console.error("Falha ao recuperar JSON:", e2);
-      }
-    }
-    throw e;
-  }
 }
 
 export async function GET(request: Request) {
   try {
     if (!process.env.GEMINI_API_KEY || !process.env.GITHUB_TOKEN) {
-      return NextResponse.json({ success: false, error: "Chaves GEMINI_API_KEY ou GITHUB_TOKEN não configuradas." }, { status: 500 });
+      return NextResponse.json({ success: false, error: "Chaves de ambiente não configuradas na Vercel." }, { status: 500 });
     }
 
     const githubOwner = process.env.GITHUB_OWNER || "ludgero20";
     const githubRepo = process.env.GITHUB_REPO || "agendafc";
     const filePath = "public/jogos.json";
 
-    const agora = new Date();
-    const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    
-    // Mapeamento de datas para ensinar a IA
-    const datas = Array.from({ length: 4 }, (_, i) => {
-      const d = new Date(agora);
-      d.setDate(d.getDate() + i);
-      const dataIso = formatter.format(d).trim();
-      const diaSemana = d.toLocaleDateString('pt-BR', { weekday: 'long' });
-      return { dataIso, diaSemana };
+    const hoje = new Date().toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+
+    // 1. FAZ O DOWNLOAD DA PROGRAMAÇÃO DO GOAL.COM (A FONTE COMPROVADA)
+    const goalUrl = "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315";
+    const goalResponse = await fetch(goalUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+      },
+      next: { revalidate: 0 }
     });
 
-    // 🌐 FONTES REAIS E ABERTAS DE PROGRAMAÇÃO
-    const fontes = [
-      "https://www.futebolnatv.com.br/",
-      "https://www.futebolnatv.com.br/jogos-amanha",
-      "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315",
-      "https://www.mantosdofutebol.com.br/jogos-de-hoje-na-tv-ao-vivo/"
-    ];
-
-    // Baixa os portais em paralelo
-    const resultados = await Promise.all(
-      fontes.map(async (url) => {
-        try {
-          const res = await fetch(url, {
-            headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-            },
-            next: { revalidate: 0 }
-          });
-          if (res.ok) {
-            const html = await res.text();
-            const txt = extrairTextoHtml(html);
-            if (txt.length > 300) {
-              return `\n=== FONTE: ${new URL(url).hostname} ===\n${txt.slice(0, 25000)}`;
-            }
-          }
-        } catch (e) {}
-        return null;
-      })
-    );
-
-    const textosValidos = resultados.filter(Boolean) as string[];
-
-    if (textosValidos.length === 0) {
-      throw new Error("Nenhum portal esportivo respondeu.");
+    if (!goalResponse.ok) {
+      throw new Error(`Falha ao acessar o Goal.com (Status: ${goalResponse.status})`);
     }
 
-    const textoCompilado = textosValidos.join('\n\n');
+    const htmlGoal = await goalResponse.text();
+    const textoLimpo = extrairTextoHtml(htmlGoal);
 
-    // 🧠 PROMPT COM MAPEAMENTO INTELIGENTE DE DIAS DA SEMANA
-    const instrucaoDatas = datas.map(d => `- Se o jogo for ${d.diaSemana} (ou data correspondente), use o campo data: "${d.dataIso}"`).join('\n');
-
-    const prompt = `Hoje é ${datas[0].diaSemana}, data: ${datas[0].dataIso}.
-    Aja como um compilador especialista em transmissões esportivas na TV e streaming no Brasil.
+    // 2. PROMPT ORIGINAL QUE TROUXE OS 144 JOGOS
+    const prompt = `Hoje é dia ${hoje}. Aja como um extrator de dados de futebol.
     
-    Analise os textos da programação esportiva abaixo e extraia TODOS os jogos de futebol com transmissão ao vivo que encontrar.
+    Analise o texto abaixo retirado da programação do Goal.com e extraia os jogos de futebol com transmissão.
+    Retorne EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown:
 
-    MAPA DE DATAS PARA CADA DIA DA SEMANA:
-    ${instrucaoDatas}
-    - Se for "Hoje", use: "${datas[0].dataIso}"
-    - Se for "Amanhã", use: "${datas[1].dataIso}"
+    REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
+    - Campeonato Italiano -> Use "Serie A"
+    - Campeonato Espanhol -> Use "La Liga"
+    - Campeonato Saudita -> Use "Saudi Pro League"
+    - Campeonato Alemão -> Use "Bundesliga"
+    - Campeonato Francês -> Use "Ligue 1"
+    - Campeonato Inglês -> Use "Premier League"
+    - Campeonato Português -> Use "Primeira Liga"
+    - Liga Europa -> Use "Europa League"
+    - AFC Champions League Elite -> Use "Champions League Asiática"
+    - UEFA Champions League -> Use "Champions League"
+    - Copinha -> Use "Copa São Paulo de Futebol Júnior"
+    - Libertadores -> Use "Copa Libertadores da América"
+    
+    REGRAS PARA DIVISÃO E FASE:
+    - Se for "Brasileirão Série B", coloque "campeonato": "Brasileirão" e "divisao": "Série B".
+    - Se for "Brasileirão Série C", coloque "campeonato": "Brasileirão" e "divisao": "Série C".
+    - Para campeonatos de mata-mata, extraia a fase no campo "fase" (ex: "oitavas", "quartas", "semifinal", "final"). Se for pontos corridos normais, deixe "fase": null.
 
-    REGRAS DE FORMATAÇÃO:
-    - Retorne EXCLUSIVAMENTE um array JSON com os jogos encontrados.
-    - hora: formato HHhMM (ex: 16h00, 21h30).
-    - canal: canais separados por vírgula.
-    - campeonato: nomes padrão (Brasileirão, Copa do Brasil, Libertadores, Champions League, Premier League, La Liga, etc.).
-    - divisao: "Série B" ou "Série C" se aplicável, senão null.
-    - fase: fase de mata-mata ou null.
-    - Se o mesmo jogo estiver em mais de um site, NÃO DUPLIQUE. Cruze as informações e junte os canais.
+    ESTRUTURA DO OBJETO JSON:
+    - id: gere um numero aleatorio inteiro
+    - data: formato YYYY-MM-DD
+    - hora: formato HHhMM (com h minúsculo, ex: 16h00)
+    - campeonato: nome normalizado
+    - canal: canais separados por virgula
+    - time1: mandante
+    - time2: visitante
+    - divisao: nome da divisao ou null
+    - fase: nome da fase ou null
+    - evento_nome: null
+    - evento_descricao: null
 
-    ESTRUTURA DO JSON:
-    [{"id": 1001, "data": "YYYY-MM-DD", "hora": "16h00", "campeonato": "Brasileirão", "canal": "Globo, Premiere", "time1": "Time A", "time2": "Time B", "divisao": null, "fase": null, "evento_nome": null, "evento_descricao": null}]
+    TEXTO DA PROGRAMAÇÃO ESPORTIVA:
+    ${textoLimpo.slice(0, 40000)}`;
 
-    TEXTOS BRUTOS DAS EMISSORAS E PORTAIS:
-    ${textoCompilado}`;
-
-    // Chamada única e robusta ao Gemini
+    // 3. CHAMA O GEMINI NO PLANO GRATUITO
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+    
     const geminiResponse = await fetch(geminiUrl, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ parts: [{ text: prompt }] }],
-        generationConfig: { 
-          responseMimeType: "application/json",
-          maxOutputTokens: 8192 
-        }
+        generationConfig: { responseMimeType: "application/json" }
       })
     });
 
     const geminiData = await geminiResponse.json();
 
     if (geminiData.error) {
-      return NextResponse.json({ success: false, error: `Erro do Gemini: ${geminiData.error.message}` }, { status: 400 });
+      return NextResponse.json({ success: false, error: `Erro da API do Gemini: ${geminiData.error.message}` }, { status: 400 });
     }
 
-    const textoGerado = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-    const jogosGerados = repararJsonIncompleto(textoGerado);
+    if (!geminiData.candidates || geminiData.candidates.length === 0) {
+      return NextResponse.json({ success: false, error: "O Gemini não retornou candidatos de resposta." }, { status: 400 });
+    }
 
-    // Filtros de segurança e ordenação
-    const jogosLimpos = jogosGerados
+    let textoGerado = geminiData.candidates[0].content.parts[0].text;
+    textoGerado = textoGerado.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    let jogosGerados = JSON.parse(textoGerado);
+
+    // 4. FILTROS JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
+    const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
         jogo.campeonato = dicionarioCampeonatos[nomeLower] || jogo.campeonato;
@@ -170,7 +131,7 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // Commit no GitHub
+    // 5. COMMIT NO GITHUB
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
     const headersGithub = {
       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
@@ -182,14 +143,14 @@ export async function GET(request: Request) {
     const repoInfo = await repoInfoResponse.json();
 
     if (!repoInfo.sha) {
-      return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no repositório.", detalheGithub: repoInfo }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Não foi possível encontrar public/jogos.json no repositório.", detalheGithub: repoInfo }, { status: 400 });
     }
 
     const commitResponse = await fetch(githubUrl, {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Atualização automática de transmissões (${jogosLimpos.length} jogos)`,
+        message: "🤖 Atualização automática da agenda via Goal.com + Gemini",
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -202,9 +163,8 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: "Jogos atualizados com sucesso!", 
-      fontesProcessadas: textosValidos.length,
-      quantidadeJogos: jogosLimpos.length 
+      message: "Jogos atualizados com sucesso via Goal.com!", 
+      quantidade: jogosLimpos.length 
     });
 
   } catch (error: any) {
