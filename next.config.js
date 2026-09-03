@@ -17,14 +17,20 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "crests.football-data.org",
+      },
+      {
+        protocol: "https",
+        hostname: "a.espncdn.com",
+      },
+      {
+        protocol: "https",
         hostname: "www.thesportsdb.com",
-        port: "",
         pathname: "/images/**",
       },
       {
         protocol: "https",
         hostname: "r2.thesportsdb.com",
-        port: "",
         pathname: "/images/**",
       },
     ],
