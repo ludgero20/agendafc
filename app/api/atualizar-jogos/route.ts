@@ -13,6 +13,30 @@ function extrairTextoHtml(html: string): string {
     .trim();
 }
 
+// 🛡️ REPARADOR AUTOMÁTICO DE JSON (Caso a resposta seja cortada no final)
+function repararJsonIncompleto(jsonStr: string): any[] {
+  let limpo = jsonStr.replace(/```json/g, '').replace(/```/g, '').trim();
+  
+  try {
+    const parsed = JSON.parse(limpo);
+    return Array.isArray(parsed) ? parsed : (parsed.jogosSemana || []);
+  } catch (e) {
+    console.log("JSON cortado detectado. Reparando estrutura...");
+    // Encontra o último objeto completo '}'
+    const ultimoFechamento = limpo.lastIndexOf('}');
+    if (ultimoFechamento !== -1) {
+      const jsonRecuperado = limpo.substring(0, ultimoFechamento + 1) + ']';
+      try {
+        const parsedRecuperado = JSON.parse(jsonRecuperado);
+        return Array.isArray(parsedRecuperado) ? parsedRecuperado : (parsedRecuperado.jogosSemana || []);
+      } catch (e2) {
+        console.error("Falha ao recuperar JSON:", e2);
+      }
+    }
+    throw e;
+  }
+}
+
 export async function GET(request: Request) {
   try {
     if (!process.env.GEMINI_API_KEY || !process.env.GITHUB_TOKEN) {
@@ -34,8 +58,6 @@ export async function GET(request: Request) {
       datasParaBuscar.push(dataIso);
 
       const [ano, mes, dia] = dataIso.split('-').map(Number);
-      
-      // 🎯 URL exata do oGol com parâmetros de data
       const urlOgol = `https://www.ogol.com.br/futebol/proximos-jogos?jogo_data_year=${ano}&jogo_data_month=${mes}&jogo_data_day=${dia}&jogo_estado=3&jogo_genero=0&id_pais=0&id_pais_equipas=0&fk_clube=0`;
       ogolUrls.push(urlOgol);
     }
@@ -50,7 +72,7 @@ export async function GET(request: Request) {
       ? process.env.SCRAPE_URLS.split(',').map(url => url.trim()).filter(Boolean)
       : [...ogolUrls, ...fontesFixas];
 
-    // 2. BAIXA TODAS AS FONTES EM PARALELO
+    // 2. BAIXA AS FONTES EM PARALELO
     const resultados = await Promise.all(
       todasAsFontes.map(async (url) => {
         try {
@@ -66,7 +88,7 @@ export async function GET(request: Request) {
             const texto = extrairTextoHtml(html);
             if (texto.length > 300) {
               const hostname = new URL(url).hostname;
-              return `\n=== FONTE: ${hostname} (${url}) ===\n${texto.slice(0, 30000)}`;
+              return `\n=== FONTE: ${hostname} ===\n${texto.slice(0, 25000)}`;
             }
           }
         } catch (e) {
@@ -84,16 +106,17 @@ export async function GET(request: Request) {
 
     const textoCompilado = textosValidos.join('\n\n');
 
-    // 3. PROMPT PARA O GEMINI COM FOCO EM TODAS AS DATAS
+    // 3. PROMPT OTIMIZADO E FOCADO NAS PRINCIPAIS TRANSMISSÕES
     const prompt = `Hoje é dia ${hoje}. Aja como um compilador especialista em transmissões esportivas na TV e streaming no Brasil.
     
     Abaixo estão textos da programação de TV de múltiplos portais esportivos para as datas: ${datasParaBuscar.join(', ')}.
-    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR TODOS os jogos de futebol para essas datas em uma lista única e definitiva.
+    Sua tarefa é UNIFICAR, CRUZAR E COMPILAR os jogos de futebol para essas datas em uma lista única e definitiva.
 
     REGRAS ESSENCIAIS:
-    1. COBERTURA TOTAL DAS DATAS: Extraia os jogos de ${datasParaBuscar.join(', ')}. Não deixe de incluir os jogos de sábado e domingo.
-    2. UNIFICAÇÃO INTELIGENTE: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE. Junte os canais citados (ex: "TV Globo, SporTV, Premiere").
-    3. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown.
+    1. COBERTURA: Extraia jogos de ${datasParaBuscar.join(', ')} (especialmente sábado e domingo).
+    2. RELEVÂNCIA: Foque em jogos com transmissão de TV e streaming (Brasileirão Séries A/B/C, Copa do Brasil, Libertadores, Sul-Americana, Champions, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, etc.). Ignore categorias de base sub-15 ou ligas amadoras sem relevância no Brasil.
+    3. UNIFICAÇÃO: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE. Junte os canais (ex: "TV Globo, SporTV, Premiere").
+    4. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem markdown.
 
     REGRAS OBRIGATÓRIAS DE NOMES E PADRONIZAÇÃO:
     - Campeonato Italiano -> Use "Serie A"
@@ -130,7 +153,7 @@ export async function GET(request: Request) {
     TEXTOS BRUTOS DAS FONTES ESPORTIVAS:
     ${textoCompilado}`;
 
-    // 4. CHAMA O GEMINI NO PLANO GRATUITO
+    // 4. CHAMA O GEMINI NO FREE TIER
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     
     const geminiResponse = await fetch(geminiUrl, {
@@ -155,13 +178,13 @@ export async function GET(request: Request) {
       return NextResponse.json({ success: false, error: "O Gemini não retornou candidatos de resposta." }, { status: 400 });
     }
 
-    let textoGerado = geminiData.candidates[0].content.parts[0].text;
-    textoGerado = textoGerado.replace(/```json/g, '').replace(/```/g, '').trim();
+    const textoGerado = geminiData.candidates[0].content.parts[0].text;
+    
+    // 🎯 PARSE SEGURO COM AUTO-HEALING
+    let jogosGerados = repararJsonIncompleto(textoGerado);
 
-    let jogosGerados = JSON.parse(textoGerado);
-
-    // 5. FILTROS DE SEGURANÇA JS (NORMALIZAÇÃO E ANTI-DUPLICAÇÃO)
-    const jogosLimpos = (Array.isArray(jogosGerados) ? jogosGerados : jogosGerados.jogosSemana || [])
+    // 5. FILTROS DE SEGURANÇA JS
+    const jogosLimpos = jogosGerados
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
         jogo.campeonato = dicionarioCampeonatos[nomeLower] || jogo.campeonato;
@@ -185,8 +208,8 @@ export async function GET(request: Request) {
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
     // 6. COMMIT DIRETO NO GITHUB
-    const githubOwner = "ludgero20"; // 🔴 SEU USUÁRIO GITHUB
-    const githubRepo = "agendafc"; // 🔴 SEU REPOSITÓRIO GITHUB
+    const githubOwner = "SEU_USUARIO_AQUI"; // 🔴 SEU USUÁRIO
+    const githubRepo = "SEU_REPOSITORIO_AQUI"; // 🔴 SEU REPOSITÓRIO
     const filePath = "public/jogos.json";
     
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
@@ -207,7 +230,7 @@ export async function GET(request: Request) {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Atualização de transmissões (${datasParaBuscar[0]} a ${datasParaBuscar[datasParaBuscar.length - 1]})`,
+        message: `🤖 Atualização unificada de transmissões (${datasParaBuscar[0]} a ${datasParaBuscar[datasParaBuscar.length - 1]})`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
