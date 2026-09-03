@@ -8,25 +8,38 @@ const InstallPrompt = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Verifica se já foi dispensado pelo usuário
-    const dismissed = localStorage.getItem('installPromptDismissed');
+    try {
+      // 1. Verifica se já foi dispensado pelo usuário
+      const dismissed = localStorage.getItem('installPromptDismissed');
 
-    // Detecta se é um dispositivo móvel (simplificado)
-    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // 2. 🎯 CORREÇÃO CRÍTICA: Se o usuário JÁ está usando o app instalado, não mostra o banner!
+      const isStandalone = 
+        window.matchMedia('(display-mode: standalone)').matches || 
+        (navigator as any).standalone || 
+        document.referrer.includes('android-app://');
 
-    if (!dismissed && isMobile) {
-      // Atraso para não mostrar o banner imediatamente
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 3000); // Aparece após 3 segundos
+      if (isStandalone) return;
 
-      return () => clearTimeout(timer);
+      // 3. Detecta se é dispositivo móvel
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      if (!dismissed && isMobile) {
+        // Aparece suavemente após 3 segundos
+        const timer = setTimeout(() => {
+          setIsVisible(true);
+        }, 3000);
+
+        return () => clearTimeout(timer);
+      }
+    } catch {
+      // Evita travamentos em navegadores com restrições rígidas de privacidade
     }
   }, []);
 
   const handleDismiss = () => {
-    // Marca como dispensado para não mostrar novamente
-    localStorage.setItem('installPromptDismissed', 'true');
+    try {
+      localStorage.setItem('installPromptDismissed', 'true');
+    } catch {}
     setIsVisible(false);
   };
 
@@ -35,27 +48,39 @@ const InstallPrompt = () => {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 max-w-sm bg-white rounded-lg shadow-lg p-4 border z-50 animate-fade-in-up">
+    // 🎯 POSICIONAMENTO RESPONSIVO: Perfeito no mobile e elegante no desktop
+    <div 
+      className="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-sm bg-white rounded-2xl shadow-xl p-4 border border-slate-200 z-50 animate-fade-in-up"
+      role="alert"
+    >
       <div className="flex items-start">
-        <div className="flex-shrink-0">
-          <ArrowDownTrayIcon className="h-6 w-6 text-blue-500" />
+        <div className="flex-shrink-0 p-2 bg-blue-50 rounded-xl">
+          <ArrowDownTrayIcon className="h-6 w-6 text-blue-600" />
         </div>
-        <div className="ml-3">
-          <p className="text-sm font-semibold text-gray-900">
+        <div className="ml-3 flex-1">
+          <p className="text-sm font-bold text-slate-900">
             Acesso Rápido ao Agenda FC!
           </p>
-          <p className="text-sm text-gray-600 mt-1">
-            Instale nosso site na sua tela inicial para acessar a agenda com um toque.
+          <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+            Instale nosso app na sua tela inicial para conferir as transmissões com um único toque.
           </p>
-          <div className="mt-2">
-            <Link href="/instalar" className="text-sm font-bold text-blue-600 hover:underline">
-              Saiba como
+          <div className="mt-2.5">
+            <Link 
+              href="/instalar" 
+              onClick={handleDismiss}
+              className="inline-flex items-center text-xs font-extrabold text-blue-600 hover:text-blue-700 hover:underline"
+            >
+              Saiba como instalar →
             </Link>
           </div>
         </div>
-        <div className="ml-3 flex-shrink-0">
-          <button onClick={handleDismiss} className="p-1 rounded-full hover:bg-gray-100 focus:outline-none">
-            <XMarkIcon className="h-5 w-5 text-gray-400" />
+        <div className="ml-2 flex-shrink-0">
+          <button 
+            onClick={handleDismiss} 
+            className="p-1.5 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 transition-colors focus:outline-hidden"
+            aria-label="Fechar aviso de instalação"
+          >
+            <XMarkIcon className="h-5 w-5" />
           </button>
         </div>
       </div>

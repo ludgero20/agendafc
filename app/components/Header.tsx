@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // NOVO: Hook para saber a página atual
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const pathname = usePathname(); // NOVO: Pega o caminho da URL atual (ex: "/campeonatos")
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -26,14 +26,14 @@ export default function Header() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-[60] border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 bg-white shadow-xs z-[60] border-b border-slate-200">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link 
                 href="/" 
-                className="text-2xl font-bold text-blue-600 whitespace-nowrap" // MUDANÇA: Adicionado whitespace-nowrap
+                className="text-2xl font-black text-blue-600 tracking-tight whitespace-nowrap"
                 onClick={closeMobileMenu}
               >
                  Agenda FC 
@@ -42,18 +42,21 @@ export default function Header() {
 
             {/* Desktop Navigation Links */}
             <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
+              <div className="ml-10 flex items-baseline space-x-2">
                 {menuItems.map((item) => {
-                  const isActive = pathname === item.href; // NOVO: Verifica se o link é da página atual
+                  // 🎯 DESTAQUE PERSISTENTE: Fica ativo na Home e também em subpáginas como /time/flamengo
+                  const isActive = item.href === '/' 
+                    ? pathname === '/' 
+                    : pathname.startsWith(item.href);
+
                   return (
                     <Link 
                       key={item.href}
                       href={item.href} 
-                      // MUDANÇA: Classes dinâmicas para destacar o link ativo
-                      className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                      className={`px-3.5 py-2 rounded-xl text-sm font-semibold transition-all duration-150 ${
                         isActive 
-                          ? 'text-blue-600 bg-blue-50 font-semibold' 
-                          : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
+                          ? 'text-blue-600 bg-blue-50/80 shadow-2xs' 
+                          : 'text-slate-600 hover:text-blue-600 hover:bg-slate-50'
                       }`}
                     >
                       {item.label}
@@ -67,10 +70,10 @@ export default function Header() {
             <div className="md:hidden">
               <button 
                 onClick={toggleMobileMenu}
-                className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors"
-                aria-label="Toggle mobile menu"
-                aria-controls="mobile-menu"     // NOVO: Acessibilidade
-                aria-expanded={mobileMenuOpen}  // NOVO: Acessibilidade
+                className="p-2 rounded-xl text-slate-700 hover:text-blue-600 hover:bg-slate-50 focus:outline-hidden transition-colors"
+                aria-label="Alternar menu mobile"
+                aria-controls="mobile-menu"
+                aria-expanded={mobileMenuOpen}
               >
                 {mobileMenuOpen ? (
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,34 +93,36 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-40 md:hidden animate-fade-in"
           onClick={closeMobileMenu}
-        ></div>
+        />
       )}
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Dropdown */}
       <div 
-        id="mobile-menu" // NOVO: Acessibilidade
+        id="mobile-menu"
         className={`
-          fixed top-16 left-0 right-0 bg-white shadow-lg z-50 md:hidden border-b border-gray-200
-          transform transition-all duration-300 ease-in-out
-          ${mobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}
-        `} // MUDANÇA: Adicionado pointer-events-none quando fechado
+          fixed top-16 left-0 right-0 bg-white shadow-xl z-50 md:hidden border-b border-slate-200
+          transform transition-all duration-200 ease-in-out
+          ${mobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0 pointer-events-none'}
+        `}
       >
-        <nav className="px-4 py-2">
+        <nav className="px-4 py-3">
           <div className="space-y-1">
             {menuItems.map((item) => {
-              const isActive = pathname === item.href; // NOVO: Verifica se o link é da página atual
+              const isActive = item.href === '/' 
+                ? pathname === '/' 
+                : pathname.startsWith(item.href);
+
               return (
                 <Link 
                   key={item.href}
                   href={item.href}
                   onClick={closeMobileMenu}
-                  // MUDANÇA: Classes dinâmicas para destacar o link ativo
-                  className={`block px-4 py-3 text-base font-medium rounded-md transition-colors duration-200 ${
+                  className={`block px-4 py-3 text-base font-semibold rounded-xl transition-colors ${
                     isActive
-                      ? 'text-blue-600 bg-blue-50 font-semibold'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-gray-100'
+                      ? 'text-blue-600 bg-blue-50 font-bold'
+                      : 'text-slate-700 hover:text-blue-600 hover:bg-slate-50'
                   }`}
                 >
                   {item.label}
