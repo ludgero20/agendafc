@@ -1,3 +1,30 @@
 {
-  "jogosSemana": []
+  "jogosSemana": [
+    {
+      "id": 1001,
+      "data": "2026-09-03",
+      "hora": "13h00",
+      "campeonato": "Copa Itália",
+      "canal": "SportyNet",
+      "time1": "Palermo",
+      "time2": "Mantova",
+      "divisao": null,
+      "fase": "16-avos de final",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 1002,
+      "data": "2026-09-03",
+      "hora": "13h30",
+      "campeonato": "Saudi Pro League",
+      "canal": "BandSports, OneFootball, Canal GOAT",
+      "time1": "Neom",
+      "time2": "Al Khaleej Saihat",
+      "divisao": null,
+      "fase": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    }
+  ]
 }
