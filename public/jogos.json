@@ -1266,6 +1266,174 @@
       "time2": "Grêmio",
       "evento_nome": null,
       "evento_descricao": null
+    },
+    {
+      "id": 86486,
+      "data": "2026-09-08",
+      "hora": "12h30",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT",
+      "time1": "Al Ettifaq",
+      "time2": "Al Faisaly",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 27685,
+      "data": "2026-09-08",
+      "hora": "13h45",
+      "campeonato": "Champions League",
+      "canal": "TNT e HBO Max",
+      "time1": "Club Brugge",
+      "time2": "Aston Villa",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 17296,
+      "data": "2026-09-08",
+      "hora": "13h45",
+      "campeonato": "Champions League",
+      "canal": "Space e HBO Max",
+      "time1": "AEK Atenas",
+      "time2": "LASK Linz",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 89317,
+      "data": "2026-09-08",
+      "hora": "15h00",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT e Xsports",
+      "time1": "Al Ittihad",
+      "time2": "Al Fayha",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 39952,
+      "data": "2026-09-08",
+      "hora": "15h00",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT",
+      "time1": "Al Qadsiah",
+      "time2": "Al Ahli",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 64091,
+      "data": "2026-09-08",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "SBT, TNT e HBO Max",
+      "time1": "Real Madrid",
+      "time2": "Inter de Milão",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 60858,
+      "data": "2026-09-08",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "TNT Sports Brasil (YouTube) e HBO Max",
+      "time1": "Borussia Dortmund",
+      "time2": "VIllarreal",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 10556,
+      "data": "2026-09-08",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "Space e HBO Max",
+      "time1": "Porto",
+      "time2": "Manchester City",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 62832,
+      "data": "2026-09-08",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "HBO Max",
+      "time1": "Lille",
+      "time2": "Real Betis",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 18043,
+      "data": "2026-09-08",
+      "hora": "16h00",
+      "campeonato": "Brasileirão",
+      "canal": "ESPN 4 e Disney+",
+      "time1": "Bolton",
+      "time2": "West Ham",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 86868,
+      "data": "2026-09-08",
+      "hora": "19h00",
+      "campeonato": "Copa Libertadores (quartas de final)",
+      "canal": "ESPN e Disney+",
+      "time1": "Fluminense",
+      "time2": "Platense",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 35213,
+      "data": "2026-09-08",
+      "hora": "19h00",
+      "campeonato": "Copa Sul-Americana (quartas de final)",
+      "canal": "Paramount+",
+      "time1": "Independiente Santa Fe",
+      "time2": "Vasco",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 77016,
+      "data": "2026-09-08",
+      "hora": "20h30",
+      "campeonato": "Brasileirão",
+      "canal": "Disney+",
+      "time1": "Cuiabá",
+      "time2": "Athletic Club-MG",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 16129,
+      "data": "2026-09-08",
+      "hora": "21h30",
+      "campeonato": "Copa Sul-Americana (quartas de final)",
+      "canal": "SBT, ESPN e Disney+",
+      "time1": "Boca Juniors",
+      "time2": "São Paulo",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 87241,
+      "data": "2026-09-08",
+      "hora": "21h30",
+      "campeonato": "Brasileirão",
+      "canal": "Canal GOAT, Xsports, ESPN 4 e Disney+",
+      "time1": "Criciúma",
+      "time2": "Juventude",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
     }
   ]
 }
