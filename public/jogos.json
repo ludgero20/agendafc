@@ -8,8 +8,6 @@
       "canal": "Xsports e CazéTV",
       "time1": "Lyon",
       "time2": "Auxerre",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -21,8 +19,6 @@
       "canal": "Canal GOAT e Bandsports",
       "time1": "Al Shabab",
       "time2": "Al Hilal",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -34,8 +30,6 @@
       "canal": "Canal GOAT",
       "time1": "Al Ahli",
       "time2": "Al Riyadh",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -47,8 +41,6 @@
       "canal": "CazéTV, Sportv e OneFootball",
       "time1": "Stuttgart",
       "time2": "Colônia",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -60,8 +52,6 @@
       "canal": "ESPN 4 e Disney+",
       "time1": "Genoa",
       "time2": "Como",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -73,8 +63,6 @@
       "canal": "DAZN",
       "time1": "Lommel",
       "time2": "Club Brugge",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -86,8 +74,6 @@
       "canal": "ESPN e Disney+",
       "time1": "Ipswich Town",
       "time2": "Liverpool",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -99,8 +85,6 @@
       "canal": "CazéTV",
       "time1": "Real Betis",
       "time2": "Real Madrid",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -112,8 +96,6 @@
       "canal": "Xsports e CazéTV",
       "time1": "PSG",
       "time2": "Monaco",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -125,8 +107,6 @@
       "canal": "Disney+",
       "time1": "Porto",
       "time2": "Moreirense",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -139,7 +119,6 @@
       "time1": "Criciúma",
       "time2": "Cuiabá",
       "divisao": "Série B",
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -151,8 +130,6 @@
       "canal": "Apple TV",
       "time1": "New York City",
       "time2": "Nashville",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -165,7 +142,6 @@
       "time1": "Athletic Club-MG",
       "time2": "Vila Nova",
       "divisao": "Série B",
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -177,8 +153,6 @@
       "canal": "SporTV, TV Brasil, N Sports (TV e YouTube)",
       "time1": "Palmeiras (F)",
       "time2": "Bahia (F)",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -191,7 +165,6 @@
       "time1": "CRB",
       "time2": "América-MG",
       "divisao": "Série B",
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -203,8 +176,6 @@
       "canal": "ESPN e Disney+",
       "time1": "Newcastle United",
       "time2": "Bournemouth",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -212,12 +183,11 @@
       "id": 1017,
       "data": "2026-09-05",
       "hora": "08h30",
-      "campeonato": "Campeonato Inglês (segunda divisão)",
+      "campeonato": "Brasileirão",
       "canal": "ESPN 4 e Disney+",
       "time1": "Preston North End",
       "time2": "Blackburn Rovers",
-      "divisao": null,
-      "fase": null,
+      "divisao": "Série B",
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -229,8 +199,6 @@
       "canal": "SportyNet (YouTube) e Disney+",
       "time1": "Fiorentina",
       "time2": "Torino",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -242,8 +210,6 @@
       "canal": "Canal GOAT e OneFootball",
       "time1": "Hoffenheim",
       "time2": "Borussia Dortmund",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -255,8 +221,6 @@
       "canal": "OneFootball",
       "time1": "Bayer Leverkusen",
       "time2": "Union Berlin",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     },
@@ -268,8 +232,6 @@
       "canal": "Canal GOAT e OneFootball",
       "time1": "Borussia Monchengladbach",
       "time2": "Elversberg",
-      "divisao": null,
-      "fase": null,
       "evento_nome": null,
       "evento_descricao": null
     }
