@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 1,
+            "name": "1. FC Köln",
+            "shortName": "1. FC Köln",
+            "tla": "KOE",
+            "crest": "https://crests.football-data.org/1.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 1,
+          "draw": 1,
+          "lost": 0,
+          "points": 4,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDifference": 1
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 5,
             "name": "FC Bayern München",
             "shortName": "Bayern",
@@ -48,7 +67,7 @@
           "goalDifference": 4
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 17,
             "name": "SC Freiburg",
@@ -67,7 +86,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 16,
             "name": "FC Augsburg",
@@ -86,7 +105,7 @@
           "goalDifference": 3
         },
         {
-          "position": 3,
+          "position": 4,
           "team": {
             "id": 721,
             "name": "RB Leipzig",
@@ -105,7 +124,7 @@
           "goalDifference": 3
         },
         {
-          "position": 5,
+          "position": 6,
           "team": {
             "id": 4,
             "name": "Borussia Dortmund",
@@ -124,26 +143,7 @@
           "goalDifference": 2
         },
         {
-          "position": 6,
-          "team": {
-            "id": 1,
-            "name": "1. FC Köln",
-            "shortName": "1. FC Köln",
-            "tla": "KOE",
-            "crest": "https://crests.football-data.org/1.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 1,
-          "draw": 0,
-          "lost": 0,
-          "points": 3,
-          "goalsFor": 3,
-          "goalsAgainst": 2,
-          "goalDifference": 1
-        },
-        {
-          "position": 6,
+          "position": 7,
           "team": {
             "id": 719,
             "name": "SV 07 Elversberg",
@@ -240,6 +240,25 @@
         {
           "position": 12,
           "team": {
+            "id": 10,
+            "name": "VfB Stuttgart",
+            "shortName": "Stuttgart",
+            "tla": "VFB",
+            "crest": "https://crests.football-data.org/10.png"
+          },
+          "playedGames": 2,
+          "form": null,
+          "won": 0,
+          "draw": 1,
+          "lost": 1,
+          "points": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 5,
+          "goalDifference": -4
+        },
+        {
+          "position": 13,
+          "team": {
             "id": 3,
             "name": "Bayer 04 Leverkusen",
             "shortName": "Leverkusen",
@@ -257,7 +276,7 @@
           "goalDifference": -1
         },
         {
-          "position": 12,
+          "position": 13,
           "team": {
             "id": 2,
             "name": "TSG 1899 Hoffenheim",
@@ -276,7 +295,7 @@
           "goalDifference": -1
         },
         {
-          "position": 14,
+          "position": 15,
           "team": {
             "id": 7,
             "name": "Hamburger SV",
@@ -295,7 +314,7 @@
           "goalDifference": -2
         },
         {
-          "position": 15,
+          "position": 16,
           "team": {
             "id": 12,
             "name": "SV Werder Bremen",
@@ -314,7 +333,7 @@
           "goalDifference": -3
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 18,
             "name": "Borussia Mönchengladbach",
@@ -333,7 +352,7 @@
           "goalDifference": -3
         },
         {
-          "position": 16,
+          "position": 17,
           "team": {
             "id": 6,
             "name": "FC Schalke 04",
@@ -350,25 +369,6 @@
           "goalsFor": 0,
           "goalsAgainst": 3,
           "goalDifference": -3
-        },
-        {
-          "position": 18,
-          "team": {
-            "id": 10,
-            "name": "VfB Stuttgart",
-            "shortName": "Stuttgart",
-            "tla": "VFB",
-            "crest": "https://crests.football-data.org/10.png"
-          },
-          "playedGames": 1,
-          "form": null,
-          "won": 0,
-          "draw": 0,
-          "lost": 1,
-          "points": 0,
-          "goalsFor": 1,
-          "goalsAgainst": 5,
-          "goalDifference": -4
         }
       ]
     }
