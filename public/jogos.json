@@ -1178,6 +1178,94 @@
       "time2": "Chapecoense",
       "evento_nome": null,
       "evento_descricao": null
+    },
+    {
+      "id": 47391,
+      "data": "2026-09-07",
+      "hora": "13h30",
+      "campeonato": "Serie A",
+      "canal": "Disney+",
+      "time1": "Cagliari",
+      "time2": "Lecce",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 19226,
+      "data": "2026-09-07",
+      "hora": "14h00",
+      "campeonato": "La Liga",
+      "canal": "CazéTV",
+      "time1": "Getafe",
+      "time2": "Celta de Vigo",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 68168,
+      "data": "2026-09-07",
+      "hora": "15h00",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT",
+      "time1": "Al Hilal",
+      "time2": "Neom",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 68718,
+      "data": "2026-09-07",
+      "hora": "15h45",
+      "campeonato": "Serie A",
+      "canal": "SportyNet (TV e Youtube) e Disney+",
+      "time1": "Udinese",
+      "time2": "Lazio",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 36217,
+      "data": "2026-09-07",
+      "hora": "16h15",
+      "campeonato": "Primeira Liga",
+      "canal": "Disney+",
+      "time1": "Estoril",
+      "time2": "Arouca",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 48471,
+      "data": "2026-09-07",
+      "hora": "16h30",
+      "campeonato": "La Liga",
+      "canal": "CazéTV",
+      "time1": "Elche",
+      "time2": "Real Sociedad",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 43210,
+      "data": "2026-09-07",
+      "hora": "17h00",
+      "campeonato": "Brasileirão Feminino",
+      "canal": "Sportv",
+      "time1": "Corinthians (F)",
+      "time2": "Cruzeiro (F)",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 49140,
+      "data": "2026-09-07",
+      "hora": "20h00",
+      "campeonato": "Brasileirão",
+      "canal": "Sportv e Premiere",
+      "time1": "Vitória",
+      "time2": "Grêmio",
+      "evento_nome": null,
+      "evento_descricao": null
     }
   ]
 }
