@@ -16,7 +16,6 @@ function extrairTextoHtml(html: string): string {
 
 function repararJsonIncompleto(jsonStr: string): any[] {
   let limpo = jsonStr.replace(/```json/g, '').replace(/```/g, '').trim();
-  
   try {
     const parsed = JSON.parse(limpo);
     return Array.isArray(parsed) ? parsed : (parsed.jogosSemana || []);
@@ -27,11 +26,9 @@ function repararJsonIncompleto(jsonStr: string): any[] {
       try {
         const parsedRecuperado = JSON.parse(jsonRecuperado);
         return Array.isArray(parsedRecuperado) ? parsedRecuperado : (parsedRecuperado.jogosSemana || []);
-      } catch (e2) {
-        console.error("Falha ao recuperar JSON:", e2);
-      }
+      } catch (e2) {}
     }
-    throw e;
+    return [];
   }
 }
 
@@ -49,68 +46,67 @@ export async function GET(request: Request) {
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
     const hoje = formatter.format(agora).trim();
 
-    // 1. FAZ O DOWNLOAD DA MATÉRIA DO GOAL.COM
-    const goalUrl = "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315";
-    const goalResponse = await fetch(goalUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
-      },
-      next: { revalidate: 0 }
-    });
+    // 1. BAIXA AS 3 FONTES EM PARALELO (Garante Hoje, Amanhã e Fim de Semana)
+    const fontes = [
+      "https://www.futebolnatv.com.br/",
+      "https://www.futebolnatv.com.br/jogos-amanha",
+      "https://www.goal.com/br/listas/futebol-programacao-jogos-tv-aberta-fechada-onde-assistir-online-app/bltc0a7361374657315"
+    ];
 
-    if (!goalResponse.ok) {
-      throw new Error(`Falha ao acessar o Goal.com (Status: ${goalResponse.status})`);
+    const resultados = await Promise.all(
+      fontes.map(async (url) => {
+        try {
+          const res = await fetch(url, {
+            headers: {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+              'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7'
+            },
+            next: { revalidate: 0 }
+          });
+          if (res.ok) {
+            const html = await res.text();
+            const txt = extrairTextoHtml(html);
+            if (txt.length > 200) {
+              return `\n=== FONTE: ${new URL(url).hostname} ===\n${txt.slice(0, 50000)}`;
+            }
+          }
+        } catch (e) {}
+        return null;
+      })
+    );
+
+    const textosValidos = resultados.filter(Boolean) as string[];
+
+    if (textosValidos.length === 0) {
+      throw new Error("Nenhuma fonte de programação esportiva respondeu.");
     }
 
-    const htmlGoal = await goalResponse.text();
-    const textoLimpo = extrairTextoHtml(htmlGoal);
+    const textoCompilado = textosValidos.join('\n\n');
 
-    // 2. PROMPT CALIBRADO PARA A ESTRUTURA DO GOAL.COM
-    const prompt = `Aja como um extrator especialista em dados de transmissões de futebol no Brasil.
+    // 2. PROMPT DE COMPILAÇÃO
+    const prompt = `Hoje é dia ${hoje}. Aja como um compilador especialista em transmissões de futebol no Brasil.
+    
+    Analise os textos da programação esportiva abaixo e extraia TODOS os jogos de futebol com transmissão ao vivo que encontrar (sexta, sábado, domingo e dias seguintes).
 
-    Analise o texto abaixo retirado da programação do Goal.com e extraia TODOS os jogos de futebol com transmissão presentes no texto (sexta, sábado, domingo e dias seguintes).
+    REGRAS ESSENCIAIS:
+    1. EXTRAÇÃO COMPLETA: Não pare na sexta-feira. Extraia todos os jogos de sábado e domingo presentes nos textos.
+    2. UNIFICAÇÃO: Se o mesmo jogo aparecer em mais de uma fonte, NÃO DUPLIQUE. Junte os canais (ex: "SporTV, Premiere").
+    3. RETORNE EXCLUSIVAMENTE um array JSON puro, sem formatações de markdown.
 
-    REGRAS OBRIGATÓRIAS DE EXTRAÇÃO:
-    1. DATAS: O texto possui seções como "Jogos de sexta, 4 de setembro de 2026", "Jogos de sábado, 5 de setembro de 2026", "Jogos de domingo, 6 de setembro de 2026". Converta a data de cada jogo estritamente para o formato YYYY-MM-DD (ex: 2026-09-04, 2026-09-05, 2026-09-06).
-    2. HORÁRIOS: Converta horários como "14h" para "14h00", "8h30" para "08h30", "0h" para "00h00" (formato estrito HHhMM com 4 dígitos e h minúsculo).
-    3. CAMPEONATOS: Normalize os nomes:
-       - "Campeonato Brasileiro" ou "Brasileirão": use "Brasileirão"
-       - "Campeonato Brasileiro (segunda divisão)": use campeonato "Brasileirão" e divisao "Série B"
-       - "Campeonato Brasileiro (terceira divisão)": use campeonato "Brasileirão" e divisao "Série C"
-       - "Campeonato Brasileiro Feminino": use "Brasileirão Feminino"
-       - "Campeonato Inglês": use "Premier League"
-       - "Campeonato Espanhol": use "La Liga"
-       - "Campeonato Italiano": use "Serie A"
-       - "Campeonato Alemão": use "Bundesliga"
-       - "Campeonato Francês": use "Ligue 1"
-       - "Campeonato Português": use "Primeira Liga"
-       - "Campeonato Saudita": use "Saudi Pro League"
-       - Outros campeonatos: mantenha o nome limpo (ex: "MLS", "Campeonato Holandês", "Copa do Brasil", "Copa Libertadores")
-    4. CANAL: Extraia todos os canais de transmissão citados (ex: "Globo, ge tv e Premiere", "ESPN e Disney+", "CazéTV").
-    5. RETORNE EXCLUSIVAMENTE um array JSON contendo um objeto para cada jogo, sem formatações de código markdown.
+    REGRAS DE NOMES E PADRONIZAÇÃO:
+    - data: formato YYYY-MM-DD
+    - hora: formato HHhMM (com h minúsculo, ex: 16h00)
+    - campeonato: nome normalizado (Brasileirão, Copa do Brasil, Libertadores, Champions League, Premier League, La Liga, Serie A, Bundesliga, Ligue 1, etc.)
+    - divisao: "Série B" ou "Série C" se aplicável, senão null
+    - fase: fase de mata-mata ou null
+    - canal: canais separados por vírgula
 
-    ESTRUTURA DO OBJETO JSON:
-    [
-      {
-        "id": 1001,
-        "data": "YYYY-MM-DD",
-        "hora": "16h00",
-        "campeonato": "Brasileirão",
-        "canal": "Globo, Premiere",
-        "time1": "Time A",
-        "time2": "Time B",
-        "divisao": null,
-        "fase": null,
-        "evento_nome": null,
-        "evento_descricao": null
-      }
-    ]
+    ESTRUTURA DO JSON:
+    [{"id": 1001, "data": "${hoje}", "hora": "16h00", "campeonato": "Brasileirão", "canal": "Globo, Premiere", "time1": "Time A", "time2": "Time B", "divisao": null, "fase": null, "evento_nome": null, "evento_descricao": null}]
 
-    TEXTO BRUTO DO GOAL.COM:
-    ${textoLimpo.slice(0, 150000)}`;
+    TEXTOS DAS FONTES:
+    ${textoCompilado}`;
 
-    // 3. CHAMA O GEMINI NO PLANO GRATUITO
     const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
     const geminiResponse = await fetch(geminiUrl, {
       method: 'POST',
@@ -131,10 +127,34 @@ export async function GET(request: Request) {
     }
 
     const textoGerado = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-    const jogosGerados = repararJsonIncompleto(textoGerado);
+    const jogosNovosDaIA = repararJsonIncompleto(textoGerado);
 
-    // 4. FILTROS DE SEGURANÇA E NORMALIZAÇÃO
-    const jogosLimpos = jogosGerados
+    // 3. RECUPERA JOGOS ANTIGOS DO GITHUB PARA PRESERVAR DIAS FUTUROS
+    const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
+    const headersGithub = {
+      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      'Content-Type': 'application/json',
+      'User-Agent': 'NextJS-App'
+    };
+
+    const repoInfoResponse = await fetch(githubUrl, { headers: headersGithub });
+    const repoInfo = await repoInfoResponse.json();
+
+    let jogosPreservados: any[] = [];
+    if (repoInfo.content) {
+      try {
+        const jsonAntigo = Buffer.from(repoInfo.content, 'base64').toString('utf-8');
+        const parsedAntigo = JSON.parse(jsonAntigo);
+        const listaAntiga = parsedAntigo.jogosSemana || (Array.isArray(parsedAntigo) ? parsedAntigo : []);
+        // Mantém todos os jogos de HOJE em diante que já estavam gravados
+        jogosPreservados = listaAntiga.filter((j: any) => j.data && j.data >= hoje);
+      } catch (e) {}
+    }
+
+    // 4. MESCLAGEM E DESDUPLICAÇÃO
+    const todosCombinados = [...jogosPreservados, ...jogosNovosDaIA];
+
+    const jogosLimpos = todosCombinados
       .map((jogo: any) => {
         const nomeLower = (jogo.campeonato || '').toLowerCase().trim();
         jogo.campeonato = dicionarioCampeonatos[nomeLower] || jogo.campeonato;
@@ -158,17 +178,7 @@ export async function GET(request: Request) {
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
-    // 5. COMMIT DIRETO NO GITHUB
-    const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
-    const headersGithub = {
-      Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      'Content-Type': 'application/json',
-      'User-Agent': 'NextJS-App'
-    };
-
-    const repoInfoResponse = await fetch(githubUrl, { headers: headersGithub });
-    const repoInfo = await repoInfoResponse.json();
-
+    // 5. COMMIT NO GITHUB
     if (!repoInfo.sha) {
       return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no repositório.", detalheGithub: repoInfo }, { status: 400 });
     }
@@ -177,7 +187,7 @@ export async function GET(request: Request) {
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Atualização completa da agenda via Goal.com (${jogosLimpos.length} jogos)`,
+        message: `🤖 Atualização unificada da agenda (${jogosLimpos.length} jogos salvos)`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -190,8 +200,8 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: `Jogos atualizados com sucesso via Goal.com!`, 
-      quantidadeJogos: jogosLimpos.length,
+      message: "Agenda atualizada com sucesso combinando múltiplas fontes!", 
+      quantidadeTotal: jogosLimpos.length,
       primeiraData: jogosLimpos[0]?.data,
       ultimaData: jogosLimpos[jogosLimpos.length - 1]?.data
     });
