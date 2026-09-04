@@ -31,6 +31,25 @@
         {
           "position": 1,
           "team": {
+            "id": 548,
+            "name": "AS Monaco FC",
+            "shortName": "Monaco",
+            "tla": "ASM",
+            "crest": "https://crests.football-data.org/548.png"
+          },
+          "playedGames": 3,
+          "form": null,
+          "won": 3,
+          "draw": 0,
+          "lost": 0,
+          "points": 9,
+          "goalsFor": 5,
+          "goalsAgainst": 1,
+          "goalDifference": 4
+        },
+        {
+          "position": 2,
+          "team": {
             "id": 523,
             "name": "Olympique Lyonnais",
             "shortName": "Olympique Lyon",
@@ -48,7 +67,7 @@
           "goalDifference": 4
         },
         {
-          "position": 2,
+          "position": 3,
           "team": {
             "id": 521,
             "name": "Lille OSC",
@@ -64,25 +83,6 @@
           "points": 7,
           "goalsFor": 5,
           "goalsAgainst": 2,
-          "goalDifference": 3
-        },
-        {
-          "position": 3,
-          "team": {
-            "id": 548,
-            "name": "AS Monaco FC",
-            "shortName": "Monaco",
-            "tla": "ASM",
-            "crest": "https://crests.football-data.org/548.png"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 2,
-          "draw": 0,
-          "lost": 0,
-          "points": 6,
-          "goalsFor": 3,
-          "goalsAgainst": 0,
           "goalDifference": 3
         },
         {
@@ -221,25 +221,6 @@
         {
           "position": 11,
           "team": {
-            "id": 524,
-            "name": "Paris Saint-Germain FC",
-            "shortName": "PSG",
-            "tla": "PSG",
-            "crest": "https://crests.football-data.org/524.png"
-          },
-          "playedGames": 2,
-          "form": null,
-          "won": 0,
-          "draw": 2,
-          "lost": 0,
-          "points": 2,
-          "goalsFor": 4,
-          "goalsAgainst": 4,
-          "goalDifference": 0
-        },
-        {
-          "position": 11,
-          "team": {
             "id": 512,
             "name": "Stade Brestois 29",
             "shortName": "Brest",
@@ -255,6 +236,25 @@
           "goalsFor": 4,
           "goalsAgainst": 4,
           "goalDifference": 0
+        },
+        {
+          "position": 12,
+          "team": {
+            "id": 524,
+            "name": "Paris Saint-Germain FC",
+            "shortName": "PSG",
+            "tla": "PSG",
+            "crest": "https://crests.football-data.org/524.png"
+          },
+          "playedGames": 3,
+          "form": null,
+          "won": 0,
+          "draw": 2,
+          "lost": 1,
+          "points": 2,
+          "goalsFor": 5,
+          "goalsAgainst": 6,
+          "goalDifference": -1
         },
         {
           "position": 13,
