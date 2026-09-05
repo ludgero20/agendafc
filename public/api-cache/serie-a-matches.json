@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-08-22",
     "last": "2027-05-30",
-    "played": 23
+    "played": 24
   },
   "competition": {
     "id": 2019,
@@ -1429,7 +1429,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T15:04:41Z",
+      "lastUpdated": "2026-09-05T22:25:15Z",
       "homeTeam": {
         "id": 99,
         "name": "ACF Fiorentina",
@@ -1495,7 +1495,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T18:04:57Z",
+      "lastUpdated": "2026-09-05T22:25:15Z",
       "homeTeam": {
         "id": 108,
         "name": "FC Internazionale Milano",
@@ -1557,11 +1557,11 @@
       },
       "id": 558611,
       "utcDate": "2026-09-05T18:45:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T20:10:17Z",
+      "lastUpdated": "2026-09-05T22:25:15Z",
       "homeTeam": {
         "id": 100,
         "name": "AS Roma",
@@ -1577,10 +1577,10 @@
         "crest": "https://crests.football-data.org/102.png"
       },
       "score": {
-        "winner": "AWAY_TEAM",
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": 0,
+          "home": 2,
           "away": 1
         },
         "halfTime": {

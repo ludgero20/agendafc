@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-01-28",
     "last": "2026-12-02",
-    "played": 246
+    "played": 248
   },
   "competition": {
     "id": 2013,
@@ -15856,11 +15856,11 @@
       },
       "id": 554991,
       "utcDate": "2026-09-05T19:00:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T19:58:01Z",
+      "lastUpdated": "2026-09-05T21:11:37Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -15876,11 +15876,11 @@
         "crest": "https://crests.football-data.org/1777.png"
       },
       "score": {
-        "winner": "DRAW",
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
           "home": 2,
-          "away": 2
+          "away": 3
         },
         "halfTime": {
           "home": 2,
@@ -15915,11 +15915,11 @@
       },
       "id": 554998,
       "utcDate": "2026-09-05T21:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T23:32:57Z",
       "homeTeam": {
         "id": 1776,
         "name": "São Paulo FC",
@@ -15935,15 +15935,15 @@
         "crest": "https://crests.football-data.org/1766.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {
