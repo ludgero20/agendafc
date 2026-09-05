@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-08-21",
     "last": "2027-05-30",
-    "played": 21
+    "played": 27
   },
   "competition": {
     "id": 2021,
@@ -1425,11 +1425,11 @@
       },
       "id": 560571,
       "utcDate": "2026-09-05T11:30:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T01:32:00Z",
+      "lastUpdated": "2026-09-05T13:31:53Z",
       "homeTeam": {
         "id": 67,
         "name": "Newcastle United FC",
@@ -1445,21 +1445,28 @@
         "crest": "https://crests.football-data.org/bournemouth.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11446,
+          "name": "Robert Jones",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1484,11 +1491,11 @@
       },
       "id": 560562,
       "utcDate": "2026-09-05T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T16:07:57Z",
       "homeTeam": {
         "id": 351,
         "name": "Nottingham Forest FC",
@@ -1504,21 +1511,28 @@
         "crest": "https://crests.football-data.org/73.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11585,
+          "name": "Craig Pawson",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1543,11 +1557,11 @@
       },
       "id": 560563,
       "utcDate": "2026-09-05T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T15:59:37Z",
       "homeTeam": {
         "id": 65,
         "name": "Manchester City FC",
@@ -1563,21 +1577,28 @@
         "crest": "https://crests.football-data.org/1076.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11520,
+          "name": "Paul Tierney",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1602,11 +1623,11 @@
       },
       "id": 560564,
       "utcDate": "2026-09-05T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T01:32:01Z",
+      "lastUpdated": "2026-09-05T15:59:37Z",
       "homeTeam": {
         "id": 397,
         "name": "Brighton & Hove Albion FC",
@@ -1622,21 +1643,28 @@
         "crest": "https://crests.football-data.org/341.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11494,
+          "name": "Stuart Attwell",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1661,11 +1689,11 @@
       },
       "id": 560565,
       "utcDate": "2026-09-05T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T01:32:01Z",
+      "lastUpdated": "2026-09-05T16:08:41Z",
       "homeTeam": {
         "id": 402,
         "name": "Brentford FC",
@@ -1681,21 +1709,28 @@
         "crest": "https://crests.football-data.org/71.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11620,
+          "name": "Thomas Bramall",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1720,11 +1755,11 @@
       },
       "id": 560568,
       "utcDate": "2026-09-05T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T16:01:45Z",
       "homeTeam": {
         "id": 63,
         "name": "Fulham FC",
@@ -1740,21 +1775,28 @@
         "crest": "https://crests.football-data.org/354.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 1
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 213813,
+          "name": "Sam Barrott",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -1779,11 +1821,11 @@
       },
       "id": 560569,
       "utcDate": "2026-09-05T16:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T16:41:13Z",
       "homeTeam": {
         "id": 322,
         "name": "Hull City AFC",
@@ -1799,11 +1841,11 @@
         "crest": "https://crests.football-data.org/58.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -1813,7 +1855,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11605,
+          "name": "Michael Oliver",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
