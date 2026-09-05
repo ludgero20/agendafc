@@ -15856,11 +15856,11 @@
       },
       "id": 554991,
       "utcDate": "2026-09-05T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T00:20:34Z",
+      "lastUpdated": "2026-09-05T19:58:01Z",
       "homeTeam": {
         "id": 4286,
         "name": "RB Bragantino",
@@ -15876,15 +15876,15 @@
         "crest": "https://crests.football-data.org/1777.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 2
         }
       },
       "odds": {

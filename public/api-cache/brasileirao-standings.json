@@ -113,14 +113,14 @@
             "tla": "BAH",
             "crest": "https://crests.football-data.org/1777.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 10,
-          "draw": 10,
+          "draw": 11,
           "lost": 5,
-          "points": 40,
-          "goalsFor": 37,
-          "goalsAgainst": 30,
+          "points": 41,
+          "goalsFor": 39,
+          "goalsAgainst": 32,
           "goalDifference": 7
         },
         {
@@ -189,14 +189,14 @@
             "tla": "RBB",
             "crest": "https://crests.football-data.org/4286.png"
           },
-          "playedGames": 24,
+          "playedGames": 25,
           "form": null,
           "won": 10,
-          "draw": 5,
+          "draw": 6,
           "lost": 9,
-          "points": 35,
-          "goalsFor": 29,
-          "goalsAgainst": 25,
+          "points": 36,
+          "goalsFor": 31,
+          "goalsAgainst": 27,
           "goalDifference": 4
         },
         {
