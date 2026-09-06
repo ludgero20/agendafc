@@ -1623,11 +1623,11 @@
       },
       "id": 559700,
       "utcDate": "2026-09-06T13:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T01:32:00Z",
+      "lastUpdated": "2026-09-06T13:23:53Z",
       "homeTeam": {
         "id": 531,
         "name": "ES Troyes AC",
@@ -1643,11 +1643,11 @@
         "crest": "https://crests.football-data.org/576.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -1657,7 +1657,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57084,
+          "name": "Guillaume Paradis",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
@@ -1716,7 +1723,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 76682,
+          "name": "Geoffrey Kubler",
+          "type": "REFEREE",
+          "nationality": "France"
+        }
+      ]
     },
     {
       "area": {
