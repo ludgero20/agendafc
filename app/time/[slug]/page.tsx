@@ -94,12 +94,13 @@ async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   }
 }
 
-// 1. TRANSMISSÕES DE TV (FILTRADAS DE HOJE EM DIANTE)
+// 1. TRANSMISSÕES DE TV (FUTEBOL E NFL)
 async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]> {
   try {
     const jogosPath = path.join(process.cwd(), "public/jogos.json");
     const manuaisPath = path.join(process.cwd(), "public/jogos_manuais.json");
 
+    // 🎯 VÍRGULA ADICIONADA AQUI:
     const [jogosFile, manuaisFile, jogosDoSheets] = await Promise.all([
       fs.readFile(jogosPath, "utf-8").catch(() => '{"jogosSemana": []}'),
       fs.readFile(manuaisPath, "utf-8").catch(() => '{"jogosSemana": []}'),
@@ -111,7 +112,6 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
 
     const todos = [...jogosIA, ...jogosManuais, ...jogosDoSheets];
 
-    // Data de hoje em Brasília
     const agora = new Date();
     const formatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
     const hojeStr = formatter.format(agora).trim();
@@ -127,7 +127,6 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
         }
         return { ...jogo, data: d };
       })
-      // 🎯 FILTRO: Apenas jogos onde o time participa E data de hoje em diante (sem jogos de ontem)
       .filter((jogo: JogoTransmissao) => {
         if (!jogo.data || jogo.data < hojeStr) return false;
         const time1 = (jogo.time1 || '').toLowerCase();
@@ -257,7 +256,7 @@ async function getDadosNFL(time: TimeConfig) {
   return { tabela, finalizados, proximos };
 }
 
-// 3. DADOS DE FUTEBOL
+// 3. DADOS DE FUTEBOL COM ORDENAÇÃO CORRETA POR DATA ISO
 async function getDadosFutebol(time: TimeConfig) {
   try {
     const standingsPath = path.join(process.cwd(), "public/api-cache", time.arquivoStandings || '');
@@ -282,22 +281,40 @@ async function getDadosFutebol(time: TimeConfig) {
       goalDifference: t.goalDifference
     }));
 
-    const jogosDoTime = todosJogosRaw.filter(m => m.homeTeam?.id === time.idAPI || m.awayTeam?.id === time.idAPI);
     const formatarDataBR = (dataISO: string) => new Date(dataISO).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }).replace(',', ' às');
 
-    const formatados: JogoTemporada[] = jogosDoTime.map(m => ({
-      id: m.id,
-      dateStr: formatarDataBR(m.utcDate),
-      status: m.status,
-      roundLabel: `Rodada ${m.matchday}`,
-      homeTeam: { id: m.homeTeam.id, name: m.homeTeam.name, shortName: m.homeTeam.shortName, crest: m.homeTeam.crest },
-      awayTeam: { id: m.awayTeam.id, name: m.awayTeam.name, shortName: m.awayTeam.shortName, crest: m.awayTeam.crest },
-      homeScore: m.score?.fullTime?.home ?? null,
-      awayScore: m.score?.fullTime?.away ?? null
-    }));
+    const jogosDoTime = todosJogosRaw.filter(m => m.homeTeam?.id === time.idAPI || m.awayTeam?.id === time.idAPI);
 
-    const finalizados = formatados.filter(m => m.status === 'FINISHED').sort((a, b) => new Date(b.dateStr).getTime() - new Date(a.dateStr).getTime()).slice(0, 3);
-    const proximos = formatados.filter(m => m.status !== 'FINISHED').slice(0, 5);
+    // Ordena pela data ISO oficial antes de formatar para texto
+    const finalizados: JogoTemporada[] = jogosDoTime
+      .filter(m => m.status === 'FINISHED')
+      .sort((a, b) => new Date(b.utcDate).getTime() - new Date(a.utcDate).getTime())
+      .slice(0, 3)
+      .map(m => ({
+        id: m.id,
+        dateStr: formatarDataBR(m.utcDate),
+        status: m.status,
+        roundLabel: `Rodada ${m.matchday}`,
+        homeTeam: { id: m.homeTeam.id, name: m.homeTeam.name, shortName: m.homeTeam.shortName, crest: m.homeTeam.crest },
+        awayTeam: { id: m.awayTeam.id, name: m.awayTeam.name, shortName: m.awayTeam.shortName, crest: m.awayTeam.crest },
+        homeScore: m.score?.fullTime?.home ?? null,
+        awayScore: m.score?.fullTime?.away ?? null
+      }));
+
+    const proximos: JogoTemporada[] = jogosDoTime
+      .filter(m => m.status !== 'FINISHED')
+      .sort((a, b) => new Date(a.utcDate).getTime() - new Date(b.utcDate).getTime())
+      .slice(0, 5)
+      .map(m => ({
+        id: m.id,
+        dateStr: formatarDataBR(m.utcDate),
+        status: m.status,
+        roundLabel: `Rodada ${m.matchday}`,
+        homeTeam: { id: m.homeTeam.id, name: m.homeTeam.name, shortName: m.homeTeam.shortName, crest: m.homeTeam.crest },
+        awayTeam: { id: m.awayTeam.id, name: m.awayTeam.name, shortName: m.awayTeam.shortName, crest: m.awayTeam.crest },
+        homeScore: m.score?.fullTime?.home ?? null,
+        awayScore: m.score?.fullTime?.away ?? null
+      }));
 
     return { tabela, finalizados, proximos };
   } catch {
@@ -316,7 +333,6 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
     time.esporte === 'nfl' ? getDadosNFL(time) : getDadosFutebol(time)
   ]);
 
-  // 📅 FORMATAÇÃO INTELIGENTE DO DIA (Hoje / Amanhã / Sáb, 05/09)
   const formatarDiaCard = (dataStr: string) => {
     if (!dataStr) return "";
     const agora = new Date();
@@ -414,7 +430,6 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
           <div className="grid gap-4 md:grid-cols-2">
             {jogosTV.map((jogo) => (
               <div key={jogo.id} className="bg-white rounded-2xl p-5 shadow-xs hover:shadow-md transition-all border border-slate-200/90 flex flex-col justify-between gap-3">
-                {/* 🎯 DATA E HORÁRIO DESTACADOS NO TOPO DO CARD */}
                 <div className="flex justify-between items-center text-xs">
                   <div className="flex items-center gap-2">
                     <span className="font-bold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg border border-blue-200/60">
@@ -474,7 +489,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
           </div>
         ) : (
           <div className="bg-slate-50/70 rounded-2xl p-8 text-center border border-slate-200/80">
-            <p className="text-slate-600 font-medium">Nenhuma transmissão confirmada para os próximos 3 dias. A grade de TV é atualizada diariamente.</p>
+            <p className="text-slate-600 font-medium">Nenhuma transmissão confirmada para os próximos dias. A grade de TV é atualizada diariamente.</p>
           </div>
         )}
       </section>
@@ -549,11 +564,11 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
         </section>
       )}
 
-      {/* BLOCO 3: HISTÓRICO E PRÓXIMOS CONFRONTOS */}
+      {/* BLOCO 3: ÚLTIMOS RESULTADOS RECENTES E PRÓXIMAS RODADAS */}
       <section className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏮️ Últimos Resultados
+            ⏮️ Últimos Resultados no Campeonato
           </h3>
           {finalizados.length > 0 ? (
             <div className="space-y-3">
@@ -571,7 +586,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -587,7 +602,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
@@ -602,7 +617,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏭️ Próximos Jogos Agendados
+            ⏭️ Próximas Rodadas Agendadas
           </h3>
           {proximos.length > 0 ? (
             <div className="space-y-3">
@@ -612,13 +627,13 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
                   className="bg-slate-50/70 hover:bg-slate-100/80 transition-all p-3.5 sm:p-4 rounded-xl border border-slate-200/70 flex flex-col gap-2 shadow-2xs"
                 >
                   <div className="flex justify-between items-center text-xs text-slate-500 font-semibold border-b border-slate-200/40 pb-1.5">
-                    <span>{jogo.roundLabel} - {jogo.dateStr}</span>
+                    <span>Rodada {jogo.roundLabel} - {jogo.dateStr}</span>
                     <span className="text-slate-400 text-[11px] font-medium">Agendado</span>
                   </div>
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -632,7 +647,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
