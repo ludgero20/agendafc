@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-08-21",
     "last": "2027-05-30",
-    "played": 29
+    "played": 30
   },
   "competition": {
     "id": 2021,
@@ -1891,7 +1891,7 @@
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T15:03:05Z",
+      "lastUpdated": "2026-09-06T18:25:10Z",
       "homeTeam": {
         "id": 62,
         "name": "Everton FC",
@@ -1953,11 +1953,11 @@
       },
       "id": 560570,
       "utcDate": "2026-09-06T15:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 3,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T16:48:09Z",
+      "lastUpdated": "2026-09-06T18:25:10Z",
       "homeTeam": {
         "id": 57,
         "name": "Arsenal FC",

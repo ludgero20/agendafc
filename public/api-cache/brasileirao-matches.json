@@ -16092,11 +16092,11 @@
       },
       "id": 554994,
       "utcDate": "2026-09-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T15:20:08Z",
+      "lastUpdated": "2026-09-06T20:00:09Z",
       "homeTeam": {
         "id": 1771,
         "name": "Cruzeiro EC",
@@ -16112,15 +16112,15 @@
         "crest": "https://crests.football-data.org/1768.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 1
         }
       },
       "odds": {
@@ -16151,11 +16151,11 @@
       },
       "id": 554996,
       "utcDate": "2026-09-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T15:20:08Z",
+      "lastUpdated": "2026-09-06T20:14:01Z",
       "homeTeam": {
         "id": 6684,
         "name": "SC Internacional",
@@ -16171,15 +16171,15 @@
         "crest": "https://crests.football-data.org/6685.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 3
         }
       },
       "odds": {
@@ -16210,11 +16210,11 @@
       },
       "id": 554997,
       "utcDate": "2026-09-06T19:00:00Z",
-      "status": "TIMED",
+      "status": "PAUSED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T15:20:08Z",
+      "lastUpdated": "2026-09-06T19:59:05Z",
       "homeTeam": {
         "id": 4287,
         "name": "Clube do Remo",
@@ -16230,15 +16230,15 @@
         "crest": "https://crests.football-data.org/1783.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {

@@ -6,7 +6,7 @@
     "count": 306,
     "first": "2026-08-28",
     "last": "2027-05-22",
-    "played": 17
+    "played": 18
   },
   "competition": {
     "id": 2002,
@@ -1105,7 +1105,7 @@
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T15:27:37Z",
+      "lastUpdated": "2026-09-06T18:25:01Z",
       "homeTeam": {
         "id": 7,
         "name": "Hamburger SV",
@@ -1167,11 +1167,11 @@
       },
       "id": 565786,
       "utcDate": "2026-09-06T15:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 2,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T16:48:09Z",
+      "lastUpdated": "2026-09-06T18:25:01Z",
       "homeTeam": {
         "id": 19,
         "name": "Eintracht Frankfurt",
@@ -1191,7 +1191,7 @@
         "duration": "REGULAR",
         "fullTime": {
           "home": 1,
-          "away": 2
+          "away": 4
         },
         "halfTime": {
           "home": 1,

@@ -6,7 +6,7 @@
     "count": 306,
     "first": "2026-08-07",
     "last": "2027-05-16",
-    "played": 39
+    "played": 40
   },
   "competition": {
     "id": 2017,
@@ -2623,11 +2623,11 @@
       },
       "id": 567294,
       "utcDate": "2026-09-06T17:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T01:32:01Z",
+      "lastUpdated": "2026-09-06T19:08:25Z",
       "homeTeam": {
         "id": 5543,
         "name": "Vitória SC",
@@ -2643,15 +2643,15 @@
         "crest": "https://crests.football-data.org/6618.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {
@@ -2689,11 +2689,11 @@
       },
       "id": 567301,
       "utcDate": "2026-09-06T19:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T00:20:35Z",
+      "lastUpdated": "2026-09-06T20:16:09Z",
       "homeTeam": {
         "id": 5533,
         "name": "Gil Vicente FC",
@@ -2709,11 +2709,11 @@
         "crest": "https://crests.football-data.org/5527.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         },
         "halfTime": {
           "home": null,
@@ -2723,7 +2723,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 39896,
+          "name": "Pedro Ramalho",
+          "type": "REFEREE",
+          "nationality": "Portugal"
+        }
+      ]
     },
     {
       "area": {
