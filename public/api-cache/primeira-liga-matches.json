@@ -6,7 +6,7 @@
     "count": 306,
     "first": "2026-08-07",
     "last": "2027-05-16",
-    "played": 40
+    "played": 41
   },
   "competition": {
     "id": 2017,
@@ -2561,7 +2561,7 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T16:32:09Z",
+      "lastUpdated": "2026-09-06T22:25:12Z",
       "homeTeam": {
         "id": 5530,
         "name": "CD Santa Clara",
@@ -2627,7 +2627,7 @@
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T19:08:25Z",
+      "lastUpdated": "2026-09-06T22:25:12Z",
       "homeTeam": {
         "id": 5543,
         "name": "Vitória SC",
@@ -2689,11 +2689,11 @@
       },
       "id": 567301,
       "utcDate": "2026-09-06T19:30:00Z",
-      "status": "IN_PLAY",
+      "status": "FINISHED",
       "matchday": 5,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T20:16:09Z",
+      "lastUpdated": "2026-09-06T22:25:12Z",
       "homeTeam": {
         "id": 5533,
         "name": "Gil Vicente FC",
@@ -2716,8 +2716,8 @@
           "away": 1
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 1
         }
       },
       "odds": {
