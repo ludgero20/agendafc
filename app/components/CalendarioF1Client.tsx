@@ -21,10 +21,9 @@ type Corrida = {
 type Props = { calendario: Corrida[]; };
 
 export default function CalendarioF1Client({ calendario }: Props) {
-  // 🎯 IDENTIFICA AUTOMATICAMENTE O PRÓXIMO GP E JÁ DEIXA ELE ABERTO POR PADRÃO
+  // Identifica o próximo GP para abrir por padrão
   const proximoRoundId = useMemo(() => {
     const hojeStr = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' }).format(new Date());
-    // Procura o primeiro GP cuja corrida principal seja hoje ou no futuro
     const proximoGP = calendario.find(c => {
       const sessaoCorrida = c.sessoes.find(s => s.nome.toLowerCase().includes('corrida') && !s.nome.toLowerCase().includes('sprint'));
       const dataCorrida = sessaoCorrida?.data || c.sessoes[c.sessoes.length - 1]?.data || '';
@@ -33,7 +32,6 @@ export default function CalendarioF1Client({ calendario }: Props) {
     return proximoGP?.round || (calendario[0]?.round ?? 1);
   }, [calendario]);
 
-  // Inicia com o próximo GP aberto
   const [expandedRounds, setExpandedRounds] = useState<Record<string, boolean>>({
     [proximoRoundId]: true
   });
@@ -42,7 +40,6 @@ export default function CalendarioF1Client({ calendario }: Props) {
     setExpandedRounds(prev => ({ ...prev, [round]: !prev[round] }));
   };
 
-  // 📅 FORMATAÇÃO COM DIA DA SEMANA (ex: "Sex, 05/09")
   const formatarDataSessao = (dataStr: string) => {
     if (!dataStr) return "";
     const [ano, mes, dia] = dataStr.split('-').map(Number);
@@ -122,62 +119,62 @@ export default function CalendarioF1Client({ calendario }: Props) {
                 </div>
               </button>
 
-              {/* CORPO EXPANDIDO COM AS SESSÕES E RESULTADOS */}
+              {/* CORPO EXPANDIDO */}
               {isExpanded && (
                 <div className="p-5 sm:p-6 bg-slate-50/40 border-t border-slate-100 space-y-6">
                   
-                  {/* GRADE DE SESSÕES (Treinos, Classificação, Corrida) */}
-                  <div>
-                    <h4 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3 flex items-center gap-1.5">
-                      <span>🕒</span> Programação dos Treinos e Corridas
-                    </h4>
+                  {/* 🎯 CENÁRIO 1: SE NÃO ESTIVER FINALIZADO, MOSTRA OS TREINOS E CANAIS */}
+                  {!finalizado ? (
+                    <div>
+                      <h4 className="text-xs font-black uppercase tracking-widest text-slate-500 mb-3 flex items-center gap-1.5">
+                        <span>🕒</span> Programação dos Treinos e Corridas
+                      </h4>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
-                      {corrida.sessoes.map((sessao) => {
-                        const ehCorridaPrincipal = sessao.nome.toLowerCase() === 'corrida';
-                        const ehSprint = sessao.nome.toLowerCase().includes('sprint');
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+                        {corrida.sessoes.map((sessao) => {
+                          const ehCorridaPrincipal = sessao.nome.toLowerCase() === 'corrida';
+                          const ehSprint = sessao.nome.toLowerCase().includes('sprint');
 
-                        return (
-                          <div 
-                            key={sessao.nome} 
-                            className={`p-3.5 rounded-xl border flex flex-col justify-between gap-2 shadow-2xs ${
-                              ehCorridaPrincipal 
-                                ? 'bg-white border-blue-300 ring-1 ring-blue-500/20' 
-                                : ehSprint 
-                                ? 'bg-white border-purple-200'
-                                : 'bg-white border-slate-200/80'
-                            }`}
-                          >
-                            <div>
-                              <p className={`text-xs font-bold ${ehCorridaPrincipal ? 'text-blue-700 font-extrabold' : 'text-slate-800'}`}>
-                                {sessao.nome}
-                              </p>
-                              <p className="text-xs font-semibold text-slate-600 mt-1">
-                                {formatarDataSessao(sessao.data)} • <span className="font-extrabold text-slate-900">{sessao.hora || 'A definir'}</span>
-                              </p>
-                            </div>
-
-                            {sessao.transmissao && sessao.transmissao.length > 0 && (
-                              <div className="pt-2 border-t border-slate-100 mt-1">
-                                <span className="text-[10px] font-bold text-slate-700 bg-slate-50 px-2 py-0.5 rounded-md border border-slate-200/60 block truncate text-center">
-                                  📺 {formatarCanais(sessao.transmissao)}
-                                </span>
+                          return (
+                            <div 
+                              key={sessao.nome} 
+                              className={`p-3.5 rounded-xl border flex flex-col justify-between gap-2 shadow-2xs ${
+                                ehCorridaPrincipal 
+                                  ? 'bg-white border-blue-300 ring-1 ring-blue-500/20' 
+                                  : ehSprint 
+                                  ? 'bg-white border-purple-200'
+                                  : 'bg-white border-slate-200/80'
+                              }`}
+                            >
+                              <div>
+                                <p className={`text-xs font-bold ${ehCorridaPrincipal ? 'text-blue-700 font-extrabold' : 'text-slate-800'}`}>
+                                  {sessao.nome}
+                                </p>
+                                <p className="text-xs font-semibold text-slate-600 mt-1">
+                                  {formatarDataSessao(sessao.data)} • <span className="font-extrabold text-slate-900">{sessao.hora || 'A definir'}</span>
+                                </p>
                               </div>
-                            )}
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
 
-                  {/* BLOCO DE RESULTADOS (Se o GP estiver finalizado) */}
-                  {finalizado && (corrida.results || corrida.sprintResults) && (
-                    <div className="pt-4 border-t border-slate-200/80 space-y-5">
+                              {sessao.transmissao && sessao.transmissao.length > 0 && (
+                                <div className="pt-2 border-t border-slate-100 mt-1">
+                                  <span className="text-[10px] font-bold text-slate-700 bg-slate-50 px-2 py-0.5 rounded-md border border-slate-200/60 block truncate text-center">
+                                    📺 {formatarCanais(sessao.transmissao)}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ) : (
+                    /* 🎯 CENÁRIO 2: SE ESTIVER FINALIZADO, MOSTRA APENAS OS RESULTADOS OFICIAIS */
+                    <div className="space-y-5">
                       <h4 className="text-xs font-black uppercase tracking-widest text-slate-500 flex items-center gap-1.5">
                         <span>🏆</span> Resultados Oficiais da Etapa
                       </h4>
 
-                      {/* Resultados da Corrida Sprint */}
+                      {/* Resultados da Sprint (se houver) */}
                       {corrida.sprintResults && (
                         <div className="bg-white p-4 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
                           <p className="text-xs font-black uppercase tracking-wider text-purple-700 flex items-center gap-1.5">
@@ -204,8 +201,8 @@ export default function CalendarioF1Client({ calendario }: Props) {
                         </div>
                       )}
 
-                      {/* Resultados da Corrida Principal */}
-                      {corrida.results && (
+                      {/* Resultados do Grande Prêmio */}
+                      {corrida.results ? (
                         <div className="bg-white p-4 rounded-xl border border-slate-200/80 shadow-2xs space-y-3">
                           <p className="text-xs font-black uppercase tracking-wider text-blue-700 flex items-center gap-1.5">
                             <span>🏁</span> Grande Prêmio (Corrida Principal)
@@ -229,9 +226,14 @@ export default function CalendarioF1Client({ calendario }: Props) {
                             </div>
                           </div>
                         </div>
+                      ) : (
+                        <div className="p-4 rounded-xl bg-white border border-slate-200 text-center text-xs text-slate-500">
+                          Aguardando homologação dos resultados oficiais pela FIA.
+                        </div>
                       )}
                     </div>
                   )}
+
                 </div>
               )}
             </div>
