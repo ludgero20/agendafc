@@ -151,15 +151,15 @@
             "tla": "COR",
             "crest": "https://crests.football-data.org/4241.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
           "won": 10,
           "draw": 7,
-          "lost": 8,
+          "lost": 9,
           "points": 37,
-          "goalsFor": 33,
-          "goalsAgainst": 33,
-          "goalDifference": 0
+          "goalsFor": 34,
+          "goalsAgainst": 35,
+          "goalDifference": -1
         },
         {
           "position": 8,
@@ -322,15 +322,15 @@
             "tla": "MIR",
             "crest": "https://crests.football-data.org/4364.png"
           },
-          "playedGames": 25,
+          "playedGames": 26,
           "form": null,
-          "won": 6,
+          "won": 7,
           "draw": 7,
           "lost": 12,
-          "points": 25,
-          "goalsFor": 27,
-          "goalsAgainst": 39,
-          "goalDifference": -12
+          "points": 28,
+          "goalsFor": 29,
+          "goalsAgainst": 40,
+          "goalDifference": -11
         },
         {
           "position": 17,

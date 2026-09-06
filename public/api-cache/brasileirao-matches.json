@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-01-28",
     "last": "2026-12-02",
-    "played": 249
+    "played": 250
   },
   "competition": {
     "id": 2013,
@@ -16033,11 +16033,11 @@
       },
       "id": 554993,
       "utcDate": "2026-09-06T14:00:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 26,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-05T15:20:08Z",
+      "lastUpdated": "2026-09-06T16:09:45Z",
       "homeTeam": {
         "id": 4241,
         "name": "Coritiba FBC",
@@ -16053,15 +16053,15 @@
         "crest": "https://crests.football-data.org/4364.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 2
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         }
       },
       "odds": {

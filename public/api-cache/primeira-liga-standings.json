@@ -69,6 +69,25 @@
         {
           "position": 3,
           "team": {
+            "id": 5530,
+            "name": "CD Santa Clara",
+            "shortName": "Santa Clara",
+            "tla": "CD ",
+            "crest": "https://crests.football-data.org/5530.png"
+          },
+          "playedGames": 5,
+          "form": null,
+          "won": 3,
+          "draw": 2,
+          "lost": 0,
+          "points": 11,
+          "goalsFor": 9,
+          "goalsAgainst": 3,
+          "goalDifference": 6
+        },
+        {
+          "position": 4,
+          "team": {
             "id": 1903,
             "name": "Sport Lisboa e Benfica",
             "shortName": "SL Benfica",
@@ -86,7 +105,7 @@
           "goalDifference": 11
         },
         {
-          "position": 4,
+          "position": 5,
           "team": {
             "id": 712,
             "name": "FC Arouca",
@@ -103,25 +122,6 @@
           "goalsFor": 7,
           "goalsAgainst": 3,
           "goalDifference": 4
-        },
-        {
-          "position": 5,
-          "team": {
-            "id": 5530,
-            "name": "CD Santa Clara",
-            "shortName": "Santa Clara",
-            "tla": "CD ",
-            "crest": "https://crests.football-data.org/5530.png"
-          },
-          "playedGames": 4,
-          "form": null,
-          "won": 2,
-          "draw": 2,
-          "lost": 0,
-          "points": 8,
-          "goalsFor": 5,
-          "goalsAgainst": 3,
-          "goalDifference": 2
         },
         {
           "position": 6,
@@ -284,15 +284,15 @@
             "tla": "RIO",
             "crest": "https://crests.football-data.org/496.png"
           },
-          "playedGames": 4,
+          "playedGames": 5,
           "form": null,
           "won": 1,
           "draw": 0,
-          "lost": 3,
+          "lost": 4,
           "points": 3,
           "goalsFor": 2,
-          "goalsAgainst": 7,
-          "goalDifference": -5
+          "goalsAgainst": 11,
+          "goalDifference": -9
         },
         {
           "position": 15,

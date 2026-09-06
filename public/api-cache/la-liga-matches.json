@@ -6,7 +6,7 @@
     "count": 380,
     "first": "2026-08-15",
     "last": "2027-05-30",
-    "played": 35
+    "played": 36
   },
   "competition": {
     "id": 2014,
@@ -2230,11 +2230,11 @@
       },
       "id": 564659,
       "utcDate": "2026-09-06T14:15:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T01:32:01Z",
+      "lastUpdated": "2026-09-06T16:23:37Z",
       "homeTeam": {
         "id": 95,
         "name": "Valencia CF",
@@ -2250,15 +2250,15 @@
         "crest": "https://crests.football-data.org/81.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 5
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 2
         }
       },
       "odds": {
@@ -2296,11 +2296,11 @@
       },
       "id": 564664,
       "utcDate": "2026-09-06T16:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T00:20:35Z",
+      "lastUpdated": "2026-09-06T16:47:37Z",
       "homeTeam": {
         "id": 263,
         "name": "Deportivo Alavés",
@@ -2316,11 +2316,11 @@
         "crest": "https://crests.football-data.org/79.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -2330,7 +2330,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 207080,
+          "name": "José Sánchez Martínez",
+          "type": "REFEREE",
+          "nationality": "Spain"
+        }
+      ]
     },
     {
       "area": {
@@ -2355,11 +2362,11 @@
       },
       "id": 564666,
       "utcDate": "2026-09-06T16:30:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 4,
       "stage": "REGULAR_SEASON",
       "group": null,
-      "lastUpdated": "2026-09-06T01:32:01Z",
+      "lastUpdated": "2026-09-06T16:47:37Z",
       "homeTeam": {
         "id": 84,
         "name": "Málaga CF",
@@ -2375,11 +2382,11 @@
         "crest": "https://crests.football-data.org/88.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -2389,7 +2396,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 129443,
+          "name": "Luis Bestard Servera",
+          "type": "REFEREE",
+          "nationality": "Spain"
+        }
+      ]
     },
     {
       "area": {
