@@ -181,6 +181,7 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
   }
 }
 
+// 2. DADOS DA NFL COM REFERER E FALLBACK BLINDADO
 async function getDadosNFL(time: TimeConfig) {
   let tabela: TimeTabela[] = [];
   let finalizados: JogoTemporada[] = [];
@@ -189,10 +190,11 @@ async function getDadosNFL(time: TimeConfig) {
   const divisaoAlvo = time.divisaoNFL || identificarDivisao(time.nome).division;
 
   try {
-    const resStandings = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
+    const resStandings = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings?region=us&lang=en&season=2026&type=2", {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'application/json',
+        'Referer': 'https://www.espn.com/'
       },
       next: { revalidate: 3600 }
     });
@@ -244,7 +246,6 @@ async function getDadosNFL(time: TimeConfig) {
 
       extrairTimes(dataStandings);
 
-      // Filtra os 4 times da divisão
       const timesDaDivisao = todosTimesMapeados.filter(t => {
         const info = identificarDivisao(t.team.name);
         return info.division.toLowerCase() === divisaoAlvo.toLowerCase();
@@ -264,13 +265,35 @@ async function getDadosNFL(time: TimeConfig) {
       tabela = timesDaDivisao;
     }
 
-    // 🎯 BUSCA AS 18 SEMANAS COM DATES=2026 FORÇADO PARA NÃO TRAZER 2025
+    // Se a tabela da ESPN ainda falhou por IP, usa o fallback local da divisão
+    if (tabela.length === 0) {
+      const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
+      const jsonData = await fs.readFile(filePath, "utf-8").catch(() => null);
+      if (jsonData) {
+        const parsed = JSON.parse(jsonData);
+        const standingsLocal = parsed.standings || [];
+        tabela = standingsLocal
+          .filter((t: any) => identificarDivisao(t.teamName).division.toLowerCase() === divisaoAlvo.toLowerCase())
+          .map((t: any, idx: number) => ({
+            position: String(idx + 1),
+            team: { name: t.teamName, shortName: t.teamName, crest: t.teamLogo },
+            won: String(t.intWin),
+            lost: String(t.intLoss),
+            draw: String(t.intTie),
+            pct: String(t.strPercentage)
+          }));
+      }
+    }
+
+    // Busca as 18 semanas da temporada 2026 com Referer
     const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
     const responses = await Promise.all(
       semanas.map(semana =>
         fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=${semana}`, {
           headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'Accept': 'application/json',
+            'Referer': 'https://www.espn.com/'
           },
           next: { revalidate: 3600 }
         })
@@ -651,7 +674,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
       <section className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏮️ Últimos Resultados
+            ⏮️ Últimos Resultados no Campeonato
           </h3>
           {finalizados.length > 0 ? (
             <div className="space-y-3">
@@ -669,7 +692,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -685,7 +708,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
@@ -710,13 +733,13 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
                   className="bg-slate-50/70 hover:bg-slate-100/80 transition-all p-3.5 sm:p-4 rounded-xl border border-slate-200/70 flex flex-col gap-2 shadow-2xs"
                 >
                   <div className="flex justify-between items-center text-xs text-slate-500 font-semibold border-b border-slate-200/40 pb-1.5">
-                    <span>{jogo.roundLabel} - {jogo.dateStr}</span>
+                    <span>Rodada {jogo.roundLabel} - {jogo.dateStr}</span>
                     <span className="text-slate-400 text-[11px] font-medium">Agendado</span>
                   </div>
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -730,7 +753,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
