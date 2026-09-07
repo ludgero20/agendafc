@@ -43,51 +43,35 @@ type JogoTemporada = {
   awayScore: string | number | null;
 };
 
-// 🏈 MAPA OFICIAL DAS 8 DIVISÕES DA NFL (32 FRANQUIAS)
 const divisoesOficiaisNFL: Record<string, { conference: string; division: string }> = {
-  // AFC East
   "Buffalo Bills": { conference: "American Football Conference", division: "AFC East" },
   "Miami Dolphins": { conference: "American Football Conference", division: "AFC East" },
   "New England Patriots": { conference: "American Football Conference", division: "AFC East" },
   "New York Jets": { conference: "American Football Conference", division: "AFC East" },
-
-  // AFC North
   "Baltimore Ravens": { conference: "American Football Conference", division: "AFC North" },
   "Cincinnati Bengals": { conference: "American Football Conference", division: "AFC North" },
   "Cleveland Browns": { conference: "American Football Conference", division: "AFC North" },
   "Pittsburgh Steelers": { conference: "American Football Conference", division: "AFC North" },
-
-  // AFC South
   "Houston Texans": { conference: "American Football Conference", division: "AFC South" },
   "Indianapolis Colts": { conference: "American Football Conference", division: "AFC South" },
   "Jacksonville Jaguars": { conference: "American Football Conference", division: "AFC South" },
   "Tennessee Titans": { conference: "American Football Conference", division: "AFC South" },
-
-  // AFC West
   "Denver Broncos": { conference: "American Football Conference", division: "AFC West" },
   "Kansas City Chiefs": { conference: "American Football Conference", division: "AFC West" },
   "Las Vegas Raiders": { conference: "American Football Conference", division: "AFC West" },
   "Los Angeles Chargers": { conference: "American Football Conference", division: "AFC West" },
-
-  // NFC East
   "Dallas Cowboys": { conference: "National Football Conference", division: "NFC East" },
   "New York Giants": { conference: "National Football Conference", division: "NFC East" },
   "Philadelphia Eagles": { conference: "National Football Conference", division: "NFC East" },
   "Washington Commanders": { conference: "National Football Conference", division: "NFC East" },
-
-  // NFC North
   "Chicago Bears": { conference: "National Football Conference", division: "NFC North" },
   "Detroit Lions": { conference: "National Football Conference", division: "NFC North" },
   "Green Bay Packers": { conference: "National Football Conference", division: "NFC North" },
   "Minnesota Vikings": { conference: "National Football Conference", division: "NFC North" },
-
-  // NFC South
   "Atlanta Falcons": { conference: "National Football Conference", division: "NFC South" },
   "Carolina Panthers": { conference: "National Football Conference", division: "NFC South" },
   "New Orleans Saints": { conference: "National Football Conference", division: "NFC South" },
   "Tampa Bay Buccaneers": { conference: "National Football Conference", division: "NFC South" },
-
-  // NFC West
   "Arizona Cardinals": { conference: "National Football Conference", division: "NFC West" },
   "Los Angeles Rams": { conference: "National Football Conference", division: "NFC West" },
   "San Francisco 49ers": { conference: "National Football Conference", division: "NFC West" },
@@ -114,7 +98,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 📱 LEITOR DO GOOGLE SHEETS
 async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   try {
     const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
@@ -154,7 +137,6 @@ async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   }
 }
 
-// 1. TRANSMISSÕES DE TV (LIMITADO AOS PRÓXIMOS 4 JOGOS)
 async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]> {
   try {
     const jogosPath = path.join(process.cwd(), "public/jogos.json");
@@ -193,18 +175,18 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
         return time.variacoesNome.some(v => time1.includes(v.toLowerCase()) || time2.includes(v.toLowerCase()));
       })
       .sort((a, b) => a.data.localeCompare(b.data) || a.hora.localeCompare(b.hora))
-      // 🎯 LIMITE MÁXIMO DE 4 JOGOS: Mantém a página compacta e a tabela visível!
       .slice(0, 4);
   } catch {
     return [];
   }
 }
 
-// 2. DADOS DA NFL COM TABELA DA DIVISÃO OFICIAL (4 TIMES)
 async function getDadosNFL(time: TimeConfig) {
   let tabela: TimeTabela[] = [];
   let finalizados: JogoTemporada[] = [];
   let proximos: JogoTemporada[] = [];
+
+  const divisaoAlvo = time.divisaoNFL || identificarDivisao(time.nome).division;
 
   try {
     const resStandings = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
@@ -223,13 +205,8 @@ async function getDadosNFL(time: TimeConfig) {
         if (obj.standings?.entries && Array.isArray(obj.standings.entries)) {
           obj.standings.entries.forEach((entry: any) => {
             const nomeTime = entry.team?.displayName || entry.team?.name || 'Time';
-            const infoDiv = identificarDivisao(nomeTime);
-
             const stats = entry.stats || [];
-            const getStat = (n: string) => {
-              const s = stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase());
-              return s?.value ?? 0;
-            };
+            const getStat = (n: string) => stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase())?.value ?? 0;
             const getStatDisplay = (n: string) => {
               const s = stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase());
               return s?.displayValue ?? String(s?.value ?? "0.000");
@@ -254,8 +231,7 @@ async function getDadosNFL(time: TimeConfig) {
                 won: String(vitorias),
                 lost: String(derrotas),
                 draw: String(empates),
-                pct: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct),
-                goalDifference: infoDiv.division === time.divisaoNFL ? 1 : 0
+                pct: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct)
               });
             }
           });
@@ -268,9 +244,10 @@ async function getDadosNFL(time: TimeConfig) {
 
       extrairTimes(dataStandings);
 
+      // Filtra os 4 times da divisão
       const timesDaDivisao = todosTimesMapeados.filter(t => {
         const info = identificarDivisao(t.team.name);
-        return info.division === time.divisaoNFL;
+        return info.division.toLowerCase() === divisaoAlvo.toLowerCase();
       });
 
       timesDaDivisao.sort((a, b) => {
@@ -287,10 +264,11 @@ async function getDadosNFL(time: TimeConfig) {
       tabela = timesDaDivisao;
     }
 
+    // 🎯 BUSCA AS 18 SEMANAS COM DATES=2026 FORÇADO PARA NÃO TRAZER 2025
     const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
     const responses = await Promise.all(
       semanas.map(semana =>
-        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${semana}`, {
+        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=${semana}`, {
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
           },
@@ -363,7 +341,6 @@ async function getDadosNFL(time: TimeConfig) {
   return { tabela, finalizados, proximos };
 }
 
-// 3. DADOS DE FUTEBOL COM ORDENAÇÃO CORRETA POR DATA ISO
 async function getDadosFutebol(time: TimeConfig) {
   try {
     const standingsPath = path.join(process.cwd(), "public/api-cache", time.arquivoStandings || '');
@@ -527,7 +504,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
         </a>
       </div>
 
-      {/* BLOCO 1: TRANSMISSÕES CONFIRMADAS NA TV (MÁXIMO 4 JOGOS) */}
+      {/* BLOCO 1: TRANSMISSÕES CONFIRMADAS NA TV */}
       <section>
         <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
           📺 Próximos Jogos com Transmissão na TV
@@ -674,7 +651,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
       <section className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏮️ Últimos Resultados no Campeonato
+            ⏮️ Últimos Resultados
           </h3>
           {finalizados.length > 0 ? (
             <div className="space-y-3">
@@ -692,7 +669,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -708,7 +685,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
@@ -739,7 +716,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -753,7 +730,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) || jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>

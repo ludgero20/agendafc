@@ -22,51 +22,36 @@ type TimeTabelaNFL = {
   strPercentage: string;
 };
 
-// 🏈 MAPA OFICIAL DAS 8 DIVISÕES DA NFL (Garante 4 times por divisão)
+// 🏈 MAPA OFICIAL DAS 8 DIVISÕES DA NFL (32 FRANQUIAS)
 const divisoesOficiaisNFL: Record<string, { conference: string; division: string }> = {
-  // AFC East
   "Buffalo Bills": { conference: "American Football Conference", division: "AFC East" },
   "Miami Dolphins": { conference: "American Football Conference", division: "AFC East" },
   "New England Patriots": { conference: "American Football Conference", division: "AFC East" },
   "New York Jets": { conference: "American Football Conference", division: "AFC East" },
-
-  // AFC North
   "Baltimore Ravens": { conference: "American Football Conference", division: "AFC North" },
   "Cincinnati Bengals": { conference: "American Football Conference", division: "AFC North" },
   "Cleveland Browns": { conference: "American Football Conference", division: "AFC North" },
   "Pittsburgh Steelers": { conference: "American Football Conference", division: "AFC North" },
-
-  // AFC South
   "Houston Texans": { conference: "American Football Conference", division: "AFC South" },
   "Indianapolis Colts": { conference: "American Football Conference", division: "AFC South" },
   "Jacksonville Jaguars": { conference: "American Football Conference", division: "AFC South" },
   "Tennessee Titans": { conference: "American Football Conference", division: "AFC South" },
-
-  // AFC West
   "Denver Broncos": { conference: "American Football Conference", division: "AFC West" },
   "Kansas City Chiefs": { conference: "American Football Conference", division: "AFC West" },
   "Las Vegas Raiders": { conference: "American Football Conference", division: "AFC West" },
   "Los Angeles Chargers": { conference: "American Football Conference", division: "AFC West" },
-
-  // NFC East
   "Dallas Cowboys": { conference: "National Football Conference", division: "NFC East" },
   "New York Giants": { conference: "National Football Conference", division: "NFC East" },
   "Philadelphia Eagles": { conference: "National Football Conference", division: "NFC East" },
   "Washington Commanders": { conference: "National Football Conference", division: "NFC East" },
-
-  // NFC North
   "Chicago Bears": { conference: "National Football Conference", division: "NFC North" },
   "Detroit Lions": { conference: "National Football Conference", division: "NFC North" },
   "Green Bay Packers": { conference: "National Football Conference", division: "NFC North" },
   "Minnesota Vikings": { conference: "National Football Conference", division: "NFC North" },
-
-  // NFC South
   "Atlanta Falcons": { conference: "National Football Conference", division: "NFC South" },
   "Carolina Panthers": { conference: "National Football Conference", division: "NFC South" },
   "New Orleans Saints": { conference: "National Football Conference", division: "NFC South" },
   "Tampa Bay Buccaneers": { conference: "National Football Conference", division: "NFC South" },
-
-  // NFC West
   "Arizona Cardinals": { conference: "National Football Conference", division: "NFC West" },
   "Los Angeles Rams": { conference: "National Football Conference", division: "NFC West" },
   "San Francisco 49ers": { conference: "National Football Conference", division: "NFC West" },
@@ -82,7 +67,7 @@ function identificarDivisao(nomeTime: string) {
   return { conference: "American Football Conference", division: "AFC East" };
 }
 
-// 1. TABELA DA NFL (ESPN AO VIVO COM DIVISÕES 100% PRECISAS)
+// 1. TABELA DA NFL (ESPN)
 async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   const url = "https://site.api.espn.com/apis/v2/sports/football/nfl/standings";
 
@@ -99,18 +84,14 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
     const data = await res.json();
     const todosTimesMapeados: TimeTabelaNFL[] = [];
 
-    // Coleta todas as entradas de times da ESPN
     function extrairTimes(obj: any) {
       if (obj.standings?.entries && Array.isArray(obj.standings.entries)) {
         obj.standings.entries.forEach((entry: any) => {
           const nomeTime = entry.team?.displayName || entry.team?.name || 'Time';
-          const infoDivisao = identificarDivisao(nomeTime);
+          const infoDiv = identificarDivisao(nomeTime);
 
           const stats = entry.stats || [];
-          const getStat = (n: string) => {
-            const s = stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase());
-            return s?.value ?? 0;
-          };
+          const getStat = (n: string) => stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase())?.value ?? 0;
           const getStatDisplay = (n: string) => {
             const s = stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase());
             return s?.displayValue ?? String(s?.value ?? "0.000");
@@ -123,14 +104,13 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
           const abbrev = entry.team?.abbreviation?.toLowerCase() || '';
           const logoUrl = entry.team?.logos?.[0]?.href || entry.team?.logo || (abbrev ? `https://a.espncdn.com/i/teamlogos/nfl/500/${abbrev}.png` : '');
 
-          // Evita adicionar o mesmo time duas vezes
           if (!todosTimesMapeados.some(t => t.teamName === nomeTime)) {
             todosTimesMapeados.push({
               teamName: nomeTime,
               teamLogo: logoUrl,
-              rank: "1", // Será recalculado por divisão
-              conference: infoDivisao.conference,
-              division: infoDivisao.division,
+              rank: "1",
+              conference: infoDiv.conference,
+              division: infoDiv.division,
               intWin: String(vitorias),
               intLoss: String(derrotas),
               intTie: String(empates),
@@ -148,16 +128,12 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
     extrairTimes(data);
 
     if (todosTimesMapeados.length >= 30) {
-      // Recalcula o ranking de 1 a 4 dentro de cada uma das 8 divisões
       const divisoesNomes = Object.keys(divisoesOficiaisNFL).map(k => divisoesOficiaisNFL[k].division);
       const divisoesUnicas = Array.from(new Set(divisoesNomes));
-
       const timesFinal: TimeTabelaNFL[] = [];
 
       divisoesUnicas.forEach(divNome => {
         const timesDaDivisao = todosTimesMapeados.filter(t => t.division === divNome);
-        
-        // Ordena por aproveitamento (%) e depois vitórias
         timesDaDivisao.sort((a, b) => {
           const pctA = parseFloat(a.strPercentage) || 0;
           const pctB = parseFloat(b.strPercentage) || 0;
@@ -173,11 +149,8 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
 
       return timesFinal;
     }
-
-    throw new Error("Menos de 30 times encontrados");
-
+    throw new Error("Menos de 30 times");
   } catch (error) {
-    console.error("Erro ao carregar da ESPN, usando fallback:", error);
     try {
       const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
       const jsonData = await fs.readFile(filePath, "utf-8");
@@ -188,14 +161,15 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. BUSCA TODAS AS 18 SEMANAS DA TEMPORADA REGULAR EM PARALELO
+// 2. BUSCA TODAS AS 18 SEMANAS COM DATES=2026 FORÇADO
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
     const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
     
     const responses = await Promise.all(
       semanas.map(semana =>
-        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${semana}`, {
+        // 🎯 FORÇA DATES=2026 PARA NÃO TRAZER 2025 NA VERCEL:
+        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=${semana}`, {
           headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
           },
@@ -246,7 +220,6 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
 
     if (todosJogos.length > 0) return todosJogos;
     throw new Error("Nenhum evento na ESPN");
-
   } catch (error) {
     try {
       const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/jogos-nfl.json");
@@ -284,7 +257,6 @@ export default async function NFLPage() {
     rodadaInicial = todosOsJogos.reduce((max, jogo) => Math.max(max, parseInt(jogo.intRound)), 0);
   }
 
-  // 🎯 AGRUPAMENTO PERFEITO POR CONFERÊNCIA E DIVISÃO
   const tabelasPorConferencia = tabelaCompleta.reduce((acc, time) => {
     const conferencia = time.conference.includes("American") ? "AFC" : "NFC";
     const divisao = time.division;
@@ -304,7 +276,6 @@ export default async function NFLPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        {/* TABELAS DAS CONFERÊNCIAS E DIVISÕES */}
         <div className="lg:col-span-2 space-y-8">
           {Object.entries(tabelasPorConferencia).map(([conferencia, divisoes]) => (
             <div key={conferencia} className="space-y-4">
@@ -357,7 +328,6 @@ export default async function NFLPage() {
           ))}
         </div>
 
-        {/* NAVEGADOR DE TODAS AS 18 SEMANAS */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏈 Jogos da Semana
