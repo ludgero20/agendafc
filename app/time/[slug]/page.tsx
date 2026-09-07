@@ -30,6 +30,8 @@ type TimeTabela = {
   points?: number;
   pct?: string;
   goalDifference?: number;
+  division?: string;
+  conference?: string;
 };
 
 type JogoTemporada = {
@@ -43,51 +45,35 @@ type JogoTemporada = {
   awayScore: string | number | null;
 };
 
-// 🏈 MAPA OFICIAL DAS 8 DIVISÕES DA NFL (32 FRANQUIAS)
 const divisoesOficiaisNFL: Record<string, { conference: string; division: string }> = {
-  // AFC East
   "Buffalo Bills": { conference: "American Football Conference", division: "AFC East" },
   "Miami Dolphins": { conference: "American Football Conference", division: "AFC East" },
   "New England Patriots": { conference: "American Football Conference", division: "AFC East" },
   "New York Jets": { conference: "American Football Conference", division: "AFC East" },
-
-  // AFC North
   "Baltimore Ravens": { conference: "American Football Conference", division: "AFC North" },
   "Cincinnati Bengals": { conference: "American Football Conference", division: "AFC North" },
   "Cleveland Browns": { conference: "American Football Conference", division: "AFC North" },
   "Pittsburgh Steelers": { conference: "American Football Conference", division: "AFC North" },
-
-  // AFC South
   "Houston Texans": { conference: "American Football Conference", division: "AFC South" },
   "Indianapolis Colts": { conference: "American Football Conference", division: "AFC South" },
   "Jacksonville Jaguars": { conference: "American Football Conference", division: "AFC South" },
   "Tennessee Titans": { conference: "American Football Conference", division: "AFC South" },
-
-  // AFC West
   "Denver Broncos": { conference: "American Football Conference", division: "AFC West" },
   "Kansas City Chiefs": { conference: "American Football Conference", division: "AFC West" },
   "Las Vegas Raiders": { conference: "American Football Conference", division: "AFC West" },
   "Los Angeles Chargers": { conference: "American Football Conference", division: "AFC West" },
-
-  // NFC East
   "Dallas Cowboys": { conference: "National Football Conference", division: "NFC East" },
   "New York Giants": { conference: "National Football Conference", division: "NFC East" },
   "Philadelphia Eagles": { conference: "National Football Conference", division: "NFC East" },
   "Washington Commanders": { conference: "National Football Conference", division: "NFC East" },
-
-  // NFC North
   "Chicago Bears": { conference: "National Football Conference", division: "NFC North" },
   "Detroit Lions": { conference: "National Football Conference", division: "NFC North" },
   "Green Bay Packers": { conference: "National Football Conference", division: "NFC North" },
   "Minnesota Vikings": { conference: "National Football Conference", division: "NFC North" },
-
-  // NFC South
   "Atlanta Falcons": { conference: "National Football Conference", division: "NFC South" },
   "Carolina Panthers": { conference: "National Football Conference", division: "NFC South" },
   "New Orleans Saints": { conference: "National Football Conference", division: "NFC South" },
   "Tampa Bay Buccaneers": { conference: "National Football Conference", division: "NFC South" },
-
-  // NFC West
   "Arizona Cardinals": { conference: "National Football Conference", division: "NFC West" },
   "Los Angeles Rams": { conference: "National Football Conference", division: "NFC West" },
   "San Francisco 49ers": { conference: "National Football Conference", division: "NFC West" },
@@ -114,7 +100,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 📱 LEITOR DO GOOGLE SHEETS
 async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   try {
     const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
@@ -154,7 +139,6 @@ async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   }
 }
 
-// 1. TRANSMISSÕES DE TV (MÁXIMO 4 JOGOS)
 async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]> {
   try {
     const jogosPath = path.join(process.cwd(), "public/jogos.json");
@@ -199,97 +183,137 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
   }
 }
 
-// 2. BUSCA TABELA DA DIVISÃO DA NFL (LÓGICA PRECISA DE CONF.STANDINGS.ENTRIES)
-async function getDadosNFL(time: TimeConfig) {
-  let tabela: TimeTabela[] = [];
-  let finalizados: JogoTemporada[] = [];
-  let proximos: JogoTemporada[] = [];
-  let nomeDivisaoFinal = time.divisaoNFL || identificarDivisao(time.nome).division;
+// 🌐 BUSCA TABELA DA NFL NA ESPN COM WEB-API DESBLOQUEADA E MULTI-FALLBACK
+async function getTabelaCompletaNFL(): Promise<TimeTabela[]> {
+  const urls = [
+    "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?region=us&lang=en&contentorigin=espn&season=2026&type=2",
+    "https://site.api.espn.com/apis/v2/sports/football/nfl/standings?region=us&lang=en&season=2026&type=2"
+  ];
 
-  // A. TABELA DA ESPN
-  try {
-    const res = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        'Accept': 'application/json',
-        'Referer': 'https://www.espn.com/'
-      },
-      next: { revalidate: 3600 }
-    });
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+          'Accept': 'application/json',
+          'Referer': 'https://www.espn.com/'
+        },
+        next: { revalidate: 3600 }
+      });
 
-    if (res.ok) {
+      if (!res.ok) continue;
       const data = await res.json();
-      const todosOsTimes: { teamName: string; teamLogo: string; division: string; won: string; lost: string; draw: string; pct: string; }[] = [];
+      const todosTimesMapeados: TimeTabela[] = [];
 
-      // A ESPN entrega os times dentro de conf.standings.entries
-      const conferencias = data?.children || [];
-      conferencias.forEach((conf: any) => {
-        const times = conf?.standings?.entries || [];
+      function extrairTimes(obj: any) {
+        if (obj.standings?.entries && Array.isArray(obj.standings.entries)) {
+          obj.standings.entries.forEach((entry: any) => {
+            const nomeTime = entry.team?.displayName || entry.team?.name || 'Time';
+            const infoDiv = identificarDivisao(nomeTime);
 
-        times.forEach((entry: any) => {
-          const nomeTime = entry.team?.displayName || entry.team?.name || 'Time';
-          const infoDiv = identificarDivisao(nomeTime);
+            const stats = entry.stats || [];
+            const getStat = (n: string) => stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase())?.value ?? 0;
+            const getStatDisplay = (n: string) => {
+              const s = stats.find((x: any) => x.name?.toLowerCase() === n.toLowerCase() || x.type?.toLowerCase() === n.toLowerCase());
+              return s?.displayValue ?? String(s?.value ?? "0.000");
+            };
 
-          const stats = entry.stats || [];
-          const getStat = (name: string) => stats.find((s: any) => s.name === name || s.type === name)?.value ?? 0;
-          const getStatDisplay = (name: string) => stats.find((s: any) => s.name === name || s.type === name)?.displayValue ?? '0.000';
+            const vitorias = getStat('wins');
+            const derrotas = getStat('losses');
+            const empates = getStat('ties');
+            const pct = getStatDisplay('winpercent') || getStatDisplay('winpercentage');
+            const abbrev = entry.team?.abbreviation?.toLowerCase() || '';
+            const logoUrl = entry.team?.logos?.[0]?.href || entry.team?.logo || (abbrev ? `https://a.espncdn.com/i/teamlogos/nfl/500/${abbrev}.png` : '');
 
-          const vitorias = getStat('wins');
-          const derrotas = getStat('losses');
-          const empates = getStat('ties');
-          const pct = getStatDisplay('winPercent');
-          const abbrev = entry.team?.abbreviation?.toLowerCase() || '';
-          const logo = entry.team?.logos?.[0]?.href || entry.team?.logo || (abbrev ? `https://a.espncdn.com/i/teamlogos/nfl/500/${abbrev}.png` : '');
+            if (!todosTimesMapeados.some(t => t.team.name === nomeTime)) {
+              todosTimesMapeados.push({
+                position: "1",
+                team: {
+                  id: entry.team?.id,
+                  name: nomeTime,
+                  shortName: entry.team?.shortName || entry.team?.name || nomeTime,
+                  crest: logoUrl
+                },
+                won: String(vitorias),
+                lost: String(derrotas),
+                draw: String(empates),
+                pct: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct),
+                division: infoDiv.division,
+                conference: infoDiv.conference
+              });
+            }
+          });
+        }
 
-          todosOsTimes.push({
-            teamName: nomeTime,
-            teamLogo: logo,
-            division: infoDiv.division,
-            won: String(vitorias),
-            lost: String(derrotas),
-            draw: String(empates),
-            pct: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct)
+        if (obj.children && Array.isArray(obj.children)) {
+          obj.children.forEach((c: any) => extrairTimes(c));
+        }
+      }
+
+      extrairTimes(data);
+
+      if (todosTimesMapeados.length >= 30) {
+        const divisoesNomes = Array.from(new Set(Object.keys(divisoesOficiaisNFL).map(k => divisoesOficiaisNFL[k].division)));
+        const timesFinal: TimeTabela[] = [];
+
+        divisoesNomes.forEach(divNome => {
+          const timesDaDivisao = todosTimesMapeados.filter(t => t.division === divNome);
+          timesDaDivisao.sort((a, b) => {
+            const pctA = parseFloat(a.pct || "0") || 0;
+            const pctB = parseFloat(b.pct || "0") || 0;
+            if (pctA !== pctB) return pctB - pctA;
+            return parseInt(String(b.won)) - parseInt(String(a.won));
+          });
+
+          timesDaDivisao.forEach((time, index) => {
+            time.position = String(index + 1);
+            timesFinal.push(time);
           });
         });
-      });
 
-      // 🎯 FILTRA OS 4 TIMES DA DIVISÃO DESTE CLUBE
-      const timesDaDivisao = todosOsTimes.filter(t => 
-        t.division.toLowerCase() === nomeDivisaoFinal.toLowerCase()
-      );
-
-      // Ordena a divisão por aproveitamento (%) e vitórias
-      timesDaDivisao.sort((a, b) => {
-        const pctA = parseFloat(a.pct) || 0;
-        const pctB = parseFloat(b.pct) || 0;
-        if (pctA !== pctB) return pctB - pctA;
-        return parseInt(b.won) - parseInt(a.won);
-      });
-
-      tabela = timesDaDivisao.map((t, idx) => ({
-        position: String(idx + 1),
-        team: {
-          name: t.teamName,
-          shortName: t.teamName,
-          crest: t.teamLogo
-        },
-        won: t.won,
-        lost: t.lost,
-        draw: t.draw,
-        pct: t.pct
-      }));
+        return timesFinal;
+      }
+    } catch (e) {
+      console.error("Tentando próxima URL da ESPN...", e);
     }
-  } catch (error) {
-    console.error("Erro na tabela da divisão da NFL:", error);
   }
 
-  // B. JOGOS DAS 18 SEMANAS DA ESPN (JÁ COMPROVADO QUE FUNCIONA)
+  // Fallback local se ambas as URLs falharem
+  try {
+    const filePath = path.join(process.cwd(), "public/importacoes-manuais/nfl/tabela.json");
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const parsed = JSON.parse(jsonData);
+    const standingsLocal = parsed.standings || [];
+    return standingsLocal.map((t: any, idx: number) => ({
+      position: String(t.rank || idx + 1),
+      team: { name: t.teamName, shortName: t.teamName, crest: t.teamLogo },
+      won: String(t.intWin),
+      lost: String(t.intLoss),
+      draw: String(t.intTie),
+      pct: String(t.strPercentage),
+      division: t.division,
+      conference: t.conference
+    }));
+  } catch {
+    return [];
+  }
+}
+
+// 3. JOGOS DA NFL (18 SEMANAS DA ESPN COM WEB-API DESBLOQUEADA)
+async function getJogosNFLDoTime(time: TimeConfig) {
+  let finalizados: JogoTemporada[] = [];
+  let proximos: JogoTemporada[] = [];
+
   try {
     const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
-    
     const responses = await Promise.all(
       semanas.map(semana =>
-        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${semana}`, {
+        fetch(`https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=${semana}`, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'Accept': 'application/json',
+            'Referer': 'https://www.espn.com/'
+          },
           next: { revalidate: 3600 }
         })
           .then(res => res.ok ? res.json() : null)
@@ -319,8 +343,8 @@ async function getDadosNFL(time: TimeConfig) {
 
         if (ehJogoDoTime) {
           const dataObj = ev.date ? new Date(ev.date) : new Date();
-          const dateFormatted = `${dateFormatter.format(dataObj)} às ${dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })}`;
           const finalizado = ev.status?.type?.completed;
+          const dateFormatted = `${dateFormatter.format(dataObj)} às ${dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })}`;
 
           const logoHome = home?.team?.logo || home?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${home?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
           const logoAway = away?.team?.logo || away?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${away?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
@@ -356,10 +380,10 @@ async function getDadosNFL(time: TimeConfig) {
     console.error("Erro nos jogos da NFL do time:", error);
   }
 
-  return { tabela, finalizados, proximos, nomeDivisao: nomeDivisaoFinal };
+  return { finalizados, proximos };
 }
 
-// 3. DADOS DE FUTEBOL
+// 4. DADOS DE FUTEBOL
 async function getDadosFutebol(time: TimeConfig) {
   try {
     const standingsPath = path.join(process.cwd(), "public/api-cache", time.arquivoStandings || '');
@@ -420,7 +444,7 @@ async function getDadosFutebol(time: TimeConfig) {
 
     return { tabela, finalizados, proximos, nomeDivisao: time.competicaoNome };
   } catch {
-    return { tabela: [], finalizados: [], proximos: [] };
+    return { tabela: [], finalizados: [], proximos: [], nomeDivisao: time.competicaoNome };
   }
 }
 
@@ -436,11 +460,28 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
   let nomeDivisaoExibicao = time.divisaoNFL || time.competicaoNome || 'Divisão';
 
   if (time.esporte === 'nfl') {
-    const dadosNFL = await getDadosNFL(time);
-    tabela = dadosNFL.tabela;
-    finalizados = dadosNFL.finalizados;
-    proximos = dadosNFL.proximos;
-    if (dadosNFL.nomeDivisao) nomeDivisaoExibicao = dadosNFL.nomeDivisao;
+    const [todasTabelasNFL, jogosNFL] = await Promise.all([
+      getTabelaCompletaNFL(),
+      getJogosNFLDoTime(time)
+    ]);
+
+    // 🎯 LOCALIZA A DIVISÃO DO TIME COM RETORNO DE SEGURANÇA (FAIL-SAFE)
+    const divisaoAlvo = time.divisaoNFL || identificarDivisao(time.nome).division;
+
+    const timesFiltrados = todasTabelasNFL.filter(t => 
+      t.division && divisaoAlvo && t.division.toLowerCase().trim() === divisaoAlvo.toLowerCase().trim()
+    );
+
+    if (timesFiltrados.length > 0) {
+      tabela = timesFiltrados;
+      nomeDivisaoExibicao = divisaoAlvo;
+    } else if (todasTabelasNFL.length >= 4) {
+      // 🛡️ FAIL-SAFE INSUPERÁVEL: Se a divisão falhar, mostra os 4 primeiros times da lista
+      tabela = todasTabelasNFL.slice(0, 4);
+    }
+
+    finalizados = jogosNFL.finalizados;
+    proximos = jogosNFL.proximos;
   } else {
     const dadosFut = await getDadosFutebol(time);
     tabela = dadosFut.tabela;
@@ -611,7 +652,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
         )}
       </section>
 
-      {/* BLOCO 2: CLASSIFICAÇÃO DA DIVISÃO (LÓGICA CORRIGIDA DIRETO DE CONF.STANDINGS.ENTRIES) */}
+      {/* BLOCO 2: CLASSIFICAÇÃO COM O TIME EM DESTAQUE */}
       {tabela.length > 0 && (
         <section>
           <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
@@ -685,7 +726,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
       <section className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏮️ Últimos Resultados no Campeonato
+            ⏮️ Últimos Resultados
           </h3>
           {finalizados.length > 0 ? (
             <div className="space-y-3">
