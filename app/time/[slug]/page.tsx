@@ -4,6 +4,7 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import { timesConfig, TimeConfig } from '@/lib/times';
 import { formatarNomeTime } from '@/lib/campeonatos';
+import { getTabelaNFL, getTodosJogosNFL, identificarDivisaoNFL } from '@/lib/nfl';
 
 export const revalidate = 3600;
 
@@ -56,7 +57,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 📱 LEITOR DO GOOGLE SHEETS
 async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   try {
     const sheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTwHo7TJfy9fGtuczQ5P-g6ukgbtpnXNXZuqnJsbriIG4Wox6f-uow2avY2GYM7b5zxxl0Al_SMI4PE/pub?gid=0&single=true&output=tsv";
@@ -96,7 +96,6 @@ async function getJogosDoGoogleSheets(): Promise<JogoTransmissao[]> {
   }
 }
 
-// 1. TRANSMISSÕES DE TV (Futebol e NFL)
 async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]> {
   try {
     const jogosPath = path.join(process.cwd(), "public/jogos.json");
@@ -141,143 +140,53 @@ async function getJogosTransmissao(time: TimeConfig): Promise<JogoTransmissao[]>
   }
 }
 
-// 2. BUSCA TABELA DA NFL NA ESPN (URL LIMPA IDÊNTICA À DE CAMPEONATOS)
-async function getTabelaCompletaNFL(): Promise<TimeTabela[]> {
-  try {
-    const res = await fetch("https://site.api.espn.com/apis/v2/sports/football/nfl/standings", {
-      next: { revalidate: 3600 }
-    });
+// 🎯 DADOS DA NFL: CONSOME LIB/NFL DIRETO
+async function getDadosNFL(time: TimeConfig) {
+  const [tabelaNFL, todosJogos] = await Promise.all([
+    getTabelaNFL(),
+    getTodosJogosNFL()
+  ]);
 
-    if (!res.ok) throw new Error("Erro na ESPN Standings");
-    const data = await res.json();
-    const timesFormatados: TimeTabela[] = [];
+  // Identifica a divisão do time
+  const divisaoDoTime = time.divisaoNFL || identificarDivisaoNFL(time.nome).division;
 
-    const conferencias = data?.children || [];
-    conferencias.forEach((conf: any) => {
-      const nomeConferencia = conf.name || (conf.abbreviation === 'AFC' ? 'American Football Conference' : 'National Football Conference');
-      const divisoes = conf.children || [];
+  // Filtra os 4 times da divisão
+  const tabela: TimeTabela[] = tabelaNFL
+    .filter(t => t.division && t.division.toLowerCase() === divisaoDoTime.toLowerCase())
+    .map((t, idx) => ({
+      position: String(idx + 1),
+      team: { name: t.teamName, shortName: t.teamName, crest: t.teamLogo },
+      won: t.intWin,
+      lost: t.intLoss,
+      draw: t.intTie,
+      pct: t.strPercentage,
+      division: t.division,
+      conference: t.conference
+    }));
 
-      divisoes.forEach((div: any) => {
-        const nomeDivisao = div.name || div.shortName || '';
-        const times = div?.standings?.entries || [];
+  // Filtra jogos do time
+  const jogosDoTime = todosJogos.filter(j => 
+    time.variacoesNome.some(v => j.strHomeTeam.toLowerCase().includes(v.toLowerCase()) || j.strAwayTeam.toLowerCase().includes(v.toLowerCase()))
+  );
 
-        times.forEach((entry: any, index: number) => {
-          const stats = entry.stats || [];
-          const getStat = (name: string) => stats.find((s: any) => s.name === name)?.value ?? 0;
-          const getStatDisplay = (name: string) => stats.find((s: any) => s.name === name)?.displayValue ?? '0.000';
+  const formatados: JogoTemporada[] = jogosDoTime.map(j => ({
+    id: j.idEvent,
+    dateStr: `${j.dateEvent} às ${j.strTime}`,
+    status: j.strStatus,
+    roundLabel: `Semana ${j.intRound}`,
+    homeTeam: { name: j.strHomeTeam, shortName: j.strHomeTeam, crest: j.strHomeLogo || '' },
+    awayTeam: { name: j.strAwayTeam, shortName: j.strAwayTeam, crest: j.strAwayLogo || '' },
+    homeScore: j.intHomeScore,
+    awayScore: j.intAwayScore
+  }));
 
-          const vitorias = getStat('wins');
-          const derrotas = getStat('losses');
-          const empates = getStat('ties');
-          const pct = getStatDisplay('winPercent');
-          const logo = entry.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${entry.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
+  const finalizados = formatados.filter(j => j.status === 'Match Finished').slice(-3);
+  const proximos = formatados.filter(j => j.status !== 'Match Finished').slice(0, 5);
 
-          timesFormatados.push({
-            position: String(index + 1),
-            team: {
-              id: entry.team?.id,
-              name: entry.team?.displayName || entry.team?.name || 'Time',
-              shortName: entry.team?.shortName || entry.team?.name || 'Time',
-              crest: logo
-            },
-            won: String(vitorias),
-            lost: String(derrotas),
-            draw: String(empates),
-            pct: String(pct).startsWith('0') ? String(pct).substring(1) : String(pct),
-            division: nomeDivisao,
-            conference: nomeConferencia
-          });
-        });
-      });
-    });
-
-    return timesFormatados;
-  } catch (error) {
-    console.error("Erro ao buscar tabela completa NFL:", error);
-    return [];
-  }
+  return { tabela, finalizados, proximos, divisaoNome: divisaoDoTime };
 }
 
-// 3. JOGOS DA NFL (18 SEMANAS DA ESPN)
-async function getJogosNFLDoTime(time: TimeConfig) {
-  let finalizados: JogoTemporada[] = [];
-  let proximos: JogoTemporada[] = [];
-
-  try {
-    const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
-    const responses = await Promise.all(
-      semanas.map(semana =>
-        fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?seasontype=2&week=${semana}`, {
-          next: { revalidate: 3600 }
-        })
-          .then(res => res.ok ? res.json() : null)
-          .catch(() => null)
-      )
-    );
-
-    const dateFormatter = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo' });
-    const todosJogosDoTime: JogoTemporada[] = [];
-
-    responses.forEach((data, index) => {
-      const semanaNum = String(index + 1);
-      const eventos = data?.events || [];
-
-      eventos.forEach((ev: any) => {
-        const comp = ev.competitions?.[0];
-        const home = comp?.competitors?.find((c: any) => c.homeAway === 'home');
-        const away = comp?.competitors?.find((c: any) => c.homeAway === 'away');
-
-        const homeNome = home?.team?.displayName || '';
-        const awayNome = away?.team?.displayName || '';
-
-        const ehJogoDoTime = time.variacoesNome.some(v => 
-          homeNome.toLowerCase().includes(v.toLowerCase()) || 
-          awayNome.toLowerCase().includes(v.toLowerCase())
-        );
-
-        if (ehJogoDoTime) {
-          const dataObj = ev.date ? new Date(ev.date) : new Date();
-          const finalizado = ev.status?.type?.completed;
-          const dateFormatted = `${dateFormatter.format(dataObj)} às ${dataObj.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' })}`;
-
-          const logoHome = home?.team?.logo || home?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${home?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
-          const logoAway = away?.team?.logo || away?.team?.logos?.[0]?.href || `https://a.espncdn.com/i/teamlogos/nfl/500/${away?.team?.abbreviation?.toLowerCase() || 'nfl'}.png`;
-
-          todosJogosDoTime.push({
-            id: String(ev.id),
-            dateStr: dateFormatted,
-            status: finalizado ? 'FINISHED' : 'SCHEDULED',
-            roundLabel: `Semana ${ev.week?.number || semanaNum}`,
-            homeTeam: {
-              id: home?.team?.id,
-              name: home?.team?.displayName || 'Casa',
-              shortName: home?.team?.shortName || home?.team?.name || 'Casa',
-              crest: logoHome
-            },
-            awayTeam: {
-              id: away?.team?.id,
-              name: away?.team?.displayName || 'Visitante',
-              shortName: away?.team?.shortName || away?.team?.name || 'Visitante',
-              crest: logoAway
-            },
-            homeScore: finalizado ? String(home?.score || '0') : null,
-            awayScore: finalizado ? String(away?.score || '0') : null
-          });
-        }
-      });
-    });
-
-    finalizados = todosJogosDoTime.filter(j => j.status === 'FINISHED').slice(-3);
-    proximos = todosJogosDoTime.filter(j => j.status !== 'FINISHED').slice(0, 5);
-
-  } catch (error) {
-    console.error("Erro ao carregar jogos da NFL:", error);
-  }
-
-  return { finalizados, proximos };
-}
-
-// 4. DADOS DE FUTEBOL
+// DADOS DE FUTEBOL
 async function getDadosFutebol(time: TimeConfig) {
   try {
     const standingsPath = path.join(process.cwd(), "public/api-cache", time.arquivoStandings || '');
@@ -336,9 +245,9 @@ async function getDadosFutebol(time: TimeConfig) {
         awayScore: m.score?.fullTime?.away ?? null
       }));
 
-    return { tabela, finalizados, proximos };
+    return { tabela, finalizados, proximos, divisaoNome: time.competicaoNome };
   } catch {
-    return { tabela: [], finalizados: [], proximos: [] };
+    return { tabela: [], finalizados: [], proximos: [], divisaoNome: time.competicaoNome };
   }
 }
 
@@ -354,27 +263,11 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
   let nomeDivisaoExibicao = time.divisaoNFL || 'Divisão';
 
   if (time.esporte === 'nfl') {
-    const [todasTabelasNFL, jogosNFL] = await Promise.all([
-      getTabelaCompletaNFL(),
-      getJogosNFLDoTime(time)
-    ]);
-
-    // 🎯 ENCONTRA A DIVISÃO REAL DO TIME NA TABELA DA ESPN
-    const timeNaTabela = todasTabelasNFL.find(t => 
-      t.team.name.toLowerCase().includes(time.nome.toLowerCase()) || 
-      time.variacoesNome.some(v => t.team.name.toLowerCase().includes(v.toLowerCase()))
-    );
-
-    const divisaoDoTime = timeNaTabela?.division || time.divisaoNFL || '';
-    if (divisaoDoTime) nomeDivisaoExibicao = divisaoDoTime;
-
-    // Filtra os 4 times daquela divisão exata
-    tabela = todasTabelasNFL.filter(t => 
-      t.division && divisaoDoTime && t.division.toLowerCase() === divisaoDoTime.toLowerCase()
-    );
-
-    finalizados = jogosNFL.finalizados;
-    proximos = jogosNFL.proximos;
+    const dadosNFL = await getDadosNFL(time);
+    tabela = dadosNFL.tabela;
+    finalizados = dadosNFL.finalizados;
+    proximos = dadosNFL.proximos;
+    nomeDivisaoExibicao = dadosNFL.divisaoNome;
   } else {
     const dadosFut = await getDadosFutebol(time);
     tabela = dadosFut.tabela;
@@ -545,11 +438,11 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
         )}
       </section>
 
-      {/* BLOCO 2: CLASSIFICAÇÃO DA DIVISÃO (BUSCA DA MESMA FONTE DA PÁGINA DA NFL) */}
+      {/* BLOCO 2: CLASSIFICAÇÃO DA DIVISÃO (DIRETO DE LIB/NFL) */}
       {tabela.length > 0 && (
         <section>
           <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-            🏆 {time.esporte === 'nfl' ? `Classificação - ${nomeDivisaoExibicao}` : `${time.competicaoNome} - Classificação`}
+            🏆 Classificação - {nomeDivisaoExibicao}
           </h2>
           <div className="overflow-x-auto bg-white rounded-2xl shadow-xs border border-slate-200/90">
             <table className="min-w-full text-sm">
@@ -619,7 +512,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
       <section className="grid md:grid-cols-2 gap-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold text-slate-900 flex items-center gap-2">
-            ⏮️ Últimos Resultados no Campeonato
+            ⏮️ Últimos Resultados
           </h3>
           {finalizados.length > 0 ? (
             <div className="space-y-3">
@@ -637,7 +530,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -653,7 +546,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
@@ -684,7 +577,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                   <div className="flex items-center justify-between py-1">
                     <div className="flex items-center gap-2 w-[40%] justify-end text-right">
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.homeTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.homeTeam.id === time.idAPI || jogo.homeTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.homeTeam.shortName : formatarNomeTime(jogo.homeTeam.shortName, jogo.homeTeam.name)}
                       </span>
                       <img src={jogo.homeTeam.crest} alt={jogo.homeTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
@@ -698,7 +591,7 @@ Confira a agenda completa em: https://agendafc.com.br/time/${time.slug}`;
 
                     <div className="flex items-center gap-2 w-[40%] justify-start text-left">
                       <img src={jogo.awayTeam.crest} alt={jogo.awayTeam.name} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
-                      <span className={`text-xs sm:text-sm font-bold truncate ${time.esporte === 'nfl' ? (jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900') : (jogo.awayTeam.id === time.idAPI ? 'text-blue-700' : 'text-slate-900')}`}>
+                      <span className={`text-xs sm:text-sm font-bold truncate ${jogo.awayTeam.id === time.idAPI || jogo.awayTeam.name.toLowerCase().includes(time.nome.toLowerCase()) ? 'text-blue-700' : 'text-slate-900'}`}>
                         {time.esporte === 'nfl' ? jogo.awayTeam.shortName : formatarNomeTime(jogo.awayTeam.shortName, jogo.awayTeam.name)}
                       </span>
                     </div>
