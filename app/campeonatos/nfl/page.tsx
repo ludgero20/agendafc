@@ -22,7 +22,6 @@ type TimeTabelaNFL = {
   strPercentage: string;
 };
 
-// 🏈 MAPA OFICIAL DAS 8 DIVISÕES DA NFL (32 FRANQUIAS)
 const divisoesOficiaisNFL: Record<string, { conference: string; division: string }> = {
   "Buffalo Bills": { conference: "American Football Conference", division: "AFC East" },
   "Miami Dolphins": { conference: "American Football Conference", division: "AFC East" },
@@ -67,15 +66,16 @@ function identificarDivisao(nomeTime: string) {
   return { conference: "American Football Conference", division: "AFC East" };
 }
 
-// 1. TABELA DA NFL (ESPN)
+// 1. TABELA DA NFL (COM CABEÇALHO REFERER ANTI-BLOQUEIO DE DATACENTER)
 async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
-  const url = "https://site.api.espn.com/apis/v2/sports/football/nfl/standings";
+  const url = "https://site.api.espn.com/apis/v2/sports/football/nfl/standings?region=us&lang=en&season=2026&type=2";
 
   try {
     const res = await fetch(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'application/json'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept': 'application/json',
+        'Referer': 'https://www.espn.com/' // 🎯 O SEGREDO PARA A VERCEL NÃO SER BLOQUEADA
       },
       next: { revalidate: 3600 }
     });
@@ -161,17 +161,18 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. BUSCA TODAS AS 18 SEMANAS COM DATES=2026 FORÇADO
+// 2. BUSCA TODAS AS 18 SEMANAS COM DATES=2026 E REFERER
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   try {
     const semanas = Array.from({ length: 18 }, (_, i) => i + 1);
     
     const responses = await Promise.all(
       semanas.map(semana =>
-        // 🎯 FORÇA DATES=2026 PARA NÃO TRAZER 2025 NA VERCEL:
         fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=2026&seasontype=2&week=${semana}`, {
           headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+            'Accept': 'application/json',
+            'Referer': 'https://www.espn.com/'
           },
           next: { revalidate: 3600 }
         })
@@ -276,6 +277,7 @@ export default async function NFLPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        {/* TABELAS DAS CONFERÊNCIAS E DIVISÕES */}
         <div className="lg:col-span-2 space-y-8">
           {Object.entries(tabelasPorConferencia).map(([conferencia, divisoes]) => (
             <div key={conferencia} className="space-y-4">
@@ -328,6 +330,7 @@ export default async function NFLPage() {
           ))}
         </div>
 
+        {/* NAVEGADOR DE TODAS AS 18 SEMANAS */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏈 Jogos da Semana
