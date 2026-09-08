@@ -1,116 +1,6 @@
 {
   "jogosSemana": [
     {
-      "id": 47391,
-      "data": "2026-09-07",
-      "hora": "13h30",
-      "campeonato": "Serie A",
-      "canal": "Disney+",
-      "time1": "Cagliari",
-      "time2": "Lecce",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 19226,
-      "data": "2026-09-07",
-      "hora": "14h00",
-      "campeonato": "La Liga",
-      "canal": "CazéTV",
-      "time1": "Getafe",
-      "time2": "Celta de Vigo",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 14797,
-      "data": "2026-09-07",
-      "hora": "14h00",
-      "campeonato": "Campeonato Turco",
-      "canal": "Disney+",
-      "time1": "Goztepe",
-      "time2": "Gaziantep",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 68168,
-      "data": "2026-09-07",
-      "hora": "15h00",
-      "campeonato": "Saudi Pro League",
-      "canal": "Canal GOAT",
-      "time1": "Al Hilal",
-      "time2": "Neom",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 68718,
-      "data": "2026-09-07",
-      "hora": "15h45",
-      "campeonato": "Serie A",
-      "canal": "SportyNet (TV e Youtube) e Disney+",
-      "time1": "Udinese",
-      "time2": "Lazio",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 36217,
-      "data": "2026-09-07",
-      "hora": "16h15",
-      "campeonato": "Primeira Liga",
-      "canal": "Disney+",
-      "time1": "Estoril",
-      "time2": "Arouca",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 48471,
-      "data": "2026-09-07",
-      "hora": "16h30",
-      "campeonato": "La Liga",
-      "canal": "CazéTV",
-      "time1": "Elche",
-      "time2": "Real Sociedad",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 43210,
-      "data": "2026-09-07",
-      "hora": "17h00",
-      "campeonato": "Brasileirão Feminino",
-      "canal": "Sportv",
-      "time1": "Corinthians (F)",
-      "time2": "Cruzeiro (F)",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 26755,
-      "data": "2026-09-07",
-      "hora": "19h00",
-      "campeonato": "Campeonato Argentino",
-      "canal": "Disney+",
-      "time1": "Barracas Central",
-      "time2": "Argentinos Juniors",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
-      "id": 49140,
-      "data": "2026-09-07",
-      "hora": "20h00",
-      "campeonato": "Brasileirão",
-      "canal": "Sportv e Premiere",
-      "time1": "Vitória",
-      "time2": "Grêmio",
-      "evento_nome": null,
-      "evento_descricao": null
-    },
-    {
       "id": 86486,
       "data": "2026-09-08",
       "hora": "12h30",
@@ -677,6 +567,141 @@
       "canal": "Apple TV",
       "time1": "San Diego",
       "time2": "San Jose Earthquakes",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 87780,
+      "data": "2026-09-10",
+      "hora": "13h45",
+      "campeonato": "Champions League",
+      "canal": "TNT, TNT Sports Brasil (YouTube) e HBO Max",
+      "time1": "Fenerbahçe",
+      "time2": "Roma",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 38710,
+      "data": "2026-09-10",
+      "hora": "13h45",
+      "campeonato": "Champions League",
+      "canal": "Space e HBO Max",
+      "time1": "PSV",
+      "time2": "Shakhtar Donetsk",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 2513,
+      "data": "2026-09-10",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "TNT e HBO Max",
+      "time1": "Bayern de Munique",
+      "time2": "Bodo/Glimt",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 55868,
+      "data": "2026-09-10",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "Space e HBO Max",
+      "time1": "Manchester United",
+      "time2": "Sabah",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 36755,
+      "data": "2026-09-10",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "HBO Max",
+      "time1": "Como",
+      "time2": "RB Leipzig",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 12078,
+      "data": "2026-09-10",
+      "hora": "16h00",
+      "campeonato": "Champions League",
+      "canal": "HBO Max",
+      "time1": "Slavia Praga",
+      "time2": "Lens",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 45393,
+      "data": "2026-09-10",
+      "hora": "16h15",
+      "campeonato": "Primeira Liga",
+      "canal": "Disney+",
+      "time1": "Estrela Amadora",
+      "time2": "Braga",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 71766,
+      "data": "2026-09-10",
+      "hora": "19h30",
+      "campeonato": "Brasileirão",
+      "canal": "Sportv e Premiere",
+      "time1": "São Bernardo",
+      "time2": "Londrina",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 27454,
+      "data": "2026-09-10",
+      "hora": "19h30",
+      "campeonato": "Brasileirão",
+      "canal": "Disney+",
+      "time1": "Vila Nova",
+      "time2": "Goiás",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 29003,
+      "data": "2026-09-10",
+      "hora": "21h30",
+      "campeonato": "Copa Libertadores (quartas de final)",
+      "canal": "ESPN e Disney+",
+      "time1": "Independiente del Valle",
+      "time2": "Flamengo",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 10128,
+      "data": "2026-09-10",
+      "hora": "21h30",
+      "campeonato": "Copa Sul-Americana (quartas de final)",
+      "canal": "Paramount+",
+      "time1": "Cienciano",
+      "time2": "Montevideo City Torque",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 49885,
+      "data": "2026-09-10",
+      "hora": "21h30",
+      "campeonato": "Brasileirão",
+      "canal": "Xsports, SportyNet (TV e Youtube), ESPN 4 e Disney+",
+      "time1": "Sport",
+      "time2": "Ponte Preta",
+      "divisao": "Série B",
       "evento_nome": null,
       "evento_descricao": null
     }
