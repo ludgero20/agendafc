@@ -6,7 +6,7 @@
     "count": 144,
     "first": "2026-09-08",
     "last": "2027-01-27",
-    "played": 0
+    "played": 2
   },
   "competition": {
     "id": 2001,
@@ -39,11 +39,11 @@
       },
       "id": 575323,
       "utcDate": "2026-09-08T16:45:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T18:45:04Z",
       "homeTeam": {
         "id": 851,
         "name": "Club Brugge KV",
@@ -59,21 +59,28 @@
         "crest": "https://crests.football-data.org/58.png"
       },
       "score": {
-        "winner": null,
+        "winner": "AWAY_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 3
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 3
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 31823,
+          "name": "Sandro Schärer",
+          "type": "REFEREE",
+          "nationality": "Switzerland"
+        }
+      ]
     },
     {
       "area": {
@@ -98,11 +105,11 @@
       },
       "id": 575324,
       "utcDate": "2026-09-08T16:45:00Z",
-      "status": "TIMED",
+      "status": "FINISHED",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T18:41:52Z",
       "homeTeam": {
         "id": 1899,
         "name": "PAE AEK",
@@ -118,21 +125,28 @@
         "crest": "https://crests.football-data.org/2016.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 2,
+          "away": 0
         },
         "halfTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         }
       },
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 37629,
+          "name": "Luís Godinho",
+          "type": "REFEREE",
+          "nationality": "Portugal"
+        }
+      ]
     },
     {
       "area": {
@@ -157,11 +171,11 @@
       },
       "id": 575325,
       "utcDate": "2026-09-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T19:20:16Z",
       "homeTeam": {
         "id": 86,
         "name": "Real Madrid CF",
@@ -177,11 +191,11 @@
         "crest": "https://crests.football-data.org/108.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -191,7 +205,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 11605,
+          "name": "Michael Oliver",
+          "type": "REFEREE",
+          "nationality": "England"
+        }
+      ]
     },
     {
       "area": {
@@ -216,11 +237,11 @@
       },
       "id": 575326,
       "utcDate": "2026-09-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T19:20:48Z",
       "homeTeam": {
         "id": 503,
         "name": "FC Porto",
@@ -236,11 +257,11 @@
         "crest": "https://crests.football-data.org/65.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -250,7 +271,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 43888,
+          "name": "Szymon Marciniak",
+          "type": "REFEREE",
+          "nationality": "Poland"
+        }
+      ]
     },
     {
       "area": {
@@ -275,11 +303,11 @@
       },
       "id": 575327,
       "utcDate": "2026-09-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T19:20:48Z",
       "homeTeam": {
         "id": 4,
         "name": "Borussia Dortmund",
@@ -295,11 +323,11 @@
         "crest": "https://crests.football-data.org/94.png"
       },
       "score": {
-        "winner": null,
+        "winner": "DRAW",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 0,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -309,7 +337,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 57826,
+          "name": "Simone Sozza",
+          "type": "REFEREE",
+          "nationality": "Italy"
+        }
+      ]
     },
     {
       "area": {
@@ -334,11 +369,11 @@
       },
       "id": 575328,
       "utcDate": "2026-09-08T19:00:00Z",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "matchday": 1,
       "stage": "LEAGUE_STAGE",
       "group": null,
-      "lastUpdated": "2026-09-08T01:32:00Z",
+      "lastUpdated": "2026-09-08T19:20:48Z",
       "homeTeam": {
         "id": 521,
         "name": "Lille OSC",
@@ -354,11 +389,11 @@
         "crest": "https://crests.football-data.org/90.png"
       },
       "score": {
-        "winner": null,
+        "winner": "HOME_TEAM",
         "duration": "REGULAR",
         "fullTime": {
-          "home": null,
-          "away": null
+          "home": 1,
+          "away": 0
         },
         "halfTime": {
           "home": null,
@@ -368,7 +403,14 @@
       "odds": {
         "msg": "Activate Odds-Package in User-Panel to retrieve odds."
       },
-      "referees": []
+      "referees": [
+        {
+          "id": 15654,
+          "name": "Georgi Kabakov",
+          "type": "REFEREE",
+          "nationality": "Bulgaria"
+        }
+      ]
     },
     {
       "area": {
