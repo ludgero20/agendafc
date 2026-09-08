@@ -704,6 +704,139 @@
       "divisao": "Série B",
       "evento_nome": null,
       "evento_descricao": null
+    },
+    {
+      "id": 11592,
+      "data": "2026-09-11",
+      "hora": "12h25",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT",
+      "time1": "Al Qadsiah",
+      "time2": "Al Ettifaq",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 80310,
+      "data": "2026-09-11",
+      "hora": "12h45",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT e Bandsports",
+      "time1": "Al Faisaly",
+      "time2": "Al Ittihad",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 27462,
+      "data": "2026-09-11",
+      "hora": "14h00",
+      "campeonato": "Campeonato Turco",
+      "canal": "ESPN 4 e Disney+",
+      "time1": "Besiktas",
+      "time2": "Erzurumspor",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 80285,
+      "data": "2026-09-11",
+      "hora": "15h00",
+      "campeonato": "Campeonato Holandês",
+      "canal": "Disney+",
+      "time1": "AZ Alkmaar",
+      "time2": "Willem II",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 48120,
+      "data": "2026-09-11",
+      "hora": "15h00",
+      "campeonato": "Saudi Pro League",
+      "canal": "Canal GOAT",
+      "time1": "Al Ahli",
+      "time2": "Al Hazem",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 68787,
+      "data": "2026-09-11",
+      "hora": "15h30",
+      "campeonato": "Bundesliga",
+      "canal": "Sportv e OneFootball",
+      "time1": "Union Berlin",
+      "time2": "Schalke 04",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 27486,
+      "data": "2026-09-11",
+      "hora": "15h45",
+      "campeonato": "Serie A",
+      "canal": "SportyNet (TV e YouTube) e Disney+",
+      "time1": "Venezia",
+      "time2": "Fiorentina",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 86740,
+      "data": "2026-09-11",
+      "hora": "15h45",
+      "campeonato": "Ligue 1",
+      "canal": "Xsports e CazéTV",
+      "time1": "Rennes",
+      "time2": "Olympique de Marseille",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 1669,
+      "data": "2026-09-11",
+      "hora": "16h00",
+      "campeonato": "La Liga",
+      "canal": "CazéTV",
+      "time1": "Sevilla",
+      "time2": "Valencia",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 67848,
+      "data": "2026-09-11",
+      "hora": "16h00",
+      "campeonato": "Brasileirão",
+      "canal": "ESPN e Disney+",
+      "time1": "West Ham",
+      "time2": "Wrexham",
+      "divisao": "Série B",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 35683,
+      "data": "2026-09-11",
+      "hora": "21h00",
+      "campeonato": "Brasileirão",
+      "canal": "Sportv e Premiere",
+      "time1": "Coritiba",
+      "time2": "Athletico-PR",
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 58807,
+      "data": "2026-09-11",
+      "hora": "21h30",
+      "campeonato": "Campeonato Argentino",
+      "canal": "ESPN e Disney+",
+      "time1": "Boca Juniors",
+      "time2": "Central Córdoba",
+      "evento_nome": null,
+      "evento_descricao": null
     }
   ]
 }
