@@ -14,7 +14,7 @@ export type CompeticaoInfo = {
   ativo: boolean;
   bandeiraEmoji: string;
   codigoAPI?: string;
-  espnSlug?: string; // 🌐 Slug para ligas da ESPN
+  espnSlug?: string;
   origemAPI?: 'football-data' | 'espn';
   arquivoStandings?: string;
   arquivoMatches?: string;
@@ -24,6 +24,9 @@ export type CompeticaoInfo = {
 export type LigaConfig = CompeticaoInfo;
 
 export const todasCompeticoes: CompeticaoInfo[] = [
+  // ==========================================
+  // COM PÁGINA DEDICADA ATIVA
+  // ==========================================
   {
     id: 1,
     nome: "Brasileirão",
@@ -202,6 +205,10 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     arquivoStandings: "primeira-liga-standings.json",
     arquivoMatches: "primeira-liga-matches.json"
   },
+
+  // ==========================================
+  // COPAS E NOVAS LIGAS CADASTRADAS PARA TV / HOME
+  // ==========================================
   {
     id: 11,
     nome: "Copa Libertadores da América",
@@ -236,6 +243,83 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     bandeiraEmoji: "🇧🇷"
   },
   {
+    id: 16,
+    nome: "Copa da Liga Inglesa",
+    slug: "",
+    pais: "Inglaterra",
+    tipo: "Copa Nacional",
+    descricao: "Copa da Liga Inglesa (Carabao Cup / EFL Cup).",
+    prioridade: 3,
+    ativo: true,
+    bandeiraEmoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  },
+  {
+    id: 17,
+    nome: "MLS",
+    slug: "",
+    pais: "Estados Unidos",
+    tipo: "Nacional",
+    descricao: "Major League Soccer dos Estados Unidos e Canadá.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇺🇸"
+  },
+  {
+    id: 18,
+    nome: "Saudi Pro League",
+    slug: "",
+    pais: "Arábia Saudita",
+    tipo: "Nacional",
+    descricao: "Campeonato Saudita com as superestrelas do futebol mundial.",
+    prioridade: 3,
+    ativo: true,
+    bandeiraEmoji: "🇸🇦"
+  },
+  {
+    id: 19,
+    nome: "Campeonato Argentino",
+    slug: "",
+    pais: "Argentina",
+    tipo: "Nacional",
+    descricao: "Liga Profissional de Futebol da Argentina com Boca e River.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇦🇷"
+  },
+  {
+    id: 20,
+    nome: "Campeonato Holandês",
+    slug: "",
+    pais: "Holanda",
+    tipo: "Nacional",
+    descricao: "Eredivisie com Ajax, PSV e Feyenoord.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇳🇱"
+  },
+  {
+    id: 21,
+    nome: "Campeonato Turco",
+    slug: "",
+    pais: "Turquia",
+    tipo: "Nacional",
+    descricao: "Süper Lig da Turquia com Galatasaray, Fenerbahçe e Beşiktaş.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇹🇷"
+  },
+  {
+    id: 22,
+    nome: "Campeonato Mexicano",
+    slug: "",
+    pais: "México",
+    tipo: "Nacional",
+    descricao: "Liga MX do México com América, Chivas e Cruz Azul.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇲🇽"
+  },
+  {
     id: 14,
     nome: "NBA",
     slug: "nba",
@@ -250,11 +334,12 @@ export const todasCompeticoes: CompeticaoInfo[] = [
 ];
 
 export const competicoesAtivasMap: Record<string, CompeticaoInfo> = todasCompeticoes.reduce((acc, comp) => {
-  if (comp.ativo) acc[comp.nome] = comp;
+  if (comp.ativo) {
+    acc[comp.nome] = comp;
+  }
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
 
-// Indexa tanto ligas com codigoAPI (football-data) quanto ligas com espnSlug (ESPN)
 export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
   if (comp.slug && (comp.codigoAPI || comp.espnSlug)) {
     acc[comp.slug] = comp;
@@ -263,10 +348,11 @@ export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
 }, {} as Record<string, CompeticaoInfo>);
 
 export const dicionarioCampeonatos: Record<string, string> = {
+  // Ligas Nacionais
   "campeonato italiano": "Serie A",
   "campeonato espanhol": "La Liga",
-  "campeonato saudita": "Saudi Pro League",
   "campeonato alemão": "Bundesliga",
+  "campeonato alemáo": "Bundesliga",
   "campeonato francês": "Ligue 1",
   "campeonato frances": "Ligue 1",
   "campeonato inglês": "Premier League",
@@ -277,10 +363,34 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "brasileirao serie b": "Série B",
   "série b": "Série B",
   "serie b": "Série B",
+
+  // Novas Ligas Cadastradas
+  "copa da liga inglesa": "Copa da Liga Inglesa",
+  "carabao cup": "Copa da Liga Inglesa",
+  "efl cup": "Copa da Liga Inglesa",
+  "copa da liga": "Copa da Liga Inglesa",
+  "mls": "MLS",
+  "major league soccer": "MLS",
+  "campeonato saudita": "Saudi Pro League",
+  "saudi pro league": "Saudi Pro League",
+  "liga saudita": "Saudi Pro League",
+  "campeonato argentino": "Campeonato Argentino",
+  "liga argentina": "Campeonato Argentino",
+  "campeonato holandês": "Campeonato Holandês",
+  "campeonato holandes": "Campeonato Holandês",
+  "eredivisie": "Campeonato Holandês",
+  "campeonato turco": "Campeonato Turco",
+  "super lig": "Campeonato Turco",
+  "süper lig": "Campeonato Turco",
+  "campeonato mexicano": "Campeonato Mexicano",
+  "liga mx": "Campeonato Mexicano",
+
+  // Copas Continentais e Nacionais
   "liga europa": "Europa League",
   "afc champions league elite": "Champions League Asiática",
   "uefa champions league": "Champions League",
   "copinha": "Copa São Paulo de Futebol Júnior",
   "libertadores": "Copa Libertadores da América",
-  "copa libertadores": "Copa Libertadores da América"
+  "copa libertadores": "Copa Libertadores da América",
+  "copa do brasil": "Copa do Brasil"
 };
