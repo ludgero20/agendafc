@@ -1,3 +1,4 @@
+// app/campeonatos/[slug]/page.tsx
 import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
@@ -21,6 +22,13 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
+const ESPN_HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+  Accept: 'application/json',
+  Referer: 'https://www.espn.com/',
+};
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const liga = ligasFutebolConfig[slug];
@@ -32,7 +40,137 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+// 🌐 1. TABELA DA ESPN
+async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
+  try {
+    const url = `https://site.api.espn.com/apis/v2/sports/soccer/${espnSlug}/standings`;
+    const res = await fetch(url, {
+      headers: ESPN_HEADERS,
+      next: { revalidate: 3600 }
+    });
+
+    if (!res.ok) return null;
+    const data = await res.json();
+
+    const extrairStats = (stats: any[]) => {
+      const getStat = (name: string) =>
+        stats?.find((s: any) => s.name === name || s.type === name)?.value ?? 0;
+
+      return {
+        points: getStat('points'),
+        playedGames: getStat('gamesPlayed'),
+        won: getStat('wins'),
+        draw: getStat('ties'),
+        lost: getStat('losses'),
+        goalDifference: getStat('pointDifferential'),
+      };
+    };
+
+    const entries = data.children?.[0]?.standings?.entries || data.standings?.entries || [];
+    if (entries.length === 0) return null;
+
+    return entries.map((entry: any, index: number): TimeTabela => {
+      const stats = extrairStats(entry.stats);
+      const teamId = parseInt(entry.team?.id, 10) || (index + 1);
+      const nomeOficial = entry.team?.displayName || entry.team?.name || 'Time';
+      const shortName = entry.team?.shortDisplayName || entry.team?.name || nomeOficial;
+      const crest = entry.team?.logos?.[0]?.href || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png';
+
+      return {
+        position: index + 1,
+        team: {
+          id: teamId,
+          name: nomeOficial,
+          shortName: shortName,
+          crest: crest
+        },
+        ...stats
+      };
+    });
+  } catch (error) {
+    console.error(`Erro ao buscar tabela ESPN (${espnSlug}):`, error);
+    return null;
+  }
+}
+
+// 🌐 2. MESCLAGEM LIVE OVERLAY (ESPN + CACHE LOCAL)
+async function getJogosHibridoESPN(
+  liga: CompeticaoInfo,
+  rodadaBase: number = 1
+): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+  let matchesLocais: JogoFutebol[] = [];
+
+  // 1. Lê as 38 rodadas do arquivo local em cache
+  try {
+    const filePath = path.join(process.cwd(), "public/api-cache", liga.arquivoMatches || '');
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    matchesLocais = data?.matches || [];
+  } catch (error) {
+    console.warn(`Arquivo local ${liga.arquivoMatches} não encontrado. Tentando fallback ao vivo.`);
+  }
+
+  // 2. Busca placares ao vivo da rodada na ESPN
+  try {
+    const urlScoreboard = `https://site.api.espn.com/apis/site/v2/sports/soccer/${liga.espnSlug}/scoreboard`;
+    const res = await fetch(urlScoreboard, {
+      headers: ESPN_HEADERS,
+      cache: 'no-store'
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      const events = data.events || [];
+
+      // 3. Mescla (Overlay) os placares ao vivo sobre os jogos do arquivo local
+      events.forEach((ev: any) => {
+        const comp = ev.competitions?.[0];
+        const competitors = comp?.competitors || [];
+        const home = competitors.find((c: any) => c.homeAway === 'home') || competitors[0];
+        const away = competitors.find((c: any) => c.homeAway === 'away') || competitors[1];
+
+        const homeName = (home?.team?.displayName || home?.team?.name || '').toLowerCase();
+        const awayName = (away?.team?.displayName || away?.team?.name || '').toLowerCase();
+
+        const state = ev.status?.type?.state;
+        const statusFinal = state === 'post' ? 'FINISHED' : state === 'in' ? 'IN_PLAY' : 'SCHEDULED';
+        const homeScore = home?.score !== undefined && home?.score !== '' ? parseInt(home.score, 10) : null;
+        const awayScore = away?.score !== undefined && away?.score !== '' ? parseInt(away.score, 10) : null;
+
+        // Localiza o jogo correspondente no arquivo local
+        const jogoCorrespondente = matchesLocais.find((m) => {
+          const mHome = (m.homeTeam.name || m.homeTeam.shortName).toLowerCase();
+          const mAway = (m.awayTeam.name || m.awayTeam.shortName).toLowerCase();
+          return (
+            (mHome.includes(homeName) || homeName.includes(mHome)) &&
+            (mAway.includes(awayName) || awayName.includes(mAway))
+          );
+        });
+
+        if (jogoCorrespondente) {
+          jogoCorrespondente.status = statusFinal;
+          jogoCorrespondente.score.fullTime = { home: homeScore, away: awayScore };
+        }
+      });
+    }
+  } catch (error) {
+    console.error("Erro ao mesclar placar ao vivo da ESPN:", error);
+  }
+
+  if (matchesLocais.length === 0) return null;
+
+  return {
+    matches: matchesLocais,
+    currentMatchday: rodadaBase
+  };
+}
+
+// 📦 3. MOTOR FOOTBALL-DATA / CACHE LOCAL PADRÃO
 async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
+  if (liga.espnSlug) {
+    return getTabelaESPN(liga.espnSlug);
+  }
+
   try {
     if (process.env.API_FOOTBALLDATA_KEY && liga.codigoAPI) {
       const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/standings`, {
@@ -58,7 +196,14 @@ async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   }
 }
 
-async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+async function getJogosLiga(
+  liga: CompeticaoInfo,
+  rodadaBase: number = 1
+): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
+  if (liga.espnSlug) {
+    return getJogosHibridoESPN(liga, rodadaBase);
+  }
+
   try {
     if (process.env.API_FOOTBALLDATA_KEY && liga.codigoAPI) {
       const res = await fetch(`https://api.football-data.org/v4/competitions/${liga.codigoAPI}/matches`, {
@@ -96,10 +241,18 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
 
   if (!liga) notFound();
 
-  const [tabela, jogosData] = await Promise.all([
-    getTabelaLiga(liga),
-    getJogosLiga(liga)
-  ]);
+  // 1. Busca a tabela da liga
+  const tabela = await getTabelaLiga(liga);
+
+  // Calcula a rodada atual a partir do número de jogos da classificação
+  let rodadaCalculada = 1;
+  if (tabela && tabela.length > 0) {
+    const maxJogos = Math.max(...tabela.map(t => t.playedGames || 0));
+    rodadaCalculada = maxJogos > 0 ? maxJogos + 1 : 1;
+  }
+
+  // 2. Busca os jogos com Live Overlay
+  const jogosData = await getJogosLiga(liga, rodadaCalculada);
 
   if (!tabela || !jogosData) {
     return (
@@ -113,7 +266,7 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
   const { matches, currentMatchday } = jogosData;
 
   const primeiroJogoNaoFinalizado = matches.find(j => j.status !== 'FINISHED');
-  const rodadaInicial = primeiroJogoNaoFinalizado?.matchday || currentMatchday || 1;
+  const rodadaInicial = primeiroJogoNaoFinalizado?.matchday || currentMatchday || rodadaCalculada || 1;
 
   return (
     <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">

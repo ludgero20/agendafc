@@ -14,6 +14,8 @@ export type CompeticaoInfo = {
   ativo: boolean;
   bandeiraEmoji: string;
   codigoAPI?: string;
+  espnSlug?: string; // 🌐 Slug para ligas da ESPN
+  origemAPI?: 'football-data' | 'espn';
   arquivoStandings?: string;
   arquivoMatches?: string;
 };
@@ -35,8 +37,25 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     ativo: true,
     bandeiraEmoji: "🇧🇷",
     codigoAPI: "BSA",
+    origemAPI: "football-data",
     arquivoStandings: "brasileirao-standings.json",
     arquivoMatches: "brasileirao-matches.json"
+  },
+  {
+    id: 15,
+    nome: "Série B",
+    slug: "serie-b",
+    subtitulo: "Campeonato Brasileiro Série B",
+    pais: "Brasil",
+    tipo: "Nacional",
+    descricao: "Tabela de classificação, rodadas e jogos do Campeonato Brasileiro Série B.",
+    prioridade: 2,
+    ordem: 2,
+    ativo: true,
+    bandeiraEmoji: "🇧🇷",
+    espnSlug: "bra.2",
+    origemAPI: "espn",
+    arquivoMatches: "serie-b-matches.json"
   },
   {
     id: 2,
@@ -47,10 +66,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela e jogos da liga de futebol mais disputada do mundo.",
     prioridade: 2,
-    ordem: 2,
+    ordem: 3,
     ativo: true,
     bandeiraEmoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     codigoAPI: "PL",
+    origemAPI: "football-data",
     arquivoStandings: "premier-league-standings.json",
     arquivoMatches: "premier-league-matches.json"
   },
@@ -63,10 +83,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Classificação e rodadas da primeira divisão da Espanha com Real Madrid e Barcelona.",
     prioridade: 3,
-    ordem: 3,
+    ordem: 4,
     ativo: true,
     bandeiraEmoji: "🇪🇸",
     codigoAPI: "PD",
+    origemAPI: "football-data",
     arquivoStandings: "la-liga-standings.json",
     arquivoMatches: "la-liga-matches.json"
   },
@@ -79,10 +100,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Continental",
     descricao: "Tabela da maior competição de clubes do futebol mundial.",
     prioridade: 1,
-    ordem: 4,
+    ordem: 5,
     ativo: true,
     bandeiraEmoji: "🏆",
     codigoAPI: "CL",
+    origemAPI: "football-data",
     arquivoStandings: "champions-league-standings.json",
     arquivoMatches: "champions-league-matches.json"
   },
@@ -95,7 +117,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Automobilismo",
     descricao: "Calendário oficial com horários de treinos e corridas, classificação de pilotos e equipes.",
     prioridade: 1,
-    ordem: 5,
+    ordem: 6,
     ativo: true,
     bandeiraEmoji: "🏎️"
   },
@@ -108,7 +130,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Futebol Americano",
     descricao: "Classificação das 8 divisões da NFL, placares ao vivo e calendário de todas as 18 semanas.",
     prioridade: 2,
-    ordem: 6,
+    ordem: 7,
     ativo: true,
     bandeiraEmoji: "🏈"
   },
@@ -121,10 +143,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Classificação e calendário do futebol alemão.",
     prioridade: 4,
-    ordem: 7,
+    ordem: 8,
     ativo: true,
     bandeiraEmoji: "🇩🇪",
     codigoAPI: "BL1",
+    origemAPI: "football-data",
     arquivoStandings: "bundesliga-standings.json",
     arquivoMatches: "bundesliga-matches.json"
   },
@@ -137,10 +160,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela de classificação e jogos da primeira divisão italiana.",
     prioridade: 4,
-    ordem: 8,
+    ordem: 9,
     ativo: true,
     bandeiraEmoji: "🇮🇹",
     codigoAPI: "SA",
+    origemAPI: "football-data",
     arquivoStandings: "serie-a-standings.json",
     arquivoMatches: "serie-a-matches.json"
   },
@@ -153,10 +177,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela e jogos do campeonato francês.",
     prioridade: 4,
-    ordem: 9,
+    ordem: 10,
     ativo: true,
     bandeiraEmoji: "🇫🇷",
     codigoAPI: "FL1",
+    origemAPI: "football-data",
     arquivoStandings: "ligue-1-standings.json",
     arquivoMatches: "ligue-1-matches.json"
   },
@@ -169,10 +194,11 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela de classificação e rodadas da liga portuguesa com Benfica, Porto e Sporting.",
     prioridade: 4,
-    ordem: 10,
+    ordem: 11,
     ativo: true,
     bandeiraEmoji: "🇵🇹",
     codigoAPI: "PPL",
+    origemAPI: "football-data",
     arquivoStandings: "primeira-liga-standings.json",
     arquivoMatches: "primeira-liga-matches.json"
   },
@@ -228,8 +254,11 @@ export const competicoesAtivasMap: Record<string, CompeticaoInfo> = todasCompeti
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
 
+// Indexa tanto ligas com codigoAPI (football-data) quanto ligas com espnSlug (ESPN)
 export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
-  if (comp.slug && comp.codigoAPI) acc[comp.slug] = comp;
+  if (comp.slug && (comp.codigoAPI || comp.espnSlug)) {
+    acc[comp.slug] = comp;
+  }
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
 
@@ -244,6 +273,10 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "campeonato ingles": "Premier League",
   "campeonato português": "Primeira Liga",
   "campeonato portugues": "Primeira Liga",
+  "brasileirão série b": "Série B",
+  "brasileirao serie b": "Série B",
+  "série b": "Série B",
+  "serie b": "Série B",
   "liga europa": "Europa League",
   "afc champions league elite": "Champions League Asiática",
   "uefa champions league": "Champions League",
