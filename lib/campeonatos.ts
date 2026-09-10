@@ -25,7 +25,7 @@ export type LigaConfig = CompeticaoInfo;
 
 export const todasCompeticoes: CompeticaoInfo[] = [
   // ==========================================
-  // COM PÁGINA DEDICADA ATIVA
+  // LIGAS COM PÁGINAS DEDICADAS
   // ==========================================
   {
     id: 1,
@@ -207,12 +207,13 @@ export const todasCompeticoes: CompeticaoInfo[] = [
   },
 
   // ==========================================
-  // COPAS E NOVAS LIGAS CADASTRADAS PARA TV / HOME
+  // COPAS E DEMAIS CAMPEONATOS
   // ==========================================
   {
     id: 11,
     nome: "Copa Libertadores da América",
     slug: "",
+    subtitulo: "CONMEBOL Libertadores",
     pais: "América do Sul",
     tipo: "Continental",
     descricao: "A maior glória eterna do futebol sul-americano.",
@@ -224,6 +225,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     id: 12,
     nome: "Copa Sul-Americana",
     slug: "",
+    subtitulo: "CONMEBOL Sudamericana",
     pais: "América do Sul",
     tipo: "Continental",
     descricao: "A grande conquista continental sul-americana.",
@@ -235,6 +237,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     id: 13,
     nome: "Copa do Brasil",
     slug: "",
+    subtitulo: "Copa do Brasil",
     pais: "Brasil",
     tipo: "Copa Nacional",
     descricao: "O torneio mais democrático e emocionante do futebol brasileiro.",
@@ -246,6 +249,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     id: 16,
     nome: "Copa da Liga Inglesa",
     slug: "",
+    subtitulo: "Carabao Cup",
     pais: "Inglaterra",
     tipo: "Copa Nacional",
     descricao: "Copa da Liga Inglesa (Carabao Cup / EFL Cup).",
@@ -320,6 +324,42 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     bandeiraEmoji: "🇲🇽"
   },
   {
+    id: 23,
+    nome: "Copa da Inglaterra",
+    slug: "",
+    subtitulo: "FA Cup",
+    pais: "Inglaterra",
+    tipo: "Copa Nacional",
+    descricao: "A mais antiga copa de futebol do planeta.",
+    prioridade: 2,
+    ativo: true,
+    bandeiraEmoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+  },
+  {
+    id: 24,
+    nome: "Copa do Rei",
+    slug: "",
+    subtitulo: "Copa del Rey",
+    pais: "Espanha",
+    tipo: "Copa Nacional",
+    descricao: "A copa nacional da Espanha.",
+    prioridade: 3,
+    ativo: true,
+    bandeiraEmoji: "🇪🇸"
+  },
+  {
+    id: 27,
+    nome: "Europa League",
+    slug: "",
+    subtitulo: "UEFA Europa League",
+    pais: "Europa",
+    tipo: "Continental",
+    descricao: "A tradicional taça continental da UEFA.",
+    prioridade: 2,
+    ativo: true,
+    bandeiraEmoji: "🏆"
+  },
+  {
     id: 14,
     nome: "NBA",
     slug: "nba",
@@ -333,20 +373,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
   }
 ];
 
-export const competicoesAtivasMap: Record<string, CompeticaoInfo> = todasCompeticoes.reduce((acc, comp) => {
-  if (comp.ativo) {
-    acc[comp.nome] = comp;
-  }
-  return acc;
-}, {} as Record<string, CompeticaoInfo>);
-
-export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
-  if (comp.slug && (comp.codigoAPI || comp.espnSlug)) {
-    acc[comp.slug] = comp;
-  }
-  return acc;
-}, {} as Record<string, CompeticaoInfo>);
-
+// 📚 O DICIONÁRIO COMPLETO DE TRADUÇÃO E SINÔNIMOS
 export const dicionarioCampeonatos: Record<string, string> = {
   // Ligas Nacionais
   "campeonato italiano": "Serie A",
@@ -363,12 +390,11 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "brasileirao serie b": "Série B",
   "série b": "Série B",
   "serie b": "Série B",
+  "brasileirao": "Brasileirão",
+  "brasileirão": "Brasileirão",
+  "brasileirão série a": "Brasileirão",
 
-  // Novas Ligas Cadastradas
-  "copa da liga inglesa": "Copa da Liga Inglesa",
-  "carabao cup": "Copa da Liga Inglesa",
-  "efl cup": "Copa da Liga Inglesa",
-  "copa da liga": "Copa da Liga Inglesa",
+  // Novas Ligas
   "mls": "MLS",
   "major league soccer": "MLS",
   "campeonato saudita": "Saudi Pro League",
@@ -385,12 +411,82 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "campeonato mexicano": "Campeonato Mexicano",
   "liga mx": "Campeonato Mexicano",
 
-  // Copas Continentais e Nacionais
-  "liga europa": "Europa League",
-  "afc champions league elite": "Champions League Asiática",
-  "uefa champions league": "Champions League",
-  "copinha": "Copa São Paulo de Futebol Júnior",
+  // Copas Continentais e Internacionais (TODAS AS VARIAÇÕES POSSÍVEIS)
   "libertadores": "Copa Libertadores da América",
   "copa libertadores": "Copa Libertadores da América",
-  "copa do brasil": "Copa do Brasil"
+  "copa libertadores da américa": "Copa Libertadores da América",
+  "copa libertadores da america": "Copa Libertadores da América",
+  "conmebol libertadores": "Copa Libertadores da América",
+  "sul-americana": "Copa Sul-Americana",
+  "sulamericana": "Copa Sul-Americana",
+  "copa sul-americana": "Copa Sul-Americana",
+  "copa sulamericana": "Copa Sul-Americana",
+  "conmebol sudamericana": "Copa Sul-Americana",
+  "conmebol sul-americana": "Copa Sul-Americana",
+  "champions league": "Champions League",
+  "uefa champions league": "Champions League",
+  "liga dos campeões": "Champions League",
+  "europa league": "Europa League",
+  "uefa europa league": "Europa League",
+  "liga europa": "Europa League",
+
+  // Copas Nacionais
+  "copa do brasil": "Copa do Brasil",
+  "copa da liga inglesa": "Copa da Liga Inglesa",
+  "carabao cup": "Copa da Liga Inglesa",
+  "efl cup": "Copa da Liga Inglesa",
+  "copa da liga": "Copa da Liga Inglesa",
+  "copa da inglaterra": "Copa da Inglaterra",
+  "fa cup": "Copa da Inglaterra",
+  "the fa cup": "Copa da Inglaterra",
+  "copa do rei": "Copa do Rei",
+  "copa del rey": "Copa do Rei",
+  "copinha": "Copa São Paulo de Futebol Júnior"
 };
+
+// 🧠 O MAPA INTELIGENTE QUE CONECTA TODAS AS VARIAÇÕES AOS EMOJIS AUTOMATICAMENTE
+export const competicoesAtivasMap: Record<string, CompeticaoInfo> = (() => {
+  const mapa: Record<string, CompeticaoInfo> = {};
+
+  // 1. Mapeia por Nome Oficial
+  todasCompeticoes.forEach((comp) => {
+    if (comp.ativo) {
+      mapa[comp.nome] = comp;
+      mapa[comp.nome.toLowerCase()] = comp;
+      if (comp.subtitulo) {
+        mapa[comp.subtitulo] = comp;
+        mapa[comp.subtitulo.toLowerCase()] = comp;
+      }
+    }
+  });
+
+  // 2. Mapeia automaticamente todas as variações do Dicionário
+  Object.entries(dicionarioCampeonatos).forEach(([variacao, nomeOficial]) => {
+    const compEncontrada = todasCompeticoes.find(
+      (c) =>
+        c.nome.toLowerCase() === nomeOficial.toLowerCase() ||
+        c.nome.toLowerCase() === variacao.toLowerCase()
+    );
+
+    if (compEncontrada && compEncontrada.ativo) {
+      mapa[variacao] = compEncontrada;
+      mapa[variacao.toLowerCase()] = compEncontrada;
+      
+      // Cria a versão com as primeiras letras maiúsculas (ex: "Copa Libertadores", "Copa Sul-Americana")
+      const variacaoFormatada = variacao
+        .split(' ')
+        .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+      mapa[variacaoFormatada] = compEncontrada;
+    }
+  });
+
+  return mapa;
+})();
+
+export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
+  if (comp.slug && (comp.codigoAPI || comp.espnSlug)) {
+    acc[comp.slug] = comp;
+  }
+  return acc;
+}, {} as Record<string, CompeticaoInfo>);

@@ -1,3 +1,4 @@
+// app/api/processar-texto/route.ts
 import { NextResponse } from 'next/server';
 import { dicionarioCampeonatos } from '@/lib/campeonatos';
 
@@ -7,7 +8,7 @@ const mesesMap: Record<string, string> = {
   "agosto": "08", "setembro": "09", "outubro": "10", "novembro": "11", "dezembro": "12"
 };
 
-// ⚡ PARSER INSTANTÂNEO DE TABELAS
+// ⚡ PARSER INSTANTÂNEO DE TABELAS COM SEPARAÇÃO DE FASE
 function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
   const linhas = texto.split('\n').map(l => l.trim()).filter(Boolean);
   const jogos: any[] = [];
@@ -39,16 +40,26 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
           if (/^\d{1,2}h$/.test(hora)) hora = hora.replace('h', 'h00');
           if (/^\d{1}h/.test(hora)) hora = '0' + hora;
 
+          let campLimpo = campeonatoBruto.trim();
+          let faseExtraida = null;
+
+          // Extrai fase em parênteses ex: "Copa Libertadores (quartas de final)"
+          if (campLimpo.includes('(') && campLimpo.includes(')')) {
+            const matchFase = campLimpo.match(/\((.*?)\)/);
+            if (matchFase) faseExtraida = matchFase[1].trim();
+            campLimpo = campLimpo.replace(/\s*\(.*?\)/, '').trim();
+          }
+
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: hora,
-            campeonato: campeonatoBruto,
+            campeonato: campLimpo,
             canal: canalBruto,
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
             divisao: null,
-            fase: null,
+            fase: faseExtraida,
             evento_nome: null,
             evento_descricao: null
           });
@@ -59,16 +70,25 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
         const partesTimes = confronto.split(/\s+[xX]\s+/);
         
         if (partesTimes.length === 2) {
+          let campLimpo = (partes[1] || "Brasileirão").trim();
+          let faseExtraida = null;
+
+          if (campLimpo.includes('(') && campLimpo.includes(')')) {
+            const matchFase = campLimpo.match(/\((.*?)\)/);
+            if (matchFase) faseExtraida = matchFase[1].trim();
+            campLimpo = campLimpo.replace(/\s*\(.*?\)/, '').trim();
+          }
+
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: "16h00",
-            campeonato: partes[1] || "Brasileirão",
+            campeonato: campLimpo,
             canal: partes[2] || "A definir",
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
             divisao: null,
-            fase: null,
+            fase: faseExtraida,
             evento_nome: null,
             evento_descricao: null
           });
@@ -111,23 +131,45 @@ export async function POST(request: Request) {
     // 2. PARSE DIRETO DOS JOGOS COLADOS
     let jogosExtraidos = parsearTabelasDireto(textoBruto, anoAtual);
 
-    // Fallback com Gemini se o texto não for tabela com TABs
+    // Fallback com Gemini (Prompt Especialista com Separação de Fase)
     if (jogosExtraidos.length === 0 && process.env.GEMINI_API_KEY) {
-      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+      const promptGemini = `Você é um extrator especialista de grades de jogos na TV.
+Extraia TODOS os jogos de futebol do texto abaixo em um array JSON.
+
+REGRAS OBRIGATÓRIAS:
+1. "data": formato "YYYY-MM-DD" (se o texto disser apenas dia e mês, use o ano ${anoAtual}).
+2. "hora": formato "16h00" ou "21h30".
+3. "campeonato": APENAS o nome oficial do campeonato (ex: "Copa Libertadores", "Copa Sul-Americana", "Copa da Liga Inglesa", "Copa do Brasil", "Champions League", "Brasileirão", "Premier League", "La Liga"). NUNCA coloque a fase ou rodada dentro deste campo.
+4. "fase": Extraia aqui a fase do mata-mata ou rodada se houver (ex: "Quartas de final", "16-avos de final", "Semifinal", "Oitavas de final", "Final", "Fase de Grupos", "Rodada 24"). Se não houver, retorne null.
+5. "divisao": Apenas se for divisão explícita como "Série B" ou "Série C". Caso contrário, null.
+6. "time1" e "time2": Nomes dos dois clubes.
+7. "canal": Nomes dos canais e streamings (ex: "ESPN, Disney+", "SporTV, Premiere", "Globo, CazéTV").
+
+Texto a ser processado:
+${textoBruto}`;
+
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
       const geminiResponse = await fetch(geminiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          contents: [{ parts: [{ text: `Extraia TODOS os jogos de futebol deste texto em JSON:\n${textoBruto}` }] }],
+          contents: [{ parts: [{ text: promptGemini }] }],
           generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 }
         })
       });
-      const geminiData = await geminiResponse.json();
-      const txt = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
-      jogosExtraidos = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
+
+      if (geminiResponse.ok) {
+        const geminiData = await geminiResponse.json();
+        const txt = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+        try {
+          jogosExtraidos = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
+        } catch {
+          jogosExtraidos = [];
+        }
+      }
     }
 
-    // 3. 🎯 RECUPERA OS JOGOS EXISTENTES DO GITHUB (NÃO APAGA OS OUTROS DIAS!)
+    // 3. RECUPERA OS JOGOS EXISTENTES DO GITHUB
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
     const headersGithub = {
       Authorization: `Bearer ${githubToken}`,
@@ -144,23 +186,33 @@ export async function POST(request: Request) {
         const conteudoAntigo = Buffer.from(repoInfo.content, 'base64').toString('utf-8');
         const parsedAntigo = JSON.parse(conteudoAntigo);
         const listaAntiga = parsedAntigo.jogosSemana || (Array.isArray(parsedAntigo) ? parsedAntigo : []);
-        // Mantém todos os jogos de HOJE em diante que já estavam gravados
         jogosPreservadosDoArquivo = listaAntiga.filter((j: any) => j.data && j.data >= hoje);
       } catch (e) {}
     }
 
-    // 4. MESCLAGEM: JOGOS ANTIGOS PRESERVADOS + NOVOS JOGOS COLADOS
+    // 4. MESCLAGEM & NORMALIZAÇÃO DEFINITIVA
     const todosCombinados = [...jogosPreservadosDoArquivo, ...jogosExtraidos];
 
     const jogosLimpos = todosCombinados
       .map((jogo: any) => {
         let camp = (jogo.campeonato || '').trim();
-        let div = jogo.divisao;
+        let fase = (jogo.fase || '').trim() || undefined;
+        let div = (jogo.divisao || '').trim() || undefined;
 
-        if (camp.includes("segunda divisão") || camp.includes("Série B")) {
-          camp = "Brasileirão";
-          div = "Série B";
-        } else if (camp.includes("terceira divisão") || camp.includes("Série C")) {
+        // Proteção: extrai fase se por acaso ainda tiver vindo com parênteses
+        if (camp.includes('(') && camp.includes(')')) {
+          const matchFase = camp.match(/\((.*?)\)/);
+          if (matchFase && !fase) {
+            fase = matchFase[1].trim();
+          }
+          camp = camp.replace(/\s*\(.*?\)/, '').trim();
+        }
+
+        // Mapeamento de Divisões do Brasileirão
+        if (camp.includes("segunda divisão") || camp.toLowerCase().includes("série b") || camp.toLowerCase().includes("serie b")) {
+          camp = "Série B";
+          div = undefined;
+        } else if (camp.includes("terceira divisão") || camp.toLowerCase().includes("série c") || camp.toLowerCase().includes("serie c")) {
           camp = "Brasileirão";
           div = "Série C";
         } else if (camp.includes("Feminino")) {
@@ -169,6 +221,7 @@ export async function POST(request: Request) {
           camp = "Brasileirão";
         }
 
+        // Normalização pelo Dicionário Oficial
         const campLower = camp.toLowerCase().trim();
         camp = dicionarioCampeonatos[campLower] || camp;
 
@@ -181,14 +234,12 @@ export async function POST(request: Request) {
           time1: (jogo.time1 || '').trim(),
           time2: (jogo.time2 || '').trim(),
           divisao: div || undefined,
-          fase: jogo.fase || undefined,
+          fase: fase || undefined,
           evento_nome: null,
           evento_descricao: null
         };
       })
-      // Descarta jogos do passado
       .filter((j: any) => Boolean(j.data) && j.data >= hoje)
-      // Desduplica: se um jogo já existia, a nova colagem atualiza ele
       .filter((j: any, index: number, array: any[]) => {
         const chaveUnica = `${j.data}-${j.time1}-${j.time2}`;
         return index === array.findIndex((x: any) => `${x.data}-${x.time1}-${x.time2}` === chaveUnica);
