@@ -57,8 +57,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     ativo: true,
     bandeiraEmoji: "🇧🇷",
     espnSlug: "bra.2",
-    origemAPI: "espn",
-    arquivoMatches: "serie-b-matches.json"
+    origemAPI: "espn"
   },
   {
     id: 2,
