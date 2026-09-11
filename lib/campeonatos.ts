@@ -25,7 +25,7 @@ export type LigaConfig = CompeticaoInfo;
 
 export const todasCompeticoes: CompeticaoInfo[] = [
   // ==========================================
-  // LIGAS NACIONAIS PRINCIPAIS (FOOTBALL-DATA & ESPN)
+  // LIGAS NACIONAIS
   // ==========================================
   {
     id: 1,
@@ -111,6 +111,51 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     arquivoMatches: "champions-league-matches.json"
   },
   {
+    id: 27,
+    nome: "Europa League",
+    slug: "europa-league",
+    subtitulo: "UEFA Europa League",
+    pais: "Europa",
+    tipo: "Continental",
+    descricao: "Classificação oficial e tabela da Fase de Liga com os 36 clubes europeus.",
+    prioridade: 2,
+    ordem: 6,
+    ativo: true,
+    bandeiraEmoji: "🏆",
+    espnSlug: "uefa.europa",
+    origemAPI: "espn"
+  },
+  {
+    id: 28,
+    nome: "Conference League",
+    slug: "conference-league",
+    subtitulo: "UEFA Conference League",
+    pais: "Europa",
+    tipo: "Continental",
+    descricao: "Classificação oficial e tabela da Fase de Liga da UEFA Conference League.",
+    prioridade: 3,
+    ordem: 7,
+    ativo: true,
+    bandeiraEmoji: "🏆",
+    espnSlug: "uefa.europa.conf",
+    origemAPI: "espn"
+  },
+  {
+    id: 29,
+    nome: "Nations League",
+    slug: "nations-league",
+    subtitulo: "UEFA Nations League",
+    pais: "Europa",
+    tipo: "Continental",
+    descricao: "Classificação completa de todas as Ligas (A, B, C e D) das seleções europeias.",
+    prioridade: 2,
+    ordem: 8,
+    ativo: true,
+    bandeiraEmoji: "🇪🇺",
+    espnSlug: "uefa.nations",
+    origemAPI: "espn"
+  },
+  {
     id: 7,
     nome: "Bundesliga",
     slug: "bundesliga",
@@ -119,7 +164,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Classificação e calendário do futebol alemão.",
     prioridade: 4,
-    ordem: 6,
+    ordem: 9,
     ativo: true,
     bandeiraEmoji: "🇩🇪",
     codigoAPI: "BL1",
@@ -136,7 +181,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela de classificação e jogos da primeira divisão italiana.",
     prioridade: 4,
-    ordem: 7,
+    ordem: 10,
     ativo: true,
     bandeiraEmoji: "🇮🇹",
     codigoAPI: "SA",
@@ -153,7 +198,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela e jogos do campeonato francês.",
     prioridade: 4,
-    ordem: 8,
+    ordem: 11,
     ativo: true,
     bandeiraEmoji: "🇫🇷",
     codigoAPI: "FL1",
@@ -170,7 +215,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela de classificação e rodadas da liga portuguesa com Benfica, Porto e Sporting.",
     prioridade: 4,
-    ordem: 9,
+    ordem: 12,
     ativo: true,
     bandeiraEmoji: "🇵🇹",
     codigoAPI: "PPL",
@@ -187,7 +232,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Tabela de classificação e jogos da primeira divisão holandesa com Ajax, PSV e Feyenoord.",
     prioridade: 4,
-    ordem: 10,
+    ordem: 13,
     ativo: true,
     bandeiraEmoji: "🇳🇱",
     codigoAPI: "DED",
@@ -204,7 +249,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Nacional",
     descricao: "Classificação completa e 46 rodadas da tradicional EFL Championship inglesa.",
     prioridade: 4,
-    ordem: 11,
+    ordem: 14,
     ativo: true,
     bandeiraEmoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     codigoAPI: "ELC",
@@ -225,7 +270,7 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Automobilismo",
     descricao: "Calendário oficial com horários de treinos e corridas, classificação de pilotos e equipes.",
     prioridade: 1,
-    ordem: 12,
+    ordem: 15,
     ativo: true,
     bandeiraEmoji: "🏎️"
   },
@@ -238,13 +283,13 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     tipo: "Futebol Americano",
     descricao: "Classificação das 8 divisões da NFL, placares ao vivo e calendário de todas as 18 semanas.",
     prioridade: 2,
-    ordem: 13,
+    ordem: 16,
     ativo: true,
     bandeiraEmoji: "🏈"
   },
 
   // ==========================================
-  // COPAS E DEMAIS COMPETIÇÕES (TV / HOME)
+  // DEMAIS COMPETIÇÕES (TV / HOME)
   // ==========================================
   {
     id: 11,
@@ -374,30 +419,6 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     bandeiraEmoji: "🇪🇸"
   },
   {
-    id: 27,
-    nome: "Europa League",
-    slug: "",
-    subtitulo: "UEFA Europa League",
-    pais: "Europa",
-    tipo: "Continental",
-    descricao: "A tradicional taça continental da UEFA.",
-    prioridade: 2,
-    ativo: true,
-    bandeiraEmoji: "🏆"
-  },
-  {
-    id: 29,
-    nome: "Nations League",
-    slug: "",
-    subtitulo: "UEFA Nations League",
-    pais: "Europa",
-    tipo: "Continental",
-    descricao: "O torneio de seleções europeias da UEFA.",
-    prioridade: 3,
-    ativo: true,
-    bandeiraEmoji: "🇪🇺"
-  },
-  {
     id: 14,
     nome: "NBA",
     slug: "nba",
@@ -412,7 +433,6 @@ export const todasCompeticoes: CompeticaoInfo[] = [
 ];
 
 export const dicionarioCampeonatos: Record<string, string> = {
-  // Ligas Nacionais
   "campeonato italiano": "Serie A",
   "campeonato espanhol": "La Liga",
   "campeonato alemão": "Bundesliga",
@@ -436,8 +456,16 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "brasileirao": "Brasileirão",
   "brasileirão": "Brasileirão",
   "brasileirão série a": "Brasileirão",
-
-  // Outras Ligas
+  "nations league": "Nations League",
+  "uefa nations league": "Nations League",
+  "liga das nações": "Nations League",
+  "liga das nacoes": "Nations League",
+  "europa league": "Europa League",
+  "uefa europa league": "Europa League",
+  "liga europa": "Europa League",
+  "conference league": "Conference League",
+  "uefa conference league": "Conference League",
+  "liga conferencia": "Conference League",
   "mls": "MLS",
   "major league soccer": "MLS",
   "campeonato saudita": "Saudi Pro League",
@@ -450,8 +478,6 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "süper lig": "Campeonato Turco",
   "campeonato mexicano": "Campeonato Mexicano",
   "liga mx": "Campeonato Mexicano",
-
-  // Copas
   "libertadores": "Copa Libertadores",
   "copa libertadores": "Copa Libertadores",
   "copa libertadores da américa": "Copa Libertadores",
@@ -463,11 +489,6 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "champions league": "Champions League",
   "uefa champions league": "Champions League",
   "liga dos campeões": "Champions League",
-  "europa league": "Europa League",
-  "uefa europa league": "Europa League",
-  "nations league": "Nations League",
-  "uefa nations league": "Nations League",
-  "liga das nações": "Nations League",
   "copa do brasil": "Copa do Brasil",
   "copa da liga inglesa": "Copa da Liga Inglesa",
   "carabao cup": "Copa da Liga Inglesa",

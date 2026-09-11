@@ -18,6 +18,7 @@ type TimeTabela = {
   draw: number;
   lost: number;
   goalDifference: number;
+  groupName?: string;
 };
 
 type Tabela = TimeTabela[];
@@ -35,12 +36,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!liga) return { title: "Campeonato não encontrado | Agenda FC" };
 
   return {
-    title: `Tabela do ${liga.nome} | Classificação Atualizada | Agenda FC`,
+    title: `Tabela do ${liga.nome} | Classificação Oficial | Agenda FC`,
     description: `Tabela de classificação completa e pontuação atualizada do ${liga.nome} (${liga.subtitulo}).`,
   };
 }
 
-// 🌐 1. TABELA DA ESPN COM MULTI-URL (FAIL-SAFE VERCEL)
+// 🌐 1. TABELA DA ESPN (COM SUPORTE A FASE DE LIGA E GRUPOS)
 async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
   const urls = [
     `https://site.web.api.espn.com/apis/v2/sports/soccer/${espnSlug}/standings?region=br&lang=pt`,
@@ -56,6 +57,7 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
 
       if (!res.ok) continue;
       const data = await res.json();
+      const todosTimes: TimeTabela[] = [];
 
       const extrairStats = (stats: any[]) => {
         const getStat = (name: string) =>
@@ -71,27 +73,41 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
         };
       };
 
-      const entries = data.children?.[0]?.standings?.entries || data.standings?.entries || [];
-      if (entries.length === 0) continue;
+      const extrairDeEstrutura = (item: any, nomeGrupo?: string) => {
+        const grupoAtual = item.name && item.standings?.entries ? item.name : nomeGrupo;
 
-      return entries.map((entry: any, index: number): TimeTabela => {
-        const stats = extrairStats(entry.stats);
-        const teamId = parseInt(entry.team?.id, 10) || (index + 1);
-        const nomeOficial = entry.team?.displayName || entry.team?.name || 'Time';
-        const shortName = entry.team?.shortDisplayName || entry.team?.name || nomeOficial;
-        const crest = entry.team?.logos?.[0]?.href || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png';
+        if (item.standings?.entries && Array.isArray(item.standings.entries)) {
+          item.standings.entries.forEach((entry: any, index: number) => {
+            const stats = extrairStats(entry.stats);
+            const teamId = parseInt(entry.team?.id, 10) || (index + 1);
+            const nomeOficial = entry.team?.displayName || entry.team?.name || 'Time';
+            const shortName = entry.team?.shortDisplayName || entry.team?.name || nomeOficial;
+            const crest = entry.team?.logos?.[0]?.href || entry.team?.logo || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png';
 
-        return {
-          position: index + 1,
-          team: {
-            id: teamId,
-            name: nomeOficial,
-            shortName: shortName,
-            crest: crest
-          },
-          ...stats
-        };
-      });
+            todosTimes.push({
+              position: index + 1,
+              team: {
+                id: teamId,
+                name: nomeOficial,
+                shortName: shortName,
+                crest: crest
+              },
+              groupName: grupoAtual,
+              ...stats
+            });
+          });
+        }
+
+        if (item.children && Array.isArray(item.children)) {
+          item.children.forEach((c: any) => extrairDeEstrutura(c, grupoAtual));
+        }
+      };
+
+      extrairDeEstrutura(data);
+
+      if (todosTimes.length > 0) {
+        return todosTimes;
+      }
     } catch (e) {
       console.error(`Tentando próxima URL de tabela ESPN (${espnSlug})...`);
     }
@@ -100,7 +116,7 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
   return null;
 }
 
-// 📦 2. MOTOR DE TABELA FOOTBALL-DATA / CACHE LOCAL
+// 📦 2. MOTOR FOOTBALL-DATA / CACHE LOCAL
 async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   if (liga.espnSlug) {
     return getTabelaESPN(liga.espnSlug);
@@ -131,9 +147,8 @@ async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   }
 }
 
-// 📦 3. MOTOR DE JOGOS (APENAS FOOTBALL-DATA / LIGAS COM ARQUIVO DEFINIDO)
+// 📦 3. MOTOR DE JOGOS
 async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
-  // Se for liga ESPN sem arquivo de matches configurado, não busca jogos
   if (liga.espnSlug && !liga.arquivoMatches) {
     return null;
   }
@@ -189,6 +204,18 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
     );
   }
 
+  // Define dinamicamente o rótulo da coluna: "Seleção" para torneios de seleções ou "Clube" como padrão
+  const tipoEntidade = liga.slug === 'nations-league' ? 'Seleção' : 'Clube';
+
+  const gruposNomes = Array.from(
+  new Set(
+    tabela
+      .map((t) => t.groupName)
+      .filter((g): g is string => typeof g === 'string' && g.toLowerCase() !== 'overall')
+  )
+);
+  
+  const temMultiplosGrupos = gruposNomes.length > 1;
   const temJogos = Boolean(jogosData && jogosData.matches && jogosData.matches.length > 0);
   const matches = jogosData?.matches || [];
   const currentMatchday = jogosData?.currentMatchday || 1;
@@ -202,7 +229,7 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
           <span>{liga.bandeiraEmoji}</span> {liga.nome}
         </h1>
         <p className="text-xl text-gray-600 mt-2">
-          {liga.subtitulo} - {temJogos ? 'Classificação e Rodadas' : 'Classificação Oficial'}
+          {liga.subtitulo} - {temMultiplosGrupos ? 'Fase de Grupos' : 'Classificação Oficial'}
         </p>
       </div>
 
@@ -213,7 +240,7 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
             <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
               🏆 Classificação
             </h2>
-            <TabelaHtml tabela={tabela} />
+            <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
           </div>
 
           <div className="lg:col-span-1 space-y-4">
@@ -227,47 +254,69 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
             />
           </div>
         </div>
+      ) : temMultiplosGrupos ? (
+        // LAYOUT MULTI-GRUPOS (NATIONS LEAGUE)
+        <div className="space-y-8 max-w-5xl mx-auto">
+          <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+            <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+              🏆 Grupos da Nations League
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {gruposNomes.map((nomeGrupo) => {
+              const timesDoGrupo = tabela.filter((t) => t.groupName === nomeGrupo);
+              return (
+                <div key={nomeGrupo} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                  <div className="bg-slate-50 px-4 py-2.5 border-b border-gray-200">
+                    <h3 className="font-bold text-sm text-slate-800 uppercase tracking-wider">
+                      {nomeGrupo}
+                    </h3>
+                  </div>
+                  <TabelaHtml tabela={timesDoGrupo} tipoEntidade={tipoEntidade} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       ) : (
-        // LAYOUT LIMPO E CENTRALIZADO (APENAS CLASSIFICAÇÃO - SÉRIE B E NOVAS LIGAS)
+        // LAYOUT FASE DE LIGA / PONTOS CORRIDOS (EUROPA LEAGUE, CONFERENCE LEAGUE, SÉRIE B)
         <div className="max-w-4xl mx-auto space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
               🏆 Tabela de Classificação
             </h2>
-            <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
-              Atualização Automática
-            </span>
           </div>
-          <TabelaHtml tabela={tabela} />
+          <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
         </div>
       )}
     </div>
   );
 }
 
-function TabelaHtml({ tabela }: { tabela: Tabela }) {
+function TabelaHtml({ tabela, tipoEntidade = 'Clube' }: { tabela: Tabela; tipoEntidade?: string }) {
   return (
     <div className="overflow-x-auto bg-white rounded-2xl shadow-sm border border-gray-200">
       <table className="min-w-full text-sm">
         <thead className="bg-gray-50 border-b border-gray-200">
           <tr>
-            <th className="px-3 py-3 text-left font-semibold text-gray-600 w-10">#</th>
-            <th className="px-3 py-3 text-left font-semibold text-gray-600">Time</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-12">P</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">J</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">V</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">E</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">D</th>
-            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-12">SG</th>
+            <th className="px-3 py-3 text-left font-semibold text-gray-600 w-8">#</th>
+            <th className="px-3 py-3 text-left font-semibold text-gray-600">{tipoEntidade}</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">P</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-8">J</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-8">V</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-8">E</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-8">D</th>
+            <th className="px-3 py-3 text-center font-semibold text-gray-600 w-10">SG</th>
           </tr>
         </thead>
         <tbody>
           {tabela.map((time: TimeTabela) => (
-            <tr key={time.team.id} className="border-t hover:bg-gray-50 transition-colors">
+            <tr key={`${time.groupName || ''}-${time.team.name}`} className="border-t hover:bg-gray-50 transition-colors">
               <td className="px-3 py-3 font-bold text-gray-700">{time.position}</td>
               <td className="px-3 py-3 flex items-center gap-2">
                 <img src={time.team.crest} alt={time.team.name} className="w-5 h-5 object-contain" />
-                <span className="font-medium text-gray-900">
+                <span className="font-medium text-gray-900 truncate max-w-[140px] sm:max-w-[200px]">
                   {formatarNomeTime(time.team.shortName, time.team.name)}
                 </span>
               </td>
