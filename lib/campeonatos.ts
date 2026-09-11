@@ -425,9 +425,10 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     subtitulo: "National Basketball Association",
     pais: "Estados Unidos",
     tipo: "Basquete",
-    descricao: "A maior liga de basquete do planeta.",
-    prioridade: 5,
-    ativo: false,
+    descricao: "Classificação completa das Conferências Leste e Oeste, jogos da temporada e placares ao vivo.",
+    prioridade: 2,
+    ordem: 17,
+    ativo: true,
     bandeiraEmoji: "🏀"
   }
 ];

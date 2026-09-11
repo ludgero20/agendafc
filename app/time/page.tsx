@@ -1,10 +1,11 @@
+// app/time/page.tsx
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { timesConfig, TimeConfig } from '@/lib/times';
 
 export const metadata: Metadata = {
-  title: "Guias de Times e Clubes | Onde Assistir, Tabelas e Jogos | Agenda FC",
-  description: "Encontre a página do seu time de futebol ou franquia da NFL favorito com guia de transmissões na TV, classificação e calendário completo de jogos.",
+  title: "Guias de Times e Franquias | Onde Assistir, Tabelas e Jogos | Agenda FC",
+  description: "Encontre a página do seu time de futebol, franquia da NBA ou NFL com guia de transmissões na TV, classificação e calendário completo de jogos.",
 };
 
 export const revalidate = 3600;
@@ -12,14 +13,15 @@ export const revalidate = 3600;
 export default async function TimesPage() {
   const todosOsTimes = Object.values(timesConfig);
 
-  // Separação por categorias de esporte e ligas
   const timesBrasileirao = todosOsTimes.filter(t => t.competicaoCodigo === 'BSA');
   const timesEuropa = todosOsTimes.filter(t => t.esporte === 'futebol' && t.competicaoCodigo !== 'BSA');
+  const timesNBA = todosOsTimes.filter(t => t.esporte === 'nba');
   const timesNFL = todosOsTimes.filter(t => t.esporte === 'nfl');
 
-  const getBadgeColor = (competicaoCodigo: string, esporte: string) => {
-    if (esporte === 'nfl') return 'bg-blue-100 text-blue-800 border-blue-200';
-    switch (competicaoCodigo) {
+  const getBadgeColor = (time: TimeConfig) => {
+    if (time.esporte === 'nba') return 'bg-orange-100 text-orange-800 border-orange-200';
+    if (time.esporte === 'nfl') return 'bg-blue-100 text-blue-800 border-blue-200';
+    switch (time.competicaoCodigo) {
       case 'BSA': return 'bg-emerald-100 text-emerald-800 border-emerald-200';
       case 'PL': return 'bg-purple-100 text-purple-800 border-purple-200';
       case 'PD': return 'bg-red-100 text-red-800 border-red-200';
@@ -40,8 +42,8 @@ export default async function TimesPage() {
                 <h3 className="font-bold text-base sm:text-lg text-slate-900 truncate group-hover:text-blue-600 transition-colors">
                   {time.nome}
                 </h3>
-                <span className={`inline-block mt-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${getBadgeColor(time.competicaoCodigo, time.esporte)}`}>
-                  {time.esporte === 'nfl' ? (time.divisaoNFL || 'NFL') : time.competicaoNome}
+                <span className={`inline-block mt-1 px-2.5 py-0.5 rounded-full text-[11px] font-bold border ${getBadgeColor(time)}`}>
+                  {time.esporte === 'nba' ? (time.conferenciaNBA === 'Western Conference' ? 'Oeste' : 'Leste') : time.esporte === 'nfl' ? (time.divisaoNFL || 'NFL') : time.competicaoNome}
                 </span>
               </div>
             </div>
@@ -61,7 +63,7 @@ export default async function TimesPage() {
       {/* HEADER DA PÁGINA */}
       <div className="text-center space-y-3">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">
-          ⚽ Guias de Clubes e Franquias
+          🏆 Guias de Clubes e Franquias
         </h1>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto">
           Acompanhe onde assistir aos jogos do seu time ao vivo na TV, a classificação detalhada e o calendário completo da temporada.
@@ -98,7 +100,22 @@ export default async function TimesPage() {
         </section>
       )}
 
-      {/* SEÇÃO 3: NFL */}
+      {/* SEÇÃO 3: NBA */}
+      {timesNBA.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+            <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
+              <span>🏀</span> Franquias da NBA
+            </h2>
+            <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
+              {timesNBA.length} franquias
+            </span>
+          </div>
+          {renderGradeTimes(timesNBA)}
+        </section>
+      )}
+
+      {/* SEÇÃO 4: NFL */}
       {timesNFL.length > 0 && (
         <section className="space-y-4">
           <div className="flex items-center justify-between border-b border-slate-200 pb-3">

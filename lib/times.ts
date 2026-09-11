@@ -5,11 +5,12 @@ export type TimeConfig = {
   nome: string;
   nomeOficialAPI: string;
   idAPI?: number;
-  esporte: 'futebol' | 'nfl';
+  esporte: 'futebol' | 'nfl' | 'nba';
   variacoesNome: string[];
   competicaoCodigo: string;
   competicaoNome: string;
   divisaoNFL?: string;
+  conferenciaNBA?: 'Eastern Conference' | 'Western Conference';
   arquivoStandings?: string;
   arquivoMatches?: string;
   escudo: string;
@@ -50,7 +51,9 @@ export function formatarNomeTime(shortName?: string, fullName?: string): string 
 }
 
 export const timesConfig: Record<string, TimeConfig> = {
-  // --- FUTEBOL BRASILEIRO ---
+  // ==========================================
+  // FUTEBOL BRASILEIRO
+  // ==========================================
   "flamengo": {
     slug: "flamengo",
     nome: "Flamengo",
@@ -262,7 +265,9 @@ export const timesConfig: Record<string, TimeConfig> = {
     corPrimaria: "border-red-600 bg-gray-50"
   },
 
-  // --- EUROPA ---
+  // ==========================================
+  // GIGANTES DA EUROPA
+  // ==========================================
   "real-madrid": {
     slug: "real-madrid",
     nome: "Real Madrid",
@@ -334,7 +339,143 @@ export const timesConfig: Record<string, TimeConfig> = {
     corPrimaria: "border-red-600 bg-red-50"
   },
 
-  // --- NFL ---
+  // ==========================================
+  // FRANQUIAS DA NBA
+  // ==========================================
+  "los-angeles-lakers": {
+    slug: "los-angeles-lakers",
+    nome: "Los Angeles Lakers",
+    nomeOficialAPI: "Los Angeles Lakers",
+    idAPI: 13,
+    esporte: "nba",
+    variacoesNome: ["Los Angeles Lakers", "Lakers", "LA Lakers"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Western Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+    corPrimaria: "border-purple-800 bg-yellow-50"
+  },
+  "boston-celtics": {
+    slug: "boston-celtics",
+    nome: "Boston Celtics",
+    nomeOficialAPI: "Boston Celtics",
+    idAPI: 2,
+    esporte: "nba",
+    variacoesNome: ["Boston Celtics", "Celtics"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Eastern Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
+    corPrimaria: "border-emerald-700 bg-emerald-50"
+  },
+  "golden-state-warriors": {
+    slug: "golden-state-warriors",
+    nome: "Golden State Warriors",
+    nomeOficialAPI: "Golden State Warriors",
+    idAPI: 9,
+    esporte: "nba",
+    variacoesNome: ["Golden State Warriors", "Warriors", "GS Warriors"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Western Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/gsw.png",
+    corPrimaria: "border-blue-700 bg-yellow-50"
+  },
+  "chicago-bulls": {
+    slug: "chicago-bulls",
+    nome: "Chicago Bulls",
+    nomeOficialAPI: "Chicago Bulls",
+    idAPI: 4,
+    esporte: "nba",
+    variacoesNome: ["Chicago Bulls", "Bulls"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Eastern Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/chi.png",
+    corPrimaria: "border-red-600 bg-red-50"
+  },
+  "miami-heat": {
+    slug: "miami-heat",
+    nome: "Miami Heat",
+    nomeOficialAPI: "Miami Heat",
+    idAPI: 14,
+    esporte: "nba",
+    variacoesNome: ["Miami Heat", "Heat"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Eastern Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/mia.png",
+    corPrimaria: "border-red-800 bg-red-50"
+  },
+  "new-york-knicks": {
+    slug: "new-york-knicks",
+    nome: "New York Knicks",
+    nomeOficialAPI: "New York Knicks",
+    idAPI: 18,
+    esporte: "nba",
+    variacoesNome: ["New York Knicks", "Knicks", "NY Knicks"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Eastern Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/nyk.png",
+    corPrimaria: "border-blue-600 bg-orange-50"
+  },
+  "denver-nuggets": {
+    slug: "denver-nuggets",
+    nome: "Denver Nuggets",
+    nomeOficialAPI: "Denver Nuggets",
+    idAPI: 7,
+    esporte: "nba",
+    variacoesNome: ["Denver Nuggets", "Nuggets"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Western Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
+    corPrimaria: "border-blue-900 bg-yellow-50"
+  },
+  "phoenix-suns": {
+    slug: "phoenix-suns",
+    nome: "Phoenix Suns",
+    nomeOficialAPI: "Phoenix Suns",
+    idAPI: 21,
+    esporte: "nba",
+    variacoesNome: ["Phoenix Suns", "Suns"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Western Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/phx.png",
+    corPrimaria: "border-orange-600 bg-purple-50"
+  },
+  "dallas-mavericks": {
+    slug: "dallas-mavericks",
+    nome: "Dallas Mavericks",
+    nomeOficialAPI: "Dallas Mavericks",
+    idAPI: 6,
+    esporte: "nba",
+    variacoesNome: ["Dallas Mavericks", "Mavericks", "Mavs"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Western Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/dal.png",
+    corPrimaria: "border-blue-700 bg-blue-50"
+  },
+  "milwaukee-bucks": {
+    slug: "milwaukee-bucks",
+    nome: "Milwaukee Bucks",
+    nomeOficialAPI: "Milwaukee Bucks",
+    idAPI: 15,
+    esporte: "nba",
+    variacoesNome: ["Milwaukee Bucks", "Bucks"],
+    competicaoCodigo: "NBA",
+    competicaoNome: "NBA",
+    conferenciaNBA: "Eastern Conference",
+    escudo: "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+    corPrimaria: "border-emerald-800 bg-emerald-50"
+  },
+
+  // ==========================================
+  // FRANQUIAS DA NFL
+  // ==========================================
   "kansas-city-chiefs": {
     slug: "kansas-city-chiefs",
     nome: "Kansas City Chiefs",
