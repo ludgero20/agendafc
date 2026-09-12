@@ -8,6 +8,53 @@ const mesesMap: Record<string, string> = {
   "agosto": "08", "setembro": "09", "outubro": "10", "novembro": "11", "dezembro": "12"
 };
 
+// 🧠 SANITIZADOR INTELIGENTE DE CAMPEONATO E FASE
+function extrairCampeonatoEFase(campeonatoBruto: string): { campeonato: string; fase: string | null } {
+  let camp = (campeonatoBruto || '').trim();
+  let fase: string | null = null;
+
+  // 1. Analisa se há parênteses no texto (ex: "Campeonato Brasileiro (segunda divisão)" ou "Copa Libertadores (quartas de final)")
+  if (camp.includes('(') && camp.includes(')')) {
+    const match = camp.match(/\((.*?)\)/);
+    const conteudoParenteses = match ? match[1].trim().toLowerCase() : '';
+    const textoSemParenteses = camp.replace(/\s*\(.*?\)/, '').trim().toLowerCase();
+
+    // CASO A: Se for indicação de divisão, NÃO é fase! É o próprio campeonato!
+    if (conteudoParenteses.includes('segunda') || conteudoParenteses.includes('2ª') || conteudoParenteses.includes('série b')) {
+      if (textoSemParenteses.includes('ingl') || textoSemParenteses.includes('championship')) {
+        return { campeonato: 'Championship', fase: null };
+      }
+      return { campeonato: 'Série B', fase: null };
+    }
+
+    if (conteudoParenteses.includes('terceira') || conteudoParenteses.includes('3ª') || conteudoParenteses.includes('série c')) {
+      return { campeonato: 'Brasileirão', fase: null };
+    }
+
+    // CASO B: Se for fase real de mata-mata
+    fase = match ? match[1].trim() : null;
+    camp = camp.replace(/\s*\(.*?\)/, '').trim();
+  }
+
+  // 2. Normalização do nome da liga
+  const campLower = camp.toLowerCase();
+
+  if (campLower.includes('ingl') && (campLower.includes('segunda') || campLower.includes('championship'))) {
+    camp = 'Championship';
+    fase = null;
+  } else if (campLower.includes('segunda divisão') || campLower.includes('série b') || campLower.includes('serie b')) {
+    camp = 'Série B';
+    fase = null;
+  } else if (campLower === 'campeonato brasileiro' || campLower === 'brasileirão' || campLower === 'brasileirao') {
+    camp = 'Brasileirão';
+  }
+
+  // 3. Aplica o dicionário de sinônimos oficial
+  camp = dicionarioCampeonatos[camp.toLowerCase().trim()] || camp;
+
+  return { campeonato: camp, fase };
+}
+
 // ⚡ PARSER INSTANTÂNEO DE TABELAS
 function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
   const linhas = texto.split('\n').map(l => l.trim()).filter(Boolean);
@@ -38,25 +85,18 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
           if (/^\d{1,2}h$/.test(hora)) hora = hora.replace('h', 'h00');
           if (/^\d{1}h/.test(hora)) hora = '0' + hora;
 
-          let campLimpo = campeonatoBruto.trim();
-          let faseExtraida = null;
-
-          if (campLimpo.includes('(') && campLimpo.includes(')')) {
-            const matchFase = campLimpo.match(/\((.*?)\)/);
-            if (matchFase) faseExtraida = matchFase[1].trim();
-            campLimpo = campLimpo.replace(/\s*\(.*?\)/, '').trim();
-          }
+          const { campeonato, fase } = extrairCampeonatoEFase(campeonatoBruto);
 
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: hora,
-            campeonato: campLimpo,
+            campeonato,
             canal: canalBruto,
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
             divisao: null,
-            fase: faseExtraida,
+            fase,
             evento_nome: null,
             evento_descricao: null
           });
@@ -67,25 +107,18 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
         const partesTimes = confronto.split(/\s+[xX]\s+/);
         
         if (partesTimes.length === 2) {
-          let campLimpo = (partes[1] || "Brasileirão").trim();
-          let faseExtraida = null;
-
-          if (campLimpo.includes('(') && campLimpo.includes(')')) {
-            const matchFase = campLimpo.match(/\((.*?)\)/);
-            if (matchFase) faseExtraida = matchFase[1].trim();
-            campLimpo = campLimpo.replace(/\s*\(.*?\)/, '').trim();
-          }
+          const { campeonato, fase } = extrairCampeonatoEFase(partes[1] || "Brasileirão");
 
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: "16h00",
-            campeonato: campLimpo,
+            campeonato,
             canal: partes[2] || "A definir",
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
             divisao: null,
-            fase: faseExtraida,
+            fase,
             evento_nome: null,
             evento_descricao: null
           });
@@ -124,19 +157,22 @@ export async function POST(request: Request) {
     const hoje = formatter.format(agora).trim();
     const anoAtual = agora.getFullYear().toString();
 
+    // 1. Tenta o parser de tabelas com TABs
     let jogosExtraidos = parsearTabelasDireto(textoBruto, anoAtual);
 
+    // 2. Se não tiver formato de tabela, usa o Gemini
     if (jogosExtraidos.length === 0 && process.env.GEMINI_API_KEY) {
       const promptGemini = `Você é um extrator especialista de grades de jogos na TV.
 Extraia TODOS os jogos de futebol do texto abaixo em um array JSON.
 
 REGRAS CRÍTICAS DE CAMPEONATO:
-1. "campeonato": APENAS o nome oficial (ex: "Brasileirão", "Série B", "Premier League", "Championship", "La Liga", "Copa Libertadores", "Copa do Brasil").
+1. "campeonato": APENAS o nome oficial.
+   - Se for 2ª divisão do Brasil ("segunda divisão", "série b"), coloque SEMPRE "Série B".
    - Se for 2ª divisão da Inglaterra, coloque SEMPRE "Championship".
-   - Se for 2ª divisão do Brasil, coloque SEMPRE "Série B".
-   - NUNCA coloque a fase ou divisão em parênteses dentro de campeonato.
-2. "fase": Extraia fases como "Quartas de final", "16-avos de final", etc. Se não houver, null.
-3. "divisao": Apenas se for "Série C" ou similar. Para Série B, o campeonato já deve ser "Série B".
+   - Se for 1ª divisão do Brasil, coloque SEMPRE "Brasileirão".
+   - NUNCA coloque divisão ou fase dentro de campeonato.
+2. "fase": Extraia apenas fases reais de mata-mata (ex: "Quartas de final", "16-avos de final", "Semifinal", "Final"). NUNCA coloque divisões aqui. Se não houver fase, null.
+3. "divisao": Deixe SEMPRE null (a Série B já é um campeonato próprio).
 4. "data": "YYYY-MM-DD".
 5. "hora": formato "16h00".
 
@@ -157,13 +193,23 @@ ${textoBruto}`;
         const geminiData = await geminiResponse.json();
         const txt = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
         try {
-          jogosExtraidos = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
+          const rawGemini = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
+          jogosExtraidos = rawGemini.map((j: any) => {
+            const { campeonato, fase } = extrairCampeonatoEFase(j.campeonato);
+            return {
+              ...j,
+              campeonato,
+              fase: j.fase || fase,
+              divisao: null,
+            };
+          });
         } catch {
           jogosExtraidos = [];
         }
       }
     }
 
+    // 3. RECUPERA OS JOGOS EXISTENTES DO GITHUB
     const githubUrl = `https://api.github.com/repos/${githubOwner}/${githubRepo}/contents/${filePath}`;
     const headersGithub = {
       Authorization: `Bearer ${githubToken}`,
@@ -184,71 +230,23 @@ ${textoBruto}`;
       } catch (e) {}
     }
 
+    // 4. MESCLAGEM & NORMALIZAÇÃO DEFINITIVA
     const todosCombinados = [...jogosPreservadosDoArquivo, ...jogosExtraidos];
 
     const jogosLimpos = todosCombinados
       .map((jogo: any) => {
-        let camp = (jogo.campeonato || '').trim();
-        let fase = (jogo.fase || '').trim() || undefined;
-        let div = (jogo.divisao || '').trim() || undefined;
-
-        // 1. Extrai fase entre parênteses
-        if (camp.includes('(') && camp.includes(')')) {
-          const matchFase = camp.match(/\((.*?)\)/);
-          if (matchFase && !fase) {
-            const conteudoParenteses = matchFase[1].trim();
-            // Se não for "segunda divisão", é fase de mata-mata
-            if (!conteudoParenteses.toLowerCase().includes('divisão') && !conteudoParenteses.toLowerCase().includes('divisao')) {
-              fase = conteudoParenteses;
-            }
-          }
-          camp = camp.replace(/\s*\(.*?\)/, '').trim();
-        }
-
-        const campLower = camp.toLowerCase();
-
-        // 2. REGRAS ESTRITAS DE PAÍS E DIVISÃO (Corrige o erro de Watford/Stoke!)
-        if (campLower.includes("ingl") || campLower.includes("championship")) {
-          if (campLower.includes("segunda") || campLower.includes("2ª") || campLower.includes("championship")) {
-            camp = "Championship";
-            div = undefined;
-          } else {
-            camp = "Premier League";
-          }
-        } else if (campLower.includes("espanh")) {
-          camp = "La Liga";
-        } else if (
-          campLower.includes("série b") || 
-          campLower.includes("serie b") || 
-          campLower.includes("segunda divisão") ||
-          div?.toLowerCase().includes("série b") ||
-          div?.toLowerCase().includes("segunda divisão")
-        ) {
-          camp = "Série B";
-          div = undefined;
-        } else if (campLower.includes("terceira") || campLower.includes("série c") || campLower.includes("serie c")) {
-          camp = "Brasileirão";
-          div = "Série C";
-        } else if (campLower.includes("feminino")) {
-          camp = campLower.includes("ingl") ? "Premier League Feminina" : "Brasileirão Feminino";
-        } else if (campLower.includes("brasileir") || campLower.includes("brasileiro")) {
-          camp = "Brasileirão";
-          div = undefined;
-        }
-
-        // 3. Aplica o Dicionário Oficial
-        camp = dicionarioCampeonatos[camp.toLowerCase().trim()] || camp;
+        const { campeonato, fase } = extrairCampeonatoEFase(jogo.campeonato);
 
         return {
           id: jogo.id || Math.floor(Math.random() * 100000),
           data: jogo.data,
           hora: jogo.hora,
-          campeonato: camp,
+          campeonato,
           canal: (jogo.canal || '').trim(),
           time1: (jogo.time1 || '').trim(),
           time2: (jogo.time2 || '').trim(),
-          divisao: div || undefined,
-          fase: fase || undefined,
+          divisao: null,
+          fase: jogo.fase || fase || undefined,
           evento_nome: null,
           evento_descricao: null
         };
@@ -274,7 +272,7 @@ ${textoBruto}`;
       method: 'PUT',
       headers: headersGithub,
       body: JSON.stringify({
-        message: `🤖 Importação via Admin corrigida (${jogosLimpos.length} jogos)`,
+        message: `🤖 Importação via Admin higienizada (${jogosLimpos.length} jogos)`,
         content: Buffer.from(jsonFinalParaSalvar).toString('base64'),
         sha: repoInfo.sha
       })
@@ -287,7 +285,7 @@ ${textoBruto}`;
 
     return NextResponse.json({ 
       success: true, 
-      message: `Sucesso! Base de dados higienizada e salva com ${jogosLimpos.length} jogos.`,
+      message: `Sucesso! Base de dados higienizada com ${jogosLimpos.length} jogos salvos.`,
       quantidadeTotalSalva: jogosLimpos.length
     });
 
