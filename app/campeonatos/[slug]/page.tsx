@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
+import CopaMataMataClient, { EtapaCopa, ConfrontoCopa } from '@/app/components/CopaMataMataClient';
 import { ligasFutebolConfig, CompeticaoInfo } from '@/lib/campeonatos';
 import { formatarNomeTime } from '@/lib/times';
 
@@ -41,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-// 🌐 1. TABELA DA ESPN (COM SUPORTE A FASE DE LIGA E GRUPOS)
+// 🌐 1. TABELA DA ESPN (COM SUPORTE A GRUPOS E FASE DE LIGA)
 async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
   const urls = [
     `https://site.web.api.espn.com/apis/v2/sports/soccer/${espnSlug}/standings?region=br&lang=pt`,
@@ -82,7 +83,7 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
             const teamId = parseInt(entry.team?.id, 10) || (index + 1);
             const nomeOficial = entry.team?.displayName || entry.team?.name || 'Time';
             const shortName = entry.team?.shortDisplayName || entry.team?.name || nomeOficial;
-            const crest = entry.team?.logos?.[0]?.href || entry.team?.logo || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png';
+            const crest = entry.team?.logos?.[0]?.href || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png';
 
             todosTimes.push({
               position: index + 1,
@@ -108,7 +109,7 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
       if (todosTimes.length > 0) {
         return todosTimes;
       }
-    } catch (e) {
+    } catch {
       console.error(`Tentando próxima URL de tabela ESPN (${espnSlug})...`);
     }
   }
@@ -116,7 +117,112 @@ async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
   return null;
 }
 
-// 📦 2. MOTOR FOOTBALL-DATA / CACHE LOCAL
+// 🇧🇷 TRADUTOR OFICIAL DE AGREGADOS DA ESPN
+function traduzirNotaAgregado(nota: string): string {
+  if (!nota) return '';
+  let t = nota;
+
+  t = t.replace(/1st Leg/gi, 'Jogo de Ida');
+  t = t.replace(/2nd Leg/gi, 'Jogo de Volta');
+  t = t.replace(/Tied on aggregate/gi, 'Empate no agregado');
+  t = t.replace(/lead (.*?) on aggregate/gi, 'lidera por $1 no agregado');
+  t = t.replace(/win (.*?) on aggregate/gi, 'venceu por $1 no agregado');
+  t = t.replace(/advance (.*?) on penalties/gi, 'avançou nos pênaltis ($1)');
+
+  return t.trim();
+}
+
+// 🏆 2. EXTRATOR DAS FASES FINAIS DA COPA DO BRASIL (5ª FASE ATÉ A FINAL)
+async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCopa[]; etapaAtivaSlug: string }> {
+  try {
+    const res = await fetch(
+      `https://site.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`,
+      { headers: ESPN_HEADERS, cache: 'no-store' }
+    );
+
+    if (!res.ok) return { etapas: [], etapaAtivaSlug: '' };
+    const data = await res.json();
+    const eventos = data.events || [];
+
+    // Mapeamento das 5 etapas oficiais
+    const fasesConfig: Record<string, string> = {
+      'fifth-round': '5ª Fase',
+      'round-of-16': 'Oitavas de Final',
+      'quarterfinals': 'Quartas de Final',
+      'semifinals': 'Semifinais',
+      'final': 'Final',
+    };
+
+    const grupos: Record<string, ConfrontoCopa[]> = {
+      'fifth-round': [],
+      'round-of-16': [],
+      'quarterfinals': [],
+      'semifinals': [],
+      'final': [],
+    };
+
+    eventos.forEach((ev: any) => {
+      const slugFase = ev.season?.slug || '';
+      if (!fasesConfig[slugFase]) return; // Descarta fases 1, 2, 3 e 4
+
+      const comp = ev.competitions?.[0];
+      const competitors = comp?.competitors || [];
+      const home = competitors.find((c: any) => c.homeAway === 'home') || competitors[0];
+      const away = competitors.find((c: any) => c.homeAway === 'away') || competitors[1];
+
+      const homeName = formatarNomeTime(home?.team?.shortDisplayName, home?.team?.displayName || 'Casa');
+      const awayName = formatarNomeTime(away?.team?.shortDisplayName, away?.team?.displayName || 'Visitante');
+
+      // Descarta placeholders TBD
+      if (homeName.toLowerCase().includes('tbd') || awayName.toLowerCase().includes('tbd')) return;
+
+      const dataObj = new Date(ev.date);
+      const dataBR = dataObj.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit' });
+      const horaBR = dataObj.toLocaleTimeString('pt-BR', { timeZone: 'America/Sao_Paulo', hour: '2-digit', minute: '2-digit' });
+
+      const finalizado = Boolean(ev.status?.type?.completed || ev.status?.type?.state === 'post');
+      const aoVivo = ev.status?.type?.state === 'in';
+      const notaRaw = comp?.notes?.[0]?.headline || '';
+
+      grupos[slugFase].push({
+        id: ev.id,
+        data: dataBR,
+        hora: horaBR,
+        timeCasa: homeName,
+        timeVisitante: awayName,
+        escudoCasa: home?.team?.logo || home?.team?.logos?.[0]?.href || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png',
+        escudoVisitante: away?.team?.logo || away?.team?.logos?.[0]?.href || 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/default-team-logo-500.png',
+        placarCasa: finalizado || aoVivo ? String(home?.score ?? '0') : null,
+        placarVisitante: finalizado || aoVivo ? String(away?.score ?? '0') : null,
+        faseSlug: slugFase,
+        faseTitulo: fasesConfig[slugFase],
+        notaAgregado: traduzirNotaAgregado(notaRaw),
+        status: finalizado ? 'Finalizado' : aoVivo ? 'Ao Vivo' : 'Agendado',
+      });
+    });
+
+    const etapas: EtapaCopa[] = Object.keys(fasesConfig)
+      .map((slug) => ({
+        slug,
+        titulo: fasesConfig[slug],
+        jogos: grupos[slug],
+      }))
+      .filter((e) => e.jogos.length > 0);
+
+    // Identifica qual etapa está acontecendo agora (com jogos em andamento ou os mais recentes)
+    let etapaAtiva = 'quarterfinals'; // Padrão de setembro (Quartas de Final)
+    if (!etapas.some((e) => e.slug === etapaAtiva) && etapas.length > 0) {
+      etapaAtiva = etapas[etapas.length - 1].slug;
+    }
+
+    return { etapas, etapaAtivaSlug: etapaAtiva };
+  } catch (e) {
+    console.error('Erro ao buscar fases da Copa do Brasil:', e);
+    return { etapas: [], etapaAtivaSlug: '' };
+  }
+}
+
+// 📦 3. MOTOR FOOTBALL-DATA / CACHE LOCAL
 async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   if (liga.espnSlug) {
     return getTabelaESPN(liga.espnSlug);
@@ -134,20 +240,19 @@ async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
         if (table && table.length > 0) return table;
       }
     }
-  } catch (e) {}
+  } catch {}
 
   try {
     const filePath = path.join(process.cwd(), "public", "api-cache", liga.arquivoStandings || '');
     const jsonData = await fs.readFile(filePath, "utf-8");
     const data = JSON.parse(jsonData);
     return data?.standings?.[0]?.table || null;
-  } catch (error) {
-    console.error(`ERRO AO LER tabela de ${liga.nome}:`, error);
+  } catch {
     return null;
   }
 }
 
-// 📦 3. MOTOR DE JOGOS
+// 📦 4. MOTOR DE JOGOS
 async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
   if (liga.espnSlug && !liga.arquivoMatches) {
     return null;
@@ -167,7 +272,7 @@ async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebo
         };
       }
     }
-  } catch (e) {}
+  } catch {}
 
   try {
     if (!liga.arquivoMatches) return null;
@@ -190,6 +295,31 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
 
   if (!liga) notFound();
 
+  // 🇧🇷 RENDERIZADOR DEDICADO DE MATA-MATA DA COPA DO BRASIL
+  if (liga.slug === 'copa-do-brasil') {
+    const dadosCopa = await getFasesCopaDoBrasil(liga.espnSlug || 'bra.copa_do_brazil');
+
+    return (
+      <div className="space-y-8 max-w-5xl mx-auto px-4 py-6">
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
+            <span>{liga.bandeiraEmoji}</span> {liga.nome}
+          </h1>
+          <p className="text-xl text-gray-600 mt-2">
+            {liga.subtitulo} - Fases Eliminatórias e Resultados
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <CopaMataMataClient
+            etapas={dadosCopa.etapas}
+            etapaInicialSlug={dadosCopa.etapaAtivaSlug}
+          />
+        </div>
+      </div>
+    );
+  }
+
   const [tabela, jogosData] = await Promise.all([
     getTabelaLiga(liga),
     getJogosLiga(liga)
@@ -204,16 +334,15 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
     );
   }
 
-  // Define dinamicamente o rótulo da coluna: "Seleção" para torneios de seleções ou "Clube" como padrão
   const tipoEntidade = liga.slug === 'nations-league' ? 'Seleção' : 'Clube';
 
   const gruposNomes = Array.from(
-  new Set(
-    tabela
-      .map((t) => t.groupName)
-      .filter((g): g is string => typeof g === 'string' && g.toLowerCase() !== 'overall')
-  )
-);
+    new Set(
+      tabela
+        .map((t) => t.groupName)
+        .filter((g): g is string => typeof g === 'string' && g.toLowerCase() !== 'overall')
+    )
+  );
   
   const temMultiplosGrupos = gruposNomes.length > 1;
   const temJogos = Boolean(jogosData && jogosData.matches && jogosData.matches.length > 0);
@@ -234,7 +363,6 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
       </div>
 
       {temJogos ? (
-        // LAYOUT COM 2 COLUNAS (TABELA + RODADAS)
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2 space-y-4">
             <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
@@ -255,17 +383,24 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
           </div>
         </div>
       ) : temMultiplosGrupos ? (
-        // LAYOUT MULTI-GRUPOS (NATIONS LEAGUE)
         <div className="space-y-8 max-w-5xl mx-auto">
-          <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+          <div className="border-b border-slate-200 pb-3">
             <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-              🏆 Grupos da Nations League
+              🏆 Grupos da {liga.nome}
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {gruposNomes.map((nomeGrupo) => {
-              const timesDoGrupo = tabela.filter((t) => t.groupName === nomeGrupo);
+              const timesDoGrupo = tabela
+                .filter((t) => t.groupName === nomeGrupo)
+                .sort((a, b) => {
+                  if (b.points !== a.points) return b.points - a.points;
+                  if (b.goalDifference !== a.goalDifference) return b.goalDifference - a.goalDifference;
+                  return b.won - a.won;
+                })
+                .map((time, idx) => ({ ...time, position: idx + 1 }));
+
               return (
                 <div key={nomeGrupo} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
                   <div className="bg-slate-50 px-4 py-2.5 border-b border-gray-200">
@@ -280,13 +415,10 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
           </div>
         </div>
       ) : (
-        // LAYOUT FASE DE LIGA / PONTOS CORRIDOS (EUROPA LEAGUE, CONFERENCE LEAGUE, SÉRIE B)
         <div className="max-w-4xl mx-auto space-y-4">
-          <div className="flex items-center justify-between">
-            <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-              🏆 Tabela de Classificação
-            </h2>
-          </div>
+          <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+            🏆 Classificação
+          </h2>
           <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
         </div>
       )}
