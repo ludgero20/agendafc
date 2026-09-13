@@ -20,6 +20,7 @@ export type TimeConfig = {
   titulosConstrutores?: number;
   titulosPilotos?: number;
   biografia?: string;
+  corFundoLogo?: string; // 🎯 Fundo customizado do quadradinho do logo
   // Arquivos de cache (Futebol)
   arquivoStandings?: string;
   arquivoMatches?: string;
@@ -61,12 +62,13 @@ export function formatarNomeTime(shortName?: string, fullName?: string): string 
 }
 
 export const timesConfig: Record<string, TimeConfig> = {
+
   // ==========================================
-  // 🏎️ FÓRMULA 1 (10 EQUIPES OFICIAIS)
+  // 🏎️ FÓRMULA 1 (11 EQUIPES OFICIAIS - 2026)
   // ==========================================
   "ferrari": {
     slug: "ferrari",
-    nome: "Scuderia Ferrari",
+    nome: "Ferrari",
     nomeOficialAPI: "Ferrari",
     esporte: "f1",
     variacoesNome: ["Ferrari", "Scuderia Ferrari"],
@@ -79,13 +81,14 @@ export const timesConfig: Record<string, TimeConfig> = {
     chefeEquipe: "Frédéric Vasseur",
     titulosConstrutores: 16,
     titulosPilotos: 15,
-    biografia: "A equipe mais antiga, icônica e vitoriosa da história da Fórmula 1. Presente em todas as temporadas desde 1950, a Scuderia representa a paixão italiana pelo automobilismo com a histórica dupla Charles Leclerc e Lewis Hamilton.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/ferrari.png",
-    corPrimaria: "border-red-600 bg-red-50"
+    biografia: "A equipe mais icônica e vitoriosa da história da Fórmula 1. Presente em todas as temporadas desde 1950, a Scuderia conta com a histórica dupla Charles Leclerc e Lewis Hamilton.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/rxwsqv1420417429.png",
+    corPrimaria: "border-red-600 bg-red-50",
+    corFundoLogo: "bg-white border-slate-200",
   },
   "mclaren": {
     slug: "mclaren",
-    nome: "McLaren F1 Team",
+    nome: "McLaren",
     nomeOficialAPI: "McLaren",
     esporte: "f1",
     variacoesNome: ["McLaren", "McLaren F1 Team"],
@@ -98,32 +101,34 @@ export const timesConfig: Record<string, TimeConfig> = {
     chefeEquipe: "Andrea Stella",
     titulosConstrutores: 8,
     titulosPilotos: 12,
-    biografia: "Fundada pelo lendário Bruce McLaren, a equipe britânica é sinônimo de vitórias memoráveis com Ayrton Senna e Alain Prost. Renascida na era moderna, conta com a jovem e veloz dupla Lando Norris e Oscar Piastri.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/mclaren.png",
-    corPrimaria: "border-amber-500 bg-amber-50"
+    biografia: "Fundada por Bruce McLaren e consagrada pelas lendas Ayrton Senna e Alain Prost, a equipe britânica vive fase de vitórias na era moderna com Lando Norris e Oscar Piastri.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/kzqi7v1743602056.png",
+    corPrimaria: "border-amber-500 bg-amber-50",
+    corFundoLogo: "bg-white border-slate-200"
   },
   "red-bull": {
     slug: "red-bull",
-    nome: "Red Bull Racing",
+    nome: "Red Bull",
     nomeOficialAPI: "Red Bull",
     esporte: "f1",
     variacoesNome: ["Red Bull", "Red Bull Racing", "RBR"],
     competicaoCodigo: "F1",
     competicaoNome: "Fórmula 1",
-    pilotos: ["Max Verstappen", "Liam Lawson"],
+    pilotos: ["Max Verstappen", "Isack Hadjar"],
     sede: "Milton Keynes, Reino Unido",
     fundacao: "2005",
-    motor: "Red Bull Ford Powertrains",
+    motor: "Red Bull Ford",
     chefeEquipe: "Christian Horner",
     titulosConstrutores: 6,
     titulosPilotos: 7,
-    biografia: "Dominante na era moderna da F1, a equipe austríaca quebrou paradigmas conquistando múltiplos títulos com Sebastian Vettel e Max Verstappen sob a liderança técnica do lendário projetista Adrian Newey.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/red_bull.png",
-    corPrimaria: "border-blue-900 bg-blue-50"
+    biografia: "Dominante na era moderna da F1, a equipe austríaca conquistou múltiplos títulos mundiais com Sebastian Vettel e Max Verstappen sob liderança técnica de ponta.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/nhlev81679826274.png",
+    corPrimaria: "border-blue-900 bg-blue-50",
+    corFundoLogo: "bg-slate-950 border-slate-800"
   },
   "mercedes": {
     slug: "mercedes",
-    nome: "Mercedes-AMG F1 Team",
+    nome: "Mercedes",
     nomeOficialAPI: "Mercedes",
     esporte: "f1",
     variacoesNome: ["Mercedes", "Mercedes-AMG", "Mercedes F1"],
@@ -136,13 +141,14 @@ export const timesConfig: Record<string, TimeConfig> = {
     chefeEquipe: "Toto Wolff",
     titulosConstrutores: 8,
     titulosPilotos: 9,
-    biografia: "As lendárias 'Flechas de Prata' protagonizaram o período de maior domínio da história da Fórmula 1 na era híbrida (2014-2020), conquistando oito campeonatos mundiais consecutivos de construtores.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/mercedes.png",
-    corPrimaria: "border-teal-500 bg-teal-50"
+    biografia: "As 'Flechas de Prata' protagonizaram o maior domínio da história da Fórmula 1 na era híbrida (2014-2020), conquistando 8 títulos mundiais de construtores consecutivos.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/6caw0r1744037679.png",
+    corPrimaria: "border-teal-500 bg-teal-50",
+    corFundoLogo: "bg-white border-slate-200"
   },
   "aston-martin": {
     slug: "aston-martin",
-    nome: "Aston Martin F1 Team",
+    nome: "Aston Martin",
     nomeOficialAPI: "Aston Martin",
     esporte: "f1",
     variacoesNome: ["Aston Martin", "Aston Martin F1"],
@@ -150,56 +156,59 @@ export const timesConfig: Record<string, TimeConfig> = {
     competicaoNome: "Fórmula 1",
     pilotos: ["Fernando Alonso", "Lance Stroll"],
     sede: "Silverstone, Reino Unido",
-    fundacao: "2021 (Origens na Jordan em 1991)",
+    fundacao: "2021",
     motor: "Honda",
     chefeEquipe: "Mike Krack",
     titulosConstrutores: 0,
     titulosPilotos: 0,
-    biografia: "A tradicional montadora de luxo britânica investiu fortemente em instalações de ponta em Silverstone e conta com a liderança e genialidade nas pistas do bicampeão mundial Fernando Alonso.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/aston_martin.png",
-    corPrimaria: "border-emerald-800 bg-emerald-50"
+    biografia: "A tradicional montadora de luxo britânica conta com instalações ultratecnológicas em Silverstone, motores oficiais Honda e a liderança do bicampeão mundial Fernando Alonso.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/ez5rlk1740774066.png",
+    corPrimaria: "border-emerald-800 bg-emerald-50",
+    corFundoLogo: "bg-slate-950 border-slate-800"
   },
   "alpine": {
     slug: "alpine",
-    nome: "Alpine F1 Team",
+    nome: "Alpine",
     nomeOficialAPI: "Alpine",
     esporte: "f1",
     variacoesNome: ["Alpine", "Alpine F1", "Renault"],
     competicaoCodigo: "F1",
     competicaoNome: "Fórmula 1",
-    pilotos: ["Pierre Gasly", "Jack Doohan"],
+    pilotos: ["Pierre Gasly", "Franco Colapinto"],
     sede: "Enstone, Reino Unido",
     fundacao: "1981 (Antiga Benetton / Renault)",
-    motor: "Renault",
+    motor: "Mercedes",
     chefeEquipe: "Oliver Oakes",
     titulosConstrutores: 2,
     titulosPilotos: 2,
-    biografia: "Representante oficial do Grupo Renault na Fórmula 1, a base de Enstone carrega no currículo os títulos mundiais de Michael Schumacher nos anos 90 e de Fernando Alonso na era de ouro de 2005 e 2006.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/alpine.png",
-    corPrimaria: "border-blue-600 bg-pink-50"
+    biografia: "Equipe oficial do Grupo Renault, a base de Enstone carrega no currículo os títulos mundiais de Michael Schumacher nos anos 90 e de Fernando Alonso em 2005 e 2006.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/ozhoj31740774899.png",
+    corPrimaria: "border-blue-600 bg-pink-50",
+    corFundoLogo: "bg-slate-950 border-slate-800"
   },
   "williams": {
     slug: "williams",
-    nome: "Williams Racing",
+    nome: "Williams",
     nomeOficialAPI: "Williams",
     esporte: "f1",
     variacoesNome: ["Williams", "Williams Racing"],
     competicaoCodigo: "F1",
     competicaoNome: "Fórmula 1",
-    pilotos: ["Alexander Albon", "Carlos Sainz"],
+    pilotos: ["Carlos Sainz", "Alexander Albon"],
     sede: "Grove, Reino Unido",
     fundacao: "1977",
     motor: "Mercedes",
     chefeEquipe: "James Vowles",
     titulosConstrutores: 9,
     titulosPilotos: 7,
-    biografia: "Criada por Sir Frank Williams, é uma das garagens mais vitoriosas e amadas do automobilismo, com títulos mundiais ao lado de Ayrton Senna, Nelson Piquet, Nigel Mansell e Alain Prost. Hoje vive momento de forte ascensão com Carlos Sainz e Alex Albon.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/williams.png",
-    corPrimaria: "border-blue-800 bg-blue-50"
+    biografia: "Uma das garagens mais vitoriosas e históricas do automobilismo, com títulos ao lado de Ayrton Senna e Nelson Piquet. Hoje vive grande momento com a forte dupla Carlos Sainz e Alex Albon.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/fp1cil1740776050.png",
+    corPrimaria: "border-blue-800 bg-blue-50",
+    corFundoLogo: "bg-slate-950 border-slate-800"
   },
   "haas": {
     slug: "haas",
-    nome: "Haas F1 Team",
+    nome: "Haas",
     nomeOficialAPI: "Haas",
     esporte: "f1",
     variacoesNome: ["Haas", "Haas F1 Team"],
@@ -212,47 +221,70 @@ export const timesConfig: Record<string, TimeConfig> = {
     chefeEquipe: "Ayao Komatsu",
     titulosConstrutores: 0,
     titulosPilotos: 0,
-    biografia: "Única equipe norte-americana no grid da F1, a Haas aposta em um modelo de alta eficiência com parcerias técnicas com a Ferrari, sendo famosa pela garra no pelotão intermediário.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/haas.png",
-    corPrimaria: "border-red-600 bg-gray-100"
+    biografia: "Equipe norte-americana criada por Gene Haas, aposta em modelo de alta eficiência com suporte técnico da Ferrari e uma competitiva dupla de pilotos com Esteban Ocon e Oliver Bearman.",
+    escudo: "https://r2.thesportsdb.com/images/media/team/badge/9yp3s51740773680.png",
+    corPrimaria: "border-red-600 bg-gray-100",
+    corFundoLogo: "bg-white border-slate-200"
   },
-  "sauber": {
-    slug: "sauber",
-    nome: "Stake F1 Team (Audi)",
-    nomeOficialAPI: "Sauber",
+  "audi": {
+    slug: "audi",
+    nome: "Audi F1 Team",
+    nomeOficialAPI: "Audi",
     esporte: "f1",
-    variacoesNome: ["Sauber", "Stake F1", "Audi F1"],
+    variacoesNome: ["Audi", "Audi F1", "Sauber", "Audi Revolut"],
     competicaoCodigo: "F1",
     competicaoNome: "Fórmula 1",
-    pilotos: ["Nico Hülkenberg", "Gabriel Bortoleto"],
-    sede: "Hinwil, Suíça",
-    fundacao: "1993",
+    pilotos: ["Gabriel Bortoleto", "Nico Hülkenberg"],
+    sede: "Neuburg, Alemanha & Hinwil, Suíça",
+    fundacao: "2026 (Entrada oficial de fábrica)",
     motor: "Audi",
     chefeEquipe: "Mattia Binotto",
     titulosConstrutores: 0,
     titulosPilotos: 0,
-    biografia: "Fundada por Peter Sauber na Suíça, a histórica equipe vive o período de transformação para a entrada oficial da Audi na Fórmula 1, marcando o retorno do Brasil ao grid com o jovem campeão Gabriel Bortoleto.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/sauber.png",
-    corPrimaria: "border-green-500 bg-gray-900 text-white"
+    biografia: "A gigante montadora alemã entra oficialmente como equipe de fábrica e motor próprio na Fórmula 1! Com sedes na Alemanha e na Suíça, marca o retorno do Brasil ao grid titular com o campeão de base Gabriel Bortoleto.",
+    escudo: "https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg",
+    corPrimaria: "border-neutral-900 bg-neutral-100",
+    corFundoLogo: "bg-white border-slate-200"
   },
   "racing-bulls": {
     slug: "racing-bulls",
-    nome: "Visa Cash App RB",
-    nomeOficialAPI: "RB",
+    nome: "Racing Bulls",
+    nomeOficialAPI: "Racing Bulls",
     esporte: "f1",
-    variacoesNome: ["RB", "Racing Bulls", "AlphaTauri", "Toro Rosso"],
+    variacoesNome: ["Racing Bulls", "RB", "VCARB", "Toro Rosso"],
     competicaoCodigo: "F1",
     competicaoNome: "Fórmula 1",
-    pilotos: ["Yuki Tsunoda", "Isack Hadjar"],
+    pilotos: ["Liam Lawson", "Arvid Lindblad"],
     sede: "Faenza, Itália",
     fundacao: "2006 (Antiga Minardi)",
-    motor: "Red Bull Ford Powertrains",
+    motor: "Red Bull Ford",
     chefeEquipe: "Laurent Mekies",
     titulosConstrutores: 0,
     titulosPilotos: 0,
-    biografia: "A equipe sediada em Faenza (antiga Toro Rosso / AlphaTauri) é a incubadora oficial de talentos da Red Bull na F1, onde nomes como Sebastian Vettel e Max Verstappen venceram seus primeiros Grandes Prêmios.",
-    escudo: "https://a.espncdn.com/combiner/i?img=/i/teamlogos/f1/500/rb.png",
-    corPrimaria: "border-blue-700 bg-blue-50"
+    biografia: "A equipe italiana sediada em Faenza é famosa por desenvolver campeões mundiais como Sebastian Vettel e Max Verstappen, contando com a veloz dupla Yuki Tsunoda e Liam Lawson.",
+    escudo: "https://logos-world.net/wp-content/uploads/2021/03/Aston-Martin-Logo.png",
+    corPrimaria: "border-blue-700 bg-blue-50",
+    corFundoLogo: "bg-white border-slate-200"
+  },
+  "cadillac": {
+    slug: "cadillac",
+    nome: "Cadillac",
+    nomeOficialAPI: "Cadillac",
+    esporte: "f1",
+    variacoesNome: ["Cadillac", "Cadillac F1", "GM F1"],
+    competicaoCodigo: "F1",
+    competicaoNome: "Fórmula 1",
+    pilotos: ["Sergio Pérez", "Valtteri Bottas"],
+    sede: "Silverstone, Reino Unido & Indiana, EUA",
+    fundacao: "2026",
+    motor: "Ferrari",
+    chefeEquipe: "Graeme Lowdon",
+    titulosConstrutores: 0,
+    titulosPilotos: 0,
+    biografia: "A 11ª equipe oficial da Fórmula 1! Projeto de peso da General Motors com a marca de luxo Cadillac, estreando com motores Ferrari e a experiente dupla de vencedores de GP Sergio Pérez e Valtteri Bottas.",
+    escudo: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Cadillac_Formula_1_Team_logo.png",
+    corPrimaria: "border-neutral-800 bg-neutral-100",
+    corFundoLogo: "bg-white border-slate-200"
   },
 
   // ==========================================

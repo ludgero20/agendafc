@@ -14,9 +14,18 @@ export default function TimeHeader({ time }: { time: TimeConfig }) {
   return (
     <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200/90 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
       <div className="flex flex-col sm:flex-row items-center gap-6">
-        <div className="w-24 h-24 flex-shrink-0 flex items-center justify-center p-2 bg-slate-50 rounded-2xl border border-slate-100">
-          <img src={time.escudo} alt={time.nome} className="max-h-20 max-w-20 object-contain" />
-        </div>
+        <div
+  className={`w-24 h-24 flex-shrink-0 flex items-center justify-center p-3 rounded-2xl border shadow-xs ${
+    time.corFundoLogo || 'bg-slate-50 border-slate-100'
+  }`}
+>
+  <img 
+    src={time.escudo} 
+    alt={time.nome} 
+    className="max-h-20 max-w-20 object-contain" 
+    referrerPolicy="no-referrer"
+  />
+</div>
         <div>
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full mb-1">
             <span>{emoji}</span> {time.competicaoNome}
