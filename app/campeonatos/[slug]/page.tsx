@@ -134,25 +134,15 @@ function traduzirNotaAgregado(nota: string): string {
 
 // 🏆 2. EXTRATOR DAS FASES FINAIS DA COPA DO BRASIL (5ª FASE ATÉ A FINAL)
 async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCopa[]; etapaAtivaSlug: string }> {
-  try {
-    const res = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`,
-      { headers: ESPN_HEADERS, cache: 'no-store' }
-    );
+  const fasesConfig: Record<string, string> = {
+    'fifth-round': '5ª Fase',
+    'round-of-16': 'Oitavas de Final',
+    'quarterfinals': 'Quartas de Final',
+    'semifinals': 'Semifinais',
+    'final': 'Final',
+  };
 
-    if (!res.ok) return { etapas: [], etapaAtivaSlug: '' };
-    const data = await res.json();
-    const eventos = data.events || [];
-
-    // Mapeamento das 5 etapas oficiais
-    const fasesConfig: Record<string, string> = {
-      'fifth-round': '5ª Fase',
-      'round-of-16': 'Oitavas de Final',
-      'quarterfinals': 'Quartas de Final',
-      'semifinals': 'Semifinais',
-      'final': 'Final',
-    };
-
+  const processarEventos = (eventos: any[]) => {
     const grupos: Record<string, ConfrontoCopa[]> = {
       'fifth-round': [],
       'round-of-16': [],
@@ -163,7 +153,7 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
 
     eventos.forEach((ev: any) => {
       const slugFase = ev.season?.slug || '';
-      if (!fasesConfig[slugFase]) return; // Descarta fases 1, 2, 3 e 4
+      if (!fasesConfig[slugFase]) return;
 
       const comp = ev.competitions?.[0];
       const competitors = comp?.competitors || [];
@@ -173,7 +163,6 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
       const homeName = formatarNomeTime(home?.team?.shortDisplayName, home?.team?.displayName || 'Casa');
       const awayName = formatarNomeTime(away?.team?.shortDisplayName, away?.team?.displayName || 'Visitante');
 
-      // Descarta placeholders TBD
       if (homeName.toLowerCase().includes('tbd') || awayName.toLowerCase().includes('tbd')) return;
 
       const dataObj = new Date(ev.date);
@@ -209,17 +198,43 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
       }))
       .filter((e) => e.jogos.length > 0);
 
-    // Identifica qual etapa está acontecendo agora (com jogos em andamento ou os mais recentes)
-    let etapaAtiva = 'quarterfinals'; // Padrão de setembro (Quartas de Final)
+    let etapaAtiva = 'quarterfinals';
     if (!etapas.some((e) => e.slug === etapaAtiva) && etapas.length > 0) {
       etapaAtiva = etapas[etapas.length - 1].slug;
     }
 
     return { etapas, etapaAtivaSlug: etapaAtiva };
-  } catch (e) {
-    console.error('Erro ao buscar fases da Copa do Brasil:', e);
-    return { etapas: [], etapaAtivaSlug: '' };
+  };
+
+  // 1. TENTA NA ESPN VIA MULTI-URL (WEB-API DESBLOQUEADA)
+  const urls = [
+    `https://site.web.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`,
+    `https://site.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`
+  ];
+
+  for (const url of urls) {
+    try {
+      const res = await fetch(url, { headers: ESPN_HEADERS, cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        const eventos = data.events || [];
+        if (eventos.length > 0) {
+          const resultado = processarEventos(eventos);
+          if (resultado.etapas.length > 0) return resultado;
+        }
+      }
+    } catch {}
   }
+
+  // 2. FALLBACK DE SEGURANÇA LOCAL (SE A VERCEL FOR BLOQUEADA)
+  try {
+    const filePath = path.join(process.cwd(), 'public', 'api-cache', 'copa-do-brasil.json');
+    const jsonData = await fs.readFile(filePath, 'utf-8');
+    const eventosLocais = JSON.parse(jsonData).events || [];
+    return processarEventos(eventosLocais);
+  } catch {}
+
+  return { etapas: [], etapaAtivaSlug: '' };
 }
 
 // 📦 3. MOTOR FOOTBALL-DATA / CACHE LOCAL
