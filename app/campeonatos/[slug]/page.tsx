@@ -5,6 +5,7 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
 import CopaMataMataClient, { EtapaCopa, ConfrontoCopa } from '@/app/components/CopaMataMataClient';
+import TorneioConmebolClient from '@/app/components/TorneioConmebolClient';
 import { ligasFutebolConfig, CompeticaoInfo } from '@/lib/campeonatos';
 import { formatarNomeTime } from '@/lib/times';
 
@@ -37,8 +38,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!liga) return { title: "Campeonato não encontrado | Agenda FC" };
 
   return {
-    title: `Tabela do ${liga.nome} | Classificação Oficial | Agenda FC`,
-    description: `Tabela de classificação completa e pontuação atualizada do ${liga.nome} (${liga.subtitulo}).`,
+    title: `Tabela do ${liga.nome} | Classificação e Mata-Mata | Agenda FC`,
+    description: `Classificação completa, confrontos de mata-mata e pontuação atualizada do ${liga.nome} (${liga.subtitulo}).`,
   };
 }
 
@@ -132,24 +133,11 @@ function traduzirNotaAgregado(nota: string): string {
   return t.trim();
 }
 
-// 🏆 2. EXTRATOR DAS FASES FINAIS DA COPA DO BRASIL (5ª FASE ATÉ A FINAL)
-async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCopa[]; etapaAtivaSlug: string }> {
-  const fasesConfig: Record<string, string> = {
-    'fifth-round': '5ª Fase',
-    'round-of-16': 'Oitavas de Final',
-    'quarterfinals': 'Quartas de Final',
-    'semifinals': 'Semifinais',
-    'final': 'Final',
-  };
-
+// 🏆 2. EXTRATOR DE MATA-MATA (COPA DO BRASIL, LIBERTADORES E SUL-AMERICANA)
+async function getFasesMataMata(espnSlug: string, arquivoCache: string, fasesConfig: Record<string, string>): Promise<{ etapas: EtapaCopa[]; etapaAtivaSlug: string }> {
   const processarEventos = (eventos: any[]) => {
-    const grupos: Record<string, ConfrontoCopa[]> = {
-      'fifth-round': [],
-      'round-of-16': [],
-      'quarterfinals': [],
-      'semifinals': [],
-      'final': [],
-    };
+    const grupos: Record<string, ConfrontoCopa[]> = {};
+    Object.keys(fasesConfig).forEach((k) => { grupos[k] = []; });
 
     eventos.forEach((ev: any) => {
       const slugFase = ev.season?.slug || '';
@@ -194,7 +182,7 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
       .map((slug) => ({
         slug,
         titulo: fasesConfig[slug],
-        jogos: grupos[slug],
+        jogos: grupos[slug] || [],
       }))
       .filter((e) => e.jogos.length > 0);
 
@@ -206,7 +194,7 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
     return { etapas, etapaAtivaSlug: etapaAtiva };
   };
 
-  // 1. TENTA NA ESPN VIA MULTI-URL (WEB-API DESBLOQUEADA)
+  // 1. Tenta ao vivo na ESPN
   const urls = [
     `https://site.web.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`,
     `https://site.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`
@@ -226,9 +214,9 @@ async function getFasesCopaDoBrasil(espnSlug: string): Promise<{ etapas: EtapaCo
     } catch {}
   }
 
-  // 2. FALLBACK DE SEGURANÇA LOCAL (SE A VERCEL FOR BLOQUEADA)
+  // 2. Fallback de arquivo local de segurança
   try {
-    const filePath = path.join(process.cwd(), 'public', 'api-cache', 'copa-do-brasil.json');
+    const filePath = path.join(process.cwd(), 'public', 'api-cache', arquivoCache);
     const jsonData = await fs.readFile(filePath, 'utf-8');
     const eventosLocais = JSON.parse(jsonData).events || [];
     return processarEventos(eventosLocais);
@@ -267,7 +255,7 @@ async function getTabelaLiga(liga: CompeticaoInfo): Promise<Tabela | null> {
   }
 }
 
-// 📦 4. MOTOR DE JOGOS
+// 📦 4. MOTOR DE JOGOS (FOOTBALL-DATA)
 async function getJogosLiga(liga: CompeticaoInfo): Promise<{ matches: JogoFutebol[]; currentMatchday: number } | null> {
   if (liga.espnSlug && !liga.arquivoMatches) {
     return null;
@@ -310,9 +298,21 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
 
   if (!liga) notFound();
 
-  // 🇧🇷 RENDERIZADOR DEDICADO DE MATA-MATA DA COPA DO BRASIL
+  // 🇧🇷 1. COPA DO BRASIL (100% MATA-MATA)
   if (liga.slug === 'copa-do-brasil') {
-    const dadosCopa = await getFasesCopaDoBrasil(liga.espnSlug || 'bra.copa_do_brazil');
+    const fasesCopaDoBrasil = {
+      'fifth-round': '5ª Fase',
+      'round-of-16': 'Oitavas de Final',
+      'quarterfinals': 'Quartas de Final',
+      'semifinals': 'Semifinais',
+      'final': 'Final',
+    };
+
+    const dadosCopa = await getFasesMataMata(
+      liga.espnSlug || 'bra.copa_do_brazil',
+      'copa-do-brasil.json',
+      fasesCopaDoBrasil
+    );
 
     return (
       <div className="space-y-8 max-w-5xl mx-auto px-4 py-6">
@@ -335,6 +335,86 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
     );
   }
 
+  // 🏆 2. COPA LIBERTADORES E COPA SUL-AMERICANA (MATA-MATA + FASE DE GRUPOS)
+  if (liga.slug === 'libertadores' || liga.slug === 'sul-americana') {
+    const fasesConmebol = {
+      'knockout-round-playoffs': 'Playoffs',
+      'round-of-16': 'Oitavas de Final',
+      'quarterfinals': 'Quartas de Final',
+      'semifinals': 'Semifinais',
+      'final': 'Final',
+    };
+
+    const arquivoCache = liga.slug === 'libertadores' ? 'libertadores.json' : 'sul-americana.json';
+
+    const [tabela, dadosMataMata] = await Promise.all([
+      getTabelaLiga(liga),
+      getFasesMataMata(liga.espnSlug || '', arquivoCache, fasesConmebol)
+    ]);
+
+    const gruposNomes = Array.from(
+      new Set(
+        (tabela || [])
+          .map((t) => t.groupName)
+          .filter((g): g is string => typeof g === 'string' && g.toLowerCase() !== 'overall')
+      )
+    );
+
+    const renderGrupos = (
+      <div className="space-y-6 max-w-5xl mx-auto">
+        <div className="border-b border-slate-200 pb-2">
+          <h2 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+            🏆 Classificação da Fase de Grupos
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {gruposNomes.map((nomeGrupo) => {
+            const timesDoGrupo = (tabela || [])
+              .filter((t) => t.groupName === nomeGrupo)
+              .sort((a, b) => {
+                if (b.points !== a.points) return b.points - a.points;
+                if (b.goalDifference !== a.goalDifference) return b.goalDifference - a.goalDifference;
+                return b.won - a.won;
+              })
+              .map((time, idx) => ({ ...time, position: idx + 1 }));
+
+            return (
+              <div key={nomeGrupo} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div className="bg-slate-50 px-4 py-2.5 border-b border-gray-200">
+                  <h3 className="font-bold text-sm text-slate-800 uppercase tracking-wider">
+                    {nomeGrupo}
+                  </h3>
+                </div>
+                <TabelaHtml tabela={timesDoGrupo} tipoEntidade="Clube" />
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+
+    return (
+      <div className="space-y-8 max-w-5xl mx-auto px-4 py-6">
+        <div className="text-center">
+          <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
+            <span>{liga.bandeiraEmoji}</span> {liga.nome}
+          </h1>
+          <p className="text-xl text-gray-600 mt-2">
+            {liga.subtitulo} - Mata-Mata e Fase de Grupos
+          </p>
+        </div>
+
+        <TorneioConmebolClient
+          etapas={dadosMataMata.etapas}
+          etapaInicialSlug={dadosMataMata.etapaAtivaSlug}
+          renderGrupos={renderGrupos}
+        />
+      </div>
+    );
+  }
+
+  // ⚽ 3. DEMAIS CAMPEONATOS (NATIONS LEAGUE, PONTOS CORRIDOS, ETC.)
   const [tabela, jogosData] = await Promise.all([
     getTabelaLiga(liga),
     getJogosLiga(liga)
