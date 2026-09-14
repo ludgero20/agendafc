@@ -315,3 +315,100 @@ export async function getJogosNFLDoTime(
 
   return { finalizados, proximos };
 }
+export type AtletaLiderNFL = {
+  rank: number;
+  nome: string;
+  time: string;
+  posicao: string;
+  foto: string;
+  jardas: string;
+  touchdowns: string;
+  detalheExtra: string; // Ex: CMP%, Tentativas ou Recepções
+};
+
+export type CategoriaLideresNFL = {
+  titulo: string;
+  icone: string;
+  atletas: AtletaLiderNFL[];
+};
+
+export async function getLideresNFL(): Promise<CategoriaLideresNFL[]> {
+  const categoriasConfig = [
+    {
+      titulo: 'Líderes em Passes',
+      icone: '🏈',
+      category: 'offense:passing',
+      sort: 'passing.passingYards:desc',
+      catIndex: 1,
+      idxYds: 3,
+      idxTd: 7,
+      idxExtra: 2,
+      extraLabel: 'CMP%'
+    },
+    {
+      titulo: 'Líderes em Corridas',
+      icone: '🏃‍♂️',
+      category: 'offense:rushing',
+      sort: 'rushing.rushingYards:desc',
+      catIndex: 2,
+      idxYds: 1,
+      idxTd: 5,
+      idxExtra: 0,
+      extraLabel: 'CAR'
+    },
+    {
+      titulo: 'Líderes em Recepções',
+      icone: '👐',
+      category: 'offense:receiving',
+      sort: 'receiving.receivingYards:desc',
+      catIndex: 3,
+      idxYds: 2,
+      idxTd: 4,
+      idxExtra: 0,
+      extraLabel: 'REC'
+    }
+  ];
+
+  try {
+    const resultados = await Promise.all(
+      categoriasConfig.map(async (cfg) => {
+        const url = `https://site.web.api.espn.com/apis/common/v3/sports/football/nfl/statistics/byathlete?region=us&lang=en&contentorigin=espn&isqualified=true&page=1&limit=5&category=${encodeURIComponent(cfg.category)}&sort=${encodeURIComponent(cfg.sort)}`;
+
+        try {
+          const res = await fetch(url, { headers: ESPN_HEADERS, next: { revalidate: 1800 } });
+          if (!res.ok) return { titulo: cfg.titulo, icone: cfg.icone, atletas: [] };
+          const data = await res.json();
+          const athletes = data.athletes || [];
+
+          const atletas: AtletaLiderNFL[] = athletes.map((item: any, idx: number) => {
+            const a = item.athlete || {};
+            const totals = item.categories?.[cfg.catIndex]?.totals || [];
+
+            return {
+              rank: idx + 1,
+              nome: a.displayName || 'Jogador',
+              time: a.teamShortName || a.team?.abbreviation || 'NFL',
+              posicao: a.position?.abbreviation || '',
+              foto: a.headshot?.href || 'https://a.espncdn.com/i/headshots/nfl/players/full/default.png',
+              jardas: String(totals[cfg.idxYds] || '0'),
+              touchdowns: String(totals[cfg.idxTd] || '0'),
+              detalheExtra: `${totals[cfg.idxExtra] || '0'} ${cfg.extraLabel}`
+            };
+          });
+
+          return {
+            titulo: cfg.titulo,
+            icone: cfg.icone,
+            atletas
+          };
+        } catch {
+          return { titulo: cfg.titulo, icone: cfg.icone, atletas: [] };
+        }
+      })
+    );
+
+    return resultados.filter(r => r.atletas.length > 0);
+  } catch {
+    return [];
+  }
+}

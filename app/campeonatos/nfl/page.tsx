@@ -3,10 +3,12 @@ import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
 import RodadaNFLClient, { JogoNFL } from '@/app/components/RodadaNFLClient';
+import NFLLideres from '@/app/components/nfl/NFLLideres';
+import { getLideresNFL } from '@/lib/services/nfl-service';
 
 export const metadata: Metadata = {
-  title: "Tabela e Jogos da NFL | Classificação e Rodadas | Agenda FC",
-  description: "Tabela de classificação completa e calendário de todas as 18 semanas com placares e jogos da NFL.",
+  title: "Tabela, Jogos e Líderes da NFL | Classificação e Rodadas | Agenda FC",
+  description: "Tabela de classificação completa, calendário de todas as 18 semanas, placares ao vivo e líderes de jardas e touchdowns da NFL.",
 };
 
 export const revalidate = 1800; // Atualiza a cada 30 minutos
@@ -67,7 +69,7 @@ function identificarDivisao(nomeTime: string) {
   return { conference: "American Football Conference", division: "AFC East" };
 }
 
-// 1. TABELA DA NFL (MULTI-URL COM CABEÇALHOS DE BYPASS)
+// 1. TABELA DA NFL (MULTI-URL)
 async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   const urls = [
     "https://site.web.api.espn.com/apis/v2/sports/football/nfl/standings?region=us&lang=en&contentorigin=espn&season=2026&type=2",
@@ -168,7 +170,7 @@ async function getTabelaNFL(): Promise<TimeTabelaNFL[] | null> {
   }
 }
 
-// 2. BUSCA TODAS AS 18 SEMANAS DA NFL AO VIVO NA ESPN
+// 2. BUSCA TODAS AS 18 SEMANAS DA NFL
 async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
   const dominios = [
     'https://site.web.api.espn.com',
@@ -251,9 +253,10 @@ async function getTodosJogosNFL(): Promise<JogoNFL[] | null> {
 }
 
 export default async function NFLPage() {
-  const [tabelaCompleta, todosOsJogos] = await Promise.all([
+  const [tabelaCompleta, todosOsJogos, categoriasLideres] = await Promise.all([
     getTabelaNFL(),
-    getTodosJogosNFL()
+    getTodosJogosNFL(),
+    getLideresNFL()
   ]);
 
   if (!tabelaCompleta || !todosOsJogos) {
@@ -286,69 +289,78 @@ export default async function NFLPage() {
   }, {} as Record<string, Record<string, TimeTabelaNFL[]>>);
 
   return (
-    <div className="space-y-8 max-w-7xl mx-auto px-4 py-6">
+    <div className="space-y-10 max-w-7xl mx-auto px-4 py-6">
+      {/* CABEÇALHO */}
       <div className="text-center">
         <h1 className="text-4xl font-extrabold text-gray-900 flex items-center justify-center gap-3">
           <span>🏈</span> NFL - National Football League
         </h1>
-        <p className="text-xl text-gray-600 mt-2">Temporada Regular - Classificação das Divisões e Rodadas</p>
+        <p className="text-xl text-gray-600 mt-2">Temporada Regular - Classificação das Divisões, Rodadas e Líderes</p>
       </div>
 
+      {/* GRADE PRINCIPAL EQUILIBRADA (2 COLUNAS) */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-        {/* TABELAS DAS CONFERÊNCIAS E DIVISÕES */}
-        <div className="lg:col-span-2 space-y-8">
-          {Object.entries(tabelasPorConferencia).map(([conferencia, divisoes]) => (
-            <div key={conferencia} className="space-y-4">
-              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2 border-b border-slate-200 pb-2">
-                🏆 {conferencia === 'AFC' ? 'American Football Conference (AFC)' : 'National Football Conference (NFC)'}
-              </h2>
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-                {Object.entries(divisoes).map(([divisao, tabela]) => (
-                  <div key={divisao} className="bg-white rounded-2xl shadow-xs border border-slate-200/90 p-4">
-                    <h3 className="text-sm font-bold text-blue-700 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
-                      <span>🏈</span> {divisao.replace("AFC ", "").replace("NFC ", "")}
-                    </h3>
-                    <div className="overflow-x-auto">
-                      <table className="min-w-full text-xs sm:text-sm">
-                        <thead className="bg-slate-50 border-b border-slate-200 text-slate-600">
-                          <tr>
-                            <th className="px-3 py-2 text-left font-semibold">Time</th>
-                            <th className="px-2 py-2 text-center font-semibold">V</th>
-                            <th className="px-2 py-2 text-center font-semibold">D</th>
-                            <th className="px-2 py-2 text-center font-semibold">E</th>
-                            <th className="px-2 py-2 text-center font-semibold">%</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {tabela
-                            .sort((a, b) => parseInt(a.rank) - parseInt(b.rank))
-                            .map((time) => (
-                              <tr key={time.teamName} className="border-t border-slate-100 hover:bg-slate-50/60 transition-colors">
-                                <td className="px-3 py-2.5 flex items-center gap-2">
-                                  <img 
-                                    src={time.teamLogo} 
-                                    alt={time.teamName} 
-                                    className="w-5 h-5 object-contain flex-shrink-0" 
-                                  />
-                                  <span className="font-semibold text-slate-900 truncate">{time.teamName}</span>
-                                </td>
-                                <td className="px-2 py-2.5 text-center font-bold text-slate-900">{time.intWin}</td>
-                                <td className="px-2 py-2.5 text-center text-slate-600">{time.intLoss}</td>
-                                <td className="px-2 py-2.5 text-center text-slate-600">{time.intTie}</td>
-                                <td className="px-2 py-2.5 text-center font-extrabold text-blue-600">{time.strPercentage}</td>
-                              </tr>
-                            ))}
-                        </tbody>
-                      </table>
+        
+        {/* COLUNA DA ESQUERDA: DIVISÕES + LÍDERES (PREENCHIMENTO COMPLETO) */}
+        <div className="lg:col-span-2 space-y-10">
+          {/* TABELAS DAS DIVISÕES */}
+          <div className="space-y-8">
+            {Object.entries(tabelasPorConferencia).map(([conferencia, divisoes]) => (
+              <div key={conferencia} className="space-y-4">
+                <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2 border-b border-slate-200 pb-2">
+                  🏆 {conferencia === 'AFC' ? 'American Football Conference (AFC)' : 'National Football Conference (NFC)'}
+                </h2>
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                  {Object.entries(divisoes).map(([divisao, tabela]) => (
+                    <div key={divisao} className="bg-white rounded-2xl shadow-xs border border-slate-200/90 p-4">
+                      <h3 className="text-sm font-bold text-blue-700 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                        <span>🏈</span> {divisao.replace("AFC ", "").replace("NFC ", "")}
+                      </h3>
+                      <div className="overflow-x-auto">
+                        <table className="min-w-full text-xs sm:text-sm">
+                          <thead className="bg-slate-50 border-b border-slate-200 text-slate-600">
+                            <tr>
+                              <th className="px-3 py-2 text-left font-semibold">Time</th>
+                              <th className="px-2 py-2 text-center font-semibold">V</th>
+                              <th className="px-2 py-2 text-center font-semibold">D</th>
+                              <th className="px-2 py-2 text-center font-semibold">E</th>
+                              <th className="px-2 py-2 text-center font-semibold">%</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {tabela
+                              .sort((a, b) => parseInt(a.rank) - parseInt(b.rank))
+                              .map((time) => (
+                                <tr key={time.teamName} className="border-t border-slate-100 hover:bg-slate-50/60 transition-colors">
+                                  <td className="px-3 py-2.5 flex items-center gap-2">
+                                    <img 
+                                      src={time.teamLogo} 
+                                      alt={time.teamName} 
+                                      className="w-5 h-5 object-contain flex-shrink-0" 
+                                    />
+                                    <span className="font-semibold text-slate-900 truncate">{time.teamName}</span>
+                                  </td>
+                                  <td className="px-2 py-2.5 text-center font-bold text-slate-900">{time.intWin}</td>
+                                  <td className="px-2 py-2.5 text-center text-slate-600">{time.intLoss}</td>
+                                  <td className="px-2 py-2.5 text-center text-slate-600">{time.intTie}</td>
+                                  <td className="px-2 py-2.5 text-center font-extrabold text-blue-600">{time.strPercentage}</td>
+                                </tr>
+                              ))}
+                          </tbody>
+                        </table>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* ⭐ LÍDERES EM ESTATÍSTICAS ENCAIXADOS PERFEITAMENTE NA ESQUERDA */}
+          <NFLLideres categorias={categoriasLideres} />
         </div>
 
-        {/* NAVEGADOR DE TODAS AS 18 SEMANAS */}
+        {/* COLUNA DA DIREITA: NAVEGADOR DE TODAS AS 18 SEMANAS */}
         <div className="lg:col-span-1 space-y-4">
           <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
             🏈 Jogos da Semana
