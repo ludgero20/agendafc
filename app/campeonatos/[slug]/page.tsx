@@ -6,8 +6,10 @@ import { notFound } from 'next/navigation';
 import RodadaFutebolClient, { JogoFutebol } from '@/app/components/RodadaFutebolClient';
 import CopaMataMataClient, { EtapaCopa, ConfrontoCopa } from '@/app/components/CopaMataMataClient';
 import TorneioConmebolClient from '@/app/components/TorneioConmebolClient';
+import ArtilhariaTable from '@/app/components/ArtilhariaTable'; // 🎯 Novo componente!
 import { ligasFutebolConfig, CompeticaoInfo } from '@/lib/campeonatos';
 import { formatarNomeTime } from '@/lib/times';
+import { getArtilhariaFutebol } from '@/lib/services/futebol-service'; // 🎯 Novo serviço!
 
 export const revalidate = 3600;
 
@@ -25,6 +27,20 @@ type TimeTabela = {
 
 type Tabela = TimeTabela[];
 
+type ConfrontoMataMata = {
+  id: string;
+  data: string;
+  hora: string;
+  timeCasa: string;
+  timeVisitante: string;
+  escudoCasa: string;
+  escudoVisitante: string;
+  placarCasa: string | null;
+  placarVisitante: string | null;
+  fase: string;
+  status: string;
+};
+
 const ESPN_HEADERS = {
   'User-Agent':
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
@@ -38,12 +54,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!liga) return { title: "Campeonato não encontrado | Agenda FC" };
 
   return {
-    title: `Tabela do ${liga.nome} | Classificação e Mata-Mata | Agenda FC`,
-    description: `Classificação completa, confrontos de mata-mata e pontuação atualizada do ${liga.nome} (${liga.subtitulo}).`,
+    title: `Tabela do ${liga.nome} | Classificação e Artilharia | Agenda FC`,
+    description: `Classificação completa, próximos jogos, resultados e artilharia atualizada do ${liga.nome} (${liga.subtitulo}).`,
   };
 }
 
-// 🌐 1. TABELA DA ESPN (COM SUPORTE A GRUPOS E FASE DE LIGA)
+// 🌐 1. TABELA DA ESPN (COM SUPORTE A FASE DE LIGA E GRUPOS)
 async function getTabelaESPN(espnSlug: string): Promise<Tabela | null> {
   const urls = [
     `https://site.web.api.espn.com/apis/v2/sports/soccer/${espnSlug}/standings?region=br&lang=pt`,
@@ -194,7 +210,6 @@ async function getFasesMataMata(espnSlug: string, arquivoCache: string, fasesCon
     return { etapas, etapaAtivaSlug: etapaAtiva };
   };
 
-  // 1. Tenta ao vivo na ESPN
   const urls = [
     `https://site.web.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`,
     `https://site.api.espn.com/apis/site/v2/sports/soccer/${espnSlug}/scoreboard?dates=2026&limit=250`
@@ -214,7 +229,6 @@ async function getFasesMataMata(espnSlug: string, arquivoCache: string, fasesCon
     } catch {}
   }
 
-  // 2. Fallback de arquivo local de segurança
   try {
     const filePath = path.join(process.cwd(), 'public', 'api-cache', arquivoCache);
     const jsonData = await fs.readFile(filePath, 'utf-8');
@@ -335,7 +349,7 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
     );
   }
 
-  // 🏆 2. COPA LIBERTADORES E COPA SUL-AMERICANA (MATA-MATA + FASE DE GRUPOS)
+  // 🏆 2. COPA LIBERTADORES E COPA SUL-AMERICANA
   if (liga.slug === 'libertadores' || liga.slug === 'sul-americana') {
     const fasesConmebol = {
       'knockout-round-playoffs': 'Playoffs',
@@ -414,10 +428,11 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
     );
   }
 
-  // ⚽ 3. DEMAIS CAMPEONATOS (NATIONS LEAGUE, PONTOS CORRIDOS, ETC.)
-  const [tabela, jogosData] = await Promise.all([
+  // ⚽ 3. DEMAIS CAMPEONATOS (COM BUSCA DA ARTILHARIA EM PARALELO)
+  const [tabela, jogosData, artilharia] = await Promise.all([
     getTabelaLiga(liga),
-    getJogosLiga(liga)
+    getJogosLiga(liga),
+    liga.codigoAPI ? getArtilhariaFutebol(liga.codigoAPI) : Promise.resolve([])
   ]);
 
   if (!tabela || tabela.length === 0) {
@@ -458,12 +473,20 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
       </div>
 
       {temJogos ? (
+        // LAYOUT COM 2 COLUNAS (TABELA + ARTILHARIA NA ESQUERDA, RODADAS NA DIREITA)
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          <div className="lg:col-span-2 space-y-4">
-            <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
-              🏆 Classificação
-            </h2>
-            <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
+          <div className="lg:col-span-2 space-y-8">
+            <div className="space-y-4">
+              <h2 className="text-2xl font-bold text-gray-800 flex items-center gap-2">
+                🏆 Classificação
+              </h2>
+              <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
+            </div>
+
+            {/* ⚽ ARTILHARIA TOP 10 INTEGRADA */}
+            {artilharia && artilharia.length > 0 && (
+              <ArtilhariaTable artilheiros={artilharia} />
+            )}
           </div>
 
           <div className="lg:col-span-1 space-y-4">
@@ -552,7 +575,7 @@ function TabelaHtml({ tabela, tipoEntidade = 'Clube' }: { tabela: Tabela; tipoEn
               <td className="px-3 py-3 text-center text-gray-700">{time.won}</td>
               <td className="px-3 py-3 text-center text-gray-700">{time.draw}</td>
               <td className="px-3 py-3 text-center text-gray-700">{time.lost}</td>
-              <td className="px-3 py-3 text-center font-medium text-gray-700">
+              <td className="px-3 py-3 text-center font-medium text-slate-700">
                 {time.goalDifference > 0 ? `+${time.goalDifference}` : time.goalDifference}
               </td>
             </tr>

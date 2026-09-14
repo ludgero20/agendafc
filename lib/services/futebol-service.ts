@@ -368,3 +368,37 @@ export async function getJogosFutebolDoTime(time: any) {
 
   return { finalizados, proximos };
 }
+export type ArtilheiroFutebol = {
+  posicao: number;
+  jogadorNome: string;
+  timeNome: string;
+  timeEscudo: string;
+  gols: number;
+};
+
+// ⚽ 6. BUSCA O TOP 10 DE ARTILHEIROS DA LIGA
+export async function getArtilhariaFutebol(compCode: string): Promise<ArtilheiroFutebol[]> {
+  if (!process.env.API_FOOTBALLDATA_KEY || !compCode) return [];
+
+  try {
+    const res = await fetch(`https://api.football-data.org/v4/competitions/${compCode}/scorers?limit=10`, {
+      headers: { 'X-Auth-Token': process.env.API_FOOTBALLDATA_KEY },
+      next: { revalidate: 3600 }
+    });
+
+    if (!res.ok) return [];
+    const data = await res.json();
+    const scorers = data.scorers || [];
+
+    return scorers.map((s: any, idx: number): ArtilheiroFutebol => ({
+      posicao: idx + 1,
+      jogadorNome: s.player?.name || 'Jogador',
+      timeNome: formatarNomeTime(s.team?.shortName, s.team?.name),
+      timeEscudo: s.team?.crest || '',
+      gols: s.goals ?? 0
+    }));
+  } catch (error) {
+    console.error(`Erro ao buscar artilharia da liga (${compCode}):`, error);
+    return [];
+  }
+}
