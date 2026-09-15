@@ -1,5 +1,6 @@
-// app/api/og/post-x/route.tsx
 import { ImageResponse } from 'next/og';
+import fs from 'fs/promises';
+import path from 'path';
 import { resolverEscudoTime, EscudoInfo } from '@/lib/escudos-helper';
 
 export const runtime = 'nodejs';
@@ -40,6 +41,13 @@ export async function GET(request: Request) {
     const listaJogos = jogos.slice(0, 4);
     const totalJogos = listaJogos.length;
     const isGrid2x2 = totalJogos === 4;
+
+    // Carrega o escudo oficial da Agenda FC em Base64
+    const escudoAgendaPath = path.join(process.cwd(), 'public', 'escudo.jpg');
+    const escudoAgendaBuffer = await fs.readFile(escudoAgendaPath).catch(() => null);
+    const escudoAgendaBase64 = escudoAgendaBuffer
+      ? `data:image/jpeg;base64,${escudoAgendaBuffer.toString('base64')}`
+      : null;
 
     // Resolução de escudos
     const jogosResolvidos = listaJogos.map((j) => ({
@@ -295,21 +303,35 @@ export async function GET(request: Request) {
             }}
           >
             {/* Logo */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  width: '42px',
-                  height: '42px',
-                  borderRadius: '12px',
-                  backgroundColor: '#2563eb',
-                  fontSize: '22px',
-                }}
-              >
-                ⚽
-              </div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+              {escudoAgendaBase64 ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={escudoAgendaBase64}
+                  alt="Escudo Agenda FC"
+                  width={52}
+                  height={52}
+                  style={{
+                    objectFit: 'contain',
+                    borderRadius: '12px',
+                  }}
+                />
+              ) : (
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '46px',
+                    height: '46px',
+                    borderRadius: '12px',
+                    backgroundColor: '#2563eb',
+                    fontSize: '24px',
+                  }}
+                >
+                  ⚽
+                </div>
+              )}
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span style={{ fontSize: '26px', fontWeight: 900, letterSpacing: '-0.5px', color: '#ffffff' }}>
                   AGENDA <span style={{ color: '#38bdf8' }}>FC</span>
