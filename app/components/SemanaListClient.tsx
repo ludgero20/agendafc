@@ -4,6 +4,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { gerarSlugJogo } from '@/lib/jogos-slug';
+import { getAgoraBrasilia, isJogoAoVivo } from '@/lib/jogos-tempo';
 
 // Tipos 100% alinhados
 export type JogoSemana = {
@@ -49,6 +50,34 @@ function extrairCanaisLimpos(canalStr: string): string[] {
   return canais;
 }
 
+function BadgeHorario({
+  jogo,
+  tempoAtual
+}: {
+  jogo: JogoSemana;
+  tempoAtual: { dataHoje: string; minutosAgora: number } | null;
+}) {
+  const estaAoVivo = tempoAtual ? isJogoAoVivo(jogo, tempoAtual.dataHoje, tempoAtual.minutosAgora) : false;
+
+  if (estaAoVivo) {
+    return (
+      <span className="inline-flex items-center gap-1.5 text-xs font-extrabold text-red-700 bg-red-50 px-2.5 py-1 rounded-lg border border-red-200 animate-pulse">
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+        </span>
+        AO VIVO ({jogo.hora})
+      </span>
+    );
+  }
+
+  return (
+    <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">
+      🕒 {jogo.hora}
+    </span>
+  );
+}
+
 export default function SemanaListClient({ 
   jogosPorDataIniciais, 
   campeonatosDisponiveis, 
@@ -58,7 +87,18 @@ export default function SemanaListClient({
   const [jogosPorData, setJogosPorData] = useState(jogosPorDataIniciais);
   const [filtroCompeticao, setFiltroCompeticao] = useState<string>("todos");
   const [filtroCanal, setFiltroCanal] = useState<string>("todos");
+  const [filtroAoVivo, setFiltroAoVivo] = useState<boolean>(false);
   const [campeonatosExpandidos, setCampeonatosExpandidos] = useState<Record<string, Record<string, boolean>>>({});
+  const [tempoAtual, setTempoAtual] = useState<{ dataHoje: string; minutosAgora: number } | null>(null);
+
+  // Inicializa relógio e atualiza a cada 60s
+  useEffect(() => {
+    setTempoAtual(getAgoraBrasilia());
+    const interval = setInterval(() => {
+      setTempoAtual(getAgoraBrasilia());
+    }, 60000);
+    return () => clearInterval(interval);
+  }, []);
 
   const canaisDisponiveis = useMemo(() => {
     const canaisSet = new Set<string>();
@@ -73,29 +113,63 @@ export default function SemanaListClient({
     return Array.from(canaisSet).sort((a, b) => a.localeCompare(b));
   }, [jogosPorDataIniciais]);
 
+  // Contagem total de partidas ao vivo agora
+  const totalJogosAoVivo = useMemo(() => {
+    if (!tempoAtual) return 0;
+    let total = 0;
+    Object.values(jogosPorDataIniciais).forEach(porCampeonato => {
+      Object.values(porCampeonato).forEach(lista => {
+        lista.forEach(jogo => {
+          if (isJogoAoVivo(jogo, tempoAtual.dataHoje, tempoAtual.minutosAgora)) {
+            total++;
+          }
+        });
+      });
+    });
+    return total;
+  }, [jogosPorDataIniciais, tempoAtual]);
+
   useEffect(() => {
-    if (filtroCompeticao === "todos" && filtroCanal === "todos") {
+    if (filtroCompeticao === "todos" && filtroCanal === "todos" && !filtroAoVivo) {
       setJogosPorData(jogosPorDataIniciais);
       return;
     }
 
     const jogosFiltrados: JogosPorData = {};
+    const autoExpandir: Record<string, Record<string, boolean>> = {};
+
     for (const data in jogosPorDataIniciais) {
       for (const chave in jogosPorDataIniciais[data]) {
         const jogosDoGrupo = jogosPorDataIniciais[data][chave].filter(jogo => {
           const matchComp = filtroCompeticao === "todos" || jogo.campeonato === filtroCompeticao;
           const matchCanal = filtroCanal === "todos" || (jogo.canal && jogo.canal.toLowerCase().includes(filtroCanal.toLowerCase()));
-          return matchComp && matchCanal;
+          const matchAoVivo = !filtroAoVivo || (tempoAtual ? isJogoAoVivo(jogo, tempoAtual.dataHoje, tempoAtual.minutosAgora) : false);
+
+          return matchComp && matchCanal && matchAoVivo;
         });
 
         if (jogosDoGrupo.length > 0) {
           if (!jogosFiltrados[data]) jogosFiltrados[data] = {};
           jogosFiltrados[data][chave] = jogosDoGrupo;
+
+          // Se filtrou por ao vivo, pré-expande para facilitar visualização imediata
+          if (filtroAoVivo) {
+            if (!autoExpandir[data]) autoExpandir[data] = {};
+            autoExpandir[data][chave] = true;
+          }
         }
       }
     }
+
     setJogosPorData(jogosFiltrados);
-  }, [filtroCompeticao, filtroCanal, jogosPorDataIniciais]);
+
+    if (filtroAoVivo && Object.keys(autoExpandir).length > 0) {
+      setCampeonatosExpandidos(prev => ({
+        ...prev,
+        ...autoExpandir
+      }));
+    }
+  }, [filtroCompeticao, filtroCanal, filtroAoVivo, tempoAtual, jogosPorDataIniciais]);
 
   const getBandeiraPorCompeticao = (campeonato: string): string => competicoesAtivas[campeonato]?.bandeiraEmoji || '🌎';
 
@@ -207,52 +281,122 @@ Confira a agenda completa em: https://agendafc.com.br`;
   return (
     <div className="space-y-8">
       {/* FILTROS NO TOPO */}
-      <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50/80 p-4 rounded-2xl border border-slate-200/80">
-        <div>
-          <label htmlFor="filtroCompeticaoSemana" className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-            🏆 Campeonato:
-          </label>
-          <select
-            id="filtroCompeticaoSemana"
-            value={filtroCompeticao}
-            onChange={(e) => setFiltroCompeticao(e.target.value)}
-            className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl shadow-xs focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-sm font-medium text-slate-800"
+      <div className="max-w-2xl mx-auto bg-slate-50/80 p-4 rounded-2xl border border-slate-200/80 space-y-3.5">
+        {/* Barra superior de Ação Rápida */}
+        <div className="flex items-center justify-between gap-2 border-b border-slate-200/60 pb-3">
+          <button
+            type="button"
+            onClick={() => setFiltroAoVivo(prev => !prev)}
+            className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-extrabold transition-all shadow-xs ${
+              filtroAoVivo
+                ? 'bg-red-600 text-white shadow-red-500/20 ring-2 ring-red-400'
+                : totalJogosAoVivo > 0
+                ? 'bg-white text-slate-800 hover:bg-red-50 hover:text-red-700 border border-slate-200 hover:border-red-200 cursor-pointer'
+                : 'bg-white text-slate-400 border border-slate-200 cursor-not-allowed opacity-75'
+            }`}
+            disabled={totalJogosAoVivo === 0 && !filtroAoVivo}
+            title={totalJogosAoVivo === 0 ? "Nenhum jogo ao vivo neste momento" : "Filtrar jogos ao vivo agora"}
           >
-            <option value="todos">📋 Todos os campeonatos</option>
-            {campeonatosDisponiveis.map((campeonato) => (
-              <option key={campeonato} value={campeonato}>
-                {getBandeiraPorCompeticao(campeonato)} {campeonato}
-              </option>
-            ))}
-          </select>
+            <span className="relative flex h-2.5 w-2.5">
+              {totalJogosAoVivo > 0 && (
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              )}
+              <span className={`relative inline-flex rounded-full h-2.5 w-2.5 ${totalJogosAoVivo > 0 ? 'bg-red-500' : 'bg-slate-300'}`}></span>
+            </span>
+            <span>{filtroAoVivo ? 'Exibindo Ao Vivo Agora' : 'Passando Agora'}</span>
+            <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-bold ${
+              filtroAoVivo
+                ? 'bg-red-800 text-white'
+                : totalJogosAoVivo > 0
+                ? 'bg-red-100 text-red-700'
+                : 'bg-slate-100 text-slate-500'
+            }`}>
+              {totalJogosAoVivo}
+            </span>
+          </button>
+
+          {(filtroCompeticao !== 'todos' || filtroCanal !== 'todos' || filtroAoVivo) && (
+            <button
+              type="button"
+              onClick={() => {
+                setFiltroCompeticao('todos');
+                setFiltroCanal('todos');
+                setFiltroAoVivo(false);
+              }}
+              className="text-xs font-semibold text-slate-500 hover:text-slate-800 underline decoration-slate-300 transition-colors cursor-pointer"
+            >
+              Limpar filtros
+            </button>
+          )}
         </div>
 
-        <div>
-          <label htmlFor="filtroCanalSemana" className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
-            📺 Canal de Transmissão:
-          </label>
-          <select
-            id="filtroCanalSemana"
-            value={filtroCanal}
-            onChange={(e) => setFiltroCanal(e.target.value)}
-            className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl shadow-xs focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-sm font-medium text-slate-800"
-          >
-            <option value="todos">📺 Todos os canais</option>
-            {canaisDisponiveis.map((canal) => (
-              <option key={canal} value={canal}>
-                📺 {canal}
-              </option>
-            ))}
-          </select>
+        {/* Selects de Campeonato e Canal */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="filtroCompeticaoSemana" className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              🏆 Campeonato:
+            </label>
+            <select
+              id="filtroCompeticaoSemana"
+              value={filtroCompeticao}
+              onChange={(e) => setFiltroCompeticao(e.target.value)}
+              className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl shadow-xs focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-sm font-medium text-slate-800"
+            >
+              <option value="todos">📋 Todos os campeonatos</option>
+              {campeonatosDisponiveis.map((campeonato) => (
+                <option key={campeonato} value={campeonato}>
+                  {getBandeiraPorCompeticao(campeonato)} {campeonato}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor="filtroCanalSemana" className="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+              📺 Canal de Transmissão:
+            </label>
+            <select
+              id="filtroCanalSemana"
+              value={filtroCanal}
+              onChange={(e) => setFiltroCanal(e.target.value)}
+              className="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl shadow-xs focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white text-sm font-medium text-slate-800"
+            >
+              <option value="todos">📺 Todos os canais</option>
+              {canaisDisponiveis.map((canal) => (
+                <option key={canal} value={canal}>
+                  📺 {canal}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
 
       {/* LISTA DE CARDS POR DATA */}
       {Object.keys(jogosPorData).length === 0 ? (
         <div className="bg-white rounded-2xl p-10 text-center border border-slate-200 shadow-xs max-w-lg mx-auto">
-          <div className="text-4xl mb-3">🔍</div>
-          <h3 className="text-xl font-bold text-slate-800 mb-1">Nenhum evento encontrado</h3>
-          <p className="text-sm text-slate-500">Tente selecionar outro campeonato ou canal no filtro acima.</p>
+          <div className="text-4xl mb-3">{filtroAoVivo ? '⏱️' : '🔍'}</div>
+          <h3 className="text-xl font-bold text-slate-800 mb-1">
+            {filtroAoVivo ? 'Nenhum jogo ao vivo neste momento' : 'Nenhum evento encontrado'}
+          </h3>
+          <p className="text-sm text-slate-500 mb-4">
+            {filtroAoVivo
+              ? 'Não há partidas ou eventos esportivos em andamento agora. Confira os próximos horários da programação!'
+              : 'Tente selecionar outro campeonato ou canal no filtro acima.'}
+          </p>
+          {(filtroCompeticao !== 'todos' || filtroCanal !== 'todos' || filtroAoVivo) && (
+            <button
+              type="button"
+              onClick={() => {
+                setFiltroCompeticao('todos');
+                setFiltroCanal('todos');
+                setFiltroAoVivo(false);
+              }}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors cursor-pointer"
+            >
+              Ver todos os jogos disponíveis
+            </button>
+          )}
         </div>
       ) : (
         <div className="space-y-12">
@@ -310,9 +454,7 @@ Confira a agenda completa em: https://agendafc.com.br`;
                                   <>
                                     {/* Topo do Card: Horário e Fase */}
                                     <div className="flex items-center justify-between">
-                                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">
-                                        🕒 {jogo.hora}
-                                      </span>
+                                      <BadgeHorario jogo={jogo} tempoAtual={tempoAtual} />
                                       {jogo.fase && (
                                         <span className="text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200/60">
                                           🏆 {jogo.fase}
@@ -344,9 +486,7 @@ Confira a agenda completa em: https://agendafc.com.br`;
                                   <>
                                     {/* Card de F1 / Evento */}
                                     <div className="flex items-center justify-between">
-                                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">
-                                        🕒 {jogo.hora}
-                                      </span>
+                                      <BadgeHorario jogo={jogo} tempoAtual={tempoAtual} />
                                     </div>
 
                                     <div className="py-2 text-center">
