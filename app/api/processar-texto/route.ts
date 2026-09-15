@@ -130,17 +130,27 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
   return jogos;
 }
 
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type',
+};
+
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders });
+}
+
 export async function POST(request: Request) {
   try {
     const { senha, textoBruto } = await request.json();
 
     const senhaCorreta = process.env.ADMIN_PASSWORD;
     if (!senhaCorreta || senha !== senhaCorreta) {
-      return NextResponse.json({ success: false, error: "Acesso negado: Senha incorreta." }, { status: 401 });
+      return NextResponse.json({ success: false, error: "Acesso negado: Senha incorreta." }, { status: 401, headers: corsHeaders });
     }
 
     if (!textoBruto || textoBruto.trim().length < 20) {
-      return NextResponse.json({ success: false, error: "O texto colado está muito curto ou vazio." }, { status: 400 });
+      return NextResponse.json({ success: false, error: "O texto colado está muito curto ou vazio." }, { status: 400, headers: corsHeaders });
     }
 
     const githubToken = process.env.GITHUB_TOKEN;
@@ -149,7 +159,7 @@ export async function POST(request: Request) {
     const filePath = "public/jogos.json";
 
     if (!githubToken) {
-      return NextResponse.json({ success: false, error: "GITHUB_TOKEN não configurada no servidor." }, { status: 500 });
+      return NextResponse.json({ success: false, error: "GITHUB_TOKEN não configurada no servidor." }, { status: 500, headers: corsHeaders });
     }
 
     const agora = new Date();
@@ -259,13 +269,13 @@ ${textoBruto}`;
       .sort((a: any, b: any) => a.data.localeCompare(b.data) || a.hora.localeCompare(b.hora));
 
     if (jogosLimpos.length === 0) {
-      return NextResponse.json({ success: false, error: "Nenhum jogo válido encontrado." }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Nenhum jogo válido encontrado." }, { status: 400, headers: corsHeaders });
     }
 
     const jsonFinalParaSalvar = JSON.stringify({ jogosSemana: jogosLimpos }, null, 2);
 
     if (!repoInfo.sha) {
-      return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no repositório." }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Arquivo public/jogos.json não encontrado no repositório." }, { status: 400, headers: corsHeaders });
     }
 
     const commitResponse = await fetch(githubUrl, {
@@ -280,17 +290,17 @@ ${textoBruto}`;
 
     if (!commitResponse.ok) {
       const commitError = await commitResponse.json();
-      return NextResponse.json({ success: false, error: "Erro ao salvar no GitHub.", detalhe: commitError }, { status: 400 });
+      return NextResponse.json({ success: false, error: "Erro ao salvar no GitHub.", detalhe: commitError }, { status: 400, headers: corsHeaders });
     }
 
     return NextResponse.json({ 
       success: true, 
       message: `Sucesso! Base de dados higienizada com ${jogosLimpos.length} jogos salvos.`,
       quantidadeTotalSalva: jogosLimpos.length
-    });
+    }, { headers: corsHeaders });
 
   } catch (error: any) {
     console.error("Erro na importação:", error);
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    return NextResponse.json({ success: false, error: error.message }, { status: 500, headers: corsHeaders });
   }
 }
