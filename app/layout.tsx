@@ -34,8 +34,14 @@ export const metadata: Metadata = {
 
   // Ícones oficiais mapeados
   icons: {
-    icon: "/icon.png",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }
+    ],
     shortcut: "/favicon.ico",
   },
 
@@ -80,6 +86,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="apple-touch-startup-image" href="/splash.png" />
+      </head>
       <body className="min-h-screen bg-gray-50 flex flex-col">
         {/* Google Analytics (Carrega apenas se a variável existir) */}
         {process.env.NEXT_PUBLIC_GA_ID && (

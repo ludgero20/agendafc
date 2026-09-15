@@ -1,21 +1,29 @@
 {
   "name": "Agenda FC - Guia de Jogos na TV",
   "short_name": "Agenda FC",
-  "description": "Horários e canais para assistir aos principais jogos de futebol e NFL.",
+  "description": "Horários e canais para assistir aos principais jogos de futebol, NFL e Fórmula 1.",
   "icons": [
     {
       "src": "/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#111827"
+  "theme_color": "#ffffff"
 }
