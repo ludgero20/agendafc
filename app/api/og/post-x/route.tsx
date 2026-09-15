@@ -42,12 +42,17 @@ export async function GET(request: Request) {
     const totalJogos = listaJogos.length;
     const isGrid2x2 = totalJogos === 4;
 
-    // Carrega o escudo oficial da Agenda FC em Base64
-    const escudoAgendaPath = path.join(process.cwd(), 'public', 'escudo.jpg');
-    const escudoAgendaBuffer = await fs.readFile(escudoAgendaPath).catch(() => null);
-    const escudoAgendaBase64 = escudoAgendaBuffer
-      ? `data:image/jpeg;base64,${escudoAgendaBuffer.toString('base64')}`
-      : null;
+    // Carrega o escudo oficial da Agenda FC em Base64 (suporta .png, .jpg, .jpeg, .webp)
+    let escudoAgendaBase64: string | null = null;
+    for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
+      const p = path.join(process.cwd(), 'public', `escudo.${ext}`);
+      const buf = await fs.readFile(p).catch(() => null);
+      if (buf) {
+        const mime = ext === 'jpg' ? 'jpeg' : ext;
+        escudoAgendaBase64 = `data:image/${mime};base64,${buf.toString('base64')}`;
+        break;
+      }
+    }
 
     // Resolução de escudos
     const jogosResolvidos = listaJogos.map((j) => ({
