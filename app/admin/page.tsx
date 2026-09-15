@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
   LockClosedIcon,
   SparklesIcon,
@@ -26,8 +26,15 @@ export default function AdminPage() {
   const [carregando, setCarregando] = useState(false);
   const [resultado, setResultado] = useState<{ sucesso?: boolean; mensagem?: string; quantidade?: number } | null>(null);
   const [copiadoBookmarklet, setCopiadoBookmarklet] = useState(false);
+  const bookmarkRef = useRef<HTMLAnchorElement>(null);
 
   const bookmarkletCode = `javascript:(function(){const u='https://agendafc.com.br/api/processar-texto';function t(m,y){let e=document.getElementById('afc-t');if(!e){e=document.createElement('div');e.id='afc-t';e.style.cssText='position:fixed;top:24px;right:24px;z-index:2147483647;padding:14px 20px;border-radius:14px;font-family:system-ui,-apple-system,sans-serif;font-size:13px;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,0.5);display:flex;align-items:center;gap:10px;max-width:380px;line-height:1.4;cursor:pointer;';document.body.appendChild(e);e.onclick=function(){e.remove();};}let i='';if(y==='info'){e.style.background='#0f172a';e.style.color='#38bdf8';e.style.border='1px solid #0284c7';i='<div style="width:14px;height:14px;border:2px solid #38bdf8;border-top-color:transparent;border-radius:50%;animation:afcs 0.8s linear infinite;flex-shrink:0;"></div><style>@keyframes afcs{to{transform:rotate(360deg)}}</style>';}else if(y==='ok'){e.style.background='#064e3b';e.style.color='#6ee7b7';e.style.border='1px solid #10b981';i='⚽ ';}else{e.style.background='#450a0a';e.style.color='#fca5a5';e.style.border='1px solid #ef4444';i='⚠️ ';}e.innerHTML=i+'<span>'+m+'</span>';if(y!=='info'){setTimeout(function(){if(e)e.remove();},7000);}}let p=localStorage.getItem('agendafc_admin_senha');if(!p){p=prompt('🔒 Digite sua senha de administrador do Agenda FC:');if(!p)return;p=p.trim();localStorage.setItem('agendafc_admin_senha',p);}let s=window.getSelection().toString().trim();if(!s||s.length<50){let el=document.querySelectorAll('h2,h3,table'),tb=[],d='';el.forEach(function(x){let g=x.tagName.toLowerCase();if(g==='h2'||g==='h3'){let h=(x.innerText||'').trim();if(/jogos de/i.test(h)||/\\d{1,2}\\s+de\\s+[a-zçãéíóú]+/i.test(h)){d=h;tb.push('\\n'+d);}}else if(g==='table'&&d){x.querySelectorAll('tr').forEach(function(r){let c=Array.from(r.querySelectorAll('td')).map(function(td){return (td.innerText||'').trim();});if(c.length>=4&&(c[0].includes(' x ')||c[0].includes(' X ')||c[0].includes(' vs '))){tb.push(c.slice(0,4).join('\\t'));}});}});s=tb.length>=3?tb.join('\\n'):(document.querySelector('article,main,.article-body')||document.body).innerText;}if(!s||s.length<50){t('Não foi possível extrair a programação de jogos desta página.','err');return;}t('O Agenda FC está processando os jogos...','info');fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({senha:p,textoBruto:s})}).then(function(r){return r.json().then(function(d){return {ok:r.ok,d:d};});}).then(function(res){if(res.ok&&res.d.success){const tot=res.d.quantidadeTotalSalva?' ('+res.d.quantidadeTotalSalva+' jogos)':'';t('✅ '+(res.d.message||'Jogos publicados na Agenda!')+tot,'ok');}else{if(res.d.error&&res.d.error.toLowerCase().includes('senha')){localStorage.removeItem('agendafc_admin_senha');}t('❌ Erro: '+(res.d.error||'Falha ao processar.'),'err');}}).catch(function(e){t('❌ Erro de conexão: '+e.message,'err');});})();`;
+
+  useEffect(() => {
+    if (bookmarkRef.current) {
+      bookmarkRef.current.setAttribute('href', bookmarkletCode);
+    }
+  }, [bookmarkletCode, abaAtiva, autenticado]);
 
   const handleCopiarBookmarklet = () => {
     navigator.clipboard.writeText(bookmarkletCode);
@@ -192,7 +199,8 @@ export default function AdminPage() {
               {/* ÁREA DE AÇÃO DO BOOKMARKLET */}
               <div className="flex flex-wrap items-center gap-3 pt-1">
                 <a
-                  href={bookmarkletCode}
+                  ref={bookmarkRef}
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     alert('👉 Para instalar:\nArraste este botão diretamente para a sua Barra de Favoritos do navegador!\n\n(Ou clique em "Copiar Código" ao lado).');
