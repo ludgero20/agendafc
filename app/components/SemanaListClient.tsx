@@ -1,7 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
+import Link from 'next/link';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
+import { gerarSlugJogo } from '@/lib/jogos-slug';
 
 // Tipos 100% alinhados
 export type JogoSemana = {
@@ -325,6 +327,17 @@ Confira a agenda completa em: https://agendafc.com.br`;
                                         vs
                                       </span>
                                       <span className="w-[42%] text-left truncate">{jogo.time2}</span>
+                                    </div>
+
+                                    {/* Link interno SEO */}
+                                    <div className="text-center pt-0.5 pb-1">
+                                      <Link
+                                        href={`/jogo/${gerarSlugJogo(jogo)}`}
+                                        className="text-xs font-semibold text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center gap-1 transition-colors"
+                                      >
+                                        <span>Ver detalhes da transmissão</span>
+                                        <span aria-hidden="true">&rarr;</span>
+                                      </Link>
                                     </div>
                                   </>
                                 ) : (
