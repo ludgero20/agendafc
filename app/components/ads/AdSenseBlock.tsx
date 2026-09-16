@@ -25,9 +25,11 @@ export default function AdSenseBlock({
   const adRef = useRef<HTMLModElement | null>(null);
   const adPushed = useRef(false);
 
-  const clientId = process.env.NEXT_PUBLIC_ADSENSE_ID;
-  const activeSlotId = slotId || process.env.NEXT_PUBLIC_ADSENSE_DEFAULT_SLOT_ID;
-  const hasValidSlot = Boolean(activeSlotId && /^\d+$/.test(activeSlotId));
+  const clientId = process.env.NEXT_PUBLIC_ADSENSE_ID?.trim();
+  const rawSlot = slotId || process.env.NEXT_PUBLIC_ADSENSE_DEFAULT_SLOT_ID;
+  // Extrai apenas os números caso tenha vindo com aspas, espaços ou 'data-ad-slot='
+  const activeSlotId = rawSlot ? String(rawSlot).replace(/\D/g, '') : '';
+  const hasValidSlot = Boolean(activeSlotId && activeSlotId.length >= 5);
 
   useEffect(() => {
     // Apenas faz push manual se houver cliente e slot numérico configurado
