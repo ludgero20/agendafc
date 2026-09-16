@@ -1,6 +1,7 @@
 // app/campeonatos/nba/page.tsx
 import type { Metadata } from 'next';
 import { formatarNomeTime } from '@/lib/times';
+import AdSenseBlock from '@/app/components/ads/AdSenseBlock';
 
 export const metadata: Metadata = {
   title: "Tabela e Jogos da NBA | Classificação das Conferências | Agenda FC",
@@ -365,6 +366,9 @@ export default async function NBAPage() {
           )}
         </div>
       </div>
+
+      {/* Bloco de Anúncio após conferências e jogos da NBA */}
+      <AdSenseBlock />
     </div>
   );
 }

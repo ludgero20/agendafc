@@ -372,6 +372,9 @@ export default async function NFLPage() {
           />
         </div>
       </div>
+
+      {/* Bloco de Anúncio após tabela, líderes e jogos da NFL */}
+      <AdSenseBlock />
     </div>
   );
 }
