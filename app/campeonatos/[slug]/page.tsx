@@ -10,6 +10,7 @@ import ArtilhariaTable from '@/app/components/ArtilhariaTable'; // 🎯 Novo com
 import { ligasFutebolConfig, CompeticaoInfo } from '@/lib/campeonatos';
 import { formatarNomeTime } from '@/lib/times';
 import { getArtilhariaFutebol } from '@/lib/services/futebol-service'; // 🎯 Novo serviço!
+import AdSenseBlock from '@/app/components/ads/AdSenseBlock';
 
 export const revalidate = 3600;
 
@@ -540,6 +541,9 @@ export default async function CampeonatoPage({ params }: { params: Promise<{ slu
           <TabelaHtml tabela={tabela} tipoEntidade={tipoEntidade} />
         </div>
       )}
+
+      {/* Bloco de Anúncio após tabela e jogos */}
+      <AdSenseBlock />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import fs from "fs/promises";
 import path from "path";
 import SemanaListClient from "./components/SemanaListClient";
+import AdSenseBlock from "./components/ads/AdSenseBlock";
 import { competicoesAtivasMap } from "@/lib/campeonatos";
 
 // Tipos
@@ -198,6 +199,9 @@ export default async function Home() {
         campeonatosDisponiveis={campeonatosDisponiveis}
         competicoesAtivas={competicoesAtivas}
       />
+
+      {/* Bloco de Anúncio no final da lista de jogos */}
+      <AdSenseBlock />
     </div>
   );
 }

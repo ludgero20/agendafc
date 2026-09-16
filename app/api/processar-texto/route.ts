@@ -189,32 +189,42 @@ REGRAS CRÍTICAS DE CAMPEONATO:
 Texto:
 ${textoBruto}`;
 
-      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
-      const geminiResponse = await fetch(geminiUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: promptGemini }] }],
-          generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 }
-        })
-      });
-
-      if (geminiResponse.ok) {
-        const geminiData = await geminiResponse.json();
-        const txt = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+      const modelos = ['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+      for (const modelo of modelos) {
         try {
-          const rawGemini = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
-          jogosExtraidos = rawGemini.map((j: any) => {
-            const { campeonato, fase } = extrairCampeonatoEFase(j.campeonato);
-            return {
-              ...j,
-              campeonato,
-              fase: j.fase || fase,
-              divisao: null,
-            };
+          const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${process.env.GEMINI_API_KEY}`;
+          const geminiResponse = await fetch(geminiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: promptGemini }] }],
+              generationConfig: { responseMimeType: "application/json", maxOutputTokens: 8192 }
+            })
           });
-        } catch {
-          jogosExtraidos = [];
+
+          if (geminiResponse.ok) {
+            const geminiData = await geminiResponse.json();
+            const txt = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+            try {
+              const rawGemini = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
+              if (Array.isArray(rawGemini) && rawGemini.length > 0) {
+                jogosExtraidos = rawGemini.map((j: any) => {
+                  const { campeonato, fase } = extrairCampeonatoEFase(j.campeonato);
+                  return {
+                    ...j,
+                    campeonato,
+                    fase: j.fase || fase,
+                    divisao: null,
+                  };
+                });
+                break;
+              }
+            } catch {
+              // continua para o próximo modelo caso o parse falhe
+            }
+          }
+        } catch (err) {
+          console.warn(`Tentativa de extração com ${modelo} falhou:`, err);
         }
       }
     }

@@ -91,8 +91,8 @@ REGRAS OBRIGATÓRIAS:
 5. LIMITE ESTRITO: O texto total não pode ultrapassar 230 caracteres (para sobrar espaço seguro no limite de 280 caracteres do X).
 6. Responda APENAS com o texto final do post, sem aspas, sem hashtags em excesso e sem explicações.`;
 
-    // Tentativa em cascata: gemini-2.5-flash -> gemini-2.0-flash -> gemini-1.5-flash
-    const modelos = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
+    // Tentativa em cascata: gemini-3.8-flash -> gemini-3.6-flash -> gemini-2.5-flash -> gemini-2.0-flash -> gemini-1.5-flash
+    const modelos = ['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
     let textoGerado = '';
 
     for (const modelo of modelos) {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import fs from 'fs/promises';
 import path from 'path';
 import CalendarioF1Client from '@/app/components/CalendarioF1Client';
+import AdSenseBlock from '@/app/components/ads/AdSenseBlock';
 
 export const metadata: Metadata = {
   title: "Fórmula 1: Classificação e Calendário | Agenda FC",
@@ -329,6 +330,9 @@ export default async function F1Page() {
       </div>
 
       <CalendarioF1Client calendario={calendario} />
+
+      {/* Bloco de Anúncio após as classificações e calendário */}
+      <AdSenseBlock />
     </div>
   );
 }

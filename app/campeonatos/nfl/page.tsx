@@ -4,6 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import RodadaNFLClient, { JogoNFL } from '@/app/components/RodadaNFLClient';
 import NFLLideres from '@/app/components/nfl/NFLLideres';
+import AdSenseBlock from '@/app/components/ads/AdSenseBlock';
 import { getLideresNFL } from '@/lib/services/nfl-service';
 
 export const metadata: Metadata = {

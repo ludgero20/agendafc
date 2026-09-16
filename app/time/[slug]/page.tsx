@@ -12,6 +12,7 @@ import TimeTransmissoes from '@/app/components/time/TimeTransmissoes';
 import TimeTabela from '@/app/components/time/TimeTabela';
 import TimeJogos from '@/app/components/time/TimeJogos';
 import TimeF1Info from '@/app/components/time/TimeF1Info';
+import AdSenseBlock from '@/app/components/ads/AdSenseBlock';
 
 export const revalidate = 3600;
 
@@ -42,6 +43,7 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
         <TimeHeader time={time} />
         <TimeTransmissoes jogosTV={jogosTV} time={time} />
         <TimeF1Info time={time} equipesF1={equipesF1} />
+        <AdSenseBlock />
       </div>
     );
   }
@@ -69,6 +71,7 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
         <TimeHeader time={time} />
         <TimeTransmissoes jogosTV={jogosTV} time={time} />
         <TimeTabela tabela={tabelaFiltrada} time={time} nomeDivisao={`Conferência ${confAlvo}`} />
+        <AdSenseBlock />
       </div>
     );
   }
@@ -99,6 +102,7 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
         <TimeTransmissoes jogosTV={jogosTV} time={time} />
         <TimeTabela tabela={tabelaFiltrada} time={time} nomeDivisao={divisaoAlvo || 'NFL'} />
         <TimeJogos finalizados={dadosJogos.finalizados} proximos={dadosJogos.proximos} time={time} />
+        <AdSenseBlock />
       </div>
     );
   }
@@ -140,6 +144,7 @@ export default async function TimePage({ params }: { params: Promise<{ slug: str
       <TimeTabela tabela={tabelaMapeada} time={time} nomeDivisao={time.competicaoNome} />
       {/* ⚽ BLOCO 3 RESTAURADO COM SUCESSO! */}
       <TimeJogos finalizados={jogosFut.finalizados} proximos={jogosFut.proximos} time={time} />
+      <AdSenseBlock />
     </div>
   );
 }

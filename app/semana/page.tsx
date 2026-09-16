@@ -2,6 +2,7 @@ import React from 'react';
 import fs from 'fs/promises';
 import path from 'path';
 import SemanaListClient from '../components/SemanaListClient';
+import AdSenseBlock from '../components/ads/AdSenseBlock';
 import { competicoesAtivasMap } from '@/lib/campeonatos';
 
 export const revalidate = 3600;
@@ -194,6 +195,9 @@ export default async function Semana() {
         campeonatosDisponiveis={campeonatosDisponiveis}
         competicoesAtivas={competicoesAtivas}
       />
+
+      {/* Bloco de Anúncio após a lista de jogos */}
+      <AdSenseBlock />
 
       <div className="text-center p-8 mt-8 bg-blue-50 border border-blue-200 rounded-xl">
         <h3 className="text-2xl font-bold text-blue-900 mb-2">
