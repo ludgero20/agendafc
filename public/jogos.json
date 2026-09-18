@@ -1213,6 +1213,18 @@
       "divisao": null,
       "evento_nome": null,
       "evento_descricao": null
+    },
+    {
+      "id": 68682,
+      "data": "2026-09-22",
+      "hora": "16h00",
+      "campeonato": "Champions League feminina",
+      "canal": "ESPN e Disney+",
+      "time1": "Real Madrid",
+      "time2": "PSG",
+      "divisao": null,
+      "evento_nome": null,
+      "evento_descricao": null
     }
   ]
 }
