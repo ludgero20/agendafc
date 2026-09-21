@@ -1,452 +1,603 @@
+// app/api/og/post-x/route.tsx
 import { ImageResponse } from 'next/og';
-import fs from 'fs/promises';
-import path from 'path';
-import { resolverEscudoTime, EscudoInfo } from '@/lib/escudos-helper';
+import { NextRequest } from 'next/server';
+import { resolverEscudoSeguro, gerarEscudoFallbackSvg } from '@/lib/escudos-helper';
 
 export const runtime = 'nodejs';
 
 type JogoPayload = {
-  time1: string;
-  time2: string;
+  id?: string | number;
+  data?: string;
   hora: string;
+  campeonato: string;
   canal: string;
-  campeonato?: string;
+  time1?: string | null;
+  time2?: string | null;
+  escudo1?: string | null;
+  escudo2?: string | null;
+  divisao?: string | null;
+  fase?: string | null;
+  evento_nome?: string | null;
+  evento_descricao?: string | null;
 };
 
-export async function GET(request: Request) {
-  try {
-    const { searchParams } = new URL(request.url);
-    const jogosParam = searchParams.get('jogos');
-    const dataTitulo = searchParams.get('dataTitulo') || 'JOGOS DE HOJE NA TV';
+async function gerarBannerResponse(titulo: string, jogosBrutos: JogoPayload[]) {
+  // Limita a exibição entre 2 e 6 itens
+  const jogos = (jogosBrutos || []).slice(0, 6);
 
-    let jogos: JogoPayload[] = [];
-    if (jogosParam) {
-      try {
-        jogos = JSON.parse(jogosParam);
-      } catch {
-        jogos = [];
-      }
-    }
+  // Pré-resolve todos os escudos em paralelo com timeout e fallback seguro
+  const jogosComEscudos = await Promise.all(
+    jogos.map(async (j) => {
+      const ehF1 = j.campeonato?.toLowerCase().includes('fórmula 1') || j.campeonato?.toLowerCase().includes('f1') || Boolean(j.evento_nome);
 
-    // Jogos de demonstração caso nenhum seja passado
-    if (!jogos || jogos.length === 0) {
-      jogos = [
-        { time1: 'Flamengo', time2: 'Palmeiras', hora: '16h00', canal: 'Globo, Premiere', campeonato: 'Brasileirão' },
-        { time1: 'Real Madrid', time2: 'Barcelona', hora: '17h00', canal: 'ESPN, Disney+', campeonato: 'La Liga' },
-        { time1: 'Corinthians', time2: 'São Paulo', hora: '18h30', canal: 'Premiere, CazéTV', campeonato: 'Brasileirão' },
-      ];
-    }
-
-    // Garante entre 2 e 4 jogos
-    const listaJogos = jogos.slice(0, 4);
-    const totalJogos = listaJogos.length;
-    const isGrid2x2 = totalJogos === 4;
-
-    // Carrega o escudo oficial da Agenda FC em Base64 (suporta .png, .jpg, .jpeg, .webp)
-    let escudoAgendaBase64: string | null = null;
-    for (const ext of ['png', 'jpg', 'jpeg', 'webp']) {
-      const p = path.join(process.cwd(), 'public', `escudo.${ext}`);
-      const buf = await fs.readFile(p).catch(() => null);
-      if (buf) {
-        const mime = ext === 'jpg' ? 'jpeg' : ext;
-        escudoAgendaBase64 = `data:image/${mime};base64,${buf.toString('base64')}`;
-        break;
-      }
-    }
-
-    // Resolução de escudos
-    const jogosResolvidos = listaJogos.map((j) => ({
-      ...j,
-      escudo1: resolverEscudoTime(j.time1),
-      escudo2: resolverEscudoTime(j.time2),
-    }));
-
-    // Renderizador de escudo (com suporte a imagem ou caixa estilizada com iniciais nativas em JSX)
-    const renderEscudo = (escudo: EscudoInfo, tamanho: number, fontSz: number) => {
-      if (!escudo.isFallback && escudo.url) {
-        return (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={escudo.url}
-            alt={escudo.nomeExibicao}
-            width={tamanho}
-            height={tamanho}
-            style={{
-              objectFit: 'contain',
-              borderRadius: '12px',
-            }}
-          />
-        );
+      if (ehF1) {
+        return {
+          ...j,
+          escudo1Base64: null,
+          escudo2Base64: null,
+          ehF1: true,
+        };
       }
 
-      // Fallback JSX nítido com as iniciais do clube
-      return (
+      const [escudo1Base64, escudo2Base64] = await Promise.all([
+        resolverEscudoSeguro(j.time1 || '', j.escudo1),
+        resolverEscudoSeguro(j.time2 || '', j.escudo2),
+      ]);
+
+      return {
+        ...j,
+        escudo1Base64,
+        escudo2Base64,
+        ehF1: false,
+      };
+    })
+  );
+
+  const totalJogos = jogosComEscudos.length;
+  // Configuração de grid de acordo com a quantidade
+  const ehGridDuplo = totalJogos >= 3;
+  const ehSeisJogos = totalJogos >= 5;
+
+  return new ImageResponse(
+    (
+      <div
+        style={{
+          width: '1200px',
+          height: '675px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'space-between',
+          backgroundImage: 'linear-gradient(135deg, #020617 0%, #0a1128 45%, #032042 100%)',
+          color: '#ffffff',
+          fontFamily: 'sans-serif',
+          padding: '36px 44px',
+          boxSizing: 'border-box',
+          position: 'relative',
+        }}
+      >
+        {/* ELEMENTOS DECORATIVOS DE FUNDO */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '-80px',
+            right: '-80px',
+            width: '320px',
+            height: '320px',
+            borderRadius: '160px',
+            background: 'radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(2, 6, 23, 0) 70%)',
+            display: 'flex',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '-60px',
+            left: '-60px',
+            width: '280px',
+            height: '280px',
+            borderRadius: '140px',
+            background: 'radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(2, 6, 23, 0) 70%)',
+            display: 'flex',
+          }}
+        />
+
+        {/* 1. CABEÇALHO */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            width: `${tamanho}px`,
-            height: `${tamanho}px`,
-            borderRadius: '14px',
-            backgroundColor: '#1e293b',
-            border: '2px solid #334155',
-            color: '#38bdf8',
-            fontWeight: 900,
-            fontSize: `${fontSz}px`,
-            letterSpacing: '1px',
-          }}
-        >
-          {escudo.iniciais}
-        </div>
-      );
-    };
-
-    // Renderizador de um único card de jogo
-    const renderCard = (jogo: typeof jogosResolvidos[0], idx: number) => {
-      const escudoSize = isGrid2x2 ? 52 : totalJogos === 2 ? 68 : 56;
-      const fontInitials = isGrid2x2 ? 16 : totalJogos === 2 ? 22 : 18;
-      const timeFontSize = isGrid2x2 ? '20px' : totalJogos === 2 ? '26px' : '22px';
-
-      return (
-        <div
-          key={idx}
-          style={{
-            display: 'flex',
-            flexDirection: isGrid2x2 ? 'column' : 'row',
             justifyContent: 'space-between',
-            alignItems: 'center',
-            backgroundColor: 'rgba(15, 23, 42, 0.90)',
-            border: '1px solid rgba(51, 65, 85, 0.7)',
-            borderRadius: '20px',
-            padding: isGrid2x2 ? '20px 24px' : totalJogos === 2 ? '28px 32px' : '18px 28px',
-            flex: 1,
-            width: isGrid2x2 ? '548px' : '100%',
-            height: '100%',
+            width: '100%',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
+            paddingBottom: '18px',
           }}
         >
-          {/* Lado Esquerdo / Topo: Confronto e Escudos */}
+          {/* BADGE DE TÍTULO / DATA */}
           <div
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: isGrid2x2 ? '14px' : '24px',
-              flex: isGrid2x2 ? 'none' : '1',
-              width: isGrid2x2 ? '100%' : 'auto',
-              justifyContent: isGrid2x2 ? 'space-between' : 'flex-start',
+              backgroundColor: 'rgba(59, 130, 246, 0.18)',
+              border: '1px solid rgba(96, 165, 250, 0.4)',
+              borderRadius: '9999px',
+              padding: '8px 20px',
             }}
           >
-            {/* Time 1 */}
             <div
               style={{
+                width: '10px',
+                height: '10px',
+                borderRadius: '5px',
+                backgroundColor: '#38bdf8',
+                marginRight: '10px',
                 display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                flex: 1,
-                justifyContent: 'flex-start',
+              }}
+            />
+            <span
+              style={{
+                fontSize: '18px',
+                fontWeight: 800,
+                color: '#e0f2fe',
+                letterSpacing: '1px',
+                textTransform: 'uppercase',
               }}
             >
-              {renderEscudo(jogo.escudo1, escudoSize, fontInitials)}
-              <span
-                style={{
-                  fontSize: timeFontSize,
-                  fontWeight: 800,
-                  color: '#ffffff',
-                  maxWidth: isGrid2x2 ? '145px' : '210px',
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                }}
-              >
-                {jogo.time1}
-              </span>
-            </div>
+              {titulo}
+            </span>
+          </div>
 
-            {/* "X" central */}
+          {/* LOGO AGENDA FC */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '32px',
-                height: '32px',
-                borderRadius: '10px',
-                backgroundColor: 'rgba(30, 41, 59, 0.9)',
-                border: '1px solid rgba(71, 85, 105, 0.5)',
-                fontSize: '13px',
-                fontWeight: 900,
-                color: '#94a3b8',
-              }}
-            >
-              X
-            </div>
-
-            {/* Time 2 */}
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                flex: 1,
-                justifyContent: 'flex-end',
-              }}
-            >
-              <span
-                style={{
-                  fontSize: timeFontSize,
-                  fontWeight: 800,
-                  color: '#ffffff',
-                  maxWidth: isGrid2x2 ? '145px' : '210px',
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
-                  textAlign: 'right',
-                }}
-              >
-                {jogo.time2}
-              </span>
-              {renderEscudo(jogo.escudo2, escudoSize, fontInitials)}
-            </div>
-          </div>
-
-          {/* Lado Direito / Base: Horário, Campeonato e Canais */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: isGrid2x2 ? 'space-between' : 'flex-end',
-              gap: isGrid2x2 ? '12px' : '20px',
-              width: isGrid2x2 ? '100%' : 'auto',
-              borderTop: isGrid2x2 ? '1px solid rgba(51, 65, 85, 0.5)' : 'none',
-              paddingTop: isGrid2x2 ? '14px' : '0',
-              marginTop: isGrid2x2 ? '12px' : '0',
-            }}
-          >
-            {/* Horário */}
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                backgroundColor: '#2563eb',
+                width: '42px',
+                height: '42px',
                 borderRadius: '12px',
-                padding: isGrid2x2 ? '6px 14px' : '8px 18px',
-                fontSize: isGrid2x2 ? '15px' : totalJogos === 2 ? '18px' : '16px',
-                fontWeight: 900,
-                color: '#ffffff',
+                backgroundColor: '#2563eb',
+                marginRight: '12px',
+                boxShadow: '0 4px 14px rgba(37, 99, 235, 0.4)',
               }}
             >
-              <span>🕒</span>
-              <span>{jogo.hora}</span>
+              <span style={{ fontSize: '22px' }}>⚽</span>
             </div>
-
-            {/* Campeonato e Canal */}
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'flex-end',
-                gap: '3px',
-              }}
-            >
-              {jogo.campeonato && (
-                <span
-                  style={{
-                    fontSize: isGrid2x2 ? '12px' : '13px',
-                    fontWeight: 700,
-                    color: '#38bdf8',
-                    letterSpacing: '0.5px',
-                  }}
-                >
-                  {jogo.campeonato}
-                </span>
-              )}
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span
                 style={{
-                  fontSize: isGrid2x2 ? '14px' : totalJogos === 2 ? '16px' : '15px',
-                  fontWeight: 700,
-                  color: '#e2e8f0',
-                  maxWidth: isGrid2x2 ? '240px' : '280px',
-                  whiteSpace: 'nowrap',
-                  overflow: 'hidden',
-                  textOverflow: 'ellipsis',
+                  fontSize: '26px',
+                  fontWeight: 900,
+                  letterSpacing: '1.5px',
+                  color: '#ffffff',
                 }}
               >
-                📺 {jogo.canal}
+                AGENDA<span style={{ color: '#38bdf8' }}>FC</span>
+              </span>
+              <span
+                style={{
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  color: '#94a3b8',
+                  letterSpacing: '1px',
+                  marginTop: '-3px',
+                }}
+              >
+                GUIA OFICIAL DE TRANSMISSÕES
               </span>
             </div>
           </div>
         </div>
-      );
-    };
 
-    return new ImageResponse(
-      (
+        {/* 2. ÁREA CENTRAL (JOGOS / SESSÕES) */}
         <div
           style={{
-            height: '100%',
-            width: '100%',
             display: 'flex',
-            flexDirection: 'column',
+            flexWrap: 'wrap',
             justifyContent: 'space-between',
-            backgroundColor: '#030712',
-            backgroundImage: 'radial-gradient(circle at 50% 0%, #1e1b4b 0%, #030712 75%)',
-            padding: '32px 44px',
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-            color: '#f8fafc',
+            alignContent: 'center',
+            width: '100%',
+            height: '460px',
+            gap: ehSeisJogos ? '10px' : '14px',
           }}
         >
-          {/* TOPO: Logotipo e Badge da Data */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              width: '100%',
-              borderBottom: '1px solid rgba(51, 65, 85, 0.6)',
-              paddingBottom: '18px',
-            }}
-          >
-            {/* Logo */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-              {escudoAgendaBase64 ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={escudoAgendaBase64}
-                  alt="Escudo Agenda FC"
-                  width={52}
-                  height={52}
+          {jogosComEscudos.map((jogo, index) => {
+            const cardWidth = ehGridDuplo ? '544px' : '100%';
+            const cardHeight = ehSeisJogos ? '135px' : totalJogos <= 2 ? '210px' : '195px';
+
+            if (jogo.ehF1) {
+              // CARD DE FÓRMULA 1
+              return (
+                <div
+                  key={index}
                   style={{
-                    objectFit: 'contain',
-                    borderRadius: '12px',
+                    width: cardWidth,
+                    height: cardHeight,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                    border: '1px solid rgba(239, 68, 68, 0.35)',
+                    borderRadius: '18px',
+                    padding: ehSeisJogos ? '12px 18px' : '18px 24px',
+                    boxSizing: 'border-box',
+                    position: 'relative',
                   }}
-                />
-              ) : (
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <span
+                        style={{
+                          backgroundColor: '#dc2626',
+                          color: '#ffffff',
+                          fontWeight: 900,
+                          fontSize: '12px',
+                          padding: '3px 8px',
+                          borderRadius: '6px',
+                          marginRight: '10px',
+                        }}
+                      >
+                        F1
+                      </span>
+                      <span
+                        style={{
+                          fontSize: ehSeisJogos ? '14px' : '16px',
+                          fontWeight: 700,
+                          color: '#e2e8f0',
+                        }}
+                      >
+                        {jogo.evento_descricao || 'Fórmula 1'}
+                      </span>
+                    </div>
+                    <span
+                      style={{
+                        backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                        color: '#38bdf8',
+                        fontSize: ehSeisJogos ? '13px' : '15px',
+                        fontWeight: 800,
+                        padding: '4px 10px',
+                        borderRadius: '8px',
+                      }}
+                    >
+                      🕒 {jogo.hora}
+                    </span>
+                  </div>
+
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      margin: '4px 0',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '20px' : '26px',
+                        fontWeight: 900,
+                        color: '#ffffff',
+                        textAlign: 'center',
+                      }}
+                    >
+                      🏁 {jogo.evento_nome || 'Sessão Oficial'}
+                    </span>
+                  </div>
+
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                      paddingTop: '6px',
+                    }}
+                  >
+                    <span style={{ fontSize: '12px', color: '#94a3b8', fontWeight: 600 }}>
+                      {jogo.data ? `📅 ${jogo.data.split('-').reverse().slice(0, 2).join('/')}` : ''}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '12px' : '13px',
+                        fontWeight: 700,
+                        color: '#67e8f9',
+                        backgroundColor: 'rgba(6, 182, 212, 0.12)',
+                        padding: '2px 8px',
+                        borderRadius: '6px',
+                      }}
+                    >
+                      📺 {jogo.canal || 'Bandeirantes'}
+                    </span>
+                  </div>
+                </div>
+              );
+            }
+
+            // CARD PADRÃO DE JOGO (Futebol / NFL / NBA)
+            return (
+              <div
+                key={index}
+                style={{
+                  width: cardWidth,
+                  height: cardHeight,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  backgroundColor: 'rgba(15, 23, 42, 0.75)',
+                  border: '1px solid rgba(255, 255, 255, 0.1)',
+                  borderRadius: '18px',
+                  padding: ehSeisJogos ? '10px 16px' : '14px 20px',
+                  boxSizing: 'border-box',
+                }}
+              >
+                {/* LINHA SUPERIOR: CAMPEONATO & HORÁRIO */}
                 <div
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '46px',
-                    height: '46px',
-                    borderRadius: '12px',
-                    backgroundColor: '#2563eb',
-                    fontSize: '24px',
+                    justifyContent: 'space-between',
                   }}
                 >
-                  ⚽
-                </div>
-              )}
-              <div style={{ display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: '26px', fontWeight: 900, letterSpacing: '-0.5px', color: '#ffffff' }}>
-                  AGENDA <span style={{ color: '#38bdf8' }}>FC</span>
-                </span>
-                <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '1.5px', color: '#94a3b8' }}>
-                  GUIA DE TRANSMISSÕES AO VIVO
-                </span>
-              </div>
-            </div>
+                  <span
+                    style={{
+                      fontSize: ehSeisJogos ? '12px' : '13px',
+                      fontWeight: 800,
+                      color: '#93c5fd',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px',
+                    }}
+                  >
+                    {jogo.campeonato}
+                    {jogo.fase ? ` • ${jogo.fase}` : ''}
+                  </span>
 
-            {/* Badge da Data */}
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                backgroundColor: 'rgba(37, 99, 235, 0.15)',
-                border: '1px solid rgba(56, 189, 248, 0.4)',
-                borderRadius: '9999px',
-                padding: '8px 22px',
-              }}
-            >
-              <div style={{ width: '8px', height: '8px', borderRadius: '9999px', backgroundColor: '#38bdf8' }} />
-              <span style={{ fontSize: '14px', fontWeight: 800, letterSpacing: '1px', color: '#e0f2fe' }}>
-                {dataTitulo.toUpperCase()}
-              </span>
-            </div>
+                  <span
+                    style={{
+                      backgroundColor: 'rgba(56, 189, 248, 0.15)',
+                      color: '#38bdf8',
+                      fontSize: ehSeisJogos ? '12px' : '14px',
+                      fontWeight: 800,
+                      padding: '3px 9px',
+                      borderRadius: '8px',
+                    }}
+                  >
+                    {jogo.hora}
+                  </span>
+                </div>
+
+                {/* LINHA CENTRAL: CONFRONTO COM ESCUDOS */}
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                    padding: '0 6px',
+                  }}
+                >
+                  {/* TIME 1 */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      flex: 1,
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {jogo.escudo1Base64 && (
+                      <img
+                        src={jogo.escudo1Base64}
+                        alt=""
+                        width={ehSeisJogos ? 38 : 50}
+                        height={ehSeisJogos ? 38 : 50}
+                        style={{
+                          objectFit: 'contain',
+                          marginRight: '12px',
+                          borderRadius: '8px',
+                        }}
+                      />
+                    )}
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '16px' : totalJogos <= 2 ? '22px' : '18px',
+                        fontWeight: 800,
+                        color: '#ffffff',
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                      }}
+                    >
+                      {jogo.time1}
+                    </span>
+                  </div>
+
+                  {/* X CENTRAL */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      padding: '0 12px',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '12px' : '14px',
+                        fontWeight: 900,
+                        color: '#64748b',
+                      }}
+                    >
+                      X
+                    </span>
+                  </div>
+
+                  {/* TIME 2 */}
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'flex-end',
+                      flex: 1,
+                      overflow: 'hidden',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '16px' : totalJogos <= 2 ? '22px' : '18px',
+                        fontWeight: 800,
+                        color: '#ffffff',
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                        textAlign: 'right',
+                        marginRight: '12px',
+                      }}
+                    >
+                      {jogo.time2}
+                    </span>
+                    {jogo.escudo2Base64 && (
+                      <img
+                        src={jogo.escudo2Base64}
+                        alt=""
+                        width={ehSeisJogos ? 38 : 50}
+                        height={ehSeisJogos ? 38 : 50}
+                        style={{
+                          objectFit: 'contain',
+                          borderRadius: '8px',
+                        }}
+                      />
+                    )}
+                  </div>
+                </div>
+
+                {/* LINHA INFERIOR: TRANSMISSÃO */}
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    borderTop: '1px solid rgba(255, 255, 255, 0.08)',
+                    paddingTop: '6px',
+                  }}
+                >
+                  <span style={{ fontSize: '11px', color: '#64748b', fontWeight: 600 }}>
+                    {jogo.data ? `📅 ${jogo.data.split('-').reverse().slice(0, 2).join('/')}` : ''}
+                  </span>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                      border: '1px solid rgba(255, 255, 255, 0.06)',
+                      borderRadius: '6px',
+                      padding: '2px 8px',
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: ehSeisJogos ? '11px' : '12px',
+                        fontWeight: 700,
+                        color: '#94a3b8',
+                      }}
+                    >
+                      📺 {jogo.canal || 'A definir'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 3. RODAPÉ */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%',
+            backgroundColor: 'rgba(2, 6, 23, 0.85)',
+            border: '1px solid rgba(59, 130, 246, 0.3)',
+            borderRadius: '14px',
+            padding: '10px 24px',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span style={{ fontSize: '14px', color: '#94a3b8', fontWeight: 600 }}>
+              Quer ver todos os jogos e onde assistir?
+            </span>
           </div>
 
-          {/* CORPO: Distribuição vertical balanceada */}
-          {isGrid2x2 ? (
-            <div
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <span
               style={{
-                display: 'flex',
-                flexDirection: 'column',
-                flex: 1,
-                justifyContent: 'space-between',
-                gap: '16px',
-                marginTop: '16px',
-                marginBottom: '16px',
+                fontSize: '16px',
+                fontWeight: 900,
+                color: '#38bdf8',
+                letterSpacing: '0.5px',
               }}
             >
-              {/* Linha 1 */}
-              <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', flex: 1 }}>
-                {renderCard(jogosResolvidos[0], 0)}
-                {renderCard(jogosResolvidos[1], 1)}
-              </div>
-              {/* Linha 2 */}
-              <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', flex: 1 }}>
-                {renderCard(jogosResolvidos[2], 2)}
-                {renderCard(jogosResolvidos[3], 3)}
-              </div>
-            </div>
-          ) : (
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                flex: 1,
-                justifyContent: 'space-between',
-                gap: '16px',
-                marginTop: '16px',
-                marginBottom: '16px',
-              }}
-            >
-              {jogosResolvidos.map((jogo, idx) => renderCard(jogo, idx))}
-            </div>
-          )}
-
-          {/* RODAPÉ: Chamada de ação e link oficial */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              width: '100%',
-              backgroundColor: 'rgba(30, 41, 59, 0.5)',
-              border: '1px solid rgba(51, 65, 85, 0.5)',
-              borderRadius: '14px',
-              padding: '10px 24px',
-            }}
-          >
-            <span style={{ fontSize: '13px', fontWeight: 600, color: '#94a3b8' }}>
-              Grade atualizada com todos os canais de TV e streaming
+              agendafc.com.br
             </span>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '13px', fontWeight: 700, color: '#cbd5e1' }}>
-                Acesse a programação completa:
-              </span>
-              <span
-                style={{
-                  fontSize: '15px',
-                  fontWeight: 900,
-                  color: '#38bdf8',
-                  letterSpacing: '0.5px',
-                }}
-              >
-                agendafc.com.br
-              </span>
-            </div>
+            <span style={{ fontSize: '14px', color: '#60a5fa', marginLeft: '6px' }}>↗</span>
           </div>
         </div>
-      ),
-      {
-        width: 1200,
-        height: 675,
+      </div>
+    ),
+    {
+      width: 1200,
+      height: 675,
+    }
+  );
+}
+
+// Manipulador GET (permite usar diretamente em <img src="/api/og/post-x?..." /> ou baixar)
+export async function GET(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const titulo = searchParams.get('titulo') || searchParams.get('dataTitulo') || 'JOGOS EM DESTAQUE NA TV';
+    const jogosParam = searchParams.get('jogos');
+
+    let jogos: JogoPayload[] = [];
+    if (jogosParam) {
+      try {
+        jogos = JSON.parse(decodeURIComponent(jogosParam));
+      } catch {
+        try {
+          jogos = JSON.parse(jogosParam);
+        } catch {
+          jogos = [];
+        }
       }
-    );
+    }
+
+    return await gerarBannerResponse(titulo, jogos);
   } catch (error: any) {
-    console.error('Erro ao gerar imagem para o X:', error);
-    return new Response(`Erro ao renderizar imagem: ${error.message}`, { status: 500 });
+    console.error('Erro ao gerar banner OG:', error);
+    return new Response(`Erro ao gerar imagem: ${error.message}`, { status: 500 });
+  }
+}
+
+// Manipulador POST (para payloads grandes)
+export async function POST(request: NextRequest) {
+  try {
+    const body = await request.json();
+    const titulo = body.titulo || body.dataTitulo || 'JOGOS EM DESTAQUE NA TV';
+    const jogos: JogoPayload[] = body.jogos || [];
+
+    return await gerarBannerResponse(titulo, jogos);
+  } catch (error: any) {
+    console.error('Erro ao processar POST banner OG:', error);
+    return new Response(`Erro ao gerar imagem: ${error.message}`, { status: 500 });
   }
 }

@@ -3,149 +3,136 @@ import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
-type JogoSimples = {
-  time1: string;
-  time2: string;
-  hora: string;
-  canal: string;
+type JogoEntrada = {
+  time1?: string | null;
+  time2?: string | null;
   campeonato?: string;
+  hora: string;
+  canal?: string;
+  data?: string;
+  evento_nome?: string | null;
+  evento_descricao?: string | null;
 };
 
-// Calcula a contagem real de caracteres no X considerando encurtamento t.co (23 caracteres por URL)
-function calcularCaracteresX(texto: string): number {
-  const textoComUrlPadrao = texto.replace(/(?:https?:\/\/)?agendafc\.com\.br[^\s]*/gi, '12345678901234567890123');
-  return textoComUrlPadrao.length;
-}
+// Fallback inteligente caso a API do Gemini esteja fora ou sem chave
+function gerarCopyFallback(jogos: JogoEntrada[], titulo?: string): string {
+  const primeiro = jogos[0];
+  const ehF1 = jogos.some((j) => (j.campeonato || '').toLowerCase().includes('f1') || Boolean(j.evento_nome));
+  const ehNFL = jogos.some((j) => (j.campeonato || '').toUpperCase().includes('NFL'));
 
-// Gerador de fallback elegante caso a API do Gemini esteja temporariamente indisponível
-function gerarCopyFallback(jogos: JogoSimples[], dataLabel: string): string {
-  const diaTexto = dataLabel === 'amanha' ? 'amanhã' : 'hoje';
-  const jogoPrincipal = jogos[0];
-  const outrosJogos = jogos.slice(1);
+  let cabecalho = '⚽ JOGOS IMPERDÍVEIS NA TV!';
+  if (ehF1) cabecalho = '🏎️ FÓRMULA 1 NA TV!';
+  else if (ehNFL) cabecalho = '🏈 RODADA DA NFL!';
 
-  let linhas = [
-    `🔥 Dia de jogão ${diaTexto}! ${jogoPrincipal.time1} x ${jogoPrincipal.time2} às ${jogoPrincipal.hora} (${jogoPrincipal.canal})`
-  ];
+  let linhas: string[] = [];
+  jogos.slice(0, 3).forEach((j) => {
+    if (j.time1 && j.time2) {
+      linhas.push(`• ${j.hora} ${j.time1} x ${j.time2} (${j.canal || 'TV'})`);
+    } else if (j.evento_nome) {
+      linhas.push(`• ${j.hora} ${j.evento_nome} (${j.canal || 'Band'})`);
+    }
+  });
 
-  for (const j of outrosJogos) {
-    linhas.push(`• ${j.time1} x ${j.time2} às ${j.hora} | ${j.canal}`);
+  const cta = 'Guia completo em agendafc.com.br';
+  let tweet = `${cabecalho}\n\n${linhas.join('\n')}\n\n👉 ${cta}`;
+
+  if (tweet.length > 275) {
+    tweet = `${cabecalho}\n\n${linhas.slice(0, 2).join('\n')}\n\n👉 ${cta}`;
   }
 
-  linhas.push(`📲 Confira o guia completo em agendafc.com.br`);
-
-  let copy = linhas.join('\n');
-  if (calcularCaracteresX(copy) > 275) {
-    // Versão ultra-compacta
-    copy = `⚽ Jogos de ${diaTexto} na TV:\n` +
-      jogos.map(j => `${j.time1} x ${j.time2} (${j.hora} - ${j.canal})`).join('\n') +
-      `\n📲 Veja tudo em agendafc.com.br`;
-  }
-
-  return copy;
+  return tweet;
 }
 
 export async function POST(request: Request) {
   try {
-    const { senha, jogos, dataLabel } = await request.json();
+    const { senha, jogos, contexto } = await request.json();
 
     const senhaCorreta = process.env.ADMIN_PASSWORD;
-    if (!senhaCorreta || senha !== senhaCorreta) {
+    if (senhaCorreta && senha !== senhaCorreta) {
       return NextResponse.json({ success: false, error: 'Acesso negado: Senha incorreta.' }, { status: 401 });
     }
 
-    if (!Array.isArray(jogos) || jogos.length < 1) {
-      return NextResponse.json({ success: false, error: 'Selecione pelo menos um jogo para gerar a legenda.' }, { status: 400 });
+    if (!Array.isArray(jogos) || jogos.length === 0) {
+      return NextResponse.json({ success: false, error: 'Selecione pelo menos um jogo para gerar o post.' }, { status: 400 });
     }
 
-    const apiKey = process.env.GEMINI_API_KEY;
-    const diaReferencia = dataLabel === 'amanha' ? 'amanhã' : 'hoje';
+    const ehF1 = jogos.some((j: JogoEntrada) => (j.campeonato || '').toLowerCase().includes('f1') || Boolean(j.evento_nome));
+    const ehNFL = jogos.some((j: JogoEntrada) => (j.campeonato || '').toUpperCase().includes('NFL'));
 
-    // Se não tiver chave de API configurada, utiliza o gerador inteligente local
-    if (!apiKey) {
-      const copyLocal = gerarCopyFallback(jogos, dataLabel);
-      const chars = calcularCaracteresX(copyLocal);
-      return NextResponse.json({
-        success: true,
-        texto: copyLocal,
-        caracteres: chars,
-        validoParaX: chars <= 280,
-        origem: 'template_local'
-      });
-    }
-
+    // Resumo dos jogos formatado para o prompt
     const listaFormatada = jogos
-      .map((j: JogoSimples, idx: number) => `${idx + 1}. ${j.time1} x ${j.time2} às ${j.hora} (${j.canal}) - ${j.campeonato || 'Futebol'}`)
+      .map((j: JogoEntrada) => {
+        if (j.time1 && j.time2) {
+          return `${j.time1} x ${j.time2} | ${j.campeonato || 'Futebol'} | ${j.hora} | ${j.canal || 'TV'}`;
+        }
+        return `${j.evento_nome || 'Sessão'} (${j.evento_descricao || 'F1'}) | ${j.hora} | ${j.canal || 'TV'}`;
+      })
       .join('\n');
 
-    const prompt = `Você é o social media do site "Agenda FC" (agendafc.com.br), um guia rápido de onde assistir esportes ao vivo.
-Crie um tweet curto, dinâmico e provocativo sobre os jogos de ${diaReferencia}.
+    let textoFinal = '';
 
-JOGOS SELECIONADOS:
+    if (process.env.GEMINI_API_KEY) {
+      const prompt = `Você é um social media esportivo de elite no X (Twitter) da página Agenda FC (agendafc.com.br).
+Crie um tweet VIRAL, magnético e direto ao ponto divulgando os jogos/eventos esportivos selecionados abaixo.
+
+LISTA DE EVENTOS:
 ${listaFormatada}
+CONTEXTO ADICIONAL: ${contexto || 'Jogos selecionados para a programação'}
 
-REGRAS OBRIGATÓRIAS:
-1. Tom: Torcedor brasileiro, engajador e direto ao ponto.
-2. Destaque o principal confronto com um gancho provocativo na primeira linha.
-3. Mencione os horários e canais de forma extremamente compacta.
-4. Finalize OBRIGATORIAMENTE com: "Confira todos os jogos em agendafc.com.br"
-5. LIMITE ESTRITO: O texto total não pode ultrapassar 230 caracteres (para sobrar espaço seguro no limite de 280 caracteres do X).
-6. Responda APENAS com o texto final do post, sem aspas, sem hashtags em excesso e sem explicações.`;
+REGRAS RÍGIDAS & OBRIGATÓRIAS:
+1. LIMITE MÁXIMO ABSOLUTO: 260 CARACTERES no total! (Muito importante: tweets com mais de 270 serão rejeitados).
+2. Comece com um gancho forte esportivo (ex: destaque o maior clássico ou o GP/rodada) usando 1 ou 2 emojis relevantes.
+3. Mencione os horários e confrontos de forma ultra concisa (ex: "16h Fla x Flu (Globo)").
+4. Finalize OBRIGATORIAMENTE com a chamada: "👉 Guia em agendafc.com.br" ou "👉 Mais jogos: agendafc.com.br".
+5. NÃO use hashtags ou limite a apenas 1 tag curta.
+6. Retorne APENAS o texto do tweet, sem aspas e sem explicações.`;
 
-    // Tentativa em cascata: gemini-3.8-flash -> gemini-3.6-flash -> gemini-2.5-flash -> gemini-2.0-flash -> gemini-1.5-flash
-    const modelos = ['gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
-    let textoGerado = '';
+      const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`;
+      const geminiRes = await fetch(geminiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.7,
+            maxOutputTokens: 250,
+          },
+        }),
+      });
 
-    for (const modelo of modelos) {
-      try {
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent?key=${apiKey}`;
-        const res = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: {
-              temperature: 0.7,
-              maxOutputTokens: 300,
-            }
-          })
-        });
-
-        if (res.ok) {
-          const data = await res.json();
-          const resposta = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (resposta && resposta.trim().length > 10) {
-            textoGerado = resposta.trim();
-            break;
-          }
+      if (geminiRes.ok) {
+        const geminiData = await geminiRes.json();
+        const cand = geminiData.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (cand && typeof cand === 'string') {
+          textoFinal = cand.trim().replace(/^["']|["']$/g, '');
         }
-      } catch (err) {
-        console.warn(`Tentativa com ${modelo} falhou, tentando próximo...`, err);
       }
     }
 
-    // Se todas as chamadas à API falharem, aciona o fallback de segurança
-    if (!textoGerado) {
-      textoGerado = gerarCopyFallback(jogos, dataLabel);
+    // Se a IA não respondeu ou estourou, usa o gerador estruturado
+    if (!textoFinal) {
+      textoFinal = gerarCopyFallback(jogos, contexto);
     }
 
-    // Garante que o link do site esteja presente
-    if (!textoGerado.toLowerCase().includes('agendafc.com.br')) {
-      textoGerado += '\n\nConfira todos os jogos em agendafc.com.br';
+    // Garante garantia matemática de tamanho <= 280 caracteres
+    if (textoFinal.length > 275) {
+      // Ajuste de emergência caso o Gemini ultrapasse o limite
+      const cta = '\n👉 Guia: agendafc.com.br';
+      const tamanhoMax = 275 - cta.length;
+      textoFinal = textoFinal.slice(0, tamanhoMax).trim() + '...' + cta;
     }
 
-    const totalCharsX = calcularCaracteresX(textoGerado);
+    const caracteres = textoFinal.length;
+    const validoParaX = caracteres <= 280;
 
     return NextResponse.json({
-      success: true,
-      texto: textoGerado,
-      caracteres: totalCharsX,
-      validoParaX: totalCharsX <= 280,
-      origem: 'gemini'
+      sucesso: true,
+      texto: textoFinal,
+      caracteres,
+      validoParaX,
     });
-
   } catch (error: any) {
-    console.error('Erro ao gerar copy do post:', error);
-    return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+    console.error('Erro em gerar-copy-post:', error);
+    return NextResponse.json({ sucesso: false, error: error.message }, { status: 500 });
   }
 }
-

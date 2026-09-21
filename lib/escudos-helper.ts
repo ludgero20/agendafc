@@ -3,7 +3,7 @@ import { timesConfig, nomesTimesBrasil } from './times';
 
 // Normaliza strings para busca sem acentos e minúsculas
 export function normalizar(texto: string): string {
-  return texto
+  return (texto || '')
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
@@ -193,4 +193,86 @@ export function resolverEscudoTime(nomeBruto: string): EscudoInfo {
     nomeExibicao: nomeAmigavel,
     iniciais: extrairIniciais(nomeAmigavel)
   };
+}
+
+/**
+ * Encontra a URL do escudo cadastrado para o nome do time/franquia.
+ */
+export function obterEscudoDoTime(nomeTime: string): string | null {
+  const info = resolverEscudoTime(nomeTime);
+  return info.url || null;
+}
+
+/**
+ * Gera um SVG elegante em Data URI com as iniciais do time caso o escudo externo falhe.
+ */
+export function gerarEscudoFallbackSvg(nomeTime: string): string {
+  const limpo = (nomeTime || 'TIME').trim();
+  const iniciais = extrairIniciais(limpo);
+
+  // Cores dinâmicas agradáveis baseadas no hash do nome
+  const cores = [
+    { bg: '#1e293b', border: '#3b82f6', text: '#ffffff' },
+    { bg: '#1e1b4b', border: '#6366f1', text: '#ffffff' },
+    { bg: '#064e3b', border: '#10b981', text: '#ffffff' },
+    { bg: '#701a75', border: '#ec4899', text: '#ffffff' },
+    { bg: '#7c2d12', border: '#f97316', text: '#ffffff' },
+    { bg: '#172554', border: '#0284c7', text: '#ffffff' },
+  ];
+  let hash = 0;
+  for (let i = 0; i < limpo.length; i++) {
+    hash = (hash + limpo.charCodeAt(i) * (i + 1)) % cores.length;
+  }
+  const tema = cores[hash];
+
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+    <circle cx="48" cy="48" r="44" fill="${tema.bg}" stroke="${tema.border}" stroke-width="3"/>
+    <text x="48" y="55" dominant-baseline="middle" text-anchor="middle" fill="${tema.text}" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" letter-spacing="1">${iniciais}</text>
+  </svg>`;
+
+  return `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+}
+
+/**
+ * Retorna o escudo em Base64 pronto para o next/og (Satori).
+ * Se a URL externa falhar, responder 403/404 ou demorar mais de 1.8s, cai graciosamente no SVG.
+ */
+export async function resolverEscudoSeguro(nomeTime: string, urlInformada?: string | null): Promise<string> {
+  const url = urlInformada || obterEscudoDoTime(nomeTime);
+
+  if (!url || !url.startsWith('http')) {
+    return gerarEscudoFallbackSvg(nomeTime);
+  }
+
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 1800);
+
+    const res = await fetch(url, {
+      signal: controller.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        Accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+      },
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!res.ok) {
+      return gerarEscudoFallbackSvg(nomeTime);
+    }
+
+    const arrayBuffer = await res.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const contentType = res.headers.get('content-type') || 'image/png';
+
+    // Se a imagem for SVG vinda de URL externa
+    if (contentType.includes('svg')) {
+      return `data:image/svg+xml;base64,${buffer.toString('base64')}`;
+    }
+
+    return `data:${contentType};base64,${buffer.toString('base64')}`;
+  } catch {
+    return gerarEscudoFallbackSvg(nomeTime);
+  }
 }
