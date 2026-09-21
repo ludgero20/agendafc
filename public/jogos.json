@@ -121,6 +121,54 @@
       "evento_descricao": null
     },
     {
+      "id": 22450,
+      "data": "2026-09-23",
+      "hora": "13h45",
+      "campeonato": "Champions League Feminina",
+      "canal": "ESPN 4 e Disney+",
+      "time1": "Servette (F)",
+      "time2": "OL Lyonnes (F)",
+      "divisao": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 10868,
+      "data": "2026-09-23",
+      "hora": "13h45",
+      "campeonato": "Champions League Feminina",
+      "canal": "Disney+",
+      "time1": "OH Leuven (F)",
+      "time2": "Roma (F)",
+      "divisao": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 38166,
+      "data": "2026-09-23",
+      "hora": "16h00",
+      "campeonato": "Champions League Feminina",
+      "canal": "ESPN e Disney+",
+      "time1": "Barcelona (F)",
+      "time2": "Paris FC (F)",
+      "divisao": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
+      "id": 18588,
+      "data": "2026-09-23",
+      "hora": "16h00",
+      "campeonato": "Champions League Feminina",
+      "canal": "Disney+",
+      "time1": "Chelsea (F)",
+      "time2": "Austria Vienna (F)",
+      "divisao": null,
+      "evento_nome": null,
+      "evento_descricao": null
+    },
+    {
       "id": 27130,
       "data": "2026-09-23",
       "hora": "22h30",
