@@ -11,6 +11,26 @@ async function corrigirJogos() {
   const timesChampionship = ['watford', 'stoke city', 'sheffield united', 'wolverhampton', 'leeds', 'sunderland'];
   const timesUruguai = ['miramar', 'uruguay montevideo', 'plaza colonia', 'paysandú-uru', 'tacuarembó', 'huracán-uru', 'rentistas', 'oriental', 'la luz', 'atenas', 'cerito', 'river plate-uru'];
 
+  function limparNomeTime(nomeBruto) {
+    if (!nomeBruto) return '';
+    return nomeBruto
+      .replace(/\s*\([Ff]\)\s*$/, '')
+      .replace(/\s*\([Ff]em\)\s*$/, '')
+      .replace(/\s*\([Ff]eminino\)\s*$/, '')
+      .replace(/\s+feminino\s*$/i, '')
+      .replace(/\s+fem\s*$/i, '')
+      .trim();
+  }
+
+  function normalizarParaChave(texto) {
+    if (!texto) return '';
+    return texto
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[^a-z0-9]/g, '');
+  }
+
   const jogosCorrigidos = jogos.map(jogo => {
     const t1 = (jogo.time1 || '').toLowerCase();
     const t2 = (jogo.time2 || '').toLowerCase();
@@ -39,14 +59,21 @@ async function corrigirJogos() {
       div = undefined;
     }
 
+    if (camp.toLowerCase().includes('champions league') && camp.toLowerCase().includes('fem')) {
+      camp = 'Champions League Feminina';
+      pais = 'Europa';
+    }
+
     if (!pais) {
       if (camp.includes('Brasil') || camp === 'Série B' || camp === 'Copa Paulista') pais = 'Brasil';
-      else if (camp === 'Champions League Feminina') pais = 'Europa';
+      else if (camp.includes('Champions League')) pais = 'Europa';
       else if (camp === 'MLS') pais = 'Estados Unidos';
     }
 
     return {
       ...jogo,
+      time1: limparNomeTime(jogo.time1),
+      time2: limparNomeTime(jogo.time2),
       campeonato: camp,
       pais,
       divisao: div,
@@ -54,8 +81,14 @@ async function corrigirJogos() {
     };
   });
 
-  await fs.writeFile(filePath, JSON.stringify({ jogosSemana: jogosCorrigidos }, null, 2));
-  console.log('✅ public/jogos.json corrigido com sucesso! Watford x Stoke foi para Championship e os jogos do Brasil para Série B.');
+  // Deduplicação inteligente
+  const jogosDeduplicados = jogosCorrigidos.filter((j, index, arr) => {
+    const chave = `${j.data}-${normalizarParaChave(j.time1)}-${normalizarParaChave(j.time2)}`;
+    return index === arr.findIndex(x => `${x.data}-${normalizarParaChave(x.time1)}-${normalizarParaChave(x.time2)}` === chave);
+  });
+
+  await fs.writeFile(filePath, JSON.stringify({ jogosSemana: jogosDeduplicados }, null, 2));
+  console.log(`✅ public/jogos.json corrigido e deduplicado! De ${jogos.length} jogos para ${jogosDeduplicados.length} jogos.`);
 }
 
 corrigirJogos();

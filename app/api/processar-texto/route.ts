@@ -135,6 +135,28 @@ function extrairCampeonatoEFase(campeonatoBruto: string, paisSugerido?: string):
   return { campeonato: camp, fase, pais };
 }
 
+// 🧹 LIMPA SUFIXOS FEMININOS E RESÍDUOS DO NOME DO TIME
+function limparNomeTime(nomeBruto: string): string {
+  if (!nomeBruto) return '';
+  return nomeBruto
+    .replace(/\s*\([Ff]\)\s*$/, '')
+    .replace(/\s*\([Ff]em\)\s*$/, '')
+    .replace(/\s*\([Ff]eminino\)\s*$/, '')
+    .replace(/\s+feminino\s*$/i, '')
+    .replace(/\s+fem\s*$/i, '')
+    .trim();
+}
+
+// 🔑 NORMALIZAÇÃO PARA CHAVE ÚNICA DE DEDUPLICAÇÃO
+function normalizarParaChave(texto: string): string {
+  if (!texto) return '';
+  return texto
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]/g, '');
+}
+
 // ⚡ PARSER INSTANTÂNEO DE TABELAS
 function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
   const linhas = texto.split('\n').map(l => l.trim()).filter(Boolean);
@@ -174,8 +196,8 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
             campeonato,
             pais: pais || undefined,
             canal: canalBruto,
-            time1: partesTimes[0].trim(),
-            time2: partesTimes[1].trim(),
+            time1: limparNomeTime(partesTimes[0]),
+            time2: limparNomeTime(partesTimes[1]),
             divisao: null,
             fase,
             evento_nome: null,
@@ -197,8 +219,8 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
             campeonato,
             pais: pais || undefined,
             canal: partes[2] || "A definir",
-            time1: partesTimes[0].trim(),
-            time2: partesTimes[1].trim(),
+            time1: limparNomeTime(partesTimes[0]),
+            time2: limparNomeTime(partesTimes[1]),
             divisao: null,
             fase,
             evento_nome: null,
@@ -306,6 +328,7 @@ REGRAS CRÍTICAS DE PAÍS E CAMPEONATO:
 4. "divisao": Deixe SEMPRE null (a divisão já fica incorporada no nome oficial do campeonato).
 5. "data": "YYYY-MM-DD".
 6. "hora": formato "16h00".
+7. "time1" e "time2": Nomes limpos dos clubes. NUNCA adicione sufixos como "(F)", "(Fem)" ou "(Feminino)" aos nomes dos clubes (ex: use "Real Madrid" e não "Real Madrid (F)"). O gênero feminino deve ser indicado exclusivamente no nome do campeonato (ex: "Champions League Feminina").
 
 Texto:
 ${textoBruto}`;
@@ -340,6 +363,8 @@ ${textoBruto}`;
                     campeonato,
                     pais: j.pais || pais || undefined,
                     fase: faseLimpa,
+                    time1: limparNomeTime(j.time1),
+                    time2: limparNomeTime(j.time2),
                     divisao: null,
                   };
                 });
@@ -394,8 +419,8 @@ ${textoBruto}`;
           campeonato,
           pais: jogo.pais || pais || undefined,
           canal: (jogo.canal || '').trim(),
-          time1: (jogo.time1 || '').trim(),
-          time2: (jogo.time2 || '').trim(),
+          time1: limparNomeTime(jogo.time1),
+          time2: limparNomeTime(jogo.time2),
           divisao: null,
           fase: faseLimpa,
           evento_nome: null,
@@ -404,8 +429,8 @@ ${textoBruto}`;
       })
       .filter((j: any) => Boolean(j.data) && j.data >= hoje)
       .filter((j: any, index: number, array: any[]) => {
-        const chaveUnica = `${j.data}-${j.time1}-${j.time2}`;
-        return index === array.findIndex((x: any) => `${x.data}-${x.time1}-${x.time2}` === chaveUnica);
+        const chaveUnica = `${j.data}-${normalizarParaChave(j.time1)}-${normalizarParaChave(j.time2)}`;
+        return index === array.findIndex((x: any) => `${x.data}-${normalizarParaChave(x.time1)}-${normalizarParaChave(x.time2)}` === chaveUnica);
       })
       .sort((a: any, b: any) => a.data.localeCompare(b.data) || a.hora.localeCompare(b.hora));
 
