@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { gerarSlugJogo } from '@/lib/jogos-slug';
 import { getAgoraBrasilia, isJogoAoVivo } from '@/lib/jogos-tempo';
+import { obterBandeiraCompeticao } from '@/lib/campeonatos';
 
 // Tipos 100% alinhados
 export type JogoSemana = {
@@ -17,6 +18,7 @@ export type JogoSemana = {
   time2?: string | null;
   divisao?: string;
   fase?: string;
+  pais?: string;
   evento_nome?: string | null;
   evento_descricao?: string | null;
 };
@@ -141,7 +143,9 @@ export default function SemanaListClient({
     for (const data in jogosPorDataIniciais) {
       for (const chave in jogosPorDataIniciais[data]) {
         const jogosDoGrupo = jogosPorDataIniciais[data][chave].filter(jogo => {
-          const matchComp = filtroCompeticao === "todos" || jogo.campeonato === filtroCompeticao;
+          const matchComp =
+            filtroCompeticao === 'todos' ||
+            jogo.campeonato.toLowerCase() === filtroCompeticao.toLowerCase();
           const matchCanal = filtroCanal === "todos" || (jogo.canal && jogo.canal.toLowerCase().includes(filtroCanal.toLowerCase()));
           const matchAoVivo = !filtroAoVivo || (tempoAtual ? isJogoAoVivo(jogo, tempoAtual.dataHoje, tempoAtual.minutosAgora) : false);
 
@@ -171,7 +175,8 @@ export default function SemanaListClient({
     }
   }, [filtroCompeticao, filtroCanal, filtroAoVivo, tempoAtual, jogosPorDataIniciais]);
 
-  const getBandeiraPorCompeticao = (campeonato: string): string => competicoesAtivas[campeonato]?.bandeiraEmoji || '🌎';
+  const getBandeiraPorCompeticao = (campeonato: string, pais?: string): string =>
+    obterBandeiraCompeticao(campeonato, pais);
 
   const criarNomeExibicao = (jogo: JogoSemana) => {
     let nome = jogo.campeonato;
@@ -424,7 +429,7 @@ Confira a agenda completa em: https://agendafc.com.br`;
                         className="w-full bg-slate-50/70 hover:bg-slate-100/80 px-5 py-3.5 border-b border-slate-200/80 transition-colors flex items-center justify-between"
                       >
                         <div className="flex items-center text-left gap-3">
-                          <span className="text-2xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato)}</span>
+                          <span className="text-2xl">{getBandeiraPorCompeticao(jogoExemplo.campeonato, jogoExemplo.pais)}</span>
                           <div>
                             <h3 className="text-base sm:text-lg font-bold text-slate-800 leading-tight">{nomeExibicao}</h3>
                           </div>

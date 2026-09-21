@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import SemanaListClient from '../components/SemanaListClient';
 import AdSenseBlock from '../components/ads/AdSenseBlock';
-import { competicoesAtivasMap } from '@/lib/campeonatos';
+import { competicoesAtivasMap, dicionarioCampeonatos } from '@/lib/campeonatos';
 
 export const revalidate = 3600;
 
@@ -19,6 +19,7 @@ type JogoSemana = {
   time2?: string | null;
   divisao?: string;
   fase?: string;
+  pais?: string;
   evento_nome?: string | null;
   evento_descricao?: string | null;
 };
@@ -127,30 +128,53 @@ async function carregarDadosDaSemana() {
           }
         }
 
+        let camp = (jogo.campeonato || '').trim();
+        camp = dicionarioCampeonatos[camp.toLowerCase()] || camp;
+
         return {
           id: jogo.id || Math.floor(Math.random() * 100000),
           data: d,
           hora: (jogo.hora || '').trim(),
-          campeonato: (jogo.campeonato || '').trim(),
+          campeonato: camp,
           canal: (jogo.canal || '').trim(),
           time1: jogo.time1 !== undefined ? jogo.time1 : null,
           time2: jogo.time2 !== undefined ? jogo.time2 : null,
           divisao: jogo.divisao || undefined,
           fase: jogo.fase || undefined,
+          pais: jogo.pais || undefined,
           evento_nome: jogo.evento_nome || null,
           evento_descricao: jogo.evento_descricao || null
         };
       })
       .filter(jogo => Boolean(jogo.data) && jogo.data >= hojeStr && jogo.data <= limiteStr);
 
-    const campeonatosDisponiveis = [...new Set(jogosDaSemanaFiltrados.map(j => j.campeonato))].filter(Boolean).sort();
+    // Deduplica campeonatos de forma case-insensitive
+    const mapaUnicoCampeonatos = new Map<string, string>();
+    jogosDaSemanaFiltrados.forEach(j => {
+      const chaveLower = j.campeonato.toLowerCase();
+      if (!mapaUnicoCampeonatos.has(chaveLower)) {
+        mapaUnicoCampeonatos.set(chaveLower, j.campeonato);
+      }
+    });
+    const campeonatosDisponiveis = Array.from(mapaUnicoCampeonatos.values()).sort((a, b) => a.localeCompare(b));
 
     const jogosPorData = jogosDaSemanaFiltrados.reduce((acc, jogo) => {
       const data = jogo.data;
       if (!acc[data]) acc[data] = {};
-      const chave = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
-      if (!acc[data][chave]) acc[data][chave] = [];
-      acc[data][chave].push(jogo);
+      const chaveBase = jogo.divisao ? `${jogo.campeonato}_${jogo.divisao}` : jogo.campeonato;
+
+      // Unifica chaves que diferem apenas por maiúsculas/minúsculas
+      const chaveExistente = Object.keys(acc[data]).find(
+        k => k.toLowerCase() === chaveBase.toLowerCase()
+      );
+      const chaveFinal = chaveExistente || chaveBase;
+
+      if (chaveExistente) {
+        jogo.campeonato = chaveExistente.replace(/_.*$/, '');
+      }
+
+      if (!acc[data][chaveFinal]) acc[data][chaveFinal] = [];
+      acc[data][chaveFinal].push(jogo);
       return acc;
     }, {} as Record<string, Record<string, JogoSemana[]>>);
 

@@ -439,6 +439,87 @@ export const todasCompeticoes: CompeticaoInfo[] = [
     prioridade: 3,
     ativo: true,
     bandeiraEmoji: "🇪🇸"
+  },
+  {
+    id: 32,
+    nome: "Campeonato Uruguaio",
+    slug: "",
+    pais: "Uruguai",
+    tipo: "Nacional",
+    descricao: "Primeira divisão do Campeonato Uruguaio com Peñarol e Nacional.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇺🇾"
+  },
+  {
+    id: 33,
+    nome: "Campeonato Uruguaio (2ª Divisão)",
+    slug: "",
+    pais: "Uruguai",
+    tipo: "Nacional",
+    descricao: "Segunda divisão do futebol uruguaio.",
+    prioridade: 5,
+    ativo: true,
+    bandeiraEmoji: "🇺🇾"
+  },
+  {
+    id: 34,
+    nome: "La Liga 2",
+    slug: "",
+    subtitulo: "Segunda División Española",
+    pais: "Espanha",
+    tipo: "Nacional",
+    descricao: "Segunda divisão do campeonato espanhol.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇪🇸"
+  },
+  {
+    id: 35,
+    nome: "Serie B Italiana",
+    slug: "",
+    subtitulo: "Segunda Divisão da Itália",
+    pais: "Itália",
+    tipo: "Nacional",
+    descricao: "Segunda divisão do futebol italiano.",
+    prioridade: 4,
+    ativo: true,
+    bandeiraEmoji: "🇮🇹"
+  },
+  {
+    id: 36,
+    nome: "Campeonato Brasileiro Feminino",
+    slug: "",
+    pais: "Brasil",
+    tipo: "Nacional Feminino",
+    descricao: "Campeonato Brasileiro de Futebol Feminino.",
+    prioridade: 3,
+    ativo: true,
+    bandeiraEmoji: "🇧🇷"
+  },
+  {
+    id: 37,
+    nome: "Champions League Feminina",
+    slug: "",
+    subtitulo: "UEFA Women's Champions League",
+    pais: "Europa",
+    tipo: "Continental Feminino",
+    descricao: "Liga dos Campeões Feminina da UEFA.",
+    prioridade: 2,
+    ativo: true,
+    bandeiraEmoji: "🏆"
+  },
+  {
+    id: 38,
+    nome: "Campeonato Inglês Feminino",
+    slug: "",
+    subtitulo: "Women's Super League",
+    pais: "Inglaterra",
+    tipo: "Nacional Feminino",
+    descricao: "Primeira divisão do futebol feminino inglês.",
+    prioridade: 3,
+    ativo: true,
+    bandeiraEmoji: "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
   }
 ];
 
@@ -494,7 +575,29 @@ export const dicionarioCampeonatos: Record<string, string> = {
   "copa da liga inglesa": "Copa da Liga Inglesa",
   "carabao cup": "Copa da Liga Inglesa",
   "fa cup": "Copa da Inglaterra",
-  "copa do rei": "Copa do Rei"
+  "copa do rei": "Copa do Rei",
+  "campeonato brasileiro feminino": "Campeonato Brasileiro Feminino",
+  "brasileirão feminino": "Campeonato Brasileiro Feminino",
+  "brasileirao feminino": "Campeonato Brasileiro Feminino",
+  "campeonato uruguaio": "Campeonato Uruguaio",
+  "campeonato uruguaio (2ª divisão)": "Campeonato Uruguaio (2ª Divisão)",
+  "campeonato uruguaio 2ª divisão": "Campeonato Uruguaio (2ª Divisão)",
+  "segunda divisão do uruguai": "Campeonato Uruguaio (2ª Divisão)",
+  "segunda divisao do uruguai": "Campeonato Uruguaio (2ª Divisão)",
+  "la liga 2": "La Liga 2",
+  "laliga 2": "La Liga 2",
+  "segunda divisão espanhola": "La Liga 2",
+  "segunda divisao espanhola": "La Liga 2",
+  "serie b italiana": "Serie B Italiana",
+  "segunda divisão italiana": "Serie B Italiana",
+  "segunda divisao italiana": "Serie B Italiana",
+  "champions league feminina": "Champions League Feminina",
+  "uefa champions league feminina": "Champions League Feminina",
+  "champions league feminino": "Champions League Feminina",
+  "liga dos campeões feminina": "Champions League Feminina",
+  "campeonato inglês feminino": "Campeonato Inglês Feminino",
+  "campeonato ingles feminino": "Campeonato Inglês Feminino",
+  "wsl": "Campeonato Inglês Feminino"
 };
 
 export const competicoesAtivasMap: Record<string, CompeticaoInfo> = (() => {
@@ -535,3 +638,115 @@ export const ligasFutebolConfig = todasCompeticoes.reduce((acc, comp) => {
   }
   return acc;
 }, {} as Record<string, CompeticaoInfo>);
+
+export const bandeirasPaisesMap: Record<string, string> = {
+  "brasil": "🇧🇷",
+  "inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  "espanha": "🇪🇸",
+  "itália": "🇮🇹",
+  "italia": "🇮🇹",
+  "alemanha": "🇩🇪",
+  "frança": "🇫🇷",
+  "franca": "🇫🇷",
+  "portugal": "🇵🇹",
+  "holanda": "🇳🇱",
+  "países baixos": "🇳🇱",
+  "paises baixos": "🇳🇱",
+  "uruguai": "🇺🇾",
+  "argentina": "🇦🇷",
+  "estados unidos": "🇺🇸",
+  "eua": "🇺🇸",
+  "arábia saudita": "🇸🇦",
+  "arabia saudita": "🇸🇦",
+  "méxico": "🇲🇽",
+  "mexico": "🇲🇽",
+  "turquia": "🇹🇷",
+  "europa": "🏆",
+  "américa do sul": "🏆",
+  "america do sul": "🏆",
+  "mundial": "🌎",
+  "internacional": "🌎",
+  "continental": "🏆"
+};
+
+export function obterBandeiraCompeticao(campeonato: string, pais?: string): string {
+  if (!campeonato && !pais) return '🌎';
+  const campLower = (campeonato || '').toLowerCase().trim();
+
+  // 1. Ícones especiais de modalidade ou grandes torneios continentais
+  if (campLower.includes('fórmula 1') || campLower.includes('formula 1') || campLower === 'f1') return '🏎️';
+  if (campLower === 'nfl') return '🏈';
+  if (campLower === 'nba') return '🏀';
+  if (
+    campLower.includes('champions league') ||
+    campLower.includes('libertadores') ||
+    campLower.includes('sul-americana') ||
+    campLower.includes('sulamericana') ||
+    campLower.includes('europa league') ||
+    campLower.includes('conference league')
+  ) {
+    return '🏆';
+  }
+
+  // 2. Se pais foi explicitamente informado
+  if (pais) {
+    const paisLimpo = pais.toLowerCase().trim();
+    if (bandeirasPaisesMap[paisLimpo]) {
+      return bandeirasPaisesMap[paisLimpo];
+    }
+  }
+
+  // 3. Verifica se a competição está cadastrada no mapa de competições
+  const compInfo = competicoesAtivasMap[campeonato] || competicoesAtivasMap[campLower];
+  if (compInfo) {
+    if (compInfo.bandeiraEmoji) return compInfo.bandeiraEmoji;
+    if (compInfo.pais) {
+      const p = compInfo.pais.toLowerCase().trim();
+      if (bandeirasPaisesMap[p]) return bandeirasPaisesMap[p];
+    }
+  }
+
+  // 4. Detecção por termos no nome do campeonato
+  if (
+    campLower.includes('brasil') ||
+    campLower.includes('brasileir') ||
+    campLower.includes('copa do brasil') ||
+    campLower.includes('copa paulista') ||
+    campLower.includes('copa rio') ||
+    campLower === 'série b' ||
+    campLower === 'serie b' ||
+    campLower.includes('série c') ||
+    campLower.includes('serie c')
+  ) {
+    return '🇧🇷';
+  }
+  if (
+    campLower.includes('ingl') ||
+    campLower.includes('premier league') ||
+    campLower.includes('championship') ||
+    campLower.includes('fa cup') ||
+    campLower.includes('carabao')
+  ) {
+    return '🏴󠁧󠁢󠁥󠁮󠁧󠁿';
+  }
+  if (
+    campLower.includes('espanh') ||
+    campLower.includes('la liga') ||
+    campLower.includes('copa do rei')
+  ) {
+    return '🇪🇸';
+  }
+  if (campLower.includes('uruguai')) return '🇺🇾';
+  if (campLower.includes('argentin')) return '🇦🇷';
+  if (campLower.includes('italian') || campLower === 'serie a') return '🇮🇹';
+  if (campLower.includes('alem') || campLower.includes('bundesliga')) return '🇩🇪';
+  if (campLower.includes('franc') || campLower.includes('ligue 1') || campLower.includes('ligue 2')) return '🇫🇷';
+  if (campLower.includes('portug') || campLower.includes('primeira liga')) return '🇵🇹';
+  if (campLower.includes('holand') || campLower.includes('eredivisie')) return '🇳🇱';
+  if (campLower.includes('saudita')) return '🇸🇦';
+  if (campLower.includes('turco')) return '🇹🇷';
+  if (campLower.includes('mexican')) return '🇲🇽';
+  if (campLower.includes('mls') || campLower.includes('nwsl')) return '🇺🇸';
+
+  return '🌎';
+}

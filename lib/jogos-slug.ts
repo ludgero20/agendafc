@@ -11,6 +11,7 @@ export type JogoItem = {
   time2?: string | null;
   divisao?: string;
   fase?: string;
+  pais?: string;
   evento_nome?: string | null;
   evento_descricao?: string | null;
 };

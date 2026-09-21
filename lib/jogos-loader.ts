@@ -97,6 +97,7 @@ export async function carregarTodosOsJogos(): Promise<JogoItem[]> {
           time2: jogo.time2 !== undefined ? jogo.time2 : null,
           divisao: jogo.divisao || undefined,
           fase: jogo.fase || undefined,
+          pais: jogo.pais || undefined,
           evento_nome: jogo.evento_nome || null,
           evento_descricao: jogo.evento_descricao || null,
         };

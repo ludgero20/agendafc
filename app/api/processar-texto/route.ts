@@ -8,51 +8,131 @@ const mesesMap: Record<string, string> = {
   "agosto": "08", "setembro": "09", "outubro": "10", "novembro": "11", "dezembro": "12"
 };
 
-// 🧠 SANITIZADOR INTELIGENTE DE CAMPEONATO E FASE
-function extrairCampeonatoEFase(campeonatoBruto: string): { campeonato: string; fase: string | null } {
+// 🧠 SANITIZADOR INTELIGENTE DE CAMPEONATO, PAÍS E FASE
+function extrairCampeonatoEFase(campeonatoBruto: string, paisSugerido?: string): { campeonato: string; fase: string | null; pais: string | null } {
   let camp = (campeonatoBruto || '').trim();
   let fase: string | null = null;
+  let pais: string | null = paisSugerido?.trim() || null;
 
-  // 1. Analisa se há parênteses no texto (ex: "Campeonato Brasileiro (segunda divisão)" ou "Copa Libertadores (quartas de final)")
+  // 1. Identificação prévia do país no texto bruto se não fornecido
+  const campLowerTotal = camp.toLowerCase();
+  if (!pais) {
+    if (campLowerTotal.includes('brasil') || campLowerTotal.includes('brasileir') || campLowerTotal.includes('copa paulista') || campLowerTotal.includes('copa rio') || campLowerTotal === 'série b' || campLowerTotal === 'serie b' || campLowerTotal.includes('série c') || campLowerTotal.includes('serie c')) {
+      pais = 'Brasil';
+    } else if (campLowerTotal.includes('ingl') || campLowerTotal.includes('championship') || campLowerTotal.includes('premier league')) {
+      pais = 'Inglaterra';
+    } else if (campLowerTotal.includes('espanh') || campLowerTotal.includes('la liga') || campLowerTotal.includes('laliga')) {
+      pais = 'Espanha';
+    } else if (campLowerTotal.includes('uruguai')) {
+      pais = 'Uruguai';
+    } else if (campLowerTotal.includes('argentin')) {
+      pais = 'Argentina';
+    } else if (campLowerTotal.includes('italian') || campLowerTotal === 'serie a') {
+      pais = 'Itália';
+    } else if (campLowerTotal.includes('alem') || campLowerTotal.includes('bundesliga')) {
+      pais = 'Alemanha';
+    } else if (campLowerTotal.includes('franc') || campLowerTotal.includes('ligue')) {
+      pais = 'França';
+    } else if (campLowerTotal.includes('portug') || campLowerTotal.includes('primeira liga')) {
+      pais = 'Portugal';
+    } else if (campLowerTotal.includes('holand') || campLowerTotal.includes('eredivisie')) {
+      pais = 'Holanda';
+    } else if (campLowerTotal.includes('saudita')) {
+      pais = 'Arábia Saudita';
+    } else if (campLowerTotal.includes('turco')) {
+      pais = 'Turquia';
+    } else if (campLowerTotal.includes('mexican')) {
+      pais = 'México';
+    } else if (campLowerTotal.includes('mls') || campLowerTotal.includes('nwsl')) {
+      pais = 'Estados Unidos';
+    }
+  }
+
+  // 2. Analisa se há parênteses no texto (ex: "Campeonato Brasileiro (segunda divisão)", "Campeonato Uruguaio (segunda divisão)", "Copa Libertadores (quartas de final)")
   if (camp.includes('(') && camp.includes(')')) {
     const match = camp.match(/\((.*?)\)/);
     const conteudoParenteses = match ? match[1].trim().toLowerCase() : '';
-    const textoSemParenteses = camp.replace(/\s*\(.*?\)/, '').trim().toLowerCase();
+    const textoSemParenteses = camp.replace(/\s*\(.*?\)/, '').trim();
+    const textoSemParentesesLower = textoSemParenteses.toLowerCase();
 
     // CASO A: Se for indicação de divisão, NÃO é fase! É o próprio campeonato!
-    if (conteudoParenteses.includes('segunda') || conteudoParenteses.includes('2ª') || conteudoParenteses.includes('série b')) {
-      if (textoSemParenteses.includes('ingl') || textoSemParenteses.includes('championship')) {
-        return { campeonato: 'Championship', fase: null };
+    if (conteudoParenteses.includes('segunda') || conteudoParenteses.includes('2ª') || conteudoParenteses.includes('2 division') || conteudoParenteses.includes('série b') || conteudoParenteses.includes('serie b')) {
+      // Determina o campeonato baseado no PAÍS / TEXTO:
+      if (pais === 'Inglaterra' || textoSemParentesesLower.includes('ingl') || textoSemParentesesLower.includes('championship')) {
+        return { campeonato: 'Championship', fase: null, pais: 'Inglaterra' };
       }
-      return { campeonato: 'Série B', fase: null };
+      if (pais === 'Espanha' || textoSemParentesesLower.includes('espanh') || textoSemParentesesLower.includes('la liga')) {
+        return { campeonato: 'La Liga 2', fase: null, pais: 'Espanha' };
+      }
+      if (pais === 'Itália' || textoSemParentesesLower.includes('italian')) {
+        return { campeonato: 'Serie B Italiana', fase: null, pais: 'Itália' };
+      }
+      if (pais === 'Alemanha' || textoSemParentesesLower.includes('alem')) {
+        return { campeonato: '2. Bundesliga', fase: null, pais: 'Alemanha' };
+      }
+      if (pais === 'França' || textoSemParentesesLower.includes('franc')) {
+        return { campeonato: 'Ligue 2', fase: null, pais: 'França' };
+      }
+      if (pais === 'Uruguai' || textoSemParentesesLower.includes('uruguai')) {
+        return { campeonato: 'Campeonato Uruguaio (2ª Divisão)', fase: null, pais: 'Uruguai' };
+      }
+      if (pais === 'Argentina' || textoSemParentesesLower.includes('argentin')) {
+        return { campeonato: 'Campeonato Argentino (2ª Divisão)', fase: null, pais: 'Argentina' };
+      }
+      if (pais === 'Brasil' || textoSemParentesesLower.includes('brasileir') || textoSemParentesesLower.includes('brasil')) {
+        return { campeonato: 'Série B', fase: null, pais: 'Brasil' };
+      }
+      // Se não reconheceu país específico, usa o nome do campeonato com a 2ª divisão, JAMAIS Série B do Brasil
+      return { campeonato: `${textoSemParenteses} (2ª Divisão)`, fase: null, pais };
     }
 
-    if (conteudoParenteses.includes('terceira') || conteudoParenteses.includes('3ª') || conteudoParenteses.includes('série c')) {
-      return { campeonato: 'Brasileirão', fase: null };
+    if (conteudoParenteses.includes('terceira') || conteudoParenteses.includes('3ª') || conteudoParenteses.includes('série c') || conteudoParenteses.includes('serie c')) {
+      if (pais === 'Brasil' || textoSemParentesesLower.includes('brasileir')) {
+        return { campeonato: 'Campeonato Brasileiro Série C', fase: null, pais: 'Brasil' };
+      }
     }
 
     // CASO B: Se for fase real de mata-mata
     fase = match ? match[1].trim() : null;
-    camp = camp.replace(/\s*\(.*?\)/, '').trim();
+    // Se por acaso a fase tiver termos de divisão, descarta do campo fase
+    if (fase && (fase.toLowerCase().includes('divis') || fase.toLowerCase().includes('série') || fase.toLowerCase().includes('serie'))) {
+      fase = null;
+    }
+    camp = textoSemParenteses;
   }
 
-  // 2. Normalização do nome da liga
+  // 3. Normalização do nome da liga
   const campLower = camp.toLowerCase();
 
   if (campLower.includes('ingl') && (campLower.includes('segunda') || campLower.includes('championship'))) {
     camp = 'Championship';
     fase = null;
-  } else if (campLower.includes('segunda divisão') || campLower.includes('série b') || campLower.includes('serie b')) {
+    pais = 'Inglaterra';
+  } else if (campLower.includes('espanh') && (campLower.includes('segunda') || campLower.includes('la liga 2'))) {
+    camp = 'La Liga 2';
+    fase = null;
+    pais = 'Espanha';
+  } else if (campLower.includes('uruguai') && (campLower.includes('segunda') || campLower.includes('2ª'))) {
+    camp = 'Campeonato Uruguaio (2ª Divisão)';
+    fase = null;
+    pais = 'Uruguai';
+  } else if (campLower.includes('brasileir') && (campLower.includes('segunda') || campLower.includes('série b') || campLower.includes('serie b'))) {
     camp = 'Série B';
     fase = null;
+    pais = 'Brasil';
+  } else if (campLower === 'série b' || campLower === 'serie b') {
+    camp = 'Série B';
+    fase = null;
+    pais = pais || 'Brasil';
   } else if (campLower === 'campeonato brasileiro' || campLower === 'brasileirão' || campLower === 'brasileirao') {
     camp = 'Brasileirão';
+    pais = 'Brasil';
   }
 
-  // 3. Aplica o dicionário de sinônimos oficial
+  // 4. Aplica o dicionário de sinônimos oficial
   camp = dicionarioCampeonatos[camp.toLowerCase().trim()] || camp;
 
-  return { campeonato: camp, fase };
+  return { campeonato: camp, fase, pais };
 }
 
 // ⚡ PARSER INSTANTÂNEO DE TABELAS
@@ -85,13 +165,14 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
           if (/^\d{1,2}h$/.test(hora)) hora = hora.replace('h', 'h00');
           if (/^\d{1}h/.test(hora)) hora = '0' + hora;
 
-          const { campeonato, fase } = extrairCampeonatoEFase(campeonatoBruto);
+          const { campeonato, fase, pais } = extrairCampeonatoEFase(campeonatoBruto);
 
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: hora,
             campeonato,
+            pais: pais || undefined,
             canal: canalBruto,
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
@@ -107,13 +188,14 @@ function parsearTabelasDireto(texto: string, anoAtual: string): any[] {
         const partesTimes = confronto.split(/\s+[xX]\s+/);
         
         if (partesTimes.length === 2) {
-          const { campeonato, fase } = extrairCampeonatoEFase(partes[1] || "Brasileirão");
+          const { campeonato, fase, pais } = extrairCampeonatoEFase(partes[1] || "Brasileirão");
 
           jogos.push({
             id: Math.floor(Math.random() * 100000),
             data: dataAtual,
             hora: "16h00",
             campeonato,
+            pais: pais || undefined,
             canal: partes[2] || "A definir",
             time1: partesTimes[0].trim(),
             time2: partesTimes[1].trim(),
@@ -175,16 +257,55 @@ export async function POST(request: Request) {
       const promptGemini = `Você é um extrator especialista de grades de jogos na TV.
 Extraia TODOS os jogos de futebol do texto abaixo em um array JSON.
 
-REGRAS CRÍTICAS DE CAMPEONATO:
-1. "campeonato": APENAS o nome oficial.
-   - Se for 2ª divisão do Brasil ("segunda divisão", "série b"), coloque SEMPRE "Série B".
-   - Se for 2ª divisão da Inglaterra, coloque SEMPRE "Championship".
-   - Se for 1ª divisão do Brasil, coloque SEMPRE "Brasileirão".
-   - NUNCA coloque divisão ou fase dentro de campeonato.
-2. "fase": Extraia apenas fases reais de mata-mata (ex: "Quartas de final", "16-avos de final", "Semifinal", "Final"). NUNCA coloque divisões aqui. Se não houver fase, null.
-3. "divisao": Deixe SEMPRE null (a Série B já é um campeonato próprio).
-4. "data": "YYYY-MM-DD".
-5. "hora": formato "16h00".
+ESTRUTURA DE CADA OBJETO NO JSON:
+{
+  "pais": "Nome do país (ex: 'Brasil', 'Inglaterra', 'Espanha', 'Itália', 'Alemanha', 'França', 'Uruguai', 'Argentina', 'Estados Unidos', ou 'Europa'/'América do Sul' para torneios continentais)",
+  "campeonato": "Nome oficial do campeonato",
+  "fase": "Apenas fase de mata-mata (ex: 'Quartas de final', 'Semifinal', 'Final') ou null",
+  "divisao": null,
+  "data": "YYYY-MM-DD",
+  "hora": "16h00",
+  "canal": "Canal de TV ou streaming",
+  "time1": "Nome do time mandante",
+  "time2": "Nome do time visitante"
+}
+
+REGRAS CRÍTICAS DE PAÍS E CAMPEONATO:
+1. "pais": Determine SEMPRE o país de origem do campeonato/liga ANTES de definir o campeonato.
+2. "campeonato": Baseie-se no PAÍS para definir a competição:
+   - BRASIL:
+     * 1ª divisão: "Brasileirão"
+     * 2ª divisão ("segunda divisão", "série b"): "Série B"
+     * 3ª divisão ("terceira divisão", "série c"): "Campeonato Brasileiro Série C"
+     * Feminino: "Campeonato Brasileiro Feminino"
+   - INGLATERRA:
+     * 1ª divisão: "Premier League"
+     * 2ª divisão: "Championship"
+   - ESPANHA:
+     * 1ª divisão: "La Liga"
+     * 2ª divisão: "La Liga 2"
+   - ITÁLIA:
+     * 1ª divisão: "Serie A"
+     * 2ª divisão: "Serie B Italiana"
+   - ALEMANHA:
+     * 1ª divisão: "Bundesliga"
+     * 2ª divisão: "2. Bundesliga"
+   - FRANÇA:
+     * 1ª divisão: "Ligue 1"
+     * 2ª divisão: "Ligue 2"
+   - URUGUAI:
+     * 1ª divisão: "Campeonato Uruguaio"
+     * 2ª divisão: "Campeonato Uruguaio (2ª Divisão)"
+   - ARGENTINA:
+     * 1ª divisão: "Campeonato Argentino"
+     * 2ª divisão: "Campeonato Argentino (2ª Divisão)"
+   - DEMAIS PAÍSES:
+     * Se for 2ª divisão, coloque "{Nome do Campeonato} (2ª Divisão)".
+     * NUNCA, SOB HIPÓTESE ALGUMA, coloque jogos de outros países na "Série B" do Brasil! A "Série B" é EXCLUSIVA do Brasil.
+3. "fase": Extraia apenas fases reais de mata-mata (ex: "Quartas de final", "16-avos de final", "Semifinal", "Final"). NUNCA coloque divisões aqui (ex: nunca coloque "2ª divisão" em fase). Se for jogo de pontos corridos ou sem fase definida, coloque null.
+4. "divisao": Deixe SEMPRE null (a divisão já fica incorporada no nome oficial do campeonato).
+5. "data": "YYYY-MM-DD".
+6. "hora": formato "16h00".
 
 Texto:
 ${textoBruto}`;
@@ -209,11 +330,16 @@ ${textoBruto}`;
               const rawGemini = JSON.parse(txt.replace(/```json/g, '').replace(/```/g, '').trim());
               if (Array.isArray(rawGemini) && rawGemini.length > 0) {
                 jogosExtraidos = rawGemini.map((j: any) => {
-                  const { campeonato, fase } = extrairCampeonatoEFase(j.campeonato);
+                  const { campeonato, fase, pais } = extrairCampeonatoEFase(j.campeonato, j.pais);
+                  let faseLimpa = j.fase || fase || undefined;
+                  if (faseLimpa && (faseLimpa.toLowerCase().includes('divis') || faseLimpa.toLowerCase().includes('série') || faseLimpa.toLowerCase().includes('serie'))) {
+                    faseLimpa = undefined;
+                  }
                   return {
                     ...j,
                     campeonato,
-                    fase: j.fase || fase,
+                    pais: j.pais || pais || undefined,
+                    fase: faseLimpa,
                     divisao: null,
                   };
                 });
@@ -255,18 +381,23 @@ ${textoBruto}`;
 
     const jogosLimpos = todosCombinados
       .map((jogo: any) => {
-        const { campeonato, fase } = extrairCampeonatoEFase(jogo.campeonato);
+        const { campeonato, fase, pais } = extrairCampeonatoEFase(jogo.campeonato, jogo.pais);
+        let faseLimpa = jogo.fase || fase || undefined;
+        if (faseLimpa && (faseLimpa.toLowerCase().includes('divis') || faseLimpa.toLowerCase().includes('série') || faseLimpa.toLowerCase().includes('serie'))) {
+          faseLimpa = undefined;
+        }
 
         return {
           id: jogo.id || Math.floor(Math.random() * 100000),
           data: jogo.data,
           hora: jogo.hora,
           campeonato,
+          pais: jogo.pais || pais || undefined,
           canal: (jogo.canal || '').trim(),
           time1: (jogo.time1 || '').trim(),
           time2: (jogo.time2 || '').trim(),
           divisao: null,
-          fase: jogo.fase || fase || undefined,
+          fase: faseLimpa,
           evento_nome: null,
           evento_descricao: null
         };
