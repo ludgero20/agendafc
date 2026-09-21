@@ -55,17 +55,17 @@ export const metadata: Metadata = {
       "A agenda completa para saber onde assistir Futebol, NFL e Fórmula 1 na TV e no streaming. Não perca nenhum lance!",
     images: [
       {
-        url: "/og-banner.jpg",
-        width: 1200,
-        height: 630,
+        url: "/escudo.jpg",
+        width: 800,
+        height: 800,
         alt: "Agenda FC - Onde Assistir Esportes Ao Vivo",
         type: "image/jpeg",
       },
       {
-        url: "/logo.jpg",
-        width: 512,
-        height: 512,
-        alt: "Agenda FC",
+        url: "/og-banner.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Agenda FC - Onde Assistir Esportes Ao Vivo",
         type: "image/jpeg",
       },
     ],
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     title: "Agenda FC - Onde Assistir Esportes Ao Vivo",
     description:
       "A agenda completa para saber onde assistir Futebol, NFL e Fórmula 1 na TV e no streaming.",
-    images: ["/og-banner.jpg"],
+    images: ["/escudo.jpg"],
     creator: "@agendafc_br",
     site: "@agendafc_br",
   },
